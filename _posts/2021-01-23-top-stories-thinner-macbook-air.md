@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "'더 얇고 가벼운'MacBook Air, 더 작은 iPhone 13 Notch, iOS 14.4 출시"
+title: "주요 뉴스 : '더 얇고 가벼운'MacBook Air, 더 작은 iPhone 13 Notch, iOS 14.4 출시"
 author: 'itposting'
 thumbnail: https://images.macrumors.com/t/stHOcDUvVlEcAjBmqe4NNkFnDIU=/2500x0/filters:no_upscale():quality(90)/article-new/2021/01/Top-Stories-44-Feature.jpg
 ---
