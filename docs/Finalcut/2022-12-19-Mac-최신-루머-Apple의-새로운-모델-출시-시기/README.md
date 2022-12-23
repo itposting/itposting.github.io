@@ -13,6 +13,20 @@ MacBook Pro에서 Mac Pro, Mac mini, iMac, Mac Studio 및 MacBook Air에 대한 
 
 ## 맥북 프로
 
+<component is="script" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686" crossorigin="anonymous" async></component>
+
+<!-- ui-log 수평형 -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="9743150776"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<component is="script">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</component>
+
 <img src="./img/1.png" />
 
 최신 14인치 및 16인치 MacBook Pro는 2021년 10월에 발표되어 1년이 넘었습니다.
@@ -27,6 +41,20 @@ Bloomberg의 Mark Gurman에 따르면 M2 Pro 및 M2 Max 칩 옵션이 포함된 
 대신, 그들은 현재 M1 Pro 및 M1 Max 변형에 비해 더 높은 성능과 배터리 효율성을 제공하는 M2 Pro 및 M2 Max 칩의 이점을 누릴 것입니다.
 
 ## IMAC
+
+<component is="script" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686" crossorigin="anonymous" async></component>
+
+<!-- ui-log 수평형 -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="9743150776"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<component is="script">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</component>
 
 <img src="./img/2.png" />
 
@@ -55,6 +83,20 @@ MacBook Air가 최근에 발표된 것을 감안할 때 우리는 가까운 시�
 새로운 MacBook Air는 평평한 가장자리, 대형 Force Touch 트랙패드, 기능 키가 있는 키보드, MagSafe 충전 포트 등 기존 13인치 모델과 전체 디자인이 동일할 것으로 예상됩니다. 15.5인치에서 곧 출시될 MacBook Air는 14인치와 16인치 MacBook Pro 사이에 위치하며 현재까지 가장 큰 ‌MacBook Air‌가 될 것입니다.
 
 ## Mac Pro
+
+<component is="script" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686" crossorigin="anonymous" async></component>
+
+<!-- ui-log 수평형 -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="9743150776"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<component is="script">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</component>
 
 <img src="./img/5.png" />
 

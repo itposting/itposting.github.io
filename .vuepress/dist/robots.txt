@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://itposting.github.io/sitemap.xml
