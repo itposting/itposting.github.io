@@ -1,0 +1,37 @@
+@import "../../scss/utils";
+
+.section_wrap {
+  & + & {
+    margin-top: 50px;
+  }
+}
+
+.title_area {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.more_link {
+  display: flex;
+  color: #8e8e8e;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  column-gap: 4px;
+  align-items: center;
+
+  &::after {
+    background: no-repeat url(./assets/icon_right_arrow.png) 0 0 / contain;
+    width: 10px;
+    height: 12px;
+
+    content: "";
+    margin-top: 2px;
+  }
+}
+
+.section {
+  margin-top: 20px;
+}

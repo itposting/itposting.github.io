@@ -1,0 +1,148 @@
+/* _reset.scss */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+}
+
+body,
+input,
+textarea,
+select,
+button,
+table {
+  font-size: 13px;
+}
+
+img,
+fieldset {
+  border: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+em,
+address {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form,
+fieldset,
+button {
+  border: 0;
+  vertical-align: top;
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+  vertical-align: top;
+}
+
+input,
+select {
+  vertical-align: middle;
+  /* -webkit-appearance: none; */
+}
+
+input {
+  border: 0;
+  border-radius: 0;
+}
+
+/* input[type="text"]::-ms-clear,
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+} */
+
+/* input[type="checkbox"],
+input[type="file"],
+input[type="radio"] {
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+input,
+textarea {
+  caret-color: #08ccca;
+}
+
+textarea {
+  overflow: hidden;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+svg {
+  display: block;
+}

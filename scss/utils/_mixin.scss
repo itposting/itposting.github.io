@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+@mixin clear {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin positionAll($position: absolute, $distance: 0) {
+  position: $position;
+  top: $distance;
+  right: $distance;
+  bottom: $distance;
+  left: $distance;
+}
+
+@mixin absoluteCenter($width, $height) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $width + px;
+  height: $height + px;
+  margin-top: -($height / 2) + px;
+  margin-left: -($width / 2) + px;
+}
+
+@mixin wordBreak {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+@mixin ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin ellipsisMulti($line_num) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line_num;
+  -webkit-box-orient: vertical;
+}
+
+@mixin blurBg($num: 30px) {
+  backdrop-filter: blur($num);
+
+  @if ($num != 0) {
+    @supports not (backdrop-filter: blur($num)) {
+      background-image: linear-gradient(135deg, #2a2a31, #322e46 60%, #4b336f);
+    }
+  }
+}
+
+@mixin noImage($color: "light", $type: "normal") {
+  @if $color == "light" {
+    @if $type == "normal" {
+      background: $color-PBG01 url(../../img/icon_empty.png) no-repeat 50%/ 165px 30px;
+    } @else if $type == "small" {
+      background: $color-PBG01 url(../../img/icon_empty.png) no-repeat 50%/ 115px 21px;
+    } @else if $type == "tiny" {
+      background: $color-PBG01 url(../../img/icon_empty_tiny.png) no-repeat 50%/ 51px 36px;
+    } @else if $type == "none" {
+      background: $color-PBG01;
+    }
+  } @else if $color == "dark" {
+    @if $type == "normal" {
+      background: $color-G11 url(../../img/icon_empty_dark.png) no-repeat 50%/ 165px 30px;
+    } @else if $type == "small" {
+      background: $color-G11 url(../../img/icon_empty_dark.png) no-repeat 50%/ 115px 21px;
+    } @else if $type == "tiny" {
+      background: $color-G11 url(../../img/icon_empty_tiny_dark.png) no-repeat 50%/ 51px 36px;
+    } @else if $type == "none" {
+      background: $color-G11;
+    }
+  }
+
+  @if $type == "membership" {
+    background: url(../../img/icon_empty_tiny.png) no-repeat 50%/ 51px 36px, linear-gradient(123.62deg, #f0ebff 1.94%, #d9edff 97.72%);
+  }
+
+  @if $type == "community" {
+    background: #d3dee3;
+  }
+}
+
+@mixin hideScrollBar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
+
+@mixin backgroundImage($fileName, $width: null, $height: null) {
+  @if ($width and $height) {
+    width: $width + px;
+    height: $height + px;
+    background: no-repeat url("./assets/#{$fileName}.png") 0 0 / contain;
+  } @else {
+    // background-image: url(./assets/#{$fileName}.png);
+  }
+}
+
+@mixin hoverStyle($space-x, $space-y, $radius, $color: $hoverDefaultBackground) {
+  padding: #{$space-x}px #{$space-y}px;
+  margin: -#{$space-x}px -#{$space-y}px;
+  border-radius: $radius;
+  background-color: $color;
+}
+
+// rgba를 rgb로 변환
+// @param {color} $rgba - rgba값
+// @param {color} $background [#fff] - 요소의 밑의  배경색상
+//
+// 실제 작업내용
+// $alpha: alpha($rgba);
+// $red: red($rgba) * $alpha + 255 * (1 - $alpha);
+// $green: green($rgba) * $alpha + 255 * (1 - $alpha);
+// $blue: blue($rgba) * $alpha + 255 * (1 - $alpha);
+// @return rgb($red, $green, $blue);
+//
+// @example scss - 사용법
+// .foo {
+//     color: rgbaToRgb(rgba(30, 87, 153, 0.8))
+// }
+// .foo2 {
+//     background-color: rgbaToRgb(rgba($black, 0.16), #14a03a);
+// }
+// @example css - CSS 아웃풋
+// .foo {
+//     color: #4b79ad;
+// }
+// .foo2 {
+//     background-color: #118631;
+// }
+
+@function rgba-to-rgb($rgba, $background: #fff) {
+  @return mix(rgb(red($rgba), green($rgba), blue($rgba)), $background, alpha($rgba) * 100%);
+}
