@@ -3,7 +3,7 @@ title: "DBT 증분 전략과 동등성"
 description: ""
 coverImage: "/assets/img/2024-05-27-DBTIncrementalStrategyandIdempotency_0.png"
 date: 2024-05-27 12:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-DBTIncrementalStrategyandIdempotency_0.png
 tag: Tech
 originalTitle: "DBT Incremental Strategy and Idempotency"
@@ -11,7 +11,6 @@ link: "https://medium.com/finatext/dbt-incremental-strategy-and-idempotency-8779
 ---
 
 
-```markdown
 ![Screenshot](/assets/img/2024-05-27-DBTIncrementalStrategyandIdempotency_0.png)
 
 # 배경
@@ -19,7 +18,7 @@ link: "https://medium.com/finatext/dbt-incremental-strategy-and-idempotency-8779
 안녕하세요, 저는 데이터 엔지니어인 Todd입니다. 저는 Nowcast에서 데이터 온보딩에 주로 관여하고 있습니다. 이 기술 블로그에서는 Nowcast에서의 ETL 파이프라인 디자인의 간략한 역사를 소개하고, Airflow와 DBT의 "Incremental Models" 사이에서 발생한 문제를 설명하고 우리가 개발한 해결책을 소개하겠습니다.
 
 # Python으로 ETL
-```
+
 
 <div class="content-ad"></div>
 
@@ -36,6 +35,7 @@ python transform_data.py 2024-01-01 --some --other --arguments
 <div class="content-ad"></div>
 
 Airflow은 Nowcast에서 많은 해동안 사용되어온 스케줄링 및 워크플로우 관리 도구입니다. 기본적으로 두 가지로 사용되고 있어요:
+
 1. 작업 스케줄러
 2. 작업 의존성 관리
 

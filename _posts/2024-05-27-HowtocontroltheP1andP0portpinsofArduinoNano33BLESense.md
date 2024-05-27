@@ -3,13 +3,12 @@ title: "아두이노 나노 33 BLE Sense의 P1 및 P0 포트 핀을 제어하는
 description: ""
 coverImage: "/assets/img/2024-05-27-HowtocontroltheP1andP0portpinsofArduinoNano33BLESense_0.png"
 date: 2024-05-27 13:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowtocontroltheP1andP0portpinsofArduinoNano33BLESense_0.png
 tag: Tech
 originalTitle: "How to control the P1 and P0 port pins of Arduino Nano 33 BLE Sense"
 link: "https://medium.com/@samueladesola/how-to-control-the-p1-and-p0-port-pins-of-arduino-nano-33-ble-sense-86d0b7002b97"
 ---
-
 
 안녕하세요! 이 간단한 안내서에 오신 것을 환영합니다. 바로 시작해 봅시다. 기존의 아두이노 보드인 UNO, 나노 등은 핀 번호매기기를 기준으로 배치되어 있습니다. 디지털 및 아날로그 핀을 쉽게 다룰 수 있으며 아두이노 스케치에서 GPIO 핀을 쉽게 다룰 수 있어요. 매핑(mapping)이나 핀 가용성에 대해 걱정할 필요가 없습니다.
 
@@ -19,7 +18,7 @@ link: "https://medium.com/@samueladesola/how-to-control-the-p1-and-p0-port-pins-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Arduino Nano 33 BLE Sense Pinout](/assets/img/2024-05-27-HowtocontroltheP1andP0portpinsofArduinoNano33BLESense_1.png)
 
 This information was sourced from the board’s pinout: [Pinout-NANOsense_latest.pdf](https://content.arduino.cc/assets/Pinout-NANOsense_latest.pdf)
@@ -53,9 +52,9 @@ void loop(){
 
 <div class="content-ad"></div>
 
-P1.14 = 32 * 1 + 14 = 46 = p46;
+P1.14 = 32 \* 1 + 14 = 46 = p46;
 
-P0.13 = 32*0 + 13 = 13 = p13;
+P0.13 = 32\*0 + 13 = 13 = p13;
 
 선행하는 "p" 즉 p46와 같은 것을 추가해야 합니다. mbed.h RTOS 라이브러리를 사용하여 LED를 튜닝하는 예제를 살펴보겠습니다:
 

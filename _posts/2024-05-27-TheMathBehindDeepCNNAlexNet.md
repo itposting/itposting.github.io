@@ -3,13 +3,12 @@ title: "깊은 CNN 뒤의 수학  AlexNet"
 description: ""
 coverImage: "/assets/img/2024-05-27-TheMathBehindDeepCNNAlexNet_0.png"
 date: 2024-05-27 14:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TheMathBehindDeepCNNAlexNet_0.png
 tag: Tech
 originalTitle: "The Math Behind Deep CNN — AlexNet"
 link: "https://medium.com/towards-data-science/the-math-behind-deep-cnn-alexnet-738d858e5a2f"
 ---
-
 
 `<img src="/assets/img/2024-05-27-TheMathBehindDeepCNNAlexNet_0.png" />`
 
@@ -26,10 +25,12 @@ link: "https://medium.com/towards-data-science/the-math-behind-deep-cnn-alexnet-
 ## 1. 소개
 
 ## 2. AlexNet 아키텍처 개요
+
 - 2.1. 일반적인 레이어 구조
 - 2.2. 출력 레이어와 Softmax 분류
 
 ## 3. AlexNet 구성 요소 깊이 있는 분석
+
 - 3.1. ReLU 비선형성
 - 3.2. 여러 개의 GPU에서의 훈련
 - 3.3. 지역 반응 정규화
@@ -40,11 +41,13 @@ link: "https://medium.com/towards-data-science/the-math-behind-deep-cnn-alexnet-
 <div class="content-ad"></div>
 
 - 4: 훈련 과정 및 최적화
+
   - 4.1: 확률적 경사 하강법 매개변수
   - 4.2: 초기화
   - 4.3: 학습률 조정 전략
 
 - 5: Python에서 AlexNet 구축
+
   - 5.1: AlexNet 클래스
   - 5.2: 조기 중지 클래스
   - 5.3: 트레이너 클래스
@@ -115,11 +118,11 @@ AlexNet의 마지막 레이어는 3번째 완전 연결 레이어의 logits에 s
 
 소프트맥스 함수는 다음과 같습니다:
 
-```
+
 $$
 \frac{e^{z_i}}{\sum e^{z_i}}
 $$
-```
+
 
 여기서 zi는 최종 완전 연결 레이어에서 각 클래스에 대한 로짓 또는 원시 예측 점수입니다.
 
@@ -203,7 +206,7 @@ LRN 레이어는 이웃하는 뉴런들이 높은 활동을 보일 때 그 뉴�
 
 특징 맵 i의 (x, y) 위치에 있는 뉴런의 활동 ax, yi를 고려할 때, 반응 정규화된 활동 bx, yi는 다음과 같습니다:
 
-\[ b_{x,y}^{i} = a_{x,y}^{i} / \left( k + \alpha \sum_{j=max(0,i-n/2)}^{min(N-1, i+n/2)}(a_{x,y}^{j})^2 \right)^{\beta} \]
+\[ b*{x,y}^{i} = a*{x,y}^{i} / \left( k + \alpha \sum*{j=max(0,i-n/2)}^{min(N-1, i+n/2)}(a*{x,y}^{j})^2 \right)^{\beta} \]
 
 여기서:
 
@@ -303,7 +306,7 @@ AlexNet의 가중치에 대한 업데이트 규칙은 다음과 같이 설명할
 
 이 표는 아래와 같이 만들 수 있습니다.
 
-```markdown
+
 ![image](/assets/img/2024-05-27-TheMathBehindDeepCNNAlexNet_10.png)
 
 여기에서:
@@ -316,7 +319,7 @@ AlexNet의 가중치에 대한 업데이트 규칙은 다음과 같이 설명할
 - w는 가중치 자체를 나타냅니다.
 
 이러한 설정은 네트워크가 효율적으로 학습하고 보도 및 보지 않은 데이터에 대해 견고한 성능을 달성하도록 도와줍니다. 이는 학습 속도와 정확도를 최적화하고 일반화 능력을 유지하는데 도움이 됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -351,11 +354,11 @@ def initialize_weights(layer_shapes):
             std_dev = np.sqrt(2. / fan_in)  # ReLU를 유지하는 것이 권장되는 분산
         else:
             raise ValueError("잘못된 레이어 형태입니다: 4D(conv) 또는 2D(fc)여야 합니다")
-        
+
         # 가우시안 초기화
         weight = np.random.normal(loc=0, scale=std_dev, size=shape)
         weights.append(weight)
-    
+
     return weights
 
 # 예시 사용법:
@@ -488,20 +491,20 @@ class AlexNet(nn.Module):
 
 ```js
 self.features = nn.Sequential(
-        nn.Conv2d(3, 64, kernel_size=11, stride=4, padding=2),
-        nn.ReLU(inplace=True),
-        nn.MaxPool2d(kernel_size=3, stride=2),
-        nn.Conv2d(64, 192, kernel_size=5, padding=2),
-        nn.ReLU(inplace=True),
-        nn.MaxPool2d(kernel_size=3, stride=2),
-        nn.Conv2d(192, 384, kernel_size=3, padding=1),
-        nn.ReLU(inplace=True),
-        nn.Conv2d(384, 256, kernel_size=3, padding=1),
-        nn.ReLU(inplace=True),
-        nn.Conv2d(256, 256, kernel_size=3, padding=1),
-        nn.ReLU(inplace=True),
-        nn.MaxPool2d(kernel_size=3, stride=2),
-    )
+  nn.Conv2d(3, 64, (kernel_size = 11), (stride = 4), (padding = 2)),
+  nn.ReLU((inplace = True)),
+  nn.MaxPool2d((kernel_size = 3), (stride = 2)),
+  nn.Conv2d(64, 192, (kernel_size = 5), (padding = 2)),
+  nn.ReLU((inplace = True)),
+  nn.MaxPool2d((kernel_size = 3), (stride = 2)),
+  nn.Conv2d(192, 384, (kernel_size = 3), (padding = 1)),
+  nn.ReLU((inplace = True)),
+  nn.Conv2d(384, 256, (kernel_size = 3), (padding = 1)),
+  nn.ReLU((inplace = True)),
+  nn.Conv2d(256, 256, (kernel_size = 3), (padding = 1)),
+  nn.ReLU((inplace = True)),
+  nn.MaxPool2d((kernel_size = 3), (stride = 2))
+);
 ```
 
 여기에 AlexNet의 합성곱 레이어가 정의됩니다. nn.Sequential 컨테이너는 레이어 시퀀스를 감싸고, 데이터는 추가된 순서대로 이러한 레이어를 통과합니다.
@@ -509,13 +512,13 @@ self.features = nn.Sequential(
 <div class="content-ad"></div>
 
 ```js
-nn.Conv2d(3, 64, kernel_size=11, stride=4, padding=2)
+nn.Conv2d(3, 64, (kernel_size = 11), (stride = 4), (padding = 2));
 ```
 
 첫 번째 레이어는 2D 합성곱 레이어(nn.Conv2d)로, 입력 채널은 3개(RGB 이미지)이고, 출력 채널은 64개(특성 맵)이며, 커널 크기는 11x11, 스트라이드는 4이고, 양쪽에 2씩 패딩이 적용됩니다. 이 레이어는 입력 이미지를 처리하고 특성 추출을 시작합니다.
 
 ```js
-nn.ReLU(inplace=True)
+nn.ReLU((inplace = True));
 ```
 
 그런 다음 ReLU 활성화 함수를 통과합니다. 이는 비선형성을 도입하여 모델이 복잡한 패턴을 학습하도록 합니다. inplace=True 매개변수는 입력을 직접 수정하여 메모리를 절약하는 데 도움이 됩니다.
@@ -523,7 +526,7 @@ nn.ReLU(inplace=True)
 <div class="content-ad"></div>
 
 ```js
-nn.MaxPool2d(kernel_size=3, stride=2)
+nn.MaxPool2d((kernel_size = 3), (stride = 2));
 ```
 
 맥스 풀링 레이어는 입력 특성 맵의 공간 차원을 줄여주어 모델이 입력 이미지의 특징의 위치에 더 견고해지도록 합니다. 이 레이어는 3x3 크기의 창과 2의 보폭을 사용합니다.
@@ -531,7 +534,8 @@ nn.MaxPool2d(kernel_size=3, stride=2)
 추가의 nn.Conv2d와 nn.MaxPool2d 레이어가 뒤따르며 특성 표현을 더욱 정제하고 간결하게 만듭니다. 각각의 합성곱 레이어는 일반적으로 풀링을 통해 특성 맵의 차원을 줄이면서 특성 맵의 수를 증가시키는데, 이는 공간적인 입력으로부터 점진적으로 더 많은 의미 정보를 포함하는 특징으로 추상화하는 데 도움이 됩니다.
 
 적응형 풀링 및 분류기
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -543,14 +547,14 @@ avgpool은 특징 맵을 자동으로 6x6의 고정 크기로 풀링하며, 완�
 
 ```js
 self.classifier = nn.Sequential(
-        nn.Dropout(),
-        nn.Linear(256 * 6 * 6, 4096),
-        nn.ReLU(inplace=True),
-        nn.Dropout(),
-        nn.Linear(4096, 4096),
-        nn.ReLU(inplace=True),
-        nn.Linear(4096, num_classes),
-    )
+  nn.Dropout(),
+  nn.Linear(256 * 6 * 6, 4096),
+  nn.ReLU((inplace = True)),
+  nn.Dropout(),
+  nn.Linear(4096, 4096),
+  nn.ReLU((inplace = True)),
+  nn.Linear(4096, num_classes)
+);
 ```
 
 classifier라는 또 다른 순차적 컨테이너를 정의했습니다. 이 컨테이너에는 네트워크의 완전 연결 레이어가 포함되어 있습니다. 이 레이어들은 합성곱 레이어에 의해 추출된 추상적인 특징에 기초하여 최종 분류를 수행합니다.
@@ -559,7 +563,7 @@ classifier라는 또 다른 순차적 컨테이너를 정의했습니다. 이 �
 
 nn.Dropout()은 각 forward 호출마다 입력 텐서의 요소 중 일부를 확률이 0.5로 임의로 0으로 만들어 과적합을 방지하는 데 도움이 됩니다.
 
-nn.Linear(256 * 6 * 6, 4096)은 적응형 풀링 레이어의 네트워크망 피처들을 4096 크기의 벡터로 재구성합니다. 학습된 가중치로 각 입력을 모든 출력에 연결합니다.
+nn.Linear(256 _ 6 _ 6, 4096)은 적응형 풀링 레이어의 네트워크망 피처들을 4096 크기의 벡터로 재구성합니다. 학습된 가중치로 각 입력을 모든 출력에 연결합니다.
 
 마지막으로 nn.ReLU 및 nn.Dropout 호출은 학습 경로를 더 정제하여 비선형 활성화 지점과 정규화를 제공합니다. 최종 nn.Linear 레이어는 차원을 4096에서 num_classes로 줄여 각 클래스에 대한 원시 점수를 출력합니다.
 
@@ -584,7 +588,8 @@ def forward(self, x):
 - `x = self.classifier(x)`은 평탄화된 벡터를 분류기를 통해 각 클래스에 대한 예측을 생성합니다.
 
 ## 5.2: 조기 중단(Class)
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -614,7 +619,7 @@ class EarlyStopping:
         Args:
         -----
             val_loss (float): 모델 성능이 개선되었는지 확인하는 검증 손실
-        
+
         Returns:
         --------
             bool: 손실이 개선되지 않았으면 True, 그렇지 않으면 False를 반환
@@ -718,7 +723,7 @@ class Trainer:
     def train(self, train_loader, val_loader, epochs):
         """
         모델을 훈련합니다.
-        
+
         Args:
         -----
             train_loader (torch.utils.data.DataLoader): 훈련 데이터셋을 위한 DataLoader.
@@ -735,7 +740,7 @@ class Trainer:
                 loss = self.criterion(outputs, labels)
                 loss.backward()
                 self.optimizer.step()
-            
+
             self.train_losses.append(loss.item())
 
             val_loss = self.evaluate(val_loader)
@@ -773,7 +778,7 @@ class Trainer:
                 total_loss += loss.item()
 
         return total_loss / len(test_loader)
-    
+
     def accuracy(self, test_loader):
         """
         테스트 데이터셋에서 모델의 정확도를 계산합니다.
@@ -833,7 +838,7 @@ def __init__(self, model, criterion, optimizer, device, patience=7):
 
 <div class="content-ad"></div>
 
-Trainer 클래스는 인공 신경망 모델, 손실 함수, 옵티마이저 및 모델이 실행될 장치(CPU 또는 GPU)로 초기화됩니다. 이 설정을 통해 모든 모델 연산이 적절한 하드웨어로 전달되도록 보장됩니다. 
+Trainer 클래스는 인공 신경망 모델, 손실 함수, 옵티마이저 및 모델이 실행될 장치(CPU 또는 GPU)로 초기화됩니다. 이 설정을 통해 모든 모델 연산이 적절한 하드웨어로 전달되도록 보장됩니다.
 
 또한 조기 종료 및 학습률 감소 전략을 구성합니다:
 
@@ -858,7 +863,7 @@ def train(self, train_loader, val_loader, epochs):
             loss = self.criterion(outputs, labels)
             loss.backward()
             self.optimizer.step()
-        
+
         self.train_losses.append(loss.item())
 
         val_loss = self.evaluate(val_loader)
@@ -966,13 +971,11 @@ transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))은 이미지 텐서를 �
 데이터셋 로딩
 
 ```js
-trainset = torchvision.datasets.CIFAR10(root='./data', train=True,
-                                        download=True, transform=transform)
+trainset = torchvision.datasets.CIFAR10((root = "./data"), (train = True), (download = True), (transform = transform));
 
-testset = torchvision.datasets.CIFAR10(root='./data', train=False,
-                                       download=True, transform=transform)
+testset = torchvision.datasets.CIFAR10((root = "./data"), (train = False), (download = True), (transform = transform));
 
-classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+classes = ("plane", "car", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck");
 ```
 
 <div class="content-ad"></div>
@@ -1071,8 +1074,8 @@ SGD (확률적 경사 하강법) 옵티마이저는 모델의 매개변수, 학�
 모델은 지정된 epoch 수 동안 훈련되며 데이터를 배치로 처리하고 손실을 계산하며 역전파를 수행하고 검증 손실을 기반으로 조기 중지를 적용합니다:
 
 ```js
-trainer = Trainer(model, criterion, optimizer, device, patience=7)
-trainer.train(train_loader, val_loader, epochs=50)
+trainer = Trainer(model, criterion, optimizer, device, (patience = 7));
+trainer.train(train_loader, val_loader, (epochs = 50));
 ```
 
 <div class="content-ad"></div>
@@ -1095,7 +1098,7 @@ print(f'Test Accuracy: {accuracy:.2}')
 <div class="content-ad"></div>
 
 ```js
-trainer.plot_losses(window_size=3)
+trainer.plot_losses((window_size = 3));
 ```
 
 이 코드는 plot_losses 메소드를 호출하여 훈련 및 검증 손실을 시각화합니다. 손실 값은 윈도우에 스무싱되어 있습니다 (이 경우 3개의 데이터 포인트로) 노이즈 없이 트렌드를 더 잘 시각화하기 위해. 이 코드를 실행하면 다음과 같은 손실을 기대할 수 있습니다:

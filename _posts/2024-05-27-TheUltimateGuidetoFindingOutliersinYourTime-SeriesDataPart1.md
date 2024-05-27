@@ -3,7 +3,7 @@ title: "시계열 데이터에서 이상치를 찾는 궁극의 안내서 파트
 description: ""
 coverImage: "/assets/img/2024-05-27-TheUltimateGuidetoFindingOutliersinYourTime-SeriesDataPart1_0.png"
 date: 2024-05-27 14:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TheUltimateGuidetoFindingOutliersinYourTime-SeriesDataPart1_0.png
 tag: Tech
 originalTitle: "The Ultimate Guide to Finding Outliers in Your Time-Series Data (Part 1)"
@@ -11,7 +11,6 @@ link: "https://medium.com/towards-data-science/the-ultimate-guide-to-finding-out
 ---
 
 
-```markdown
 ![Outliers](/assets/img/2024-05-27-TheUltimateGuidetoFindingOutliersinYourTime-SeriesDataPart1_0.png)
 
 이상치: 통계 모델을 왜곡하고 예측을 왜곡시키며 의사 결정 프로세스를 약화시키는 문제가 되는 데이터 포인트들입니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/towards-data-science/the-ultimate-guide-to-finding-out
 그들이 데이터 분석에서 특별히 좋아지지 않는 것은 놀라운 일이 아닙니다.
 
 제 이름은 Sara이며, 물리학 석사 학위를 가지고 있습니다. 현재는 글로벌 에너지 회사에서 데이터 과학자로 일하고 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -95,7 +94,7 @@ Part II (다음):
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![The Ultimate Guide to Finding Outliers in Your Time-Series Data Part 1](/assets/img/2024-05-27-TheUltimateGuidetoFindingOutliersinYourTime-SeriesDataPart1_1.png)
 
 시계열 데이터의 이상 탐지 방법을 선택하기 위해서는 데이터셋과 예상되는 이상과 깊이 이해가 필요합니다.
@@ -103,7 +102,7 @@ Part II (다음):
 그렇다면, 데이터셋의 크기와 사용 가능한 계산 리소스를 고려해보세요.
 
 해석 가능성이 중요한 데이터셋의 경우 Z-Score와 이동 평균과 같은 간단한 방법이 이상적일 수 있습니다. 그러나 섬세한 패턴을 감지해야 하는 복잡한 시나리오와 같은 경우에는 LSTM 네트워크와 같은 고급 기법이 유용할 수 있습니다(이에 대한 자세한 내용은 이 시리즈의 두 번째 부분에서 다룰 예정이며, 상당한 데이터와 계산 능력이 필요합니다).
-```
+
 
 <div class="content-ad"></div>
 
@@ -180,28 +179,28 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 def plot_temporal_trends(df, columns):
- 
+
     num_plots = len(columns)
     fig, axes = plt.subplots(num_plots, 1, figsize=(10, num_plots * 3), sharex=False)  # sharex=False로 x축을 공유하지 않음
     fig.suptitle(f'시간 트렌드', fontsize=16, y=1.02 + 0.01 * num_plots)
-    
+
     if num_plots == 1:  # axes가 반복 가능한지 확인
         axes = [axes]
-    
+
     for ax, col in zip(axes, columns):
         ax.plot(df.index, df[col], marker='o', markersize=4, linestyle='-', label=col)
         ax.set_title(f'{col} - {title}')
         ax.set_ylabel('값')
-        
+
         # 각 subplot의 x축에 대한 날짜 포매터 설정
         ax.xaxis.set_major_locator(mdates.YearLocator(base=2))
         ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
-        
+
         # 틱 라벨을 더 잘 보이도록 회전 및 정렬
         ax.tick_params(axis='x', rotation=45)
-        
+
         ax.legend()
-    
+
     plt.tight_layout(rect=[0, 0, 1, 0.97])  # 제목을 위한 공간을 만들기 위해 레이아웃 조정
     plt.show()
 
@@ -273,7 +272,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-27-TheUltimateGuidetoFindingOutliersinYourTime-SeriesDataPart1_7.png" />
 
 # 통계적 방법
@@ -281,7 +280,7 @@ plt.show()
 ## STL 분해
 
 시계열 데이터는 추세, 계절성 및 잔류로 분할될 수 있다는 것을 이미 알고 계시다시피,
-```
+
 
 <div class="content-ad"></div>
 
@@ -356,9 +355,9 @@ Z-점수와 수정된 Z-점수 방법
 
 Z-점수는 표준 점수로도 알려져 있으며, 데이터 포인트가 데이터 집합의 평균으로부터 몇 표준 편차 떨어져 있는지를 측정합니다. 이는 아래 공식을 사용하여 계산됩니다:
 
-```
+
 Z = (X - μ) / σ
-```
+
 
 - X는 개별 데이터 포인트를 나타냅니다.
 - μ는 데이터 집합의 평균을 나타냅니다.
@@ -401,7 +400,7 @@ def count_outliers_by_z_threshold(series, z_thresholds=[1, 2, 3]):
     mean = series.mean()
     std = series.std()
     z_scores = np.abs((series - mean) / std)
-    
+
     # 각 Z-점수 임계값에 대한 이상치 개수 계산
     counts = {}
     for z_thresh in z_thresholds:
@@ -441,7 +440,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-TheUltimateGuidetoFindingOutliersinYourTime-SeriesDataPart1_11.png)
 
 시계열 데이터를 다루고 있기 때문에 연도별 이상치 분포를 시각화하는 것이 유용할 수 있습니다:
@@ -472,7 +471,8 @@ plt.show()
 ```
 
 ![image](/assets/img/2024-05-27-TheUltimateGuidetoFindingOutliersinYourTime-SeriesDataPart1_12.png)
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -532,7 +532,8 @@ plt.show()
 ## 통계 및 시각적 방법 통합
 
 Z-점수 방법(임계값 3)으로 감지된 이상값을 시계열 도표로 시각화합시다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -545,31 +546,31 @@ def plot_outliers(df, outliers_dict):
         num_plots = len(columns_outliers)
         if num_plots == 0:
             continue  # 이 stage에 이상치가 없으면 건너뜁니다.
-        
+
         #서브플롯 만들기
         fig, axes = plt.subplots(nrows=num_plots, figsize=(15, num_plots * 5), sharex=True)
         fig.suptitle(f'{stage} Stage의 이상치 시각화', fontsize=16)
-        
+
         if num_plots == 1:  # 플롯이 하나뿐이면 iterable로 만들기
             axes = [axes]
-        
+
         for ax, (column, outliers) in zip(axes, columns_outliers.items()):
             #전체 데이터 시리즈 플롯
             ax.plot(df.index, df[column], label=f'{column} (전체 시리즈)', color='black', linestyle='-', marker='', alpha=0.5)
-            
+
             #이상치 강조
             if not outliers.empty:
                 ax.scatter(outliers.index, outliers, color='red', label='이상치', marker='o', s=50)
-            
+
             ax.set_title(f'{column}의 이상치')
             ax.set_ylabel('값')
             ax.legend()
-            
+
             #x축 주요 로케이터와 포매터 설정
             ax.xaxis.set_major_locator(mdates.YearLocator())
             ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
             plt.setp(ax.xaxis.get_majorticklabels(), rotation=45, ha='right')
-        
+
         plt.tight_layout(rect=[0, 0, 1, 0.96])  # 레이아웃 조정
         plt.show()
 ```
@@ -609,8 +610,6 @@ print(outliers_grubbs)
 ```
 
 # 평가 메트릭
-
-
 
 <div class="content-ad"></div>
 

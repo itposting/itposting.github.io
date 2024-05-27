@@ -3,13 +3,12 @@ title: "언급되지 않은 수퍼 비밀 프롬프트 도구 지금은 아무�
 description: ""
 coverImage: "/assets/img/2024-05-27-SuperSecretPromptingToolNoOneTalksAboutJustYet_0.png"
 date: 2024-05-27 14:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-SuperSecretPromptingToolNoOneTalksAboutJustYet_0.png
 tag: Tech
 originalTitle: "Super Secret Prompting Tool No One Talks About (Just Yet)"
 link: "https://medium.com/generative-ai/super-secret-prompting-tool-no-one-talks-about-just-yet-a2a7d39f4c47"
 ---
-
 
 ![이미지](/assets/img/2024-05-27-SuperSecretPromptingToolNoOneTalksAboutJustYet_0.png)
 
@@ -41,7 +40,7 @@ Anthropic 웹사이트에 가서 가입하세요. 쉽고 무료입니다! 로그
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-SuperSecretPromptingToolNoOneTalksAboutJustYet_1.png)
 
 ## 2/ Describe What You Want
@@ -49,7 +48,7 @@ Anthropic 웹사이트에 가서 가입하세요. 쉽고 무료입니다! 로그
 Now, think about what you need from AI.
 
 Are you making a playlist? Finding recipes? Whatever it is, describe it clearly.
-```
+
 
 <div class="content-ad"></div>
 
@@ -125,6 +124,6 @@ Are you making a playlist? Finding recipes? Whatever it is, describe it clearly.
 
 <div class="content-ad"></div>
 
-최신 뉴스 및 생성 AI에 대한 최신 정보를 받아보려면 뉴스레터를 구독하세요. 함께 AI의 미래를 만들어 봅시다!  
+최신 뉴스 및 생성 AI에 대한 최신 정보를 받아보려면 뉴스레터를 구독하세요. 함께 AI의 미래를 만들어 봅시다!
 
 ![Image](/assets/img/2024-05-27-SuperSecretPromptingToolNoOneTalksAboutJustYet_7.png)

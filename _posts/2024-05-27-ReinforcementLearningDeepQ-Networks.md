@@ -3,13 +3,12 @@ title: "강화 학습 딥 Q-네트워크"
 description: ""
 coverImage: "/assets/img/2024-05-27-ReinforcementLearningDeepQ-Networks_0.png"
 date: 2024-05-27 14:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ReinforcementLearningDeepQ-Networks_0.png
 tag: Tech
 originalTitle: "Reinforcement Learning: Deep Q-Networks"
 link: "https://medium.com/towards-data-science/reinforcement-learning-from-scratch-deep-q-networks-0a8d33ce165b"
 ---
-
 
 ## Python을 사용하여 달에 착륙하는 셔틀 가르치기: Deep Q-Networks를 활용한 강화 학습의 수학적 탐구
 
@@ -38,10 +37,12 @@ link: "https://medium.com/towards-data-science/reinforcement-learning-from-scrat
 <div class="content-ad"></div>
 
 3: Deep Q-Network의 해부학
+
 - 3.1: DQN의 구성요소
 - 3.2: DQN 알고리즘
 
 4: 처음부터 Deep Q-Network 구현하기
+
 - 4.1: 환경 설정
 - 4.2: 딥 신경망 구축
 - 4.3: 경험 재생 구현
@@ -57,7 +58,7 @@ link: "https://medium.com/towards-data-science/reinforcement-learning-from-scrat
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Reinforcement Learning Deep Q Networks](/assets/img/2024-05-27-ReinforcementLearningDeepQ-Networks_1.png)
 
 Q-러닝은 환경에서 누적 보상을 극대화하기 위한 최적 조치를 학습하는 에이전트를 안내합니다. 딥 Q-네트워크에 집중하기 전에, 그 선구자인 Q-러닝 뒤에 있는 메커니즘을 간단히 검토하는 것이 좋습니다.
@@ -65,7 +66,7 @@ Q-러닝은 환경에서 누적 보상을 극대화하기 위한 최적 조치�
 ## 1.1: 상태 및 조치
 
 미로를 탐색하는 로봇이라고 상상해보세요. 미로에서 차지하는 각 위치를 "상태"라고 합니다. 왼쪽, 오른쪽, 위 또는 아래로 이동하는 것과 같은 각각의 움직임을 "조치"라고 합니다. 목표는 결국 미로를 통해 최적 경로를 찾으려면 각 상태에서 어떤 조치를 취할지 결정하는 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -191,9 +192,11 @@ Output Layer: 이는 에이전트의 "의사 결정" 부분과 같습니다. 입
 이러한 구성 요소가 준비되면 DQN 알고리즘은 다음과 같은 몇 가지 중요한 단계로 개요를 제시할 수 있습니다:
 
 ### 3.2.1: 순방향 전파
+
 먼저, 우리는 Q-values를 예측하는 데 중요한 순방향 전파로 시작합니다. 이러한 Q-values는 특정 상태에서 특정 행동을 취했을 때 기대되는 미래 보상을 저장합니다. 이 프로세스는 상태 입력부터 시작됩니다.
 
 #### 상태 입력
+
 에이전트는 환경에서 현재 상태 s를 관찰합니다. 이 상태는 에이전트의 현재 상황을 설명하는 특징 벡터로 표현됩니다. 상태를 에이전트 주변 세계의 스냅숏으로 생각해보세요. 눈이 주변을 둘러보는 것처럼 시각 장면을 촬영할 때와 유사합니다. 이 스냅숏에는 에이전트가 결정을 내리기 위해 필요한 모든 세부 정보가 포함되어 있습니다.
 
 <div class="content-ad"></div>
@@ -231,7 +234,7 @@ Q-Value Prediction
 <div class="content-ad"></div>
 
 타겟 Q-값 계산
-미니 배치의 각 경험에 대해, 에이전트는 타겟 Q-값 y_를 계산합니다. 만약 다음 상태 s′가 종료 상태(즉, done이 true인 경우)라면, 타겟 Q-값은 간단히 보상 r입니다. 그렇지 않으면, 타겟 Q-값은 보상에 다음 상태 s′에서 타겟 네트워크 Qtarget에 의해 예측된 할인된 최대 Q-값을 더한 값입니다:
+미니 배치의 각 경험에 대해, 에이전트는 타겟 Q-값 y\_를 계산합니다. 만약 다음 상태 s′가 종료 상태(즉, done이 true인 경우)라면, 타겟 Q-값은 간단히 보상 r입니다. 그렇지 않으면, 타겟 Q-값은 보상에 다음 상태 s′에서 타겟 네트워크 Qtarget에 의해 예측된 할인된 최대 Q-값을 더한 값입니다:
 
 ![image](/assets/img/2024-05-27-ReinforcementLearningDeepQ-Networks_7.png)
 
@@ -242,7 +245,7 @@ Q-Value Prediction
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-ReinforcementLearningDeepQ-Networks_8.png)
 
 손실을 계산하는 것은 예측이 실제 결과와 얼마나 차이가 나는지를 평가하는 것과 같습니다. 실제 결과와 비교하여 추측의 정확성을 확인하고 차이점을 주목하는 것과 같습니다.
@@ -251,7 +254,7 @@ Q-Value Prediction
 마지막으로, 이 손실을 최소화하기 위해 역전파를 수행합니다. 계산된 손실은 네트워크를 통해 역전파되어 SGD(Stochastic Gradient Descent) 또는 Adam과 같은 최적화 알고리즘을 사용하여 가중치를 업데이트합니다. 이 프로세스는 손실을 최소화하기 위해 네트워크 매개변수 θ를 조정합니다:
 
 ![image](/assets/img/2024-05-27-ReinforcementLearningDeepQ-Networks_9.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -290,9 +293,9 @@ import optuna
 여기서 필요한 라이브러리들을 import 합니다. gym은 환경을 위해 사용되며, torch는 우리의 신경망을 구축하고 훈련하는 데 사용되며, collections, random, 및 optuna는 경험 재생과 하이퍼파라미터 최적화에 도움이 됩니다.
 
 ```js
-env = gym.make('LunarLander-v2', render_mode="rgb_array")
-state_dim = env.observation_space.shape[0]
-action_dim = env.action_space.n
+env = gym.make("LunarLander-v2", (render_mode = "rgb_array"));
+state_dim = env.observation_space.shape[0];
+action_dim = env.action_space.n;
 ```
 
 우리는 LunarLander 환경을 초기화하고 상태 및 액션 공간의 차원을 가져옵니다. state_dim은 상태의 특징 수를 나타내고, action_dim은 가능한 액션 수를 나타냅니다.```
@@ -334,7 +337,7 @@ class DQN(nn.Module):
 
 우리는 DQN이라는 클래스를 정의했습니다. 이 클래스는 PyTorch의 모든 신경망 모듈에 사용되는 기본 클래스인 nn.Module을 상속받습니다. 이를 통해 우리는 PyTorch의 내장 함수와 기능을 활용할 수 있습니다.
 
-__init__ 메서드는 객체의 속성을 초기화하는 특별한 메서드입니다. 우리의 경우에는 신경망의 레이어를 설정하게 됩니다. 완전 연결층 (Fully Connected Layers):
+**init** 메서드는 객체의 속성을 초기화하는 특별한 메서드입니다. 우리의 경우에는 신경망의 레이어를 설정하게 됩니다. 완전 연결층 (Fully Connected Layers):
 
 <div class="content-ad"></div>
 
@@ -365,7 +368,7 @@ def forward(self, x):
 <div class="content-ad"></div>
 
 ```js
-x = torch.relu(self.fc1(x))
+x = torch.relu(self.fc1(x));
 ```
 
 ReLU(Recified Linear Unit) 활성화 함수는 다음과 같이 정의됩니다:
@@ -379,13 +382,13 @@ ReLU(Recified Linear Unit) 활성화 함수는 다음과 같이 정의됩니다:
 두 번째 레이어에서는 첫 번째 레이어의 출력이 두 번째 완전 연결 레이어 (self.fc2)를 통과하고 다시 ReLU 활성화 함수를 사용하여 변환됩니다:
 
 ```js
-x = torch.relu(self.fc2(x))
+x = torch.relu(self.fc2(x));
 ```
 
 마지막으로 출력 레이어에서는 두 번째 레이어의 출력이 활성화 함수 없이 세 번째 완전 연결 레이어 (self.fc3)를 통해 전달됩니다:
 
 ```js
-return self.fc3(x)
+return self.fc3(x);
 ```
 
 <div class="content-ad"></div>
@@ -422,7 +425,7 @@ class ReplayBuffer:
         self.buffer = deque(maxlen=capacity)
 ```
 
-__init__ 메서드는 고정된 용량을 갖는 deque(덱, 이중 연결 리스트)를 초기화합니다. 덱은 양쪽 끝에서 효율적으로 항목을 추가하고 제거할 수 있는 자료 구조입니다. 빠른 양쪽 끝에서의 추가와 제거가 필요한 큐(queue)나 스택(stack)을 구현할 때 유용합니다.
+**init** 메서드는 고정된 용량을 갖는 deque(덱, 이중 연결 리스트)를 초기화합니다. 덱은 양쪽 끝에서 효율적으로 항목을 추가하고 제거할 수 있는 자료 구조입니다. 빠른 양쪽 끝에서의 추가와 제거가 필요한 큐(queue)나 스택(stack)을 구현할 때 유용합니다.
 
 self.buffer = deque(maxlen=capacity)는 capacity만큼의 경험을 저장할 수 있는 deque를 생성합니다. 버퍼가 가득 차면 새로운 경험을 추가하면 가장 오래된 경험이 자동으로 제거됩니다.
 
@@ -459,7 +462,7 @@ random.sample(self.buffer, batch_size)는 버퍼에서 batch_size개의 경험�
 
 <div class="content-ad"></div>
 
-"zip(*random.sample(self.buffer, batch_size))"은 경험 목록을 상태, 행동, 보상, 다음 상태 및 완료에 대한 별도의 튜플로 풀어낼 수 있습니다.
+"zip(\*random.sample(self.buffer, batch_size))"은 경험 목록을 상태, 행동, 보상, 다음 상태 및 완료에 대한 별도의 튜플로 풀어낼 수 있습니다.
 
 이 메서드는 샘플된 경험들로 이러한 튜플을 반환합니다.
 
@@ -472,7 +475,7 @@ def __len__(self):
 
 <div class="content-ad"></div>
 
-__len__ 메서드는 버퍼에 저장된 현재 경험 수를 반환합니다.
+**len** 메서드는 버퍼에 저장된 현재 경험 수를 반환합니다.
 
 ## 4.4: 타겟 네트워크 구현
 
@@ -501,7 +504,7 @@ class DQNTrainer:
 
 <div class="content-ad"></div>
 
-__init__ 메서드는 학습에 필요한 다양한 구성 요소를 초기화합니다:
+**init** 메서드는 학습에 필요한 다양한 구성 요소를 초기화합니다:
 
 - env: 에이전트가 작동하는 환경입니다.
 - main_network: 훈련 중인 주요 신경망입니다.
@@ -514,7 +517,7 @@ __init__ 메서드는 학습에 필요한 다양한 구성 요소를 초기화�
 - target_update_frequency: 대상 네트워크의 가중치를 주요 네트워크의 가중치에 맞게 업데이트하는 빈도입니다.
 - step_count: 훈련 중에 취한 단계 수를 추적하는 카운터입니다.
 
-4.4.2: 모델 로딩
+  4.4.2: 모델 로딩
 
 ```js
 # 모델이 있으면 로드
@@ -586,7 +589,7 @@ train 메서드는 지정된 에피소드 수에 대해 훈련 루프를 실행�
 우선 total_rewards를 빈 리스트로 초기화해 봅시다:
 
 ```js
-total_rewards = []
+total_rewards = [];
 ```
 
 이제 훈련 루프를 만들어 봅시다:
@@ -603,9 +606,9 @@ for episode in range(num_episodes):
 각 에피소드의 시작 시점에는 환경이 초기 상태로 재설정됩니다.
 
 ```js
-state, _ = self.env.reset()
-done = False
-total_reward = 0
+state, (_ = self.env.reset());
+done = False;
+total_reward = 0;
 ```
 
 - self.env.reset()은 환경을 초기화하고 초기 상태를 반환합니다.
@@ -615,6 +618,7 @@ total_reward = 0
 <div class="content-ad"></div>
 
 ### 4.4.3: Action Selection
+
 에이전트는 현재 상태를 기반으로 메인 네트워크를 사용하여 작업을 선택합니다.
 
 ```python
@@ -631,10 +635,10 @@ self.main_network(...).argmax(dim=1).item()는 메인 네트워크가 예측한 
 에이전트가 선택한 동작을 수행하고 보상 및 다음 상태를 관찰한 후, 해당 경험을 재생 버퍼에 저장합니다.
 
 ```js
-next_state, reward, done, _, _ = self.env.step(action)
-self.replay_buffer.push(state, action, reward, next_state, done)
-state = next_state
-total_reward += reward
+next_state, reward, done, _, (_ = self.env.step(action));
+self.replay_buffer.push(state, action, reward, next_state, done);
+state = next_state;
+total_reward += reward;
 ```
 
 - self.env.step(action)은 동작을 실행하고 다음 상태, 보상 및 에피소드 완료 여부를 반환합니다.
@@ -642,8 +646,8 @@ total_reward += reward
 - state = next_state는 현재 상태를 다음 상태로 업데이트합니다.
 - total_reward += reward은 현재 에피소드의 보상을 누적합니다.
 
-4.5.5: 네트워크 업데이트
-재생 버퍼에 충분한 경험이 있을 경우, 네트워크가 업데이트됩니다.
+  4.5.5: 네트워크 업데이트
+  재생 버퍼에 충분한 경험이 있을 경우, 네트워크가 업데이트됩니다.
 
 <div class="content-ad"></div>
 
@@ -691,8 +695,8 @@ torch.save(self.main_network.state_dict(), self.model_path)는 메인 네트워�
 <div class="content-ad"></div>
 
 ```js
-self.env.close()
-return sum(total_rewards) / len(total_rewards)
+self.env.close();
+return sum(total_rewards) / len(total_rewards);
 ```
 
 self.env.close()는 환경을 닫습니다.
@@ -733,9 +737,9 @@ class Optimizer:
             print("디스크에서 매개변수를 불러왔습니다")
         elif not FINETUNE:
             best_params = {
-                'lr': LEARNING_RATE, 
-                'gamma': GAMMA, 
-                'batch_size': BATCH_SIZE, 
+                'lr': LEARNING_RATE,
+                'gamma': GAMMA,
+                'batch_size': BATCH_SIZE,
                 'target_update_frequency': TARGET_UPDATE_FREQUENCY
                 }
             print(f"기본 매개변수 사용 중: {best_params}")
@@ -768,7 +772,7 @@ class Optimizer:
 
 <div class="content-ad"></div>
 
-__init__ 메서드는 최적화에 필요한 다양한 구성 요소를 초기화합니다:
+**init** 메서드는 최적화에 필요한 다양한 구성 요소를 초기화합니다:
 
 - env: 에이전트가 작동하는 환경.
 - main_network: 주요 신경망.
@@ -777,7 +781,7 @@ __init__ 메서드는 최적화에 필요한 다양한 구성 요소를 초기�
 - model_path: 훈련된 모델을 저장하거나 불러오는 경로.
 - params_path: 최적의 하이퍼파라미터를 저장하거나 불러오는 경로.
 
-4.6.2: 목적 메서드
+  4.6.2: 목적 메서드
 
 ```js
 def objective(self, trial, n_episodes=10):
@@ -802,7 +806,7 @@ def objective(self, trial, n_episodes=10):
 - target_update_frequency = trial.suggest_categorical(`target_update_frequency`, [500, 1000, 2000]): 지정된 목록에서 대상 업데이트 빈도를 제안합니다.
 
 ```js
-optimizer = optim.Adam(self.main_network.parameters(), lr=lr)
+optimizer = optim.Adam(self.main_network.parameters(), (lr = lr));
 ```
 
 여기서는 주어진 학습률로 Adam 옵티마이저를 설정합니다. Adam은 주로 신경망 훈련에 사용되는 최적화 알고리즘인 Adaptive Moment Estimation의 약자입니다.
@@ -816,16 +820,25 @@ optimizer = optim.Adam(self.main_network.parameters(), lr=lr)
 다음은 Adam에 대한 보다 포괄적인 기사입니다:
 
 ```js
-trainer = DQNTrainer(self.env, self.main_network, self.target_network, optimizer, self.replay_buffer, self.model_path, gamma=gamma, batch_size=batch_size, target_update_frequency=target_update_frequency)
+trainer = DQNTrainer(
+  self.env,
+  self.main_network,
+  self.target_network,
+  optimizer,
+  self.replay_buffer,
+  self.model_path,
+  (gamma = gamma),
+  (batch_size = batch_size),
+  (target_update_frequency = target_update_frequency)
+);
 ```
-
 
 <div class="content-ad"></div>
 
 이 코드는 제안된 하이퍼파라미터로 theDQNTrainer 인스턴스를 초기화합니다.
 
 ```js
-reward = trainer.train(n_episodes, save=False)
+reward = trainer.train(n_episodes, (save = False));
 ```
 
 마지막으로, 이 코드는 지정된 에피소드 수로 모델을 학습하고 평균 보상을 반환합니다.
@@ -843,9 +856,9 @@ def optimize(self, n_trials=100, save_params=True):
         print("디스크에서 매개변수를 불러왔습니다.")
     elif not FINETUNE:
         best_params = {
-            'lr': LEARNING_RATE, 
-            'gamma': GAMMA, 
-            'batch_size': BATCH_SIZE, 
+            'lr': LEARNING_RATE,
+            'gamma': GAMMA,
+            'batch_size': BATCH_SIZE,
             'target_update_frequency': TARGET_UPDATE_FREQUENCY
         }
         print(f"기본 매개변수를 사용합니다: {best_params}")
@@ -951,12 +964,12 @@ FINETUNE = False는 모델을 fine-tune할지 여부를 나타냅니다. True로
 4.7.2: 네트워크 및 재생 버퍼 초기화
 
 ```js
-main_network = DQN(state_dim, action_dim)
-target_network = DQN(state_dim, action_dim)
-target_network.load_state_dict(main_network.state_dict())
-target_network.eval()
+main_network = DQN(state_dim, action_dim);
+target_network = DQN(state_dim, action_dim);
+target_network.load_state_dict(main_network.state_dict());
+target_network.eval();
 
-replay_buffer = ReplayBuffer(10000)
+replay_buffer = ReplayBuffer(10000);
 ```
 
 main_network = DQN(state_dim, action_dim)은 지정된 상태 및 액션 차원으로 메인 네트워크를 초기화합니다.
@@ -965,7 +978,7 @@ target_network = DQN(state_dim, action_dim)은 메인 네트워크와 동일한 
 
 <div class="content-ad"></div>
 
-```markdown
+
 target_network.load_state_dict(main_network.state_dict()) 함수는 메인 네트워크의 가중치를 타겼 네트워크로 복사합니다.
 
 target_network.eval() 함수는 타겟 네트워크를 평가 모드로 설정합니다. 이는 추론 중에 드롭아웃과 배치 정규화와 같은 특정 레이어가 적절하게 동작하도록 합니다.
@@ -973,12 +986,12 @@ target_network.eval() 함수는 타겟 네트워크를 평가 모드로 설정�
 replay_buffer = ReplayBuffer(10000)은 10,000개의 경험을 저장할 수 있는 용량을 가진 리플레이 버퍼를 초기화합니다.
 
 4.7.3: 단계 카운트 설정
-```
+
 
 <div class="content-ad"></div>
 
 ```js
-STEP_COUNT = 0
+STEP_COUNT = 0;
 ```
 
 STEP_COUNT = 0은 훈련 중 취한 단계 수를 추적하는 카운터를 초기화합니다.
@@ -999,7 +1012,7 @@ best_params = optimizer.optimize(n_trials=2, save_params=True)
 - 지정된 횟수(n_trials=2)만큼 최적화를 실행합니다.
 - `save_params`가 True인 경우 최적의 하이퍼파라미터를 디스크에 저장합니다.
 
-4.7.5: PyTorch Optimizer 및 DQN Trainer 생성
+  4.7.5: PyTorch Optimizer 및 DQN Trainer 생성
 
 <div class="content-ad"></div>
 
@@ -1027,7 +1040,7 @@ trainer.train(1000)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1200/1*s4j6V4V-nLfkc18C2Z2-zA.gif)
 
 이것은 주목할 만한 개선입니다. 모델이 아직 NASA에 완성되지는 않았지만, 몇 가지 주요 향상 사항을 관찰할 수 있습니다:
@@ -1037,7 +1050,7 @@ trainer.train(1000)
 - 부적절한 조치의 빈도가 크게 감소했습니다.
 
 지속적인 훈련과 세밀한 조정을 통해, 에이전트의 성능은 더 개선될 것으로 예상되며, 최적의 행동에 더 가까워질 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

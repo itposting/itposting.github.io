@@ -3,13 +3,12 @@ title: "LLM 애플리케이션 구축 LLM 서빙하기 파트 9"
 description: ""
 coverImage: "/assets/img/2024-05-27-BuildingLLMApplicationsServingLLMsPart9_0.png"
 date: 2024-05-27 14:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-BuildingLLMApplicationsServingLLMsPart9_0.png
 tag: Tech
 originalTitle: "Building LLM Applications: Serving LLMs (Part 9)"
 link: "https://medium.com/@vipra_singh/building-llm-applications-serving-llms-part-9-68baa19cef79"
 ---
-
 
 대용량 언어 모델 (LLM)을 검색 보강 생성 (RAG) 애플리케이션을 통해 배워보세요.
 
@@ -95,7 +94,7 @@ LLM 서빙이 무엇을 포함하는지 살펴보겠습니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Building LLM Applications Serving LLMs Part 9 on 27th May 2024](/assets/img/2024-05-27-BuildingLLMApplicationsServingLLMsPart9_0.png)
 
 다양한 LLM 서빙 프레임워크가 있습니다. 각각의 장점에 대해 자세히 논의해봅시다.
@@ -103,7 +102,7 @@ LLM 서빙이 무엇을 포함하는지 살펴보겠습니다:
 # 1. 로컬 LLM 실행
 
 PrivateGPT, llama.cpp, Ollama, GPT4All, llamafile 등 프로젝트의 인기는 로컬에서 LLM을 실행하는 수요를 보여줍니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -154,7 +153,7 @@ PrivateGPT, llama.cpp, Ollama, GPT4All, llamafile 등 프로젝트의 인기는 
 
 <div class="content-ad"></div>
 
-```
+
 ![LLM in memory](/assets/img/2024-05-27-BuildingLLMApplicationsServingLLMsPart9_2.png)
 
 더 낮은 정밀도로 LLM을 저장하기 위해 필요한 메모리를 극적으로 줄일 수 있습니다.
@@ -162,7 +161,7 @@ PrivateGPT, llama.cpp, Ollama, GPT4All, llamafile 등 프로젝트의 인기는 
 또한 GPU 메모리 대역폭 시트의 중요성을 확인할 수 있습니다!
 
 큰 GPU 메모리 대역폭으로 인해 Mac M2 Max는 추론시 M1보다 5~6배 빠릅니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -217,9 +216,9 @@ from transformers import pipeline
 ```js
 # 압축 기법을 사용하지 않고 LLM로드
 pipe = pipeline(
-    "text-generation", 
-    model="HuggingFaceH4/zephyr-7b-beta", 
-    torch_dtype=bfloat16, 
+    "text-generation",
+    model="HuggingFaceH4/zephyr-7b-beta",
+    torch_dtype=bfloat16,
     device_map="auto"
 )
 ```
@@ -239,13 +238,13 @@ messages = [
         "content": "You are a friendly chatbot.",
     },
     {
-        "role": "user", 
+        "role": "user",
         "content": "Tell me a funny joke about Large Language Models."
     },
 ]
 prompt = pipe.tokenizer.apply_chat_template(
-    messages, 
-    tokenize=False, 
+    messages,
+    tokenize=False,
     add_generation_prompt=True
 )
 ```
@@ -259,14 +258,8 @@ prompt = pipe.tokenizer.apply_chat_template(
 다음으로, 우리는 답변을 생성하기 위해 LLM에 프롬프트를 전달할 수 있습니다:
 
 ```js
-outputs = pipe(
-    prompt, 
-    max_new_tokens=256, 
-    do_sample=True, 
-    temperature=0.1, 
-    top_p=0.95
-)
-print(outputs[0]["generated_text"])
+outputs = pipe(prompt, (max_new_tokens = 256), (do_sample = True), (temperature = 0.1), (top_p = 0.95));
+print(outputs[0]["generated_text"]);
 ```
 
 이렇게 하면 다음 출력이 생성됩니다:
@@ -339,7 +332,7 @@ Llama.cpp의 장점:
 
 <div class="content-ad"></div>
 
-```markdown
+
 Llama.cpp 단점:
 
 - 제한된 모델 지원
@@ -348,7 +341,7 @@ Llama.cpp 단점:
 ## 2.4. Llamafile
 
 Llamafile은 Mozilla에서 개발한 LLMs를 실행하는 사용자 친화적인 대체 옵션을 제공합니다. Llamafile은 휴대성과 단일 파일 실행 파일을 생성할 수 있는 능력으로 유명합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -365,11 +358,11 @@ Llamafile의 장점:
 
 <div class="content-ad"></div>
 
-세요. 팀 내 프로젝트를 관리할 때 표 형식을 사용할 수 있는 간단한 방법입니다. 
+세요. 팀 내 프로젝트를 관리할 때 표 형식을 사용할 수 있는 간단한 방법입니다.
 
-| Llamafile 단점 |
-|----------------|
-| - 프로젝트가 여전히 초기 단계에 있음 |
+| Llamafile 단점                                                                   |
+| -------------------------------------------------------------------------------- |
+| - 프로젝트가 여전히 초기 단계에 있음                                             |
 | - 모든 모델이 지원되는 것은 아니며, Llama.cpp에서 지원하는 것만 사용 가능합니다. |
 
 ## 2.5. Ollama
@@ -378,9 +371,9 @@ Ollama는 Llama.cpp 및 Llamafile의 사용자 친화적인 대안입니다. 설
 
 <div class="content-ad"></div>
 
-```markdown
+
 $ ollama run llama2
-```
+
 
 Ollama는 모델을 다운로드하고 대화형 세션을 시작합니다.
 
@@ -389,7 +382,8 @@ Ollama 장점:
 - 쉽게 설치하고 사용할 수 있습니다.
 - Llama 및 vicuña 모델을 실행할 수 있습니다.
 - 속도가 정말 빠릅니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -406,7 +400,8 @@ GPT4ALL은 직관적인 GUI를 갖춘 쉬운 데스크톱 애플리케이션입�
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![Image](/assets/img/2024-05-27-BuildingLLMApplicationsServingLLMsPart9_5.png)
 
 Pros:
@@ -415,7 +410,8 @@ Pros:
 - Supports a range of curated models
 
 Cons:
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -452,8 +448,8 @@ from accelerate import Accelerator
 # 모델을 1GB 크기의 조각들로 나눕니다.
 accelerator = Accelerator()
 accelerator.save_model(
-    model=pipe.model, 
-    save_directory="/content/model", 
+    model=pipe.model,
+    save_directory="/content/model",
     max_shard_size="4GB"
 )
 ```
@@ -521,8 +517,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 # 파이프라인 만들기
 pipe = pipeline(model=model, tokenizer=tokenizer, task='text-generation')
-```  
-
+```
 
 <div class="content-ad"></div>
 
@@ -531,10 +526,10 @@ pipe = pipeline(model=model, tokenizer=tokenizer, task='text-generation')
 ```js
 # 원래 한 것과 동일한 프롬프트를 사용할 것입니다.
 outputs = pipe(
-    prompt, 
-    max_new_tokens=256, 
-    do_sample=True, 
-    temperature=0.7, 
+    prompt,
+    max_new_tokens=256,
+    do_sample=True,
+    temperature=0.7,
     top_p=0.95
 )
 print(outputs[0]["generated_text"])
@@ -721,10 +716,10 @@ from vllm import LLM, SamplingParams
 # LLM 로드하기
 sampling_params = SamplingParams(temperature=0.0, top_p=1.0, max_tokens=256)
 llm = LLM(
-    model="TheBloke/zephyr-7B-beta-AWQ", 
-    quantization='awq', 
-    dtype='half', 
-    gpu_memory_utilization=.95, 
+    model="TheBloke/zephyr-7B-beta-AWQ",
+    quantization='awq',
+    dtype='half',
+    gpu_memory_utilization=.95,
     max_model_len=4096
 )
 ```
@@ -837,22 +832,22 @@ KV 캐싱과 PagedAttention에 대해 더 자세히 알아보려면 이 논문�
 
 실제로 GPU LLM 메모리 요구 사항의 두 가지 주요 원인은 모델 가중치와 KV 캐시입니다.
 
-- 모델 가중치: 메모리는 모델 매개변수에 의해 차지됩니다. 예를 들어, 16비트 정밀도(FP16 또는 BF16)로 로드된 70억 개의 매개변수를 갖는 모델(Llama 27B와 같은 경우)는 대략 7B * sizeof(FP16) ~= 14GB의 메모리를 차지할 것입니다.
+- 모델 가중치: 메모리는 모델 매개변수에 의해 차지됩니다. 예를 들어, 16비트 정밀도(FP16 또는 BF16)로 로드된 70억 개의 매개변수를 갖는 모델(Llama 27B와 같은 경우)는 대략 7B \* sizeof(FP16) ~= 14GB의 메모리를 차지할 것입니다.
 - KV 캐싱: 메모리는 자체 어텐션 텐서의 캐싱으로 차지되어 중복 계산을 피합니다.
 
 배치 처리를 하더라도, 배치의 각 요청의 KV 캐시는 여전히 별도로 할당되어야 하며, 큰 메모리 풋프린트를 가질 수 있습니다. 아래의 공식은 오늘날 가장 일반적인 LLM 아키텍처에 적용 가능한 KV 캐시의 크기를 설명합니다.
 
-토큰 당 KV 캐시 크기(바이트) = 2 * (num_layers) * (num_heads * dim_head) * precision_in_bytes
+토큰 당 KV 캐시 크기(바이트) = 2 _ (num_layers) _ (num*heads * dim*head) * precision_in_bytes
 
 <div class="content-ad"></div>
 
-2의 첫 번째 요인은 K 및 V 행렬을 고려합니다. 일반적으로 (num_heads * dim_head) 값은 transformer의 hidden_size (또는 모델의 차원, d_model)와 동일합니다. 이러한 모델 속성은 일반적으로 모델 카드나 관련 구성 파일에서 찾을 수 있습니다.
+2의 첫 번째 요인은 K 및 V 행렬을 고려합니다. 일반적으로 (num_heads \* dim_head) 값은 transformer의 hidden_size (또는 모델의 차원, d_model)와 동일합니다. 이러한 모델 속성은 일반적으로 모델 카드나 관련 구성 파일에서 찾을 수 있습니다.
 
 이 메모리 크기는 입력 시퀀스의 각 토큰에 대해 필요합니다. 반 정밀도를 가정하면 KV 캐시의 총 크기는 아래 공식에 의해 결정됩니다.
 
-바이트 단위 KV 캐시의 총 크기 = (batch_size) * (sequence_length) * 2 * (num_layers) * (hidden_size) * sizeof(FP16)
+바이트 단위 KV 캐시의 총 크기 = (batch*size) * (sequence*length) * 2 _ (num_layers) _ (hidden_size) \* sizeof(FP16)
 
-예를 들어, 16비트 정밀도에서 Llama 2 7B 모델과 배치 크기가 1일 때, KV 캐시의 크기는 1 * 4096 * 2 * 32 * 4096 * 2 바이트가 됩니다. 이는 약 2GB입니다.
+예를 들어, 16비트 정밀도에서 Llama 2 7B 모델과 배치 크기가 1일 때, KV 캐시의 크기는 1 _ 4096 _ 2 _ 32 _ 4096 \* 2 바이트가 됩니다. 이는 약 2GB입니다.
 
 <div class="content-ad"></div>
 
@@ -886,7 +881,7 @@ KV 캐시를 효율적으로 관리하는 것은 도전적인 일입니다. 배�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Figure 3a](/assets/img/2024-05-27-BuildingLLMApplicationsServingLLMsPart9_13.png)
 
 두 층으로 구성된 MLP의 두방향 텐서 병렬성 예시가 그림 3a에 나와 있습니다. 각 층은 라운드 상자로 표현됩니다. 첫 번째 층에서는 가중치 행렬 A가 A1과 A2로 분할됩니다.
@@ -894,7 +889,7 @@ KV 캐시를 효율적으로 관리하는 것은 도전적인 일입니다. 배�
 계산 XA1과 XA2는 두 개의 다른 장치에서 같은 배치 (f는 항등 연산)의 입력 X에서 독립적으로 실행될 수 있습니다. 이로써 각 장치에 가중치를 저장하는 메모리 요구량이 절반으로 줄어듭니다. 제 2층에서는 출력을 결합하는 축소 연산 g가 수행됩니다.
 
 그림 3b는 셀프 어텐션 층에서의 두방향 텐서 병렬성의 예시입니다. 여러 어텐션 헤드는 본질적으로 병렬이며 장치 간에 분할될 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1064,7 +1059,7 @@ LLM은 실제로 요청을 효과적으로 일괄 처리하기 어렵게 만들 
 
 <div class="content-ad"></div>
 
- speculative inference 또는 추정 추론으로도 알려진 이 방법은 LLM 실행을 병렬화하는 다른 방법입니다. 일반적으로 GPT 스타일의 대형 언어 모델은 텍스트를 토큰 단위로 생성하는 자기회귀 모델입니다.
+speculative inference 또는 추정 추론으로도 알려진 이 방법은 LLM 실행을 병렬화하는 다른 방법입니다. 일반적으로 GPT 스타일의 대형 언어 모델은 텍스트를 토큰 단위로 생성하는 자기회귀 모델입니다.
 
 생성된 모든 토큰은 앞에 나온 모든 토큰에 의존하여 맥락을 제공합니다. 이는 일반적인 실행에서 동일한 시퀀스에서 여러 토큰을 병렬로 생성하는 것이 불가능하다는 것을 의미합니다. n번째 토큰이 생성되기 전에 n+1을 생성할 수 없습니다.
 
@@ -1090,7 +1085,7 @@ LLM은 실제로 요청을 효과적으로 일괄 처리하기 어렵게 만들 
 
 - 첫 번째 토큰까지 걸리는 시간 (TTFT): 사용자가 쿼리를 입력한 후 모델의 출력을 시작으로 볼 때 얼마나 빨리 나타나는지를 나타냅니다. 응답을 기다리는 시간이 짧을수록 실시간 상호작용에서 중요하지만 오프라인 워크로드에서는 그다지 중요하지 않습니다. 이 지표는 프롬프트를 처리하고 첫 번째 출력 토큰을 생성하는 데 필요한 시간에 의해 결정됩니다.
 - 출력 토큰 당 걸리는 시간 (TPOT): 시스템을 쿼리하는 각 사용자에 대해 출력 토큰을 생성하는 데 걸리는 시간입니다. 이 지표는 각 사용자가 모델의 "속도"를 어떻게 인식할지와 관련이 있습니다. 예를 들어, 100밀리초/토큰의 TPOT는 사용자 당 초당 10개의 토큰, 또는 대략 1분에 450단어를 읽을 수 있는 것입니다. 일반적인 사람이 읽는 속도보다 빠릅니다.
-- 대기 시간: 모델이 사용자에 대한 완전한 응답을 생성하는 데 걸리는 전반적인 시간입니다. 전반적인 응답 대기 시간은 이전 두 지표를 사용하여 계산할 수 있습니다: 대기 시간 = (TTFT) + (TPOT) * (생성해야 하는 토큰 수).
+- 대기 시간: 모델이 사용자에 대한 완전한 응답을 생성하는 데 걸리는 전반적인 시간입니다. 전반적인 응답 대기 시간은 이전 두 지표를 사용하여 계산할 수 있습니다: 대기 시간 = (TTFT) + (TPOT) \* (생성해야 하는 토큰 수).
 - 처리량: 추론 서버가 모든 사용자와 요청에 대해 초당 생성할 수 있는 출력 토큰의 수입니다.
 
 # 10. 우리가 LLM을 제공하기 위해 무엇을 필요로 할까요?
@@ -1099,9 +1094,9 @@ LLM은 실제로 요청을 효과적으로 일괄 처리하기 어렵게 만들 
 
 가로줄에 있는 `<img>` 태그를 Markdown 형식으로 바꿔보세요.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-BuildingLLMApplicationsServingLLMsPart9_24.png)
-```
+
 
 LLM 기반 애플리케이션을 제공할 때 2가지 주요 구성 요소가 있습니다: 엔진과 서버입니다. 엔진은 모델 및 요청 일괄 처리에 관한 모든 것을 처리하며, 서버는 사용자 요청을 전달합니다.
 
@@ -1164,14 +1159,10 @@ from vllm import LLM, SamplingParams
 ```
 
 ```js
-prompts = [
-    "Funniest joke ever:",
-    "The capital of France is",
-    "The future of AI is",
-]
-sampling_params = SamplingParams(temperature=0.95, top_p=0.95, max_tokens=200)
-llm = LLM(model="huggyllama/llama-13b")
-outputs = llm.generate(prompts, sampling_params)
+prompts = ["Funniest joke ever:", "The capital of France is", "The future of AI is"];
+sampling_params = SamplingParams((temperature = 0.95), (top_p = 0.95), (max_tokens = 200));
+llm = LLM((model = "huggyllama/llama-13b"));
+outputs = llm.generate(prompts, sampling_params);
 ```
 
 <div class="content-ad"></div>
@@ -1239,7 +1230,7 @@ vLLM개발 로드맵은 여기를 참조해 주세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-BuildingLLMApplicationsServingLLMsPart9_28.png)
 
 텍스트 생성 추론을 위한 Rust, Python 및 gRPC 서버입니다. HuggingFace에서 LLMs API 추론 위젯을 구동하는 데 사용됩니다.
@@ -1247,7 +1238,7 @@ vLLM개발 로드맵은 여기를 참조해 주세요.
 사용법
 
 도커를 사용하여 웹 서버 실행:
-```
+
 
 <div class="content-ad"></div>
 
@@ -1332,21 +1323,17 @@ import transformers
 ```
 
 ```js
-generator = ctranslate2.Generator("llama-13b-ct2", device="cuda", compute_type="float16")
-tokenizer = transformers.AutoTokenizer.from_pretrained("huggyllama/llama-13b")
+generator = ctranslate2.Generator("llama-13b-ct2", (device = "cuda"), (compute_type = "float16"));
+tokenizer = transformers.AutoTokenizer.from_pretrained("huggyllama/llama-13b");
 ```
 
 ```js
-prompt = "Funniest joke ever:"
-tokens = tokenizer.convert_ids_to_tokens(tokenizer.encode(prompt))
-results = generator.generate_batch(
-    [tokens], 
-    sampling_topk=1, 
-    max_length=200,
-)
-tokens = results[0].sequences_ids[0]
-output = tokenizer.decode(tokens)
-print(output)
+prompt = "Funniest joke ever:";
+tokens = tokenizer.convert_ids_to_tokens(tokenizer.encode(prompt));
+results = generator.generate_batch([tokens], (sampling_topk = 1), (max_length = 200));
+tokens = results[0].sequences_ids[0];
+output = tokenizer.decode(tokens);
+print(output);
 ```
 
 <div class="content-ad"></div>
@@ -1404,15 +1391,17 @@ import mii
 
 ```js
 mii_configs = {
-    "dtype": "fp16",
-    'max_tokens': 200,
-    'tensor_parallel': 1,
-    "enable_load_balancing": False
-}
-mii.deploy(task="text-generation",
-           model="huggyllama/llama-13b",
-           deployment_name="llama_13b_deployment",
-           mii_config=mii_configs)
+  dtype: "fp16",
+  max_tokens: 200,
+  tensor_parallel: 1,
+  enable_load_balancing: False,
+};
+mii.deploy(
+  (task = "text-generation"),
+  (model = "huggyllama/llama-13b"),
+  (deployment_name = "llama_13b_deployment"),
+  (mii_config = mii_configs)
+);
 ```
 
 <div class="content-ad"></div>
@@ -1456,7 +1445,7 @@ mii.deploy(task="text-generation",
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 pip install openllm scipy
 openllm start llama --model-id huggyllama/llama-13b \
@@ -1473,8 +1462,8 @@ import openllm
 ```
 
 ```js
-client = openllm.client.HTTPClient('http://localhost:3000')
-print(client.query("Funniest joke ever:"))
+client = openllm.client.HTTPClient("http://localhost:3000");
+print(client.query("Funniest joke ever:"));
 ```
 
 <div class="content-ad"></div>
@@ -1529,30 +1518,30 @@ import pandas as pd
 
 <div class="content-ad"></div>
 
-```markdown
+
 import ray
 from ray import serve
 from starlette.requests import Request
-```
 
-```markdown
+
+
 @serve.deployment(ray_actor_options={"num_gpus": 1})
 class PredictDeployment:
     def __init__(self, model_id: str):
         from transformers import AutoModelForCausalLM, AutoTokenizer
         import torch
-```
 
-```markdown
+
+
 self.model = AutoModelForCausalLM.from_pretrained(
             model_id,
             torch_dtype=torch.float16,
             device_map="auto",
         )
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
-```
 
-```markdown
+
+
 def generate(self, text: str) -> pd.DataFrame:
         input_ids = self.tokenizer(text, return_tensors="pt").input_ids.to(
             self.model.device
@@ -1565,7 +1554,7 @@ def generate(self, text: str) -> pd.DataFrame:
         return pd.DataFrame(
             self.tokenizer.batch_decode(gen_tokens), columns=["responses"]
         )
-```
+
 
 <div class="content-ad"></div>
 
@@ -1576,7 +1565,7 @@ def generate(self, text: str) -> pd.DataFrame:
 ```
 
 ```js
-deployment = PredictDeployment.bind(model_id="huggyllama/llama-13b")
+deployment = PredictDeployment.bind((model_id = "huggyllama/llama-13b"));
 ```
 
 ```js
@@ -1584,19 +1573,19 @@ deployment = PredictDeployment.bind(model_id="huggyllama/llama-13b")
 # serve run ray_serve:deployment
 ```
 
-쿼리를 실행하세요:```
+쿼리를 실행하세요:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 import requests
 ```
 
 ```js
-sample_input = {"text": "Funniest joke ever:"}
-output = requests.post("http://localhost:8000/", json=[sample_input]).json()
-print(output)
+sample_input = { text: "Funniest joke ever:" };
+output = requests.post("http://localhost:8000/", (json = [sample_input])).json();
+print(output);
 ```
 
 Killer features
@@ -1604,7 +1593,8 @@ Killer features
 - Monitoring dashboard and Prometheus metrics — We can use the Ray dashboard to get a high-level overview of our Ray cluster and Ray Serve application’s states.
 - Autoscale across multiple replicas — Ray adjusts to traffic spikes by observing queue sizes and making scaling decisions to add or remove replicas.
 - Dynamic Request Batching — It is necessary when our model is expensive to use and we want to maximize the utilization of hardware.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -1661,11 +1651,11 @@ pip install --pre --force-reinstall mlc-ai-nightly-cu118 \
 # 4. HuggingFace에서 모델 가중치 및 바이너리 라이브러리를 다운로드하세요:
 git lfs install && mkdir -p dist/prebuilt && \
   git clone https://github.com/mlc-ai/binary-mlc-llm-libs.git dist/prebuilt/lib && \
-  cd dist/prebuilt && \  
+  cd dist/prebuilt && \
   git clone https://huggingface.co/huggyllama/llama-13b dist/ && \
   cd ../..
-  
-  
+
+
 # 5. 서버를 실행하세요:
 python -m mlc_chat.rest --device-name cuda --artifact-path dist
 ```
@@ -1680,12 +1670,12 @@ import requests
 
 ```js
 페이로드 = {
-   "model": "lama-30b",
-   "messages": [{"role": "user", "content": "Funniest joke ever:"}],
-   "stream": False
-}
-r = requests.post("http://127.0.0.1:8000/v1/chat/completions", json=payload)
-print(r.json()['choices'][0]['message']['content'])
+  model: "lama-30b",
+  messages: [{ role: "user", content: "Funniest joke ever:" }],
+  stream: False,
+};
+r = requests.post("http://127.0.0.1:8000/v1/chat/completions", (json = payload));
+print(r.json()["choices"][0]["message"]["content"]);
 ```
 
 핵심 기능

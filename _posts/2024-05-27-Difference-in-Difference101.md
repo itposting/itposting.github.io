@@ -3,13 +3,12 @@ title: "차이인차이 101"
 description: ""
 coverImage: "/assets/img/2024-05-27-Difference-in-Difference101_0.png"
 date: 2024-05-27 14:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Difference-in-Difference101_0.png
 tag: Tech
 originalTitle: "Difference-in-Difference 101"
 link: "https://medium.com/towards-data-science/difference-in-difference-101-9424cb403f9e"
 ---
-
 
 차이인차이(DiD 또는 DD 또는 diff-in-diff)는 무엇인가요? 왜 차이인차이에 관심이 있나요? 오늘은 정책 효과를 연구하는 경제학에서 가장 인기 있는 방법 중 하나에 대한 모든 질문에 답할 거예요.
 
@@ -76,13 +75,13 @@ DiD에 대한 주요 가정 중 하나입니다. 이것은 치료가 없을 때 
 
 형식적으로, 이는 다음을 의미합니다:
 
-```markdown
+
 | Time        | Treatment Group | Control Group  | Difference   |
 |-------------|-----------------|----------------|--------------|
 | Before      | Y1              | Y0             | Y1 - Y0      |
 | After       | Y3              | Y2             | Y3 - Y2      |
 | DiD Estimate| (Y1 - Y0) - (Y3 - Y2)                    |
-```
+
 
 또 다른 관점은 정책 변경이 없었을 때 두 그룹 간의 차이가 정책 변경 없이도 시간이 지남에 따라 동일하게 유지되었을 것이라는 것입니다. 치료 전에 추세가 평행하지 않으면 DiD 추정치가 편향될 수 있습니다.
 
@@ -108,7 +107,7 @@ DiD에 대한 주요 가정 중 하나입니다. 이것은 치료가 없을 때 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-Difference-in-Difference101_8.png)
 
 위 두 경우 모두 평행한 추세 가정이 만족되지 않습니다. 치료 그룹 결과는 통제 그룹 결과보다 더 빨리 성장하거나(part a) 더 느리게 성장합니다(part b). 이를 수학적으로 표현하면 다음과 같습니다:
@@ -116,7 +115,7 @@ DiD에 대한 주요 가정 중 하나입니다. 이것은 치료가 없을 때 
 DiD = 실제 효과 + 차이 추세 (차이 추세는 0이어야 함)
 
 차이 추세는 양수 (part a) 또는 음수 (part b)일 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

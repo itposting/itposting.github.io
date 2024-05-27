@@ -3,13 +3,12 @@ title: "RAG 자동화를 위한 건축 설계도 Vertex AI 검색을 활용한 �
 description: ""
 coverImage: "/assets/img/2024-05-27-ArchitecturalBlueprintsforRAGAutomationAdvancedDocumentUnderstandingusingVertexAISearch_0.png"
 date: 2024-05-27 15:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ArchitecturalBlueprintsforRAGAutomationAdvancedDocumentUnderstandingusingVertexAISearch_0.png
 tag: Tech
 originalTitle: "Architectural Blueprints for RAG Automation: Advanced Document Understanding using Vertex AI Search"
 link: "https://medium.com/google-cloud/architectural-blueprints-for-rag-automation-advanced-document-understanding-using-vertex-ai-search-537ee9376847"
 ---
-
 
 <img src="/assets/img/2024-05-27-ArchitecturalBlueprintsforRAGAutomationAdvancedDocumentUnderstandingusingVertexAISearch_0.png" />
 
@@ -75,7 +74,8 @@ Google의 영업 이익은 2021년 제1사분기에 164.37억 달러였습니다
 참고: 미국의 Microsoft는 전통적인 달력 년도와 일치하지 않는 재무 연도를 따릅니다. 예를 들어, 그들의 재정 첫 분기는 7월부터 9월까지의 기간을 다룹니다. 따라서 그들의 제1사분기 실적 보고서는 실제 달력에서 이전 분기의 성과를 반영합니다. 질문과 문서명에 이미 이 사항이 고려되어 있습니다.
 
 # 문서 수용 및 색인화
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -108,7 +108,7 @@ data = {
         'defaultParsingConfig': {
             'layoutParsingConfig': {}
         }
-    }  
+    }
 }
 
 response = requests.post(url, headers=headers, json=data)
@@ -143,14 +143,14 @@ headers = {
 
 data = {
     "gcsSource": {
-        "inputUris": [gcs_input_uri] 
-    }    
+        "inputUris": [gcs_input_uri]
+    }
 }
 
 response = requests.post(url, headers=headers, json=data)
 ```
 
-III. 문서 검색 애플리케이션 만들기:```  
+III. 문서 검색 애플리케이션 만들기:```
 
 <div class="content-ad"></div>
 
@@ -206,7 +206,7 @@ serving_config = client.serving_config_path(
 
 content_search_spec = discoveryengine.SearchRequest.ContentSearchSpec(
     snippet_spec=discoveryengine.SearchRequest.ContentSearchSpec.SnippetSpec(
-    return_snippet=False 
+    return_snippet=False
     ),
     extractive_content_spec=discoveryengine.SearchRequest.ContentSearchSpec.ExtractiveContentSpec(
         max_extractive_answer_count=3,
@@ -345,40 +345,40 @@ Pattern II는 필터링을 통한 쿼리 이해에 초점을 맞춘 사전 검�
 
 <div class="content-ad"></div>
 
-```md
 2021년 제1분기에는 링크드인의 매출이 전년대비 25% 증가했습니다. 환율 변동을 조정한 경우 성장률은 23%였습니다.
 
 우선, Vertex AI 검색에서 샘플 질문에 대한 추출 세그먼트를 살펴봅시다. 아래는 상위 세 개의 세그먼트입니다. 우리의 질문에 대한 답변은 비즈니스 하이라이트 하단에 있는 세그먼트 1과 테이블 콘텐츠 일부인 세그먼트 2에서 유도할 수 있음을 알 수 있습니다. 지미니 포스트-검색을 사용하여 최종 답변을 생성하기 위해 세그먼트를 연결하여 단일 문맥으로 전달하면 됩니다.
 
 ## 비즈니스 하이라이트
-생산성 및 비즈니스 프로세스의 매출은 $13.6 억으로 증가했으며, 
-15% 증가했습니다 (환율 변동으로 12% 상승), 
+
+생산성 및 비즈니스 프로세스의 매출은 $13.6 억으로 증가했으며,
+15% 증가했습니다 (환율 변동으로 12% 상승),
 다음과 같은 비즈니스 하이라이트가 포함되어 있습니다:
 
-- 오피스 상용 제품 및 클라우드 서비스 매출이 14% 증가했습니다 
-(환율 변동으로 10% 증가), 
-오피스 365 상용 매출의 22% 증가로 주도되었습니다 (환율 변동으로 19% 상승)
-- 오피스 소비자 제품 및 클라우드 서비스 매출이 5% 증가했으며 
-(환율 변동으로 2% 증가), 
-마이크로소프트 365 소비자 구독자 수는 5020만으로 증가했습니다
+- 오피스 상용 제품 및 클라우드 서비스 매출이 14% 증가했습니다
+  (환율 변동으로 10% 증가),
+  오피스 365 상용 매출의 22% 증가로 주도되었습니다 (환율 변동으로 19% 상승)
+- 오피스 소비자 제품 및 클라우드 서비스 매출이 5% 증가했으며
+  (환율 변동으로 2% 증가),
+  마이크로소프트 365 소비자 구독자 수는 5020만으로 증가했습니다
 - 링크드인 매출이 25% 증가했습니다 (환율 변동으로 23% 상승)
-- 다이내믹스 제품 및 클라우드 서비스 매출이 26% 증가했습니다 
-(환율 변동으로 22% 상승), 
-다이내믹스 365 매출이 45% 증가로 주도되었습니다 (환율 변동으로 40% 증가)
+- 다이내믹스 제품 및 클라우드 서비스 매출이 26% 증가했습니다
+  (환율 변동으로 22% 상승),
+  다이내믹스 365 매출이 45% 증가로 주도되었습니다 (환율 변동으로 40% 증가)
 
 미세한 과정을 통한 재무 성과 일정 화 동일 통화 환산은 다음과 같습니다:
 
-| 세그먼트 | 2020년 | 2021년 | 증가율 | 동일 통화 여파 |
-|---|---|---|---|---|
-| 생산성 및 비즈니스 프로세스 | $11743 | $13552 | 15% | 12% |
-| 인텔리전트 클라우드 | $12281 | $15118 | 23% | 20% |
-| 더 개인화된 컴퓨팅 | $10997 | $13036 | 19% | 16% |
+| 세그먼트                    | 2020년 | 2021년 | 증가율 | 동일 통화 여파 |
+| --------------------------- | ------ | ------ | ------ | -------------- |
+| 생산성 및 비즈니스 프로세스 | $11743 | $13552 | 15%    | 12%            |
+| 인텔리전트 클라우드         | $12281 | $15118 | 23%    | 20%            |
+| 더 개인화된 컴퓨팅          | $10997 | $13036 | 19%    | 16%            |
 
 마이크로소프트에 대해
 
 마이크로소프트 (나스닥 "MSFT" @microsoft)는 지능형 클라우드와 지능형 엣지 시대에 대한 디지털 전환을 실현합니다. 그 사명은 지구상의 모든 사람과 기관에 더 높은 성공을 이루도록 자율화하는 것입니다.
-``` 
 ```
+
 
 <div class="content-ad"></div>
 
@@ -407,51 +407,51 @@ Microsoft의 미션을 더욱 잘 실현하기 위해 우리는 양질의 영향
 
 <div class="content-ad"></div>
 
-흥미롭게도, 우리가 궁금한 질문에 대한 답을 얻기 위해 필요한 정보는 마지막(세 번째) 추출한 답변에만 포함되어 있는 것을 알 수 있습니다. 최종 답변을 생성하기 위해 세 개의 추출한 답변을 모두 한 문맥으로 연결하여 Gemini에게 제공하고, 원래의 질문과 함께 제출하여 답변을 생성합니다. 
+흥미롭게도, 우리가 궁금한 질문에 대한 답을 얻기 위해 필요한 정보는 마지막(세 번째) 추출한 답변에만 포함되어 있는 것을 알 수 있습니다. 최종 답변을 생성하기 위해 세 개의 추출한 답변을 모두 한 문맥으로 연결하여 Gemini에게 제공하고, 원래의 질문과 함께 제출하여 답변을 생성합니다.
 
 ```js
 Revenue in Intelligent Cloud은 $15.1 억으로 23% 증가했으며 (환율 상수로는 20% 증가), 다음과 같은 비즈니스 현황을 보여줍니다:
 • 서버 제품 및 클라우드 서비스 수익이 26% 증가했으며 (환율 상수로는 23% 증가), Azure 수익이 50% 증가(환율 상수로는 46% 증가) • More Personal Computing의 수익은 $13.0 억으로 19% 증가했으며 (환율 상수로는 16% 증가), 다음과 같은 비즈니스 현황을 보여줍니다: • Windows OEM 수익이 10% 증가함 • Windows 상용 제품 및 클라우드 서비스 수익이 10% 증가함 (환율 상수로는 7% 증가)
 • Xbox 콘텐츠 및 서비스 수익이 34% 증가함 (환율 상수로는 32% 증가)
 • 트래픽 채광 비용 제외 검색 광고 수익이 17% 증가함 (환율 상수로는 14% 증가)
-• Surface 수익이 12% 증가함 (환율 상수로는 7% 증가) 
-Microsoft은 2021 회계 연도 3분기에 $10.0 억을 주주에게 주식 매수와 배당금 형태로 반환했으며, 이는 2020 회계 연도 3분기 대비 1% 증가했습니다. 
+• Surface 수익이 12% 증가함 (환율 상수로는 7% 증가)
+Microsoft은 2021 회계 연도 3분기에 $10.0 억을 주주에게 주식 매수와 배당금 형태로 반환했으며, 이는 2020 회계 연도 3분기 대비 1% 증가했습니다.
 비즈니스 전망 Microsoft는 이 분기 실적 발표와 관련하여 이익 회의 전화와 웹캐스트에서 전반적인 안내를 제공할 것입니다.
 ```
 
 ```js
-재무 성과 
-통화 변동 조정 2021년 3월 31일 3개월 종료 (백만 달러, 주당 금액 제외) 
-수익 운영 이익 순이익 희석주당순이익 
-2020년 표시 요건 (GAAP) $35021 $12975 $10752 $1.40 
-2021년 표시 (GAAP) $41706 $17048 $15457 $2.03 
-2021년 조정 (non-GAAP) $41706 $17048 $14837 $1.95 
-Y/Y 변경율 (GAAP) 19% 31% 44% 45% 
-Y/Y 변경율 (non-GAAP) 19% 31% 38% 39% 
-통화 변동 영향 $972 $634 $615 $0.08 
-Y/Y 변경율 (non-GAAP) 통화 변동 16% 27% 32% 34% 
-세그먼트 수익 통화 변동 조정 2021년 3월 31일 3개월 종료 (백만 달러) 
-Productivity and Business Processes Intelligent Cloud More Personal Computing 
-2020년 표시 $11743 $12281 $10997 
-2021년 표시 $13552 $15118 $13036 
-Y/Y 변경율 15% 23% 19% 
-통화 변동 영향 $366 $367 $239 
-Y/Y 통화 변동율 12% 20% 16% 
-선택된 제품 및 서비스 수익 통화 변동 조정 2021년 3월 31일 
-Y/Y 변경율 (GAAP) 통화 변동 영향 Y/Y 통화 변동율 
-Office 상업용 제품 및 클라우드 서비스 14% (4)% 10% 
-Office 365 상업용 22% (3)% 19% 
-Office 소비자 제품 및 클라우드 서비스 5% (3)% 2% 
-LinkedIn 25% (2)% 23% 
-Dynamics 제품 및 클라우드 서비스 26% (4)% 22% 
-Dynamics 365 45% (5)% 40% 
-서버 제품 및 클라우드 서비스 26% (3)% 23% 
-Azure 50% (4)% 46% 
-Windows OEM 10% 0% 10% 
-Windows 상업용 제품 및 클라우드 서비스 10% (3)% 7% 
-Xbox 콘텐츠 및 서비스 34% (2)% 32% 
-Surface 12% (5)% 7% 
-검색 광고 트래픽 채광 비용 제외 17% (3)% 14% 
+재무 성과
+통화 변동 조정 2021년 3월 31일 3개월 종료 (백만 달러, 주당 금액 제외)
+수익 운영 이익 순이익 희석주당순이익
+2020년 표시 요건 (GAAP) $35021 $12975 $10752 $1.40
+2021년 표시 (GAAP) $41706 $17048 $15457 $2.03
+2021년 조정 (non-GAAP) $41706 $17048 $14837 $1.95
+Y/Y 변경율 (GAAP) 19% 31% 44% 45%
+Y/Y 변경율 (non-GAAP) 19% 31% 38% 39%
+통화 변동 영향 $972 $634 $615 $0.08
+Y/Y 변경율 (non-GAAP) 통화 변동 16% 27% 32% 34%
+세그먼트 수익 통화 변동 조정 2021년 3월 31일 3개월 종료 (백만 달러)
+Productivity and Business Processes Intelligent Cloud More Personal Computing
+2020년 표시 $11743 $12281 $10997
+2021년 표시 $13552 $15118 $13036
+Y/Y 변경율 15% 23% 19%
+통화 변동 영향 $366 $367 $239
+Y/Y 통화 변동율 12% 20% 16%
+선택된 제품 및 서비스 수익 통화 변동 조정 2021년 3월 31일
+Y/Y 변경율 (GAAP) 통화 변동 영향 Y/Y 통화 변동율
+Office 상업용 제품 및 클라우드 서비스 14% (4)% 10%
+Office 365 상업용 22% (3)% 19%
+Office 소비자 제품 및 클라우드 서비스 5% (3)% 2%
+LinkedIn 25% (2)% 23%
+Dynamics 제품 및 클라우드 서비스 26% (4)% 22%
+Dynamics 365 45% (5)% 40%
+서버 제품 및 클라우드 서비스 26% (3)% 23%
+Azure 50% (4)% 46%
+Windows OEM 10% 0% 10%
+Windows 상업용 제품 및 클라우드 서비스 10% (3)% 7%
+Xbox 콘텐츠 및 서비스 34% (2)% 32%
+Surface 12% (5)% 7%
+검색 광고 트래픽 채광 비용 제외 17% (3)% 14%
 Microsoft에 대해 Microsoft(Nasdaq "MSFT" @microsoft)는 지능적인 클라우드와 지능형 엣지 시대의 디지털 변형을 가능케 합니다.
 ```
 
@@ -558,9 +558,9 @@ DCG는 순위가 매겨진 목록의 총 관련성을 측정하는 반면, NDCG�
 - DCG𝑝은 원래 공식을 사용하여 위치 𝑝에서의 DCG값을 의미합니다.
 - IDCG𝑝는 이상적인 DCG로, 모든 결과가 관련성에 따라 완벽하게 정렬된 경우 위치 𝑝에서의 최대 가능한 DCG값입니다. IDCG𝑝의 공식은 아래에 나와 있습니다:
 
-```markdown
+
 ![IDCG formula](/assets/img/2024-05-27-ArchitecturalBlueprintsforRAGAutomationAdvancedDocumentUnderstandingusingVertexAISearch_9.png)
-```
+
 
 여기서는 관련성 점수를 내림차순으로 정렬합니다.
 
@@ -592,7 +592,7 @@ AP를 계산하기 위해서는 관련 동영상이 발견된 각 지점에서�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-ArchitecturalBlueprintsforRAGAutomationAdvancedDocumentUnderstandingusingVertexAISearch_10.png)
 
 where
@@ -602,7 +602,7 @@ where
 - 𝑃(𝑖) is the precision at position 𝑖. P(i) for a relevant document at position 𝑖 is 1/i.
 
 ## g) Mean Average Precision (MAP)
-```
+
 
 <div class="content-ad"></div>
 
@@ -642,13 +642,13 @@ MAP는 복수의 관련 문서가 각 질의에 대해 다루는 복잡한 시�
 
 아래 표는 이전에 실험한 네 가지 패턴(RAG 파이프라인)을 비교한 전반적인 답변 정확도를 보여줍니다. 정확도를 계산하기 위해 완전히 정확한 답변에는 1.0의 점수를 할당하고, 부분적으로 정확한 답변에는 0.5의 점수를, 그리고 LLM 사실적 정확성 출력에 따라 부정확하게 분류된 답변에는 0의 점수를 부여합니다. 그림에서는 외부 LLM 패스를 활용하여 추출방식을 사용하여 답변을 생성하는 패턴 IV가 다른 모든 접근 방법을 능가하여 정확도가 거의 70%에 달한다는 것을 보여줍니다.
 
-```markdown
+
 지정된 질문과 아래 표시된 기대 및 생성된 답변을 제공하고,
 답변을 비교하여 `correct`, `partially correct`, 또는 `incorrect` 중 하나의 클래스로 분류하세요.
 
 답변이 부분적으로 정확하거나 부정확한 경우, 이유를 제공하세요.
 출력은 클래스와 이유로 된 Python 딕셔너리 형식으로 제공해야 합니다.
-클래스에는 한 단어만 포함되어야 하며(기대 클래스임), 
+클래스에는 한 단어만 포함되어야 하며(기대 클래스임),
 이유는 숫자와 사실에만 초점을 맞추어 간결하게 제공해야 합니다.
 
 예상 및 예측된 답변 간의 의미론에 집중하지 마십시오.
@@ -669,13 +669,13 @@ MAP는 복수의 관련 문서가 각 질의에 대해 다루는 복잡한 시�
 
 다음 형식에 따라 응답을 제공하세요:
 {format_instructions}
-```
+
 
 <div class="content-ad"></div>
 
 네, 해당 테이블 태그를 마크다운 형식으로 변경해 볼게요.
 
-```markdown
+
 We can also break down the distribution of classes across the four different approaches (pipelines) to gain a better understanding of how improvements gradually occur with enhancements.
 
 ![Distribution of classes](/assets/img/2024-05-27-ArchitecturalBlueprintsforRAGAutomationAdvancedDocumentUnderstandingusingVertexAISearch_12.png)
@@ -683,7 +683,7 @@ We can also break down the distribution of classes across the four different app
 The box plots below show the distribution of semantic similarity scores across different classes (correct, partially correct, incorrect) for the four different document question-answering RAG pipelines we previously created. The x-axis represents the different classes, while the y-axis signifies the semantic similarity score, ranging from 0 (no similarity) to 1 (perfect similarity). These box plots display the median, quartiles, and range of the semantic similarity scores within each class. Overall, the figure provides a concise and informative visual representation of the performance of various question-answering approaches in terms of semantic similarity.
 
 ![Box Plots](/assets/img/2024-05-27-ArchitecturalBlueprintsforRAGAutomationAdvancedDocumentUnderstandingusingVertexAISearch_13.png)
-```
+
 
 <div class="content-ad"></div>
 

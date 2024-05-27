@@ -3,7 +3,7 @@ title: "이미지를 클러스터링하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-HowtoClusterImages_0.png"
 date: 2024-05-27 12:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowtoClusterImages_0.png
 tag: Tech
 originalTitle: "How to Cluster Images"
@@ -11,20 +11,19 @@ link: "https://medium.com/voxel51/how-to-cluster-images-6e09bdff7361"
 ---
 
 
-```markdown
 ![FiftyOne](https://miro.medium.com/v2/resize:fit:1400/1*b6uzxatq8ELEOu-1SjMmGg.gif)
 
 # FiftyOne, Scikit-learn 및 Feature Embeddings을 사용하기
 
-2024년 깊은 학습의 계산 집약적인 환경에서 "클러스터"라는 단어는 주로 GPU 클러스터를 논할 때 가장 자주 나타납니다. 이는 매우 최적화된 행렬 곱셈 기계의 대규모 컬렉션으로, 동등하게 거대한 생성 모델을 훈련시키기 위해 설정된 것입니다. 
+2024년 깊은 학습의 계산 집약적인 환경에서 "클러스터"라는 단어는 주로 GPU 클러스터를 논할 때 가장 자주 나타납니다. 이는 매우 최적화된 행렬 곱셈 기계의 대규모 컬렉션으로, 동등하게 거대한 생성 모델을 훈련시키기 위해 설정된 것입니다.
 모두가 더 크고 더 나은 모델을 훈련시키고, AI 모델 성능의 한계를 끌어올리며, 최신의 구조적 진보를 자료에 적용하는 데 주력합니다.
 
 그런데 더 나은 모델을 구축하려고 할 때 더 중요할 수 있는 다른 유형의 클러스터가 있는데요. 저는 CPU나 TPU, 또는 다른 어떤 종류의 하드웨어에 대해 언급하는 게 아닙니다. 심지어 모델 훈련 과정에 대해서도 말하는 게 아닙니다. 저는 데이터를 깊이 이해하는 데 도움이 되는 옛날의 비지도 학습 작업인 클러스터링을 말하는 것입니다. 끝내 우리에게 예측력이 흐르는 원천이기 때문이죠.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-HowtoClusterImages_0.png)
 
 In this blog, we’ll cover the basics of clustering and show you how to structure your visual data using the open-source machine learning libraries Scikit-learn and FiftyOne!
@@ -32,7 +31,7 @@ In this blog, we’ll cover the basics of clustering and show you how to structu
 # What is Clustering?
 
 ![Image](/assets/img/2024-05-27-HowtoClusterImages_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -109,7 +108,7 @@ FiftyOne Clustering Plugin은 우리의 일상을 더욱 쉽게 만들어줍니�
 
 <div class="content-ad"></div>
 
-```markdown
+
 fiftyone 플러그인을 https://github.com/jacobmarks/clustering-plugin 에서 다운로드하세요.
 
 또한 CLIP 모델을 사용하여 이미지 피처를 생성할 수 있게 해주는 OpenAI의 CLIP GitHub 저장소와, 이러한 피처를 2D로 시각화하기 위해 Uniform Manifold Approximation and Projection (UMAP)이라는 차원 축소 기술을 적용할 수 있게 해주는 umap-learn 라이브러리를 두 가지 더 필요로 할 것입니다:
@@ -119,7 +118,8 @@ pip install umap-learn git+https://github.com/openai/CLIP.git
 ```
 
 이 두 라이브러리가 꼭 필요한 것은 아닙니다. FiftyOne Model Zoo에서 임베딩을 노출하는 임의의 모델로 피처를 생성하고, PCA나 tSNE와 같은 대체 기술로 차원 축소를 수행할 수도 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -159,14 +159,14 @@ FiftyOne 샘플 컬렉션에 차원 축소를 실행하기 위해, FiftyOne Brai
 
 ```js
 res = fob.compute_visualization(
-    dataset, 
-    model="clip-vit-base32-torch", 
-    embeddings="clip_embeddings", 
-    method="umap", 
-    brain_key="clip_vis", 
-    batch_size=10
-)
-dataset.set_values("clip_umap", res.current_points)
+  dataset,
+  (model = "clip-vit-base32-torch"),
+  (embeddings = "clip_embeddings"),
+  (method = "umap"),
+  (brain_key = "clip_vis"),
+  (batch_size = 10)
+);
+dataset.set_values("clip_umap", res.current_points);
 ```
 
 <div class="content-ad"></div>
@@ -211,7 +211,7 @@ brain_key 인자를 사용하면 이러한 결과에 이름으로 프로그래�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*2cjbVS8JBKe8CNyyTzBQRQ.gif)
 
 주요 포인트는 고차원 특성이 저차원 특성보다 나은 것도 그 반대도 아니라는 점입니다. 각 선택에는 어떤 대가가 따릅니다. 이것이 다른 기술, 하이퍼파라미터 및 특성을 실험해보아야 하는 이유입니다.
@@ -219,11 +219,11 @@ brain_key 인자를 사용하면 이러한 결과에 이름으로 프로그래�
 이것을 더 명확하게 보여주기 위해 HDBSCAN을 클러스터링 알고리즘으로 사용해보겠습니다. 이 알고리즘은 클러스터 수를 지정할 수 없게 하며, 대신 min_cluster_size 및 max_cluster_size와 같은 매개변수를 사용하며 클러스터를 병합할 때 기준을 명시합니다. 우리는 CLIP 임베딩을 특성으로 사용할 것이며, 대략적인 시작점으로 10부터 300까지의 요소로 이루어진 클러스터 만 원한다고 말할 것입니다. 클러스터가 너무 크면 도움이 되지 않을 수 있고, 너무 작으면 신호가 아닌 잡음에 반응할 수 있습니다. 특정 값은 물론 데이터셋에 따라 다를 것입니다!
 
 클러스터 레이블에 따라 색을 입히면 결과가 조금 어수선해 보입니다. 그러나 각 클러스터에 대한 이미지를 개별적으로 살펴보면 데이터셋에서 매우 흥미로운 샘플 집합을 식별한 것을 확인할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*hKcCc7r-OCrFsgfwMT-WYA.gif)
 
 💡 HDBSCAN의 경우, 모든 백그라운드 이미지에 " -1 " 레이블이 지정됩니다. 이러한 이미지는 최종 클러스터 중 어느 것에도 병합되지 않습니다.
@@ -231,7 +231,7 @@ brain_key 인자를 사용하면 이러한 결과에 이름으로 프로그래�
 ## 클러스터링 실행 추적하기
 
 다양한 피처 조합, 클러스터링 기술 및 하이퍼파라미터를 테스트하면서 특정 군집 세트를 생성하는 데 사용한 "구성"을 추적하고 싶을 수 있습니다. 다행히도 FiftyOne Clustering 플러그인은 사용자 지정 실행을 사용하여 이 모든 작업을 처리합니다. 플러그인은 run_key로 실행을 선택하고 모든 실행 매개변수를 앱에서 멋지게 서식이 있는 출력으로 볼 수 있는 get_clustering_run_info 연산자를 노출합니다.
-```
+
 
 <div class="content-ad"></div>
 

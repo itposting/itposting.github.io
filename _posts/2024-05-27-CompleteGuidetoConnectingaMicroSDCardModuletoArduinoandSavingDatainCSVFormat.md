@@ -3,13 +3,12 @@ title: "아두이노에 마이크로SD 카드 모듈을 연결하고 CSV 형식�
 description: ""
 coverImage: "/assets/img/2024-05-27-CompleteGuidetoConnectingaMicroSDCardModuletoArduinoandSavingDatainCSVFormat_0.png"
 date: 2024-05-27 13:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-CompleteGuidetoConnectingaMicroSDCardModuletoArduinoandSavingDatainCSVFormat_0.png
 tag: Tech
 originalTitle: "Complete Guide to Connecting a MicroSD Card Module to Arduino and Saving Data in CSV Format"
 link: "https://medium.com/@madhurajayashanka/complete-guide-to-connecting-a-microsd-card-module-to-arduino-and-saving-data-in-csv-format-1f30a163cab"
 ---
-
 
 # 소개
 
@@ -112,7 +111,7 @@ void loop() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 #include <SPI.h>
 #include <SD.h>
 
@@ -158,7 +157,7 @@ String getTimeStamp() {
 Upload your code to the Arduino board and open the Serial Monitor. Ensure that the initialization messages are displayed without errors. As your code logs data, you should see the CSV file being populated on the MicroSD card.
 
 # Conclusion
-```
+
 
 <div class="content-ad"></div>
 

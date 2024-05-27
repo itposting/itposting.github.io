@@ -3,13 +3,12 @@ title: "더 나은 것을 만드는 연습"
 description: ""
 coverImage: "/assets/img/2024-05-27-Anexerciseinbuildingbetter_0.png"
 date: 2024-05-27 13:39
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Anexerciseinbuildingbetter_0.png
 tag: Tech
 originalTitle: "An exercise in building better."
 link: "https://medium.com/user-experience-design-1/an-exercise-in-building-better-1928c991ae31"
 ---
-
 
 ## 스튜디오 LUFF에 의한 Air Quality Sensory 뒤의 이야기
 
@@ -51,7 +50,7 @@ link: "https://medium.com/user-experience-design-1/an-exercise-in-building-bette
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Sensor Image](/assets/img/2024-05-27-Anexerciseinbuildingbetter_3.png)
 
 센서와의 상호 작용은 동일하게 방해받지 않습니다. 중앙 버튼을 간단히 누르면 현재 대기 질을 나타내는 정보가 표시되며, AQI 척도에서 수준이 중간 이상으로 상승하면 부드러운 애니메이션이 알림을 표시합니다. 크게 시끄럽게 알람이 울리지 않습니다. 대기 질 센서는 진단 도구이며 신원이 아닙니다. 원인을 조사하고 대응할 수 있는 데이터와 통찰을 제공합니다.
@@ -59,11 +58,11 @@ link: "https://medium.com/user-experience-design-1/an-exercise-in-building-bette
 ## 소재 최소화
 
 제약 조건과 최소 소재 및 에너지 사용량으로 최대한 효과를 뽑아내는 것에 항상 매료되어 왔습니다. 기후 위기 및 그 결과를 가리키는 헤드라인으로 지배되는 세계에서, 아무 것이나 만드는 최상의 접근법은 필요한 소재의 투입을 최소화하는 것입니다. 그 이유로 초기 프로토타입에서 케이스(아마도 플라스틱으로 만들어진 것)가 필요했을 것으로 예상되는 것으로부터 벗어나 대신 프린트된 회로 기판과 센서 모듈만을 사용한 디자인을 선택했습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![An exercise in building better](/assets/img/2024-05-27-Anexerciseinbuildingbetter_4.png)
 
 이 방식은 매우 정확한 PMS 7003 센서 모듈을 다른 상용 제품에서 찾기 어려운 가격으로 보다 넓은 대중들이 사용할 수 있게 합니다. 자연에서 발표한 이 기사에 따르면 연구들이 PMS 7003의 신뢰성을 입증하여 시간이 흐름에 따라 공기 오염을 정확하게 측정하기 위한 최상의 센서 모듈 중 하나로 인정하고 있습니다.
@@ -71,7 +70,7 @@ link: "https://medium.com/user-experience-design-1/an-exercise-in-building-bette
 ## 오래 가도록 노력하세요
 
 또 다른 반성점은 하드웨어 제품들이 점점 더 클라우드 서비스에 의존하고 있다는 점입니다. 일부 하드웨어 제품들은 클라우드 서비스의 "프론트 엔드"일 뿐이며, 클라우드 서비스가 작동을 중지하면 하드웨어 제품은 많은 기능을 상실하거나 완전히 작동을 멈출 수 있습니다. 예를 들어 jibo, pebble 또는 revolv와 같은 많은 제품들이 이에 해당합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -105,7 +104,7 @@ link: "https://medium.com/user-experience-design-1/an-exercise-in-building-bette
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Air Quality Sensor](/assets/img/2024-05-27-Anexerciseinbuildingbetter_7.png)
 
 Through its thoughtful design and localized data storage, the Air Quality Sensor empowers individuals to take control of the invisible factors impacting their health and well-being. It serves as an example that well designed technology can be beautiful yet last long, insightful yet customizable, but most importantly this project wants to be a catalyst for starting a wider conversation about how we can create better products.
@@ -113,4 +112,4 @@ Through its thoughtful design and localized data storage, the Air Quality Sensor
 Thank you for reading.
 
 If you are interested in supporting the project or just learn more check out the product page.
-```
+

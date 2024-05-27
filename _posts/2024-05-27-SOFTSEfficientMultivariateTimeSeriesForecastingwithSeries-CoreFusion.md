@@ -3,13 +3,12 @@ title: "SOFTS 시리즈-코어 퓨전을 활용한 효율적인 다변수 시계
 description: ""
 coverImage: "/assets/img/2024-05-27-SOFTSEfficientMultivariateTimeSeriesForecastingwithSeries-CoreFusion_0.png"
 date: 2024-05-27 14:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-SOFTSEfficientMultivariateTimeSeriesForecastingwithSeries-CoreFusion_0.png
 tag: Tech
 originalTitle: "SOFTS: Efficient Multivariate Time Series Forecasting with Series-Core Fusion"
 link: "https://medium.com/towards-artificial-intelligence/softs-efficient-multivariate-time-series-forecasting-with-series-core-fusion-0ac40d2adcd2"
 ---
-
 
 ## 새로운 MLP 기반 모델인 SOFTS는 혁신적인 STar Aggregate-Dispatch (STAD) 모듈을 활용하여 계산 복잡성을 이차 방정식에서 선형으로 줄여 놀라운 효율성과 확장성으로 다변량 시계열 예측에서 최첨단 성능을 달성합니다.
 
@@ -61,7 +60,7 @@ iTransformer의 Reversible Instance Normalization은 단순히 역 치수에 대
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-05-27-SOFTSEfficientMultivariateTimeSeriesForecastingwithSeries-CoreFusion_2.png)
 
 ## Linear Predictor
@@ -69,7 +68,7 @@ iTransformer의 Reversible Instance Normalization은 단순히 역 치수에 대
 After N layer of STAD, there is a linear predictor for our task (forecasting), if S_N is the output representation of layer n, the prediction will be as follows:
 
 ![image2](/assets/img/2024-05-27-SOFTSEfficientMultivariateTimeSeriesForecastingwithSeries-CoreFusion_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -93,7 +92,7 @@ STAD의 입력은 각 채널에 대한 시리즈 표현이며, MLP를 통해 처
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-SOFTSEfficientMultivariateTimeSeriesForecastingwithSeries-CoreFusion_6.png)
 
 The Repeat_Concat concatenates the core representation O to each series representation to get Fi. Then we give this Fi to another MLP and add the output to the previous hidden dimension to calculate the next one.
@@ -101,7 +100,7 @@ The Repeat_Concat concatenates the core representation O to each series represen
 - Note that there’s also a residual connection from the input to the output.
 
 # Results
-```
+
 
 <div class="content-ad"></div>
 

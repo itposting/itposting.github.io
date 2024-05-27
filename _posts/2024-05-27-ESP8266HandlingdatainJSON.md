@@ -3,7 +3,7 @@ title: "ESP8266 JSON 데이터 다루기"
 description: ""
 coverImage: "/assets/img/2024-05-27-ESP8266HandlingdatainJSON_0.png"
 date: 2024-05-27 13:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ESP8266HandlingdatainJSON_0.png
 tag: Tech
 originalTitle: "ESP8266: Handling data in JSON"
@@ -11,7 +11,6 @@ link: "https://medium.com/@punnyarthabanerjee/esp8266-handling-data-in-json-7c6f
 ---
 
 
-```markdown
 ![ESP8266 handling data in JSON](/assets/img/2024-05-27-ESP8266HandlingdatainJSON_0.png)
 
 ESP8266는 가장 많이 사용되는 WiFi 마이크로컨트롤러 보드 중 하나입니다. JSON을 사용하는 REST API와 같이 데이터를 다루어야 하는 프로젝트를 작업했었거든요 (저는 대부분 소프트웨어를 다루는 사람이에요 :) ).
@@ -19,11 +18,11 @@ ESP8266는 가장 많이 사용되는 WiFi 마이크로컨트롤러 보드 중 �
 이 튜토리얼에서는 ESP8266을 사용하여 서버를 설정하고 JSON을 통해 데이터를 전달하는 방법을 보여드릴게요.
 
 # 먼저 해야 할 일
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![ESP8266HandlingdatainJSON](/assets/img/2024-05-27-ESP8266HandlingdatainJSON_1.png)
 
 이 강좌는 ESP, 아두이노 또는 유사한 보드에 대한 일부 지식을 요구합니다.
@@ -31,7 +30,7 @@ ESP8266는 가장 많이 사용되는 WiFi 마이크로컨트롤러 보드 중 �
 아직 아두이노 IDE를 설치하지 않았다면, 최신 버전의 아두이노 IDE를 다운로드하려면 여기를 클릭하세요.
 
 또한 REST API 및 그들이 어떻게 만들어지는지에 대해 알고 있는 것이 도움이 될 것입니다. 저는 대부분 Node, FastAPI 및 Django로 REST API를 작성했습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -115,7 +114,7 @@ void setup(){
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Server Setup](/assets/img/2024-05-27-ESP8266HandlingdatainJSON_4.png)
 
 # Creating the server
@@ -136,7 +135,7 @@ void setup() {
     server.on("/test", HTTP_GET, sendData); // Setting the GET endpoint and callback which we define later
     // POST METHOD
     server.on("/test", HTTP_POST, receiveData); // Setting the POST endpoint and callback which we define later
-    
+
     server.begin();
 }
 ```
@@ -230,7 +229,7 @@ void receiveData(){
 String id = SSID;
 String pass = PASSWORD ;
 
-ESP8266WebServer server(80);  
+ESP8266WebServer server(80);
 
 void sendData(){
     StaticJsonDocument<300> JSONData;
@@ -299,7 +298,7 @@ void loop() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-ESP8266HandlingdatainJSON_6.png)
 
 ## It Works!
@@ -307,7 +306,7 @@ void loop() {
 ![Image](/assets/img/2024-05-27-ESP8266HandlingdatainJSON_7.png)
 
 # Final Words
-```
+
 
 <div class="content-ad"></div>
 

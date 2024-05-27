@@ -3,7 +3,7 @@ title: "슈프림 코트의 슈퍼매이져리티는 2024년 대통령 선거에
 description: ""
 coverImage: "/assets/img/2024-05-27-TheSupermajorityontheSupremeCourtistheOverarchingReasontoVoteforPresidentBidenin2024_0.png"
 date: 2024-05-27 15:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TheSupermajorityontheSupremeCourtistheOverarchingReasontoVoteforPresidentBidenin2024_0.png
 tag: Tech
 originalTitle: "The Supermajority on the Supreme Court is the Overarching Reason to Vote for President Biden in 2024*"
@@ -11,7 +11,6 @@ link: "https://medium.com/@richardvanwagoner/the-supermajority-on-the-supreme-co
 ---
 
 
-```markdown
 ![image](/assets/img/2024-05-27-TheSupermajorityontheSupremeCourtistheOverarchingReasontoVoteforPresidentBidenin2024_0.png)
 
 슈퍼매이저리티는 십사번째 수정안 "자유"에서 개인의 개인 정보 보호와 자율성을 깎아내리고 있습니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/@richardvanwagoner/the-supermajority-on-the-supreme-co
 돕스(Dobbs) 사건에서 대법원 슈퍼매이저리티는 “개인의 존엄과 자율성에 중요한 역할을 하는 개인 선택”을 하는 개인 권리를 확고히 하는 헌법적 교리를 훼손하는 과정을 시작했습니다. 이는 “개인의 정체성과 신념을 정의하는 가까운 선택을 포함한 개인 존엄과 자율성을 강화하는 권리”로, 대부분의 미국인들의 삶의 다반사를 차지하고 있는 권리입니다.
 
 대법원이 돕스로로 르 전환하여 50년의 생식 자율성을 정부의 개입에서 제거하기 전에, 트럼프와 대법원 판사들은 를 결정된 사법라는 것을 의심하게 만들었습니다. 돕스에서는 제도적인 타당한 절차의 소멸을 볼 수 있으며 이것은 "결혼, 생식, 피임, 가족 관계, 육아 및 교육과 관련된 개인적인 결정을 보호하는 헌법 교리"입니다. 대법원의 수렴점에서 "생활 중에서 사람이 할 수 있는 가장 가까운 또는 개인적인 선택 사항들, 존엄과 자율성의 핵심, ...자유의 중추"는 이제 의심의 대상이 될 뿐만 아니라 "십사번째 수정안에 의해 보호받을 수 없게 되었으며 ... 자유의 핵심"은 더 이상 "자신의 존재, 의미, 우주, 그리고 생명의 미스터리를 정의하는 권리"를 보장하지 않습니다. 앤트니 케네디 재판관, 남동부 펜실베니아 계획모성단체. 케시.
-```
+
 
 <div class="content-ad"></div>
 
@@ -87,7 +86,7 @@ Alexander 사례에서 사우스 캐롤라이나 의회는 2020년 인구조사�
 
 R.VanWagoner는 https://medium.com/@richardvanwagoner에 게시합니다. https://richardvanwagoner.medium.com/subscribe
 
-*나의 형제인 매우 재능 있는 소설 작가이자 소설가, 로버트 호드슨 밴 왜너,가 https://medium.com/@richardvanwagoner에 대한 실용적이고 기술적 제안을 제공한 데에 상당한 공로가 있습니다. 로브의 두 번째 소설인 서스펜스 드라마는 2020년 11월 17일 출시되었습니다. 아마존, 바른스 앤 노블, 애플 북스토어, 그리고 여러분이 선호하는 지역 서점에서 이 소설인 "The Contortionists"는 농담적으로 몰몬지역 아동의 실종에 대해 다룬 심리적 페이지 터너입니다. 저는 이 소설을 두 번 읽고 오디오 버전을 두 번 들었습니다. 그것은 문학적 걸작입니다. 그러나 'The Contortionists'는 마음이 약한 사람들에겐 권하지 않습니다.
+\*나의 형제인 매우 재능 있는 소설 작가이자 소설가, 로버트 호드슨 밴 왜너,가 https://medium.com/@richardvanwagoner에 대한 실용적이고 기술적 제안을 제공한 데에 상당한 공로가 있습니다. 로브의 두 번째 소설인 서스펜스 드라마는 2020년 11월 17일 출시되었습니다. 아마존, 바른스 앤 노블, 애플 북스토어, 그리고 여러분이 선호하는 지역 서점에서 이 소설인 "The Contortionists"는 농담적으로 몰몬지역 아동의 실종에 대해 다룬 심리적 페이지 터너입니다. 저는 이 소설을 두 번 읽고 오디오 버전을 두 번 들었습니다. 그것은 문학적 걸작입니다. 그러나 'The Contortionists'는 마음이 약한 사람들에겐 권하지 않습니다.
 
 <div class="content-ad"></div>
 

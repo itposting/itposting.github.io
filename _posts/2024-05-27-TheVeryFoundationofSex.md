@@ -3,7 +3,7 @@ title: "성의 기초"
 description: ""
 coverImage: "/assets/img/2024-05-27-TheVeryFoundationofSex_0.png"
 date: 2024-05-27 15:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TheVeryFoundationofSex_0.png
 tag: Tech
 originalTitle: "The Very Foundation of Sex"
@@ -11,7 +11,6 @@ link: "https://medium.com/@kalidubois/the-very-f-886cfb110e61"
 ---
 
 
-```markdown
 ![image](/assets/img/2024-05-27-TheVeryFoundationofSex_0.png)
 
 나의 남자친구는 정말 질투심이 많은 사람인데, 그게 맘에 든다. 최근에 그는 약물을 먹여 적나라하게 만지작거리며 자국들을 즐기던 야한 이야기를 나눠주었다. 그 결과로 그는 세로필름으로 감싸져 있고 누군가에 의해 최면을 걸리게 된 것이었다. 그는 몇 년간 에로틱 탐험의 세계에 발을 들인 적이 있었는데, 아마도 나와 같은 기간 동안 활동했던 것 같다.
@@ -19,7 +18,7 @@ link: "https://medium.com/@kalidubois/the-very-f-886cfb110e61"
 매우 섹시한 최면 비디오를 보려면 여기를 클릭해주세요: [영상 링크](https://youtu.be/mkcTmNe6kQU?si=LktapkZGHkdnbZFW)
 
 특히 격렬한 세션 끝에 하룻밤, 그의 품에서 잠이 들었다. 그가 부드럽게 내 등을 쓸어 주며, 나는 몸을 돌리고 그가 속삭였다. "너는 완전 훌륭한 사람이 됐어." 그 말에 오싹함이 느껴졌다. 왜냐하면 그가 몇 년 동안 내 블로그를 열심히 읽고 있었다는 것을 알고 있었기 때문이다. 몇 년 동안! 그리고 나는 보통 그저 내 이중 인생에 관해 아무것도 모르는 무술에서 만나는 바보들의 성적 유혹과 데이트 제의를 무시하곤 했다.
-```
+
 
 <div class="content-ad"></div>
 

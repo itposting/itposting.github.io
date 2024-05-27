@@ -3,13 +3,12 @@ title: "개인정보 보호, 정치, 그리고 포르노"
 description: ""
 coverImage: "/assets/img/2024-05-27-Privacypoliticsandporn_0.png"
 date: 2024-05-27 15:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Privacypoliticsandporn_0.png
 tag: Tech
 originalTitle: "Privacy, politics, and porn"
 link: "https://medium.com/user-experience-design-1/privacy-politics-and-porn-2524b8e68f25"
 ---
-
 
 캐나다 정치가 아이스크림이라면, 저당량 네오폴리탄 맛일 것 같아요. 쇼콜라, 바닐라, 딸기 같은 세 가지 서로 다른 옵션이 있는데, 실제 맛과는 다르게 느껴질 수 있고 인공적인 후맛을 남길 수 있어요.
 
@@ -91,7 +90,7 @@ link: "https://medium.com/user-experience-design-1/privacy-politics-and-porn-252
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Privacy, Politics, and Porn](/assets/img/2024-05-27-Privacypoliticsandporn_1.png)
 
 포르노 그라피티에 따르면, 전체 트래픽의 79%는 20개 국가에서 기여하는 것으로 나타났어요. 이 통계는 'America #1' 슬로건을 재구성했고 미국 다음으로 영국, 일본, 프랑스, 이탈리아가 뒤를 이었습니다.
@@ -99,7 +98,7 @@ link: "https://medium.com/user-experience-design-1/privacy-politics-and-porn-252
 캐나다는 7위네요! 알겠어요, 캐나다친구들, 그건 초보 숫자야! Mindgeek (Pornhub)는 몬트리올에 있으니까 국가 경제를 지원해야죠, 알겠죠?
 
 포르노 사이트 방문은 보통 짧고 달콤하죠. 미국인들의 평균 방문 시간은 9분 44초예요. "이탈률"에게 완전히 새로운 의미를 부여하고 있네요. (출처)
-```
+
 
 <div class="content-ad"></div>
 
@@ -115,7 +114,7 @@ link: "https://medium.com/user-experience-design-1/privacy-politics-and-porn-252
 
 ![이미지](/assets/img/2024-05-27-Privacypoliticsandporn_2.png)
 
-텍사스와 몬타나도 곧 유사한 입법을 추진할 것으로 예상되며, 이에 따른 VPN 사용량이 증가할 것으로 예상됩니다. 하지만 추적하기 어려운 것은 이들 사용자 중 얼마나 많은 사람이 성인 콘텐츠를 찾기 위해 다른 경로를 선택하는지입니다. 
+텍사스와 몬타나도 곧 유사한 입법을 추진할 것으로 예상되며, 이에 따른 VPN 사용량이 증가할 것으로 예상됩니다. 하지만 추적하기 어려운 것은 이들 사용자 중 얼마나 많은 사람이 성인 콘텐츠를 찾기 위해 다른 경로를 선택하는지입니다.
 
 # 표면 웹, 딥 웹 및 다크 웹에서의 신원
 
@@ -123,7 +122,7 @@ link: "https://medium.com/user-experience-design-1/privacy-politics-and-porn-252
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![프라이버시, 정치 그리고 포르노그래피](/assets/img/2024-05-27-Privacypoliticsandporn_3.png)
 
 깊은 웹은 검색 엔진 인덱싱되지 않은 인터넷의 모든 부분을 포함하며, 개인 데이터베이스 및 구독 기반 서비스를 포함합니다. 깊은 웹에는 의료 기록, 법률 문서, 과학 보고서, 구독 정보, 학술 저널, 은행 및 금융 기록, 개인 이메일 계정, 그리고 기업 웹 페이지와 같은 개인 데이터베이스가 포함됩니다. 이러한 자료에는 특정 자격 증명 또는 권한이 필요합니다.
@@ -131,7 +130,7 @@ link: "https://medium.com/user-experience-design-1/privacy-politics-and-porn-252
 이 데이터는 일반적인 검색 엔진에 인덱싱되지 않으므로 대다수의 인터넷이 일반 대중에게 숨겨진 상태입니다. 그리고 만약 제3자에 의해 악용된다면 모든 관련자들은 심각한 문제에 직면하여 대규모 소송과 돌이킬 수 없는 개인 피해를 입을 수 있습니다.
 
 다크 웹은 깊은 웹의 일부이지만 동일하지는 않습니다. 자세한 내용은 생략하고, 사용자의 개인 정보보호와 익명성 유지로 잘 알려져 있으며 연결을 여러 서버를 통해 라우팅하고 각 단계에서 데이터를 암호화하여 처리합니다.
-```
+
 
 <div class="content-ad"></div>
 

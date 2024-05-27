@@ -3,13 +3,12 @@ title: "PIC 생태계"
 description: ""
 coverImage: "/assets/img/2024-05-27-PICEcosystem_0.png"
 date: 2024-05-27 13:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-PICEcosystem_0.png
 tag: Tech
 originalTitle: "PIC Ecosystem"
 link: "https://medium.com/@lfoster.se.be/pic-ecosystem-f8268a6c3d72"
 ---
-
 
 # PIC16LF18324 코딩을 시작하는 방법
 
@@ -107,7 +106,7 @@ PICKit4의 다른 쪽에는 작은 USB 2 커넥터가 있습니다. 이를 PC에
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![PICEcosystem Image 3](/assets/img/2024-05-27-PICEcosystem_3.png)
 
 이것은 "Options categories" 드롭다운을 사용하는 데 매우 중요한 부분입니다. 이것은 여전히 보이는 컨트롤을 더 조정합니다.
@@ -115,7 +114,7 @@ PICKit4의 다른 쪽에는 작은 USB 2 커넥터가 있습니다. 이를 PC에
 ![PICEcosystem Image 4](/assets/img/2024-05-27-PICEcosystem_4.png)
 
 "Power target circuit from the PICkit 4"를 선택해야 합니다. 이 설정은 컴퓨터의 USB 드라이브를 통해 PICkit 4와 PIC 칩을 연결한 경우에 사용됩니다. 디버깅 및 플래시 드라이브에 코드를 업로드하는 데 필요합니다. 이 값은 USB 전원을 보드로 공급합니다. 이를 사용하지 않으면 보드 자체의 전원이 사용됩니다. 그림에서와 같이 단순한 브레드보드에 칩을 연결한 경우, PICkit으로부터 전원을 공급하는 것이 올바른 선택입니다. 이 값은 기본적으로 선택되지 않습니다. 아마도 소프트웨어가 모든 하드웨어를 보호하려고 하기 때문일 것입니다. 대상 보드에 백업 전원 공급이 사용 중인 경우 이 설정은 좋은 선택이 아닙니다. 실제로 이 설정을 "Power target circuit from PICkit 4"로 변경하지 말아야 할 때까지 변경하지 않으려다고 말할 정도입니다. 필요한 경우 팝업 메시지가 표시될 때까지 변경하지 마세요. 이 설정이 필요하지만 설정되지 않은 경우 PICkit / IDE 조합은 팝업 오류 대화상자로 경고합니다. 설정을 저장하려면 "확인" 버튼을 클릭해야 합니다.
-```  
+
 
 <div class="content-ad"></div>
 
@@ -145,7 +144,7 @@ XC8 컴파일러를 설치할 겁니다. 다운로드할 수 있는 링크는 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![PICEcosystem_8](/assets/img/2024-05-27-PICEcosystem_8.png)
 
 현재 작성 시점보다 몇 달 전의 날짜를 가진 것이 있습니다. 이는 코드가 꾸준히 유지되고 있는 좋은 신호입니다. IDE는 업데이트 프롬프트를 정기적으로 제공합니다.
@@ -153,11 +152,11 @@ XC8 컴파일러를 설치할 겁니다. 다운로드할 수 있는 링크는 �
 여기서 다운로드는 설치 프로그램을 위한 것입니다. 해당 설치 프로그램을 실행하면 아래의 대화 상자들이 팝업됩니다.
 
 ![PICEcosystem_9](/assets/img/2024-05-27-PICEcosystem_9.png)
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![PICEcosystem_10](/assets/img/2024-05-27-PICEcosystem_10.png)
 
 ![PICEcosystem_11](/assets/img/2024-05-27-PICEcosystem_11.png)
@@ -165,11 +164,11 @@ XC8 컴파일러를 설치할 겁니다. 다운로드할 수 있는 링크는 �
 ![PICEcosystem_12](/assets/img/2024-05-27-PICEcosystem_12.png)
 
 ![PICEcosystem_13](/assets/img/2024-05-27-PICEcosystem_13.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-PICEcosystem_14.png)
 
 ![이미지](/assets/img/2024-05-27-PICEcosystem_15.png)
@@ -177,7 +176,7 @@ XC8 컴파일러를 설치할 겁니다. 다운로드할 수 있는 링크는 �
 # Tool Chains
 
 MPLAB X IDE는 빌드를 수행하기 위해 "툴 체인" (컴파일러 및 기타 관련 코드를 포함하는 도구)을 사용합니다. "도구/옵션"을 이용하여 관리할 수 있으며, 이어지는 대화 상자에서 임베디드 아이콘을 클릭하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -233,7 +232,7 @@ MPLAB X IDE는 빌드를 수행하기 위해 "툴 체인" (컴파일러 및 기�
 
 아래는 표 형식을 Markdown 포맷으로 바꾸는 방법입니다:
 
-```markdown
+
 <img src="/assets/img/2024-05-27-PICEcosystem_26.png" />
 
 We will remedy that.
@@ -241,11 +240,11 @@ We will remedy that.
 <img src="/assets/img/2024-05-27-PICEcosystem_27.png" />
 
 Using this control, we can add a “main.c” file. ‘C’ is the language we will use for this program.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-PICEcosystem_28.png)
 
 이미지를 삽입한 코드는 아래와 같습니다.
@@ -253,17 +252,17 @@ Using this control, we can add a “main.c” file. ‘C’ is the language we w
 /*
 
 * File: blinker.c
-```
+
 
 <div class="content-ad"></div>
 
-* 작성자: you
+- 작성자: you
 
-*
+-
 
-* 2024년 5월 23일 오전 12:21에 작성함
+- 2024년 5월 23일 오전 12:21에 작성함
 
-*/
+\*/
 
 <div class="content-ad"></div>
 
@@ -281,26 +280,26 @@ return;
 
 이것은 그렇게 많은 것을 하지 않아. 하지만 완전한 프로그램인 건 맞아. 이제 하는 일은 세부 사항을 채우는 거야. 자세히 구성하면 요런 느낌이 될 거야.
 
-```markdown
+
 // PIC16LF18324 Configuration Bit Settings
 
 // ‘C’ source line config statements
 
 // CONFIG1
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 - FEXTOSC = LP: 외부 오실레이터 모드 선택 비트 (32.768 kHz에 최적화된 LP(크리스탈 오실레이터))
 - RSTOSC = HFINT32: COSC 비트의 전원 업 기본 값 (2x PLL과 함께 HFINTOSC(32MHz)가 기본값)
 - CLKOUTEN = ON: 클록 출력 활성화 비트 (CLKOUT 기능이 활성화되어 OSC2에서 FOSC/4 클록이 나타남)
 - CSWEN = OFF: 클록 전환 활성화 비트 (사용자 소프트웨어로 NOSC 및 NDIV 비트를 변경할 수 없음)
-```  
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 #pragma config FCMEN = OFF // 실패 안전 클럭 모니터 활성화 (실패 안전 클럭 모니터가 비활성화됨)
 
 // CONFIG2
@@ -308,24 +307,24 @@ return;
 #pragma config MCLRE = OFF // 마스터 클리어 활성화 비트 (MCLR/VPP 핀 기능은 디지턼 입력; MCLR 내부적으로 비활성화됨; 약한 풀업은 포트 핀의 WPU 제어 비트에 따라 제어됨.)
 
 #pragma config PWRTE = ON // 파워업 타이머 활성화 비트 (PWRT 활성화됨)
-```
+
 
 <div class="content-ad"></div>
 
 Markdown 형식으로 테이블 태그를 변경해주세요:
 
-```markdown
+
 | Configuration | Setting  |
 |---------------|----------|
 | WDTE          | OFF      |
 | LPBOREN       | ON       |
 | BOREN         | OFF      |
 | BORV          | HIGH     |
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 #pragma config PPS1WAY = OFF // PPSLOCK bit One-Way Set Enable bit (The PPSLOCK bit can be set and cleared repeatedly (subject to the unlock sequence))
 
 #pragma config STVREN = OFF // Stack Overflow/Underflow Reset Enable bit (Stack Overflow or Underflow will not cause a Reset)
@@ -333,11 +332,11 @@ Markdown 형식으로 테이블 태그를 변경해주세요:
 #pragma config DEBUG = ON // Debugger enable bit (Background debugger enabled)
 
 // CONFIG3
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 #pragma config WRT = ALL // User NVM self-write protection bits (0000h to 0FFFh write protected, no addresses may be modified)
 
 #pragma config LVP = OFF // Low Voltage Programming Enable bit (High Voltage on MCLR/VPP must be used for programming.)
@@ -345,11 +344,11 @@ Markdown 형식으로 테이블 태그를 변경해주세요:
 // CONFIG4
 
 #pragma config CP = ON // User NVM Program Memory Code Protection bit (User NVM code protection enabled)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 #pragma config CPD = ON // 데이터 NVM 메모리 코드 보호 비트 (데이터 NVM 코드 보호 활성화)
 
 // #pragma 구문은 프로젝트 파일 포함보다 앞에 있어야 합니다.
@@ -357,11 +356,11 @@ Markdown 형식으로 테이블 태그를 변경해주세요:
 // ON 및 OFF에 대한 #define 대신 프로젝트 열거형 사용.
 
 #include `xc.h`
-```
+
 
 <div class="content-ad"></div>
 
-```C
+```c
 #define _XTAL_FREQ 32000000 // 20MHz 크리스탈 주파수로 정의
 
 void main(void) '
@@ -381,7 +380,7 @@ __delay_ms(250); // 1/4초의 지연을 추가합니다
 RC0 = 0; // RC0 핀을 논리 Low로 설정하고 끕니다
 
 __delay_ms(1000); // 1초의 지연을 추가합니다
-```  
+```
 
 <div class="content-ad"></div>
 
@@ -429,7 +428,7 @@ MPLAB PICkit 4 인-서킷 디버거 사용자 가이드에 이 자세한 내용�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-27-PICEcosystem_32](/assets/img/2024-05-27-PICEcosystem_32.png)
 
 ![2024-05-27-PICEcosystem_33](/assets/img/2024-05-27-PICEcosystem_33.png)
@@ -437,7 +436,7 @@ MPLAB PICkit 4 인-서킷 디버거 사용자 가이드에 이 자세한 내용�
 "top"을 나타내는 칩 상단 가장자리의 작은 들여쓰기 위치를 주목해주세요. 그 위치에서 왼쪽에는 전원, 오른쪽에는 접지가 있습니다. 가능한 명확하게 하기 위해, 화살표로 가리킨 핀(PICkit의 핀 1)은 왼쪽에 있는 칩의 중간 핀과 연결되어 있습니다(거기에는 저항도 있습니다). 그게 바로 노란색 와이어입니다. 빨간색 VDD 와이어는 기판 왼쪽의 빨간 전원 레일에 연결되어 있습니다. 접지 와이어는 기판 오른쪽의 접지 전원 레일로 연결되어 있습니다. PIC 칩을 전원 공급하기 위해, 작은 빨간색 와이어가 맨 위/왼쪽 쪽 핀으로 이어지고, 작은 회색 와이어가 맨 위/오른쪽 쪽 핀으로 이어지고 있습니다. 파란 와이어는 접지 와이어 아래에 연결되어 있습니다. 하얀 와이어는 파란 와이어 아래에 연결되어 있습니다.
 
 PICkit 쪽에서, 노란 와이어는 핀 1에, 빨간 와이어는 핀 2에, 검정 와이어는 핀 3에, 파란 와이어는 핀 4에, 하얀 와이어는 핀 5에 연결되어 있습니다. 확인을 위해, 화살표 표식으로부터 가장 먼 PICkit 상에 3개의 빈 구멍이 보여야 합니다. 다시 말씀드리면 노란-빨간-검정-파란-하얀 순입니다."
-```
+
 
 <div class="content-ad"></div>
 
@@ -481,7 +480,7 @@ PIC16LF18324는 3.3 볼트 장치입니다. 다른 장치에 대해 이 경고�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-27-PICEcosystem_41.png)
 
 To be safe, after completing this step, check if the setting is still there. It might be helpful to click Debug / Disconnect debug tool after an unsuccessful attempt. Now, try the burning step again.
@@ -489,7 +488,7 @@ To be safe, after completing this step, check if the setting is still there. It 
 ![Image 2](/assets/img/2024-05-27-PICEcosystem_42.png)
 
 If things don't go well, please double-check the wiring. If the wires are incorrect, you may encounter this situation.
-```
+
 
 <div class="content-ad"></div>
 

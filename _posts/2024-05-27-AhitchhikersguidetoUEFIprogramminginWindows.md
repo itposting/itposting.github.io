@@ -3,13 +3,12 @@ title: "윈도우에서 UEFI 프로그래밍을 위한 히치하이커 안내서
 description: ""
 coverImage: "/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_0.png"
 date: 2024-05-27 12:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_0.png
 tag: Tech
 originalTitle: "A hitchhiker’s guide to UEFI programming in Windows"
 link: "https://medium.com/d-classified/a-hitchhikers-guide-to-uefi-programming-in-windows-7449994a0486"
 ---
-
 
 ## 왕밍재는 Secure Boot가 활성화된 실제 시스템에 개발한 UEFI 프로그램의 전체 과정을 설명합니다. 그의 안내로 엔지니어들은 UEFI 환경의 다양한 요소를 이해하고 UEFI 프로그램의 실행과 배포에 미치는 영향을 파악할 수 있습니다. 민재는 다양한 실용적 고려 사항을 포함하여 독자들이 다양한 배포 옵션을 평가하는 데 도움을 줍니다.
 
@@ -53,7 +52,7 @@ UEFI 실행 파일은 OS에서 직접 실행되지 않고 OS 부팅 전에 있�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot 1](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_1.png)
 
 F5를 사용해도 되지만, 이 방법은 Visual Studio 디버거를 시작하는데 이 경우에는 QEMU 또는 UEFI 실행 파일에 연결할 수 없기 때문에 쓸모가 없습니다.
@@ -61,7 +60,7 @@ F5를 사용해도 되지만, 이 방법은 Visual Studio 디버거를 시작하
 해결책의 빌드 출력 디렉토리 VisualUefi\samples\x64\Release\은 가상 볼륨으로 fs1:라는 레이블 아래로 탑재됩니다. 이 디렉토리의 내용을 나열하면 Windows에서 볼 수 있는 것과 동일한 파일과 폴더가 표시됩니다:
 
 ![Screenshot 2](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -85,15 +84,15 @@ F5를 사용해도 되지만, 이 방법은 Visual Studio 디버거를 시작하
 
 <div class="content-ad"></div>
 
-```
+
 ![Boot Maintenance Manager](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_5.png)
 
 Select Boot Options.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_7.png)
 
 Select Add Boot Option.
@@ -101,11 +100,11 @@ Select Add Boot Option.
 ![image](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_8.png)
 
 Select the first option.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image 1](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_9.png)
 
 Select UefiApplication.efi.
@@ -113,7 +112,7 @@ Select UefiApplication.efi.
 ![image 2](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_10.png)
 
 Enter any description; this will be the display name of the new boot option. The Optional Data field specifies the arguments that are passed to the UEFI executable. Leave it blank as the sample application does not use it.
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +126,7 @@ Enter any description; this will be the display name of the new boot option. The
 
 <div class="content-ad"></div>
 
-```markdown
+
 EFI_STATUS
 WaitForKeyStroke(
     OUT  EFI_INPUT_KEY* Key
@@ -147,11 +146,11 @@ WaitForKeyStroke(
     }
     return Status;
 }
-```
+
 
 호출하는 코드:
 
-```markdown
+
 Print(L"Press any key to continue...\n");
 EFI_INPUT_KEY keyInput;
 efiStatus = WaitForKeyStroke(&keyInput);
@@ -160,10 +159,11 @@ if (EFI_ERROR(efiStatus))
     Print(L"Failed to get keystroke: %lx\n", efiStatus);
     goto Exit;
 }
-```
+
 
 주의할 점: 샘플 응용 프로그램의 코드에 3가지 문제가 있습니다:
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -179,7 +179,7 @@ efiStatus = ShellInitialize();
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 efiStatus = ShellOpenFileByName(L"fs1:\\UefiApplication.efi",
 ```
@@ -190,8 +190,9 @@ efiStatus = ShellOpenFileByName(L"fs1:\\UefiApplication.efi",
 
 ```js
 efiStatus = gBS->LocateProtocol(&gEfiSampleDriverProtocolGuid, NULL, &sampleProtocol);
-``` 
 ```
+
+
 
 <div class="content-ad"></div>
 
@@ -199,7 +200,7 @@ efiStatus = gBS->LocateProtocol(&gEfiSampleDriverProtocolGuid, NULL, &sampleProt
 
 코드는 항상 실패 시에 항상 "Exit;"으로 이동하므로 사용자의 키 입력을 읽는 코드를 제일 위에 삽입해야 실행이 보장됩니다.
 
-부트 매니저 UI를 항상 입력해야 하는 것을 피하기 위해 부팅 순서를 EFI 셸 대신 새로운 옵션을 먼저 부팅하도록 변경할 수 있습니다. 그러려면, Boot Maintenance Manager ` Boot Options ` Change Boot Order로 이동하십시오: 
+부트 매니저 UI를 항상 입력해야 하는 것을 피하기 위해 부팅 순서를 EFI 셸 대신 새로운 옵션을 먼저 부팅하도록 변경할 수 있습니다. 그러려면, Boot Maintenance Manager ` Boot Options ` Change Boot Order로 이동하십시오:
 
 ![이미지](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_12.png)
 
@@ -225,7 +226,8 @@ Add Driver 옵션을 선택하세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![image](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_15.png)
 
 Select the first option.
@@ -233,11 +235,13 @@ Select the first option.
 ![image](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_16.png)
 
 Select UefiDriver.efi.
-```
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![이미지](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_17.png)
 
 어떤 설명을 입력하세요; 이는 새 드라이버 옵션의 표시 이름이 될 것입니다. 옵션 데이터 필드는 UEFI 실행 파일에 전달되는 인수를 지정합니다. 샘플 드라이버가 사용하지 않기 때문에 비워 두세요.
@@ -245,7 +249,8 @@ Select UefiDriver.efi.
 로드 옵션 Reconnect 필드는 펌웨어 부팅 관리자 실행 전에로드된 모든 드라이버를 무시하도록 드라이버에게 허용합니다 (UEFI 사양 섹션 3.1.3 참조). devtree 및 drivers 명령의 출력을 상기하세요 - 샘플 드라이버를 제외한 모든 항목은 펌웨어와 함께 제공된 드라이버이며 펌웨어 부팅 관리자 실행 전에 로드되었습니다. 호환성 문제가 발생할 수 있으므로 장치는 하나의 드라이버로 관리되어야 합니다. 샘플 드라이버는 기존 드라이버를 무시하지 않으므로 옵션을 활성화하는 것은 필요하지 않으며 순수한 효과가 없을 것입니다. 이 페이지를 저장하고 나가세요.
 
 펌웨어 부팅 관리자는 부팅 시 부트와 드라이버 옵션을 자동으로 실행하는 펌웨어 구성 요소를 가리킵니다; 사용자가 수동으로 실행할 부트 옵션을 선택하는 부팅 관리자 UI와 혼동하면 안 됩니다. 또한 드라이버 오버라이드를 적용하려면 마지막 드라이버 옵션이 처리된 후 모든 UEFI 드라이버가 시스템에서 연결 해제되고 다시 연결되어야 합니다.
-```
+
+
 
 
 <div class="content-ad"></div>
@@ -319,7 +324,8 @@ echo "@echo test startup script" > fs0:\startup.nsh
 exit 명령어로 셸을 종료하고 다시 실행하세요:
 
 ![이미지](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_22.png)
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -379,7 +385,7 @@ Authenticode 해시가 어떻게 계산되는지에 대한 정보는 Windows Aut
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_25.png)
 
 Select Secure Boot Configuration.
@@ -387,7 +393,7 @@ Select Secure Boot Configuration.
 ![Image](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_26.png)
 
 The Current Secure Boot State is set to Disabled. This entry is not configurable and is only meant to display the current state. The Attempt Secure Boot option itself is disabled (explained later), and the only option that can be changed is Secure Boot Mode. Change this from Standard Mode and Custom Mode which is the only other option available:
-```
+
 
 <div class="content-ad"></div>
 
@@ -479,7 +485,7 @@ MakeCert.exe -a sha256 -n "CN=SampleEfiSigner" -r -sv SampleEfiSigner.pvk Sample
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_33.png)
 
 다음으로 임의의 암호를 설정하고 확인을 누르세요.
@@ -487,14 +493,14 @@ MakeCert.exe -a sha256 -n "CN=SampleEfiSigner" -r -sv SampleEfiSigner.pvk Sample
 이렇게 하면 이전 단계에서 설정한 암호를 요청하는 두 번째 프롬프트가 생성됩니다. 이는 자체 서명 작업을 위한 것입니다:
 
 ![이미지](/assets/img/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows_34.png)
-```
+
 
 <div class="content-ad"></div>
 
 MakeCert 명령어의 결과는 다음과 같아야 합니다:
 
 ```js
-Succeeded
+Succeeded;
 ```
 
 그런 다음 .pvk 파일을 .pfx로 변환하여 signtool에서 UEFI 실행 파일에 서명할 수 있도록 합니다:

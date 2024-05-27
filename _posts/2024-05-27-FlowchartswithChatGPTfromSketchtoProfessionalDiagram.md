@@ -3,13 +3,12 @@ title: "스케치에서 프로페셔널 다이어그램으로 챗지피티를 �
 description: ""
 coverImage: "/assets/img/2024-05-27-FlowchartswithChatGPTfromSketchtoProfessionalDiagram_0.png"
 date: 2024-05-27 14:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-FlowchartswithChatGPTfromSketchtoProfessionalDiagram_0.png
 tag: Tech
 originalTitle: "Flowcharts with ChatGPT : from Sketch to Professional Diagram"
 link: "https://medium.com/@andyz_68584/convert-sketched-flowcharts-to-professional-diagrams-with-chatgpt-5a5ccac881c4"
 ---
-
 
 프로페셔널한 플로차트 작성이 매우 힘들었던 2020년의 이야기는 이제 그만 해요. AI의 확산으로 종이에 간단한 플로차트를 스케치한 다음 Mermaid 코드로 변환하는 것이 매우 쉬워졌어요. 이 Mermaid 코드는 많은 온라인 편집기에 붙여넣기하여 멋진 편집 가능한 플로차트를 얻을 수 있답니다.
 
@@ -19,9 +18,9 @@ link: "https://medium.com/@andyz_68584/convert-sketched-flowcharts-to-profession
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Flowchart](/assets/img/2024-05-27-FlowchartswithChatGPTfromSketchtoProfessionalDiagram_1.png)
-```
+
 
 친절하게 ChatGPT에게 이미지를 Mermaid 코드로 변환해달라고 요청한 후 이미지를 업로드하세요. 세부 대화가 다음과 같았습니다:
 
@@ -31,15 +30,20 @@ link: "https://medium.com/@andyz_68584/convert-sketched-flowcharts-to-profession
 (ChatGPT): (Mermaid 코드 제공)
 
 이 내용을 온라인 Mermaid 편집기에 복사하여 붙여넣었습니다. 구체적으로는 https://workflow.jace.pro를 선택했는데, 무료이며 간편합니다. 결과는 아래와 같습니다. 제 손으로 스케치한 이미지보다 훨씬 깔끔하게 보입니다!
-```
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![Flowchart](/assets/img/2024-05-27-FlowchartswithChatGPTfromSketchtoProfessionalDiagram_2.png)
 
 Hints
 
 - ChatGPT을 사용할 때는 소유권 데이터를 업로드하는 데 주의하세요. 기본적으로 OpenAI는 귀하의 프롬프트를 다시 사용하지 않지만, 귀하의 소유권 데이터는 여전히 어딘가의 서버로 전송되며 우리는 그에 대해 완전히 확신할 수 없습니다.
 - 플로우차트를 스케치하는 첫 번째 시도에서 블록을 건너뛰는 실수를 범했습니다. 그렇지만 ChatGPT가 내게 정확히 채워 넣어 줬어요. 놀랍죠!
-```
+
+
+
+

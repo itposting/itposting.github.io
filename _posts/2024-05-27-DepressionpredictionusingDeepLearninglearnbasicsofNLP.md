@@ -3,13 +3,12 @@ title: "딥 러닝을 이용한 우울증 예측 NLP 기초 배우기"
 description: ""
 coverImage: "/assets/img/2024-05-27-DepressionpredictionusingDeepLearninglearnbasicsofNLP_0.png"
 date: 2024-05-27 14:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-DepressionpredictionusingDeepLearninglearnbasicsofNLP_0.png
 tag: Tech
 originalTitle: "Depression prediction using Deep Learning (learn basics of NLP)"
 link: "https://medium.com/@omid3jafari/depression-prediction-using-deep-learning-learn-basics-of-nlp-5c05c97d01a9"
 ---
-
 
 <table>
   <tr>
@@ -65,7 +64,7 @@ world는 1로 표현
 데이터셋을 위한 변수를 정의해볼게요 :
 
 ```js
-dataset = pd.read_csv("D:\IT\ML project\Predict depression\depression_dataset_reddit_cleaned.csv")
+dataset = pd.read_csv("D:ITML projectPredict depressiondepression_dataset_reddit_cleaned.csv");
 ```
 
 이제 문장과 레이블을 위한 변수 두 개를 정의해야 해요 :
@@ -73,8 +72,8 @@ dataset = pd.read_csv("D:\IT\ML project\Predict depression\depression_dataset_re
 <div class="content-ad"></div>
 
 ```js
-sentences = dataset['clean_text']
-labels = dataset['is_depression']
+sentences = dataset["clean_text"];
+labels = dataset["is_depression"];
 ```
 
 모델을 훈련하기 위해 훈련 데이터와 모델을 시험하고 최적화하는 테스트 데이터가 필요합니다.
@@ -98,7 +97,7 @@ testing_labels = labels[training_size:]
 Tokenizer 작업을 해봅시다.
 
 ```js
-''' 
+'''
 여기서는 텐서플로우 토크나이저를 사용합니다.
 '''
 
@@ -108,7 +107,7 @@ vocab_size = 10000 #토크나이저가 기대하는 단어의 개수
 
 tokenizer = Tokenizer(num_words=vocab_size, oov_token='<OOV>', lower=True)
 tokenizer.fit_on_texts(training_sentences) #단어를 숫자로 변환하기
-#word_index = tokenizer.word_index #각 단어의 숫자(토큰)를 표시 
+#word_index = tokenizer.word_index #각 단어의 숫자(토큰)를 표시
 # print(word_index)
 ```
 
@@ -147,7 +146,7 @@ Output:
 
 # 3 — 시퀀스 패딩
 
-모든 문장이 같은 길이를 가지고 있지 않기 때문에, 이를 처리하기 위해 시퀀스 패딩을 사용합니다. 
+모든 문장이 같은 길이를 가지고 있지 않기 때문에, 이를 처리하기 위해 시퀀스 패딩을 사용합니다.
 
 예를 들어 2개의 문장이 있는데, 하나는 3단어이고 다른 하나는 4단어를 가지고 있다고 가정해보겠습니다. 이런 상황에서, 패딩 시퀀스는 2x4 행렬을 만들어줍니다. 3단어를 가진 문장은 맨 끝이나 맨 처음 행렬 요소를 0으로 처리할 것입니다.
 
@@ -195,7 +194,8 @@ testing_padded = pad_sequences(testing_sequences, maxlen=max_length)
 # 4 — Embedding
 
 Embedding은 단어를 벡터로 변환합니다. 이를 통해 모델은 단어 간의 관계를 이해할 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -219,19 +219,22 @@ R(x) = max(0,x)
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![Image](/assets/img/2024-05-27-DepressionpredictionusingDeepLearninglearnbasicsofNLP_1.png)
 
-If the labels of the data are binary (0 or 1) like the dataset we are using, we use the sigmoid activation function. 
+If the labels of the data are binary (0 or 1) like the dataset we are using, we use the sigmoid activation function.
 
-If the output of the sigmoid activation function (the last layer) is greater than 0.5, it is assigned the label 1. If it is lower than 0.5, it is assigned the label 0. 
+If the output of the sigmoid activation function (the last layer) is greater than 0.5, it is assigned the label 1. If it is lower than 0.5, it is assigned the label 0.
 
 In summary:
-```
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 출력 결과 `0.5 — — → 1
 
 출력 결과 `0.5 — — -` 0
@@ -254,8 +257,9 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 
 num_epochs = 10
 history = model.fit(training_padded, training_labels, epochs=num_epochs, validation_data=(testing_padded, testing_labels))
-``` 
 ```
+
+
 
 <div class="content-ad"></div>
 

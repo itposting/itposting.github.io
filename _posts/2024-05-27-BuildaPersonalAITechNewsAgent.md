@@ -3,13 +3,12 @@ title: "개인용 AI 기술 소식 에이전트 구축하기"
 description: ""
 coverImage: "/assets/img/2024-05-27-BuildaPersonalAITechNewsAgent_0.png"
 date: 2024-05-27 15:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-BuildaPersonalAITechNewsAgent_0.png
 tag: Tech
 originalTitle: "Build a Personal AI Tech News Agent"
 link: "https://medium.com/gitconnected/build-a-personal-ai-tech-news-agent-94e7a2e508fe"
 ---
-
 
 ### 귀하의 선호에 따라 기술 사이트를 크롤링하여 주요 트렌드를 요약합니다
 
@@ -41,7 +40,7 @@ AI 시대에 이런 것을 구축하는 것이 쉽다고 생각할 수 있습니
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Personal AI Tech News Agent](/assets/img/2024-05-27-BuildaPersonalAITechNewsAgent_3.png)
 
 보고서는 우리가 받은 내용의 짧은 스니펫입니다. 최대 열 가지 카테고리를 선택할 수 있고, 물론 매일 또는 매주 기술 봇이 찾을 키워드는 무한합니다.
@@ -49,7 +48,7 @@ AI 시대에 이런 것을 구축하는 것이 쉽다고 생각할 수 있습니
 여기에서 보고서의 전체 예시를 찾을 수 있습니다. 원하는 대로 조정하여 모양을 바꿀 수 있습니다. 한 가지 카테고리에만 집중하거나 몇 가지 키워드에만 초점을 맞출 수도 있습니다.
 
 우리를 대신해서 일을 하는 LLM이 있는데요, 각 카테고리 내에서 제공된 데이터로 그 소스를 요약합니다. 이 뉴스레터나 보고서를 조직하는 사람은 없습니다. 데이터가 있고, 그리고 LLM이 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -166,34 +165,34 @@ AWS 콘솔에서 IAM으로 이동하세요. 새로운 사용자를 만들어 마
 
 ```json
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "iam:GetRole",
-                "events:DescribeRule",
-                "apigateway:*",
-                "s3:*",
-                "logs:*",
-                "events:PutRule",
-                "events:RemoveTargets",
-                "events:PutTargets",
-                "events:DeleteRule",
-                "iam:CreateRole",
-                "cloudformation:*",
-                "iam:AttachRolePolicy",
-                "iam:PutRolePolicy",
-                "events:PutTargets",
-                "iam:PassRole",
-                "lambda:*",
-                "iam:TagRole",
-                "iam:UntagRole"
-            ],
-            "Resource": "*"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "iam:GetRole",
+        "events:DescribeRule",
+        "apigateway:*",
+        "s3:*",
+        "logs:*",
+        "events:PutRule",
+        "events:RemoveTargets",
+        "events:PutTargets",
+        "events:DeleteRule",
+        "iam:CreateRole",
+        "cloudformation:*",
+        "iam:AttachRolePolicy",
+        "iam:PutRolePolicy",
+        "events:PutTargets",
+        "iam:PassRole",
+        "lambda:*",
+        "iam:TagRole",
+        "iam:UntagRole"
+      ],
+      "Resource": "*"
+    }
+  ]
 }
 ```
 
@@ -202,7 +201,8 @@ AWS 콘솔에서 IAM으로 이동하세요. 새로운 사용자를 만들어 마
 정책에 의미 있는 이름을 지어 '저장'을 클릭하십시오. 저는 내 것을 serverless로 지었습니다.
 
 정책을 보려면 IAM 사용자를 다시 만들어야 할 수도 있지만, 페이지를 새로 고침하면 표시될 것입니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -252,12 +252,10 @@ provider:
 
 <div class="content-ad"></div>
 
-내 노트북에는 Docker도 설치되어 있습니다. Docker가 실행 중이 아니라면 종속 항목을 Docker와 함께 패키징하도록 serverless.yml 파일을 false로 변경하십시오. 
+내 노트북에는 Docker도 설치되어 있습니다. Docker가 실행 중이 아니라면 종속 항목을 Docker와 함께 패키징하도록 serverless.yml 파일을 false로 변경하십시오.
 
 ```js
-custom:
-  pythonRequirements:
-    dockerizePip: false
+custom: pythonRequirements: dockerizePip: false;
 ```
 
 우리가 Docker를 사용할 필요가 없다고 생각하기 때문에 이 부분은 생략해도 문제가 되지 않습니다.
@@ -486,9 +484,9 @@ serverless invoke local --function newsletterTrigger
 
 이메일이 발신된 후 어떻게 될까요? 이메일 받은 편지함에는 다음과 같은 내용이 표시됩니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-BuildaPersonalAITechNewsAgent_13.png)
-```
+
 
 사용자 설정, 시스템 템플릿, 그리고 LLM 선택에 따라 달라질 수 있어요.
 

@@ -3,13 +3,12 @@ title: "모든 개발자를 위해 도움이 되는 5가지 Bash 문자열 조�
 description: ""
 coverImage: "/assets/img/2024-05-27-5BashStringManipulationMethodsThatHelpEveryDeveloper_0.png"
 date: 2024-05-27 12:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-5BashStringManipulationMethodsThatHelpEveryDeveloper_0.png
 tag: Tech
 originalTitle: "5 Bash String Manipulation Methods That Help Every Developer"
 link: "https://medium.com/gitconnected/5-bash-string-manipulation-methods-that-help-every-developer-49d4ee38b593"
 ---
-
 
 ![Bash String Manipulation Methods](/assets/img/2024-05-27-5BashStringManipulationMethodsThatHelpEveryDeveloper_0.png)
 
@@ -74,7 +73,7 @@ echo "${str/%.zip/.conf}" # db_config_backup.conf
 echo "${str/#db/settings}" # settings_config_backup.zip
 ```
 
-위의 부분 문자열 대체 예시에서 일치시키기 위해 정확한 부분 문자열 세그먼트를 사용했지만, 다음과 같이 '*' 와일드카드 문자를 사용하여 부분 문자열을 사용할 수도 있습니다:
+위의 부분 문자열 대체 예시에서 일치시키기 위해 정확한 부분 문자열 세그먼트를 사용했지만, 다음과 같이 '\*' 와일드카드 문자를 사용하여 부분 문자열을 사용할 수도 있습니다:
 
 ```bash
 #!/bin/bash
@@ -141,7 +140,8 @@ echo "${str/$re/new}.bak" # db_backup_new.bak
 ```
 
 # Substring Removal Techniques
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -245,7 +245,7 @@ echo "${arr[4]}" # Bash
 
 위의 코드 스니펫은 쉼표를 구분자로 사용하며 read 내장 명령어를 사용하여 IFS를 기반으로 배열을 생성합니다.
 
-read를 사용하지 않고 쉽게 분할할 수 있는 방법이 있더라도, 숨겨진 문제가 없는지 확인해야 합니다. 예를 들어, 다음 분할 구현은 매우 간단하지만 * (현재 디렉토리의 내용으로 확장)을 요소로 포함하고 구분 기호로 공백을 사용하는 경우에 작동하지 않습니다:
+read를 사용하지 않고 쉽게 분할할 수 있는 방법이 있더라도, 숨겨진 문제가 없는지 확인해야 합니다. 예를 들어, 다음 분할 구현은 매우 간단하지만 \* (현재 디렉토리의 내용으로 확장)을 요소로 포함하고 구분 기호로 공백을 사용하는 경우에 작동하지 않습니다:
 
 ```bash
 #!/bin/bash
@@ -261,13 +261,13 @@ echo "${#arr[@]}" # 현재 디렉토리의 내용이 포함되어 있음
 
 <div class="content-ad"></div>
 
-```markdown
+
 지금까지 읽어 주셔서 감사합니다.
 
 # 레벨 업 코딩
 
 우리 커뮤니티의 일원이 되어 주셔서 감사합니다! 마지막으로 하고 가기 전에:
-```
+
 
 <div class="content-ad"></div>
 

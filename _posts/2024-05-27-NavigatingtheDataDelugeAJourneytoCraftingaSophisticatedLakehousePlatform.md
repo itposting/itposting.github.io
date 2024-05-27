@@ -3,13 +3,12 @@ title: "데이터 폭풍 속을 해마하는 여정 정교한 레이크하우스
 description: ""
 coverImage: "/assets/img/2024-05-27-NavigatingtheDataDelugeAJourneytoCraftingaSophisticatedLakehousePlatform_0.png"
 date: 2024-05-27 12:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-NavigatingtheDataDelugeAJourneytoCraftingaSophisticatedLakehousePlatform_0.png
 tag: Tech
 originalTitle: "Navigating the Data Deluge: A Journey to Crafting a Sophisticated Lakehouse Platform"
 link: "https://medium.com/@menis_77397/navigating-the-data-deluge-a-journey-to-crafting-a-sophisticated-lakehouse-platform-7a1d7a147149"
 ---
-
 
 ![이미지](/assets/img/2024-05-27-NavigatingtheDataDelugeAJourneytoCraftingaSophisticatedLakehousePlatform_0.png)
 
@@ -55,13 +54,13 @@ link: "https://medium.com/@menis_77397/navigating-the-data-deluge-a-journey-to-c
 
 Our Data Lakehouse stack
 
-우리의 레이크하우스 아키텍처는 AWS 기술과 오픈 소스 솔루션의 최선을 활용하여 데이터를 효율적으로 관리하고 분석하는 것을 목표로 합니다. 
+우리의 레이크하우스 아키텍처는 AWS 기술과 오픈 소스 솔루션의 최선을 활용하여 데이터를 효율적으로 관리하고 분석하는 것을 목표로 합니다.
 
 이미지를 Markdown 형식으로 변경했습니다.
 
-```markdown
+
 ![Lakehouse Overview](/assets/img/2024-05-27-NavigatingtheDataDelugeAJourneytoCraftingaSophisticatedLakehousePlatform_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -141,7 +140,7 @@ dbt에서 테이블 속성을 구성하는 것은 직관적이고 유연하며, 
 
 <div class="content-ad"></div>
 
-```markdown
+
 { config(
     materialized='incremental',
     incremental_strategy='merge',
@@ -150,14 +149,15 @@ dbt에서 테이블 속성을 구성하는 것은 직관적이고 유연하며, 
     table_type='iceberg',
     format='parquet'
 ) }
-```
+
 
 우리는 dbt에 대해 매우 만족하고 있습니다; 이 도구는 우리의 데이터 변환을 어떻게 관리하는지에 혁명을 일으켰습니다. 이 도구는 견고한 버전 관리, 코드의 재사용성 및 데이터 흐름의 명확한 문서화를 제공하여 복잡한 변환 작업을 관리하고 레이크하우스 아키텍처 전반에서 데이터 무결성을 유지하는 것을 크게 간소화합니다.
 
 dbt와의 성공을 토대로, 우리는 현재 데이터 관리 역량을 더욱 강화하기 위해 새로운 도구를 탐색 중입니다. Montara.io가 강력한 기능 세트를 제공하여 워크플로우를 최적화하는 우리의 dbt Git 리포지토리와 직접 통합되었습니다. Montara는 자동 CI/CD, 팀원들이 dbt 전문 지식이 적은 경우에도 모델을 작성하고 테스트할 수 있는 사용자 친화적인 UI를 제공하며 데이터 계보 표시, 데이터 카탈로그 및 관찰 가능성과 같은 가치 있는 도구를 제공합니다.
 
 Montara에 감명을 받았습니다; 이 도구는 우리의 dbt 워크플로우를 크게 간소화시켜 팀 전체에서 데이터 변환을 보다 접근 가능하고 관리하기 쉽게 만듭니다. 이 도구가 비교적 새로운 것이며 여전히 발전 중이므로 가끔씩 일부 문제와 기능의 빈틈을 겪기도 하지만, 우리의 경험은 전반적으로 매우 긍정적입니다. Montara 팀은 우수한 지원을 제공하며 우리와 긴밀히 협력하여 발생하는 어려움을 신속하게 해결하고 계속되는 제품 향상에 우리의 피드백을 통합합니다. 이 협력적인 접근은 문제를 신속하게 해결할 뿐만 아니라 Montara.io가 우리의 데이터 인프라 요구와 완벽하게 일치하도록 발전하도록 보장합니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -192,3 +192,4 @@ Apache Airflow는 데이터 환경 내에서 워크플로우를 조정하고 관
 <div class="content-ad"></div>
 
 저는 비슷한 여정을 걸어가고 있는 독자들로부터의 피드백과 질문을 환영합니다. LinkedIn에서 저와 연락하셔서 더 자세한 토론을 나누거나 아이디어를 교환해 주세요.
+

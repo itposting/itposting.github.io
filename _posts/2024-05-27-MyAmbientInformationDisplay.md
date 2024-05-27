@@ -3,13 +3,12 @@ title: "내 앰비언트 정보 디스플레이"
 description: ""
 coverImage: "/assets/img/2024-05-27-MyAmbientInformationDisplay_0.png"
 date: 2024-05-27 13:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-MyAmbientInformationDisplay_0.png
 tag: Tech
 originalTitle: "My Ambient Information Display"
 link: "https://medium.com/@nextjeff/my-ambient-information-display-e3c026a2d325"
 ---
-
 
 유용한 정보에 몰두하는 것을 좋아하고 종종 상상하여 새롭고 흥미로운 것을 보고 싶을 때 상층에 떠다니는 정보를 바라보고 싶다고 꿈꿔 왔어요.
 
@@ -71,7 +70,6 @@ MagicMirror는 매우 활발한 커뮤니티를 가진 성숙한 오픈 소스 �
 
 <div class="content-ad"></div>
 
-
 Source/MagicMirror — 이건 내 Git 저장소에서 체크아웃한 내용이야.
 
 Source/MagicMirror/mm_setup.sh — 설정 스크립트야.
@@ -104,7 +102,7 @@ cd ~/Source/MagicMirror/MagicMirror/ ; cp ../config.js config ; cp ../custom.css
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![My Ambient Information Display](/assets/img/2024-05-27-MyAmbientInformationDisplay_4.png)
 
 The left column uses the following modules:
@@ -117,7 +115,7 @@ The left column uses the following modules:
 - MMM-WorldClock — World clock, with time in Seattle and Ankara (Turkey).
 
 The center column uses the newsfeed module to display the latest AWS news via an RSS feed.
-```
+
 
 <div class="content-ad"></div>
 
@@ -159,7 +157,7 @@ The center column uses the newsfeed module to display the latest AWS news via an
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-27-MyAmbientInformationDisplay_6.png](/assets/img/2024-05-27-MyAmbientInformationDisplay_6.png)
 
 This page uses MMM-WebView. This infographic is from the brand new AWS Fundamentals book, and is shared with their permission. The book contains 13 infographics, each one jam-packed with very useful info:
@@ -167,7 +165,7 @@ This page uses MMM-WebView. This infographic is from the brand new AWS Fundament
 ![2024-05-27-MyAmbientInformationDisplay_7.png](/assets/img/2024-05-27-MyAmbientInformationDisplay_7.png)
 
 I am still building up my collection of infographics; here’s what I have so far, and your suggestions are welcome:
-```
+
 
 <div class="content-ad"></div>
 
@@ -185,7 +183,7 @@ I am still building up my collection of infographics; here’s what I have so fa
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*mnHtyQjE8smDHDM7eLXwYQ.gif)
 
 이것은 MMM-RAIN-MAP 및 RainViewer API의 데이터를 사용하여 내 지역의 과거 및 예측 강우량을 보여줍니다.
@@ -193,7 +191,7 @@ I am still building up my collection of infographics; here’s what I have so fa
 지금까지 이렇게 준비한 것이며, 더 많은 것들은 메모리와 컴퓨팅 성능이 더 강력한 Pi 4B를 손에 넣을 때 더할 예정입니다.
 
 그리고 다섯 번째 페이지가 더 있지만, 시간당 회전에는 없습니다. Stream Deck에서 키를 누르면 MMM-MonthlyCalendar의 도움으로 전체 화면 형식으로 캘린더를 볼 수 있습니다(개인 항목은 파란 막대로 가려졌습니다):
-```
+
 
 <div class="content-ad"></div>
 
@@ -245,7 +243,7 @@ Stream Deck은 키를 누를 때 비동기 HTTP GET 요청을 수행하도록 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-MyAmbientInformationDisplay_9.png)
 
 예를 들어, Home 키를 누를 때 다음 요청이 발생합니다:
@@ -255,7 +253,8 @@ http://192.168.7.217:8080/api/notification/HOME_PAGE?apiKey=XYZ
 ```
 
 각 모듈은 특정 종류의 알림에 응답합니다. 이들은 일반적으로 문서화되어 있지만 가끔 소스 코드를 살펴봐야 할 수도 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -276,3 +275,4 @@ http://192.168.7.217:8080/api/notification/HOME_PAGE?apiKey=XYZ
 앞서 말했듯이, MagicMirror를 설정하는 과정에서 다양한 기술을 활용하게 되어 매우 만족스러웠습니다. 이러한 프로젝트에서는 새로운 기술을 습득하고 현재 기술을 향상시키는 것이 불가피하게 발생하는 긍정적인 부작용입니다.
 
 여러분도 직접 만들어 보고 제게 소식 주세요!
+

@@ -3,13 +3,12 @@ title: "NBA 네트워크 분석 Neo4j를 활용한 연결하기"
 description: ""
 coverImage: "/assets/img/2024-05-27-NBANetworkAnalysisConnectingtheDotswithNeo4j_0.png"
 date: 2024-05-27 12:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-NBANetworkAnalysisConnectingtheDotswithNeo4j_0.png
 tag: Tech
 originalTitle: "NBA Network Analysis: Connecting the Dots with Neo4j"
 link: "https://medium.com/@lucca.miorelli/nba-network-analysis-connecting-the-dots-with-neo4j-99cfbddd306b"
 ---
-
 
 ## 두 NBA 선수 사이의 가장 짧은 링크를 찾는 동안... 그리고 그래프 데이터베이스로 놀아보기.
 
@@ -45,7 +44,7 @@ NBA 경기를 관람하다가 해설자들이 가리키는 선수들 간의 예�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:608/0*eaiZYXxaq4pFOsiH.gif)
 
 After some basic processing, we can input the data to the Neo4j instance using the neo4j python package.
@@ -53,7 +52,7 @@ After some basic processing, we can input the data to the Neo4j instance using t
 To increase the complexity of our ‘Six Degrees’ game though, we decided to only consider relationships of players with the team they were initially drafted from, rather than all the teams they played for throughout their career. A good challenge always adds a bit of spice!
 
 # Why Graph Databases?
-```
+
 
 <div class="content-ad"></div>
 
@@ -171,7 +170,7 @@ RETURN path
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-NBANetworkAnalysisConnectingtheDotswithNeo4j_5.png)
 
 Ever wondered how Zydrunas Ilgauskas, the Lithuanian center drafted by the Cavaliers in ’96, played a key role in linking LeBron and Kobe?
@@ -179,7 +178,7 @@ Ever wondered how Zydrunas Ilgauskas, the Lithuanian center drafted by the Caval
 ![gif](https://miro.medium.com/v2/resize:fit:784/0*eblTJD0vmN4IyzQ9.gif)
 
 But if you’re a Cavaliers fan — or simply a curious individual who researched the 1996 NBA Draft, you’ll find that the Cavaliers had more than one pick; they had three. So, how can we show all possible shortest paths between Kobe and LeBron? We would need to modify our query slightly:
-```
+
 
 <div class="content-ad"></div>
 
@@ -196,7 +195,8 @@ RETURN path
 <img src="/assets/img/2024-05-27-NBANetworkAnalysisConnectingtheDotswithNeo4j_6.png" />
 
 # 추가 정보: 몇 가지 추가적 탐색 데이터 분석
-```
+
+
 
 <div class="content-ad"></div>
 

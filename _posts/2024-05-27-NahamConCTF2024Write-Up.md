@@ -3,13 +3,12 @@ title: "NahamCon CTF 2024 리뷰"
 description: ""
 coverImage: "/assets/img/2024-05-27-NahamConCTF2024Write-Up_0.png"
 date: 2024-05-27 15:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-NahamConCTF2024Write-Up_0.png
 tag: Tech
 originalTitle: "NahamCon CTF 2024 Write-Up"
 link: "https://medium.com/@ELJoOker/nahamcon-ctf-2024-write-ups-3e24354dc2c6"
 ---
-
 
 ## 다시 한번 여러분 안녕하세요! 이 글은 나는 NahamCon CTF 대회에서 해결한 일부 Reverse Engineering 및 Forensics 도전 과제들을 위한 것이다.
 
@@ -40,16 +39,18 @@ macOS 실행 파일(ARM64 아키텍처)이에요. IDA Pro를 사용합시다. �
 <div class="content-ad"></div>
 
 간단한 논리, 입력 함수에서 플래그를 확인하는 로직을 보자. 디컴파일된 코드를 살펴보면
-```
+
+
 <img src="/assets/img/2024-05-27-NahamConCTF2024Write-Up_4.png" />
-```
+
+
 변수들의 표시 형식을 약간 수정한 후에
 
 XOR 함수와 키, 그리고 base64 문자열이 나타납니다. 직관적으로 CyberChef를 사용해 봅시다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-NahamConCTF2024Write-Up_5.png)
 
 ## IPromise (쉬움)
@@ -57,11 +58,11 @@ XOR 함수와 키, 그리고 base64 문자열이 나타납니다. 직관적으�
 설명: 다음 아이폰을 만드는 대신, 나는 이 도전 과제를 만들었어. 하지만 난 진실된 약속을 한단다...
 
 이 도전 과제를 위해 ELF 실행 파일을 얻었으니, IDA를 열어보자
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-27-NahamConCTF2024Write-Up_6.png)
 
 우리는 아무 동작도 하지 않는 간단한 main 함수를 볼 수 있습니다. 그저 puts 함수만 있는 것뿐이에요.
@@ -70,7 +71,7 @@ XOR 함수와 키, 그리고 base64 문자열이 나타납니다. 직관적으�
 이 경우에는 간단합니다. 디버거를 사용하여 이 명령어로 직접 이동하면 됩니다. 저는 edb 디버거를 사용했습니다.
 
 ![Image 2](/assets/img/2024-05-27-NahamConCTF2024Write-Up_7.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -94,7 +95,7 @@ MD5 해시에 2개의 NUL 바이트가 있군요. 그래도 그냥 실행해 봐
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-NahamConCTF2024Write-Up_9.png)
 
 원하는 오류가 발생했습니다. 올바른 해시 값이 아니지만 올바른 해시 값이 있으니 변경해 봅시다.
@@ -102,7 +103,7 @@ MD5 해시에 2개의 NUL 바이트가 있군요. 그래도 그냥 실행해 봐
 그런데, 텍스트 편집기에서 널 바이트를 변경하면 파일이 손상될 수 있으므로 HxD에서 이 해시를 수정합시다.
 
 ![image](/assets/img/2024-05-27-NahamConCTF2024Write-Up_10.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -176,10 +177,10 @@ We have a lot of images on this disk, so,
 
 <div class="content-ad"></div>
 
-```md
+md
 ![이미지](/assets/img/2024-05-27-NahamConCTF2024Write-Up_20.png)
 
 여기에 우리의 플래그가 있어요.
 
 항상 궁금한 점이나 의겄나 내용이 있으면 LinkedIn - Discord - GitHub을 통해 저에게 연락해주세요.
-```
+

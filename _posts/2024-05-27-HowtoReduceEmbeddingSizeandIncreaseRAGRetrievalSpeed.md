@@ -3,13 +3,12 @@ title: "임베딩 크기를 줄이고 RAG 검색 속도 높이는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-HowtoReduceEmbeddingSizeandIncreaseRAGRetrievalSpeed_0.png"
 date: 2024-05-27 14:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowtoReduceEmbeddingSizeandIncreaseRAGRetrievalSpeed_0.png
 tag: Tech
 originalTitle: "How to Reduce Embedding Size and Increase RAG Retrieval Speed"
 link: "https://medium.com/towards-data-science/how-to-reduce-embedding-size-and-increase-rag-retrieval-speed-7f903d3cecf7"
 ---
-
 
 <img src="/assets/img/2024-05-27-HowtoReduceEmbeddingSizeandIncreaseRAGRetrievalSpeed_0.png" />
 
@@ -73,7 +72,7 @@ link: "https://medium.com/towards-data-science/how-to-reduce-embedding-size-and-
 
 ## 왜 중요한가요?
 
-만약 우리가 텍스트 임베딩 벡터를 벡터 데이터베이스에 저장하려고 한다고 가정해봅시다. 각 임베딩은 d 차원을 가지고 있습니다. 그리고 각 숫자는 일반적으로 32비트 부동 소수점 수입니다. 그래서 우리는 저장을 위해 n * d * 4 바이트가 필요합니다.
+만약 우리가 텍스트 임베딩 벡터를 벡터 데이터베이스에 저장하려고 한다고 가정해봅시다. 각 임베딩은 d 차원을 가지고 있습니다. 그리고 각 숫자는 일반적으로 32비트 부동 소수점 수입니다. 그래서 우리는 저장을 위해 n _ d _ 4 바이트가 필요합니다.
 
 그리고 만약 우리가 점곱이나 코사인 유사성과 같은 유사성 지표를 계산하려고 한다면 (코사인 유사성은 단지 정규화된 점곱일 뿐입니다), 차원 d가 클수록 수학적 계산을 더 많이 해야 합니다.
 
@@ -101,18 +100,18 @@ Python에서 PyTorch와 Sentence Transformers 라이브러리를 사용하여 �
 
 <div class="content-ad"></div>
 
-```markdown
-!pip install torch sentence_transformers einops
-```
 
-```markdown
+!pip install torch sentence_transformers einops
+
+
+
 import torch
 from sentence_transformers import SentenceTransformer
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
-```
 
-```markdown
+
+
 model = SentenceTransformer(
     "nomic-ai/nomic-embed-text-v1.5",
     device=device,
@@ -143,10 +142,11 @@ def embed_sentences(
     embeddings = embeddings[:, :matryoshka_dim]
     embeddings = torch.nn.functional.normalize(embeddings, p=2, dim=1)
     return embeddings.cpu()
-```
+
 
 matryoshka_dim 매개변수를 사용하여 768차원 임베딩 벡터를 자릅니다. 그런 다음 새로운 임베딩 벡터를 정규화합니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -194,7 +194,7 @@ print(f"question_embedding.shape:  {question_embedding.shape}")
 
 <div class="content-ad"></div>
 
-```md
+md
 ![image](/assets/img/2024-05-27-HowtoReduceEmbeddingSizeandIncreaseRAGRetrievalSpeed_5.png)
 
 다음으로, 문서 임베딩을 벡터 데이터베이스에 저장할 수 있습니다. 저는 Faiss를 사용하고 있어요. Faiss는 밀집 벡터의 효율적인 유사성 검색 및 클러스터링을 위한 Meta Research의 오픈 소스 라이브러리입니다 [4].
@@ -203,13 +203,17 @@ print(f"question_embedding.shape:  {question_embedding.shape}")
 !pip install faiss-cpu
 ```
 
+
+
+
 ```python
 import faiss
 
 index = faiss.IndexFlatIP(matryoshka_dim)
 index.add(document_embeddings)
-``` 
 ```
+
+
 
 <div class="content-ad"></div>
 
@@ -248,7 +252,7 @@ print(wikipedia_texts[1])
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 # 결과 d=768일 때
 print(indices)
@@ -262,11 +266,11 @@ print(distances)
 더욱 압축된 임베딩을 원한다면, MRL과 이진 벡터 양자화를 함께 사용할 수 있습니다. 이진 양자화는 임베딩 벡터에서 0보다 큰 모든 숫자를 1로 변환하고 그 외의 숫자를 0으로 변환합니다 [5].
 
 <img src="/assets/img/2024-05-27-HowtoReduceEmbeddingSizeandIncreaseRAGRetrievalSpeed_6.png" />
-```
+
 
 <div class="content-ad"></div>
 
-이진 양자화를 사용하면 d 차원의 임베딩 벡터는 오직 d / 8 바이트의 메모리만 필요합니다. 이는 float32 형식의 d * 4 바이트와 비교해 크기가 32배로 줄어든 것을 의미합니다 [4]. 그러나 이 축소는 성능 저하와 함께 발생합니다.
+이진 양자화를 사용하면 d 차원의 임베딩 벡터는 오직 d / 8 바이트의 메모리만 필요합니다. 이는 float32 형식의 d \* 4 바이트와 비교해 크기가 32배로 줄어든 것을 의미합니다 [4]. 그러나 이 축소는 성능 저하와 함께 발생합니다.
 
 # 결론
 

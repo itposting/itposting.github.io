@@ -3,13 +3,12 @@ title: "ChatGPT를 활용한 스마트 대화를 위한 API 구현하기"
 description: ""
 coverImage: "/assets/img/2024-05-27-ImplementanAPIforSmartConversationswithChatGPT_0.png"
 date: 2024-05-27 14:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ImplementanAPIforSmartConversationswithChatGPT_0.png
 tag: Tech
 originalTitle: "Implement an API for Smart Conversations with ChatGPT"
 link: "https://medium.com/dev-genius/implement-an-api-for-smart-conversations-with-chatgpt-57e7a9b335c7"
 ---
-
 
 ChatGPT API를 활용하여 Node.js 및 Express로 대화형 앱을 개발하겠다고 시작하세요.
 
@@ -155,7 +154,7 @@ InMemory 서비스로 돌아와서, ChatGpt API가 실제로 응답했는지를 
 
 ChatGpt 서비스의 sendMessages 함수는 새 메시지를 저장하고 유지하기 위해 메시지를 먼저 저장소에 푸시한 다음 ChatGpt API로 보냅니다. 그리고 응답이 돌아오면 그것을 날짜 투영을 다루는 private 메서드인 newMessage를 사용하여 저장합니다. 이것은 서로 다른 메시지에서 공통적으로 사용되는 함수이기 때문에 날짜 투영을 처리해주죠. ChatGpt 서비스는 메시지 내용을 반환하지만, 이전 방식대로 API가 응답했는지를 확인하기 위해 사용할 것이므로 이를 통해 엔드포인트에서 전체 대화를 반환할 것입니다.
 
-이것을 API에서 간단하게 연결할 수 있습니다:```
+이것을 API에서 간단하게 연결할 수 있습니다:
 
 <div class="content-ad"></div>
 
@@ -165,9 +164,9 @@ ChatGpt 서비스의 sendMessages 함수는 새 메시지를 저장하고 유지
 
 이제 GET 액션을 "테스트"하는 것이 중요합니다. 이전 요청과 동일한 내용을 반환할 것입니다. 그러나 테스트 목적으로 명령어는 다음과 같습니다:
 
-```
+
 # DELETE
-```
+
 
 <div class="content-ad"></div>
 
@@ -201,7 +200,7 @@ API도 복잡하지 않습니다! 새 경로를 추가할 것이지만, 상당�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot](/assets/img/2024-05-27-ImplementanAPIforSmartConversationswithChatGPT_7.png)
 
 이를 몇 가지 간단한 리액트 컴포넌트를 사용하여 쉽게 구현할 수 있습니다. 이 UI와 API는 다음 저장소에서 React로 구현되었습니다: https://github.com/christopherbauer/chatgpt-example. 실행하려면 OPEN_AI_API_KEY 변수를 설정한 .env 파일을 추가하고 프로젝트를 보통대로 실행하면 됩니다.
@@ -209,15 +208,15 @@ API도 복잡하지 않습니다! 새 경로를 추가할 것이지만, 상당�
 # 보너스
 
 매우 다른 챗봇 역할을 보려면 다른 페르소나인 JaSON the Robot을 매우 쉽게 구현하여 JSON 코드로만 응답하게 만들 수 있습니다. 이를 통해 응답을 실제 JSON으로 해석하여 앱에 통합 가능성을 개선할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
 이것은 매우 간단한 변화로 여러분이 작업할 수있는 추가적인 페르소나를 제공합니다. 몇 가지 다른 페르소나를 추가하고 그들의 반응을 확인해보는 것을 즐겨보세요!
 
-```markdown
+
 <img src="/assets/img/2024-05-27-ImplementanAPIforSmartConversationswithChatGPT_8.png" />
-```
+
 
 ChatGPT API를 사용하여 앱을 빌드하려면 역할에 대한 좋은 이해, 잘 구조화된 백엔드, 그리고 사용자 친화적인 프론트엔드가 필요합니다. API의 세 가지 주요 역할인 "시스템", "어시스턴트", "사용자"는 대화를 추적하고 의미 있는 상호 작용을 제공하는 데 중요합니다.
 

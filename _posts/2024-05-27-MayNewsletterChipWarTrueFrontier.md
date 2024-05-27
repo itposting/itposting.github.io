@@ -3,7 +3,7 @@ title: "5월 뉴스레터 칩 전쟁, 트루 프론티어"
 description: ""
 coverImage: "/assets/img/2024-05-27-MayNewsletterChipWarTrueFrontier_0.png"
 date: 2024-05-27 13:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-MayNewsletterChipWarTrueFrontier_0.png
 tag: Tech
 originalTitle: "May Newsletter: “Chip War”, True Frontier"
@@ -11,7 +11,6 @@ link: "https://medium.com/healthcare-3d-printing-stories/may-newsletter-chip-war
 ---
 
 
-```markdown
 ![2024-05-27-MayNewsletterChipWarTrueFrontier_0.png](/assets/img/2024-05-27-MayNewsletterChipWarTrueFrontier_0.png)
 
 Originally published on 3DHEALS.com: Lattice Newsletter
@@ -19,7 +18,7 @@ Originally published on 3DHEALS.com: Lattice Newsletter
 ## “On reflection, it’s too simple to say that the chip made the modern world because our society and our politics have structured how chips were researched, designed, produced, assembled, and used.”
 
 ― Chris Miller, Chip War: The Fight for the World’s Most Critical Technology
-```
+
 
 <div class="content-ad"></div>
 
@@ -64,11 +63,11 @@ CEO/창업자, 3DHEALS
 # 이벤트/커뮤니티
 
 - 다음 주 특강 (5/23/24): 3D 마이크로파브리케이션 2.0
-  - 이 이벤트는 이 뉴스레터의 메인 주제에 영감을 주었습니다. 마이크로에서 나노 스케일 3D 프린팅 분야의 주요 플레이어들 중 많은 사람들이 반도체 산업과 깊은 관련이 있습니다. "프린팅", "리소그래피", "3D", "팹"은 고급 "바이오칩"(미세유체 장치)에 대한 대화에서 나타날 정확한 키워드입니다. 이와 관련한 한 가지 예는 2021년 나노파브리카(NanoFabrica)의 Nanodimension 인수로, 이는 반도체 산업에 큰 야심을 품고 있습니다. 우리의 기술적인 "전쟁"의 다음 과제는 변화할 수 있으며, 여러분을 이 활기찬 대화에 초대합니다.
+    - 이 이벤트는 이 뉴스레터의 메인 주제에 영감을 주었습니다. 마이크로에서 나노 스케일 3D 프린팅 분야의 주요 플레이어들 중 많은 사람들이 반도체 산업과 깊은 관련이 있습니다. "프린팅", "리소그래피", "3D", "팹"은 고급 "바이오칩"(미세유체 장치)에 대한 대화에서 나타날 정확한 키워드입니다. 이와 관련한 한 가지 예는 2021년 나노파브리카(NanoFabrica)의 Nanodimension 인수로, 이는 반도체 산업에 큰 야심을 품고 있습니다. 우리의 기술적인 "전쟁"의 다음 과제는 변화할 수 있으며, 여러분을 이 활기찬 대화에 초대합니다.
 - 온디맨드로 이용 가능: 메드텍 및 바이오파마를 위한 실리코 시뮬레이션
-  - healthcare 분야에서의 응용은 아직 제한적이지만, 규제 환경과 컴퓨터 모델링 능력의 동시적 발전은 미래의 더 많은 혁신을 촉진하고 있습니다. 반도체 팹과 디자인이 분리된다면, 의료 기기와 새 의약품에 대해서도 동일한 방식을 적용하는 것은 어떨까요?
+    - healthcare 분야에서의 응용은 아직 제한적이지만, 규제 환경과 컴퓨터 모델링 능력의 동시적 발전은 미래의 더 많은 혁신을 촉진하고 있습니다. 반도체 팹과 디자인이 분리된다면, 의료 기기와 새 의약품에 대해서도 동일한 방식을 적용하는 것은 어떨까요?
 - YouTube에서 무료로 이용 가능: Melt-Electrowriting And/Or 3D Printing
-  - 다음 세대의 "3D 프린팅"에 대한 내용으로, Paul Dalton 교수가 참여한 영상입니다.
+    - 다음 세대의 "3D 프린팅"에 대한 내용으로, Paul Dalton 교수가 참여한 영상입니다.
 - 5/30/24에 날짜를 기억하세요: Dental 3D Printing 2024 이벤트 — 새로운 소식이 무엇인가요?
 - 2024년 3DHEALS 이벤트 달력의 나머지 내용을 확인하세요.
 - 팟캐스트("The Lattice"): 청각학습자라면, 최신 가상 이벤트의 녹음을 찾을 수 있습니다.

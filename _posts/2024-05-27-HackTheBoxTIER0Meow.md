@@ -3,13 +3,12 @@ title: "해킹 보안 대전  티어 0미야옹"
 description: ""
 coverImage: "/assets/img/2024-05-27-HackTheBoxTIER0Meow_0.png"
 date: 2024-05-27 12:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HackTheBoxTIER0Meow_0.png
 tag: Tech
 originalTitle: "Hack The Box | TIER 0(Meow)"
 link: "https://medium.com/@sujanthebhujel/hack-the-box-meow-e9fa84e06de6"
 ---
-
 
 ## 소개
 
@@ -73,7 +72,7 @@ Ans: nmap
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![HackTheBoxTIER0Meow_2](/assets/img/2024-05-27-HackTheBoxTIER0Meow_2.png)
 
 SUBMIT FLAG
@@ -81,7 +80,7 @@ SUBMIT FLAG
 Ans: b40abdfe23665f766f9c61ecba8a4c19
 
 ![HackTheBoxTIER0Meow_3](/assets/img/2024-05-27-HackTheBoxTIER0Meow_3.png)
-```
+
 
 <div class="content-ad"></div>
 

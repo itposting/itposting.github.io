@@ -87,7 +87,7 @@ OLLAMA_MODELS 변수의 이름을 변경하지 마십시오. 이 변수는 Ollam
 Windows의 하단 표시줄에 Ollama 아이콘이 나타납니다. 프로그램이 시작되지 않으면 Windows 프로그램에서 찾아서 거기서 시작하십시오.
 
 <img src="/assets/img/2024-05-27-RunningmodelswithOllamastep-by-step_4.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -184,7 +184,7 @@ ollama pull llama2:7b-채팅
 ```
 
 ➡️ 더 읽기: https://llama.meta.com/llama2
-```
+
 
 <div class="content-ad"></div>
 

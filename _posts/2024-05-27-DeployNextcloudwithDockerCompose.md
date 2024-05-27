@@ -126,7 +126,7 @@ networks:
 - Collabora - 구글 문서와 유사한 멋진 오픈 소스 오피스 스위트입니다. Collabora Office에는 모바일 앱도 있습니다.
 - Redis - 메모리 캐싱입니다. 중요한 파일을 다음 클라우드에 의존할 계획이라면 Redis를 설정하는 것을 강력히 권장합니다.
 - Nginx Proxy Manager - 서버로 들어오는 요청을 처리하는 리버스 프록시 매니저입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -303,7 +303,7 @@ array (
 ```
 
 일부 경고를 해결하려면 다음을 수행해야 합니다:
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -327,7 +327,7 @@ array (
 ```
 
 ## 컨테이너 실행하기
-```
+
 
 <div class="content-ad"></div>
 

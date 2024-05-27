@@ -3,13 +3,12 @@ title: "중간여행 매거진이 여러분의 감각을 기쁘게 해줄 수 �
 description: ""
 coverImage: "/assets/img/2024-05-27-CanMidjourneyMagazineDelightYourSenses_0.png"
 date: 2024-05-27 15:23
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-CanMidjourneyMagazineDelightYourSenses_0.png
 tag: Tech
 originalTitle: "Can Midjourney Magazine Delight Your Senses?"
 link: "https://medium.com/generative-ai/can-midjourney-magazine-delight-your-senses-bf0a0b83352"
 ---
-
 
 ![CanMidjourneyMagazineDelightYourSenses](/assets/img/2024-05-27-CanMidjourneyMagazineDelightYourSenses_0.png)
 
@@ -81,7 +80,7 @@ Midjourney Magazine의 한 가지 큰 단점은 심도의 부족입니다. 시�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-27-CanMidjourneyMagazineDelightYourSenses_11.png)
 
 ![Image 2](/assets/img/2024-05-27-CanMidjourneyMagazineDelightYourSenses_12.png)
@@ -89,12 +88,12 @@ Midjourney Magazine의 한 가지 큰 단점은 심도의 부족입니다. 시�
 ![Image 3](/assets/img/2024-05-27-CanMidjourneyMagazineDelightYourSenses_13.png)
 
 ![Image 4](/assets/img/2024-05-27-CanMidjourneyMagazineDelightYourSenses_14.png)
-```
+
 
 <div class="content-ad"></div>
 
 이 이야기는 Generative AI에서 발행되었습니다. LinkedIn에서 저희와 연결하여 피드에서 최신 AI 이야기와 인사이트를 받아보세요. 함께 AI의 미래를 함께 만들어봅시다!
 
-```markdown
+
 ![image](/assets/img/2024-05-27-CanMidjourneyMagazineDelightYourSenses_15.png)
-```
+

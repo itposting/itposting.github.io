@@ -3,13 +3,12 @@ title: "당신의 이야기를 위한 시각적 서술 만들기 ChatGPT, 중간
 description: ""
 coverImage: "/assets/img/2024-05-27-CreatingVisualNarrativesforYourStoriesChatGPTMidJourneyMagic_0.png"
 date: 2024-05-27 15:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-CreatingVisualNarrativesforYourStoriesChatGPTMidJourneyMagic_0.png
 tag: Tech
 originalTitle: "Creating Visual Narratives for Your Stories: ChatGPT , MidJourney Magic"
 link: "https://medium.com/the-generator/creating-visual-narratives-for-your-stories-chatgpt-midjourney-magic-f84d9d899453"
 ---
-
 
 당신에게 익숙한 소리인가요? 혈관을 타고 카페인이 흘러 들어오며, 완벽한 단어들의 전성기가 화면 위에 머물기 시작하고, 마침내 지금 막 미디엄의 낯선 세계에 최신 작품을 펼쳐보려는 찰나, 벽에 부딪치는 순간. 이것은 작가의 블록이 아니라, 똑같이 악랄하고 영혼을 파괴하는 무언가요 - 완벽한 이미지를 찾는 탐험.
 
@@ -57,7 +56,7 @@ MidJourney: 현재 가장 진보된 생성형 AI 미술 도구 중 하나일 수
 
 - 내 탁월한 프롬프트(아래)를 ChatGPT 입력란에 복사해넣어. 지금은 세부 사항에 빠져들지 말고요; 나중에 각 단계를 더 자세히 살펴 볼 거에요. 그리고 지금은 엔터를 누르지 말고 "메시지 보내기"도 클릭하지 마세요! 제발 참을성 좀 가져 주세요.
 
-```markdown
+
 | 작업 명세서|
 | ------------ |
 | 당신은 디테일에 뛰어난 창조적인 디자이너이자, 단어와 이야기를 몰입적인 이미지와 아트워크로 해석하는 능력을 지녔네요. 당신의 작업은 아래의 작업을 하나씩 수행하는 거에요:
@@ -71,7 +70,7 @@ MidJourney: 현재 가장 진보된 생성형 AI 미술 도구 중 하나일 수
 4. 이 마지막 작업에서는 MidJourney를 위한 생성적 AI 아트 프롬프트를 만들 것입니다. 작업 3과 작업 2의 결과를 결합하여 총 네 개의 프롬프트를 제공할 것입니다. 그러나 작업 3에서 선택한 정확한 구절을 사용하는 대신, 각 구절에 대한 시각화나 이미지화를 사용해주세요. 해당 이미지를 몇 단어로 간추려 사람화 또는 물체화해주세요. 예를 들어: "안에 있는 악마: 이것은 쌍성을 나타내는 것으로, 천사적이고 악마적인 면이 함께 보이는 인물을 보여주는 것일 수 있습니다." 이것을 "반 천사 반 악마 쌍면"으로 바꿀 수 있습니다. 각 프롬프트에 다음을 추가해주세요: --ar 4:3 --s 400 --c 40
 
 한 작업을 끝내고 다음 작업을 시작하기 전에 제 승인을 받아주세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -87,9 +86,9 @@ MidJourney: 현재 가장 진보된 생성형 AI 미술 도구 중 하나일 수
 
 여기, 우리는 ChatGPT에게 우리의 작품 내용을 분석하고 기사의 톤과 맥락에 따라 이미지와 아트워크에 적용할 창의적인 스타일을 제안해 달라고 요청하고 있어. 나의 결과는 다음과 같아:
 
-```markdown
+
 <img src="/assets/img/2024-05-27-CreatingVisualNarrativesforYourStoriesChatGPTMidJourneyMagic_1.png" />
-```
+
 
 와우, 나는 이미 좋아해. 표현주의와 명암과도조명이 만나 초현실주의와 추상 상징주의가 만난다. 뭔가 비뚤어진 데이비드 리치 영화 같아.
 
@@ -151,7 +150,7 @@ Task 4 — MidJourney를 위한 생성형 AI 아트 프롬프트 구축
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-CreatingVisualNarrativesforYourStoriesChatGPTMidJourneyMagic_5.png)
 
 Now, whack in the first prompt ChatGPT served up to you. For me, it’s this one:
@@ -159,7 +158,7 @@ Now, whack in the first prompt ChatGPT served up to you. For me, it’s this one
 /imagine: Half Angel Devil duality, expressionism, bold colors, distorted forms, exaggerated lines, chiaroscuro, strong light-dark contrast, surrealism, dreamlike scenes, unexpected juxtapositions, abstract symbolism, masks, shadows, mirrors --ar 3:4 --s300 --c 30
 
 Here’s what MidJourney served up:
-```
+
 
 <div class="content-ad"></div>
 

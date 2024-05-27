@@ -3,7 +3,7 @@ title: "맥OS 공격 매트릭스 IOPlatformExpertDevice를 사용하여 시스�
 description: ""
 coverImage: "/assets/img/2024-05-27-MacOSAttackMatrixGatheringSystemInformationusingIOPlatformExpertDevicePart2_0.png"
 date: 2024-05-27 12:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-MacOSAttackMatrixGatheringSystemInformationusingIOPlatformExpertDevicePart2_0.png
 tag: Tech
 originalTitle: "MacOS Attack Matrix: Gathering System Information using IOPlatformExpertDevice (Part — 2)"
@@ -11,7 +11,6 @@ link: "https://medium.com/@utkarshcodes/macos-attack-matrix-gathering-system-inf
 ---
 
 
-```markdown
 ![Screenshot](/assets/img/2024-05-27-MacOSAttackMatrixGatheringSystemInformationusingIOPlatformExpertDevicePart2_0.png)
 
 macOS 시스템의 복잡한 미로를 헤쳐 나가는 레드팀 오퍼레이터들은 현대의 디지털 탐험가로, 가치 있는 데이터를 찾기 위해 모든 구석구석을 탐색합니다. 그들의 사용 가능한 도구 가운데, ioreg 명령어는 어두운 방에서 플래시라이트처럼 반짝이며, 정확하고 명확한 방법으로 기기 하드웨어의 숨겨진 세부 정보를 밝혀내줍니다.
@@ -19,7 +18,7 @@ macOS 시스템의 복잡한 미로를 헤쳐 나가는 레드팀 오퍼레이�
 # ioreg 명령어 마스터하기
 
 macOS 시스템 진단의 핵심에는 ioreg 명령어가 있습니다. 이 명령어는 I/O Kit 레지스트리의 광대하고 상세한 세계를 해제하는 열쇠 역할을 합니다. 이 레지스트리는 macOS 시스템에 연결된 모든 장치의 정보를 카탈로그화한 대규모 도서관 역할을 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -44,7 +43,7 @@ ioreg -c IOPlatformExpertDevice -d 2
 가장 기본적인 명령어를 실행할 때 예상할 수 있는 샘플 출력은 다음과 같습니다:
 
 ```js
-+-o IOPlatformExpertDevice <class IOPlatformExpertDevice, id 0x100000000, 
++-o IOPlatformExpertDevice <class IOPlatformExpertDevice, id 0x100000000,
 registered, matched, active, busy 0 (0 ms), retain 10>
 {
   "IOPlatformUUID" = "12345678-1234-1234-1234567890AB"
@@ -75,7 +74,7 @@ ioreg 명령어를 이용해 레드 팀은 디지털 자물쇠 제작자로 변�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-MacOSAttackMatrixGatheringSystemInformationusingIOPlatformExpertDevicePart2_1.png)
 
 # 빠른 참조용 치트 시트
@@ -94,12 +93,12 @@ ioreg 명령어를 이용해 레드 팀은 디지털 자물쇠 제작자로 변�
   IOPlatformExpert: 장치 구성 전문가에 대한 통찰.
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-MacOSAttackMatrixGatheringSystemInformationusingIOPlatformExpertDevicePart2_2.png)
 
 The `ioreg` command is not just a tool; it's a gateway to the hidden chambers of macOS hardware information. For security professionals, mastering this command is akin to mastering the art of map-making, charting unknown territories, and uncovering secrets that lie beneath the surface of every macOS device.
-```
+

@@ -3,13 +3,12 @@ title: "NASA LDAP 서버를 해킹한 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-HowIHackedNASALDAPServer_0.png"
 date: 2024-05-27 15:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowIHackedNASALDAPServer_0.png
 tag: Tech
 originalTitle: "How I Hacked NASA LDAP Server"
 link: "https://medium.com/@maxcyber882/how-i-hacked-nasa-ldap-server-b7cbb8cd0eee"
 ---
-
 
 <img src="/assets/img/2024-05-27-HowIHackedNASALDAPServer_0.png" />
 
@@ -41,7 +40,7 @@ LDAP은 (Lightweight Directory Access Protocol)의 약자입니다. 이는 열�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![NASALDAPServer](/assets/img/2024-05-27-HowIHackedNASALDAPServer_3.png)
 
 그리고 결국, 조직 부서, 직원 세부 정보, 직원 지정 등 많은 정보를 얻었고 제 반응은 예에요.
@@ -49,7 +48,7 @@ LDAP은 (Lightweight Directory Access Protocol)의 약자입니다. 이는 열�
 ![reaction](https://miro.medium.com/v2/resize:fit:768/1*0j6wn-iPK5dB6G_i6FXbDg.gif)
 
 이제 여기서 멈추기로 결정했고 개인 정보 침해 및 정책 위반으로 더 이상 악용하지 않기로 하고 NASA에 보고했으며 3일 이내에 보안팀으로부터 응답을 받았어요.
-```
+
 
 <div class="content-ad"></div>
 

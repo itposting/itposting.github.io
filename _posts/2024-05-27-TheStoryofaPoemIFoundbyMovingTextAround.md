@@ -3,13 +3,12 @@ title: "텍스트를 움직여 발견한 시의 이야기"
 description: ""
 coverImage: "/assets/img/2024-05-27-TheStoryofaPoemIFoundbyMovingTextAround_0.png"
 date: 2024-05-27 13:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TheStoryofaPoemIFoundbyMovingTextAround_0.png
 tag: Tech
 originalTitle: "The Story of a Poem I Found by Moving Text Around"
 link: "https://medium.com/the-diy-diaries/the-story-of-a-poem-i-found-by-moving-text-around-930bdc7532d6"
 ---
-
 
 ## 창의성
 
@@ -46,7 +45,7 @@ link: "https://medium.com/the-diy-diaries/the-story-of-a-poem-i-found-by-moving-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이동하는 텍스트로 찾은 시 이야기](/assets/img/2024-05-27-TheStoryofaPoemIFoundbyMovingTextAround_3.png)
 
 ![이동하는 텍스트로 찾은 시 이야기](/assets/img/2024-05-27-TheStoryofaPoemIFoundbyMovingTextAround_4.png)
@@ -54,7 +53,7 @@ link: "https://medium.com/the-diy-diaries/the-story-of-a-poem-i-found-by-moving-
 가끔은 한 장에 전체 시를 콜라주하기도 합니다. 작은 노트북이나 스케치북의 일부로 남겨두기도 해요. 짧은 시의 경우, 시 전체 텍스트를 5x7인치 색인 카드에 맞출 수 있어요. 일부는 카드 위에 콜라주를 먼저 해요 (다른 일을 하면서 보거나 들을 때 하는 좋은 활동이기도 해요).
 
 나에게 중요한 이 작업의 다른 부분은 시를 출력하고 한 줄씩 자르는 과정을 통해, 개인적으로 너무 민감하다고 느껴지거나 원래 완성된 형태로는 (적어도 지금은) 공개하거나 발표하기가 어려웠던 시를 다시 작업해 볼 수 있다는 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

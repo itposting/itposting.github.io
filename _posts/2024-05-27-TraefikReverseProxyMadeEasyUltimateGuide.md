@@ -3,13 +3,12 @@ title: "Traefik 역방향 프록시 만들기 쉽게 이해하기 - 궁극의 �
 description: ""
 coverImage: "/assets/img/2024-05-27-TraefikReverseProxyMadeEasyUltimateGuide_0.png"
 date: 2024-05-27 12:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TraefikReverseProxyMadeEasyUltimateGuide_0.png
 tag: Tech
 originalTitle: "Traefik Reverse Proxy Made Easy— Ultimate Guide"
 link: "https://medium.com/the-self-hoster/traefik-reverse-proxy-made-easy-ultimate-guide-211f0edc284c"
 ---
-
 
 ![Traefik 설치하기 쉽게 만든 Reverse Proxy의 최종 가이드](/assets/img/2024-05-27-TraefikReverseProxyMadeEasyUltimateGuide_0.png)
 
@@ -37,7 +36,7 @@ Medium 유료 회원이 아니신가요? 무료로 여기서 읽어보세요.
 
 당신이 Traefik을 설정할 때 Docker Compose를 사용한다고 가정하겠습니다. 여기 Traefik 문서에서 가져온 최소 예제가 있습니다:
 
-```markdown
+
 services:
   reverse-proxy:
     # The official v3 Traefik docker image
@@ -52,7 +51,7 @@ services:
     volumes:
       # So that Traefik can listen to the Docker events
       - /var/run/docker.sock:/var/run/docker.sock
-```
+
 
 <div class="content-ad"></div>
 
@@ -72,12 +71,9 @@ Traefik을 구성하는 방법은 많이 있어요. 여기서 우리는 설정 �
 우리의 간단한 예제를 위한 구성 파일은 다음과 같아요:
 
 ```js
-api:
-  insecure: true
+api: insecure: true;
 
-providers:
-  docker:
-    endpoint: "unix:///var/run/docker.sock"
+providers: docker: endpoint: "unix:///var/run/docker.sock";
 ```
 
 이건 YAML 파일이에요. 이 파일을 사용하려면 간단히 컨테이너에 마운트하시면 돼요:
@@ -96,13 +92,13 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
 ```
 
-
 그리고 모든 것이 이전과 같이 작동해야 합니다. 설정을 원하는대로 자유롭게 할 수 있으며, 이를 컨테이너 설정 파일을 통해하거나 Traefik 설정 파일을 통해하거나 환경 변수를 통해 할 수 있습니다. 개인적으로 Traefik 설정 파일을 통해 하는 것을 선호하므로 그대로 진행할 겁니다.
 
 그런데 말이야, 지금 이야기하고 있는 설정은 정적 설정이라고 알려져 있어요. 이 설정을 변경할 때마다 Traefik을 재시작해야 합니다. 나중에 동적 설정에 대해 이야기할 거에요.
 
 ## EntryPoints
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -129,13 +125,8 @@ EntryPoints의 이름은 원하는 대로 지정할 수 있습니다. 표준은 
 일반적으로 HTTP 트래픽을 모두 HTTPS 트래픽으로 리디렉션하여 연결을 보안하는 것이 좋습니다. 이를 수행하는 한 가지 방법은 EntryPoint에 리디렉션을 추가하는 것입니다:
 
 ```js
-entryPoints:
-  web:
-    address: ":80"
-    http:
-      redirections:
-          entryPoint:
-            to: websecure
+entryPoints: web: address: ":80";
+http: redirections: entryPoint: to: websecure;
 ```
 
 여기서 모든 HTTP 트래픽이 websecure EntryPoint로 리디렉션되어야 함을 나타냅니다. 현재 TLS 인증서를 구성하지 않았으므로 이것을 구성에 유지하지 않는 것이 좋습니다.
@@ -149,9 +140,9 @@ services:
   reverse-proxy:
     image: traefik:latest
     ports:
-      - "80:80"  # web
-      - "443:443"  # websecure
-      - "1234:222"  # ssh
+      - "80:80" # web
+      - "443:443" # websecure
+      - "1234:222" # ssh
       - "8080:8080"
     volumes:
       - ./traefik.yml:/traefik.yml:ro
@@ -163,7 +154,8 @@ services:
 ## DNS 레코드
 
 도메인을 소유하고 있다고 가정하겠습니다. 소유하고 있지 않다면, PiHole과 같은 DNS 서버로 자체 도메인을 만들고 여기에 DNS 레코드를 추가할 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -224,9 +216,9 @@ services:
     ports:
       - 8081:8080
     labels:
-      - traefik.enable=true  # 해당 서비스를 위해 Traefik를 활성화합니다
-      - traefik.http.routers.dozzle.entrypoints=web  # 엔트리포인트를 명시합니다
-      - traefik.http.routers.dozzle.rule=Host(`dozzle.imbob.com`)  # 서비스에 액세스하는 규칙을 명시합니다
+      - traefik.enable=true # 해당 서비스를 위해 Traefik를 활성화합니다
+      - traefik.http.routers.dozzle.entrypoints=web # 엔트리포인트를 명시합니다
+      - traefik.http.routers.dozzle.rule=Host(`dozzle.imbob.com`) # 서비스에 액세스하는 규칙을 명시합니다
 ```
 
 또한, Traefik 구성 파일을 아래에서 확인하실 수 있습니다:
@@ -251,7 +243,8 @@ providers:
 ```
 
 이제 http://dozzle.imbob.com을 열어 사용하실 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -311,7 +304,8 @@ networks:
 그러면 작동합니다. 그렇지 않으면, Traefik은 Dozzle 컨테이너의 IP로 리다이렉팅하겠지만, 이 IP는 서버에서 노출된 네트워크 바깥에 있는 Dozzle 컨테이너로 이어지지 않습니다.
 
 ## 라우터
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -329,12 +323,8 @@ networks:
 <div class="content-ad"></div>
 
 ```js
-http:
-  routers:
-    dozzle:
-      entrypoints:
-        - web
-      rule: Host(`dozzle.imbob.com`)
+http: routers: dozzle: entrypoints: -web;
+rule: Host(`dozzle.imbob.com`);
 ```
 
 그런 다음 정적 구성 파일에서 파일 제공자로 추가하십시오:
@@ -368,17 +358,18 @@ Dozzle에 사용한 규칙은 다음과 같았습니다:```
 <div class="content-ad"></div>
 
 ```javascript
-호스트(`dozzle.imbob.com`)
+호스트(`dozzle.imbob.com`);
 ```
 
 예를 들어 다음과 같이 사용할 수 있습니다:
 
 ```javascript
-호스트(`dozzle1.imbob.com`) || 호스트(`dozzle2.imbob.com`)
+호스트(`dozzle1.imbob.com`) || 호스트(`dozzle2.imbob.com`);
 ```
 
-Dozzle에 http://dozzle1.imbob.com 또는 http://dozzle2.imbob.com에서 액세스할 수 있습니다. 규칙에 대한 자세한 내용은 Traefik 문서를 참조하십시오. 
-```
+Dozzle에 http://dozzle1.imbob.com 또는 http://dozzle2.imbob.com에서 액세스할 수 있습니다. 규칙에 대한 자세한 내용은 Traefik 문서를 참조하십시오.
+
+
 
 <div class="content-ad"></div>
 
@@ -397,7 +388,7 @@ test:$2y$05$kLDHhc5ntBoHwAyp5S48U.wN.u2eQJYWpfYvRWSilayuAe5oF2xqy
 
 <div class="content-ad"></div>
 
-```markdown
+
 참고: docker-compose.yml에서 사용할 때 해시 내의 모든 달러 기호는 이스케이핑을 위해 두 배로 사용되어야 합니다. 따라서 대신 다음 명령을 사용하여 이를 자동으로 수행할 수 있습니다:
 
 ```js
@@ -417,8 +408,9 @@ services:
       ...
         # 패스워드는 "test" 입니다
       - traefik.http.middlewares.my-middleware.basicauth.users=test:$$2y$$05$$x4VT4lRFCy2.z/Ic3BQYbOgEzDILEqyhaStkuzykurT9KAuWKTSF.
-``` 
 ```
+
+
 
 <div class="content-ad"></div>
 
@@ -466,7 +458,8 @@ services:
 참고: Traefik이 이해하는 설정을 언제든지 웹 UI를 통해 확인할 수 있습니다:
 
 ![Traefik Reverse Proxy 설정 화면](/assets/img/2024-05-27-TraefikReverseProxyMadeEasyUltimateGuide_2.png)
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -481,7 +474,7 @@ Traefik을 구성하여 정적 인증서를 사용하거나 ACME 공급자에 �
 <div class="content-ad"></div>
 
 ```js
-certificatesResolver:  
+certificatesResolver:
   letsEncrypt:
     acme:
       email: bob@gmail.com  # 여러분의 이메일을 입력해주세요
@@ -583,7 +576,6 @@ volumes:
   tls:
 ```
 
-
 그리고 traefik.yml:
 
 ```yaml
@@ -611,7 +603,7 @@ certificatesResolver:
       storage: /tls/acme.json
       httpChallenge:
         entryPoint: web
-``` 
+```
 
 ## 마무리하는 손짓```
 
@@ -661,9 +653,7 @@ web:
 시작 부분의 예시를 다시 가져오겠습니다. SSH EntryPoint와 함께:
 
 ```js
-entrypoints:
-  ssh:
-    address: ":222"
+entrypoints: ssh: address: ":222";
 ```
 
 도메인 이름 뒤에 SSH 트래픽을 전달하려고 합니다. EntryPoint가 있습니다. 호스트에서 포트를 노출해야 합니다:
@@ -692,7 +682,7 @@ services:
       - traefik.tcp.routers.ssh.rule=HostSNI(`*`)
 ```
 
-HostSNI(*)은 모든 요청을 일치시킬 것이라고 말합니다. 올바른 엔트리 포인트로 전송된다면 모든 요청을 일치시킵니다. 따라서 이는 example.mydomain.com:222뿐만 아니라 anything.mydomain.com:222도 일치시킵니다. 이는 TCP 트래픽에 대해 TLS를 사용하지 않는 경우 필수적이며, HTTP 및 HTTPS 포트가 아닌 표준 TCP 포트를 사용하지 않는 경우에는 실제로 문제가 되지 않습니다.
+HostSNI(\*)은 모든 요청을 일치시킬 것이라고 말합니다. 올바른 엔트리 포인트로 전송된다면 모든 요청을 일치시킵니다. 따라서 이는 example.mydomain.com:222뿐만 아니라 anything.mydomain.com:222도 일치시킵니다. 이는 TCP 트래픽에 대해 TLS를 사용하지 않는 경우 필수적이며, HTTP 및 HTTPS 포트가 아닌 표준 TCP 포트를 사용하지 않는 경우에는 실제로 문제가 되지 않습니다.
 
 이것으로 끝입니다! 참고로, 저는 이를 Gitea와 함께 사용하여 다음과 같은 원격 URL을 가지고 있습니다: ssh://git@gitea.mydomain.com:222/estebanthi/my-repo.git.
 
@@ -727,14 +717,13 @@ providers:
 
 ```yaml
 services:
-  reverse-proxy:
-    ...
+  reverse-proxy: ...
 
   redis:
     image: redis:latest
     restart: unless-stopped
     ports:
-      - '6379:6379'
+      - "6379:6379"
 ```
 
 이제 "서버 2"에서 traefik-kop을 배포할 것입니다.
@@ -747,8 +736,8 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      - "REDIS_ADDR=192.168.0.50:6379"  # Redis 호스트의 IP
-      - "BIND_IP=192.168.0.51"  # 현재 호스트의 IP
+      - "REDIS_ADDR=192.168.0.50:6379" # Redis 호스트의 IP
+      - "BIND_IP=192.168.0.51" # 현재 호스트의 IP
 ```
 
 그러면 이제 "server 2"에서 계속해서 사용해오던 라벨들을 사용할 수 있게 됩니다.```

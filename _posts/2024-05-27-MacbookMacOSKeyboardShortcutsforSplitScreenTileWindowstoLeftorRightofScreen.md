@@ -3,13 +3,12 @@ title: "맥북 MacOS 키보드 단추로 스플릿 화면 창을 화면 왼쪽 �
 description: ""
 coverImage: "/assets/img/2024-05-27-MacbookMacOSKeyboardShortcutsforSplitScreenTileWindowstoLeftorRightofScreen_0.png"
 date: 2024-05-27 12:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-MacbookMacOSKeyboardShortcutsforSplitScreenTileWindowstoLeftorRightofScreen_0.png
 tag: Tech
 originalTitle: "Macbook   MacOS Keyboard Shortcuts for Split Screen (Tile Windows to Left or Right of Screen)"
 link: "https://medium.com/@brightskylogic/macbook-macos-keyboard-shortcuts-for-split-screen-tile-windows-left-and-right-d5ebb6342d37"
 ---
-
 
 Windows 운영 체제는 창을 분할 화면으로 이동하는 단축키를 Windows 키 + 왼쪽/오른쪽 화살표를 사용하여 수행할 수 있습니다. MacOS에서는 어떤 창의 전체 화면(녹색) 버튼 위에 마우스 포인터를 가져다 놓고 옵션을 선택하여 이 작업을 수행할 수 있습니다.
 
@@ -43,7 +42,7 @@ Mac에서는 Apple 메뉴를 선택한 후 `시스템 환경 설정`을 클릭�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![img](/assets/img/2024-05-27-MacbookMacOSKeyboardShortcutsforSplitScreenTileWindowstoLeftorRightofScreen_4.png)
 
 (참고: 다른 단축키를 선택할 수 있지만, 우리는 Command, 왼쪽 화살표 조합이 작동하지 않고 Option, Command, 왼쪽 화살표 조합도 Chrome 애플리케이션에서 작동하지 않는다는 것을 발견했습니다. 또한 시프트를 사용하지 마십시오. 그렇게 하면 창 타일링 효과가 슬로우 모션으로 발생합니다.)
@@ -51,7 +50,7 @@ Mac에서는 Apple 메뉴를 선택한 후 `시스템 환경 설정`을 클릭�
 지금 이렇게 되어 있어야 합니다:
 
 ![img](/assets/img/2024-05-27-MacbookMacOSKeyboardShortcutsforSplitScreenTileWindowstoLeftorRightofScreen_5.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -3,7 +3,7 @@ title: "사이버렌즈 - TryHackMe 후기"
 description: ""
 coverImage: "/assets/img/2024-05-27-CyberLens-TryHackMeWriteup_0.png"
 date: 2024-05-27 12:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-CyberLens-TryHackMeWriteup_0.png
 tag: Tech
 originalTitle: "CyberLens - TryHackMe Writeup"
@@ -11,7 +11,6 @@ link: "https://medium.com/bugbountywriteup/cyberlens-tryhackme-writeup-d3320449c
 ---
 
 
-```markdown
 ![이미지](/assets/img/2024-05-27-CyberLens-TryHackMeWriteup_0.png)
 
 이 방은 Windows 해킹 및 웹 애플리케이션 취약점을 알려드립니다. 그럼, 바로 시작해봅시다 🥂.
@@ -19,11 +18,11 @@ link: "https://medium.com/bugbountywriteup/cyberlens-tryhackme-writeup-d3320449c
 방 링크: https://tryhackme.com/r/room/cyberlensp6
 
 참고: 이 문서는 꽤 직관적이며 현실적으로 마주치게 될 많은 막다른 곳을 건너뛰고 있습니다. 시간이 오래 걸리거나 윤리적 해킹에 완전히 새로운 경우에만 사용하는 것이 좋습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![사진](/assets/img/2024-05-27-CyberLens-TryHackMeWriteup_1.png)
 
 # 해결 방법
@@ -31,7 +30,7 @@ link: "https://medium.com/bugbountywriteup/cyberlens-tryhackme-writeup-d3320449c
 ## 열거
 
 nmap 스캔을 시작하기 전에 방 노트에 표시된 대로 호스트 파일에 cyberlens.thm 항목을 추가해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -137,7 +136,7 @@ Description: CyberLens 웹 서버를 공격하고 숨겨진 플래그를 발견�
  - 첫 번째 것을 사용해보려고 합니다
  - 작동했습니다
  - C:/User/Administrator/Desktop에 플래그를 찾는 중입니다
- 
+
 [+] 가능한 벡터:
  - Apache 2.4.57 (Win 64) - 취약점을 발견하지 못했습니다
  - /about.html

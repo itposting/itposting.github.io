@@ -3,13 +3,12 @@ title: "시간에 따른 변화를 시각화하는 멋진 전략들"
 description: ""
 coverImage: "/assets/img/2024-05-27-AwesomeStrategiestoVisualizeChangewithTime_0.png"
 date: 2024-05-27 12:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-AwesomeStrategiestoVisualizeChangewithTime_0.png
 tag: Tech
 originalTitle: "Awesome Strategies to Visualize Change with Time"
 link: "https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-with-time-f8a7fa8362f2"
 ---
-
 
 이 기사는 두 시점을 대조하는 효과적인 전략을 시각화하는 방법을 요약하고, 영감을 주는 그래픽 예시(소스 코드 링크 포함)로 설명합니다.
 
@@ -21,7 +20,7 @@ link: "https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-w
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![그래프](/assets/img/2024-05-27-AwesomeStrategiestoVisualizeChangewithTime_0.png)
 
 이 그래프는 Lisa Charlotte Rost가 Datawrapper로 원래 만들었습니다. 이 작품을 R ggplot2로 재현한 것을 찾으려면 여기를 확인하세요.
@@ -29,11 +28,11 @@ link: "https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-w
 # 방향별 변경 강조를 위해 화살표 사용하기
 
 선분 외에도 화살표는 한 시점에서 다른 시점으로의 변화 방향을 강조하는 특징적인 요소입니다. 아래 그래프는 2000년부터 2020년까지 국회에서 여성들이 보유한 의석 변화를 보여주기 위해 이 전략을 사용하고 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-AwesomeStrategiestoVisualizeChangewithTime_1.png)
 
 # 연속적인 변화를 나타내는 선 활용하기
@@ -41,7 +40,7 @@ link: "https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-w
 선은 데이터 포인트의 연속적인 변화를 직관적으로 보여주는 지표입니다. 아래 그래프는 1880년대부터 2000년대까지 주요 서양 국가들에서 흡연 인기의 동향을 보여주며, 미국, 독일 및 프랑스의 변화를 선명한 색상으로 강조했습니다.
 
 ![이미지](/assets/img/2024-05-27-AwesomeStrategiestoVisualizeChangewithTime_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -65,7 +64,7 @@ link: "https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-w
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Heatmap](/assets/img/2024-05-27-AwesomeStrategiestoVisualizeChangewithTime_5.png)
 
 # 시간 변화를 시각화하는 멋진 전략
@@ -73,7 +72,7 @@ link: "https://medium.com/@yuanbo.faith/awesome-strategies-to-visualize-change-w
 히트맵은 시간에 따른 변화를 보여주는 매력적인 도구로, 숫자 값을 색상 척도에 매핑합니다. 아래 그림은 백신 도입 전후 미국 주별 여덟 가지 감염병의 연간 발병 건수를 시각화한 것입니다. 백신이 병의 확산을 통제하는 능력을 인상적으로 보여줍니다.
 
 ![Yearly Incidences](/assets/img/2024-05-27-AwesomeStrategiestoVisualizeChangewithTime_6.png)
-```
+
 
 <div class="content-ad"></div>
 

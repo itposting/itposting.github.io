@@ -3,17 +3,16 @@ title: "가입 없이 이용할 수 있는 최고의 가정 보안 카메라들"
 description: ""
 coverImage: "/assets/img/2024-05-27-BestHomeSecurityCamerasWithoutaSubscription_0.png"
 date: 2024-05-27 13:22
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-BestHomeSecurityCamerasWithoutaSubscription_0.png
 tag: Tech
 originalTitle: "Best Home Security Cameras Without a Subscription"
 link: "https://medium.com/@ybest/best-home-security-cameras-without-a-subscription-cce8dda288c0"
 ---
 
-
 아래의 Markdown 형식의 표로 변경해보세요.
 
-```markdown
+
 ![2024-05-27-BestHomeSecurityCamerasWithoutaSubscription](/assets/img/2024-05-27-BestHomeSecurityCamerasWithoutaSubscription_0.png)
 
 # Subscription 없이 사용 가능한 최고의 가정용 보안 카메라
@@ -21,7 +20,7 @@ link: "https://medium.com/@ybest/best-home-security-cameras-without-a-subscripti
 ## EufyCam 3: 최고의 야외용 카메라
 
 ## Lorex 4K Spotlight: microSD에 최적화된 카메라
-```
+
 
 <div class="content-ad"></div>
 
@@ -300,7 +299,7 @@ REOLINK 실내 보안 카메라를 오늘 바로 구입하세요.
 - 카메라 해상도: 2K 고성능 카메라
 - 시야각: 133° 와이드 시야각
 - 스마트 홈 통합: 아마존 알렉사, 구글 홈, IFTTT와 호환
-- 방수 기능: IP67 방수 기능 
+- 방수 기능: IP67 방수 기능
 
 <div class="content-ad"></div>
 

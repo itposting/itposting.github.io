@@ -3,7 +3,7 @@ title: "bashrc, bash-profile, 그리고 profile의 차이점"
 description: ""
 coverImage: "/assets/img/2024-05-27-DifferenceBetweenbashrcbash-profileandprofile_0.png"
 date: 2024-05-27 12:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-DifferenceBetweenbashrcbash-profileandprofile_0.png
 tag: Tech
 originalTitle: "Difference Between .bashrc, .bash-profile, and .profile"
@@ -11,7 +11,6 @@ link: "https://medium.com/@shalinpatel./difference-between-bashrc-bash-profile-a
 ---
 
 
-```markdown
 <img src="/assets/img/2024-05-27-DifferenceBetweenbashrcbash-profileandprofile_0.png" />
 
 # 1. 개요
@@ -19,7 +18,7 @@ link: "https://medium.com/@shalinpatel./difference-between-bashrc-bash-profile-a
 Bash 쉘은 환경을 설정하기 위해 몇 가지 시작 파일을 사용합니다. 이러한 파일은 쉘 자체와 시스템 사용자를 위한 일부 Bash 쉘 구성을 결정합니다.
 
 이 튜토리얼에서는 .bashrc, .bash-profile 및 .profile과 같은 시작 파일 및 그들의 차이에 대해 알아보겠습니다.
-```  
+
 
 <div class="content-ad"></div>
 
@@ -56,17 +55,17 @@ ssh를 사용하여 시스템에 로그인하면 대화형 로그인 쉘을 얻�
 샘플 .bash_profile 파일을 살펴보겠습니다. 여기서는 PATH 변수를 설정하고 내보내고 있습니다:
 
 ```js
-echo "Bash_profile execution starts.."  
-PATH=$PATH:$HOME/bin; 
-export PATH; 
+echo "Bash_profile execution starts.."
+PATH=$PATH:$HOME/bin;
+export PATH;
 echo "Bash_profile execution stops.."
 ```
 
 대화식 로그인 셸에서 명령 프롬프트 바로 앞에 다음과 같은 출력이 표시됩니다:
 
 ```js
-Bash_profile execution starts.. 
-Bash_profile execution stops.. 
+Bash_profile execution starts..
+Bash_profile execution stops..
 [dsuser@cygnus ~]$
 ```
 
@@ -83,9 +82,9 @@ Bash 쉘은 홈 디렉토리에서 .bashrc 파일을 찾아서 source를 사용�
 <div class="content-ad"></div>
 
 ```bash
-echo "Bashrc 실행 시작.." 
-alias elui='top -c -u $USER' 
-alias ll='ls -lrt' 
+echo "Bashrc 실행 시작.."
+alias elui='top -c -u $USER'
+alias ll='ls -lrt'
 echo "Bashrc 실행 종료.."
 ```
 
@@ -93,8 +92,8 @@ echo "Bashrc 실행 종료.."
 
 ```bash
 [dsuser@server ~]$ bash
-Bashrc 실행 시작.. 
-Bashrc 실행 종료.. 
+Bashrc 실행 시작..
+Bashrc 실행 종료..
 [dsuser@server ~]$
 ```
 
@@ -120,9 +119,9 @@ Bashrc 실행 종료..
 
 ```js
 if [ -f ~/.bashrc ];
-then 
-    .  ~/.bashrc; 
-fi 
+then
+    .  ~/.bashrc;
+fi
 PATH=$PATH:$HOME/bin export PATH
 ```
 

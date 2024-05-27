@@ -3,13 +3,12 @@ title: "이해할 수 있는 이상 탐지 Frequent Patterns Outlier Factor FPOF
 description: ""
 coverImage: "/assets/img/2024-05-27-InterpretableOutlierDetectionFrequentPatternsOutlierFactorFPOF_0.png"
 date: 2024-05-27 15:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-InterpretableOutlierDetectionFrequentPatternsOutlierFactorFPOF_0.png
 tag: Tech
 originalTitle: "Interpretable Outlier Detection: Frequent Patterns Outlier Factor (FPOF)"
 link: "https://medium.com/towards-data-science/interpretable-outlier-detection-frequent-patterns-outlier-factor-fpof-0d9cbf51b17a"
 ---
-
 
 ## 범주형 데이터를 지원하며 이상치를 감지하고, 이상치에 대한 설명을 제공하는 감지 방법
 
@@ -89,33 +88,33 @@ import warnings
 
 warnings.filterwarnings(action='ignore', category=DeprecationWarning)
 
-data = fetch_openml('SpeedDating', version=1, parser='auto') 
+data = fetch_openml('SpeedDating', version=1, parser='auto')
 data_df = pd.DataFrame(data.data, columns=data.feature_names)
 
 data_df = data_df[['d_pref_o_attractive', 'd_pref_o_sincere',
                    'd_pref_o_intelligence', 'd_pref_o_funny',
-                   'd_pref_o_ambitious', 'd_pref_o_shared_interests']] 
-data_df = pd.get_dummies(data_df) 
+                   'd_pref_o_ambitious', 'd_pref_o_shared_interests']]
+data_df = pd.get_dummies(data_df)
 for col_name in data_df.columns:
     data_df[col_name] = data_df[col_name].map({0: False, 1: True})
 
-frequent_itemsets = apriori(data_df, min_support=0.3, use_colnames=True) 
+frequent_itemsets = apriori(data_df, min_support=0.3, use_colnames=True)
 
 data_df['FPOF_Score'] = 0
 
-for fis_idx in frequent_itemsets.index: 
+for fis_idx in frequent_itemsets.index:
     fis = frequent_itemsets.loc[fis_idx, 'itemsets']
-    support = frequent_itemsets.loc[fis_idx, 'support'] 
+    support = frequent_itemsets.loc[fis_idx, 'support']
     col_list = (list(fis))
     cond = True
     for col_name in col_list:
         cond = cond & (data_df[col_name])
-           
-    data_df.loc[data_df[cond].index, 'FPOF_Score'] += support   
 
-min_score = data_df['FPOF_Score'].min() 
+    data_df.loc[data_df[cond].index, 'FPOF_Score'] += support
+
+min_score = data_df['FPOF_Score'].min()
 max_score = data_df['FPOF_Score'].max()
-data_df['FPOF_Score'] = [(max_score - x) / (max_score - min_score) 
+data_df['FPOF_Score'] = [(max_score - x) / (max_score - min_score)
                          for x in data_df['FPOF_Score']]
 ```
 
@@ -124,7 +123,8 @@ data_df['FPOF_Score'] = [(max_score - x) / (max_score - min_score)
 그런 다음 apriori 메서드를 호출하여 빈번한 항목 집합을 결정합니다. 이를 수행하기 위해 FIS가 나타나는 행의 최소 분수 인 최소 지원을 지정해야합니다. 이 값을 너무 높게 설정하면 강한 이상값도 FIS를 포함 시키지 않으며 FIS가 적게 포함 된 레코드를 어렵게 구별하게됩니다. 그리고 이 값을 너무 낮게 설정하면 FIS가 의미없을 수 있으며 이상값도 이니셜과 동일한 수의 FIS를 포함 할 수 있습니다. 낮은 최소 지원으로 apriori를 사용하면 매우 많은 수의 FIS를 생성 할 수 있으며 실행 속도가 느려지고 해석 가능성이 낮아질 수 있습니다. 이 예에서는 0.3을 사용합니다.
 
 FIS의 크기에 제한을 둘 수도 있고 때로는 그렇게합니다. 최소 및 최대 열 수 사이에 관련되도록 요구하는 여러 항목 집합의 크기에 제한을 둘 수 있으며 가장 관심 있는 이상값의 형태를 좁히는 데 도움이 될 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -141,7 +141,7 @@ frequent_itemsets['length'] = \
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-InterpretableOutlierDetectionFrequentPatternsOutlierFactorFPOF_0.png)
 
 그런 다음 각 빈번한 항목 집합을 루프하고 지원하는 빈번한 항목 집합을 포함하는 각 행에 대해 점수를 증가시킵니다. 이는 선택적으로 길이가 더 큰 빈번한 항목 집합을 선호하도록 조정할 수 있습니다(예를 들어, 지원이 0.4이고 5개 열을 포함하는 FIS는, 그 외의 조건이 동일한 경우, 2개 열을 포함하는 지원이 0.4인 FIS보다 관련성이 더 높습니다), 하지만 여기서는 각 행의 FIS 수 및 지원을 간단히 사용합니다.
@@ -149,11 +149,11 @@ frequent_itemsets['length'] = \
 실제로 이것은 정상성에 대한 점수를 생성하고 이상값이 아닙니다. 따라서 점수를 0.0과 1.0 사이로 정규화할 때 순서를 뒤집습니다. 이제 가장 높은 점수를 가진 행이 가장 강한 이상값입니다: 가장 적고 가장 일반적인 빈번한 항목 집합을 가진 행입니다.
 
 원래 데이터프레임에 점수 열을 추가하고 점수별로 정렬하면 가장 정상적인 행을 확인할 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-InterpretableOutlierDetectionFrequentPatternsOutlierFactorFPOF_1.png)
 
 이 행의 값들이 FISs와 잘 일치하는 것을 볼 수 있습니다. d_pref_o_attractive의 값은 [21-100]이며 이는 FIS(지원 0.36)와 일치합니다. d_pref_o_ambitious와 d_pref_o_shared_interests의 값은 각각 [0-15]로, 이 또한 FIS(지원 0.59)와 일치합니다. 다른 값들도 대부분 FIS들과 일치합니다.
@@ -161,7 +161,7 @@ frequent_itemsets['length'] = \
 가장 이상한 행은 다음과 같이 표시됩니다. 이는 식별된 FIS들과 일치하지 않습니다.
 
 ![이미지](/assets/img/2024-05-27-InterpretableOutlierDetectionFrequentPatternsOutlierFactorFPOF_2.png)
-```  
+
 
 <div class="content-ad"></div>
 

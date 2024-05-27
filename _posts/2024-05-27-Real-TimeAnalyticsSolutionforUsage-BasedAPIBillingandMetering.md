@@ -3,7 +3,7 @@ title: "사용 기반 API 요금 청구 및 미터링을 위한 실시간 분석
 description: ""
 coverImage: "/assets/img/2024-05-27-Real-TimeAnalyticsSolutionforUsage-BasedAPIBillingandMetering_0.png"
 date: 2024-05-27 12:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Real-TimeAnalyticsSolutionforUsage-BasedAPIBillingandMetering_0.png
 tag: Tech
 originalTitle: "Real-Time Analytics Solution for Usage-Based API Billing and Metering"
@@ -11,7 +11,6 @@ link: "https://medium.com/towards-data-science/real-time-analytics-solution-for-
 ---
 
 
-```markdown
 ![Real-Time Analytics Solution](/assets/img/2024-05-27-Real-TimeAnalyticsSolutionforUsage-BasedAPIBillingandMetering_0.png)
 
 Disclaimer: The author of this article is a Developer Advocate at Redpanda, which is a critical component of the solution discussed. The author also brings prior expertise in API Management and Apache Pinot to the table. Hence, the proposed solution is a combination of these technologies aimed at solving a prevalent problem.
@@ -19,7 +18,7 @@ Disclaimer: The author of this article is a Developer Advocate at Redpanda, whic
 An API business refers to a company that packages its services or functionalities as a set of API (Application Programming Interface) products. These APIs can be sold to new and existing customers, who can then integrate these functionalities into their own applications. The company can generate revenue by charging these customers based on their usage of the APIs.
 
 A company operating an API business needs a data infrastructure component to track API call volume and bill consumers accordingly.
-```
+
 
 <div class="content-ad"></div>
 
@@ -67,7 +66,7 @@ API의 역할은 내부 비즈니스 시스템을 소비자로부터 분리하�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-Real-TimeAnalyticsSolutionforUsage-BasedAPIBillingandMetering_3.png)
 
 비지니스 운영을 확장하고 더 많은 고객을 유치하며 새로운 시장 세그먼트에 진입하기 위해 이 회사는 API 비지니스로 진출하기로 결정했습니다. 이 말은 평가 엔진을 API 제품 세트로 패키징하여 새로운 및 기존 소비자에게 판매하고 그들의 API 호출 사용량에 따라 청구할 것을 의미합니다.
@@ -75,7 +74,7 @@ API의 역할은 내부 비즈니스 시스템을 소비자로부터 분리하�
 이를 위해 먼저 평가 엔진을 분리하고 API 관리 플랫폼 뒤에 배치하여 달성합니다. 이를 통해 소비자들이 일련의 API를 통해 기능에 액세스할 수 있게 됩니다.
 
 ![image](/assets/img/2024-05-27-Real-TimeAnalyticsSolutionforUsage-BasedAPIBillingandMetering_4.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -130,7 +129,7 @@ API의 역할은 내부 비즈니스 시스템을 소비자로부터 분리하�
 
 아래는 마크다운 형식으로 표시 변환한 코드입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-Real-TimeAnalyticsSolutionforUsage-BasedAPIBillingandMetering_6.png)
 
 ## 이해 관계자
@@ -138,7 +137,7 @@ API의 역할은 내부 비즈니스 시스템을 소비자로부터 분리하�
 두 번째 디자인 결정은 솔루션 이해 관계자 - 이러한 지표를 전달해야 하는 대상. 주로 세 가지 당사자가 있습니다.
 
 고객 및 협력사 - 소비자는 실시간 대시 보드에서 할당량 사용량과 청구 추정을 확인하는 것을 좋아합니다.
-```
+
 
 <div class="content-ad"></div>
 

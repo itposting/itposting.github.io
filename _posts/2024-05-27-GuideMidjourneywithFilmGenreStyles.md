@@ -3,13 +3,12 @@ title: "영화 장르 스타일로 중간 과정을 안내해보세요"
 description: ""
 coverImage: "/assets/img/2024-05-27-GuideMidjourneywithFilmGenreStyles_0.png"
 date: 2024-05-27 15:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-GuideMidjourneywithFilmGenreStyles_0.png
 tag: Tech
 originalTitle: "Guide Midjourney with Film Genre Styles"
 link: "https://medium.com/let-there-be-prompt/guide-midjourney-with-film-genre-styles-f0ab76d72e74"
 ---
-
 
 테이블 태그를 마크다운 형식으로 변경해 주세요.
 
@@ -25,7 +24,7 @@ link: "https://medium.com/let-there-be-prompt/guide-midjourney-with-film-genre-s
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-GuideMidjourneywithFilmGenreStyles_0.png)
 
 나는 스타워즈에 대해 꽤 친숙하고 3D 아티스트로서 제작에 일부 참여한 경험이 있어 스타워즈 스타일의 이미지를 만드는 것이 쉬울 것으로 생각했습니다.
@@ -33,11 +32,11 @@ link: "https://medium.com/let-there-be-prompt/guide-midjourney-with-film-genre-s
 그러나 그 이미지를 브랜드 이름을 사용하지 않고 만들려고 하니 처음에 생각했던 것보다 더 복잡했습니다.
 
 "낡은," "무법자," "사막과 과학 소설적 건축물"과 같은 형용사를 선택하여 작업을 시작했습니다. 우주선과 풍경, 기복과 건물을 설명하려고 했으나 키워드가 쌓여서 제작 과정이 어려워졌습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![GuideMidjourneywithFilmGenreStyles_1](/assets/img/2024-05-27-GuideMidjourneywithFilmGenreStyles_1.png)
 
 It turned out that there was a very simple solution without lengthy prompts or mentioning brands.
@@ -45,7 +44,7 @@ It turned out that there was a very simple solution without lengthy prompts or m
 ![GuideMidjourneywithFilmGenreStyles_2](/assets/img/2024-05-27-GuideMidjourneywithFilmGenreStyles_2.png)
 
 Instead of trying to stuff my prompts with detailed definitions of things, I needed to think more about how Midjourney works.
-```
+
 
 <div class="content-ad"></div>
 
@@ -59,7 +58,7 @@ Midjourney의 창조자들은 그 부분에 대해 잘 해냈습니다. Midjourn
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![이미지](/assets/img/2024-05-27-GuideMidjourneywithFilmGenreStyles_3.png)
 
 제 프로젝트에서는 이름을 붙이고 설명하는 대신, 이 구체적인 이미지를 만들 때 관련된 장르를 설명하는 것이 훨씬 나은 것 같아요.
@@ -67,7 +66,7 @@ Midjourney의 창조자들은 그 부분에 대해 잘 해냈습니다. Midjourn
 맞아요, 스타 워즈는 과학 소설 장르에 속합니다. 그러나 이 장르에는 많은 스타일이 있으며 그 중 많은 것들이 스타 워즈와는 전혀 닮지 않아요.
 
 또한 이것은 서사시입니다. 서사시는 넓은 의미에서 거대한 풍경, 조망, 다층적인 심오함 등을 필요로 합니다. 제 프롬프트에 "서사시"라는 단어를 사용하면 많은 말들을 줄일 수 있어요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -79,7 +78,7 @@ Midjourney의 창조자들은 그 부분에 대해 잘 해냈습니다. Midjourn
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![GuideMidjourneywithFilmGenreStyles_5](/assets/img/2024-05-27-GuideMidjourneywithFilmGenreStyles_5.png)
 
 Midjourney는 카메라 각도, 조명, 구도 규칙 및 다른 장르와 관련된 많은 요소를 잘 알고 있습니다. 필요한 요소로 이미지를 채워 넣을 수 있으며, 프롬프트에 언급하지 않아도 됩니다.
@@ -87,7 +86,7 @@ Midjourney는 카메라 각도, 조명, 구도 규칙 및 다른 장르와 관�
 프롬프트에서 장르를 사용해도 윤리 규칙을 위반하는 것은 아닙니다.
 
 ![GuideMidjourneywithFilmGenreStyles_6](/assets/img/2024-05-27-GuideMidjourneywithFilmGenreStyles_6.png)
-```
+
 
 <div class="content-ad"></div>
 

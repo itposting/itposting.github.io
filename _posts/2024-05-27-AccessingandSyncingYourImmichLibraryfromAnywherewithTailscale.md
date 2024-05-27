@@ -60,9 +60,9 @@ curl -fsSL https://tailscale.com/install.sh | sh
 
 Tailscale를 시작하고 로그인하세요:
 
-```
+
 sudo tailscale up
-```
+
 
 - 기기를 인증하기 위해 지침을 따르세요. 웹 브라우저에서 URL을 열고 Tailscale 계정으로 로그인해야 합니다.
 

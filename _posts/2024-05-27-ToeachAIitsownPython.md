@@ -3,13 +3,12 @@ title: "각 AI에게 맞는 Python"
 description: ""
 coverImage: "/assets/img/2024-05-27-ToeachAIitsownPython_0.png"
 date: 2024-05-27 13:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ToeachAIitsownPython_0.png
 tag: Tech
 originalTitle: "To each AI its own Python"
 link: "https://medium.com/generative-ai/to-each-ai-its-own-python-4294596886c6"
 ---
-
 
 ![2024-05-27-ToeachAIitsownPython_0](/assets/img/2024-05-27-ToeachAIitsownPython_0.png)
 
@@ -73,16 +72,17 @@ Expand-Archive -Force .\python-3.11.7-embed-amd64.zip .\python311
 
 <div class="content-ad"></div>
 
-```markdown
+
 .\python311\python.exe
-```
+
 
 ![ToeachAIitsownPython_2](/assets/img/2024-05-27-ToeachAIitsownPython_2.png)
 
 This portable version cannot install pip dependencies. Try and you will see an annoying message:
 
 ![ToeachAIitsownPython_3](/assets/img/2024-05-27-ToeachAIitsownPython_3.png)
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -112,13 +112,13 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
 예를 들어:
 
-```markdown
+
 # 메인 프로젝트 디렉토리인 pythontests 안에서
 .\python311\python.exe -m pip install streamlit==1.34.0
 
 # python311 디렉토리에서
 python.exe -m pip install openai
-```
+
 
 참고: 여기서는 아주 잘 작동하지만 여전히 문제가 있습니다. 미리 빌드된 휠을 제공하지 않는 종류의 패키지를 설치할 수 없습니다. 예를 들어, 저는 llama-cpp-python의 팬인데, 최신 버전 0.2.75는 미리 빌드된 휠이 제공되지 않습니다.
 
@@ -147,18 +147,19 @@ python.exe -m pip install openai
 
 <div class="content-ad"></div>
 
-```markdown
+
 wget https://www.python.org/ftp/python/3.12.2/python-3.12.2-embed-amd64.zip -OutFile python-3.12.2-embed-amd64.zip
-```
+
 
 터미널에서 ZIP 파일을 새 폴더로 압축 해제할 수도 있어요:
 
-```markdown
+
 Expand-Archive -Force .\python-3.12.2-embed-amd64.zip .\python312
-```
+
 
 지금은 우리의 테스트 폴더에 pip 패키지와 이미 몇 개의 다른 패키지(streamlit, openai, llama-cpp-python)가 설치된 python311과 아직 pip조차 지원하지 않는 새로운 휴대용 Python이 있어요...
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -214,7 +215,7 @@ venv\Scripts\activate
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-ToeachAIitsownPython_9.png)
 
 파이썬 버전 확인을 위해 다음 명령어를 실행하세요:
@@ -225,7 +226,8 @@ Python 3.12.2
 ```
 
 # 결론
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -255,3 +257,4 @@ Python 3.12.2
 <div class="content-ad"></div>
 
 ![2024-05-27-ToeachAIitsownPython_11.png](/assets/img/2024-05-27-ToeachAIitsownPython_11.png)
+

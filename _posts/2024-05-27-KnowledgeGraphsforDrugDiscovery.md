@@ -3,7 +3,7 @@ title: "약물 발견을 위한 지식 그래프"
 description: ""
 coverImage: "/assets/img/2024-05-27-KnowledgeGraphsforDrugDiscovery_0.png"
 date: 2024-05-27 14:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-KnowledgeGraphsforDrugDiscovery_0.png
 tag: Tech
 originalTitle: "Knowledge Graphs for Drug Discovery"
@@ -11,7 +11,6 @@ link: "https://medium.com/@DattarajR/knowledge-graphs-for-drug-discovery-e1485d3
 ---
 
 
-```markdown
 ![Knowledge Graphs for Drug Discovery](/assets/img/2024-05-27-KnowledgeGraphsforDrugDiscovery_0.png)
 
 약물 발견 분야의 급변하는 분야에서, 지식 그래프는 새로운 약물을 식별하고 개발하는 방식을 변형하는 강력한 인실리코 도구로 발전하고 있습니다. 방대하고 다양한 데이터셋을 통합함으로써, 지식 그래프는 생물 엔티티간의 숨겨진 관계를 발견하고, 약물 발견 분야에서 더 정확한 예측과 효율적인 프로세스를 가능하게 합니다. 이 기사는 이 분야에서 지식 그래프가 가져온 다양한 최근 응용 및 혁신에 대해 탐구합니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/@DattarajR/knowledge-graphs-for-drug-discovery-e1485d3
 ## 타겟 우선 순위 지정
 
 약물 발견 분야에서 지식 그래프의 주요 응용 중 하나는 타겟 우선 순위 지정입니다. 다양한 데이터셋을 통합함으로써, 지식 그래프는 연구자들이 약물 개발을 위해 생물학적 타겟을 식별하고 우선 순위를 지정할 수 있도록 합니다. 데이터의 상호 연결된 특성은 유전자, 단백질, 경로 및 질병 사이의 복잡한 관계를 이해하는 데 도움이 되어, 추구해야 할 타겟에 대해 보다 정보에 기초한 결정을 내릴 수 있게 합니다. [더 읽기]
-```
+
 
 <div class="content-ad"></div>
 

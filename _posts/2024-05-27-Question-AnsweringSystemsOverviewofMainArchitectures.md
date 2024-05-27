@@ -3,13 +3,12 @@ title: "질문-응답 시스템 주요 아키텍처 개요"
 description: ""
 coverImage: "/assets/img/2024-05-27-Question-AnsweringSystemsOverviewofMainArchitectures_0.png"
 date: 2024-05-27 15:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Question-AnsweringSystemsOverviewofMainArchitectures_0.png
 tag: Tech
 originalTitle: "Question-Answering Systems: Overview of Main Architectures"
 link: "https://medium.com/towards-data-science/question-answering-systems-overview-of-main-architectures-46b94d58bae6"
 ---
-
 
 ## 확장 가능한 정보 검색 시스템을 구축하는 디자인 방식 탐색
 
@@ -53,7 +52,7 @@ link: "https://medium.com/towards-data-science/question-answering-systems-overvi
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Question-Answering Systems Overview of Main Architectures](/assets/img/2024-05-27-Question-AnsweringSystemsOverviewofMainArchitectures_3.png)
 
 비슷한 구조를 가지고 있기 때문에, 추출형 또는 개방적 생성 구조를 사용하는 것이 더 나은 시점에 대한 질문이 생길 수 있습니다. 독자 모델이 상대적 정보를 포함한 텍스트 단락에 직접 액세스할 수 있는 경우, 일반적으로 정확하고 간결한 답변을 검색하는 데 충분히 똑똑합니다. 반면에, 대부분의 경우 생생 생성 모델은 주어진 맥락에 대해 더 긴 범용 정보를 생성하는 경향이 있습니다. 이는 질문이 개방형 형태로 제시될 때 유익할 수 있지만, 짧거나 정확한 답변이 예상되는 상황에는 해당되지 않을 수 있습니다.
@@ -61,7 +60,7 @@ link: "https://medium.com/towards-data-science/question-answering-systems-overvi
 ## 검색 보조 생성
 
 최근 기계 학습에서 "검색 보조 생성" 또는 "RAG"라는 용어의 인기가 급증했습니다. 간단히 말하면, 이는 개방형 생성 QA 시스템에 기반을 둔 LLM 응용 프로그램을 생성하는 프레임워크입니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -3,13 +3,12 @@ title: "대용량 데이터셋 특성 선택을 혁신하는 강화 학습"
 description: ""
 coverImage: "/assets/img/2024-05-27-RevolutionizingLargeDatasetFeatureSelectionwithReinforcementLearning_0.png"
 date: 2024-05-27 15:05
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-RevolutionizingLargeDatasetFeatureSelectionwithReinforcementLearning_0.png
 tag: Tech
 originalTitle: "Revolutionizing Large Dataset Feature Selection with Reinforcement Learning"
 link: "https://medium.com/towards-data-science/reinforcement-learning-for-feature-selection-be1e7eeb0acc"
 ---
-
 
 ## 아주 큰 데이터셋을 다룰 때 특성 선택에 강화 학습의 힘을 활용해 보세요
 
@@ -47,7 +46,7 @@ RL 뒤에 숨겨진 단순한 아이디어는 에이전트가 알 수 없는 환
 첫째, 상태는 데이터 세트에 존재하는 기능들 중의 하위 집합에 불과합니다. 예를 들어, 데이터 세트에 세 가지 기능 (나이, 성별, 키)와 하나의 레이블이 있다면, 가능한 상태는 다음과 같습니다:
 
 ```js
-[]                                              --> 빈 집합                           
+[]                                              --> 빈 집합
 [나이], [성별], [키]                             --> 1개 기능 집합
 [나이, 성별], [성별, 키], [나이, 키]             --> 2개 기능 집합
 [나이, 성별, 키]                                --> 모든 기능 집합
@@ -59,21 +58,22 @@ RL 뒤에 숨겨진 단순한 아이디어는 에이전트가 알 수 없는 환
 
 <div class="content-ad"></div>
 
-```markdown
+
 [나이] -> [나이, 성별]
 [성별, 키] -> [나이, 성별, 키]
-```
+
 
 이제 불가능한 행동의 예를 살펴봅시다:
 
-```markdown
+
 [나이] -> [나이, 성별, 키]
 [나이, 성별] -> [나이]
 [성별] -> [성별, 성별]
-```
+
 
 우리는 상태와 행동을 정의했지만 보상은 정의하지 않았습니다. 보상은 상태의 품질을 평가하는 데 사용되는 실수입니다. 예를 들어 로봇이 미로의 출구에 도달하려고 노력하고 다음 행동으로 출구로 가기로 결정한다면, 이 행동에 대한 보상은 "좋음"이 될 것입니다. 만일 함정으로 가기로 다음 행동을 선택하면 보상은 "나쁨"이 될 것입니다. 보상은 이전 조치에 대한 정보를 제공하는 값입니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -112,9 +112,9 @@ Epsilon-탐욕 알고리즘에는 두 단계가 포함됩니다:
 - 무작위 단계: epsilon의 확률로, 현재 상태의 가능한 이웃 중에서 다음 상태를 무작위로 선택합니다 (균일하게 또는 소프트맥스 선택이라고 상상할 수 있음)
 - 탐욕 단계: 현재 상태에 추가된 기능이 모델의 정확도에 대한 최대 기여를 갖도록 다음 상태를 선택합니다. 시간 복잡성을 줄이기 위해, 각 특징에 대한 이러한 값을 포함하는 목록을 초기화했습니다. 이 목록은 특징이 선택될 때마다 업데이트됩니다. 업데이트는 다음 공식 덕분에 매우 최적화되었습니다:
 
-```
+
 <img src="/assets/img/2024-05-27-RevolutionizingLargeDatasetFeatureSelectionwithReinforcementLearning_2.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -175,9 +175,9 @@ pip install FSRLearning
 
 다음은 출력 예시입니다:
 
-```markdown
+
 ![Output Example](/assets/img/2024-05-27-RevolutionizingLargeDatasetFeatureSelectionwithReinforcementLearning_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -205,11 +205,13 @@ RFE보다 더 좋은 메트릭을 가진 변수 세트를 얻을 확률: 1.0
 이 예시에서는 강화학습 방법이 항상 RFE보다 모델을 위한 더 좋은 특성 집합을 제공했습니다. 따라서 우리는 정렬된 특성 집합 중에서 확실히 선택할 수 있으며, 그것은 모델에 더 높은 정확도를 제공할 것입니다. 여러 번 모델과 비교자를 실행하여 매우 정확한 평가를 얻을 수 있지만 강화학습 방법이 항상 더 좋습니다.
 
 또 다른 흥미로운 방법은 get_plot_ratio_exploration입니다. 이는 지정된 이터레이션에 대해 이미 방문한 노드 수와 순서대로 방문한 노드 수를 비교하는 그래프를 그립니다.
-```
+
+
 
 <div class="content-ad"></div>
 
-```
+
+
 ![그림1](/assets/img/2024-05-27-RevolutionizingLargeDatasetFeatureSelectionwithReinforcementLearning_5.png)
 
 또한, 두 번째 중지 조건 덕분에 알고리즘의 시간 복잡도가 지수적으로 감소합니다. 따라서 기능의 수가 많더라도 수렴이 빨리 이루어질 것입니다. 아래 그림은 특정 크기의 집합이 방문된 횟수를 나타냅니다.
@@ -217,7 +219,8 @@ RFE보다 더 좋은 메트릭을 가진 변수 세트를 얻을 확률: 1.0
 ![그림2](/assets/img/2024-05-27-RevolutionizingLargeDatasetFeatureSelectionwithReinforcementLearning_6.png)
 
 모든 반복에서 알고리즘이 6개 이하의 변수를 포함하는 상태를 방문했습니다. 6개 이상의 변수를 넘어가면 도달한 상태의 수가 줄어드는 것을 볼 수 있습니다. 이는 작은 기능 집합으로 모델을 훈련하는 것이 큰 기능 집합보다 빠르기 때문에 좋은 동작입니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -235,3 +238,4 @@ RFE보다 더 좋은 메트릭을 가진 변수 세트를 얻을 확률: 1.0
 
 - Sali Rasoul, Sodiq Adewole, 및 Alphonse Akakpo, FEATURE SELECTION USING REINFORCEMENT LEARNING (2021), ArXiv
 - Seyed Mehdin Hazrati Fard, Ali Hamzeh, 및 Sattar Hashemi, Using reinforcement  learning to find an optimal set of features (2013), ScienceDirect
+

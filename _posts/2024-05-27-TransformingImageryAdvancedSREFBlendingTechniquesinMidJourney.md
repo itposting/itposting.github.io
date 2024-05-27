@@ -3,13 +3,12 @@ title: "이미지 변환하기 - MidJourney의 고급 SREF 블렌딩 기술"
 description: ""
 coverImage: "/assets/img/2024-05-27-TransformingImageryAdvancedSREFBlendingTechniquesinMidJourney_0.png"
 date: 2024-05-27 15:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TransformingImageryAdvancedSREFBlendingTechniquesinMidJourney_0.png
 tag: Tech
 originalTitle: "Transforming Imagery — Advanced SREF Blending Techniques in MidJourney"
 link: "https://medium.com/@promptdervish/transforming-imagery-advanced-sref-blending-techniques-in-midjourney-d904b3f9dbe7"
 ---
-
 
 ## MIDJOURNEY EXPLORATIONS SREFS
 
@@ -32,11 +31,13 @@ https://s.mj.run/h-qSBRaD4DE https://s.mj.run/CCRptYYRWv8 --ar 2:3
 ```
 
 다음 조합에서는 밝히고 배경을 추가하려고 시도했습니다. 그렇게 성공적이었습니다: 그녀의 드레스가 밝아지고, 그의 의상에 일부 새로운 붉은 색 디테일과 금 장식이 생겼습니다. 아치 형태에 조금 놀라웠지만, 실제로 #3는 상당히 멋져 보입니다.
+
 ```
 
 <div class="content-ad"></div>
 
-```markdown
+```
+
 https://s.mj.run/h-qSBRaD4DE https://s.mj.run/uZ36l-hDQsE --ar 2:3
 
 With the next one, I tried once again for a brighter sky. Midjourney felt that a more dynamic sky was needed, so my bright sky turned into a sunset. I found the rim lighting on the prince and princess to be an interesting and quite dynamic touch. In this variant, her dress was not recolored, but his suit has gained many embellishments.
@@ -44,6 +45,7 @@ With the next one, I tried once again for a brighter sky. Midjourney felt that a
 https://s.mj.run/L1_rPjYej0k https://s.mj.run/h-qSBRaD4DE --ar 2:3
 
 I decided to take another step towards flamboyance for a more striking difference in the images. Firstly, I have combined them as simple image references.
+
 ```
 
 <div class="content-ad"></div>
@@ -51,14 +53,14 @@ I decided to take another step towards flamboyance for a more striking differenc
 ```md
 https://s.mj.run/h-qSBRaD4DE https://s.mj.run/l7tQBc4KhhA 햇빛이 비치는 테라스에서 더블렛을 입은 왕자와 새틴 드레스를 입은 공주가 함께 있는 모습; 날씨의 따뜻함이 그 들의 사랑을 반영하며, 테라스는 숨막히는 풍경을 제공합니다. 이 디자인은 역사적 로맨스 소설 표지와 비슷한 스타일로 만들어졌어요. --ar 2:3
 
-이 중간 이미지는 꽤나 독특한 SREF ID로부터 왔어요. 간단한 참조 이미지 조합이 배경에 생동감을 불어넣고 그들의 의상을 환한 장식물로 꾸밉니다. 이제 우리는 조금의 발화를 더해볼게요. 아래 코드는 동일한 두 이미지를 왼쪽 이미지를 캐릭터 참조로, 중간 이미지를 스타일 참조로 넣어 합쳤어요. 
+이 중간 이미지는 꽤나 독특한 SREF ID로부터 왔어요. 간단한 참조 이미지 조합이 배경에 생동감을 불어넣고 그들의 의상을 환한 장식물로 꾸밉니다. 이제 우리는 조금의 발화를 더해볼게요. 아래 코드는 동일한 두 이미지를 왼쪽 이미지를 캐릭터 참조로, 중간 이미지를 스타일 참조로 넣어 합쳤어요.
 
 이 두 캐릭터에 대한 참조가 작동한다는 사실에 놀랐어요. 보통 제한은 단일 캐릭터만 가능하다고 기대하죠. 다른 종류의 프롬프트를 충분히 시도해보지 않아서 그것을 테스트할만한 겁니다. 얼굴이 가깝고 프롬프트가 유사하기 때문에 여기에서 작동한다고 의심해요. 얼굴을 섞어 동일하게 만들거나 하는 것으로 생각했는데 그런 것 같아 보이지 않았어요.
 ```
 
 <div class="content-ad"></div>
 
---cref이 왼쪽 이미지에는 원본에 가까운 옷을 유지하면서 배경을 완전히 변경할 수 있어서 좋은 결과를 얻을 수 있어요. 그런데 만약 옷도 바꾸고 싶다면 어떻게 할까요? --cw 50을 사용하여 캐릭터 가중치를 낮추면(기본값 100에서) 변경할 수 있어요. 
+--cref이 왼쪽 이미지에는 원본에 가까운 옷을 유지하면서 배경을 완전히 변경할 수 있어서 좋은 결과를 얻을 수 있어요. 그런데 만약 옷도 바꾸고 싶다면 어떻게 할까요? --cw 50을 사용하여 캐릭터 가중치를 낮추면(기본값 100에서) 변경할 수 있어요.
 
 ```js
 a prince in a doublet and a princess in a satin gown on a sunlit terrace; the warmth of the day reflecting their love; the terrace offering a breathtaking view, in the style of historical romance novel cover --ar 2:3 --sref https://s.mj.run/l7tQBc4KhhA --cref https://s.mj.run/h-qSBRaD4DE --cw 50

@@ -3,13 +3,12 @@ title: "90의 작업을 처리할 수 있는 10가지 SQL 문장"
 description: ""
 coverImage: "/assets/img/2024-05-27-10SQLStatementsThatCanHandle90ofTasks_0.png"
 date: 2024-05-27 13:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-10SQLStatementsThatCanHandle90ofTasks_0.png
 tag: Tech
 originalTitle: "10 SQL Statements That Can Handle 90% of Tasks"
 link: "https://medium.com/@sqlfundamentals/10-sql-statements-that-can-handle-90-of-tasks-aa77c99120ae"
 ---
-
 
 구조화된 쿼리 언어(SQL)는 관계형 데이터베이스를 관리하고 질의하는 강력한 도구입니다. 초보자든 경험 많은 데이터 전문가든 상관없이, 여러분은 자주 사용하게 될 특정 SQL 문을 발견할 것입니다. 본 문서에서는 데이터베이스 작업의 90%를 처리할 수 있는 10가지 필수 SQL 문을 다룹니다. 코드 예시를 함께 제공할 것입니다.
 
@@ -101,20 +100,21 @@ CREATE TABLE 문은 지정된 열과 데이터 유형을 가진 새 테이블을
 
 <div class="content-ad"></div>
 
-```markdown
+
 CREATE TABLE products (
     product_id INT PRIMARY KEY,
     product_name VARCHAR(255),
     price DECIMAL(10, 2)
 );
-```
+
 
 ## 7. ALTER TABLE 문
 
 ## 테이블 수정
 
 ALTER TABLE 문을 사용하면 기존 테이블을 추가, 수정 또는 삭제하여 테이블을 수정할 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 

@@ -3,7 +3,7 @@ title: "기존의 GPT-4보다 뛰어난 성능을 자랑하는 스탠포드 대�
 description: ""
 coverImage: "/assets/img/2024-05-27-BetterThanGPT-4theStanfordteamslargemodelthatcanberunonmobilephonesbecamepopularwithover2kdownloadsovernight_0.png"
 date: 2024-05-27 14:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-BetterThanGPT-4theStanfordteamslargemodelthatcanberunonmobilephonesbecamepopularwithover2kdownloadsovernight_0.png
 tag: Tech
 originalTitle: "Better Than GPT-4, the Stanford team’s large model that can be run on mobile phones became popular, with over 2k downloads overnight"
@@ -11,7 +11,6 @@ link: "https://medium.com/gitconnected/better-than-gpt-4-the-stanford-teams-larg
 ---
 
 
-```markdown
 ![Octopus v2](/assets/img/2024-05-27-BetterThanGPT-4theStanfordteamslargemodelthatcanberunonmobilephonesbecamepopularwithover2kdownloadsovernight_0.png)
 
 대규모 모델 구현의 과정에서, 엔드사이드 AI는 매우 중요한 방향입니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/gitconnected/better-than-gpt-4-the-stanford-teams-larg
 최근 스탠퍼드 대학의 연구자들이 출시한 Octopus v2는 개발자 커뮤니티로부터 큰 관심을 받으며 인기를 끌고 있습니다. 모델의 다운로드 횟수가 하룻밤 사이에 2천 건을 넘었습니다.
 
 200억 개의 파라미터를 갖는 Octopus v2는 정확도와 대기 시간 측면에서 GPT-4를 능가하며, 콘텍스트 길이를 95% 줄였습니다. 또한, Octopus v2는 Llama7B + RAG 구성보다 36배 빠릅니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -57,7 +56,7 @@ link: "https://medium.com/gitconnected/better-than-gpt-4-the-stanford-teams-larg
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-BetterThanGPT-4theStanfordteamslargemodelthatcanberunonmobilephonesbecamepopularwithover2kdownloadsovernight_4.png)
 
 Research team은 이 모델을 훈련하기 위해 20가지의 안드로이드 API 설명을 작성했습니다. 다음은 예시 안드로이드 API 설명입니다:
@@ -77,7 +76,8 @@ def get_trending_news (category=None, region='US', language='en', max_results=5)
 ```
 
 모델 개발 및 훈련
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -103,7 +103,7 @@ def inference(input_text):
     input_ids = tokenizer(input_text, return_tensors="pt").to(model.device)
     input_length = input_ids["input_ids"].shape[1]
     outputs = model.generate(
-        input_ids=input_ids["input_ids"], 
+        input_ids=input_ids["input_ids"],
         max_length=1024,
         do_sample=False
     )

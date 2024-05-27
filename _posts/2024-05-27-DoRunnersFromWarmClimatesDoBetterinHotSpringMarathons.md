@@ -3,13 +3,12 @@ title: "따뜻한 기후에서 온 러너들이 더 더운 봄 마라톤에서 �
 description: ""
 coverImage: "/assets/img/2024-05-27-DoRunnersFromWarmClimatesDoBetterinHotSpringMarathons_0.png"
 date: 2024-05-27 12:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-DoRunnersFromWarmClimatesDoBetterinHotSpringMarathons_0.png
 tag: Tech
 originalTitle: "Do Runners From Warm Climates Do Better in Hot, Spring Marathons?"
 link: "https://medium.com/runners-life/do-runners-from-warm-climates-do-better-in-hot-spring-marathons-3ce4f764258f"
 ---
-
 
 ![DoRunnersFromWarmClimatesDoBetterinHotSpringMarathons](/assets/img/2024-05-27-DoRunnersFromWarmClimatesDoBetterinHotSpringMarathons_0.png)
 
@@ -200,7 +199,7 @@ Tableau에서 이 시각화를 확인하면 성별 및 연령 그룹의 다양�
 
 <div class="content-ad"></div>
 
-```markdown
+
 | Age Group   |    Men |   Women |
 |-------------|--------|---------|
 | Under 35    | -0.052 |  -0.071 |
@@ -217,15 +216,16 @@ And if you look at this full table of correlation coefficients — between avera
 I looked at the same tables based on correlations involving the max temp and the mean daily temp, and neither one had stronger correlations. If you limit the results to faster runners who likely qualified on time, the relationship disappears altogether in many cases.
 
 Based on this data, it’s hard to conclude that living in a warm climate has a significant impact on how well a runner performs in a warm, spring marathon — compared to a runner living in a cool climate.
-```
-```
+
+
+
 
 여기 평균 최저 온도와 속도 변화 비율 사이의 상관 계수에 대한 전체 표를 보면, 약한 음의 상관 관계와 약한 양의 상관 관계 사이에 혼합된 결과가 있습니다.
 
 최대 온도 및 평균 일일 온도와 관련된 상관 관계를 기반으로 한 동일한 표를 살펴보았는데, 강한 상관 관계는 더 강해지지 않았습니다. 시간에 맞게 자격을 취득한 빠른 러너에 제한해도, 많은 경우에는 관련성이 완전히 사라집니다.
 
 이 데이터를 기반으로, 따뜻한 기후에서 살면 따뜻한 봄 마라톤에서 어떤 선수가 성과에 미치는 영향이 서늘한 기후에서 사는 선수와 비교해 유의미한 차이가 있는지 결론을 내리기 어렵습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -249,7 +249,7 @@ Based on this data, it’s hard to conclude that living in a warm climate has a 
 
 <div class="content-ad"></div>
 
-둘째, 따뜻한 기후에서는 많은 선수들이 활동하지 않습니다. 만약 50도와 60도가 어떤 식으로든 적응할만큼 충분히 따뜻한 범위로 가정한다면, 여전히 안정적인 분포를 만들기 위해 충분한 규모의 인구가 필요합니다. 
+둘째, 따뜻한 기후에서는 많은 선수들이 활동하지 않습니다. 만약 50도와 60도가 어떤 식으로든 적응할만큼 충분히 따뜻한 범위로 가정한다면, 여전히 안정적인 분포를 만들기 위해 충분한 규모의 인구가 필요합니다.
 
 나이와 성별로 나누어 보면, 여전히 시원한 기후의 2,000명 이상의 선수들이 있지만, 따뜻한 기후에는 약 200명 정도만 있습니다. 그 작은 그룹에는 더 많은 무작위성이 있을 것이며, 이로 인해 기후의 가능한 영향이 흐릿해질 수 있습니다. 따라서 데이터의 사용 가능한 부분에 잠재적인 문제가 있고, 더 많은 데이터가 있다면 개선될 수 있습니다.
 

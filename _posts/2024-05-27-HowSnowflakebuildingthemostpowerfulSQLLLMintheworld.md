@@ -3,13 +3,12 @@ title: "세계에서 가장 강력한 SQL LLM을 구축하는 Snowflake의 방�
 description: ""
 coverImage: "/assets/img/2024-05-27-HowSnowflakebuildingthemostpowerfulSQLLLMintheworld_0.png"
 date: 2024-05-27 13:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowSnowflakebuildingthemostpowerfulSQLLLMintheworld_0.png
 tag: Tech
 originalTitle: "How Snowflake building the most powerful SQL LLM in the world"
 link: "https://medium.com/wrenai/what-we-learned-from-snowflake-copilot-building-the-most-powerful-sql-llm-in-the-world-52f82d661bc1"
 ---
-
 
 AI가 데이터 민주화를 위한 새로운 기회를 만들어냈습니다. SQL을 필요로 하지 않고 언어 모델 이해력의 힘을 이용하여 통찰력을 얻는 것으로 많은 사용자가 현재 대량의 데이터에 감춰진 가치 있는 통찰을 발견할 수 있게 되었습니다.
 
@@ -160,7 +159,7 @@ Snowflake 팀이 직면한 다른 어려움은 레이터입니다. 모든 것을
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Snowflake](/assets/img/2024-05-27-HowSnowflakebuildingthemostpowerfulSQLLLMintheworld_1.png)
 
 ## V3: 지시 따르기, 도구 사용
@@ -168,7 +167,7 @@ Snowflake 팀이 직면한 다른 어려움은 레이터입니다. 모든 것을
 Vivek은 텍스트를 SQL로 바꾸는 작업과 더 일반적인 지시 따르기 작업을 섞어 LLM을 지시 따르도록 다시 교육했다. 그리고 이를 Multi-LLM 설정에 오케스트레이터 LLM으로 계층화했다.
 
 오케스트레이터 모델의 책임은 고객과 대화하는 것입니다. 이는 주체적인 방식과 유사합니다. SQL을 작성해야 할 때마다 다른 크기의 텍스트를 SQL 모델을 사용하도록 허용했습니다. 지능적으로 작업을 위임하는 이 방법은 많은 문제를 해결해 주었습니다.
-```
+
 
 <div class="content-ad"></div>
 

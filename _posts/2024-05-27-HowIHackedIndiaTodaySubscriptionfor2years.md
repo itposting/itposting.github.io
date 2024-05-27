@@ -3,13 +3,12 @@ title: "인도 투데이 구독 2년간 무료로 이용하기 "
 description: ""
 coverImage: "/assets/img/2024-05-27-HowIHackedIndiaTodaySubscriptionfor2years_0.png"
 date: 2024-05-27 15:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowIHackedIndiaTodaySubscriptionfor2years_0.png
 tag: Tech
 originalTitle: "How I Hacked India Today Subscription for 2 years 😅🥳🤑"
 link: "https://medium.com/@anudeep-vysyaraju/how-i-hacked-india-today-subscription-for-2-years-4e49701fa7c8"
 ---
-
 
 블로그에 들어가기 전에...
 
@@ -41,7 +40,7 @@ link: "https://medium.com/@anudeep-vysyaraju/how-i-hacked-india-today-subscripti
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-HowIHackedIndiaTodaySubscriptionfor2years_1.png)
 
 그래서 나는 모든 일반적인 것들을 시도해봤어, 매개변조 및 인터넷과 체크리스트에서 비즈니스 로직 버그 등 모두😁. 전자 상거래 웹사이트이기 때문에 취약점을 악용할 수 있는 좋은 기회를 얻지 못했어 🥹🥹
@@ -49,7 +48,7 @@ link: "https://medium.com/@anudeep-vysyaraju/how-i-hacked-india-today-subscripti
 웹사이트를 살펴보니 여러 결제 게이트웨이를 사용하며, 흥미로운 점은 웹사이트가 결제 게이트웨이로 Billdesk를 사용한다는 것을 알게 되었어. 그래서 내 모든 관심이 Billdesk에 집중되었어, 이를 우회해 본 적이 없었거든 😅😉😃
 
 이제 몇 가지 무작위 구독을 장바구니에 추가하고 Paytm과 ICICI Bank와 Billdesk와 같은 모든 결제 옵션을 확인했어.
-```
+
 
 <div class="content-ad"></div>
 
@@ -63,7 +62,7 @@ Billdesk를 결제 게이트웨이로 선택하고 주문을 확인했어요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-HowIHackedIndiaTodaySubscriptionfor2years_3.png)
 
 이제 Burpsuite로 열었고 프록시를 설정했습니다... 게이트웨이를 해킹할 준비가 다 되었어요. 이 작업을 하기 전에 Billdesk 결제 게이트웨이 API 코드 및 응답을 참조해서 게이트웨이를 더 잘 이해하려고 했어요. 왜냐하면 말했듯이 나도 결제 게이트웨이에 대해 처음이라서요. 아래에서 결제 게이트웨이 API 응답 코드에 대한 초보자를 위한 간단한 정보를 제공합니다. 😁😁😁
@@ -71,7 +70,7 @@ Billdesk를 결제 게이트웨이로 선택하고 주문을 확인했어요.
 결제 게이트웨이 API 응답 코드란 무엇인가요??
 
 게이트웨이 응답 코드는 거래가 거부되었는지 승인되었는지를 식별하는 여러 자리 숫자 코드입니다. 이 코드들은 거래를 다시 시도해야 하는 경우 어떤 조치를 취해야 하는지 나타내줍니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -97,7 +96,7 @@ Billdesk를 결제 게이트웨이로 선택하고 주문을 확인했어요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-HowIHackedIndiaTodaySubscriptionfor2years_6.png)
 
 응답 코드와 메시지를 변경한 후에 요청을 Burpsuite로 전달했습니다. 그 후에 이 응답을 받았어요. 이제 이 요청이 주문을 업데이트하기 위해 POST 방식을 사용하고 성공처럼 보이는 걸 알았어요 🥳🥳
@@ -105,7 +104,7 @@ Billdesk를 결제 게이트웨이로 선택하고 주문을 확인했어요.
 ![이미지](/assets/img/2024-05-27-HowIHackedIndiaTodaySubscriptionfor2years_7.png)
 
 계속해서 요청과 응답을 전달하다가 이것을 보았어요 😉😉😁😁
-```
+
 
 <div class="content-ad"></div>
 

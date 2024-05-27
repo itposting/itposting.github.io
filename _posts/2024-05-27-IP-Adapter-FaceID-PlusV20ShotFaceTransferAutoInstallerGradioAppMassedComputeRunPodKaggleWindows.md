@@ -82,4 +82,3 @@ IP-어댑터-얼굴ID를 사용하여 즉각적으로 얼굴 전송: Windows용 
 29:23 1클릭으로 Kaggle 노트북에서 생성된 모든 이미지 다운로드하는 방법
 30:12 Discord 채널 링크: https://discord.com/servers/software-engineering-courses-secourses-772774097734074388
 '''
-```

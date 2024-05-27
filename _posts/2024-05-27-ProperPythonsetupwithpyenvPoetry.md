@@ -3,13 +3,12 @@ title: "적절한 Python 설정 pyenv와 Poetry"
 description: ""
 coverImage: "/assets/img/2024-05-27-ProperPythonsetupwithpyenvPoetry_0.png"
 date: 2024-05-27 13:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ProperPythonsetupwithpyenvPoetry_0.png
 tag: Tech
 originalTitle: "Proper Python setup with pyenv , Poetry"
 link: "https://medium.com/@douwevandermeij/proper-python-setup-with-pyenv-poetry-4d8baea329a8"
 ---
-
 
 많은 경우, 사람들이 Python의 로컬(개발) 환경 설정에서 고민하는 것을 자주 볼 수 있어요. 솔직히 말하자면, 쉽지 않아요. 그러나 동시에 안정성과 문제 해결 능력을 위해 중요하답니다.
 
@@ -105,8 +104,9 @@ Python-3.11.7 설치 중...
 ```md
 [~]$ pyenv global 3.11.7
 [~]$ pyenv versions
-  system
-* 3.11.7 (set by /home/vandermeij/.pyenv/version)
+system
+
+- 3.11.7 (set by /home/vandermeij/.pyenv/version)
 ```
 
 지금은 Python 3.11.7이 활성화된 Python 버전으로, 전역적이며 시스템 전역으로 적용되었음을 확인했습니다.
@@ -222,7 +222,7 @@ Poetry (version 1.7.1)
 이 작업을 각 Python 버전마다 수행하십시오.
 
 ```sh
-[~/testapp]$ poetry -V 
+[~/testapp]$ poetry -V
 pyenv: poetry: command not found
 ```
 
@@ -275,17 +275,17 @@ Python 3.12.1
 
 <div class="content-ad"></div>
 
-패스트API를 수동으로 추가하겠습니다. 좋아하는 편집기로 pyproject.toml 파일을 열고 다음 줄을 변경하세요 (fastapi = "*"):
+패스트API를 수동으로 추가하겠습니다. 좋아하는 편집기로 pyproject.toml 파일을 열고 다음 줄을 변경하세요 (fastapi = "\*"):
 
-```markdown
+
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "*"
-```
+
 
 이제 Poetry 업데이트를 실행해보세요:
 
-```markdown
+
 (testapp-py3.12) [~/testapp]$ poetry update
 의존성 업데이트 중
 의존성 해결 중... (6.6초)
@@ -303,7 +303,7 @@ fastapi = "*"
   • fastapi (0.109.0) 설치 중
 
 잠금 파일 작성 완료
-```
+
 
 <div class="content-ad"></div>
 

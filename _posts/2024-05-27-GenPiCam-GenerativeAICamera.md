@@ -3,13 +3,12 @@ title: "GenPiCam - 생성적 AI 카메라"
 description: ""
 coverImage: "/assets/img/2024-05-27-GenPiCam-GenerativeAICamera_0.png"
 date: 2024-05-27 13:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-GenPiCam-GenerativeAICamera_0.png
 tag: Tech
 originalTitle: "GenPiCam - Generative AI Camera"
 link: "https://medium.com/@simon-aubury/genpicam-generative-ai-camera-dfd8123ac6f6"
 ---
-
 
 ![image](https://miro.medium.com/v2/resize:fit:1268/1*eZzfeCJggafmHaYGcjqEDA.gif)
 
@@ -65,7 +64,7 @@ GenPiCam에는 스타일 지시 사항으로 텍스트 프롬프트를 업데이
 
 <div class="content-ad"></div>
 
-```markdown
+
 [![](/assets/img/2024-05-27-GenPiCam-GenerativeAICamera_4.png)](https://example.com)
 
 The final image is created using the Pillow Python imaging library and consists of:
@@ -75,11 +74,11 @@ The final image is created using the Pillow Python imaging library and consists 
 - Text prompt—against a colored background and icon signifying the style mode
 
 Here's the same process, but adding the text “Hyper-Realistic, whimsical with a colorful hat and balloons”.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-GenPiCam-GenerativeAICamera_5.png)
 
 우측 이미지가 Generative AI로 만들어진 것임에도 불구하고, 스노위의 비평적인 시선을 통해 실망감이 느껴집니다.
@@ -87,11 +86,11 @@ Here's the same process, but adding the text “Hyper-Realistic, whimsical with 
 # Generative AI 이미지 — 배운 점
 
 GenPiCam 카메라를 구축하는 데 정말 즐겁게 시간을 보냈고, 이는 Generative AI에 대한 프립트 엔지니어링을 탐구하는 흥미로운 경로였습니다. 더 좋았던 사진들은 단순한 구성을 가진 것들이었는데, 즉, 말로 표현하기 쉬운 이미지였습니다. 예를 들어, 이 장면은 색상과 명확한 객체로 쉽게 설명할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Generated Image 1](/assets/img/2024-05-27-GenPiCam-GenerativeAICamera_6.png)
 
 However, there were some very strange results while describing more unique scenes. I found the description of a classic Australian clothesline created an unusual image.
@@ -99,11 +98,11 @@ However, there were some very strange results while describing more unique scene
 ![Generated Image 2](/assets/img/2024-05-27-GenPiCam-GenerativeAICamera_7.png)
 
 One of my favorite reimagined images was the identification of my laser mouse. It turns out a laser mouse has multiple meanings leading to a striking result.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![GenPiCam Hardware](/assets/img/2024-05-27-GenPiCam-GenerativeAICamera_8.png)
 
 # 하드웨어
@@ -117,7 +116,7 @@ GenPiCam의 가장 세련되지 않은 부분은 서둘러 조립한 하드웨�
 - 푸시버튼 (순간접촉)
 - 폴리카보네이트 케이스
 - 재충전 가능한 배터리 팩
-```
+
 
 <div class="content-ad"></div>
 

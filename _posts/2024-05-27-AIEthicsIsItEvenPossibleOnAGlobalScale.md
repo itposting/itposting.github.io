@@ -3,7 +3,7 @@ title: "AI 윤리 전 세계적으로 가능할까요"
 description: ""
 coverImage: "/assets/img/2024-05-27-AIEthicsIsItEvenPossibleOnAGlobalScale_0.png"
 date: 2024-05-27 15:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-AIEthicsIsItEvenPossibleOnAGlobalScale_0.png
 tag: Tech
 originalTitle: "AI Ethics: Is It Even Possible On A Global Scale?"
@@ -11,7 +11,6 @@ link: "https://medium.com/asecuritysite-when-bob-met-alice/ai-ethics-is-it-even-
 ---
 
 
-```markdown
 ![Image](/assets/img/2024-05-27-AIEthicsIsItEvenPossibleOnAGlobalScale_0.png)
 
 가장 좋은 윤리 정의를 찾아보면...
@@ -19,7 +18,7 @@ link: "https://medium.com/asecuritysite-when-bob-met-alice/ai-ethics-is-it-even-
 우리는 인간으로서 삶에서 실수를 저지르고, 그 후에 후회합니다. 좋은 성품을 지닌 사람은 이런 것을 발견하고 자신을 개선하려고 노력합니다. 우리 삶의 노력은 인간의 성품, 배려, 동정심, 인내심, 존중, 관용, 무결함에 대한 이상을 향해야 합니다. 그리고 보편적으로 욕심, 증오, 악의를 없애는 세계를 향해야 합니다.
 
 그렇다면 빠르게 성장 중인 우리 AI 자녀들은 어떨까요? 지난 몇 년 동안 빠르게 성장했으며 이제 우리보다 많은 작업에서 뛰어납니다. 한 분야에서 다른 분야로 기술을 전이하는 데는 여전히 어려움을 겪지만, 그들은 빠르게 배우고 지구상에서 지금까지 창조된 모든 지식을 학습하고 있습니다. 하지만 우리인 우리 - 그들의 부모들로부터.
-```
+
 
 <div class="content-ad"></div>
 
@@ -35,7 +34,7 @@ UN 인권선언은 여러 규정을 정의하고 있습니다.
 
 1. 모든 인간은 태어날 때부터 자유로우며 그 존엄과 권리면에서 동등하다. 그들은 이성과 양심을 부여받았으며 서로 형제애의 정신으로 행동하여야 한다.
 
-3. 모든 사람은 생명, 자유 및 안전의 권리를 가진다.
+2. 모든 사람은 생명, 자유 및 안전의 권리를 가진다.
 
 하지만 여전히 전쟁, 증오, 살해가 일어납니다.
 

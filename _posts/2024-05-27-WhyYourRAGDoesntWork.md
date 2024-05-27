@@ -3,13 +3,12 @@ title: "왜 RAG가 작동하지 않는지"
 description: ""
 coverImage: "/assets/img/2024-05-27-WhyYourRAGDoesntWork_0.png"
 date: 2024-05-27 14:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-WhyYourRAGDoesntWork_0.png
 tag: Tech
 originalTitle: "Why Your RAG Doesn’t Work"
 link: "https://medium.com/@cdg2718/why-your-rag-doesnt-work-9755726dd1e9"
 ---
-
 
 ## RAG은 아직 유망한 기술이지만, 오늘은 조금 힘든 상황이에요.
 
@@ -44,7 +43,7 @@ RAG는 GPT-3이 대박 히트한 이후 급부상했습니다. LLM(언어모델)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-27-WhyYourRAGDoesntWork_0](/assets/img/2024-05-27-WhyYourRAGDoesntWork_0.png)
 
 # RAG Is Promising, Vanilla RAG Is Just the Beginning
@@ -52,7 +51,7 @@ RAG는 GPT-3이 대박 히트한 이후 급부상했습니다. LLM(언어모델)
 RAG is merely a framework, and a perfectly functioning RAG, no matter its backend, would provide enormous value to countless use cases. In this section we provide a pedagogical overview of Vanilla RAG and the underlying workings of semantic search. If you’ve already gone through the mind-bending journey of rationalizing, rejecting, and ultimately embracing the magic of vector embeddings, then feel free to skip this section.
 
 ![2024-05-27-WhyYourRAGDoesntWork_1](/assets/img/2024-05-27-WhyYourRAGDoesntWork_1.png)
-```  
+
 
 <div class="content-ad"></div>
 
@@ -126,12 +125,12 @@ RAG is merely a framework, and a perfectly functioning RAG, no matter its backen
 
 <div class="content-ad"></div>
 
-1) ChatGPT를 사용하여 두 가지 다른 SQL 테이블 스키마를 만들었습니다.
+1. ChatGPT를 사용하여 두 가지 다른 SQL 테이블 스키마를 만들었습니다.
 
 - events.purchase_flow: 제품 흐름 내의 상세하고 원시적인 사용자 이벤트
 - aggregates.purchases: 요약 분석을 포함한 롤업된 테이블
 
-2) ChatGPT를 사용하여 몇 가지 가상의 질문을 평가 목적으로 작성했습니다.
+2. ChatGPT를 사용하여 몇 가지 가상의 질문을 평가 목적으로 작성했습니다.
 
 - IP 주소가 제품 조회 및 구매 유형에 미치는 영향은 무엇인가요?
 - 이 분기 신발 판매의 전반적인 추이는 무엇인가요?
@@ -140,14 +139,14 @@ RAG is merely a framework, and a perfectly functioning RAG, no matter its backen
 
 <div class="content-ad"></div>
 
-3) ChatGPT를 사용하여 생성된 추가 메타데이터는 다음을 포함합니다.
+3. ChatGPT를 사용하여 생성된 추가 메타데이터는 다음을 포함합니다.
 
 - 각 테이블의 간단한 설명
 - 각 테이블이 독특하게 답변 가능한 샘플 질문들
 
-4) 입력 텍스트를 "garbage"와 비교하여 노이즈가 섞인 코사인 유사도 점수가 어떻게 보이는지 확인했습니다.
+4. 입력 텍스트를 "garbage"와 비교하여 노이즈가 섞인 코사인 유사도 점수가 어떻게 보이는지 확인했습니다.
 
-5) 랭킹을 위해 네 가지 다른 검색 전략을 비교하여 입력과 "가장 의미론적으로 유사한" 텍스트 유형을 확인했습니다.
+5. 랭킹을 위해 네 가지 다른 검색 전략을 비교하여 입력과 "가장 의미론적으로 유사한" 텍스트 유형을 확인했습니다.
 
 <div class="content-ad"></div>
 

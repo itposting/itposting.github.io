@@ -3,13 +3,12 @@ title: "SQL 트랜잭션 및 ACID 속성"
 description: ""
 coverImage: "/assets/img/2024-05-27-SQLTransactionsandACIDProperties_0.png"
 date: 2024-05-27 13:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-SQLTransactionsandACIDProperties_0.png
 tag: Tech
 originalTitle: "SQL Transactions and ACID Properties"
 link: "https://medium.com/gitconnected/sql-transactions-and-acid-properties-bb5b670538f8"
 ---
-
 
 ![image](/assets/img/2024-05-27-SQLTransactionsandACIDProperties_0.png)
 
@@ -69,18 +68,18 @@ SQL 트랜잭션의 시작을 BEGIN TRANSACTION 키워드로 표시합니다.
 BEGIN TRANSACTION;
 
 - Account A 잔액에서 100을 차감합니다.
-UPDATE Accounts
-SET balance = balance - 100
-WHERE account_id = 'A';
--- Account A에 충분한 잔액이 있는지 확인하고, 부족하다면 롤백합니다.
-IF @@ROWCOUNT = 0
-    ROLLBACK;
--- Account B 잔액에 100을 추가합니다.
-UPDATE Accounts
-SET balance = balance + 100
-WHERE account_id = 'B';
--- 모든 것이 잘 되었다면 트랜잭션을 커밋합니다.
-COMMIT;
+  UPDATE Accounts
+  SET balance = balance - 100
+  WHERE account_id = 'A';
+  -- Account A에 충분한 잔액이 있는지 확인하고, 부족하다면 롤백합니다.
+  IF @@ROWCOUNT = 0
+  ROLLBACK;
+  -- Account B 잔액에 100을 추가합니다.
+  UPDATE Accounts
+  SET balance = balance + 100
+  WHERE account_id = 'B';
+  -- 모든 것이 잘 되었다면 트랜잭션을 커밋합니다.
+  COMMIT;
 ```
 
 이 트랜잭션은 다음을 수행합니다:
@@ -92,7 +91,8 @@ COMMIT;
 - 트랜잭션을 커밋합니다: 두 개의 업데이트가 모두 성공적으로 수행되면, COMMIT TRANSACTION 명령이 실행되어이 트랜잭션 중에 수행된 변경 사항을 영구적으로 적용합니다.
 
 이것은 두 계정이 적절히 업데이트되거나 어느 시점에서 문제가 발생할 경우 변경 내용이 적용되지 않으므로 데이터의 무결성이 유지됩니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -112,7 +112,7 @@ SQL 표준은 일관성과 성능 간의 균형을 맞추기 위해 네 가지 �
 ## 2. Read Committed
 
 - 설명: 트랜잭션이 커밋된 데이터만 읽을 수 있도록 보장합니다.
-- 예시에 미치는 영향: 이 수준은 'Read Uncommitted'의 문제를 피하기 위해 커밋된 계좌 A와 B의 잔액만 읽도록 합니다. 하지만 트랜잭션 내에서 잔액을 여러 번 읽는 경우, 다른 트랜잭션이 데이터를 수정하는 경우 다른 값들을 보게 될 수 있습니다 (반복할 수 없는 읽기). 
+- 예시에 미치는 영향: 이 수준은 'Read Uncommitted'의 문제를 피하기 위해 커밋된 계좌 A와 B의 잔액만 읽도록 합니다. 하지만 트랜잭션 내에서 잔액을 여러 번 읽는 경우, 다른 트랜잭션이 데이터를 수정하는 경우 다른 값들을 보게 될 수 있습니다 (반복할 수 없는 읽기).
 
 ## 3. Repeatable Read
 
@@ -142,7 +142,8 @@ SQL 표준은 일관성과 성능 간의 균형을 맞추기 위해 네 가지 �
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![image](/assets/img/2024-05-27-SQLTransactionsandACIDProperties_6.png)
 
 # Non-Repeatable Reads (Read Uncommitted)
@@ -150,7 +151,8 @@ SQL 표준은 일관성과 성능 간의 균형을 맞추기 위해 네 가지 �
 이것은 트랜잭션 진행 중 같은 행이 두 번 조회되고, 두 번 조회 사이에 행 내의 값이 다른 경우 발생합니다. 본질적으로 다른 트랜잭션이 두 번의 조회 사이에 행을 수정한 경우입니다.
 
 예시:
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -183,3 +185,4 @@ SQL 표준은 일관성과 성능 간의 균형을 맞추기 위해 네 가지 �
 여기 처음 오신 분들을 위해, 저는 Hayk입니다. 저는 웹 개발자 분들이 첫 번째 기술 직을 확보하거나 웹 개발 마스터리 커뮤니티에서 시니어 역할로 진출하는 데 도와드리고 있어요.
 
 웹 개발에 대한 주간 통찰력을 놓치고 싶지 않다면, 내 뉴스레터를 구독해주세요.
+
