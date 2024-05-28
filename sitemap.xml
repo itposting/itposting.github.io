@@ -1,6 +1,620 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>http://itposting.github.io/docs/Finalcut/2022-12-19-Mac-최신-루머-Apple의-새로운-모델-출시-시기/index.html</loc>
-</url>
+  <url>
+    <loc>https://itposting.github.io</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-10SQLStatementsThatCanHandle90ofTasks</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-5BashStringManipulationMethodsThatHelpEveryDeveloper</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://itposting.github.io/post/2024-05-27-ABeginnersGuidetoAIoT</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-AIEthicsIsItEvenPossibleOnAGlobalScale</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-AIRobotsWillEatUsinOurSleep</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-AStep-by-StepGuidetoInstallingPysparkonWindows</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-AccessingandSyncingYourImmichLibraryfromAnywherewithTailscale</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-AhitchhikersguidetoUEFIprogramminginWindows</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-AlternativewaytorunWindowsVMonLinuxDocker</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Amemorialtomyunfinishedproject</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-AnalyseCustomerInsightswithHuggingFacesFlan-T5Model</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Anexerciseinbuildingbetter</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-AppleGoFetchTheVulnerabilityWhichisNotEasyToFix</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-ArchitecturalBlueprintsforRAGAutomationAdvancedDocumentUnderstandingusingVertexAISearch</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-AwesomeStrategiestoVisualizeChangewithTime</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-BestHomeSecurityCamerasWithoutaSubscription</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-BetterThanGPT-4theStanfordteamslargemodelthatcanberunonmobilephonesbecamepopularwithover2kdownloadsovernight</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-BlindSQLInjectionUncoveringAdministratorPasswordOneCharacterataTime-Lab9</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-BuildaPersonalAITechNewsAgent</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-BuildingLLMApplicationsServingLLMsPart9</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-CanMidjourneyMagazineDelightYourSenses</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-ChatXiPTandtheReinventionofCulturalRevolutionIdealsintheAgeofArtificialIntelligence</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-CompleteGuidetoConnectingaMicroSDCardModuletoArduinoandSavingDatainCSVFormat</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-CreatingVisualNarrativesforYourStoriesChatGPTMidJourneyMagic</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Creatingmyfirsthomeserver</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-CyberLens-TryHackMeWriteup</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-CybersecurityinIoTProtectingOurConnectedFutureBytesCheck</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-DBTIncrementalStrategyandIdempotency</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-DeployNextcloudwithDockerCompose</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-DepressionpredictionusingDeepLearninglearnbasicsofNLP</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Difference-in-Difference101</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-DifferenceBetweenbashrcbash-profileandprofile</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-DoRunnersFromWarmClimatesDoBetterinHotSpringMarathons</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-ESP8266HandlingdatainJSON</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-FlowchartswithChatGPTfromSketchtoProfessionalDiagram</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://itposting.github.io/post/2024-05-27-GITAIFoundingStory</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-GenPiCam-GenerativeAICamera</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-GuideMidjourneywithFilmGenreStyles</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://itposting.github.io/post/2024-05-27-HackTheBoxTIER0Meow</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-HowChamberlainMyQPairsSeamlesslywithAlexaforSmartGarageControl</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-HowDoWeKnowifAIIsSmokeandMirrors</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-HowIActuallyConvertMyExpertiseintoCoursesForSaleinMinuteswith3ToolsWillAmazeYou</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-HowIHackedIndiaTodaySubscriptionfor2years</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-HowIHackedNASALDAPServer</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-HowSnowflakebuildingthemostpowerfulSQLLLMintheworld</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-HowSystemsEngineersSystemsAdministratorsandSiteReliabilityEngineersCanAdvanceTheirCareersthroughPracticalExperiencewithPowerShellAutomation</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://itposting.github.io/post/2024-05-27-HowtoClusterImages</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-HowtoReduceEmbeddingSizeandIncreaseRAGRetrievalSpeed</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-HowtocontroltheP1andP0portpinsofArduinoNano33BLESense</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-HowtoconvertyourscreenrecordingstoGIFonmacOSProductivity1</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Howweorchestrate2000DBTmodelsinApacheAirflow</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-IP-Adapter-FaceID-PlusV20ShotFaceTransferAutoInstallerGradioAppMassedComputeRunPodKaggleWindows</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-ImplementanAPIforSmartConversationswithChatGPT</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-InterfacingUltrasonicSensorwithArduinoUno</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-InterpretableOutlierDetectionFrequentPatternsOutlierFactorFPOF</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-KnowledgeGraphsforDrugDiscovery</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-LessonsfromTeachingSQLtoNon-TechnicalTeams</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-LoxoneHomeAutomationforInteriorDesigners</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-MacOSAttackMatrixGatheringSystemInformationusingIOPlatformExpertDevicePart2</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-MacbookMacOSKeyboardShortcutsforSplitScreenTileWindowstoLeftorRightofScreen</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-MayNewsletterChipWarTrueFrontier</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-MicroPythoninPyCharmsBasicSetup</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-MirrorMirrorASelfAwareAIRobotJustRecognizedItself</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-MyAmbientInformationDisplay</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-NBANetworkAnalysisConnectingtheDotswithNeo4j</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-NahamConCTF2024Write-Up</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-NavigatingtheDataDelugeAJourneytoCraftingaSophisticatedLakehousePlatform</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-NavigatingtheFutureofAI</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-OverturePLAFilamentReview</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://itposting.github.io/post/2024-05-27-PICEcosystem</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Privacypoliticsandporn</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-ProperPythonsetupwithpyenvPoetry</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-PythonReturnInvalidSyntaxError</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Question-AnsweringSystemsOverviewofMainArchitectures</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Real-TimeAnalyticsSolutionforUsage-BasedAPIBillingandMetering</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-ReinforcementLearningDeepQ-Networks</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Retrieval-BasedIn-ContextLearningforReasoninginLargeLanguageModels</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-RevolutionizingLargeDatasetFeatureSelectionwithReinforcementLearning</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-RunningmodelswithOllamastep-by-step</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://itposting.github.io/post/2024-05-27-SAVINGWATERDROPBYDROP</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-SOFTSEfficientMultivariateTimeSeriesForecastingwithSeries-CoreFusion</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-SQLTransactionsandACIDProperties</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-SuperSecretPromptingToolNoOneTalksAboutJustYet</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TheFutureofAIVoiceAssistantsHowChatGPT4oCouldChangetheGame</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TheMathBehindDeepCNNAlexNet</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-ThePastPresentandFutureofDataQualityManagementUnderstandingTestingMonitoringandDataObservabilityin2024</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TheSecretsMenKeepWhenTheyLoveYouDeeply</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TheStoryofaPoemIFoundbyMovingTextAround</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TheSupermajorityontheSupremeCourtistheOverarchingReasontoVoteforPresidentBidenin2024</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TheUltimateGuidetoFindingOutliersinYourTime-SeriesDataPart1</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TheVeryFoundationofSex</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TheWindowsForensicJourneyLastUsedUsernameUsernameoftheLastLoggedOnUsertotheSystem</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TheZ-InspectionamethodtoevaluateanAIstrustworthiness</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-ThepoliticaldimensionofthepublicsecurityprobleminChile</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Theworldischangingfasterthanwecanimaginecanwekeepup</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://itposting.github.io/post/2024-05-27-ToeachAIitsownPython</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-Top5BestEnclosed3DPrinter2024BestBudgetOptions</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TraefikReverseProxyMadeEasyUltimateGuide</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-TransformingImageryAdvancedSREFBlendingTechniquesinMidJourney</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-UnlockingthePowerofTemplatesinHomeAssistant</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-WeirdChoicesandBigNumbersWhatAppleGotuptoYesterday</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-WhenMichelangeloMetMinecraftTheHilariousWorldof3DPrintedSculpture</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-WhyJulianAssangesCaseMattersforJournalistsWorldwide</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://itposting.github.io/post/2024-05-27-WhyYourRAGDoesntWork</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://itposting.github.io/post/2024-05-27-WorkingWithSTLFilesOnThreeJS</loc
+    >
+  </url>
 </urlset>
