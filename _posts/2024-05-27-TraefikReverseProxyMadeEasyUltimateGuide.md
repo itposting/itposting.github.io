@@ -36,22 +36,12 @@ Medium 유료 회원이 아니신가요? 무료로 여기서 읽어보세요.
 
 당신이 Traefik을 설정할 때 Docker Compose를 사용한다고 가정하겠습니다. 여기 Traefik 문서에서 가져온 최소 예제가 있습니다:
 
-
 services:
-  reverse-proxy:
-    # The official v3 Traefik docker image
-    image: traefik:v3.0
-    # Enables the web UI and tells Traefik to listen to docker
-    command: --api.insecure=true --providers.docker
-    ports:
-      # The HTTP port
-      - "80:80"
-      # The Web UI (enabled by --api.insecure=true)
-      - "8080:8080"
-    volumes:
-      # So that Traefik can listen to the Docker events
-      - /var/run/docker.sock:/var/run/docker.sock
-
+reverse-proxy: # The official v3 Traefik docker image
+image: traefik:v3.0 # Enables the web UI and tells Traefik to listen to docker
+command: --api.insecure=true --providers.docker
+ports: # The HTTP port - "80:80" # The Web UI (enabled by --api.insecure=true) - "8080:8080"
+volumes: # So that Traefik can listen to the Docker events - /var/run/docker.sock:/var/run/docker.sock
 
 <div class="content-ad"></div>
 
@@ -98,8 +88,6 @@ services:
 
 ## EntryPoints
 
-
-
 <div class="content-ad"></div>
 
 EntryPoints의 역할은 특정 포트의 트래픽을 캡처하는 것입니다. 일반적인 Traefik 설치에서는 보통 포트 80과 포트 443의 트래픽을 캡처하고 싶을 것입니다. 하지만 가능한 모든 것이 있습니다. 예를 들어, 저는 포트 222를 통해 통과하는 SSH 트래픽을 리다이렉트하는 데에도 Traefik을 사용합니다.
@@ -107,15 +95,11 @@ EntryPoints의 역할은 특정 포트의 트래픽을 캡처하는 것입니다
 EntryPoints는 정적 구성에서 정의됩니다. 예를 들어:
 
 ```js
-entryPoints:
-  web:
-    address: ":80"
+entryPoints: web: address: ":80";
 
-  websecure:
-    address: ":443"
+websecure: address: ":443";
 
-  ssh:
-    address: ":222"
+ssh: address: ":222";
 ```
 
 EntryPoints의 이름은 원하는 대로 지정할 수 있습니다. 표준은 없습니다. EntryPoints를 구성하는 다양한 옵션들이 많이 있습니다. 이 안내서에서 모든 세부 내용을 다룰 수는 없으니, 기본 사항을 설명해 드리겠습니다. 더 알고 싶다면 문서를 참조해야 합니다.
@@ -155,8 +139,6 @@ services:
 
 도메인을 소유하고 있다고 가정하겠습니다. 소유하고 있지 않다면, PiHole과 같은 DNS 서버로 자체 도메인을 만들고 여기에 DNS 레코드를 추가할 수 있습니다.
 
-
-
 <div class="content-ad"></div>
 
 "저는 원하는 것이 'something.mydomain'을 입력하면 Traefik이 호스팅된 머신에 도달하도록 하고 싶어요. 어디에서든 서비스를 이용할지, 또는 집에서만 이용할지에 따라 사용해야 하는 IP가 다릅니다. 예를 들어, 저는 집에서만 서비스에 접속하고 싶다고 가정해봅시다.
@@ -165,7 +147,7 @@ services:
 
 예를 들어, Bob은 DNS에 다음 레코드를 가지고 있습니다:
 
-```js
+````js
 A  *.imbob.com  192.168.0.50
 ```"
 
@@ -175,7 +157,7 @@ A  *.imbob.com  192.168.0.50
 
 ```js
 A  *.imbob.com  84.154.65.110
-```
+````
 
 84.154.65.110이 그의 공용 IP인 것으로 가정합니다.
 
@@ -244,8 +226,6 @@ providers:
 
 이제 http://dozzle.imbob.com을 열어 사용하실 수 있습니다.
 
-
-
 <div class="content-ad"></div>
 
 하지만 왜 이것이 작동하는 걸까요? 저희 서비스는 Traefik 서비스와 동일한 파일에 있기 때문에 동일한 Docker 네트워크에 속합니다. 이 네트워크는 포트 80과 443을 통해 노출되어 있습니다. 따라서 우리가 컴퓨터의 포트 80으로 요청을 보내면, 이는 Dozzle이 속한 Docker 네트워크로 진입하게 됩니다.
@@ -304,8 +284,6 @@ networks:
 그러면 작동합니다. 그렇지 않으면, Traefik은 Dozzle 컨테이너의 IP로 리다이렉팅하겠지만, 이 IP는 서버에서 노출된 네트워크 바깥에 있는 Dozzle 컨테이너로 이어지지 않습니다.
 
 ## 라우터
-
-
 
 <div class="content-ad"></div>
 
@@ -369,8 +347,6 @@ Dozzle에 사용한 규칙은 다음과 같았습니다:```
 
 Dozzle에 http://dozzle1.imbob.com 또는 http://dozzle2.imbob.com에서 액세스할 수 있습니다. 규칙에 대한 자세한 내용은 Traefik 문서를 참조하십시오.
 
-
-
 <div class="content-ad"></div>
 
 ## 미들웨어
@@ -387,7 +363,6 @@ test:$2y$05$kLDHhc5ntBoHwAyp5S48U.wN.u2eQJYWpfYvRWSilayuAe5oF2xqy
 ```
 
 <div class="content-ad"></div>
-
 
 참고: docker-compose.yml에서 사용할 때 해시 내의 모든 달러 기호는 이스케이핑을 위해 두 배로 사용되어야 합니다. 따라서 대신 다음 명령을 사용하여 이를 자동으로 수행할 수 있습니다:
 
@@ -409,8 +384,6 @@ services:
         # 패스워드는 "test" 입니다
       - traefik.http.middlewares.my-middleware.basicauth.users=test:$$2y$$05$$x4VT4lRFCy2.z/Ic3BQYbOgEzDILEqyhaStkuzykurT9KAuWKTSF.
 ```
-
-
 
 <div class="content-ad"></div>
 
@@ -458,8 +431,6 @@ services:
 참고: Traefik이 이해하는 설정을 언제든지 웹 UI를 통해 확인할 수 있습니다:
 
 ![Traefik Reverse Proxy 설정 화면](/assets/img/2024-05-27-TraefikReverseProxyMadeEasyUltimateGuide_2.png)
-
-
 
 <div class="content-ad"></div>
 

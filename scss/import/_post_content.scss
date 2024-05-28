@@ -74,14 +74,45 @@
     border-radius: 8px;
   }
 
-  ol,
-  ul,
-  li {
-    list-style: initial;
+  ol > li {
+    list-style: decimal;
+  }
+
+  ul > li {
+    list-style: disc;
   }
 
   ol,
   ul {
     padding-left: 20px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+
+    margin: 1rem 0;
+    border-collapse: collapse;
+  }
+
+  tr {
+    border-top: 1px solid #dfe2e5;
+
+    &:nth-child(2n) {
+      background: #f6f8fa;
+    }
+  }
+
+  th,
+  td {
+    padding: 0.6em 1em;
+    border: 1px solid #dfe2e5;
+  }
+
+  a {
+    font-weight: 500;
+    color: #3eaf7c;
+    text-decoration: none;
+    overflow-wrap: break-word;
   }
 }

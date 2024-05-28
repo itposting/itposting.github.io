@@ -21,6 +21,7 @@ import GoogleAd from "@/components/GoogleAd";
 import moment from "moment";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import markdownToHtml from "@/lib/markdownToHtml";
 
 const md = markdownIt({ html: true }).use(highlightjs).use(markdownContainer, "tip");
 
@@ -82,7 +83,8 @@ export default function Post({ post, content }: Props) {
 
               <article className={cx("post_content")}>
                 {/* <div dangerouslySetInnerHTML={{ __html: md.render(post.content) }}></div> */}
-                <MDXRemote {...content} components={components} />
+                <div dangerouslySetInnerHTML={{ __html: content }} />
+                {/* <MDXRemote {...content} components={components} /> */}
               </article>
             </div>
           </main>
@@ -141,12 +143,15 @@ export async function getStaticProps({ params }: Params) {
     ],
   });
 
-  const content = await serialize(post.content, {
-    mdxOptions: {
-      rehypePlugins: [rehypeHighlight],
-      remarkPlugins: [remarkDirective, myRemarkPlugin],
-    },
-  });
+  // const content = await serialize(post.content, {
+  //   mdxOptions: {
+  //     rehypePlugins: [rehypeHighlight],
+  //     remarkPlugins: [remarkDirective, myRemarkPlugin],
+  //   },
+  // });
+  // console.log(post.content);
+  // console.log(mdxcontent);
+  const content = await markdownToHtml(post.content || "");
   return {
     props: {
       post: {
