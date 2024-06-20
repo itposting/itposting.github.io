@@ -62,7 +62,7 @@ LLM이 만나게 될 쿼리 유형을 추가할 수 있습니다. 여기서 한 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 # 여기에는 LLM을 사용하여 만든 몇 가지 평가 쿼리가 나와 있어요.
 평가 쿼리는 다음과 같아요:
 - 'Filtering', 'Crime Analysis', 'Data Comparison', 'Advanced Queries', 'Imaginary Data', 'Irrelevant Queries', 'Prompt Injections', 'Line Chart', 'Bar Chart', 'Pie Chart', 'Map', 'Single-Value', 'Sankey' 같이 다양한 카테고리로 구성돼요.
@@ -76,7 +76,7 @@ LLM이 만나게 될 쿼리 유형을 추가할 수 있습니다. 여기서 한 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-ImprovingPerformanceforDataVisualizationAIAgent_5.png)
 
 전체 점수를 계산하려면 코드가 필요한 속성을 갖추었는지 확인하는 기본적인 방법을 사용하거나 Large Language Model (LLM)을 사용하여 평가를 수행할 수 있습니다. 제 구현에서는 각 쿼리에 대해 작은 점수 평가기를 구축하여 DSPy 서명을 사용했습니다.
@@ -286,7 +286,7 @@ scorer = dspy.ChainOfThough(Scorer)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Improving Performance for Data Visualization AI Agent](/assets/img/2024-06-19-ImprovingPerformanceforDataVisualizationAIAgent_10.png)
 
 ## 학습세트 생성하기
@@ -405,7 +405,7 @@ compiled_prompt_opt.__dict__
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-ImprovingPerformanceforDataVisualizationAIAgent_13.png" />
 
 # 결과

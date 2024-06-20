@@ -112,7 +112,7 @@ df %>%
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-TimeSeriesRegressionandCross-ValidationATidyApproach_4.png)
 
 이제 월별 분포를 살펴보겠습니다.
@@ -268,7 +268,7 @@ df_results <-
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-TimeSeriesRegressionandCross-ValidationATidyApproach_10.png)
 
 결과는 tidymodels의 정말 멋진 기능인 autoplot() 명령을 사용하여 신속하게 시각화할 수도 있습니다.

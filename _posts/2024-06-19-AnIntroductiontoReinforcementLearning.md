@@ -143,9 +143,9 @@ DQN이 해결한 다른 약점에는 비선형 동역학을 캡처하는 유연�
 
 할인을 고려한 누적 보상의 압축된 방정식은 아래와 같습니다. 여기서 G는 보상 R의 예상 합을 나타내며, 이는 할인 요소 감마로 곱해집니다. 따라서 누적 보상은 보상과 할인 요소의 합으로 계산됩니다:
 
-```markdown
+
 ![cumulative reward equation](/assets/img/2024-06-19-AnIntroductiontoReinforcementLearning_4.png)
-```
+
 
 ## 마르코프 의사결정 과정 (MDP)
 
@@ -163,7 +163,7 @@ DQN이 해결한 다른 약점에는 비선형 동역학을 캡처하는 유연�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-AnIntroductiontoReinforcementLearning_5.png)
 
 상태 공간은 셀 수 있는/유한한 상태거나 연속적일 수 있습니다. 유한 상태 공간은 시스템의 모든 가능한 구성을 조합 이론을 통해 설명하고, 연속 상태 공간은 연속 함수를 통해 모든 가능한 구성을 설명합니다.
@@ -171,7 +171,7 @@ DQN이 해결한 다른 약점에는 비선형 동역학을 캡처하는 유연�
 유한 및 가산 무한 공간은 측정 가능한 공간으로 정수 또는 유리수를 취하며, 연속 공간은 실수를 취합니다.
 
 마찬가지로 시간 축은 이산 또는 연속적으로 정의될 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

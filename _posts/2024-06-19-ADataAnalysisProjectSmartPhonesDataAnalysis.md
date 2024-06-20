@@ -51,7 +51,7 @@ select c.*, sum(c.number_of_models) over(order by number_of_models desc, brand_n
 
 ```sql
 ----2. 각 브랜드의 휴대폰 및 모델의 총 가격, 또한 브랜드 및 모델과 함께 각 브랜드의 휴대폰 가격을 찾아보세요.
-``` 	sql
+sql
 select brand_name, sum(price) as total_cost from SmartPhones_data group by brand_name order by 1 asc;
 select model, sum(price) as total_cost from SmartPhones_data group by model order by 2 desc;
 select brand_name, model, sum(price) as total_cost from SmartPhones_data group by brand_name, model order by 1;
@@ -67,7 +67,7 @@ select brand_name, total_cost_by_brand from cte3 where rnk=1
 
 ```sql
 ----3. 최고 평점을 받은 상위 3개 브랜드와 모델을 찾아보세요.
-```sql
+sql
 select brand_name, model from(
 select distinct brand_name, model, rating, dense_rank() over(order by rating desc) as rnk from SmartPhones_data)a 
 where a.rnk<=3 order by rnk
@@ -139,7 +139,7 @@ where a.rnk<=10
 아래에 언급된 데이터 분석 프로젝트를 확인하실 수 있습니다.
 
 # 데이터 분석 프로젝트 시리즈:
-```
+
 
 <div class="content-ad"></div>
 

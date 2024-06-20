@@ -33,7 +33,7 @@ Snowflake사는 지난 주말 "위협 활동"에 관한 침해 사례 지표를 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![2024-06-19-Snowflakeatcentreofworldslargestdatabreach](/assets/img/2024-06-19-Snowflakeatcentreofworldslargestdatabreach_1.png)
 
 또한 위협 배우자가 인포스틸러를 사용하여 Snowflake 그 자체와 그 고객들에게 접속한 것으로 주장합니다: [링크](https://web.archive.org/web/20240531140540/https://hudsonrock.com/blog/snowflake-massive-breach-access-through-infostealer-infection)
@@ -94,7 +94,7 @@ Snowflake가 말하길:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-Snowflakeatcentreofworldslargestdatabreach_3.png)
 
 # 자신을 보호하는 방법

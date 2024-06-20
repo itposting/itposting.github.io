@@ -99,7 +99,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-SimplifyDockerManagementwithPortainer_8.png)
 
 컨테이너를 선택하시고, 이제 중지, 시작, 재시작 또는 제거 등의 조작을 할 수 있습니다.

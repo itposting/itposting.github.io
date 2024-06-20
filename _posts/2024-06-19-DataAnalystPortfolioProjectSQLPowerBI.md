@@ -100,7 +100,7 @@ MySQL 데이터베이스의 데이터 세트에서 중복 값을 제거하려면
 
 아래는 Markdown 형식으로 테이블 태그를 수정한 내용입니다.
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-DataAnalystPortfolioProjectSQLPowerBI_4.png)
 
 중복 행의 각 파티션별로 'id'를 선택하고 각 행에 번호를 할당하는 서브쿼리를 생성했습니다. 이 테이블에는 중복 된 행이 없습니다.
@@ -112,7 +112,7 @@ MySQL 데이터베이스의 데이터 세트에서 중복 값을 제거하려면
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![테이블](/assets/img/2024-06-19-DataAnalystPortfolioProjectSQLPowerBI_5.png)
 
 테이블에서 행을 제거하기 위해서는 삭제 문을 사용합니다. 이 쿼리에서는 모든 null 값을 가진 호스트 이름이 제거되었습니다. null 값을 가지는 행은 21개 있습니다.

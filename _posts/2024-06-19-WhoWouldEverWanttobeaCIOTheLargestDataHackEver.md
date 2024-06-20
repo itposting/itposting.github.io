@@ -11,7 +11,7 @@ link: "https://medium.com/@billatnapier/who-would-ever-want-to-be-a-cio-the-larg
 ---
 
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WhoWouldEverWanttobeaCIOTheLargestDataHackEver_0.png)
 
 외주 업체에 데이터와 처리를 맡기면 자신의 데이터 보호를 다른 사람에게 의지하게 됩니다. 그렇다면, 왜 2020년대에도 우리는 아직도 고객 데이터를 제대로 암호화하고 보호하지 않는 걸까요? 따라서 침입자가 접근 통제를 우회하더라도 암호화된 데이터와 여러 겹의 암호화층을 마주해야 합니다. 데이터베이스의 경우 안전한 격리 내에서 처리하고 열 암호화를 사용해야 합니다.

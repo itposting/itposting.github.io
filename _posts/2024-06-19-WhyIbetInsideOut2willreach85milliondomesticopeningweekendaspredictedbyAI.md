@@ -173,6 +173,6 @@ AI를 해소하고 모든 사람이 접근할 수 있도록 하는 것이 제 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-WhyIbetInsideOut2willreach85milliondomesticopeningweekendaspredictedbyAI_9.png" />
 ```

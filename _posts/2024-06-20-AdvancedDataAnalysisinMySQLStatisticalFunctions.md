@@ -11,7 +11,7 @@ link: "https://medium.com/learning-sql/advanced-data-analysis-in-mysql-statistic
 ---
 
 
-```markdown
+```
 ![Advanced Data Analysis in MySQL - Statistical Functions 0](/assets/img/2024-06-20-AdvancedDataAnalysisinMySQLStatisticalFunctions_0.png)
 
 ![Advanced Data Analysis in MySQL - Statistical Functions 1](/assets/img/2024-06-20-AdvancedDataAnalysisinMySQLStatisticalFunctions_1.png)
@@ -43,7 +43,7 @@ link: "https://medium.com/learning-sql/advanced-data-analysis-in-mysql-statistic
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-20-AdvancedDataAnalysisinMySQLStatisticalFunctions_2.png)
 
 The fields are mostly self-explanatory, but to be on the safe side, we list the descriptions of the non-obvious fields for the tables employees and salaries below:

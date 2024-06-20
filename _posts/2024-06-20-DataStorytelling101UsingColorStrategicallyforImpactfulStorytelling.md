@@ -31,7 +31,7 @@ link: "https://medium.com/microsoft-power-bi/data-visualization-using-color-stra
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-DataStorytelling101UsingColorStrategicallyforImpactfulStorytelling_1.png)
 
 - 주요 정보 강조하기

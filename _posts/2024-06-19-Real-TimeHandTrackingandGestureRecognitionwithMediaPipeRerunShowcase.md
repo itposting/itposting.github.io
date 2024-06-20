@@ -286,7 +286,7 @@ class GestureDetectorLogger:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*rNILX857c8TfScr6t7KKgQ.gif)
 
 ```python

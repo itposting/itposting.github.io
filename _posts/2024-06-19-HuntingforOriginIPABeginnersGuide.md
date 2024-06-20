@@ -21,7 +21,7 @@ link: "https://medium.com/@pruthu.raut/hunting-for-origin-ip-a-beginners-guide-7
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Step 2: Using Shodan](https://www.shodan.io/)
 
 ![Image 1](/assets/img/2024-06-19-HuntingforOriginIPABeginnersGuide_1.png)

@@ -51,7 +51,7 @@ link: "https://medium.com/design-bootcamp/generate-stunning-multi-frame-illustra
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 6](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_6.png)
 
 ![Image 7](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_7.png)
@@ -81,7 +81,7 @@ DALL-E에게 9패널 또는 16패널 이미지를 생성하도록 요청하면 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_13.png" />
 
 <img src="/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_14.png" />
@@ -95,7 +95,7 @@ DALL-E에게 9패널 또는 16패널 이미지를 생성하도록 요청하면 �
 
 Markdown 형식으로 테이블 태그를 변경해주세요.
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_16.png)
 
 # 낚시 선생님
@@ -106,7 +106,7 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Astronaut](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_18.png)
 
 # Astronaut
@@ -118,7 +118,7 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_20.png)
 
 # Master of the Grilled Fish
@@ -130,7 +130,7 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_22.png)
 
 # Masters of Synchronized Swimming
@@ -144,7 +144,7 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 
 아래는 Markdown 형식으로 변경해 봅니다.
 
-```markdown
+```
 ![Generatestunningmulti-frameillustrationswithAI_24](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_24.png)
 
 # Singer
@@ -156,7 +156,7 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Street Dancer](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_26.png)
 
 # Street Dancer
@@ -180,7 +180,7 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_30.png)
 
 # Other Examples

@@ -11,7 +11,7 @@ link: "https://medium.com/cantata/the-tangible-touch-why-physical-buttons-still-
 ---
 
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-TheTangibleTouchWhyPhysicalButtonsStillMatterinaDigitalWorld_0.png)
 
 # 소개

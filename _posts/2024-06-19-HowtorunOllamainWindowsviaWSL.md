@@ -33,7 +33,7 @@ Windows 터미널을 관리자 권한으로 열고 다음 명령을 실행하여
 
 <div class="content-ad"></div>
 
-```markdown
+```
 wsl -- install -d ubuntu
 ```
 

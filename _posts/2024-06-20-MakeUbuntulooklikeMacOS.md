@@ -115,7 +115,7 @@ GNOME Tweaks에서 외모 탭으로 이동해서 Icons의 값을 BigSur-dark로 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Make Ubuntu look like MacOS 8](/assets/img/2024-06-20-MakeUbuntulooklikeMacOS_8.png)
 
 ![Make Ubuntu look like MacOS 9](/assets/img/2024-06-20-MakeUbuntulooklikeMacOS_9.png)

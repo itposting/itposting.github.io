@@ -137,7 +137,7 @@ $ chmod 744 script
 
 아래 Markdown 형식으로 table 태그를 변경하세요.
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-CrontabinLinuxBeginnersGuidetoScheduletheDeletionofOutdatedFiles_7.png" />
 
 성공입니다! 모든 것이 파일에서 지워졌고 실제 파일은 삭제하지 않았습니다! 이제 마지막 퍼즐 조각으로 넘어가 봅시다!!
@@ -151,7 +151,7 @@ $ chmod 744 script
 
 아래는 Markdown 형식으로 표를 표시합니다.
 
-```markdown
+```
 ![Crontab Image 8](/assets/img/2024-06-19-CrontabinLinuxBeginnersGuidetoScheduletheDeletionofOutdatedFiles_8.png)
 
 다음으로, 매주 월요일 오전 7시에 실행되는 cron 작업을 만들어야 합니다. 이를 위해 https://crontab-generator.org/ 로 이동하여 약간의 안내를 받겠습니다.

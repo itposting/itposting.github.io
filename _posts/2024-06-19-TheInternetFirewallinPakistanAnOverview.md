@@ -11,7 +11,7 @@ link: "https://medium.com/@dailytrendingnow/the-internet-firewall-in-pakistan-an
 ---
 
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-TheInternetFirewallinPakistanAnOverview_0.png)
 
 # 소개

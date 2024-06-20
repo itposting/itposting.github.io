@@ -11,7 +11,7 @@ link: "https://medium.com/macoclock/my-creative-writing-setup-8691c3a65b3f"
 ---
 
 
-```markdown
+```
 ![My Creative Writing Setup](/assets/img/2024-06-19-MyCreativeWritingSetup_0.png)
 
 저는 드디어 2년간의 노력 끝에 첫 소설을 마쳤고 이미 두 번째 작품에도 착수했습니다. 또한 여러 단편 소설을 쓰고 있으며 몇 가지 게임 보조 자료도 천천히 작업 중에 있어요.
@@ -71,7 +71,7 @@ Mac 버전은 Setapp의 일부로 제공받고 있어요. Apple Pencil로 좀 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![My Creative Writing Setup](/assets/img/2024-06-19-MyCreativeWritingSetup_3.png)
 
 I mentioned MarginNote before in my note-taking post, and it remains my main way of taking notes on PDFs and ePubs. It also lets you then collate notes from multiple documents into large mind maps for further exploration of connected ideas.

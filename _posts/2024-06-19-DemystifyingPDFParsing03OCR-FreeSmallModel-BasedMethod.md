@@ -345,7 +345,7 @@ class BARTDecoder(nn.Module):
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-DemystifyingPDFParsing03OCR-FreeSmallModel-BasedMethod_0.png)
 
 생성된 예시는 그림 3에 나와 있습니다. 샘플은 여러 구성 요소로 구성됩니다: 배경, 문서, 텍스트, 레이아웃.
@@ -630,7 +630,7 @@ Pix2Struct는 HTML 소스 파일과 쌍을 이루는 8000만 개의 스크린샷
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-DemystifyingPDFParsing03OCR-FreeSmallModel-BasedMethod_6.png)
 
 ## Fine-tuning
@@ -706,7 +706,7 @@ Pix2Struct의 실험에 따르면, 그의 성능은 여러 작업에서 도넛�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-DemystifyingPDFParsing03OCR-FreeSmallModel-BasedMethod_11.png)
 
 Furthermore, Nougat can conveniently acquire table captions and associate them with corresponding tables.
@@ -718,7 +718,7 @@ Figure 17 compares the overall architecture and performance of two methods. The 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-DemystifyingPDFParsing03OCR-FreeSmallModel-BasedMethod_12.png)
 
 Figure 17의 오른쪽에 나타난 것처럼, 도넛은 파이프라인 기반 방법에 비해 저장 공간을 적게 사용하고 더 높은 정확성을 제공합니다. 그러나 느린 속도로 작동합니다. 다른 OCR 무료 솔루션이 도넛과 유사합니다.

@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/mapping-the-pok%C3%A9mon-world-a-
 ---
 
 
-```markdown
+```
 ![Network Analysis](/assets/img/2024-06-20-MappingthePokmonWorldANetworkAnalysisofHabitat-BasedEncounters_0.png)
 
 # 소개
@@ -85,7 +85,7 @@ nx.closeness_centrality(G)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-MappingthePokmonWorldANetworkAnalysisofHabitat-BasedEncounters_5.png)
 
 좀 더 실용적으로 말하자면, 엣지 중심성(edge betweenness centrality)이 높을수록 해당 엣지가 모든 노드 사이의 최단 경로를 볼 때 자주 지나간다는 뜻입니다. 이들은 우리 네트워크를 유지하는 주요 다리 역할을 합니다.

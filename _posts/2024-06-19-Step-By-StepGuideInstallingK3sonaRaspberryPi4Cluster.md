@@ -21,7 +21,7 @@ link: "https://medium.com/@stevenhoang/step-by-step-guide-installing-k3s-on-a-ra
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![](/assets/img/2024-06-19-Step-By-StepGuideInstallingK3sonaRaspberryPi4Cluster_0.png)
 
 우리 구성에서는 3대의 Raspberry Pi 4 장치가 스위치에 연결되어 있습니다. 이 스위치는 저의 인터넷 공급업체에서 제공한 라우터에 연결되어 있습니다. 추가로, 인터넷 접속을 위한 정적 공개 IP 주소가 제공되었습니다.

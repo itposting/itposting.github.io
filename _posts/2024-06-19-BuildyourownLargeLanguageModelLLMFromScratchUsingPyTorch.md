@@ -37,7 +37,7 @@ LLM은 ChatGPT, Gemini, MetaAI, Mistral AI 등과 같은 인기 있는 AI 챗봇
 
 LLM 모델이 영어에서 말레이어로 번역하는 작업을 할 수 있도록 하려면 소스(영어)와 대상(말레이어) 언어 쌍이 있는 데이터셋을 사용해야 합니다. 따라서, Huggingface에서 "Helsinki-NLP/opus-100"라는 데이터셋을 사용할 것입니다. 이 데이터셋은 1백만 개의 영어-말레이어 훈련 데이터셋을 가지고 있어서 좋은 정확도를 얻기에 충분하며, 검증 및 테스트 데이터셋에 각각 2,000개의 데이터가 있습니다. 데이터는 이미 사전 분할되어 있어서 데이터셋을 다시 분할할 필요가 없습니다.
 
-```markdown
+```
 # 필요한 라이브러리 가져오기
 # 아직 안 했다면 (!pip install datasets, tokenizers)를 사용하여 데이터셋 및 토크나이저 라이브러리 설치하기.
 import os
@@ -285,7 +285,7 @@ class PositionalEncoding(nn.Module):
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-BuildyourownLargeLanguageModelLLMFromScratchUsingPyTorch_6.png)
 
 이 예에서는 self-attention을 사용할 때 문장의 한 측면에만 집중할 수 있는 가능성이 있습니다. 아마도 "what" 측면만을 포착할 수 있을 것입니다. 예를 들어, "존이 무엇을 했나요?"와 같이요. 그러나 "언제"나 "어디"와 같은 다른 측면들도 모델이 더 나은 성능을 발휘하기 위해 동등한 중요성을 갖습니다. 그래서, Self-Attention 메커니즘이 한 문장 내에서 여러 관계를 학습하도록 하는 방법을 찾아야 합니다. 이것이 Multi-Head Self Attention(Multi-Head Attention으로도 교차 사용 가능)이 해결해 주는 곳이죠. Multi-Head Attention에서는 단일 헤드 임베딩을 여러 헤드로 분할하여 각 헤드가 문장의 다른 측면을 살펴보고 그에 맞게 학습합니다. 이것이 우리가 원하는 바입니다.
@@ -298,7 +298,7 @@ class PositionalEncoding(nn.Module):
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-BuildyourownLargeLanguageModelLLMFromScratchUsingPyTorch_7.png)
 
 1. 먼저, 인코더 입력의 3개 복사본을 만들어봅시다 (입력 임베딩과 위치 인코딩의 조합, 이것은 단계 4에서 했었습니다). 각각을 Q, K, V라고 이름 붙여봅시다. 이들은 단지 인코더 입력의 복사본일 뿐입니다. 인코더 입력 형태: (seq_len, d_model), seq_len: 최대 시퀀스 길이, d_model: 이 경우에는 임베딩 벡터 차원이 512입니다.

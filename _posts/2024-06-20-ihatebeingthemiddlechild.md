@@ -11,7 +11,7 @@ link: "https://medium.com/@andengxzs_/i-hate-being-the-middle-child-fae3acb9512d
 ---
 
 
-```markdown
+```
 ![Middle Child](/assets/img/2024-06-20-ihatebeingthemiddlechild_0.png)
 
 막내 자매와 맏이 형제에 관한 어려움에 대해 많이 이야기합니다. 그런데, 중간 아이는 어떻게 될까요?

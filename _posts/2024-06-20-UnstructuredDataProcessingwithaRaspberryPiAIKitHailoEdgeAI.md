@@ -51,7 +51,7 @@ AI 키트는 초당 13 테라 오퍼레이션(TOPS)을 처리할 수 있는 신�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-UnstructuredDataProcessingwithaRaspberryPiAIKitHailoEdgeAI_5.png)
 
 Now, we can begin querying our vectors, and I will demonstrate how to do it using a Jupyter notebook.
@@ -116,7 +116,7 @@ dmesg | grep -i hailo
 
 <div class="content-ad"></div>
 
-```markdown
+```
 
 ![이미지](/assets/img/2024-06-20-UnstructuredDataProcessingwithaRaspberryPiAIKitHailoEdgeAI_8.png)
 

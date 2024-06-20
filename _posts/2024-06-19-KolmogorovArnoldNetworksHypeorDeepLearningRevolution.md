@@ -159,7 +159,7 @@ KAN은 단변량 함수에 의존하고 합성 구조를 활용할 수 있기 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-KolmogorovArnoldNetworksHypeorDeepLearningRevolution_13.png)
 
 더 깊은 KAN을 만들어봅시다.
@@ -254,7 +254,7 @@ Grid Extension 기술은 KAN의 중요한 구성 요소로, 스플라인에 내�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-KolmogorovArnoldNetworksHypeorDeepLearningRevolution_20.png)
 
 이 프로세스는 기존의 더 거친 스플라인에 새로운, 더 세밀한 스플라인을 맞추는 것을 포함합니다. 이를 통해 모델이 데이터 분포의 변화에 적응하고 이전에 배운 지식을 버리지 않고 정확성을 향상시킬 수 있습니다.

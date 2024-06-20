@@ -92,7 +92,7 @@ Ghauri는 저장된 세션에서 다음 인젝션 지점을 재개했습니다:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-HowIGotMyFirstBounty_1.png)
 
 마지막으로, 이해하지 못하는 도구, 기술 또는 프로그램에만 집착하지 마세요. 그렇게 하면 탈진하게 될 거예요. 이미 인터넷은 취약점으로 가득 찬 곳이니까요.

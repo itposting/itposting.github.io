@@ -11,7 +11,7 @@ link: "https://medium.com/@rjallain/physics-of-the-radio-without-a-battery-the-c
 ---
 
 
-```markdown
+```
 ![PhysicsoftheRadioWithoutaBatterytheCrystalRadio](/assets/img/2024-06-19-PhysicsoftheRadioWithoutaBatterytheCrystalRadio_0.png)
 
 It's also called a foxhole radio. The idea is that you can build a radio from some pretty basic parts and then use this to listen to nearby radio stations. It doesn't even need a battery. If you have been watching Masters of the Air (on Apple TV), you can see one of these radios in episode 7 (that's all I'm going to say about the show to avoid spoilers).
@@ -75,7 +75,7 @@ There's a bunch of cool physics in the operation of this kind of radio. Let's go
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-PhysicsoftheRadioWithoutaBatterytheCrystalRadio_2.png)
 
 여기에 우리가 할 수 있는 것이 있어요. 우리는 신호파의 진폭을 소리파의 주파수에 따라 변환시킬 수 있어요. 이렇게 생겼을 거에요.

@@ -158,7 +158,7 @@ link: "https://medium.com/data-engineer-things/building-secure-data-platforms-a-
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-BuildingSecureDataPlatformsAGuideforTeamsStructureAccessStrategies_0.png)
 
 # 5. 다국적 데이터 접근

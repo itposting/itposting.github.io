@@ -64,7 +64,7 @@ gᵢ (gradient)와 hᵢ (Hessian)로 도함수를 대체할 것입니다:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![링크 텍스트](/assets/img/2024-06-19-TinyMLXGBoostRegression_6.png)
 
 XGBoost의 주목할만한 특성 중 하나는 손실 함수가 두 번 미분 가능해야 한다는 요구사항입니다. 특정 문제에 대해 사용자 정의 오류 함수를 이용하여 XGBoost를 적용하려는 경우, 오류 계산 뿐만 아니라 그레이디언트(일차 도함수) 및 헤시안(이차 도함수)에 대한 정보도 필요하다는 점을 명심하는 것이 중요합니다.
@@ -76,7 +76,7 @@ XGBoost의 주목할만한 특성 중 하나는 손실 함수가 두 번 미분 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-TinyMLXGBoostRegression_7.png)
 
 Iⱼ가 정의되어 있으며, Iⱼ에 속하는 각 인덱스 i에 대해 샘플 xᵢ가 통과한 결정 경로 q는 잎 j로 이어진다.
@@ -108,7 +108,7 @@ Iⱼ가 정의되어 있으며, Iⱼ에 속하는 각 인덱스 i에 대해 샘�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-19-TinyMLXGBoostRegression_12.png)
 
 The objective is to find the set of weights w that minimizes L. This may seem challenging at first glance, but let’s analyze it more closely.
@@ -178,7 +178,7 @@ reg_lambda: 이 파라미터는 잎의 가중치에 영향을 미치며, 값이 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-19-TinyMLXGBoostRegression_22.png)
 
 - max_child_weight: 자식 노드마다 ℎ의 합이 이 매개변수로 설정된 값보다 크기 때문에 분할이 수행됩니다. ℎ는 오차 함수(𝑙)의 도함수에 의해 결정됩니다. 따라서 ℎ의 값이 낮을 때는 해당 리프가 이미 충분히 "순수"하며 더 이상 분할할 필요가 없다는 것을 나타냅니다.
@@ -280,7 +280,7 @@ df_diabetes.info()
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-TinyMLXGBoostRegression_25.png)
 
 ```js
@@ -407,7 +407,7 @@ report_best_scores(best_model.cv_results_, 1)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-TinyMLXGBoostRegression_29.png)
 
 ```js
@@ -473,7 +473,7 @@ print("RMSE: ", mse**(1/2.0))
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-TinyMLXGBoostRegression_33.png" />
 
 ```js

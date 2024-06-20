@@ -279,7 +279,7 @@ def __call__(self, x):
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-GPTfromScratchwithMLX_4.png)
 
 하지만 self-attention은 for-loop를 사용하지 않습니다. 핵심 아이디어는 이전 토큰의 평균을 행렬 곱셈으로 얻을 수 있다는 것입니다!
@@ -301,7 +301,7 @@ def __call__(self, x):
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-GPTfromScratchwithMLX_7.png)
 
 각 행의 합이 1인 가중치를 계속 얻습니다. 훈련 중에는 왼쪽 행렬의 숫자를 학습하여 각 토큰이 다른 토큰의 표현에 얼마나 많이 참여하는지를 지정할 수 있습니다. 이것이 토큰이 서로에게 "주의"를 기울이는 방법입니다. 그러나 여전히 이 왼쪽 행렬이 어디에서 나왔는지 이해하지 못했습니다. 이러한 사전 소프트맥스 주의 가중치는 토큰 자체에서 계산되지만 간접적으로 세 개의 선형 변환을 통해 수행됩니다.
@@ -989,7 +989,7 @@ for epoch in range(num_epochs):
 
 <div class="content-ad"></div>
 
-```markdown
+```
 completion = decode(model.generate(1000)[0].tolist())
 print(completion)
 with open('completions.txt', 'w') as f:
@@ -1000,7 +1000,7 @@ with open('completions.txt', 'w') as f:
 
 다음은 학습에 사용할 매개변수입니다 (이를 변경해보실 수 있습니다):
 
-```markdown
+```
 ctx_len = 128
 n_emb = 128
 dropout = 0.1

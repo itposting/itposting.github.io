@@ -45,7 +45,7 @@ link: "https://medium.com/towards-data-science/a-weekend-ai-project-using-speech
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-AWeekendAIProjectUsingSpeechRecognitionPTTandaLargeActionModelonaRaspberryPi_1.png)
 
 이 글을 쓰는 시점에 라즈베리파이 모델마다 (RPi 5는 더 빠르지만 더 비싸다) 및 RAM 크기에 따라 약 $80-120 정도의 비용이 듭니다 (최소 4GB RAM이 필요함). 디스플레이, 버튼 및 와이어 세트는 아마존에서 $10-15 정도로 구매할 수 있습니다. 소리 녹음을 위해서는 USB 마이크로폰이면 됩니다. 라즈베리파이 설정은 간단합니다. 이에 대한 충분한 자습서가 있습니다. 언급해야 할 점은 Raspbian의 32비트 및 64비트 버전이 모두 사용 가능하다는 것입니다. 대부분의 현대적인 Python 라이브러리는 더 이상 32비트 버전으로 제공되지 않기 때문에 64비트 버전이 필요합니다.

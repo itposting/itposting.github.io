@@ -13,7 +13,7 @@ link: "https://medium.com/generative-ai/choosing-the-right-rag-framework-for-you
 
 이미지(`<img>`) 태그를 Markdown 형식으로 변경하겠습니다.
 
-```markdown
+```
 ![Choosing the right RAG framework for your LLMLlamaIndex or LangChain](/assets/img/2024-06-19-ChoosingtherightRAGframeworkforyourLLMLlamaIndexorLangChain_0.png)
 ```
 
@@ -26,7 +26,7 @@ link: "https://medium.com/generative-ai/choosing-the-right-rag-framework-for-you
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![LlamaIndex](/assets/img/2024-06-19-ChoosingtherightRAGframeworkforyourLLMLlamaIndexorLangChain_1.png)
 
 LlamaIndex는 사용자 정의 데이터를 기반으로 한 LLM(Llama Language Model)을 색인하고 쿼리하는 프레임워크입니다. 구조화된 데이터(관계형 데이터베이스), 비구조화된 데이터(NoSQL 데이터베이스) 및 반구조화된 데이터(세일즈포스 CRM 데이터)와 같은 다양한 소스를 통해 데이터 연결을 가능케 합니다.
@@ -111,7 +111,7 @@ print(response)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Choosing the right RAG framework for your LLMLlamaIndex or LangChain](/assets/img/2024-06-19-ChoosingtherightRAGframeworkforyourLLMLlamaIndexorLangChain_3.png)
 
 검색 엔진은 데이터 인덱스를 검색하여 관련 조각을 가져올 것입니다.
@@ -293,7 +293,7 @@ Langchain과 LlamaIndex의 결합된 사용 사례: (
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-ChoosingtherightRAGframeworkforyourLLMLlamaIndexorLangChain_7.png)
 
 - 전문가 AI 에이전트 구축: LangChain은 여러 데이터 원본을 통합하고 LlamaIndex는 유사 의미 검색 능력으로 빠른 응답을 생성하고 정리할 수 있습니다.
@@ -328,7 +328,7 @@ LangChain은 보다 넓은 프레임워크 내에서 여러 도구를 사용하�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 Finally remember that it’s not a classic case of either or, in the real world, you can implement a system whose architecture may contain both the frameworks, each playing their own unique roles.
 
 # FAQs

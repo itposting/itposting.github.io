@@ -155,7 +155,7 @@ Airflow에서 PythonOperator를 활용하여 사용자가 작업 구성을 제�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-RayInfrastructureatPinterest_9.png)
 
 # 테스트
@@ -226,7 +226,7 @@ Ray는 컴퓨팅 플랫폼으로 개발자가 API를 통해 쉽게 워크로드�
 
 아래는 Markdown 형식으로 표로 변환하였습니다.
 
-```markdown
+```
 | 파일 | 이미지 |
 |:-------------------------:|:-------------------------:|
 | 2024-06-19-RayInfrastructureatPinterest_14.png | <img src="/assets/img/2024-06-19-RayInfrastructureatPinterest_14.png" /> |

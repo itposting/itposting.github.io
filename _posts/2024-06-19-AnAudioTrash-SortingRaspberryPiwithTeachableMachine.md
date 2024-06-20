@@ -11,7 +11,7 @@ link: "https://medium.com/geekculture/an-audio-trash-sorting-raspberry-pi-with-t
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-AnAudioTrash-SortingRaspberryPiwithTeachableMachine_0.png)
 
 전 세계적으로 매년 20억 톤의 가정 폐기물이 생산됩니다. 이것은 우리 환경에 무거운 부담을 줍니다. 매립지와 환경에 끝내 찌르는 폐기물을 줄이기 위해 전 세계 주민들은 가정 폐기물을 분리 수거해야 합니다. 그리고 쓰레기 분리는 큰 비즈니스입니다. Fortunebusinessinsights.com에 따르면, 2019년 글로벌 폐기물 분류 장비 시장은 약 7억 달러였습니다. 그리고 2027년에는 18억 달러에 이를 것으로 예상됩니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/geekculture/an-audio-trash-sorting-raspberry-pi-with-t
 ![이미지](/assets/img/2024-06-19-AnAudioTrash-SortingRaspberryPiwithTeachableMachine_1.png)
 
 하지만 유감스럽게도 중국에서는 쓰레기 분리 시스템이 효과적이지 않습니다. 정책이 약하게 시행되며, 위반에 대한 처벌이 거의 없습니다. 더 나쁜 것은 쓰레기 분류가 혼란스럽습니다. 제 건물에는 섬유, 재활용, 음식물, 잔여 폐기물을 각각 수집하는 다섯 개의 용기가 있습니다. 각 라벨 아래에는 예시의 짧은 목록이 있습니다. 예를 들어, 와인과 플라스틱 병은 "재활용" 용기로 가야 합니다. 그리고 옷과 가방은 "섬유"에 속합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -53,7 +53,7 @@ Teachable Machine 웹사이트로 이동해서 이미지 프로젝트를 시작�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-AnAudioTrash-SortingRaspberryPiwithTeachableMachine_3.png)
 
 이제 Train Model 버튼을 클릭하여 훈련 프로세스를 시작할 수 있습니다. 훈련 이후 모델을 몇 장의 사진 또는 카메라를 사용하여 테스트할 수 있습니다.
@@ -61,11 +61,11 @@ Teachable Machine 웹사이트로 이동해서 이미지 프로젝트를 시작�
 ![이미지](/assets/img/2024-06-19-AnAudioTrash-SortingRaspberryPiwithTeachableMachine_4.png)
 
 결과에 만족하셨다면 Export Model 버튼을 클릭하세요. Tensorflow 탭을 선택하고 Savedmodel 옵션을 선택한 후 Download my model 버튼을 클릭하세요.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-AnAudioTrash-SortingRaspberryPiwithTeachableMachine_5.png)
 
 당신의 브라우저가 모델이 준비되면 다운로드가 시작됩니다.
@@ -73,7 +73,7 @@ Teachable Machine 웹사이트로 이동해서 이미지 프로젝트를 시작�
 # 3. 앱 작성
 
 호스트 컴퓨터에서 pi_garbage_classifier라는 폴더를 만듭니다. 다운로드한 파일을 프로젝트 폴더에 압축해제합니다. 이제 app.py라는 파일을 만들어 각 부분을 조합할 것입니다. 이것은 Teachable Machine의 코드 스니펫에 기반합니다 (Figure 6). 그러나 놀랍게도 샘플 코드는 잘못되었고 오도독도 못하다. keras_model.h5를 열려고 시도했지만 다운로드한 모델은 model.savedmodel이라는 이름입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -187,24 +187,24 @@ sudo apt install -y festival
 mkdir ~/pi_garbage_classifier
 ```
 
-위의 마지막 명령어는 라즈베리 파이의 홈 디렉토리에 pi_garbage_classifier 라는 폴더를 만듭니다. 프로젝트 파일을 데스크톱 컴퓨터에서 이 폴더로 전송하려면 다음 명령어를 사용하세요.```
+위의 마지막 명령어는 라즈베리 파이의 홈 디렉토리에 pi_garbage_classifier 라는 폴더를 만듭니다. 프로젝트 파일을 데스크톱 컴퓨터에서 이 폴더로 전송하려면 다음 명령어를 사용하세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 호스트 데스크톱에서
 
 cd [your_desktop_pi_garbage_classifier_path]
 scp -r ./* pi@raspberrypi.local:~/pi_garbage_classifier/
-```
+
 
 파일을 복사한 후에는 다음 명령어로 앱을 테스트하세요:
 
-```markdown
+
 # 라즈베리 파이에서
 
 python /home/pi/pi_garbage_classifier/app.py
-```
+
 
 앱이 시작하는 데 몇 초 정도 걸립니다. 카메라 램프가 깜박일 때, 카메라 앞에 다양한 물체를 두어 시스템을 테스트할 수 있습니다. 물체의 클래스를 알리고 콘솔에 다음 출력이 나타날 것입니다 (그림 8).```
 

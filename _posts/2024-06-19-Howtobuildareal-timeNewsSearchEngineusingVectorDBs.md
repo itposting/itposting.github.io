@@ -526,7 +526,7 @@ run_producers:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-Howtobuildareal-timeNewsSearchEngineusingVectorDBs_8.png)
 
 로그를 통해 프로듀서 스레드가 각각 5개의 메시지를 보냈다는 것을 확인했습니다. 메시지들이 클러스터에 도달했는지 확인하려면 Upstash 콘솔로 이동하여 Kafka 클러스터 → 메시지를 확인하십시오. 다음과 같은 화면이 나타날 것입니다:
@@ -863,7 +863,7 @@ UI는 다음과 같은 기능을 갖춘 기본 Streamlit [8] 애플리케이션�
 
 다음은 예시입니다:
 
-```markdown
+```
 ![How to build a real-time News Search Engine using VectorDBs - Part 1](/assets/img/2024-06-19-Howtobuildareal-timeNewsSearchEngineusingVectorDBs_11.png)
 
 ![How to build a real-time News Search Engine using VectorDBs - Part 2](/assets/img/2024-06-19-Howtobuildareal-timeNewsSearchEngineusingVectorDBs_12.png)

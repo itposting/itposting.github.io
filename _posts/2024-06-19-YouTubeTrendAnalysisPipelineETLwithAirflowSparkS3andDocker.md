@@ -144,7 +144,7 @@ Docker 데스크톱을 열어서 모든 것이 올바르게 완료되었는지 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-YouTubeTrendAnalysisPipelineETLwithAirflowSparkS3andDocker_2.png)
 
 - 포트를 클릭하면 Airflow 로그인 페이지로 이동합니다. 이 링크를 처음 열어보는 경우 자격 증명을 제공해야 합니다.

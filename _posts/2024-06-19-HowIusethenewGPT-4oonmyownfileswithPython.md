@@ -11,7 +11,7 @@ link: "https://medium.com/@woyera/how-i-use-the-new-gpt-4o-on-my-own-files-9bb8d
 ---
 
 
-```markdown
+```
 ![2024-06-19-HowIusethenewGPT-4oonmyownfileswithPython_0.png](/assets/img/2024-06-19-HowIusethenewGPT-4oonmyownfileswithPython_0.png)
 
 현재 인공 지능 뉴스를 따라갔다면 OpenAI가 최근에 최신 모델인 GPT-4o를 발표했다는 것을 알고 계실 것입니다. 가장 인상적인 새로운 기능은 다중 모달리티인데, 아쉽게도 이러한 기능들은 아직 공개되지 않았습니다.
@@ -85,7 +85,7 @@ Finally, you will use the vector store id that we copied earlier and paste it in
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-HowIusethenewGPT-4oonmyownfileswithPython_10.png)
 
 벡터 저장소에 애니메이션을 연결한 후에는 옵션 된 파일의 내용에 관한 질문으로 에이전트를 테스트해 보세요.
@@ -166,7 +166,7 @@ else:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 message_response = client.beta.threads.messages.list(thread_id=empty_thread.id) 
 messages = message_response.data
 

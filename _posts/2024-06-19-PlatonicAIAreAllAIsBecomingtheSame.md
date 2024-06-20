@@ -130,7 +130,7 @@ LLM이 더 나아질수록, 그들의 세계 이해가 비전 모델로 수렴�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Platonic AI: Are All AIs Becoming the Same](/assets/img/2024-06-19-PlatonicAIAreAllAIsBecomingtheSame_4.png)
 
 이러한 경향이 발생하는 이유는 아래 이미지에서 명확하게 나타났습니다: 모델이 더 많은 문제를 해결하기 위한 공통적인 방법을 찾아야 하므로 두 작업에 대한 가능한 해결책 공간이 줄어듭니다:

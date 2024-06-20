@@ -33,7 +33,7 @@ link: "https://medium.com/it-security-in-plain-english/unmasking-the-undead-unde
 
 사용하실 때는 아래와 같이 Markdown 형식의 테이블로 변환해주시면 됩니다.
 
-```markdown
+```
 | 명령어 |
 | --- |
 | ps aux | grep Z |
@@ -172,7 +172,7 @@ done
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 chmod +x monitor_zombies.sh
 ./monitor_zombies.sh

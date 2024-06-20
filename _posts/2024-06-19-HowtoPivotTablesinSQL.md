@@ -199,7 +199,7 @@ Next, we can create a pivot table using DECODE(). A sample answer and output are
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-HowtoPivotTablesinSQL_8.png" />
 
 ```js

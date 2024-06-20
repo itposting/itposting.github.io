@@ -21,7 +21,7 @@ link: "https://medium.com/@datawarrior/making-my-first-internet-of-things-device
 
 <div class="content-ad"></div>
 
-```markdown
+```
 스크린에 쓰는 것은 Heltec.display->drawString(0, 0, "Hello Nikola!");을 이용하면 매우 간단합니다. 모든 것이 초기화된 후에 호출합니다. 처음 두 개의 숫자는 첫 번째 문자의 위치를 나타냅니다 (이 경우 상단 왼쪽). 그리고 나서 Heltec.display->display()를 호출하여 화면에 표시하거나 화면을 지우려면 clear()를 호출할 수 있습니다. 같은 위치에 여러 문자열을 쓰면 다른 것 위에 계속 그려집니다.
 
 이제 모든 것이 작동하므로 회로 설계를 진행할 수 있습니다.
@@ -41,7 +41,7 @@ link: "https://medium.com/@datawarrior/making-my-first-internet-of-things-device
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-MakingmyfirstInternetofThingsdeviceformeasuringtemperaturehumidityandmotion_2.png)
 
 프로그래밍 및 입력값을 읽는 부분에서 핀 번호 지정에 약간 어려움을 겪었습니다. 그래서 D11(온도 및 습도 센서)를 ESP8266의 입력 D8에 연결하고 모션 센서 D7에 연결했습니다. 처음에 코드에서 7번 및 8번 핀 id에서 읽을 것으로 생각했지만, 그렇지 않았습니다. ESP8266에는 다음 다이어그램이 함께 제공됩니다.
@@ -76,7 +76,7 @@ def analytics():
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Device Image](/assets/img/2024-06-19-MakingmyfirstInternetofThingsdeviceformeasuringtemperaturehumidityandmotion_4.png)
 
 # 기기 납땜하기

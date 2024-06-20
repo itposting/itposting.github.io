@@ -56,7 +56,7 @@ Druid은 공유하지 않는 아키텍처를 갖고 있어요. Druid 클러스�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Real-time nodes](https://miro.medium.com/v2/resize:fit:1400/0*kVg94BJBzWdZYS96.gif)
 
 실시간 노드들은 주로 Kafka와 같은 메시지 버스를 사용합니다. 프로듀서는 데이터를 Kafka 토픽으로 전송하고, 그런 다음 실시간 노드가 Kafka 토픽에서 데이터를 읽어들이게 됩니다. Kafka와 같은 중간 계층이 있는 경우 몇 가지 장점이 있습니다:

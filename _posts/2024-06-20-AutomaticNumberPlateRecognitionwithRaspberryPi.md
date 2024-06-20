@@ -122,7 +122,7 @@ gpu_mem=128
 
 `requirements.txt` 파일을 사용하여 pip 패키지 관리자를 통해 모든 필요한 라이브러리와 모듈을 설치하세요:
 
-```markdown
+```
 matplotlib>=3.2.2
 numpy>=1.18.5
 opencv-python==4.5.4.60
@@ -266,7 +266,7 @@ Baseline으로 25회의 에포크가 충분하다고 결정했어요.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-20-AutomaticNumberPlateRecognitionwithRaspberryPi_12.png" />
 
 프로젝트의 첫 번째 버전으로는 충분해 보이지만, 실제 응용 프로그램 중 발견된 특수 사례들을 통해 나중에 업데이트할 수 있습니다.
@@ -648,7 +648,7 @@ class Visualize():
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-20-AutomaticNumberPlateRecognitionwithRaspberryPi_17.png)
 
 ![Image 2](/assets/img/2024-06-20-AutomaticNumberPlateRecognitionwithRaspberryPi_18.png)

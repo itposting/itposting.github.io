@@ -123,7 +123,7 @@ Anthropic의 기사에서 논의된 대로, 우리는 특징을 낮추거나 제
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Embedding](/assets/img/2024-06-19-FrontierAIIsNotSafeHeresWhy_3.png)
 
 알게 된 사항을 다시 말하자면, Michael Jordan 예시로 전환하면 'Michael Jordan' 임베딩을 가져와 '농구'의 벡터 임베딩에 추가할 수 있습니다. 이제 이 임베딩은 할리우드 배우나 일반 시민과 같은 임의의 Michael Jordan을 나타내지 않고 분명히 전설적인 농구 선수를 나타냅니다.

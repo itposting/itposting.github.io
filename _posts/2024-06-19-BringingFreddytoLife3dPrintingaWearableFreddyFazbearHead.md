@@ -11,7 +11,7 @@ link: "https://medium.com/@zeph456/bringing-freddy-to-life-3d-printing-a-wearabl
 ---
 
 
-```markdown
+
 ![Freddy Fazbear Head](/assets/img/2024-06-19-BringingFreddytoLife3dPrintingaWearableFreddyFazbearHead_0.png)
 
 **참고** - 본 글에는 제휴 링크가 포함되어 있습니다. 만약 제가 한 것과 비슷한 작업을 따라하고 싶다면, 제가 사용한 제품 링크를 클릭하면 제 3D 프린팅 여정을 크게 지원해 주시고 무언가를 구입하려는 경우 추가 비용이 들지 않습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@zeph456/bringing-freddy-to-life-3d-printing-a-wearabl
 지금까지 제 3D 프린팅은 화분이나 조각과 같은 한 조각 프린트를 만드는 데 주로 사용되었고, 가장 복잡한 작품은 틱택스를 쏘는 장난감 총이었는데 (작은 민트를 거의 쏘지 못했다).
 
 Glamrock Freddy의 머리는 방대한 작업이 될 것이다. 머리만 20개 정도의 조각으로 구성되어 있을 뿐만 아니라, 제 3D 프린터는 작은 인쇄 베드를 사용하고 있으며, 20개의 대부분의 조각은 더 작은 조각으로 나눠져야 했다.
-```
+
 
 <div class="content-ad"></div>
 

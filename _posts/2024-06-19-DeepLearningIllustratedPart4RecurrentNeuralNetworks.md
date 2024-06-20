@@ -39,7 +39,7 @@ link: "https://medium.com/towards-data-science/deep-learning-illustrated-part-4-
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_4.png)
 
 우리의 신경망이 이것이 긍정적인 감정을 가지고 있다고 예측하길 원합니다.
@@ -51,7 +51,7 @@ link: "https://medium.com/towards-data-science/deep-learning-illustrated-part-4-
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_5.png)
 
 위의 리뷰를 12개의 입력값으로 처리하는 데 어려워하고 처리하지 못할 수 있습니다. 지난 글들과 달리 입력값의 개수가 고정된 게 아닙니다(아이스크림 수익 모델은 온도와 요일 2개의 입력값이 있었습니다). 이 경우에는 모델이 유연하게 동작하고 얼마든지 많은 단어들에 적응할 수 있어야 합니다.
@@ -237,7 +237,7 @@ However, that's not what we aim for. Instead of passing h₁ to the output neuro
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_38.png)
 
 ![Image 2](/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_39.png)
@@ -289,7 +289,7 @@ We process the hidden layer neuron...
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![딥러닝 일러스트레이티드 파트 4: 순환 신경망 (RNN)](/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_47.png)
 
 이미지에서도 볼 수 있듯이 이 과정을 단순화한 다이어그램으로 표현할 수 있습니다:
@@ -303,13 +303,13 @@ We process the hidden layer neuron...
 
 수학적으로 이 문제를 두 가지 기본 방정식으로 요약할 수 있어요:
 
-```markdown
+```
 ![equation1](/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_49.png)
 ```
 
 첫 번째 방정식은 숨겨진 상태 내에서 발생하는 전체 선형 변환을 포함해요. 이 경우, 이 변환은 개별 뉴런 내에서의 tanh 활성화 함수예요. 두 번째 방정식은 출력 층에서 발생하는 변환을 나타내며, 이는 저희 예시에서 시그모이드 활성화 함수에 해당돼요.
 
-```markdown
+```
 ![equation2](/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_50.png)
 ```
 
@@ -327,13 +327,13 @@ We process the hidden layer neuron...
 
 다른 예는 텍스트 완성입니다. 단어 문자열을 제공하면 RNN이 다음 단어를 예측하도록 원합니다.
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_52.png" />
 ```
 
 ## One-To-Many
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_53.png" />
 ```
 
@@ -379,7 +379,7 @@ We process the hidden layer neuron...
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_58.png" />
 
 이것은 RNN이 이론상으로 훌륭해 보이지만 실제로는 종종 부족하다는 사실을 강조합니다. 단기 기억 문제를 해결하기 위해 우리는 Long Short-Term Memory (LSTM) 네트워크라고 불리는 특수 유형의 신경망을 사용합니다. 하지만 그것은 다음 파트에서 다루도록 하겠습니다. 그러니 기대해 주세요!
@@ -391,7 +391,7 @@ We process the hidden layer neuron...
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Deep Learning Illustrated](/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_59.png)
 
 하지만 이번에는 조금 다른 것에 집중합니다. 순환 요소를 제외하고 기본 신경망에 초점을 맞춰 봅시다. 이제 우리의 목표는 무엇일까요? 영화 리뷰 전체가 아닌 단일 입력 단어의 감성을 예측하는 것입니다.
@@ -445,13 +445,13 @@ We process the hidden layer neuron...
 
 아래와 같이 작동해 봅시다. 예를 들어, "terrible"가 입력으로 주어지면 다음과 같은 y_hat 값들이 나타날 것입니다:
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_66.png)
 ```
 
 그런 다음이 값을 가져와 softmax 공식에 대입하여 "terrible"라는 단어가 긍정적인 함축을 가질 확률을 계산할 수 있습니다.
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-DeepLearningIllustratedPart4RecurrentNeuralNetworks_67.png)
 ```
 

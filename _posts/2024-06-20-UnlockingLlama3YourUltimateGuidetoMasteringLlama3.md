@@ -292,7 +292,7 @@ Ollama를 시작하려면 소프트웨어를 다운로드하기만 하면 됩니
 
 <div class="content-ad"></div>
 
-```markdown
+```
 js
 Compile the text ollama run llama3:instruct.
 

@@ -83,7 +83,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 source ~/.zshenv
 ```
 

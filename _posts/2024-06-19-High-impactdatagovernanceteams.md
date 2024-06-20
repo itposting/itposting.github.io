@@ -179,7 +179,7 @@ dbt yml 파일은 이 메타데이터를 정의하기에 좋은 장소입니다.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![High impact data governance teams](/assets/img/2024-06-19-High-impactdatagovernanceteams_8.png)
 
 소유권은 기술적인 도전과 문화적인 측면 두 가지를 모두 고려해야 하는 문제입니다. 소유권 프로젝트를 성공적으로 이끌어내려면 두 측면에 모두 초점을 맞춰야 합니다.

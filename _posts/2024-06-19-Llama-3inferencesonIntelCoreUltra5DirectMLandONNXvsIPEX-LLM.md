@@ -168,7 +168,7 @@ DirectML은 낮은 비트 양자화를 지원하는 ONNX Runtime의 Execution Pr
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 pip install onnxruntime-genai --pre
 pip install onnxruntime-genai-directml --pre
@@ -248,7 +248,7 @@ if __name__ == '__main__':
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-Llama-3inferencesonIntelCoreUltra5DirectMLandONNXvsIPEX-LLM_5.png)
 
 🤗Transformers + IPEX-LLM과 비교해 볼 수 있어요.
@@ -262,7 +262,7 @@ python ipex-llm-llama3.py --repo-id-or-model-path=meta-llama/Meta-Llama-3-8B-Ins
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지1](/assets/img/2024-06-19-Llama-3inferencesonIntelCoreUltra5DirectMLandONNXvsIPEX-LLM_7.png)
 
 결과를 함께 살펴봅시다.

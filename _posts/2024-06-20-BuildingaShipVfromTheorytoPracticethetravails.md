@@ -68,7 +68,7 @@ Y축을 중심으로 회전을 상쇄하기 위해 탭을 X축을 따라 연장�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![BuildingaShipVfromTheorytoPracticethetravails_6](/assets/img/2024-06-20-BuildingaShipVfromTheorytoPracticethetravails_6.png)
 
 디자인 측면에서 매우 간단하고 좋은 결과를 얻었어요 — 거의. 인쇄할 때 선체는 이렇게 보였어요:

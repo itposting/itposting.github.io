@@ -27,9 +27,9 @@ Android Studio를 사용할 때마다 명령줄에서 시작해야 한다는 것
 
 당신의 Android Studio 버전을 위한 studio.vmoptions 파일을 찾아보세요. 제 버전은 다음 경로에 있었습니다
 
-```markdown
+
 /Users/[내_사용자_이름]/Library/Application Support/Google/AndroidStudio2024.1/
-```
+
 
 <div class="content-ad"></div>
 

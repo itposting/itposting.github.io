@@ -76,7 +76,7 @@ docker swarm init --advertise-addr 192.168.99.100
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-DockerSwarminaRaspberryPiSimulatingaSwarmwithDocker-in-DockerDinD_2.png)
 
 ## 워커들을 배포하세요.
@@ -99,7 +99,7 @@ sudo docker pull alpine
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 sudo docker rename helloworld.1.6mwtenk3wdxik9kpposg6hd3j Worker1
 sudo docker start Worker1

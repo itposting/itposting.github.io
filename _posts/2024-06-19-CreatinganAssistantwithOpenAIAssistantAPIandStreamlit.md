@@ -34,7 +34,7 @@ link: "https://medium.com/towards-data-science/creating-an-assistant-with-openai
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-CreatinganAssistantwithOpenAIAssistantAPIandStreamlit_0.png)
 
 안타깝게도 발표된 장점에도 불구하고, API에 대한 문서는 특히 사용자 정의 함수 호출 및 Streamlit와 같은 프레임워크를 사용한 앱 구축과 관련하여 제대로 작성되지 않았다고 생각했습니다.

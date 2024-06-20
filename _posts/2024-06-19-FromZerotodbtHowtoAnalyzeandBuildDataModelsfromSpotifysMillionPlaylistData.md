@@ -46,7 +46,7 @@ link: "https://medium.com/inthepipeline/from-zero-to-dbt-how-to-analyze-and-buil
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-FromZerotodbtHowtoAnalyzeandBuildDataModelsfromSpotifysMillionPlaylistData_1.png)
 
 ## 데이터셋 다운로드
@@ -58,7 +58,7 @@ Spotify 정책에 따라 등록하고 여기서 원시 데이터를 다운로드
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](https://miro.medium.com/v2/resize:fit:960/1*HbIZkLZc-9ClzgToTNLvsg.gif)
 
 데이터셋을 다운로드하고 압축 해제한 후, data 폴더에는 천 개의 분할된 JSON 파일로 구성되어 있음을 발견할 것입니다. 이러한 파일들은 다음과 같은 패턴으로 명명되어 있습니다:
@@ -134,7 +134,7 @@ JSON의 모든 조각은 두 개의 키만 포함하고 있습니다.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-FromZerotodbtHowtoAnalyzeandBuildDataModelsfromSpotifysMillionPlaylistData_5.png)
 
 # 덕DB로 분석하기

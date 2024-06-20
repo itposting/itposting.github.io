@@ -71,7 +71,7 @@ link: "https://medium.com/towards-artificial-intelligence/neural-networks-basic-
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Neural Networks Theory](/assets/img/2024-06-20-NeuralNetworksBasicTheoryandArchitectureTypes_6.png)
 
 일반적으로 매개변수는 무작위 변수를 사용하여 초기화됩니다. 이 변수는 가우시안 분포를 따릅니다. 모든 입력이 독립적이며 레이어에 무한 개수의 뉴런이 있는 이상적인 경우에는 출력과 훈련된 매개변수도 가우시안 분포를 형성합니다.
@@ -363,7 +363,7 @@ NLP에서 오토인코더를 사용하는 한 가지 훌륭한 방법은 다음�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Neural Network Example](/assets/img/2024-06-20-NeuralNetworksBasicTheoryandArchitectureTypes_10.png)
 
 이 문서에서는 오토인코더의 정의 예시를 찾을 수 있습니다: Neural networks: encoder-decoder example (autoencoder) | 작성자 Greg Postalian-Yrausquin | 날짜 2024년 6월 | Medium. 여기서 모델이 이미지를 재구성하는 데 사용됩니다.
@@ -503,7 +503,7 @@ GAN은 생성적 AI 작업(모델을 기반으로 실제 데이터를 생성하�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 # 트레이닝 이미지 내의 채널 수. 컬러 이미지의 경우, 채널 수는 3입니다.
 nc = 3
 

@@ -65,7 +65,7 @@ pfx 패스워드를 손에 쥐고 openssl을 사용하여 인증서와 키를 �
 
 이 키와 인증서를 사용하여 이블 윈알엠으로 세션을 시작하여 "legacyy" 사용자로 액세스를 얻었습니다.
 
-```markdown
+```
 <img src="/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_9.png" />
 ```
 
@@ -99,7 +99,7 @@ With new credentials, I logged in as the svc_deploy user. Now, it was time to ga
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지1](/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_14.png)
 
 BloodHound 분석
@@ -111,7 +111,7 @@ BloodHound를 실행하여 SharpHound 데이터를 업로드하고 svc_deploy �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_16.png)
 
 다이어그램에서 svc_deploy 사용자가 LAPS_READERS 그룹의 구성원이며 DC01.TIMELAPSE.HTB의 암호를 읽을 수 있음을 보여줍니다.
@@ -123,7 +123,7 @@ Active Directory의 LAPS(Local Administrator Password Solution)는 도메인 가
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image1](/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_17.png)
 
 ![image2](/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_18.png)

@@ -158,7 +158,7 @@ meshes     > sovol_300_300_platform.obj
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-AddSovolSV06-PlustotheLatestCuraSoftware_14.png)
 
 6 — 이제 Cura 구성 파일이 모두 저장된 디렉토리가 표시됩니다.

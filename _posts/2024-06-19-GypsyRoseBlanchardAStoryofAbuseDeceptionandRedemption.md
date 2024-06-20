@@ -51,7 +51,7 @@ Godejohn의 재판 중, 그가 자폐 스펙트럼 장애를 가지고 있음이
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Gypsy Rose Blanchard](/assets/img/2024-06-19-GypsyRoseBlanchardAStoryofAbuseDeceptionandRedemption_1.png)
 
 그린 카운티 보안관 제임스 아넷은 이 사건의 충격적인 본성을 적절히 표현하면서 "모든 것이 항상 보이는 대로가 아닙니다." 라고 말했습니다. 지피의 체력 상태는 체포 당시 그녀의 어머니의 학대 정도를 더욱 강조했습니다. 영양실조와 육체적으로 연약하여, 그녀는 어머니가 신중히 구축한 이미지와는 확연한 대조를 이뤘습니다.

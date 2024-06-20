@@ -55,7 +55,7 @@ B | 7000
 
 <div class="content-ad"></div>
 
-```markdown
+
 C|4500
 
 # 3. Recursive Queries
@@ -63,16 +63,16 @@ C|4500
 Recursive queries enable travel of hierarchical data structures like organisational charts or bill of materials. Suppose we have a table representing employee relationships, and we want to find all the subordinates of a given manager.
 
 This recursive CTE finds all employees who report directly or indirectly to a specific manager ‘manager_id_of_interest’. It starts with employees directly reporting to the manager and then recursively finds their subordinates, building the hierarchy.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 | employee_id | name  | manager_id           |
 |:------------|:------|:---------------------|
 | 2           | Alice | manager_id_of_interest |
 | 3           | Bob   | 2                    |
-```
+
 
 <div class="content-ad"></div>
 
@@ -170,26 +170,26 @@ SQL에서의 날짜 함수는 날짜와 관련된 정보를 조작하고 추출�
 
 <div class="content-ad"></div>
 
-```markdown
+
 customers_target (before merge):
 
 | customer_id | name       | email           |
 |-------------|------------|-----------------|
 | 1           | John Doe   | john@example.com|
 | 2           | Jane Smith | jane@example.com|
-```
+
 
 <div class="content-ad"></div>
 
 테이블 태그를 Markdown 형식으로 변경해보면 다음과 같습니다.
 
-```markdown
+
 | customer_id | name         | email            |
 |------------ | ------------ | -----------------|
 | 1           | John Doe     | john@example.com |
 | 2           | Jane Johnson | jane.j@example.com |
 | 3           | Alice Brown  | alice@example.com |
-```
+
 
 <div class="content-ad"></div>
 
@@ -203,7 +203,7 @@ Case 문을 사용하면 SQL 쿼리 내에서 조건부 논리를 구현할 수 
 
 <div class="content-ad"></div>
 
-```markdown
+
 orders 테이블에서의 예시 데이터:
 
 customer_id | order_total
@@ -221,7 +221,7 @@ customer_id | customer_category
 2 | Gold
 3 | Silver
 4 | Platinum
-```
+
 
 <div class="content-ad"></div>
 
@@ -354,13 +354,13 @@ customer_id | order_total
 
 표를 마크다운 형식으로 변경하세요.
 
-```markdown
+
 | customer_id | order_total |
 | --- | --- |
 | 2 | 500 |
 | 3 | 500 |
 | 4 | 700 |
-```
+
 
 <div class="content-ad"></div>
 

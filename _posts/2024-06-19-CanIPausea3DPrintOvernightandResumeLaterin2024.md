@@ -11,7 +11,7 @@ link: "https://medium.com/@printerventure/can-i-pause-a-3d-print-overnight-and-r
 ---
 
 
-```markdown
+```
 ![3D printing](/assets/img/2024-06-19-CanIPausea3DPrintOvernightandResumeLaterin2024_0.png)
 
 3D 프린팅 세계에서 시간 관리가 중요합니다. 몇 시간 또는 몇 일이 걸릴 수있는 인쇄물이 있지만 인쇄 품질을 희생하지 않고 효율성을 극대화하는 방법을 찾는 것이 중요합니다.

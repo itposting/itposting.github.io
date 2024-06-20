@@ -41,7 +41,7 @@ link: "https://medium.com/the-diy-diaries/my-diy-wood-chest-project-from-a-tea-b
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![My DIY Wood Chest Project from a Tea Box](/assets/img/2024-06-19-MyDIYWoodChestProjectfromaTeaBox_1.png)
 
 구매할 때, 나의 상자들은 위 상자와 비슷했다. 이 상자가 현재 이베이에서 $200.00에 판매 중이니, 아마 제가 45년 전에 $20.00을 썼던 것은 잘 한 선택이었을지도 모르겠다.

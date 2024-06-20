@@ -21,7 +21,7 @@ OpenCV를 탐구하는 내 교재에서는 자동 비전 객체 추적을 배웠
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-Real-TimeFaceRecognitionAnEnd-To-EndProject_1.png)
 
 이 프로젝트는 이 훌륭한 "Open Source Computer Vision Library" 인 OpenCV를 사용하여 수행되었습니다. 이 튜토리얼에서는 Raspberry Pi (즉, Raspbian을 사용한 OS)와 Python에 중점을 두지만 Mac에서 코드를 테스트하고 또한 잘 작동하는 것을 확인했습니다.

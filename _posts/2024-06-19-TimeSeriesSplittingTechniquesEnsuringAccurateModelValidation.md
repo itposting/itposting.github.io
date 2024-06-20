@@ -38,7 +38,7 @@ In the rolling window approach, your model moves forward in time with a fixed-si
 
 <div class="content-ad"></div>
 
-```markdown
+```
 파이썬 코드:
 
 ```python

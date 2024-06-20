@@ -11,7 +11,7 @@ link: "https://medium.com/@joshdotai/josh-ai-meet-the-team-monika-368c305c4105"
 ---
 
 
-```markdown
+```
 ![Monika](/assets/img/2024-06-20-JoshaiMeetTheTeamMonika_0.png)
 
 Name: Monika

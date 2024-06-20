@@ -66,7 +66,7 @@ Warp Terminal은 macOS용 현대적이고 빠르며 사용자 정의가 가능�
 <div class="content-ad"></div>
 
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-Must-havetoolsandappsformacOSfordevelopersin2024_1.png)
 
 요즘 모든 도구와 마찬가지로 이것도 AI (GPT ahem ahem) 기능을 갖추고 있습니다. Mac에서 숨겨진 파일을 표시하는 명령을 요청할 수 있어요. 가장 좋아하는 기능은 구문 강조, 자동 제안 및 북마크 옵션으로 시간을 많이 절약할 수 있습니다.
@@ -102,7 +102,7 @@ Fork는 맥과 윈도우용 빠르고 친근한 Git 클라이언트에요. 사�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-Must-havetoolsandappsformacOSfordevelopersin2024_3.png)
 
 Fork를 사용하는 이유는 macOS 앱 같은 느낌이 들기 때문이에요 :) SourceTree나 Tower와 같은 대안이 있지만, 난 항상 간단함 때문에 Fork로 돌아오게 되죠.
@@ -187,7 +187,7 @@ Mac App Store 앱이 아닌 앱을 최신 상태로 유지하는 필수 앱입�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-Must-havetoolsandappsformacOSfordevelopersin2024_9.png)
 
 brew를 사용하여 설치하세요

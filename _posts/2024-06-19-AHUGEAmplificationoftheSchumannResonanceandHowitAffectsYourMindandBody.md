@@ -11,7 +11,7 @@ link: "https://medium.com/@bigdreamsstudios/a-huge-amplification-of-the-schumann
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-AHUGEAmplificationoftheSchumannResonanceandHowitAffectsYourMindandBody_0.png)
 
 2024년 2월 2일, 슈만 공명의 증폭이 엄청난 증가가 있었어요.
@@ -19,7 +19,7 @@ link: "https://medium.com/@bigdreamsstudios/a-huge-amplification-of-the-schumann
 요즘 다양한 증폭과 이상 현상을 주시하고 있는데, 이러한 현상들이 증가하는 것 같아요.
 
 사랑 모드들이 그라운드호그 데이에 증폭되었는데, 그 중에는 어려운 여섯 번째 모드도 있었는데요, 곧 그 효과에 대해 설명하겠어요.
-```
+
 
 <div class="content-ad"></div>
 

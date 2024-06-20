@@ -41,7 +41,7 @@ NZD $6.78은 USD $4.25 정도입니다 - 그 정도로 돈이 많이 나가지�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Up-cycling an old Raspberry Pi into a digital photo frame](/assets/img/2024-06-19-Up-cyclinganoldRaspberryPiintoadigitalphotoframe_1.png)
 
 $11.50 NZD is approximately $7.20 USD. The resolution is adequate and it has a DVI input. My 9-year-old couldn't believe that such a budget-friendly purchase was possible!

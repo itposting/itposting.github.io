@@ -21,7 +21,7 @@ GAN(Generative Adversarial Networks)이라는 아이디어는 2014년 Goodfellow
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-ErasingCloudsfromSatelliteImageryUsingGANsGenerativeAdversarialNetworks_1.png)
 
 우리는 분류 자체에 흥미가 없지만 EuroSat 데이터셋의 주요 기능 중 하나는 모든 이미지에 맑은 하늘이 있습니다. 그것이 정확히 우리가 필요한 것입니다. [3]에서 이 접근법을 채택하여, 우리는 이 Sentinel-2 샷을 대상으로 사용하고 입력을 추가하여 (구름) 노이즈를 생성할 것입니다.
@@ -179,7 +179,7 @@ GAN의 경우, 당신은 판별자(D)라고 불립니다. 판별자의 목표는
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Erasing Clouds from Satellite Imagery Using GANs](/assets/img/2024-06-19-ErasingCloudsfromSatelliteImageryUsingGANsGenerativeAdversarialNetworks_4.png)
 
 In other words, we can define a value function V(G,D):
@@ -414,7 +414,7 @@ scheduler_G = optim.lr_scheduler.StepLR(optimizer_G, step_size=10, gamma=0.1)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 G_loss = log(1 − D(G(z))) + 𝝀 |G(z)-y|
 
 instead of just

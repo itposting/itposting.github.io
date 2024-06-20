@@ -89,7 +89,7 @@ content = extractor.extract("path\\driverLicense.jpg", InvoiceContract)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-Phi-3andAzurePDFDataExtractionExtractThinker_4.png)
 
 추출 관점에서 고전적인 문서는 운전면허증, 매매 계약서, 송장 등이 될 수 있습니다. 이러한 문서들은 보통 작거나 한두 장 정도이므로 이미지에서 보듯이 크기가 다른 두 모델을 최적화하여 흐름을 조정할 수 있습니다. 4k 창을 초과하는 문서의 일부 (예: 5%)가 작성될 경우, 다음 코드를 사용하여 창을 초과할 경우 예외 처리를 할 수 있습니다:

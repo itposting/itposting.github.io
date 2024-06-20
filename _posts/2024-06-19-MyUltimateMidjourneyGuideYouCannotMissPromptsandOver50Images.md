@@ -84,13 +84,13 @@ Midjourney가 2년 전에 출시되었을 때, 그것은 겸손한 시작을 가
 
 V1에서 프롬프트가 어떻게 나타나는지 살펴보세요:
 
-```markdown
+```
 ![Image1](/assets/img/2024-06-19-MyUltimateMidjourneyGuideYouCannotMissPromptsandOver50Images_2.png)
 ```
 
 V6에서 동일한 프롬프트를 보겠습니다:
 
-```markdown
+```
 ![Image2](/assets/img/2024-06-19-MyUltimateMidjourneyGuideYouCannotMissPromptsandOver50Images_3.png)
 ```
 
@@ -122,13 +122,13 @@ V5.2에서는 추가 프롬프트 세부 사항을 엄격한 지침이 아니라
 
 다음은 V5.2와 V6에서 동일한 프롬프트입니다:
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-MyUltimateMidjourneyGuideYouCannotMissPromptsandOver50Images_4.png)
 ```
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-MyUltimateMidjourneyGuideYouCannotMissPromptsandOver50Images_5.png" />
 
 Midjourney의 표현과 prompt 처리 방식으로 두 이미지를 비교하는 것은 분명히 어렵지만, V5.2가 거의 완벽하고 흠도 없는 것은 분명합니다.
@@ -170,7 +170,7 @@ Midjourney에서 이미지를 만드는 것은 매우 간단합니다. 텍스트
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-MyUltimateMidjourneyGuideYouCannotMissPromptsandOver50Images_7.png" />
 
 다음 (완전한 것이 아닌) 팁 목록을 사용하세요:
@@ -188,7 +188,7 @@ Midjourney에서 이미지를 만드는 것은 매우 간단합니다. 텍스트
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-MyUltimateMidjourneyGuideYouCannotMissPromptsandOver50Images_8.png" />
 
 The complete opposite would be this one line prompt with a subpar result
@@ -282,7 +282,7 @@ Admittedly the photo is not bad, because the training data is great and Midjourn
 
 참조 기능을 사용하려면, 생성한 이미지 중 하나를 사용하거나 이미지 인터페이스를 통해 새 이미지를 업로드할 수 있습니다.
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-MyUltimateMidjourneyGuideYouCannotMissPromptsandOver50Images_11.png)
 ```
 

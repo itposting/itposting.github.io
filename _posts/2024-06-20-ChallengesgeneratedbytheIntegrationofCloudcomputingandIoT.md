@@ -31,7 +31,7 @@ IoT와 클라우드 컴퓨팅은 제4차 산업혁명의 일환으로 나란히 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-ChallengesgeneratedbytheIntegrationofCloudcomputingandIoT_1.png)
 
 ## 클라우드 컴퓨팅

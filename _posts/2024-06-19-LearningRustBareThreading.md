@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/learning-rust-bare-threading-1defb65038c9
 ---
 
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-LearningRustBareThreading_0.png)
 
 리눅스에서 스레드를 생성하는 방법을 아시나요? CPU에서 작업을 스케줄링하기 위해 원시 파이프를 사용하는 방법은 어떤가요? 스레드 간에 클로저를 전달할 수 있을까요?
@@ -196,7 +196,7 @@ impl PipeCommand {
 
 위의 표를 마크다운 형식으로 변경해드릴게요.
 
-```markdown
+```
 |       Parent       |       Child       |
 |---------------------|-------------------|
 | 0x1000             | 0xa000               |

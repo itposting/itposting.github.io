@@ -188,7 +188,7 @@ docker inspect -f '{range .NetworkSettings.Networks}{.IPAddress}{end}' sqltutori
 
 <div class="content-ad"></div>
 
-```markdown
+```
 테이블 - `데이터 보기/편집 -` 모든 행
 
 <img src="/assets/img/2024-06-20-SettingupPostgreSQLandpgAdmin4withDocker_14.png" />
@@ -236,6 +236,6 @@ SELECT * FROM CATTABLE;
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![2024-06-20-SettingupPostgreSQLandpgAdmin4withDocker_18](/assets/img/2024-06-20-SettingupPostgreSQLandpgAdmin4withDocker_18.png)
 ```

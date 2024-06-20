@@ -11,7 +11,7 @@ link: "https://medium.com/@esantana_io/repurposing-an-old-imac-with-ubuntu-650d9
 ---
 
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-RepurposinganoldiMacwithUbuntu_0.png)
 
 2011년, 제 주요 작업 기계는 21.5인치 iMac (Mid-2011)이었는데, 정말 멋진 하드웨어였습니다. 그 때 대부분의 작업은 Linux로 하다가 Mac OS X로 전환했는데, 아름다운 그래픽 사용자 인터페이스와 터미널을 제공했습니다. High Sierra(10.13)가 이 iMac에서 공식으로 지원되는 마지막 macOS 버전이었습니다. 더 최신 macOS 버전을 비공식으로 설치하려고 했지만 많은 문제가 발생했습니다. 결국, 그냥 보관하고 잊어버렸죠.

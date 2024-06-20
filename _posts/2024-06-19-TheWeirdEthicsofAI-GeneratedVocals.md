@@ -87,7 +87,7 @@ Elf.Tech의 출시 이후, YouTube와 스트리밍 사이트에서 여러 개의
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![2024-06-19-TheWeirdEthicsofAI-GeneratedVocals_4](/assets/img/2024-06-19-TheWeirdEthicsofAI-GeneratedVocals_4.png)
 
 Tunecore의 CEO에 따르면,
@@ -109,7 +109,7 @@ Tunecore의 CEO에 따르면,
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-TheWeirdEthicsofAI-GeneratedVocals_6.png)
 
 이미 어려운 상황을 마주했어요. 그녀가 트윗에서 '그라임스의 모습'을 사용해 '나쁜 마음 바이러스'를 퍼뜨리는 콘텐츠를 제거해 달라고 요청할 것이라고 밝힌 것을 알 수 있었어요. 이는 일부 사람들이 그라임스 AI 보이스프린트를 악용했을 수도 있다는 신호예요.

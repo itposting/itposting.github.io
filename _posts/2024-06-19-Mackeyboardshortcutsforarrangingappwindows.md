@@ -21,7 +21,7 @@ Microsoft Windows는 이동하는 단축키를 기본으로 제공하는 반면,
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-Mackeyboardshortcutsforarrangingappwindows_0.png)
 
 - Or open an app’s Window menu (Hold ⎇ for more options)
@@ -55,7 +55,7 @@ and select the option you want, for example:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image1](/assets/img/2024-06-19-Mackeyboardshortcutsforarrangingappwindows_2.png)
 
 4. 대화 상자 안에 세 가지 입력 사항이 있습니다:
@@ -88,7 +88,7 @@ C49RG9x는 제 외부 모니터의 이름인데, 여러분의 것은 다를 수 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![2024-06-19-Mackeyboardshortcutsforarrangingappwindows_4.png](/assets/img/2024-06-19-Mackeyboardshortcutsforarrangingappwindows_4.png)
 
 바로 가기 키를 기억하기 위해서, 모든 키가 서로 옆에 있다는 것을 유의해 주세요. 다른 화살표 키를 사용하면 됩니다. 또한, 다른 모니터로 이동하는 것은 동일한 모니터에서 창을 분할 보기로 이동하는 것보다 한 키가 더 필요합니다.

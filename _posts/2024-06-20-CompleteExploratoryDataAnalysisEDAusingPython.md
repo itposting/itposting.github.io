@@ -53,7 +53,7 @@ df.tail(10)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-CompleteExploratoryDataAnalysisEDAusingPython_3.png)
 
 데이터에 대해 더 잘 이해하기 위해 각 열의 비 널 레코드 수, 데이터 유형, 데이터 세트의 메모리 사용량을 확인하기 위해 info()를 사용합니다.
@@ -486,7 +486,7 @@ sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', square=True)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-20-CompleteExploratoryDataAnalysisEDAusingPython_16.png" />
 
 결과적으로 나타나는 상관 행렬 및 히트맵은 데이터셋 내의 수치적 특징 사이의 관계를 시각적으로 제공합니다. 상관 행렬을 분석함으로써 어떤 특징이 유방암 생존 예측에 상당한 영향을 미칠 수 있는지 통찰력을 얻을 수 있습니다. 이 정보는 우리의 추가 분석을 이끄는 데 도움이 되며, 생존률에 영향을 미치는 중요한 요소의 발견으로 이어질 수도 있습니다.

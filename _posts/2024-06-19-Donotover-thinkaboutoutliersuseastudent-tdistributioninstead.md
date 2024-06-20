@@ -424,7 +424,7 @@ Fit_Comp_WAIC
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-Donotover-thinkaboutoutliersuseastudent-tdistributioninstead_13.png)
 
 그림 14는 우리의 마지막 모델이 샘플 외 예측에 대해 덜 처벌받는 것을 보여줍니다.

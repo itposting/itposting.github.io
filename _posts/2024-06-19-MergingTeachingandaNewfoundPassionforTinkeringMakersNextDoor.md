@@ -11,7 +11,7 @@ link: "https://medium.com/publiclibrarysg/merging-teaching-and-a-newfound-passio
 ---
 
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_0.png)
 
 Elle Goh를 만나보세요. 그녀는 큰 포부를 가진 23세로, 비영리 학생 보육 센터에서 어린이들을 양육하는 일을 하고 있습니다. 아동심리학과 초기교육 배경을 가진 이 열정적인 교사는 유치원에서 1년간 근무한 후, 현재의 역할로 이동하여 초등학교 학생들에게 지원과 지도를 제공하고 있습니다.
@@ -23,7 +23,7 @@ Elle은 TikTok을 스크롤하던 중 라이브러리에서 MakeIT을 우연히 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_1.png)
 
 Elle attended her first 3D printing Starter Session, which is a beginner-friendly hands-on workshop for participants with no prior experience, and was blown away by the technology as well as how it was readily available to the public.
@@ -45,7 +45,7 @@ The Starter Session had such a profound impact on Elle that she confessed her im
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_2.png)
 
 MakeIT에서의 여정은 처음 Starter Session 이후 3개월 뒤에 바느질의 세계로 뻗어갔습니다. 기술에 익숙하지 않았음에도 불구하고 Elle은 도전을 받아들였습니다.
@@ -67,7 +67,7 @@ MakeIT에서 엘은 시간을 보내어 자신과 가족을 위한 다양한 창
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_3.png)
 
 "더욱 쉽게 쿠폰을 모을 수 있도록 러버 밴드가 통과할 수 있는 추가 칸도 포함되어 있어요" 엘이 덧붙였어요.
@@ -119,7 +119,7 @@ Elle은 그녀의 다음 프로젝트로, 1학년 학생들이 알파벳 문자�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image description](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_9.png)
 
 MakeIT 도서관 커뮤니티 안에서, 엘은 세션 중 따뜻함과 동료애를 즐기고 있어요. 내성적인 성격을 가진 엘은 포용적인 분위기가 편안함을 느끼는 데 도움이 된다고 말합니다.

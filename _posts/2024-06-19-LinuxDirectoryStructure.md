@@ -127,7 +127,7 @@ link: "https://medium.com/@dheeruthedeployer/linux-directory-structure-03ab5c23e
 
 <div class="content-ad"></div>
 
-```markdown
+```
 /
 ├── bin
 ├── boot
@@ -157,14 +157,14 @@ link: "https://medium.com/@dheeruthedeployer/linux-directory-structure-03ab5c23e
  └── tmp
 ```
 
-```markdown
+```
 |- / (Root)
 
 설명: 모든 다른 디렉토리가 뻗어나온 최상위 디렉토리입니다.
 예시: /bin, /etc, /home은 모두 /의 하위 디렉토리입니다.
 ```
 
-```markdown
+```
 |- /bin
 
 설명: 모든 사용자가 필요로 하는 기본 명령어와 도구를 위한 필수 바이너리 실행 파일이 들어 있습니다.
@@ -174,7 +174,7 @@ link: "https://medium.com/@dheeruthedeployer/linux-directory-structure-03ab5c23e
 /bin/cp (파일과 디렉토리 복사)
 ```
 
-```markdown
+```
 |- /boot
 
 설명: 부트로더 파일과 커널 이미지가 들어 있습니다.

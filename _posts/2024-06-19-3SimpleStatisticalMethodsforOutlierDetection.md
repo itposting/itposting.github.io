@@ -153,7 +153,7 @@ df["mod_zscore"]=df["column_of_interest"].apply(compute_mod_z_score,df=df)
 # 결론
 
 보시다시피, 이상치 탐지의 각 통계적 방법마다 이점과 단점이 있습니다. 제가 일하는 곳에서는 이를 모두 사용했지만 다른 데이터 집합과 사용 사례에 대해 사용했습니다. 데이터를 탐색하여 문제에 접근하는 방법을 알아야 한다는 점의 중요성을 강조할 수 없습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/machinevision/overview-of-slam-50b7f49903b7"
 ---
 
 
-```markdown
+```
 ![SLAM](/assets/img/2024-06-19-OverviewofSLAM_0.png)
 
 SLAM은 동시 위치 추적 및 지도 작성을 의미합니다. 이는 로봇 공학에서 사용되는 기술로, 알려지지 않은 환경의 지도를 구축하는 문제를 해결하면서 동시에 자신을 그 지도 안에서 위치시키는 것입니다.

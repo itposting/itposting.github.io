@@ -21,7 +21,7 @@ link: "https://medium.com/@macsources/nanoleaf-light-fighter-craft-bundle-review
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![NanoleafLightFighterCraftBundleREVIEWMacSources_1](/assets/img/2024-06-19-NanoleafLightFighterCraftBundleREVIEWMacSources_1.png)
 
 ![NanoleafLightFighterCraftBundleREVIEWMacSources_2](/assets/img/2024-06-19-NanoleafLightFighterCraftBundleREVIEWMacSources_2.png)

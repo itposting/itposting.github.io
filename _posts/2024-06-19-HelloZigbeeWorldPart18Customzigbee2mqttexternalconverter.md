@@ -193,7 +193,7 @@ ZPS_EVENT_APS_DATA_ACK: SrcEP=1 DrcEP=2 DstAddr=0000 Profile=0104 Cluster=0007 (
 
 이것이 테이블 태그이며, 이것이 답변입니다.
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-HelloZigbeeWorldPart18Customzigbee2mqttexternalconverter_4.png)
 ```
 

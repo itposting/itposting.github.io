@@ -134,7 +134,7 @@ class TreeBuilder:
 클러스터링은 RAPTOR 트리를 구성하는 데 중요하며, 텍스트 단락을 일관된 그룹으로 구성합니다. 관련 콘텐츠를 함께 모아 나중의 검색 프로세스를 향상시킵니다.
 
 RAPTOR의 클러스터링 방법은 다음과 같은 특징을 가지고 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -225,7 +225,7 @@ RAPTOR 트리를 갖게 된 후 쿼리하는 방법은 무엇인가요?
 
 <div class="content-ad"></div>
 
-```markdown
+
 class TreeRetriever(BaseRetriever):
     ...
     ...
@@ -283,11 +283,11 @@ class TreeRetriever(BaseRetriever):
 
         context = get_text(selected_nodes)
         return selected_nodes, context
-```
+
 
 반면에, 축소된 트리는 트리를 단일 레이어로 축소하고 일정 토큰 수에 도달할 때까지 노드를 검색합니다. 다시 말해, 쿼리 벡터와의 코사인 유사도를 기반으로 상응하는 코드는 다음과 같습니다.
 
-```markdown
+
 class TreeRetriever(BaseRetriever):
     ...
     ...
@@ -329,10 +329,10 @@ class TreeRetriever(BaseRetriever):
 
         context = get_text(selected_nodes)
         return selected_nodes, context
-```
+
 
 따라서 어떤 방법이 더 나은지요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -346,7 +346,7 @@ RAPTOR이 그림 4에서 보여준대로 비교를 진행했습니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-AdvancedRAG12EnhancingGlobalUnderstanding_4.png)
 
 Highlighted nodes indicate RAPTOR’s selections, while arrows point to DPR’s (Dense Passage Retrieval) leaf nodes. Importantly, the context provided by RAPTOR often includes the information retrieved by DPR, either directly or within higher-layer summaries.
@@ -354,7 +354,7 @@ Highlighted nodes indicate RAPTOR’s selections, while arrows point to DPR’s 
 # Graph RAG
 
 Graph RAG employs LLM to construct a graph-based text index in two stages:
-```
+
 
 <div class="content-ad"></div>
 
@@ -389,7 +389,7 @@ Figure 6의 각 단계 구현에 대해 아래에서 설명하겠습니다. 2024
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot](/assets/img/2024-06-19-AdvancedRAG12EnhancingGlobalUnderstanding_6.png)
 
 Figure 7에 설명된 대로 HotPotQA 데이터셋의 경우, 600 토큰의 청크 크기는 2400 토큰의 청크 크기에 비해 효과적인 엔티티를 두 배 더 추출합니다.
@@ -397,7 +397,7 @@ Figure 7에 설명된 대로 HotPotQA 데이터셋의 경우, 600 토큰의 청�
 ## 단계 2: 텍스트 청크 → 요소 인스턴스(엔티티 및 관계)
 
 해당 방법은 각 청크에서 엔티티와 관계를 추출하여 지식 그래프를 구성하는 것을 포함합니다. 이는 LLM과 프롬프트 엔지니어링의 조합을 통해 달성됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -473,7 +473,7 @@ Figure 11에서는 수천 명의 Stanford 교수와 알츠하이머병 연구자
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-06-19-AdvancedRAG12EnhancingGlobalUnderstanding_9.png](/assets/img/2024-06-19-AdvancedRAG12EnhancingGlobalUnderstanding_9.png)
 
 HippoRAG은 인간의 장기기억의 세 가지 구성 요소를 모방하여 패턴 구분 및 완료 기능을 에뮬레이트합니다.
@@ -482,7 +482,7 @@ HippoRAG은 인간의 장기기억의 세 가지 구성 요소를 모방하여 �
 - 온라인 검색을 위해 LLM 뉴로피질은 질의에서 명명된 엔터티를 추출합니다. 해마색인에 연결되도록 해마집 검색 인코더가 이들을 링크합니다. HippoRAG은 문맥 기반 검색을 위해 개인화된 페이지랭크 알고리즘을 활용하며 Thomas 교수와 관련된 정보를 추출합니다.
 
 ## 전체 프로세스 데모
-```
+
 
 <div class="content-ad"></div>
 
@@ -728,7 +728,7 @@ HippoRAG는 실험을 수행하여 기준으로 삼은 RAPTOR를 능가하는 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-AdvancedRAG12EnhancingGlobalUnderstanding_17.png" />
 
 따라서, 특정 구성 요소를 섬세하게 조정함으로써, 개선의 상당한 잠재력이 있습니다.
@@ -736,7 +736,7 @@ HippoRAG는 실험을 수행하여 기준으로 삼은 RAPTOR를 능가하는 �
 # 결론
 
 본문은 코드 설명을 보충하여 문서나 말뭉치의 전통적인 RAG의 전역 이해력을 향상시키기 위한 네 가지 새로운 방법을 소개합니다. 또한 제 개인적인 통찰과 생각도 포함되어 있습니다.
-```  
+  
 
 <div class="content-ad"></div>
 

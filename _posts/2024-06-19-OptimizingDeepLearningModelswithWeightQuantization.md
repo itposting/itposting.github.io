@@ -54,7 +54,7 @@ link: "https://medium.com/towards-data-science/optimizing-deep-learning-models-w
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-OptimizingDeepLearningModelswithWeightQuantization_4.png)
 
 # 📖 부동 소수점 숫자 구성
@@ -183,7 +183,7 @@ Compute the quantization scale (S):
 
 컨버팅 비티에이엘 테이블:
 
-```markdown
+```
 | 값       | 양자화된 값 |
 |----------|------------|
 |   3.14   |    3.0     |
@@ -193,7 +193,7 @@ Compute the quantization scale (S):
 
 오리지널 값으로 돌아가기:
 
-```markdown
+```
 | 양자화된 값 | 값       |
 |------------|----------|
 |    3.0     |   3.14   |
@@ -245,7 +245,7 @@ print(weights_sym_dequant.double().mean(), weights_sym_dequant.double().min(), w
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-OptimizingDeepLearningModelswithWeightQuantization_15.png)
 
 스케일(S) 값을 계산하세요:
@@ -267,7 +267,7 @@ print(weights_sym_dequant.double().mean(), weights_sym_dequant.double().min(), w
 
 <div class="content-ad"></div>
 
-```markdown
+```
 # 비대칭 방식을 사용하여 양자화하기 - 정규 분포 데이터
 weights_assym_quant, weights_assym_dequant = assymmetric_quantize(weights)
 print(weights_assym_quant.double().mean(), weights_assym_quant.double().min(), weights_assym_quant.double().max())

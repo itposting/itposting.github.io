@@ -82,7 +82,7 @@ sudo apt install ubuntu-desktop gnome
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-GnomeDesktoponWSL-2UsingUbuntu_2.png)
 
 VcXsrv를 시작하면 전체 검은 화면이 표시될 수 있습니다. 이는 아직 내용이 채워지지 않은 전체 화면의 효과입니다. Alt-Tab을 눌러 WSL의 Ubuntu 명령줄로 전환할 수 있습니다.

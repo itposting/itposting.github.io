@@ -104,7 +104,7 @@ CNN의 현대 아키텍처는 얀 르쿤과 그의 동료들에 의해 1980년�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_12.png)
 
 마찬가지로, 남은 항목들은 동일한 공식을 사용하여 계산할 수 있습니다. 이 과정은 서로 다른 유형의 필터를 적용함으로써 반복되며, 각각이 이미지의 다른 특징을 캡처하는 것을 보여줍니다. 예를 들어, 필터 개수가 하나 이상이 될 수 있어서 스트라이드 개념이 도입됩니다.
@@ -116,7 +116,7 @@ CNN의 현대 아키텍처는 얀 르쿤과 그의 동료들에 의해 1980년�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![TinyML CNN](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_13.png)
 
 머신 러닝에서 일반적으로 사용되는 여러 유형의 패딩이 있습니다:
@@ -352,7 +352,7 @@ def test_model(model, x_test, y_test):
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 test_model(model, X_test, y_test)
 ```
@@ -383,7 +383,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_24.png)
 
 3.8.3— 예측 유효성 검사 결과
@@ -584,7 +584,7 @@ model_quant_float32.h 또는 model_quant_int8.h 파일을 열어서 다음에서
 
 아래와 같이 변경해주세요:
 
-```markdown
+```
 and model len
 
 ![image](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_29.png)
@@ -663,7 +663,7 @@ void loop() {
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_33.png)
 
 Full project in: [TinyML/13_CNN at main · thommaskevin/TinyML](https://github.com/thommaskevin/TinyML)

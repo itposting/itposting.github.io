@@ -11,7 +11,7 @@ link: "https://medium.com/@cstoppgmr/can-containers-use-swap-space-cdf9d73d8db5"
 ---
 
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-CanContainersUseSwapSpace_0.png)
 
 Linux을 잘 아시는 분이라면 스왑 공간에 익숙할 것입니다. 간단히 말하면, 스왑은 가상 메모리로 사용되는 디스크의 일부입니다. 물리적 메모리 (RAM)가 가득 찼을 때 RAM에서 드물게 사용되는 데이터를 일시적으로 스왑 공간으로 이동할 수 있습니다. 이렇게 함으로써 새로운 메모리 요구에 맞춰 RAM을 확보합니다.
@@ -132,7 +132,7 @@ mem_alloc을 실행하기 전에 스왑 공간 사용량을 확인하세요. 사
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-CanContainersUseSwapSpace_4.png)
 
 mem_alloc를 호출한 후에는 교체 공간이 실제로 사용 중입니다.

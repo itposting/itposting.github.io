@@ -130,7 +130,7 @@ order by 2 desc
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Customer Segmentation Report](/assets/img/2024-06-19-CustomerSegmentationReportwithSQLandPowerBI_4.png)
 
 2.3. What was the best month for sales in a specific year and how much was earned that month?
@@ -249,7 +249,7 @@ order by recency
 
 이러한 RFM 카테고리를 분석하여, 최근 구매를 보유한 최고의 고객은(rfm_recency=4), 가장 높은 금액을 지출한 고객(rfm_monetary=4) 및 가장 많은 주문을 가진 고객(rfm_frequency=4)으로 식별할 수 있습니다.
 
-```markdown
+```
 ---고객을 네 가지 세분류로 분류합니다.
 
 with customer_segment as

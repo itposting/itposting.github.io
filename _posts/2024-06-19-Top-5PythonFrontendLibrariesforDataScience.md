@@ -101,7 +101,7 @@ ReactPy로 시작하고 싶다면, 아래의 저의 글을 확인해보세요: h
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Python Frontend Libraries for Data Science](/assets/img/2024-06-19-Top-5PythonFrontendLibrariesforDataScience_6.png)
 
 PyQt는 유연한 Python 프로그래밍 언어와 강력한 Qt C++ 크로스 플랫폼 프레임워크를 원활하게 통합하여 강력한 GUI 모듈로 기능하는 플러그인 형태로 구현된 크로스 플랫폼 GUI 툴킷의 Python 바인딩입니다.

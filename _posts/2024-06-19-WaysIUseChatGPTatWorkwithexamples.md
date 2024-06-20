@@ -11,7 +11,7 @@ link: "https://medium.com/learning-data/ways-i-use-chatgpt-at-work-with-examples
 ---
 
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_0.png)
 
 나는 ChatGPT를 매일 업무 및 개인적인 질문에 사용합니다. 그것을 내 조수로 생각합니다. 내 대화가 시간 초과되어 잊어버리고 때때로 환각에 빠질 수 있기 때문에 항상 정확하지는 않습니다.
@@ -55,7 +55,7 @@ ChatGPT에게 엑셀 오류를 해결하거나, 엑셀 수식을 설명하거나
 
 아래는 Markdown 형식으로 변경한 표입니다.
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_3.png" />
 
 <img src="/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_4.png" />
@@ -131,7 +131,7 @@ ChatGPT 프롬프트 문구: "급여가 90백분위에 있다는 것은 무엇�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_9.png)
 
 ChatGPT가 말합니다: “급여가 90 백분위에 있다면, 그 급여 값은 특정 데이터 집합 내의 급여 중 90% 이상보다 크거나 같다는 것을 의미합니다. 다시 말해, 이는 해당 그룹의 사람들 중 90%의 급여보다 높다는 것을 나타냅니다.”
@@ -163,7 +163,7 @@ ChatGPT에게 내 상황을 설명하고 물었던 내 문장: "나는 데이터
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image 1](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_12.png)
 
 ![image 2](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_13.png)
@@ -175,7 +175,7 @@ ChatGPT가 제 회의 생산성을 높이기 위한 일반적인 지침을 제�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_14.png)
 
 ![Image 2](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_15.png)
@@ -197,7 +197,7 @@ ChatGPT gave suggestions that hadn’t occurred to me, like discussing frequency
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_18.png)
 
 ChatGPT가 제게 일할 때 생산성을 높이는 방법을 나열했어요. 특히, 다음과 같은 것들이 도움이 되었어요: 가능한 경우 회의를 최소화하고 동료에게 간결한 이메일을 보내달라고 요청하는 것, 작업 사이에 짧은 휴식을 가지고 에너지를 충전하는 것, 그리고 업무를 위임하는 것입니다.
@@ -223,7 +223,7 @@ ChatGPT의 초기 제안 목록이 마음에 들지 않는다면 "시간 관리�
 
 제 ChatGPT 프롬프트: "[빈칸에 나열할 목록 삽입]을(를) 알파벳 순으로 정렬하세요."
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_20.png)
 
 ![이미지](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_21.png)

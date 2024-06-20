@@ -82,7 +82,7 @@ USBSTOR 장치인 VID_0781 및 PID_5581을 계속 검사할 것입니다. 이전
 <div class="content-ad"></div>
 
 아래는 Markdown 형식으로 변환되어 있습니다:
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-WindowsForensicsUSBDeviceProfiling_4.png)
 
 $iSerialNumber 키를 검사하면 다음과 같은 추가 정보가 확인됩니다:

@@ -69,7 +69,7 @@ GPT-4o로 전환하여 GPT-4와 비교해서 성능이 어떤지 테스트해 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-19-WhatGPT-4omeansfordesigners_1.png)
 
 I found a random draft of an app design online and asked ChatGPT (with the GPT-4o model) to provide me with some suggestions for improving the UI design.

@@ -55,7 +55,7 @@ v0.13에서 일어난 크고 작은 수정 사항 가운데, 아마 가장 주�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 bash <(curl -sL https://hkdb.github.io/app/getapp.sh)
 ```
 

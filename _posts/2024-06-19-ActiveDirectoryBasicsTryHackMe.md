@@ -190,7 +190,7 @@ Sophie의 데스크톱에서 발견된 플래그는 무엇입니까?
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-06-19-ActiveDirectoryBasicsTryHackMe_5.png)
 
 Now to set the password, type this command:
@@ -201,11 +201,11 @@ Set-ADAccountPassword sophie -Reset -NewPassword (Read-Host -AsSecureString -Pro
 ![Image 2](/assets/img/2024-06-19-ActiveDirectoryBasicsTryHackMe_6.png)
 
 Here I have set the password: abcD12345*
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-06-19-ActiveDirectoryBasicsTryHackMe_7](/assets/img/2024-06-19-ActiveDirectoryBasicsTryHackMe_7.png)
 
 ![2024-06-19-ActiveDirectoryBasicsTryHackMe_8](/assets/img/2024-06-19-ActiveDirectoryBasicsTryHackMe_8.png)
@@ -213,7 +213,7 @@ Here I have set the password: abcD12345*
 이제 우리가 플래그를 획득했어요. 그래서 우리는 소피가 우리가 제공한 비밀번호를 사용하지 못하게 하려고 해요. 소피가 계정에 로그인할 때 재설정 옵션을 표시하도록 소피의 계정을 Phillips 계정에서 다음 명령을 사용해서 설정할 거예요: Set-ADUser -ChangePasswordAtLogon $true -Identity sophie -Verbose
 
 ![2024-06-19-ActiveDirectoryBasicsTryHackMe_9](/assets/img/2024-06-19-ActiveDirectoryBasicsTryHackMe_9.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -438,6 +438,5 @@ Trees
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-19-ActiveDirectoryBasicsTryHackMe_23](/assets/img/2024-06-19-ActiveDirectoryBasicsTryHackMe_23.png)
-```

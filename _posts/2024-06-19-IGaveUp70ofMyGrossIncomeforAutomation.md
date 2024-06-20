@@ -139,7 +139,7 @@ Cannagar Tools은 앞으로도 부수 수입원이 될 가능성이 높은데, �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-IGaveUp70ofMyGrossIncomeforAutomation_5.png)
 
 사람들이 나를 억만장자라고 생각하지 않길 바래요.

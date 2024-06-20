@@ -11,7 +11,7 @@ link: "https://medium.com/mage-ai/unleash-the-magic-of-mage-global-hooks-9fee337
 ---
 
 
-```markdown
+```
 ![Global hooks in Mage](/assets/img/2024-06-20-UnleashtheMagicofMageGlobalHooks_0.png)
 
 # TLDR
@@ -135,7 +135,7 @@ Mage는 개발자들이 대부분의 요구 사항을 선택하거나 전환할 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-UnleashtheMagicofMageGlobalHooks_8.png)
 
 # 결론

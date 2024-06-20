@@ -258,7 +258,7 @@ collect! 매크로는 submit!()를 통해 등록된 모든 Component 객체를 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-NielslearnsRust4ThreedifferentwaysmaketheVMmodular_1.png)
 
 특정 링크된 섹션에 코드를 배치하여 마법이 일어납니다. 인벤토리 크레이트의 소스를 살펴보면(조밀하지만 500줄 미만이고 그 중 절반은 주석입니다), 생성될 링커 섹션이 운영 체제에 따라 다르다는 것을 알 수 있습니다. 리눅스의 경우 .init_array가 되고, 윈도우의 경우 .CRT$XCU가 되며 macOS의 경우 __DATA,__mod_init_func가 됩니다. 각각은 main() 함수에 진입하기 전에 실행될 코드를 포함하고 있습니다.

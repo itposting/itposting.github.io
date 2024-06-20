@@ -12,7 +12,7 @@ link: "https://medium.com/towards-artificial-intelligence/python-streamlit-and-g
 
 
 
-```markdown
+```
 ![Python Streamlit](/assets/img/2024-06-19-PythonStreamlitAndGPT4HowToMapUNHCRRefugeeData_0.png)
 
 파이썬 Streamlit은 상호 작용적인 웹 인터페이스를 만드는 놀라운 프레임워크입니다. GPT-4는 빠르게 작동하는 Streamlit 코드를 만들어 줄 수 있어요.
@@ -55,7 +55,7 @@ UNHCR(UN High Commission for Refugees)는 전 세계적으로 난민의 움직�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-PythonStreamlitAndGPT4HowToMapUNHCRRefugeeData_2.png)
 
 이 프로젝트에 관심 있는 데이터 필드는 다음과 같습니다:

@@ -11,7 +11,7 @@ link: "https://medium.com/@timothydmoody/how-to-setup-the-coral-dual-edge-tpu-fo
 ---
 
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_0.png)
 
 # 전체 비디오 튜토리얼
@@ -106,7 +106,7 @@ sudo systemctl status mosquitto
 
 아래와 같이 테이블 태그를 Markdown 형식으로 변경해주세요.
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_5.png)
 
 MQTT 구성 파일을 편집합니다.
@@ -120,7 +120,7 @@ vim /etc/mosquitto/mosquitto.conf
 
 <div class="content-ad"></div>
 
-```markdown
+```
 allow_anonymous true
 listener 1883
 ```
@@ -388,7 +388,7 @@ curl -sS https://gist.githubusercontent.com/dataslayermedia/fb20aae9dea64bca286b
 
 아래는 표 형식을 변경한 것입니다.
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_11.png" />
 
 Coral AI Dual Edge TPU
@@ -400,7 +400,7 @@ Zima Board
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Dual Edge TPU Adapter Low Profile](/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_13.png)
 
 ![Dual Edge TPU Adapter Low Profile](/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_14.png)

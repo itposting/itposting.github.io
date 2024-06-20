@@ -41,7 +41,7 @@ Twitter (지금은 X)와 LinkedIn의 경우, 공유 기능이 시스템 전체 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image 1](/assets/img/2024-06-19-DidApplejustdeclarewaronOpenAI_3.png)
 
 WWDC 키노트에서, 멋진 크레이그 페데리기가 Siri의 지연 때문에 ChatGPT와 주목을 나눠야 한다는 사실에 자신을 젠더고 있을 것으로 의심했습니다 (상당히 큰 선두를 잃은 후).

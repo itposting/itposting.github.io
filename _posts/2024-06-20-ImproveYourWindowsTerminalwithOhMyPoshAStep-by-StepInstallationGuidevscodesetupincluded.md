@@ -115,7 +115,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 만약 이와 같은 오류가 vscode에서 발생한다면:
 
-```markdown
+```
 ![Error](/assets/img/2024-06-20-ImproveYourWindowsTerminalwithOhMyPoshAStep-by-StepInstallationGuidevscodesetupincluded_3.png)
 ```
 

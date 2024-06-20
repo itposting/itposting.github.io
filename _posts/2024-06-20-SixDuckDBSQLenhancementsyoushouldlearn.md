@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/six-duckdb-sql-enhancements-you-should-le
 ---
 
 
-```markdown
+```
 ![Image](/assets/img/2024-06-20-SixDuckDBSQLenhancementsyoushouldlearn_0.png)
 
 DuckDB의 SQL은 원래 PostgreSQL을 기반으로 하였으며, 이는 모방하기에 좋은 SQL 버전입니다. 그러나 시간이 흐름에 따라 DuckDB는 SQL 제공에 몇 가지 유용한 추가 기능을 도입하여 여러분의 삶을 조금 더 쉽게 만들었습니다. 다른 보다 인기 있는 RDBMS들이 언젠가는 이러한 유용한 SQL 확장을 본뜬다면 전혀 놀라지 않을 것입니다.
@@ -98,7 +98,7 @@ db.sql("INSERT INTO purchases VALUES (12345, 2019, 15000), (12345,2020, 19500), 
 db.sql("SELECT * FROM purchases")
 ```
 
-```markdown
+```
 | productID | year  | sales |
 |-----------|-------|-------|
 |     12345 |  2019 | 15000 |

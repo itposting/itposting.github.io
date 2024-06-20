@@ -21,7 +21,7 @@ HUSKY는 숫자, 테이블, 및 기반 지식 추론을 포함하는 다양한 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-MeetHUSKYANewAgentOptimizedforMulti-StepReasoning_1.png)
 
 # HUSKY 내부

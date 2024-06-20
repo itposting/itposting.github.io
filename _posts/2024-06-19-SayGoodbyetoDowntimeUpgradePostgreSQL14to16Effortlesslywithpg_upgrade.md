@@ -149,7 +149,7 @@ exit
 
 <div class="content-ad"></div>
 
-```markdown
+```
 # 클러스터 초기화
 sudo su
 yum install postgresql16-server postgresql16
@@ -167,7 +167,7 @@ sudo systemctl start postgresql-16
 
 우주의 장엄한 공연 중 하이라이트 — 멋진 pg_upgrade 유틸리티! 버전 14에서 우주의 PostgreSQL 16로의 원활한 전환을 경험해보세요.
 
-```markdown
+```
 /usr/pgsql-16/bin/pg_upgrade \
   -b /usr/pgsql-14/bin/ \
   -B /usr/pgsql-16/bin/ \

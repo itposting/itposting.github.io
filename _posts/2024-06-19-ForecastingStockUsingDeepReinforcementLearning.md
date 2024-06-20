@@ -78,7 +78,7 @@ display(data)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Forecasting Stock Using Deep Reinforcement Learning - 0](/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_0.png)
 
 ![Forecasting Stock Using Deep Reinforcement Learning - 1](/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_1.png)
@@ -760,7 +760,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_12.png)
 
 이 코드는 Python으로 작성되었으며 주식 시장 예측을 위해 DDQN 모델과 '매수 및 보유' 전략의 성능을 비교하는 플롯을 생성하는 데 사용됩니다. Matplotlib 라이브러리의 'plt' 모듈을 사용하여 플롯을 생성합니다.
@@ -939,7 +939,7 @@ dddqn, total_losses, total_rewards = train_dddqn(Environment(train), epoch_num=2
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_13.png)
 
 이 코드 라인은 훈련 데이터셋을 사용하여 거래 환경에서 Dueling Double Deep Q-Network (Dueling DDQN)을 훈련하는 train_dddqn() 함수를 호출합니다. 이 함수는 두 개의 인수를 사용합니다:
@@ -979,7 +979,7 @@ train_profits, test_profits = plot_train_test_by_q(Environment(train), Environme
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![plot_train_test_by_q](/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_15.png)
 
 "plot_train_test_by_q" 함수 호출은 훈련된 Dueling Double DQN(DDDQN) 모델의 성능을 훈련 및 테스트 데이터에 대해 평가하고, 거래 과정에서 에이전트가 생성한 이익을 시각화하는 데 사용됩니다.

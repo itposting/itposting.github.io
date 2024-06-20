@@ -11,7 +11,7 @@ link: "https://medium.com/@alvaro_72265/the-misunderstood-ai-wrapper-opportunity
 ---
 
 
-```markdown
+```
 ![AI Wrapper Image](/assets/img/2024-06-19-ThemisunderstoodAIWrapperOpportunity_0.png)
 
 "AI Wrapper"이란 용어가 익숙하지 않은 분들을 위해, 이 용어는 지난 몇 년 동안 기술 생태계에서 상당히 인기를 끌었습니다. 기존 AI 모델이나 API를 활용하여 구체적인 기능을 제공하는 경량 애플리케이션이나 서비스를 가리키는 비격식적인 용어입니다. 일반적으로 이러한 애플리케이션을 만드는 데 들어가는 노력이나 복잡성이 상대적으로 적습니다.

@@ -11,7 +11,7 @@ link: "https://medium.com/@pietrowicz-eric/how-to-flash-the-arduino-bootloader-t
 ---
 
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-HowtoFlashtheArduinoBootloadertoaCustomnRF52832Design_0.png)
 
 내가 사용 중인 사용자 정의 nRF52832 보드 디자인 작업 중이었고, 장치에 데모 소프트웨어를 프로그래밍하고 싶었습니다. 제품 보드는 Zephyr RTOS를 실행하지만 Arduino로 빠르고 더러운 프로토타입 환경을 원했습니다.

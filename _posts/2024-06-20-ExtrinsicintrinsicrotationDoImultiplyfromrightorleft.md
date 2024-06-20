@@ -97,7 +97,7 @@ Tada! 저희는 x-축 주위의 회전을 위한 회전 행렬을 유도했어�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![](/assets/img/2024-06-20-ExtrinsicintrinsicrotationDoImultiplyfromrightorleft_7.png)
 
 우리는 처음에 Rotation1 행렬을 사용하여 원래의 전역 좌표계를 회전합니다. 그런 다음, Rotation2 행렬을 사용하여 결과 좌표계를 회전하고 마지막으로 세 번째 회전 행렬을 사용합니다. 물론, 행렬 곱셈은 가교적이기 때문에 괄호는 그저 명확하게 문장을 만들기 위함입니다: 점을 변환하려면 오른쪽에서 왼쪽으로 읽고 따라서 먼저 Rotation1을 적용한 다음 Rotation2, 마지막으로 Rotation3을 적용합니다. 이에 대해 불확실함을 느끼신다면, 꼭 3Blue1Brown의 이 비디오를 확인하십시오.
@@ -134,7 +134,7 @@ P₂ 점은 원래 좌표계와 새롭게 회전된 파란색 좌표계 A와 관
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-ExtrinsicintrinsicrotationDoImultiplyfromrightorleft_14.png)
 
 그래서, 이게 우리에게 무엇을 말해주고 있는 걸까요? 다음 연습을 상상해보세요: 원래 좌표계 xyz가 있고 이것을 z축을 중심으로 45도 회전하여 좌표계 A를 얻는다고 합시다. 그런 다음 A를 중심으로(z축을 중심으로) 다시 45도 회전하여 좌표계 B를 얻습니다. 여러분의 역할은 B를 기준으로 한 점이 주어졌을 때, 그 점이 원래 좌표계에 대해 어떤 좌표를 갖는지 찾는 것입니다.

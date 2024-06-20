@@ -11,7 +11,7 @@ link: "https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture
 ---
 
 
-```markdown
+```
 ![Container Architecture](/assets/img/2024-06-20-DeepDiveintoDockerContainersArchitectureandFeatures_0.png)
 
 # 개요

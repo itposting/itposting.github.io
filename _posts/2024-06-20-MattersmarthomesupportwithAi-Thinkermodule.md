@@ -34,7 +34,7 @@ Zigbee, Z-Wave, Bluetooth LE Mesh 등의 프로토콜을 기반으로 하는 IoT
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Device Architecture](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_1.png)
 
 ## Matter의 기기 아키텍처 및 어떤 장치들이 Matter에 액세스할 수 있는가
@@ -116,7 +116,7 @@ export BOUFFALOLAB_SDK_ROOT=/opt/bouffalolab_sdk
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_7.png)
 
 ![Image 2](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_8.png)
@@ -141,7 +141,7 @@ export BOUFFALOLAB_SDK_ROOT=/opt/bouffalolab_sdk
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_12.png)
 
 ![Image 2](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_13.png)

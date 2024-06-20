@@ -158,7 +158,7 @@ tools = [random_number,python_repl_tool]
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 from langchain.agents import AgentExecutor, create_openai_tools_agent
 from langchain_core.messages import BaseMessage, HumanMessage

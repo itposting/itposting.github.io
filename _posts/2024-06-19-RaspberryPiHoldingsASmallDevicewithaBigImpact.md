@@ -11,7 +11,7 @@ link: "https://medium.com/@rahulmmulchandani/raspberry-pi-holdings-a-small-devic
 ---
 
 
-```markdown
+```
 ![Raspberry Pi](/assets/img/2024-06-19-RaspberryPiHoldingsASmallDevicewithaBigImpact_0.png)
 
 기술 세계에서 혁신은 성공의 열쇠이며, Raspberry Pi Holdings는 이 분야의 마스터임을 입증했습니다. 컴퓨터 과학자 에벤 업톤이 2008년에 설립한 Raspberry Pi는 학교와 개발도상국에서 기초 컴퓨터 과학 교육을 촉진하기 위한 작은 프로젝트로 시작했습니다. 겸손한 시작에서 회사는 지수적으로 성장하여 최근 런던 증권 거래소에서 성공적인 기업공개를 선보였습니다.

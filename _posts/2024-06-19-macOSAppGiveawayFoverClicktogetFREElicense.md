@@ -43,7 +43,7 @@ Dropzone, Dropover, 그리고 Yoink 같은 "shelf" 앱과 유사하지만 몇 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![2024-06-19-macOSAppGiveawayFoverClicktogetFREElicense_1.png](/assets/img/2024-06-19-macOSAppGiveawayFoverClicktogetFREElicense_1.png)
 
 - 선반 내에서 파일 및 폴더의 이름을 바꿀 수 있어요.
@@ -55,7 +55,7 @@ Dropzone, Dropover, 그리고 Yoink 같은 "shelf" 앱과 유사하지만 몇 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-macOSAppGiveawayFoverClicktogetFREElicense_3.png)
 
 - 스마트 검색: 폴더 이름 뿐만 아니라 경로도 확인합니다.

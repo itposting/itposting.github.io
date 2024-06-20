@@ -13,7 +13,7 @@ link: "https://medium.com/towards-data-science/5-useful-visualizations-to-enhanc
 
 아래는 Markdown 형식으로 표를 변경한 코드입니다.
 
-```markdown
+
 ![Visualization](/assets/img/2024-06-19-5UsefulVisualizationstoEnhanceYourAnalysis_0.png)
 
 # 소개
@@ -21,7 +21,7 @@ link: "https://medium.com/towards-data-science/5-useful-visualizations-to-enhanc
 Seaborn은 오랫동안 사용되어 왔습니다.
 
 비전문가들도 강력한 그래픽을 구축할 수 있도록 도와주기 때문에, 데이터 시각화 라이브러리 중에서 가장 유명하고 많이 사용되는 것 중 하나라고 생각합니다. 또한 통계에 근거한 통찰력을 얻는 데 도움이 되기 때문입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -63,7 +63,7 @@ df.head(3)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![](/assets/img/2024-06-19-5UsefulVisualizationstoEnhanceYourAnalysis_1.png)
 
 Now let's talk about the 5 visualizations.
@@ -71,7 +71,7 @@ Now let's talk about the 5 visualizations.
 ## 1. Stripplot
 
 The first plot picked is the stripplot. And you will quickly see why this is interesting. If we use this simple line of code, it will display the following viz.
-```
+
 
 <div class="content-ad"></div>
 
@@ -185,7 +185,7 @@ sns.lmplot(data=df, x="G1", y='G3')
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-5UsefulVisualizationstoEnhanceYourAnalysis_8.png" />
 
 하지만 이 함수의 장점이 최고라고 할 수는 없어요. 우리는 색조를 추가하여 다중 수준 회귀를 모의할 수 있어요. 이 경우에는 두 성별이 유사한 성능을 발휘하고 있어서, 그 범주에 기반한 계층 선형 모델을 만드는 것이 의미가 없겠죠.
@@ -195,7 +195,7 @@ sns.lmplot(data=df, x="G1", y= 'G3', hue='sex')
 ```
 
 <img src="/assets/img/2024-06-19-5UsefulVisualizationstoEnhanceYourAnalysis_9.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -230,7 +230,7 @@ Grade 1로 최종 성적을 예측하는 선형 모델의 잔차를 보면 거�
 ![residual plot](/assets/img/2024-06-19-5UsefulVisualizationstoEnhanceYourAnalysis_11.png)
 
 # 떠나시기 전에
-```
+
 
 <div class="content-ad"></div>
 

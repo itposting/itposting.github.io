@@ -11,7 +11,7 @@ link: "https://medium.com/@lewisjdoyle/the-choice-between-mac-and-a-pc-is-about-
 ---
 
 
-```markdown
+```
 ![Mac vs PC](/assets/img/2024-06-19-ThechoicebetweenMacandaPCisabouttochange_0.png)
 
 맥 대 PC는 시대가 변해도 계속 논쟁이 될 주제 중 하나입니다. 왜냐하면 이것은 주관적인 결정이기 때문이죠.

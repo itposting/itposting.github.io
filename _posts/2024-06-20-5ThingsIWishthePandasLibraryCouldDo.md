@@ -140,7 +140,7 @@ DataTable을 사용하면 여러 CSV 파일을 효율적으로 읽을 수 있습
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-5ThingsIWishthePandasLibraryCouldDo_1.png)
 
 For instance, consider an experiment to study the correlation between DataFrame size and the run-time to execute a function on the DataFrame.
@@ -247,7 +247,7 @@ Pandas는 일상적인 탭형 데이터 분석, 관리 및 처리 작업에 놀�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-5ThingsIWishthePandasLibraryCouldDo_3.png)
 
 Visit us at DataDrivenInvestor.com

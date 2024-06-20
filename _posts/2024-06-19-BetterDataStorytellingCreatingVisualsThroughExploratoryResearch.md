@@ -11,14 +11,14 @@ link: "https://medium.com/data-storytelling-corner/better-data-storytelling-crea
 ---
 
 
-```markdown
+
 ![Better Data Storytelling - Creating Visuals Through Exploratory Research](/assets/img/2024-06-19-BetterDataStorytellingCreatingVisualsThroughExploratoryResearch_0.png)
 
 데이터 시각화와 스토리텔링을 통해 명확하고 간결한 이미지를 제시하면 의견을 전달하는 데 큰 가치가 있습니다.
 내닌 Yau가 그의 새 책(Visualize This, 2판)에서 강조한 것처럼, 데이터를 효율적이고 정확하게 제시하기 위해 항상 노력한다면 대부분의 경우 막대 차트를 사용해야 합니다. 대부분의 사람들이 막대 차트를 보고 비교적 쉽게 해석할 수 있습니다. 양적으로 매우 효과적입니다.
 
 하지만 어떻게 하면 당신의 데이터를 돋보이게 만들 수 있을까요? 춤추게 할 수 있을까요? 청중을 행동으로 이끄는 데 무엇을 할 수 있을까요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -226,7 +226,7 @@ Cole Nussbaumer-Knaflic은 2015년에 출간된 대표적인 책인 'Storytellin
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Better Data Storytelling: Creating Visuals Through Exploratory Research](/assets/img/2024-06-19-BetterDataStorytellingCreatingVisualsThroughExploratoryResearch_11.png)
 
 매우 다채롭고 인상적이지만 동시에 매우 복잡합니다. 이런 차트를 소화하는 데는 많은 시간이 걸릴 수 있습니다.
@@ -234,7 +234,7 @@ Cole Nussbaumer-Knaflic은 2015년에 출간된 대표적인 책인 'Storytellin
 하지만 Python Plotly와 같은 현대 데이터 시각화 도구의 큰 이점 중 하나는 사용자 상호작용을 허용한다는 점입니다. 이 시각화(다시 말해 Python Plotly로 만든 것)에서 각 연도를 클릭하여 데이터를 자세히 살펴볼 수 있습니다.
 
 예를 들어, 2023년을 클릭하면 해당 연도의 데이터만 볼 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 

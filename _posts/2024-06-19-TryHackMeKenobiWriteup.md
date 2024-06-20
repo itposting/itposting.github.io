@@ -33,7 +33,7 @@ nmap을 사용하여 기계를 SMB 공유에 대해 열거할 수 있습니다.
 
 Nmap은 다양한 네트워킹 작업을 자동화하여 실행할 수 있는 능력을 가지고 있어요. 공유를 열거하는 스크립트가 있어요!
 
-```markdown
+```
 nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.3.132
 ```
 
@@ -63,7 +63,7 @@ smbclient //`machine’s ip`/anonymous
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-TryHackMeKenobiWriteup_4.png)
 
 파일: log.txt
@@ -75,7 +75,7 @@ smbget -R smb://`머신의 아이피`/anonymous
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-TryHackMeKenobiWriteup_5.png)
 
 공유된 파일을 열어보세요. 발견된 몇 가지 흥미로운 정보들이 있습니다.
@@ -139,7 +139,7 @@ searchsploit ProFTPD `버전 번호`
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-TryHackMeKenobiWriteup_8.png)
 
 Exploits running: 4
@@ -171,7 +171,7 @@ ls -la /mnt/kenobiNFS
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Screenshot 10](/assets/img/2024-06-19-TryHackMeKenobiWriteup_10.png)
 
 We now have a network mount on our deployed machine! We can go to `/var/tmp` and get the private key then login to Kenobi’s account.
@@ -259,7 +259,7 @@ find / -perm -u=s -type f 2>/dev/null
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지1](/assets/img/2024-06-19-TryHackMeKenobiWriteup_19.png)
 
 ![이미지2](/assets/img/2024-06-19-TryHackMeKenobiWriteup_20.png)
@@ -271,7 +271,7 @@ find / -perm -u=s -type f 2>/dev/null
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-TryHackMeKenobiWriteup_21.png)
 
 Root Flag: 177b3cd8562289f37382721c28381f02

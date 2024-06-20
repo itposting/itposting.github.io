@@ -41,7 +41,7 @@ link: "https://medium.com/@researchgraph/automated-knowledge-graph-construction-
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Automated Knowledge Graph Construction with Large Language Models](/assets/img/2024-06-20-AutomatedKnowledgeGraphConstructionwithLargeLanguageModels_1.png)
 
 Further research revealed that despite possessing more fundamental world knowledge, LLMs struggled to recall relational facts and deduce relationships between actions and events. Despite possessing numerous advantages, LLMs also suffer from challenges such as:

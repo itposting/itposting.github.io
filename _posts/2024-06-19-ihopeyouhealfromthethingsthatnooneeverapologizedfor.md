@@ -11,7 +11,7 @@ link: "https://medium.com/@andengxzs_/i-hope-you-heal-from-the-things-that-no-on
 ---
 
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-ihopeyouhealfromthethingsthatnooneeverapologizedfor_0.png)
 
 이런 경험 해 본 적 있나요? 앞으로 나아가고 상처를 극복하려는 마음을 느끼지만, 아직 미해결된 상처와 배신의 무게로 인해 막혀 있는 느낌이 들 때가 있지 않나요? 진짜 지칠 때가 있죠.

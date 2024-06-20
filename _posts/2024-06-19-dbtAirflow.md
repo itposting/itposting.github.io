@@ -180,7 +180,7 @@ with DAG(
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Screenshot 1](/assets/img/2024-06-19-dbtAirflow_3.png)
 
 By the end of this first iteration, we were able to meet half of the requirements we specified during ideation:

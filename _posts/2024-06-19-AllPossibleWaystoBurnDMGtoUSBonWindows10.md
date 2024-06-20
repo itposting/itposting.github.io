@@ -164,10 +164,10 @@ macOS Unlocker를 다운로드하고 나면 win-install.cmd를 마우스 오른�
 
 **단계 9:** 이제 메모장 아래로 스크롤하여 다음 코드를 추가한 후 저장을 클릭하세요.
 
-```
+
 smbios.reflectHost = “TRUE”
 hw.model = “MacBookPro14,3”
-```
+
 
 <div class="content-ad"></div>
 

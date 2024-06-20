@@ -486,7 +486,7 @@ if __name__ == '__main__':
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-20-ObjectDetectionforImagesandVideoswithTensorFlowandOpenCV_4.png)
 
 ![Image 2](/assets/img/2024-06-20-ObjectDetectionforImagesandVideoswithTensorFlowandOpenCV_5.png)

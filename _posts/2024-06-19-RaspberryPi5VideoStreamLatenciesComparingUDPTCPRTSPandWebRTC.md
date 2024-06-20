@@ -41,7 +41,7 @@ link: "https://medium.com/@gektor650/comparing-video-stream-latencies-raspberry-
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-RaspberryPi5VideoStreamLatenciesComparingUDPTCPRTSPandWebRTC_1.png)
 
 - 라즈베리 파이 5
@@ -201,7 +201,7 @@ ffplay tcp://라즈베리파이IP주소:1234 -vf "setpts=N/30" -fflags nobuffer 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-RaspberryPi5VideoStreamLatenciesComparingUDPTCPRTSPandWebRTC_11.png)
 
 차량에 적용하면 그 지연 시간으로 인해 차량이 필드 밖으로 멀리 나갈 것을 볼 수 있습니다. 200야드 또는 190미터입니다. 농담이 아닙니다.

@@ -21,7 +21,7 @@ link: "https://medium.com/better-programming/response-to-open-source-creative-ge
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![My Response to Open Source Creative Generative AI](/assets/img/2024-06-19-MyResponsetoOpenSourceCreativeGenerativeAI_0.png)
 
 # 낮은 임금, 부탁드립니다
@@ -183,7 +183,7 @@ AI 예술 생성기가 완벽한 복제본을 생성하지 않기 때문에 저�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-MyResponsetoOpenSourceCreativeGenerativeAI_1.png)
 
 # 표현의 한계가 없어진다

@@ -46,7 +46,7 @@ link: "https://medium.com/@vikramaditya.nishant/how-i-made-a-fully-3d-printed-ar
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image1](/assets/img/2024-06-20-HowImadeafully3d-printedARCrocketandqualifiedfornationals_1.png)
 
 To enhance the strength of the fin can tube, which lacks internal structure (only containing parachutes), we incorporated helical ribs.
@@ -58,7 +58,7 @@ To reinforce each part without significant weight gain, we integrated fillets ac
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Rocket](/assets/img/2024-06-20-HowImadeafully3d-printedARCrocketandqualifiedfornationals_3.png)
 
 The shock cord mount broke (left). We solved this by using a slicer modifier to add 4 perimeters (right). We did the same with the payload tube.

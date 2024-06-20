@@ -37,7 +37,7 @@ NDVI 및 “표준” 위양색을 위해 B5 (근적외선), B4 (적색) 및 B3 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WorkingWithLandsatSurfaceReflectanceDatainQGIS_1.png)
 
 다중 스펙트럼(색상) 이미지를 만들려면 "가상 래스터"를 생성하세요.

@@ -134,7 +134,7 @@ AI: Pwnagotchi는 기본적으로 AUTO 모드에서 이 모드로 전환해요. 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-PwnagotchiAVirtualPetThatEatsWi-FiHandshakesAsTreats_9.png)
 
 기기를 데이터 케이블을 사용하여 연결하고 명령 프롬프트를 통해 ssh 포트에 액세스하면 시스템에 액세스할 수 있습니다. 사용되는 OS는 데비안 배포판과 유사한 Raspberry Pi OS입니다. Linux 사용자라면 이 시스템에 익숙할 것입니다.

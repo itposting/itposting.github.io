@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/graph-visualization-7-steps-from-
 ---
 
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-GraphVisualization7StepsfromEasytoAdvanced_0.png" />
 
 일부 데이터 유형(예: 소셜 네트워크 또는 지식 그래프)는 그래프 형식으로 "원래" 표현될 수 있습니다. 이 유형의 데이터 시각화는 도전적일 수 있으며, 이를 위한 보편적인 레시피는 없습니다. 이 기사에서는 오픈 소스 NetworkX 라이브러리를 사용한 그래프 시각화의 여러 단계를 보여 드리겠습니다.
@@ -80,7 +80,7 @@ print 출력을 보면 레이아웃 자체가 좌표를 가진 사전(dictionary
 
 이미지 태그를 Markdown 형식으로 변경하세요.
 
-```markdown
+```
 ![Graph Visualization](/assets/img/2024-06-19-GraphVisualization7StepsfromEasytoAdvanced_2.png)
 ```
 
@@ -264,7 +264,7 @@ nx.draw_networkx_labels(G.subgraph(node_people), pos=pos, font_weight="normal", 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![그래프 시각화](/assets/img/2024-06-19-GraphVisualization7StepsfromEasytoAdvanced_9.png)
 
 ## 6. 노드 속성

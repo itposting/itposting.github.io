@@ -39,7 +39,7 @@ git이 제공한 해결책은 현재 폴더를 safe.directory 전역 변수에 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 사용자 정보
 ----------------
 사용자 이름  SID

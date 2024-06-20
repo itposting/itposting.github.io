@@ -59,7 +59,7 @@ FireVision Historical Maps의 아래 화재 크기 분포를 보면 대규모 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![2024-06-20-DelvingintoWildfires_8.png](/assets/img/2024-06-20-DelvingintoWildfires_8.png)
 
 화재의 특성은 과거 한 해 동안 어떻게 변했을까요? 다음 세 가지 차트(그리고 몇 가지 추가 데이터)는 2011년부터 2020년까지의 화재에 대해 몇 가지 중요한 사항을 강조합니다:
@@ -73,7 +73,7 @@ FireVision Historical Maps의 아래 화재 크기 분포를 보면 대규모 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Delving into Wildfires 10](/assets/img/2024-06-20-DelvingintoWildfires_10.png)
 
 ![Delving into Wildfires 11](/assets/img/2024-06-20-DelvingintoWildfires_11.png)

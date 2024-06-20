@@ -11,7 +11,7 @@ link: "https://medium.com/@rodolfovmartins/how-to-install-mysql-on-mac-959df86a5
 ---
 
 
-```markdown
+```
 ![](/assets/img/2024-06-19-HowtoInstallMySQLonMac_0.png)
 
 MySQL은 웹사이트, 애플리케이션, 소프트웨어의 데이터를 관리하는 인기있는 관계형 데이터베이스 관리 시스템입니다. 맥에서 작업하는 개발자라면, 여러분의 기계에 MySQL을 설치하고 싶다면 다음의 간단한 단계를 따를 수 있습니다.
@@ -23,7 +23,7 @@ Homebrew는 macOS용 패키지 관리자로, 소프트웨어 패키지를 쉽게
 
 <div class="content-ad"></div>
 
-```markdown
+```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 

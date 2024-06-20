@@ -11,7 +11,7 @@ link: "https://medium.com/@josejgp/testing-my-new-homelab-427e433f1ca9"
 ---
 
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-TestingmynewHomeLab_0.png)
 
 새로운 홈랩을 설정했어요. 계속 공부를 하기 위한 아이디어인데, 설정은 아주 간단해요. 인터넷에서 볼 수 있는 멋진 홈랩들과는 거리가 먼데, 누구나 출발점으로 달성할 수 있는 것이에요.

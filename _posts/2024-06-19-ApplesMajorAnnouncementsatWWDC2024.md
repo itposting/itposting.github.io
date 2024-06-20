@@ -61,7 +61,7 @@ Apple은 iPadOS 18을 통해 태블릿과 컴퓨터 사이의 구분을 희미�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-ApplesMajorAnnouncementsatWWDC2024_3.png)
 
 # watchOS 11: 건강 및 피트니스; 혁신
@@ -69,7 +69,7 @@ Apple은 iPadOS 18을 통해 태블릿과 컴퓨터 사이의 구분을 희미�
 Apple Watch는 watchOS 11을 통해 건강, 피트니스 및 연결성에 중점을 둔 다양한 새로운 기능을 제공하며 차트를 선도하고 있습니다.
 
 ## watchOS 11의 주요 기능:
-```
+
 
 <div class="content-ad"></div>
 

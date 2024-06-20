@@ -21,7 +21,7 @@ link: "https://medium.com/towards-data-science/a-python-engineers-introduction-t
 
 <div class="content-ad"></div>
 
-호기심이 있는 분들을 위해 새로운 내부 매트릭스에 대해 알고 싶은 경우(그렇지 않으면 이 단락을 건너뛰어도 괜찮아요) r과 l은 오른쪽과 왼쪽 측면의 클리핑 평면이며, 사진의 너비에 관한 시야에 포함될 수 있는 지점을 기본적으로 나타내고 있습니다. t와 b는 상단과 하단 클리핑 평면이고, N은 가까운 클리핑 평면(투영될 점들이 있는 곳)이며, f는 먼 클리핑 평면입니다. 더 자세한 정보는 scratchapixel의 챕터들이 여기에서 매우 유익하다고 생각합니다(https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/opengl-perspective-projection-matrix.html). 이것은 또한 점들을 정규화된 장치 좌표( -1과 1 사이)로 반환하며, 이를 픽셀 좌표로 투영합니다. 이론에서 벗어나서 우리의 작업은 같습니다, 3D에서 점을 가져와 2D 이미지 평면으로 투영하는 것입니다. 그러나 이 튜토리얼의 이 부분에서는 이제 포인트 대신 가우시안 함수를 사용합니다.
+호기심이 있는 분들을 위해 새로운 내부 매트릭스에 대해 알고 싶은 경우(그렇지 않으면 이 단락을 건너뛰어도 괜찮아요) r과 l은 오른쪽과 왼쪽 측면의 클리핑 평면이며, 사진의 너비에 관한 시야에 포함될 수 있는 지점을 기본적으로 나타내고 있습니다. t와 b는 상단과 하단 클리핑 평면이고, N은 가까운 클리핑 평면(투영될 점들이 있는 곳)이며, f는 먼 클리핑 평면입니다. 더 자세한 정보는 scratchapixel의 챕터들이 여기에서 매우 유익하다고 생각합니다(https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/opengl-perspective-projection-matrix.html). 이것은 또한 점들을 정규화된 장치 좌표( -1과 1 사이)로 반환하며, 이를 픽셀 좌표로 투영합니다. 이론에서 벗어나서 우리의 작업은 같습니다, 3D에서 점을 가져와 2D 이미지 평면으로 투영하는 것입니다. 그러나 이 튜토리얼의 이 부분에서는 이제 포인트 대신 가우시안 함수를 사용합니다.```
 
 ```js
 def getIntinsicMatrix(
@@ -50,9 +50,7 @@ def getIntinsicMatrix(
     bottom = -top
     right = tanHalfFovX * znear
     left = -right
-
     P = torch.zeros(4, 4)
-
     z_sign = 1.0
 
     P[0, 0] = 2.0 * znear / (right - left)
@@ -71,7 +69,7 @@ def getIntinsicMatrix(
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-APythonEngineersIntroductionto3DGaussianSplattingPart2_1.png)
 
 쿼터니온 벡터를 회전 행렬로 변환하기 전에 정규화해야만 유효한 회전 행렬을 얻을 수 있습니다. 따라서 저희 구현에서 가우스 포인트는 다음 매개변수로 구성됩니다. 좌표 (3x1 벡터), 쿼터니온 (4x1 벡터), 스케일 (3x1 벡터) 및 불투명도(스플래팅이 얼마나 투명한지를 나타내는 최종 float 값)입니다. 이제 모든게 갖춰졌네요! 이 11개의 매개변수를 최적화하여 우리의 씬을 만들 수 있습니다 — 간단하지요!

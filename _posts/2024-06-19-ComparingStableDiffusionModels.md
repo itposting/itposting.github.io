@@ -17,7 +17,7 @@ link: "https://medium.com/@promptingpixels/comparing-stable-diffusion-models-2c1
 
 주요 릴리스에 대해 알아야 할 내용은 다음과 같습니다:
 
-```markdown
+```
 | 버전 번호    | 릴리스 날짜     |
 |-------------|----------------|
 | 1.1         | 2022년 6월     |

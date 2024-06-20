@@ -85,7 +85,7 @@ if __name__ == "__main__":
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Anomalib](/assets/img/2024-06-20-Anomalibv101UnveilingAnomalyDetectiononPlasticSurfaces_1.png)
 
 Anomalib에서는 Visa, MVTec 및 Kolektor와 같은 내장 데이터 세트뿐만 아니라 Folder 클래스를 사용하여 사용자 정의 데이터 세트를 정의할 수 있는 옵션이 있습니다. Figure 2에서 보이는 대로 데이터 디렉토리를 전달하여 데이터 개체를 초기화합니다.

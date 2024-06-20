@@ -21,7 +21,7 @@ link: "https://medium.com/@nimsy/can-you-believe-people-are-making-over-5763-a-m
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-CanYouBelievePeopleAreMakingOver5763aMonthSellingBlankBooksOnline_1.png)
 
 지난 달 2,000건의 판매가 $22에 이뤄진 것이 놀랍습니다. 디자인도 매우 직선적입니다.

@@ -63,7 +63,7 @@ TRI의 로봇공학 연구 부문의 미션은 신기술을 개발하여 다음 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-TRIsRobotsLearnNewManipulationSkillsinanAfternoonHeresHow_2.png)
 
 복합 모달 데모를 다룰 수 있는 능력은 복잡한 재치 있는 행동을 가르치는 데 중요한 역할을 한 것으로 입증되었으며, 이러한 유형의 복합성은 보편적입니다. 또한 우리의 로봇이 데이터 수집을 확장하는 동안 여러 선생님으로부터 쉽게 배울 수 있도록 합니다.

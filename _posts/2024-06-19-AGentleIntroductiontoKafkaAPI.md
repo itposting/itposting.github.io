@@ -31,7 +31,7 @@ link: "https://medium.com/gitconnected/a-gentle-introduction-to-kafka-api-6a9cf6
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-AGentleIntroductiontoKafkaAPI_1.png)
 
 이 게시물에서는 Kafka 배포를 사용할 때 마주치게 될 고수준 개념을 다룰 것입니다. 이 내용은 특정 프로그래밍 언어나 벤더와 무관합니다. Kafka 프로토콜이나 API 메서드의 세부 내용에 대해 깊이 있게 다루지 않고 개념적으로 논의할 것입니다.
@@ -39,7 +39,7 @@ link: "https://medium.com/gitconnected/a-gentle-introduction-to-kafka-api-6a9cf6
 # 브로커와 클러스터
 
 Kafka는 브로커가 이 시스템 내에서 단일 노드를 나타내는 분산 시스템입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +127,7 @@ Kafka는 브로커가 이 시스템 내에서 단일 노드를 나타내는 분�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-AGentleIntroductiontoKafkaAPI_7.png)
 
 Kafka는 파티션 리더를 어떻게 결정할까요? Kafka는 Apache Zookeeper와 같은 분산 콘센서스 알고리즘 구현에 의존하여 파티션에 대한 리더 선출을 처리합니다. 하나의 브로커가 실패하고 다시 온라인 상태로 돌아오거나 클러스터에 새 브로커가 추가될 때마다, ZooKeeper는 각 파티션에 대한 새 리더를 선출하는 데 도움을 줍니다. 선출 프로세스는 특정 파티션에 대해 한 번에 하나의 브로커만이 리더로 작동하도록 보장합니다.
@@ -135,7 +135,7 @@ Kafka는 파티션 리더를 어떻게 결정할까요? Kafka는 Apache Zookeepe
 그러나 Kafka의 Zookeeper에 대한 의존성은 폐지되고 KRaft로 대체되고 있습니다. Redpanda와 같은 일부 브로커들은 브로커에 기본 Raft 구현을 통합했습니다.
 
 # Segments
-```
+
 
 <div class="content-ad"></div>
 

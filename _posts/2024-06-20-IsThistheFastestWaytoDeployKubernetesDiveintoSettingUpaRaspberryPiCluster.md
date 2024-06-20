@@ -96,7 +96,7 @@ xz -d metal-arm64.raw.xz
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 3](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_3.png)
 
 Finally flash the image
@@ -148,7 +148,7 @@ talos-bootstrap install
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_6.png)
 
 ![Image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_7.png)
@@ -180,7 +180,7 @@ After some time, the talos-bootstrap should find your Raspberry Pi nodes in talo
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Node custom address](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_12.png)
 
 Select a custom address for your node.
@@ -233,7 +233,7 @@ Kubernetes 엔드포인트를 사용자 정의하십시오:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_19.png)
 
 ![image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_20.png)
@@ -271,7 +271,7 @@ k8s-control   Ready    control-plane   4m55s   v1.30.1
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_23.png)
 
 ![image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_24.png)

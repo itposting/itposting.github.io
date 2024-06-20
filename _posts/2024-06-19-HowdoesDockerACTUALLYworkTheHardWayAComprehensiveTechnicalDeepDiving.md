@@ -106,7 +106,7 @@ Docker는 컨테이너 내부에서 애플리케이션을 개발, 배포 및 실
 
 "Learning Containers From The Bottom Up" 기사를 읽어보세요. 그 기사는 컨테이너 학습 경로를 제시합니다.
 
-```markdown
+```
 ![2024-06-19-HowdoesDockerACTUALLYworkTheHardWayAComprehensiveTechnicalDeepDiving_1](/assets/img/2024-06-19-HowdoesDockerACTUALLYworkTheHardWayAComprehensiveTechnicalDeepDiving_1.png)
 ```
 
@@ -728,7 +728,7 @@ crun은 /bin/true를 100번 실행하는 데 runc보다 49.4% 빠르며, 훨씬 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 railcar (archieved)
 
 railcar은 OCI 런타임 사양의 Rust 구현입니다. 참조 구현인 runc과 유사하지만, Rust로 완전히 구현되어 있어 메모리 안전성을 위해 가비지 컬렉터나 여러 스레드가 필요하지 않습니다.

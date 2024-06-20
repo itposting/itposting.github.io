@@ -91,7 +91,7 @@ eula=false를 eula=true로 변경하고 파일을 저장하세요.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 [Unit]
 Description=Minecraft 서버
 After=network.target

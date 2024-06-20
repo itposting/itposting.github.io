@@ -51,7 +51,7 @@ Raspberry Pi CEO인 Eben은 Apple 및 Qualcomm SoC의 AI PC를 위해 최근 출
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Raspberry Pi AI Kit](/assets/img/2024-06-19-HowgoodisRaspberryPisAIKit_3.png)
 
 라즈베리 파이는 이미 저렴한 40나노미터에서 IO 기능을 사용하여 분리된 아키텍처를 갖고 있습니다. CPU 및 GPU는 16나노미터에 있습니다. 코어는 16나노미터에 있지만 NPU를 추가하면 면적이 커져 비용이 많이 드는 문제가 발생할 수 있습니다.

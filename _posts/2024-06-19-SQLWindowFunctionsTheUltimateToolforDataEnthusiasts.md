@@ -11,7 +11,7 @@ link: "https://medium.com/code-like-a-girl/sql-window-functions-the-ultimate-too
 ---
 
 
-```markdown
+```
 ![SQL Window Functions](/assets/img/2024-06-19-SQLWindowFunctionsTheUltimateToolforDataEnthusiasts_0.png)
 
 요즘에는 엄청난 양의 데이터를 다루고 있습니다. 이 주요한 도전에 따라 다양한 소스의 복잡도도 함께 증가하고 있습니다. 이러한 환경에서 SQL은 여전히 영웅이며, 이 데이터 바다에서 가치 있는 통찰을 추출하고 탐색하는 데 꼭 필요한 도구입니다.
@@ -104,7 +104,7 @@ SQL이 제공하는 많은 강력한 기능 중에서도 윈도우 함수는 특
 
 <div class="content-ad"></div>
 
-```markdown
+```
 source.data_records
 
 ![Image 2](/assets/img/2024-06-19-SQLWindowFunctionsTheUltimateToolforDataEnthusiasts_2.png)
@@ -211,7 +211,7 @@ and previous_date <> change_level_date
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![SQL Window Functions](/assets/img/2024-06-19-SQLWindowFunctionsTheUltimateToolforDataEnthusiasts_5.png)
 
 이 결과를 통해 다음을 알 수 있습니다:

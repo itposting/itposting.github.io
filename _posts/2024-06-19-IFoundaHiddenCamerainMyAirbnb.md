@@ -11,7 +11,7 @@ link: "https://medium.com/long-sweet-valuable/i-found-a-hidden-camera-in-my-airb
 ---
 
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-IFoundaHiddenCamerainMyAirbnb_0.png" />
 
 완벽한 휴가용 임대 숙소였어요. 산디에고 비치 프론트에 위치한 이 콘도는 멋진 전망을 자랑했죠.

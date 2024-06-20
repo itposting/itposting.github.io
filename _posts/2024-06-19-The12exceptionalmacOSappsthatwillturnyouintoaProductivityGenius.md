@@ -11,7 +11,7 @@ link: "https://medium.com/macoclock/the-12-exceptional-macos-apps-that-will-turn
 ---
 
 
-```markdown
+```
 ![](/assets/img/2024-06-19-The12exceptionalmacOSappsthatwillturnyouintoaProductivityGenius_0.png)
 
 맥 macOS는 피자 속 반죽처럼 멋지지 않아요.
@@ -446,7 +446,7 @@ Commander One처럼 Forklift도 다음과 같은 기능을 제공해요:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-The12exceptionalmacOSappsthatwillturnyouintoaProductivityGenius_14.png)
 
 이것은 파일과 앱을 추적하고 빠르게 접근할 수 있는 메뉴 바 앱입니다. 특히 사용 빈도가 높은 20%에 대해서요.
@@ -482,7 +482,7 @@ FilePane은 필수적이지는 않지만 한 번 사용하면 필요한 앱입�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-The12exceptionalmacOSappsthatwillturnyouintoaProductivityGenius_15.png)
 
 단순히 파일(들)을 Yoink와 비슷한 선반에 넣으면 마법이 시작됩니다.

@@ -40,7 +40,7 @@ Windows 용 RubyInstaller
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Initial Ruby LSP configuration pain 3](/assets/img/2024-06-19-InitialRubyLSPconfigurationalpain_3.png)
 
 여기가 제가 시간을 많이 쓰게된 첫 번째 이슈입니다. 기본 설치 옵션은 1과 3이지만 저의 경우에는 모두 설치해야 했습니다. 옵션 목록은 쉼표로 구분되어 있으므로 다음과 같은 형식으로 제공해야 합니다: 1,2,3. 모든 것이 제대로 설치되면 터미널을 닫기 위해 터미널이 제안한대로 Enter 키를 누르세요.

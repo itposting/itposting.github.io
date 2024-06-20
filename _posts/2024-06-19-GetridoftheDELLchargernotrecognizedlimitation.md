@@ -186,7 +186,7 @@ DS2501은 OneWire 프로토콜과 통신합니다. Wikipedia, 해커 블로그 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Connector](/assets/img/2024-06-19-GetridoftheDELLchargernotrecognizedlimitation_5.png)
 
 저는 납땜 과정을 간단하게 하기 위해 커넥터를 나사로 풀었습니다. 핀들은 노란색 투명 재료로 밀봉되어 있었어요. 이것을 부드럽게 플라이어로 조심스럽게 제거해야 했습니다. 부드럽게 말씀드리자면 밀봉된 케이블을 손상시키지 않고 이미 납땜된 것도 깨지지 않게 하려는 거예요.

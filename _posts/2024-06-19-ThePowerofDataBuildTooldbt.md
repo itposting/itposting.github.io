@@ -171,7 +171,7 @@ DuckDB 데이터베이스를 생성하기 위해 이를 실행 중이므로 Duck
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-ThePowerofDataBuildTooldbt_12.png)
 
 DuckDB를 dbt 프로젝트에 사용하는 이유에 대해 궁금해할 수 있지만, 개발 환경에서 실행 중이라는 점을 강조하고 싶습니다. 개발 환경에서 DuckDB를 사용하고 프로덕션 환경에서는 Snowflake를 사용할 수 있습니다. 이렇게 함으로써 Snowflake의 개발 비용을 크게 줄일 수 있습니다. 개발 환경과 프로덕션 환경 간에 SQL 방언이 다른 경우, 하드코딩된 SQL 대신 Jinja 매크로를 활용할 수 있습니다. 이를 통해 현재 환경에 따라 올바른 SQL을 반환할 수 있습니다.

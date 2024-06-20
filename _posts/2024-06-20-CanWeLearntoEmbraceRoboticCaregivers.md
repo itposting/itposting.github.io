@@ -11,7 +11,7 @@ link: "https://medium.com/neodotlife/can-we-learn-to-embrace-robotic-caregivers-
 ---
 
 
-```markdown
+```
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*YeyFnXQkQXlwixSpe3KfVA.gif)
 
 로빈 도노방

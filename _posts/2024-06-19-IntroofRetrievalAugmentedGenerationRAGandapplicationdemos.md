@@ -25,7 +25,7 @@ RAG 개요부터 시작해봅시다. RAG는 대형 언어 모델을 개선하는
 
 RAG는 생성된 콘텐츠의 정확성과 관련성을 크게 향상시킬 수 있습니다. 먼저 텍스트를 생성하기 전에 외부 데이터베이스나 문서에서 관련 정보를 검색합니다. [1]
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-IntroofRetrievalAugmentedGenerationRAGandapplicationdemos_0.png)
 ```
 
@@ -43,7 +43,7 @@ RAG 타임라인 및 기술
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![RAG process](/assets/img/2024-06-19-IntroofRetrievalAugmentedGenerationRAGandapplicationdemos_2.png)
 
 RAG은 응답을 생성하기 전에 외부 지식 소스에서 관련 정보를 먼저 검색하여 LLM 출력의 정밀성과 관련성을 향상시킵니다. 전통적인 기본 RAG 프로세스, Naive RAG로도 알려진 과정은 주로 세 가지 기본 단계로 구성됩니다.
@@ -88,7 +88,7 @@ RAG를 더 잘 이해하기 위해 비교해보면 좋습니다. RAG는 모델�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image5](/assets/img/2024-06-19-IntroofRetrievalAugmentedGenerationRAGandapplicationdemos_5.png)
 
 외부 지식과 모델 사용자 정의에 따라 RAG 및 세밀한 조정이 각각 적합한 응용 프로그램을 갖고 있습니다. 두 가지를 함께 사용하면 최상의 성능을 얻을 수 있습니다. RAG는 모델 적응이 적게 필요하지만 외부 지식이 필요하며, 세밀한 조정은 모델을 크게 적응시키지만 외부 데이터가 적게 필요합니다. 대부분의 경우, RAG, Fine-tuning, Prompt Engineering을 결합하면 최상의 결과를 얻을 수 있습니다.
@@ -142,7 +142,7 @@ RAG을 구현한 후, 세 가지 품질 점수인 문맥적 타당성, 답변 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-IntroofRetrievalAugmentedGenerationRAGandapplicationdemos_13.png)
 
 자동 생성되는 검색 파이프라인은 검색을 위한 계층 구조를 만듭니다. 작은 16 토큰 단락은 64 토큰 단락을 형성하고, 이는 다시 256 토큰 단락에 연결됩니다. 충분히 많은 작은 단락이 부모에 연결되면 해당 단락은 부모 청크로 병합됩니다. 최종 청크는 다시 순위를 매기고 검색됩니다. 이를 통해 동적으로 크기가 조정된 컨텍스트를 사용할 수 있습니다.

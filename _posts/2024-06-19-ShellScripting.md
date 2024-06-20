@@ -71,7 +71,7 @@ echo 명령어에서 변수를 출력하려면 변수 앞에 "$" 기호를 사�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![스크립트 실행 전 사용자 입력을 받을 수 있습니다](/assets/img/2024-06-19-ShellScripting_1.png)
 
 스크립트 실행 전에 사용자 입력을 받을 수 있습니다.:
@@ -93,7 +93,7 @@ echo 명령어에서 변수를 출력하려면 변수 앞에 "$" 기호를 사�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-ShellScripting_4.png)
 
 출력할 수 있을까요? echo 명령어로 시도해 봅시다:
@@ -127,7 +127,7 @@ For 루프:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-ShellScripting_10.png)
 
 bash 배열을 만드는 방법은 무엇인가요?
@@ -159,7 +159,7 @@ gokul은 우리가 참조하는 배열 이름입니다. @는 중괄호 내부에
 
 <div class="content-ad"></div>
 
-```markdown
+```
 syntax : function_name()' — — — — — Code — — — — -'
 
 function_name 함수를 통해 해당 함수를 필요한 곳 어디서든 호출할 수 있습니다.
@@ -185,7 +185,7 @@ Case :
 
 테이블 태그를 마크다운 형식으로 변경하면 됩니다.
 
-\```markdown
+\```
 It allows you to compare an expression against a list of patterns and execute specific code blocks based on the match.
 \```
 

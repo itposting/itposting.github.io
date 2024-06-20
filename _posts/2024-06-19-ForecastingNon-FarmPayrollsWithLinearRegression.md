@@ -11,7 +11,7 @@ link: "https://medium.com/@kaabar-sofien/forecasting-non-farm-payrolls-with-line
 ---
 
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-ForecastingNon-FarmPayrollsWithLinearRegression_0.png)
 
 선형 회귀는 가끔 단숨함과 선형 종속적 결과 때문에 무시당하기도 합니다. 그러나 많은 복잡한 예측 작업을 선형 회귀를 사용하여 해결할 수 있습니다. 한 번 매우 성공한 헤지 펀드 관리자로부터 들은 적이 있는데, 그들의 정교한 거래 모델 중 하나는 간단한 선형 회귀 모델에 의존했다고 말씀하셨습니다.
@@ -128,6 +128,6 @@ print('방향성 정확도 = ', same_sign_count, '%')
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Graph](/assets/img/2024-06-19-ForecastingNon-FarmPayrollsWithLinearRegression_2.png)
 ```  

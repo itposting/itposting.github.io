@@ -11,7 +11,7 @@ link: "https://medium.com/@chandravi.kala/creating-dashboard-in-excel-step-by-st
 ---
 
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_0.png" />
 
 아래에서 사용된 데이터 세트는 Tableau 커뮤니티에서 제공되는 Superstore 데이터 세트입니다.
@@ -33,7 +33,7 @@ Microsoft Excel에서 대시보드를 만드는 단계
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_2.png)
 
 Select the data and click insert Pivot Table
@@ -45,7 +45,7 @@ Select the data and click insert Pivot Table
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Step3](/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_3.png)
 
 ![Step4](/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_4.png)
@@ -77,7 +77,7 @@ Select the data and click insert Pivot Table
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Dashboard](/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_9.png)
 
 - Edit the title and right-click on the bar to sort it.

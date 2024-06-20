@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/long-short-term-memory-lstm-impro
 ---
 
 
-```markdown
+```
 ![그림](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_0.png)
 
 이 글에서는 Long-Short-Term Memory Networks (LSTM)에 대해 소개하겠습니다. 이는 일반적인 바닐라 순환 신경망(RNN)의 변형으로서 장기 의존성을 처리하는 데 능숙합니다.
@@ -31,7 +31,7 @@ Recurrent Neural Networks(RNN)은 일반적인 피드포워드 신경망의 변�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_1.png)
 
 네트워크를 통해 전달되는 벡터 h를 주목해보세요. 이것이 순환 신경망(RNNs) 뒤에 숨겨진 주요 기능인 은닉 상태입니다. 이것이 시퀀스 데이터에 대해 잘 작동하는 이유입니다.
@@ -57,7 +57,7 @@ V, U 및 W의 가중 행렬은 시간에 걸쳐 백프로파게이션을 통해 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_3.png)
 
 For example, when predicting Y_1, the RNN would use the inputs of X_1 plus the output from the previous time step from Y_0. As Y_0 influences Y_1, we can then see that Y_0 will also indirectly influence Y_2, demonstrating the recurrent nature.
@@ -79,7 +79,7 @@ BPTT의 일반적인 공식은 다음과 같습니다:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image 1](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_4.png)
 
 RNN에서 J는 임의의 가중치 행렬이며 U, W 또는 V일 수 있으며 E는 총 오차입니다.
@@ -120,14 +120,14 @@ LSTMs는 1997년 Hochreiter & Schmidhuber에 의해 소개되었으며, 그 기�
 
 일반적인 RNN에서는 순환 셀이 다음과 같이 보입니다:
 
-```markdown
+```
 |  Table  |  Tag   |
 |---------|--------|
 ```
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Long Short Term Memory - LSTM Improving RNNs](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_6.png)
 
 However, the LSTM cell is a lot more complicated:
@@ -175,7 +175,7 @@ W_f 행렬에서 올바른 값을 찾아 역전파를 통해 이 정보를 학�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_9.png)
 
 Where:
@@ -216,7 +216,7 @@ tanh을 사용하면 셀 상태를 증가시키거나 감소시킬 수 있습니
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_11.png)
 
 Where:

@@ -101,7 +101,7 @@ Deemos Tech과 같은 기업들은 AI로 생성된 아바타의 개발을 선도
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![2024-06-20-TheAIRevolution3DModelingandMotionCapture_4](/assets/img/2024-06-20-TheAIRevolution3DModelingandMotionCapture_4.png)
 
 Ryan씨는 또한 이 스캔에 빌트인된 실시간 물리학의 발전을 언급하며 빛 상호작용과 반사를 더 잘 이해할 수 있게 되었다고 설명합니다. 이전에는 와인 잔과 같은 투명한 물체가 정확하게 스캔되지 못하고 불투명하게 보였지만, 이제는 올바르게 스캔 및 렌더링할 수 있다고 합니다.

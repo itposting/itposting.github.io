@@ -41,7 +41,7 @@ link: "https://medium.com/itnext/sharing-real-time-websocket-data-across-multipl
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-Sharingreal-timeWebSocketdataacrossmultiplebrowserwindows_0.png)
 
 ## 2. 데모 비디오

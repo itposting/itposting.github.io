@@ -11,7 +11,7 @@ link: "https://medium.com/@theo/the-metaverse-needs-an-operating-system-5fe135ec
 ---
 
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-TheMetaverseNeedsAnOperatingSystem_0.png)
 
 만약 내가 처럼 오래된 개발자라면, 신강에 가서 동전을 던지고 컴퓨터 잡지 페이지에서 신클레어 스펙트럼이나 암스트라드 CPC-464에 대해 BASIC이나 기계어로 게임을 코딩한 뒤 집으로 뛰어가던 시절을 기억할 것입니다.

@@ -35,7 +35,7 @@ link: "https://medium.com/towards-artificial-intelligence/prompt-engineering-bes
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Prompt Engineering Best Practices](/assets/img/2024-06-19-PromptEngineeringBestPracticesIterativePromptDevelopment_1.png)
 
 애플리케이션을 개발할 때 LLM을 사용하여 프롬프트를 작성할 때, 프로세스는 꽤 유사할 수 있습니다. 무엇을 하고자 하는지, 완료하고자 하는 작업에 대한 아이디어가 있으며, 명확하고 구체적인 프롬프트를 작성하는 첫 번째 시도를 할 수 있습니다. 그리고 적절하다면 시스템이 생각할 시간을 주는 방식으로 적기를 노령할 수 있습니다.
@@ -150,7 +150,7 @@ print(response)
 
 그러니까 47개의 단어에요. 나쁘지 않아요. 대형 언어 모델은 명확한 단어 수에 대한 지시를 따르는 데 꽤 괜찮지만, 때로는 60이나 65개의 단어로 무언가를 출력할 때도 있지만, 타당한 범위 내에 있어요. 할 수 있는 일 중 일부는 최대 세 문장을 사용하는 것이죠.
 
-```markdown
+```
 len(response.split())
 ```
 

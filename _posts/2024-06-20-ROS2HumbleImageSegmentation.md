@@ -11,7 +11,7 @@ link: "https://medium.com/@kabilankb2003/ros2-humble-image-segmentation-ef3f7734
 ---
 
 
-```markdown
+```
 <img src="/assets/img/2024-06-20-ROS2HumbleImageSegmentation_0.png" />
 
 # 소개

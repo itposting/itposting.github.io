@@ -381,7 +381,7 @@ rsync -av /로컬/경로/ username@원격호스트:/원격/경로/
 방화벽 구성:
 
 - 방화벽 규칙을 구성하기 위해 iptables (레거시) 또는 firewalld (현대)와 같은 도구가 사용됩니다.
-```
+
 
 <div class="content-ad"></div>
 

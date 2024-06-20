@@ -11,7 +11,7 @@ link: "https://medium.com/@ieeewiesusl/what-is-the-internet-of-things-9aefe344e3
 ---
 
 
-```markdown
+```
 ![What is the Internet of Things](/assets/img/2024-06-19-WhatistheInternetofThings_0.png)
 
 '인터넷 물건'이라는 용어는 1999년 Kevin Ashton에 의해 만들어졌으며, 센서를 통해 인터넷을 물리적 세계에 연결하는 것을 지칭합니다. 그 이후로 이 용어는 일반적으로 센서에서 데이터를 수집하거나 액츄에이터(스위치를 켜거나 LED를 켜는 것과 같은 동작을 하는 장치)를 통해 실제 세계와 상호작용하는 장치로 설명하기 위해 사용되었습니다. 이러한 장치들은 일반적으로 다른 장치나 인터넷에 연결되어 있습니다.

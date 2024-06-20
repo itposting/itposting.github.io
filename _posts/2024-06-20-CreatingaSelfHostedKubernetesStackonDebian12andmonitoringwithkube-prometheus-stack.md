@@ -60,7 +60,7 @@ link: "https://medium.com/@safewebbox/creating-a-self-hosted-kubernetes-stack-on
 
 <div class="content-ad"></div>
 
-```markdown
+```
 Master Node - kube-master - 10.10.0.100 
 Worker Node 1 - kube-worker01 - 10.10.0.101 
 Worker Node 2 - kube-worker02 - 10.10.0.102
@@ -216,7 +216,7 @@ sudo nano /etc/containerd/config.toml
 
 <div class="content-ad"></div>
 
-```markdown
+```
 시스템디C그룹 = true
 ```
 
@@ -224,7 +224,7 @@ sudo nano /etc/containerd/config.toml
 
 컨테이너디 다시 시작 및 활성화
 
-```markdown
+```
 sudo systemctl restart containerd
 sudo systemctl enable containerd
 ```
@@ -442,7 +442,7 @@ watch kubectl get pods -n kube-system
 
 <div class="content-ad"></div>
 
-```markdown
+```
 이름                                                준비됨   상태    재시작      나이
 **calico-kube-controllers-7ddc4f45bc-sfjh5            1/1     실행중   0             24시간
 calico-node-r5x4f                                   1/1     실행중   0             24시간
@@ -667,7 +667,7 @@ users:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-20-CreatingaSelfHostedKubernetesStackonDebian12andmonitoringwithkube-prometheus-stack_1.png)
 
 # 쿠버네티스 로드 밸런싱을 위해 MetaLB 설치
@@ -782,7 +782,7 @@ kubectl get deploy,rs,po
 
 <div class="content-ad"></div>
 
-```markdown
+```
 **이름                    준비 상태   최신 상태   이용 가능   나이**
 deployment.apps/nginx   3/3        3           3           2분 8초
 
@@ -797,16 +797,16 @@ pod/nginx-6d777db949-sr8x6   1/1         실행 중       0          2분 8초
 
 위 배포에 대한 로드 밸런서 서비스를 생성해주세요
 
-```markdown
+```
 kubectl expose deploy/nginx --type=LoadBalancer --port=80
 ```
 
 우리가 만든 nginx 서비스에 대해 설명해주세요
-```markdown
+```
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 kubectl get svc
 kubectl describe svc/nginx
@@ -1270,7 +1270,7 @@ kubectl get svc -n monitoring
 
 아래와 같이 YAML 파일을 만들어주세요.
 
-```markdown
+```
 nano servicemonitor.yaml
 ```
 
@@ -1328,7 +1328,7 @@ servicemonitor.monitoring.coreos.com/prometheus-self가 생성되었습니다.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-CreatingaSelfHostedKubernetesStackonDebian12andmonitoringwithkube-prometheus-stack_3.png)
 
 # Alert Manager
@@ -1361,7 +1361,7 @@ http://10.10.0.241
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![PreInstalled Dashboards](/assets/img/2024-06-20-CreatingaSelfHostedKubernetesStackonDebian12andmonitoringwithkube-prometheus-stack_6.png)
 
 ![PreInstalled Dashboards](/assets/img/2024-06-20-CreatingaSelfHostedKubernetesStackonDebian12andmonitoringwithkube-prometheus-stack_7.png)

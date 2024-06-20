@@ -43,7 +43,7 @@ link: "https://medium.com/@saharsh-sinha-career/project-proxy-mity-robot-control
 
 아래는 Markdown 형식으로 변경한 내용입니다.
 
-```markdown
+```
 ![Projects](/assets/img/2024-06-19-projectproxymitypartIIIRobotControlmechanism_3.png)
 
 이 프로젝트에는 개선할 점이 많이 있습니다. 내 방식으로 조금씩 계속 개선해 나갈 예정입니다. 인도 휴가 동안에도 작업할 계획입니다.

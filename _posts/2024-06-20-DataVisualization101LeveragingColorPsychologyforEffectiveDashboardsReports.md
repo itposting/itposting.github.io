@@ -76,7 +76,7 @@ Towergate 보험은 520개 회사의 로고를 분석하여 그들의 색상 선
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-20-DataVisualization101LeveragingColorPsychologyforEffectiveDashboardsReports_7.png" />
 
 ## 파트 3: 데이터 시각화에서의 공통 색상 지각
@@ -94,7 +94,7 @@ Towergate 보험은 520개 회사의 로고를 분석하여 그들의 색상 선
 
 Markdown 형식의 표로 변경해주시면 됩니다.
 
-```markdown
+```
 | ![Data Visualization101 - Leveraging Color Psychology for Effective Dashboards and Reports](/assets/img/2024-06-20-DataVisualization101LeveragingColorPsychologyforEffectiveDashboardsReports_8.png) |
 |:--:|
 | 이미지 1 |

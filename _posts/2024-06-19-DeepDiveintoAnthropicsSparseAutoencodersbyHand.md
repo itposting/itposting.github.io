@@ -71,7 +71,7 @@ Now let’s look at how this assistant works.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*0UBKNLacq0ZOXF-f9Tzvzg.gif)
 
 ## [4] 디코더: 레이어 1 + ReLU
@@ -173,7 +173,7 @@ Now let’s look at how this assistant works.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image 1](/assets/img/2024-06-19-DeepDiveintoAnthropicsSparseAutoencodersbyHand_4.png)
 
 ![Image 2](/assets/img/2024-06-19-DeepDiveintoAnthropicsSparseAutoencodersbyHand_5.png)
@@ -185,7 +185,7 @@ Now let’s look at how this assistant works.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*gtDUWgJ11gs1bh77CEt-Qw.gif)
 
 ## [8] 희소성 : 가중치

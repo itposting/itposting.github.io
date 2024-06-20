@@ -31,7 +31,7 @@ Lawny를 만나보세요! 이 잔디 깎는 기계는 앞면 카메라가 장착
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_1.png)
 
 모터를 제어하려면 릴레이와 컨트롤러가 필요합니다. 제 경우에는 라즈베리 파이 5를 사용했어요 (가지고 있었기 때문에). 그러나 어떤 라즈베리 기기라도 펄스 폭 변조 및 카메라를 지원할 수 있습니다.
@@ -177,7 +177,7 @@ Lawny를 만나보세요! 이 잔디 깎는 기계는 앞면 카메라가 장착
 
 이미지 태그를 다음과 같이 변경하겠습니다.
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_23.png)
 ```
 
@@ -189,7 +189,7 @@ Input 1에 신호를 보내면 모터가 회전합니다.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_24.png)
 
 Input 2로 신호를 보내면 H-Bridge는 전류 극성을 변경하고 모터는 반대 방향으로 회전합니다.
@@ -201,7 +201,7 @@ Raspberry PI의 두 핀 간에 입력을 전환하기 위해 간단한 릴레이
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_26.png)
 
 # Connection schema
@@ -229,7 +229,7 @@ We have :
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_28.png)
 
 Further, I am adding both windshield wiper motors and connecting their black and yellow wires to the H-Bridge motor’s output.
@@ -301,7 +301,7 @@ Further, I am adding both windshield wiper motors and connecting their black and
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_40.png)
 
 Finally, I can do another Lawny test!

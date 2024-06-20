@@ -61,7 +61,7 @@ link: "https://medium.com/towards-data-science/microservices-vs-monolithic-appro
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-MicroservicesvsMonolithicApproachesinData_1.png)
 
 ## 가정 2: 높은 상호 운용성과 거버넌스

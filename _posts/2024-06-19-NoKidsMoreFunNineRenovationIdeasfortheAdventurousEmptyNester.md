@@ -159,7 +159,7 @@ Con: 친척들이 방문합니다.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-NoKidsMoreFunNineRenovationIdeasfortheAdventurousEmptyNester_8.png)
 
 비슷한 주제로, 당신의 섹스 룸에 감옥 문이 달려 있다면, 아마도 너무 멀리 간 것일지도 모릅니다.
@@ -181,7 +181,7 @@ Con 일부 2: 아이들은 더 이상 집에 돌아갈 수 없습니다. 왜냐�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-NoKidsMoreFunNineRenovationIdeasfortheAdventurousEmptyNester_9.png)
 
 여분의 방을 임대하면 빈 공간을 추가 수입으로 바꿀 수 있을 뿐만 아니라 잠재적 범죄 현장이 될 수도 있습니다.

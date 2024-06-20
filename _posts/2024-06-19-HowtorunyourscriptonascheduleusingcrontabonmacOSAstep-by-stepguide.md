@@ -3,13 +3,12 @@ title: "맥OS에서 크론탭을 사용하여 스크립트를 정해진 시간�
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtorunyourscriptonascheduleusingcrontabonmacOSAstep-by-stepguide_0.png"
 date: 2024-06-19 15:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtorunyourscriptonascheduleusingcrontabonmacOSAstep-by-stepguide_0.png
 tag: Tech
 originalTitle: "How to run your script on a schedule using crontab on macOS: A step-by-step guide"
 link: "https://medium.com/@justin_ng/how-to-run-your-script-on-a-schedule-using-crontab-on-macos-a-step-by-step-guide-a7ba539acf76"
 ---
-
 
 맥에서는 쉘(Shell), 노드(Node), 파이썬(Python) 및 데노(Deno) 스크립트를 쉽게 자동화할 수 있습니다.
 
@@ -45,7 +44,7 @@ Crontab은 macOS에서 작업을 관리하고 자동화하는 Unix 기반 도구
 <div class="content-ad"></div>
 
 ```js
-crontab -e
+crontab - e;
 ```
 
 이 명령을 입력하면 일반적으로 Vim이 열리며 기본 텍스트 편집기를 사용하여 crontab 파일을 수정할 수 있습니다. 이 파일에서 cron 작업을 추가, 수정 또는 제거할 수 있습니다. 변경 사항을 적용하려면 편집기에서 저장하고 종료하세요.
@@ -71,7 +70,7 @@ export VISUAL="code --wait"
 크론 표현식은 공백으로 구분된 다섯 필드의 문자열입니다. 각 필드는 시간 단위를 나타냅니다:
 
 ```js
-*  *  * * * 
+*  *  * * *
 │  │  │ │ └───── 요일 (0 - 7, 0과 7은 모두 일요일을 나타냄)
 │  │  │ └─────── 월 (1 - 12)
 │  │  └───────── 한 달의 날짜 (1 - 31)
@@ -79,7 +78,7 @@ export VISUAL="code --wait"
 └─────────────── 분 (0 - 59)
 ```
 
-별표(*)는 와일드카드로 사용되며 "모든 값을" 의미합니다. 쉼표로 구분된 값, 범위 및 증분(/ 기호 사용)을 사용할 수도 있습니다.
+별표(\*)는 와일드카드로 사용되며 "모든 값을" 의미합니다. 쉼표로 구분된 값, 범위 및 증분(/ 기호 사용)을 사용할 수도 있습니다.
 
 ## 여러 값 지정에 쉼표 사용하기
 
@@ -152,14 +151,15 @@ export VISUAL="code --wait"
 ## 쉘 스크립트 예제
 
 - "backup.sh" 라는 쉘 스크립트 파일을 만들고 실행 가능하게 만듭니다:
-```
+
+````
 
 <div class="content-ad"></div>
 
 ```js
 #!/bin/bash
 # 백업 명령어
-```
+````
 
 2. 스크립트를 매일 새벽 3시에 실행되도록 스케줄링하십시오:
 
@@ -174,7 +174,7 @@ export VISUAL="code --wait"
 - "email.js"라는 Node.js 스크립트 파일을 생성해보세요:
 
 ```js
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 
 // 여러분의 이메일 전송 로직을 작성해주세요
 ```
@@ -192,7 +192,7 @@ const nodemailer = require('nodemailer');
 - "report.ts"라는 Deno 스크립트 파일을 만들어보세요:
 
 ```ts
-import { generateReport } from './reportGenerator.ts';
+import { generateReport } from "./reportGenerator.ts";
 
 // 보고서 생성 후 파일로 저장
 ```
@@ -246,7 +246,7 @@ macOS용 크론 표현식을 만들 수 있는 여러 웹사이트 및 앱이 �
 현재 예약된 작업 목록을 확인하려면 터미널을 열고 다음 명령어를 입력하세요:
 
 ```js
-crontab -l
+crontab - l;
 ```
 
 이 명령은 현재의 crontab 파일을 표시하며, 모든 예약된 cron 작업을 보여줍니다. 각 줄은 하나의 cron 작업을 나타내며, cron 표현식 다음에 실행할 명령이 오게 됩니다.
@@ -265,7 +265,7 @@ crontab -l
 
 <div class="content-ad"></div>
 
-```` operator는 출력을 지정된 로그 파일에 추가하고, 2`&1을 사용하여 표준 출력(stdout)과 표준 오류(stderr)를 모두 캡처합니다.
+``` operator는 출력을 지정된 로그 파일에 추가하고, 2`&1을 사용하여 표준 출력(stdout)과 표준 오류(stderr)를 모두 캡처합니다.
 
 크론 작업이 출력을 로깅하도록 설정되면, 이러한 로그 파일을 확인하여 작업에 의해 생성된 결과 및 오류 메시지를 확인할 수 있습니다.
 
@@ -273,7 +273,7 @@ crontab -l
 
 ```js
 grep -i cron /var/log/system.log
-````
+```
 
 <div class="content-ad"></div>
 

@@ -161,7 +161,7 @@ Environment=”HSA_OVERRIDE_GFX_VERSION=10.3.0"
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-RunningLlamaandStableDiffusionwithAMDROCmonFedora40_5.png)
 
 # Fedora 40에서 ROCm을 이용하여 llama.cpp 및 Mikupad 설정하기
@@ -236,7 +236,7 @@ open mikupad.html
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-RunningLlamaandStableDiffusionwithAMDROCmonFedora40_9.png)
 
 # Fedora 40에서 ROCm과 함께 Stable Diffusion WebUI 설정하기
@@ -261,7 +261,7 @@ sudo dnf install conda
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 conda create -n “diffusion-installer” python=3.10.6
 conda activate diffusion-installer

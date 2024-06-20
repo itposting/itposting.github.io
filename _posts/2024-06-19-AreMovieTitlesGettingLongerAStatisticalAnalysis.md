@@ -31,7 +31,7 @@ link: "https://medium.com/fan-fare/are-movie-titles-getting-longer-a-statistical
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-AreMovieTitlesGettingLongerAStatisticalAnalysis_1.png)
 
 보랏의 여정을 따라가는 영화 제목은 주인공의 이름 이후에 나오는 모든 것이 지나치게 무의미하다는 것을 보여줍니다. 반면에 다른 긴 제목들은 서투른 기업 마케팅의 산물이며 (얼마나 많은 맥킨지 컨설턴트들이 불어난 장미: 송버드와 스네이크스 의 이름을 지을 때 도움을 주었는지 아무도 모릅니다.) 이렇게 길게 늘이는 제목들은 관객들에게 알려진 이야기 (지적 재산권 ❤️)을 제공하면서도 약간의 새로움을 제공합니다 - 그것들은 같지만 다릅니다.
@@ -39,7 +39,7 @@ link: "https://medium.com/fan-fare/are-movie-titles-getting-longer-a-statistical
 당연히 할리우드의 프랜차이즈가 가장 긴 영화 제목 목록을 지배하며, 이 중 대부분은 만화책 네이밍 규칙을 활용하고 있습니다.
 
 ![이미지](/assets/img/2024-06-19-AreMovieTitlesGettingLongerAStatisticalAnalysis_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -81,7 +81,7 @@ Ringer의 "Big Picture" 팟캐스트는 영화 산업의 예술적 및 상업적
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-06-19-AreMovieTitlesGettingLongerAStatisticalAnalysis_7.png](/assets/img/2024-06-19-AreMovieTitlesGettingLongerAStatisticalAnalysis_7.png)
 
 모든 영화는 한 번뿐인 경험, 일순간의 사건으로, 긴 (아마도 끝없는) 이야기의 단일 장을 제공합니다. 수퍼맨 2와 스파이더맨 3 시대는 끝났고, 대신 수퍼맨: 강철의 사나이와 스파이더맨: 홈 노 웨이가 등장했습니다. 많은 면에서, 이 두 점은 아메리칸 영화관이 오랜 시간 동안 지켜온 매력 요소인데, 이는 연재물 콘텐츠에 현혹된 사람들로 인해 비난의 대상이 되었습니다. 하지만 넷플릭스와 데이비드 자스로브를 탓할 수도 있습니다.
@@ -89,7 +89,7 @@ Ringer의 "Big Picture" 팟캐스트는 영화 산업의 예술적 및 상업적
 ## 마지막 생각: 우리는 더 많은 콜론이 필요한가요?
 
 ![2024-06-19-AreMovieTitlesGettingLongerAStatisticalAnalysis_8.png](/assets/img/2024-06-19-AreMovieTitlesGettingLongerAStatisticalAnalysis_8.png)
-```
+
 
 <div class="content-ad"></div>
 

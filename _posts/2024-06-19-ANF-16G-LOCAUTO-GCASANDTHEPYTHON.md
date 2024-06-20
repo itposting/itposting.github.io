@@ -57,7 +57,7 @@ Python / Matplotlib를 사용하여 고도 및 속도 변화 분석
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![그림](/assets/img/2024-06-19-ANF-16G-LOCAUTO-GCASANDTHEPYTHON_5.png)
 
 이제 Matplotlib을 사용하여 고도 손실이 어떻게 변하는지 확인해 봅시다. 그래프를 보면 F-16이 약 18,000피트에서 급속히 다이빙합니다. AUTO-GCAS 시스템은 17:26:23에 작동되어 4,500피트에서 비행기를 12,000피트 이상까지 다시 올립니다.
@@ -65,7 +65,7 @@ Python / Matplotlib를 사용하여 고도 및 속도 변화 분석
 ![그림](/assets/img/2024-06-19-ANF-16G-LOCAUTO-GCASANDTHEPYTHON_6.png)
 
 이어서, 탈고한 고도에 따라 다이빙 중 속도가 어떻게 변하는지 살펴봅시다:
-```
+
 
 <div class="content-ad"></div>
 

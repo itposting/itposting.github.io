@@ -203,7 +203,7 @@ Gephi의 주요 섹션입니다.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-AreyouabeginnerinGephiMakeyourfirstnetworknow_14.png)
 
 # Resources

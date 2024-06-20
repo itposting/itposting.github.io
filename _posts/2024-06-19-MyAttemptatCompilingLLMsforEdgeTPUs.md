@@ -11,7 +11,7 @@ link: "https://medium.com/@johndilan/my-attempt-at-compiling-llms-for-edge-tpus-
 ---
 
 
-```markdown
+```
 ![2024-06-19-MyAttemptatCompilingLLMsforEdgeTPUs_0](/assets/img/2024-06-19-MyAttemptatCompilingLLMsforEdgeTPUs_0.png)
 
 AI의 세계가 계속 발전함에 따라, Raspberry Pi 5 및 Coral AI Edge TPU와 같은 엣지 장치로 강력한 머신러닝 모델을 가져오는 약속은 매우 매력적입니다. 네트워크 가장자리에 정교한 AI의 강력함을 가지고 있는 것을 상상해보세요. 지속적인 클라우드 연결이 필요하지 않고 로컬에서 실행됩니다. 그러나 이러한 제약된 환경에서 대형 언어 모델(LLMs)을 배치하는 경우에는 상당한 어려움이 있습니다.

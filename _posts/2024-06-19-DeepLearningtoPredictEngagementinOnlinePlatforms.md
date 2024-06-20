@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/deep-learning-to-predict-engageme
 ---
 
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-DeepLearningtoPredictEngagementinOnlinePlatforms_0.png)
 
 # 요약
@@ -110,7 +110,7 @@ Zooniverse 및 Coursera, StackOverflow, Snap과 같은 다른 온라인 플랫�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-DeepLearningtoPredictEngagementinOnlinePlatforms_4.png)
 
 The feature space was designed to represent user information over various time intervals. Because many users only completed two sessions, a lot of data would be repeated for these users. Any model for predicting user behavior would need to be carefully interrogated to ensure it did not memorize these aspects of user behavior and project results that mimicked the most likely user, rather than the projection of users.

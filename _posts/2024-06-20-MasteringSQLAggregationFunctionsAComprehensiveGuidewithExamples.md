@@ -39,7 +39,7 @@ FROM authors;
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-20-MasteringSQLAggregationFunctionsAComprehensiveGuidewithExamples_1.png" />
 
 ```js
@@ -134,7 +134,7 @@ ORDER BY COUNT(title_id) DESC;
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-MasteringSQLAggregationFunctionsAComprehensiveGuidewithExamples_8.png)
 
 # 4. MIN
@@ -222,7 +222,7 @@ ORDER BY SUM(ytd_sales) DESC;
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-MasteringSQLAggregationFunctionsAComprehensiveGuidewithExamples_12.png)
 
 ```js

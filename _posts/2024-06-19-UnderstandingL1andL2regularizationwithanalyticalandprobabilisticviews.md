@@ -44,7 +44,7 @@ link: "https://medium.com/intuition/understanding-l1-and-l2-regularization-with-
 
 마크다운 형식으로 변경된 문구입니다.
 
-```markdown
+```
 ![Understanding L1 and L2 regularization with analytical and probabilistic views](/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_2.png)
 
 scikit-learn 라이브러리의 PolynomialFeatures 및 Ridge 클래스를 사용하여 데이터를 적합시킵니다. 결과는 아래와 같습니다.
@@ -77,7 +77,7 @@ L1 정규화[2]는 계수의 절댓값 또는 계수의 l1-노름을 정규화 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_6.png)
 
 where w is the parameter. From now on, we will learn how to solve this problem.
@@ -109,7 +109,7 @@ How can we optimize the L1 regularization formula? To solve it analytically, thi
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_10.png" />
 
 포함 된 좌표 감소 방법을 사용하기 때문에, 다른 비대상 매개변수를 고정한 채 각 매개변수에 대해 이 공식을 최소화해야 합니다.
@@ -133,7 +133,7 @@ Lasso 문제에서 L1 정규화 항을 대체하면 다음과 같습니다:
 
 아래에 있는 표를 Markdown 형식으로 변경해주세요.
 
-```markdown
+```
 ![Understanding L1 and L2 regularization](/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_14.png)
 
 주어진 마지막 방정식을 재정립하여 𝛽를 구할 수 있습니다:
@@ -187,7 +187,7 @@ b0 = 1.11, b1 = 2.04
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_20.png" />
 
 이전 예제에 적용할 때 MLE와 대조적인 점을 살펴보면:

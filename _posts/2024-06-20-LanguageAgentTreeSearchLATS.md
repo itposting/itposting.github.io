@@ -96,7 +96,7 @@ Settings.embed_model = embed_model
 
 아래의 표를 Markdown 형식으로 변경하세요:
 
-```markdown
+```
 Download the relevant data:
 
 ```js
@@ -236,7 +236,7 @@ LlamaIndex의 노트북은 여러 가지 다양한 순열을 거칩니다...
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Language Agent Tree Search - Image 1](/assets/img/2024-06-20-LanguageAgentTreeSearchLATS_1.png)
 
 ![Language Agent Tree Search - Image 2](/assets/img/2024-06-20-LanguageAgentTreeSearchLATS_2.png)

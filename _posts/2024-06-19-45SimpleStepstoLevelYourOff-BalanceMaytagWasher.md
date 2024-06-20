@@ -11,7 +11,7 @@ link: "https://medium.com/jane-austens-wastebasket/how-to-level-your-off-balance
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-06-19-45SimpleStepstoLevelYourOff-BalanceMaytagWasher_0.png)
 
 마이테크 세탁기에 물건을 넣으면 요동이 시작됐다는 걸 느끼셨나요? 정말 무거운 물건은 아니에요. 세탁이 두 주 정도 쌓인 가정 3인분의 중소한 세탁물인데 시트와 이불도 포함돼 있어요.
@@ -19,7 +19,7 @@ link: "https://medium.com/jane-austens-wastebasket/how-to-level-your-off-balance
 마이테크 기술자에게 전화하세요.
 
 빨리 전화 끊으세요. 이게 비싸게 나올까요? 아직 보증이 있는지 확인해보세요. 1년이 넘었으니 아마 없을 거예요.
-```
+
 
 <div class="content-ad"></div>
 

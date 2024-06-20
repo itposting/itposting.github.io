@@ -71,7 +71,7 @@ link: "https://medium.com/@iamandreyburov/a-product-approach-to-a-pet-project-or
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Web Application](/assets/img/2024-06-19-AproductapproachtoapetprojectorhowIdevelopedamusicwebapplication_2.png)
 
 기술 스택 선택
@@ -79,7 +79,7 @@ link: "https://medium.com/@iamandreyburov/a-product-approach-to-a-pet-project-or
 프론트엔드: 어플리케이션의 클라이언트 측 구현을 위해 가장 익숙한 기술 스택을 선택했습니다 — React, Redux Tool Kit, Typescript, Webpack.
 
 그 후에는 실험을 하기로 결정하고 Webpack 대신 Vite를 사용하기로 했습니다. HMR을 통해 개발 속도가 향상되고, 빌드 구성을 몇 분 안에 작성할 수 있다는 점이 이유입니다. 다국어 처리를 위해 i18next를 사용했고, 스타일 작업에는 SCSS를 선택했습니다. Tailwind도 고려했지만, 어플리케이션의 일반 디자인 시스템을 설명하고자 했기 때문에 전역 변수와 중첩 작업이 편리했기 때문에 SCSS를 선택했습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -417,11 +417,11 @@ export function useDebounceOnPlayPause({
 
 프로젝트의 현재 상태는 어떻습니까?
 
-이 프로젝트는 Lighthouse에 따르면 꽤 양호한 성능 지표를 보여줍니다.```
+이 프로젝트는 Lighthouse에 따르면 꽤 양호한 성능 지표를 보여줍니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-AproductapproachtoapetprojectorhowIdevelopedamusicwebapplication_6.png" />
 
 소스 코드는 GitHub를 통해 공개되어 있어 관심 있는 누구든지 확인할 수 있습니다.
@@ -431,7 +431,7 @@ https://github.com/ABurov30/nirvana-client
 https://github.com/ABurov30/nirvana-server
 
 UI 킷은 npm에 발행되었습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -113,7 +113,7 @@ h를 다중 헤드 어텐션 레이어에서 사용될 어텐션 헤드의 수�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-Multi-HeadAttentionFormallyExplainedandDefined_4.png)
 
 서로 다른 이름을 가지고 있지만, 쿼리, 키, 값은 본질적으로 동일한 정의를 가지고 있습니다: 입력 행렬과 가중치 행렬의 곱입니다.
@@ -194,7 +194,7 @@ Q2: 주어진 쿼리 Q와 주어진 키 K, 행 i, 열 j에 대해, 아래와 같
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-Multi-HeadAttentionFormallyExplainedandDefined_11.png)
 
 Q3: 특정 쿼리 Q와 주어진 키 K에 대해 다음 매트릭스의 한 행을 어떻게 해석할 수 있나요?
@@ -216,7 +216,7 @@ Q3: 특정 쿼리 Q와 주어진 키 K에 대해 다음 매트릭스의 한 행�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-Multi-HeadAttentionFormallyExplainedandDefined_14.png)
 
 ## Solution — Exercise 4

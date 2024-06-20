@@ -206,7 +206,7 @@ df.info()
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ---
 ```js
 df.describe()
@@ -232,7 +232,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-TinyMLGaussianMixtureModel_12.png)
 
 ```js

@@ -638,7 +638,7 @@ SDK에 포함된 JET 유틸리티에 대해 이해해야 합니다. 해당 작�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 C:\NXP\bstudio_nxp\sdk\JN-SW-4170\Tools\OTAUtils\JET.exe -m otamerge --embed_hdr -c HelloZigbee.bin -o HelloZigbee.ota.bin -v JN516x -n 1 -t 1 -u 0x1037 -j "HelloZigbee2021                 "
 ```
 

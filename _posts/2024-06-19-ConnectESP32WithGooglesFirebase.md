@@ -41,7 +41,7 @@ Firebase가 프로젝트 설정을 시작합니다. 설정이 완료되면 '계�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-ConnectESP32WithGooglesFirebase_2.png" />
 
 # ➡️Authentication Setup :
@@ -73,7 +73,7 @@ Firebase가 프로젝트 설정을 시작합니다. 설정이 완료되면 '계�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-ConnectESP32WithGooglesFirebase_8.png)
 
 Rule을 클릭하고 아래 그림에 표시된 대로 코드를 변경하세요.

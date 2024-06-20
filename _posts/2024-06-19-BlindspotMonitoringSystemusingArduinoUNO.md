@@ -11,7 +11,7 @@ link: "https://medium.com/geekculture/blindspot-monitoring-system-using-arduino-
 ---
 
 
-```markdown
+
 ![2024-06-19-BlindspotMonitoringSystemusingArduinoUNO_0](/assets/img/2024-06-19-BlindspotMonitoringSystemusingArduinoUNO_0.png)
 
 저는 현재 여름 휴가 중이에요. 시간 보내는 제가 가장 좋아하는 방법 중 하나는 결코 사지 못할 차량들을 소개하는 YouTube 동영상을 보는 거예요. YouTube에서 차량 리뷰를 살펴보다가, 2021년 메르세데스 벤츠 S클래스의 리뷰를 발견했는데, 차량이 블라인드 스팟에 감지되면 문 옆 주변 조명이 빨갛게 깜빡이는 멋진 작은 기능에 꽂혔어요 (액티브 앰비언트 라이팅, 그렇게 생각해요). 간단하면서 효과적이죠 — 그것이 독일의 엔지니어링이죠.
@@ -19,7 +19,7 @@ link: "https://medium.com/geekculture/blindspot-monitoring-system-using-arduino-
 ![2024-06-19-BlindspotMonitoringSystemusingArduinoUNO_1](/assets/img/2024-06-19-BlindspotMonitoringSystemusingArduinoUNO_1.png)
 
 제가 보고 있던 리뷰 링크를 여기에 공유할게요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -214,7 +214,7 @@ void loop() {
 프로젝트의 비디오 데모는 다음과 같습니다:
 
 <img src="/assets/img/2024-06-19-BlindspotMonitoringSystemusingArduinoUNO_4.png" />
-```
+
 
 <div class="content-ad"></div>
 

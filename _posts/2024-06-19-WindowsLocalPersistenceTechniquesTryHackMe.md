@@ -53,7 +53,7 @@ net localgroup administrators thmuser0 /add
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_2.png)
 
 이제, '관리자' 그룹에 추가하는 것은 쉽게 알아차릴 수 있고 상당히 의심스러운 일로 간주될 수 있습니다. 우리는 의심을 피하고 싶어요!
@@ -122,7 +122,7 @@ python3.9 /opt/impacket/examples/secretsdump.py -sam sam.bak -system system.bak 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_10](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_10.png)
 
 Look at all of our produce! How glorious, now: let’s test out the administrator hash. We will login again with evil-winrm, but this time instead of a password, we will use the -H flag for our hash:
@@ -154,7 +154,7 @@ As you can see, I’m not flawless — I copied too much!
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 secedit /export /cfg config.inf
 ```
@@ -222,7 +222,7 @@ PowerShell 시간이에요. 권한을 변경하길 희망하고 있어요.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_25.png)
 
 Lesson: If it isn’t working, you’re the problem.
@@ -256,7 +256,7 @@ OH
 
 아래와 같이 표 태그를 Markdown 형식으로 변경해주세요.
 
-```markdown
+```
 | Tag 1 | Tag 2 |
 |-------|-------|
 | Data1 | Data2 |
@@ -298,7 +298,7 @@ pstools는 시스템 정보를 수집하고 검색하는 데 도움이 되는 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_35.png)
 
 변경이 필요한 RID Hijack을 수행할 때 레지스트리 편집기를 통해 변경사항을 가할 수 있습니다.
@@ -320,7 +320,7 @@ pstools는 시스템 정보를 수집하고 검색하는 데 도움이 되는 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_39](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_39.png)
 
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_40](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_40.png)
@@ -372,7 +372,7 @@ Flag4은 존재하지 않는 것처럼 보입니다. 그러나 Flag5 및 Flag6�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_45.png)
 
 이 명령어는 Powershell을 백그라운드에서 열어서 C:\Windows\System32\backdoor.ps1으로 저장한 스크립트를 실행합니다.
@@ -388,7 +388,7 @@ Flag4은 존재하지 않는 것처럼 보입니다. 그러나 Flag5 및 Flag6�
 
 이제까지 플래그를 실행해 봅시다:
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_47.png)
 
 답변: THM'NO_SHORTCUTS_IN_LIFE'
@@ -496,7 +496,7 @@ $args[0] 부분은 이전 스크린샷에서 본 %1을 재현할 거예요.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_58.png)
 
 답변: THM'SUSPICIOUS_SERVICES'
@@ -518,7 +518,7 @@ binPath를 페이로드로 지정해야 합니다. 또한 AutoStart로 설정하
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_60.png)
 
 BINARY_PATH_NAME, start, 및 SERVICE_START_NAME을 조정하여 우리의 악의적인 목적에 맞게 맞추었습니다. 그런 다음 리스너를 설정하고 서비스를 시작했습니다:
@@ -604,7 +604,7 @@ C:\Users\<your_username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\S
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_67.png](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_67.png)
 
 I checked my commands, everything seems okay. I deleted the nothing.exe file to see if that prevents any issues:

@@ -73,7 +73,7 @@ x의 가우시안 표현에서 시작하지만 비선형 함수 g를 선택하�
 
 위의 이미지에서 높은 차수의 테일러 전개가 점 a = 0 주변에서 g를 더 가까운 근사로 제공하는 것을 볼 수 있습니다. 그러나 고차 다항식이 늘어날수록 요구되는 계산도 증가하며, 문제가 빠르게 풀기 어려워집니다. 다행히도 Kalman 필터가 자주 업데이트되는 경우(작은 Δt), 관심점 a의 차이가 매우 작아야합니다. 따라서 우리는 다음 (매우 가까운) 각 지점 a에서의 함수 g의 값을 및 기울기(점 a에서의 미분)를 사용하여 함수 g의 선형 근사를 얻기 위해 1차 다항식(선)을 사용할 수 있습니다. 이 문제는 본질적으로 아래와 같이 간소화됩니다:
 
-```markdown
+```
 ![2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_9.png](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_9.png)
 ```
 
@@ -109,7 +109,7 @@ g와 그 기울기 g′의 값은 그들의 인자 (u_t와 x_t-1)에 따라 달�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![sensor fusion](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_14.png)
 
 가우시안에서, 모션 모델 또는 상태 전이 확률은 아래와 같이 표기됩니다. 여기서 R_t는 보통의 프로세스 노이즈 공분산입니다.
@@ -157,7 +157,7 @@ g와 그 기울기 g′의 값은 그들의 인자 (u_t와 x_t-1)에 따라 달�
 
 아래는 Markdown 형식입니다.
 
-```markdown
+```
 ![sensorfusion1](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_22.png)
 
 EKF를 사용하여 동일한 모델을 사용하려면 선형화해야 합니다. 먼저로봇의 상태 형식을 재정의합니다.
@@ -191,7 +191,7 @@ x 업데이트 방정식의 x, y, 그리고 θ에 대한 도함수를 나타내�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![sensor fusion](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_27.png)
 
 이전 그림에서 EKF와 LKF를 비교한 것처럼, 선형화가 두 알고리즘의 주요 차이점입니다. 관련 기능 및 해당 야코비안을 확인한 후, EKF의 구현은 LKF의 구현을 밀접하게 따릅니다. 아래는 선형화된 속도 모션 모델의 Python 구현입니다. 행렬 g와 야코비안 G를 모두 반환합니다.
@@ -566,7 +566,7 @@ obs_noise_std = [100.0, 100.0, 1000.0, 6.853891945200942e-06, 1.0966227112321507
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_38.png)
 
 ![Image](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_39.png)
@@ -664,7 +664,7 @@ obs_noise_std = [100.0, 100.0, 1000.0, 6.853891945200942e-06, 1.0966227112321507
 
 마지막으로 ROS 2 패키지를 복제하고 빌드해야 합니다. 아래 단계를 따라 진행할 수 있습니다. ros2_ws를 실제 ROS 2 작업 공간으로 교체해야 합니다.
 
-```markdown
+```
 # 종속성 설치
 sudo apt install python3-pykdl
 

@@ -11,7 +11,7 @@ link: "https://medium.com/enrique-dans/the-right-to-be-forgotten-takes-a-new-and
 ---
 
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-Therighttobeforgottentakesanewandsinisterturn_0.png)
 
 그 때 내가 그것에 대해 경고했고 이에 대해 광범위하게 쓴 적이 있습니다: 터무니없고 실재하지 않는 권리를 창출하는 것은 결코 좋은 결과를 이끌어내지 않습니다.

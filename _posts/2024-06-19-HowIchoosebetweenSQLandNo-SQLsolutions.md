@@ -86,7 +86,7 @@ No-SQL 대 SQL을 결정할 때도 같은 것이 적용됩니다.
 
 이게 어떻게 작용하는지 살펴봐요.
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-HowIchoosebetweenSQLandNo-SQLsolutions_1.png)
 ```
 

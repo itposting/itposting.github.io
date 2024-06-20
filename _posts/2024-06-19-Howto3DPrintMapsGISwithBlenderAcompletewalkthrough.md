@@ -61,7 +61,7 @@ Step 6:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-Howto3DPrintMapsGISwithBlenderAcompletewalkthrough_5.png)
 
 ![Image](/assets/img/2024-06-19-Howto3DPrintMapsGISwithBlenderAcompletewalkthrough_6.png)
@@ -83,7 +83,7 @@ Step 6:
 
 <div class="content-ad"></div>
 
-```markdown
+```
 Step 9:
 
 좌측 상단 모드를 편집 모드로 변경한 후 맵을 우클릭하여 하위 분할을 선택하고 좌측 하단 메뉴에서 10개로 선택하세요.
@@ -129,7 +129,7 @@ S - Z - 0
 
 아래는 Markdown 형식으로 표기된 문장입니다.
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-Howto3DPrintMapsGISwithBlenderAcompletewalkthrough_16.png)
 
 클릭 ` A `, 모든 지도를 선택합니다.
@@ -141,7 +141,7 @@ S - Z - 0
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-Howto3DPrintMapsGISwithBlenderAcompletewalkthrough_18.png)
 
 Tick Selection Only and Scale it to 0.01
@@ -153,7 +153,7 @@ Click on Export STL
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Step 12](/assets/img/2024-06-19-Howto3DPrintMapsGISwithBlenderAcompletewalkthrough_20.png)
 
 Open Bambu Studio
@@ -163,7 +163,7 @@ Open Bambu Studio
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-Howto3DPrintMapsGISwithBlenderAcompletewalkthrough_22.png)
 
 그게 다야, 비만항문 문제와 같은 몇 가지 주제들을 더 다룰 수 있겠지만, 그건 다른 안내서를 위한 자료야. 이 주제에 대한 더 많은 안내서가 필요하다면 Linkedin과 Medium에서 팔로우해주세요.

@@ -93,7 +93,7 @@ ldapsearch `형식 옵션` `인증 옵션` `도메인 옵션` `쿼리 필터` `�
 
 <img src="/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_3.png" />
 
-```markdown
+```
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(objectClass=user)” dn
 ```
 
@@ -133,7 +133,7 @@ dsquery * -filter “(&(objectclass=computer)(name=*win*))” -attr name samacco
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_5.png)
 
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(&(objectclass=computer)(name=*win*))” name samaccountname
@@ -155,7 +155,7 @@ AD에서 사용자를 찾는 것은 복잡할 수 있습니다. 특히 도메인
 
 <div class="content-ad"></div>
 
-```markdown
+```
 dsquery * -filter “(&(objectclass=user)(!(objectclass=computer)(name=*W*)))” -attr name samaccountname -d 192.168.88.195
 
 시스템 관리자가 관리 기능과 일상적인 사용을 위한 서로 다른 계정을 가지는 것이 일반적입니다. 이와 같은 쿼리를 사용하면 -sa 또는 -da와 같은 추가 권한을 나타내는 이름을 가진 계정을 찾을 수 있습니다.
@@ -177,7 +177,7 @@ dsquery에서는, 그룹 개체 유형을 사용하여 이름별로 그룹을 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_8.png)
 
 dsquery group -name *admin* -d 192.168.88.195
@@ -191,7 +191,7 @@ dsquery * -filter “(&(objectclass=group)(samaccountname=도메인 관리자))�
 
 ldapsearch에서는 구문이 dsquery와 매우 유사합니다. 아래는 이름에 *admin*이 포함된 그룹을 찾는 ldapsearch 구문입니다.
 
-```markdown
+```
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(&(objectclass=group)(name=*admin*))” name samaccountname
 ```
 
@@ -223,7 +223,7 @@ Ldapquery will be very similar, and again, I recommend adding the operating syst
 
 <img src="/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_11.png" />
 
-```markdown
+```
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D 'PLANETEXPRESS\SService' -w 'L1feD3@thSeamlessContinuum' -b 'DC=PLANETEXPRESS,DC=LOCAL' "(&(objectclass=computer)(name=*DC*))" name samaccountname operatingsystem
 ```
 
@@ -245,7 +245,7 @@ ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D 'PLANETEXPRESS\SS
 
 아래는 표와 동일한 내용을 Markdown 형식으로 작성한 것입니다.
 
-```markdown
+```
 dsquery * -filter “(description=*password*)” -attr name description -d 192.168.88.195
 
 dsquery * -filter “(description=*admin*)” -attr name description -d 192.168.88.195
@@ -257,7 +257,7 @@ dsquery * -filter “(description=*admin*)” -attr name description -d 192.168.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(description=*password*)” name description
 
 ![이미지](/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_14.png)
@@ -305,7 +305,7 @@ ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\
 
 dsquery를 사용하여 그룹의 구성원인 사용자를 쿼리하는 방법은 다음과 같습니다:
 
-```markdown
+```
 <img src="/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_18.png" />
 
 dsquery * -filter “(&(memberof=CN=Staff,DC=PLANETEXPRESS,DC=LOCAl)(memberof=CN=ShipCrew,DC=PLANETEXPRESS,DC=LOCAL))” -attr name memberof -d 192.168.88.195

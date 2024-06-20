@@ -208,7 +208,7 @@ streamalert 규칙과 해당하는 json 파일을 분리해서 제공하여 명�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지를 여기에 넣어주세요](/assets/img/2024-06-19-UtilizingGenerativeAIandLLMstoAutomateDetectionWriting_7.png)
 
 # 보너스 팁

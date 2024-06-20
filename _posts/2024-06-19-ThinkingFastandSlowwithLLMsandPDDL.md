@@ -34,7 +34,7 @@ ChatGPT는 주어진 구문 형식으로 필요한 조치 순서를 즉시 제�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![ThinkingFastandSlowwithLLMsandPDDL_2](/assets/img/2024-06-19-ThinkingFastandSlowwithLLMsandPDDL_2.png)
 
 ChatGPT는 지금 파란 블록을 집어 빨간 블록 위에 쌓으라고 제안했습니다. 하지만 이것은 우리가 원하는 바가 전혀 아닙니다: 파란 블록은 바닥에 있어야 합니다. 또한 탑이 완전하지 않습니다. 우리가 도와보겠습니다:
@@ -234,7 +234,7 @@ PDDL은 s-표현식을 사용하는데, 이는 LISP에 익숙하지 않은 사�
 
 이제 작업을 사용하여 술어를 조작할 수 있습니다. :action은 매개변수, 선행 조건 및 효과로 구성된 목록입니다. 작업은 모든 선행 조건이 True인 경우에만 실행됩니다. 작업의 효과는 술어의 생성 또는 삭제입니다. 여기서는 :negative-preconditions를 추가하여 가능하게 된 (not `list`) 연산자를 사용합니다.
 
-```markdown
+```
 (:action pickup ; 이 작업은 테이블에서 선택하는 것만을 위한 작업입니다
 :parameters (?x - block)
 :precondition (and (ontable ?x)

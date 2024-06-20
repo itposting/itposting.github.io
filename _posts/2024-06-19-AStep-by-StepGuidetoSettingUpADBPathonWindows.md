@@ -41,7 +41,7 @@ Android 개발자 웹사이트로 이동하세요: [https://developer.android.co
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-06-19-AStep-by-StepGuidetoSettingUpADBPathonWindows_4.png)
 
 Click on “Advanced system settings” on the left panel.
@@ -49,7 +49,7 @@ Click on “Advanced system settings” on the left panel.
 ![Image 2](/assets/img/2024-06-19-AStep-by-StepGuidetoSettingUpADBPathonWindows_5.png)
 
 In the System Properties window, click the “Environment Variables” button.
-```
+
 
 <div class="content-ad"></div>
 

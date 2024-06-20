@@ -31,7 +31,7 @@ link: "https://medium.com/gitconnected/an-easy-raspberry-pi-weather-station-usin
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-AneasyRaspberryPiweatherstationusingDHT11PythonQuestDBwithsourcecode_1.png" />
 
 SPA는 80번 포트에서 제공되며, Python API는 81번 포트에서 제공되어 questdb 인스턴스에서 데이터를 검색하여 JSON payload로 반환합니다. 이러한 모든 서비스는 쉬운 배포와 구성을 위해 docker-compose 파일을 사용하여 생성되었습니다.
@@ -39,7 +39,7 @@ SPA는 80번 포트에서 제공되며, Python API는 81번 포트에서 제공�
 <img src="/assets/img/2024-06-19-AneasyRaspberryPiweatherstationusingDHT11PythonQuestDBwithsourcecode_2.png" />
 
 전체 프로젝트는 github.com/gmullernh/dht11-weather-station에서 확인할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

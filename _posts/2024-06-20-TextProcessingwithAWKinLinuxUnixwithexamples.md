@@ -11,7 +11,7 @@ link: "https://medium.com/@ahmedmansouri/text-processing-with-awk-in-linux-unix-
 ---
 
 
-```markdown
+```
 ![Image](/assets/img/2024-06-20-TextProcessingwithAWKinLinuxUnixwithexamples_0.png)
 
 awk은 패턴 스캔 및 처리를 위한 강력한 프로그래밍 언어이자 명령 줄 유틸리티입니다. 주로 텍스트 처리에 사용되며 데이터 추출 및 보고 도구로 사용됩니다. 본 안내서는 awk의 기본 개념을 이해하는 데 도움을 주고 Linux/Unix 환경에서 효과적으로 사용하는 방법을 보여줄 것입니다.

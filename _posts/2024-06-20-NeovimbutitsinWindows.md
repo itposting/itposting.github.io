@@ -73,7 +73,7 @@ PATH 환경 변수를 선택한 다음 그 아래에 있는 "편집..." 버튼�
 
 아래 Markdown 형식을 이용하여 표 태그를 변경해주세요.
 
-```markdown
+```
 ![Neovim을 Windows에 설치하는 이미지 1](/assets/img/2024-06-20-NeovimbutitsinWindows_7.png)
 
 여기서 "새로 만들기"를 선택하고 Neovim이 설치된 경로를 추가하세요. 저의 경우, C:\tools\neovim\nvim-win64\bin에 설치되었는데, 다른 경로도 조금씩 다를 수 있으니 확인해보세요.

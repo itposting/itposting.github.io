@@ -36,7 +36,7 @@ link: "https://medium.com/@kamiy2j/unlocking-your-android-device-with-a-hardware
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Step 1](/assets/img/2024-06-20-UnlockingYourAndroidDevicewithaHardwarePasskeyAGuidetoUsingDigisparkAttiny85_1.png)
 
 - Go to Tools -> Board -> Boards Manager..., search for “digistump”, and install “Digistump’s AVR Boards”.
@@ -88,7 +88,7 @@ void loop() {
 
 이미지 태그를 Markdown 형식으로 변경하세요.
 
-```markdown
+```
 ![Unlocking Your Android Device with a Hardware Passkey - A Guide to Using Digispark Attiny85](/assets/img/2024-06-20-UnlockingYourAndroidDevicewithaHardwarePasskeyAGuidetoUsingDigisparkAttiny85_6.png)
 
 ![Unlocking Your Android Device with a Hardware Passkey - A Guide to Using Digispark Attiny85](/assets/img/2024-06-20-UnlockingYourAndroidDevicewithaHardwarePasskeyAGuidetoUsingDigisparkAttiny85_7.png)

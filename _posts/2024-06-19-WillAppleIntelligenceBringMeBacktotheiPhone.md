@@ -11,7 +11,7 @@ link: "https://medium.com/macoclock/will-apple-intelligence-bring-me-back-to-the
 ---
 
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-WillAppleIntelligenceBringMeBacktotheiPhone_0.png)
 
 그래서, WWDC 키노트가 올해 또 다시 끝났습니다. 항상 그렇듯, 이야기할 만한 다양한 내용이 있습니다.

@@ -51,7 +51,7 @@ VA는 모델 구축을 데이터 주석 프로세스에 매끄럽게 통합하�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-Videoannotatoraframeworkforefficientlybuildingvideoclassifiersusingvision-languagemodelsandactivelearning_0.png)
 
 ## 확장 가능한 비디오 분류기를 통한 비디오 이해
@@ -73,7 +73,7 @@ VA는 모델 구축을 데이터 주석 프로세스에 매끄럽게 통합하�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-Videoannotatoraframeworkforefficientlybuildingvideoclassifiersusingvision-languagemodelsandactivelearning_2.png)
 
 ## 단계 2 — 액티브 러닝

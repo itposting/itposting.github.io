@@ -27,7 +27,7 @@ link: "https://medium.com/the-modern-scientist/the-art-of-data-ingestion-powerin
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-DataIngestionPart1ArchitecturalPatterns_2.png)
 
 이 접근 방식 안에서 두 가지 주요 하위 패턴이 있습니다:
@@ -53,7 +53,7 @@ link: "https://medium.com/the-modern-scientist/the-art-of-data-ingestion-powerin
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Table](/assets/img/2024-06-20-DataIngestionPart1ArchitecturalPatterns_3.png)
 ```
 

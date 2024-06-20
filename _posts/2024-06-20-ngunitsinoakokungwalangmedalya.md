@@ -11,7 +11,7 @@ link: "https://medium.com/@andengxzs_/ngunit-sino-ako-kung-walang-medalya-61a2a1
 ---
 
 
-```markdown
+```
 ![Img](/assets/img/2024-06-20-ngunitsinoakokungwalangmedalya_0.png)
 
 Maraming tao ang nagsasabi na matalino raw ako, dahil marami akong natatanggap na award sa paaralan. Sinasabi nila na malayo raw ang mararating ko dahil masipag ako mag-aral. Sabi nila, magaling raw ako dahil marami akong natanggap na medalya noong ako ay nagtapos ng High School.

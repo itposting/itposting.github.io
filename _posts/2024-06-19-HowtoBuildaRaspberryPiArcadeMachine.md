@@ -11,7 +11,7 @@ link: "https://medium.com/swlh/how-to-build-a-raspberry-pi-arcade-machine-3de4df
 ---
 
 
-```markdown
+```
 ![Arcade Machine](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_0.png)
 
 어릴 적 친구들과 함께 밤새도록 오래된 CRT TV에서 레트로 게임을 즐기던 추억이 여전히 내 마음속에 살아있어요. 비디오 게임은 제 성장 과정에서 중요한 역할을 해 왔고, 2000년대에 게임 산업이 빠르게 발전함에 따라 옥상 방의 구름 잡힌 빈틈 채우고 있는 빈틈새를 잊고 있었어요. 전문적으로 처음 일하러 간 인턴십 때, 회사에서 DIY 아케이드 기계가 있어 빠도록 내 어린 시절의 향수에 시달리기 시작했죠.
@@ -23,7 +23,7 @@ link: "https://medium.com/swlh/how-to-build-a-raspberry-pi-arcade-machine-3de4df
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![How to Build a Raspberry Pi Arcade Machine - Image 1](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_1.png)
 
 ![How to Build a Raspberry Pi Arcade Machine - Image 2](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_2.png)
@@ -45,7 +45,7 @@ To streamline our project, we followed a premade plan available at TheGeekPub.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Arcade Machine](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_3.png)
 
 기계의 총 비용은 650달러 캐나다 달러이며, 부품 중에서 가장 비용이 많이 드는 것은 모니터, 페인트, 조이스틱, 라즈베리 파이 및 목재입니다.
@@ -122,7 +122,7 @@ To streamline our project, we followed a premade plan available at TheGeekPub.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![HowtoBuildaRaspberryPiArcadeMachine_8](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_8.png)
 
 # 페인팅 (시도 1)
@@ -184,7 +184,7 @@ To streamline our project, we followed a premade plan available at TheGeekPub.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_15.png)
 
 # Keyboard Tray

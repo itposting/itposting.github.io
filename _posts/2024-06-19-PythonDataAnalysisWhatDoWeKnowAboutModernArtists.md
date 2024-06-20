@@ -205,7 +205,7 @@ df_top_nodes["유형"] = llm_map(df_top_nodes["이름"], batch_size=10)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 [
   {"Rap": "음악 장르"},
   {"John": "사람"},
@@ -246,7 +246,7 @@ display(df_nodes.sort_values(by=["Edges"], ascending=False)[:20])
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Python Data Analysis](/assets/img/2024-06-19-PythonDataAnalysisWhatDoWeKnowAboutModernArtists_2.png)
 
 보시다시피 무료 모델을 사용하여 카테고리를 찾았기 때문에 충분히 좋다고 할 수 있습니다. 그러나 결과는 항상 정확하지는 않으며 선택적으로 수정할 수 있습니다. 예를 들어 Llama-3 모델은 "MTV"를 장소로 결정했습니다. 일반적으로 말하자면 그것은 사실일 수 있지만, 음악 산업 문맥에서는 최선의 선택은 아닙니다. 수동으로 수정할 수 있습니다:
@@ -402,7 +402,7 @@ D3.JS를 사용하여 수동 검증 결과가 더 흥미로운 것으로 나타�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-PythonDataAnalysisWhatDoWeKnowAboutModernArtists_8.png)
 
 다른 흥미로운 노드 그룹은 예술가가 아닌 철학자들을 포함하고 있습니다. 이것을 보는 것도 흥미로웠습니다.

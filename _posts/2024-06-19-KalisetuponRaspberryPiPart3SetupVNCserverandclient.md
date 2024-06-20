@@ -39,7 +39,7 @@ sudo nano /etc/systemd/system/vncserver.service
 
 <div class="content-ad"></div>
 
-```markdown
+```
 [Unit]
 Description=start vnc at boot
 After=multi-user.target
@@ -56,7 +56,7 @@ WantedBy=multi-user.target
 
 /boot/config.txt 파일에서 다음 플래그를 주석 처리 해제하세요.
 
-```markdown
+```
 framebuffer_width=1280
 framebuffer_height=720
 hdmi_force_hotplug=1
@@ -91,7 +91,7 @@ systemctl status vncserver
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![](/assets/img/2024-06-19-KalisetuponRaspberryPiPart3SetupVNCserverandclient_1.png)
 
 VNC 서버 IP 주소 또는 호스트명을 입력해주세요. 원하는대로 다른 설정도 사용자 정의할 수 있어요.

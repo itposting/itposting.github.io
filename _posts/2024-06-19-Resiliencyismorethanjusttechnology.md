@@ -21,7 +21,7 @@ Verizon의 연례 데이터 침해 조사 보고서(DBIR)는 전 세계적으로
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-Resiliencyismorethanjusttechnology_1.png)
 
 DBIR 보고서에 따르면, 올해 랜섬웨어는 약간 감소했지만, 사기공격은 크게 증가했습니다. 이는 주로 MOVEit 침입 중 사용된 전술로 인한 것이었으나, Verizon는 랜섬웨어와 사기를 별도로 추적할 계획이지만 관련된 공격으로 계속 추적할 것이라고 믿습니다. 랜섬웨어는 여전히 장애를 유발하고 재정에 영향을 미치는데, Change Healthcare를 향한 공격과 그 이후 다른 의료 기업에 대한 공격을 통해 이는 너무나 명확해졌습니다.

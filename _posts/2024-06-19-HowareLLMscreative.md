@@ -31,7 +31,7 @@ LLMs은 한 번에 전체 문장을 생성할 수 없다는 것을 알아두어�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*mrIpGPlXZHL_K-e640HFaw.gif)
 
 다음 토큰을 생성하기 위해 LLM은 어휘 사전에 있는 모든 가능한 토큰에 대한 확률 목록을 출력합니다.
@@ -96,7 +96,7 @@ eˣ 함수는 위의 모든 조건(1~3)을 모두 만족합니다.
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-19-HowareLLMscreative_6.png)
 
 한 예를 통해 이해해 봅시다.
@@ -176,7 +176,7 @@ eˣ 곡선을 살펴보면 이 차이가 주로 eˣ 곡선의 성질 때문인 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-HowareLLMscreative_9.png" />
 
 바닐라 소프트맥스로 [0.25, 0.75]을 얻었지만 온도 (T)가 2일 때 [0.38, 0.62]를 얻었어요. 상당한 진전이죠, 알겠죠?

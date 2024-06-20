@@ -11,7 +11,7 @@ link: "https://medium.com/cyberark-engineering/an-llm-journey-from-poc-to-produc
 ---
 
 
-```markdown
+
 ![LLM Journey](/assets/img/2024-06-19-AnLLMJourneyFromPOCtoProduction_0.png)
 
 이렇게 상상해 봐: LLM(대형 언어 모델)을 사용하여 실행할 수 있는 멋진 프로젝트 아이디어가 있다고 상상해 봐. 빠르게 작업 가능한 개념 증명(PoC)에 도달했다. 네 자신에게 자랑스러워하며 실제로 동작하는 데 필요한 작업이 얼마나 적은지에 놀라게 될 것이다. (5줄의 프롬프트의 마법 ☺)
@@ -19,7 +19,7 @@ link: "https://medium.com/cyberark-engineering/an-llm-journey-from-poc-to-produc
 하지만 이제 어떻게 해야 할까?
 
 LLM을 사용할 때 POC를 작성하는 것은 쉽지만, 실제로 탄생 가능한 제품을 만드는 것은 어려운 작업임을 빨리 깨닫게 될 것이다.
-```
+
 
 <div class="content-ad"></div>
 

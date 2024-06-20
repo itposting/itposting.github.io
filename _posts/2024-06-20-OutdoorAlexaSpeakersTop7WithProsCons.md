@@ -136,7 +136,7 @@ Alexa와 음성 제어 통합
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-OutdoorAlexaSpeakersTop7WithProsCons_4.png)
 
 Check price on Amazon

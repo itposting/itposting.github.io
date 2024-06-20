@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/how-does-an-image-text-foundation
 ---
 
 
-```markdown
+```
 ![How Does an Image-Text Multimodal Foundation Model work](/assets/img/2024-06-19-HowDoesanImage-TextMultimodalFoundationModelWork_0.png)
 
 요즘에는 다중 모드 기반 모델이 급증하고 있습니다. 이 모델들은 텍스트, 이미지, 비디오, 오디오 등 다양한 종류의 데이터를 이해하며, 둘 이상의 모드로부터의 데이터 지식이 필요한 작업을 수행할 수 있습니다. 이러한 모델들이 어떻게 작동하는지 궁금한 적이 있나요?

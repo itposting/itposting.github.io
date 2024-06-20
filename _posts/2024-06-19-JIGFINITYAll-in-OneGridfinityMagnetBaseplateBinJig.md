@@ -66,7 +66,7 @@ JIGFINITY는 그 자체로 2u Gridfinity bin이기 때문에 사용이 끝나면
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Jigfinity All-in-One Gridfinity Magnet Baseplate Bin Jig 1](/assets/img/2024-06-19-JIGFINITYAll-in-OneGridfinityMagnetBaseplateBinJig_1.png)
 
 ![Jigfinity All-in-One Gridfinity Magnet Baseplate Bin Jig 2](/assets/img/2024-06-19-JIGFINITYAll-in-OneGridfinityMagnetBaseplateBinJig_2.png)
@@ -115,7 +115,7 @@ Jigfinity는 세 개의 작은 부분으로 출력됩니다: bin-jig, base-jig, 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Method 1](/assets/img/2024-06-19-JIGFINITYAll-in-OneGridfinityMagnetBaseplateBinJig_4.png)
 
 ## Method 2

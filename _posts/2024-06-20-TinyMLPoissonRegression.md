@@ -86,7 +86,7 @@ Generalized Linear Models(GLM)은 반응 변수가 정규 분포가 아닌 분�
 
 비선형 관계를 선형 형태로 변환하기 위해 링크 함수가 사용됩니다. 이 함수는 포아송 회귀의 로그입니다. 이로 인해 포아송 회귀 모델은 종종 로그-선형 모델이라고도 불립니다. 포아송 회귀 모델의 일반적인 수학적 형태는 다음과 같습니다:
 
-```markdown
+```
 <img src="/assets/img/2024-06-20-TinyMLPoissonRegression_3.png" />
 ```
 
@@ -220,7 +220,7 @@ df.drop_duplicates(inplace=True)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 # 데이터 프레임 정리 후에 결과 표시
 df.describe()
 ```
@@ -528,6 +528,6 @@ void loop()
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-TinyMLPoissonRegression_21.png)
 ```

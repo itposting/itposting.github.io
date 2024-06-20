@@ -11,7 +11,7 @@ link: "https://medium.com/generative-ai/calibration-techniques-for-language-mode
 ---
 
 
-```markdown
+```
 ![Calibration Techniques for Language Models](/assets/img/2024-06-20-CalibrationTechniquesforLanguageModelsEnhancingProbabilityAssessments_0.png)
 
 언어 모델, 특히 대형 언어 모델(LLMs)은 인간과 유사한 언어를 이해하고 생성하는 능력으로 인공지능 분야를 혁신했습니다. 이러한 모델은 제로샷 설정에서 다양한 작업을 수행할 뿐만 아니라 맞춤식 프롬프트를 통해 놀라운 유연성과 다양성을 바탕으로 여러 도메인에서 탁월하게 유용합니다.
@@ -53,7 +53,7 @@ LLM의 본질은 정확성뿐만 아니라 올바른 신뢰 수준이 할당된 
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-20-CalibrationTechniquesforLanguageModelsEnhancingProbabilityAssessments_1.png)
 
 ## Verbalized Confidence

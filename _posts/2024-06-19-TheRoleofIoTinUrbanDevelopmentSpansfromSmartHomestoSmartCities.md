@@ -11,7 +11,7 @@ link: "https://medium.com/@ieeewiesusl/the-role-of-iot-in-urban-development-span
 ---
 
 
-```markdown
+```
 ![Image](/assets/img/2024-06-19-TheRoleofIoTinUrbanDevelopmentSpansfromSmartHomestoSmartCities_0.png)
 
 현대 시대에는 전 세계 도시가 인터넷의 보편적인 영향을 통해 상호 연결되고 효율적이며 지속 가능한 변화를 겪고 있습니다. 스마트 홈의 편리함부터 스마트 인프라의 효율성까지, IoT 기술은 도시 개발을 혁신하고 우리가 살고 일하며 환경과 상호 작용하는 방식을 재편하고 있습니다.

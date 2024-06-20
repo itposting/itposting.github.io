@@ -11,7 +11,7 @@ link: "https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c
 ---
 
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-CreatingaLinuxservicewithsystemd_0.png)
 
 웹 애플리케이션을 작성하는 동안, 계산이 많이 드는 작업을 비동기식 작업자 스크립트로 옮기거나 나중에 작업을 예약하거나, 심지어 클라이언트와 직접 통신하기 위해 소켓을 수신하는 데몬을 작성해야 하는 경우가 종종 있습니다.

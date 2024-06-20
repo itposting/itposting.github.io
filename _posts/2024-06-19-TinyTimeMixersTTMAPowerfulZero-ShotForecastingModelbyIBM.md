@@ -247,7 +247,7 @@ predictions_test = finetune_forecast_trainer.predict(test_dataset)
 
 아래는 테이블 태그를 마크다운 형식으로 변경하도록 했습니다.
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-TinyTimeMixersTTMAPowerfulZero-ShotForecastingModelbyIBM_9.png" />
 
 # 마무리 말씀

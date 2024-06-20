@@ -11,7 +11,7 @@ link: "https://medium.com/runners-life/is-there-a-better-system-for-age-grading-
 ---
 
 
-```markdown
+```
 <img src="/assets/img/2024-06-19-IsThereaBetterSystemforAgeGradingMarathonResults_0.png" />
 
 서로 다른 두 명의 러너 사이에 경주 결과를 공정하게 비교하려면 어떻게 해야 할까요?

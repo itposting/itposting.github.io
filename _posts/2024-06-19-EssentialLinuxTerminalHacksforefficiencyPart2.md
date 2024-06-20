@@ -31,7 +31,7 @@ link: "https://medium.com/faun/essential-linux-terminal-hacks-for-efficiency-par
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-EssentialLinuxTerminalHacksforefficiencyPart2_1.png)
 
 ## 3. Show Date and time in History:
@@ -71,7 +71,7 @@ export HISTTIMEFORMAT="%d-%m-%y %r "
 
 <div class="content-ad"></div>
 
-```markdown
+```
 || — Command runs only if the previous cmd fails.
 
 ![Screenshot](/assets/img/2024-06-19-EssentialLinuxTerminalHacksforefficiencyPart2_3.png)

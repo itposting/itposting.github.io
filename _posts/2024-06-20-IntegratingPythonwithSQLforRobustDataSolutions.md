@@ -141,7 +141,7 @@ user_posts_df = pd.read_sql('SELECT * FROM user_posts', conn)
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![User_posts dataset](/assets/img/2024-06-20-IntegratingPythonwithSQLforRobustDataSolutions_2.png)
 
 We have three different datasets. Here is the user_posts dataset.

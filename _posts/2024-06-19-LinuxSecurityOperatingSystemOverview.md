@@ -11,7 +11,7 @@ link: "https://medium.com/@cybersecuritystephen/linux-security-operating-system-
 ---
 
 
-```markdown
+```
 ![Linux Security Operating System Overview](/assets/img/2024-06-19-LinuxSecurityOperatingSystemOverview_0.png)
 
 Windows와 Linux을 비교하는 통계 기사에 따르면, Linux 운영 체제가 모든 웹사이트 중 38.5%에서 사용되며 상위 백만 웹사이트 중 46.8%에서 사용됩니다.¹ 이는 인터넷의 상당 부분이 웹사이트에 Linux를 사용하고 있다는 것을 의미하므로 Linux의 실제 보안 상태를 알고 싶어합니다.
@@ -91,7 +91,7 @@ Linux 커널에 새로운 보안 기능을 통합할 때의 중요한 설계 제
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Linux Security](/assets/img/2024-06-19-LinuxSecurityOperatingSystemOverview_2.png)
 
 # 결론

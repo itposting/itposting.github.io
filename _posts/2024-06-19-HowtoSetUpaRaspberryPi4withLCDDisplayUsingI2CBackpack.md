@@ -80,7 +80,7 @@ I2C 인터페이스를 활성화한 후에는 변경 사항이 적용되도록 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 sudo reboot
 ```
 
@@ -88,7 +88,7 @@ sudo reboot
 
 다음으로, I2C 작업에 필요한 두 가지 도구를 설치해야 합니다. 먼저, 다음 명령어를 라즈베리 파이 터미널에서 실행해 주세요:
 
-```markdown
+```
 sudo apt-get install -y i2c-tools python3-smbus
 ```
 
@@ -124,7 +124,7 @@ i2c-dev
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*aSoaYOvlXfjAdWZAuO4LqQ.gif)
 
 Raspberry Pi를 다시 부팅하려면:

@@ -11,7 +11,7 @@ link: "https://medium.com/syncedreview/googles-proofread-ai-driven-typing-accura
 ---
 
 
-```markdown
+```
 ![Gboard](/assets/img/2024-06-20-GooglesProofreadAI-DrivenTypingAccuracyinOneTap_0.png)
 
 Gboard은 모바일 기기용 Google 키보드로, 통계 디코딩을 활용하여 부드러운 타자 경험을 제공합니다. 자동 및 수동 오류 수정 기능을 갖추고 있어 사용자 친화적 상호 작용을 보장합니다. 대형 언어 모델 (LLMs)의 놀라운 능력을 활용하여 Gboard는 문장 및 단락 수준의 수정을 향상시켜 타자 경험을 혁신합니다.

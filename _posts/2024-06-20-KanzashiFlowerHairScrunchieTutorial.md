@@ -21,7 +21,7 @@ link: "https://medium.com/@sparksasha/kanzashi-flower-hair-scrunchie-tutorial-14
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Kanzashi Flower Hair Scrunchie Tutorial Part 2](/assets/img/2024-06-20-KanzashiFlowerHairScrunchieTutorial_2.png)
 
 ![Kanzashi Flower Hair Scrunchie Tutorial Part 3](/assets/img/2024-06-20-KanzashiFlowerHairScrunchieTutorial_3.png)

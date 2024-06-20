@@ -95,7 +95,7 @@ PID(Proportional Integral Derivative) 직경 제어 없이도 제작한 ekstrude
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-06-19-Part1Makeyourfilamentathomeforcheap_0.png)
 
 ## 지구 지키기

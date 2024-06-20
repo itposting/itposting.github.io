@@ -11,7 +11,7 @@ link: "https://medium.com/@lekushlev/mastering-serial-communication-arduino-mega
 ---
 
 
-```markdown
+```
 ![이미지](/assets/img/2024-06-20-MasteringSerialCommunicationArduinoMega2560MasterandUnoSlaveUARTTutorial_0.png)
 
 # 소개
@@ -116,7 +116,7 @@ if (Serial1.available() > 0) {
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 if (received == '1') {
    digitalWrite(LED_BUILTIN, LOW);
