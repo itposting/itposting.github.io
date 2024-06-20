@@ -31,7 +31,7 @@ link: "https://medium.com/@calendulacraft/the-magic-and-beauty-of-floral-arrange
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-20-TheMagicandBeautyOfFloralArrangements_2.png)
 
 라벤더, 장미, 말린 양귀비 머리, 피버휴, 그리고 약초는 모두 화환의 멋진 중앙을 이룹니다. 주변에는 레몬밤, 세이지(정원 세이지 또는 다른 종류), 아르테미시아, 심지어 민트의 장독을 추가합니다. 전체적으로 직경이 줄어들 것을 염두에 두어 더 많은 초목과 꽃을 추가하고 천연 섬유 또는 끈으로 꽉 조이세요.
@@ -39,7 +39,7 @@ link: "https://medium.com/@calendulacraft/the-magic-and-beauty-of-floral-arrange
 마지막으로, 화환은 한 달 정도 말려야 합니다. 그것들을 거꾸로 매달거나 그늘진 건조한 곳에 판지 위에 눕혀 놓습니다. 이 장채 부분은 직사광선이 들어오지 않지만 다른 화환과 약초를 실내에서 말리기도 합니다.
 
 ![Image](/assets/img/2024-06-20-TheMagicandBeautyOfFloralArrangements_3.png)
-```
+
 
 <div class="content-ad"></div>
 

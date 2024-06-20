@@ -11,7 +11,7 @@ link: "https://medium.com/short-sweet-valuable/organic-almond-butter-religion-37
 ---
 
 
-```
+
 ![Organic Almond Butter](/assets/img/2024-06-20-OrganicAlmondButterReligion_0.png)
 
 우리는 아몬드를 믿고, 아몬드 버터를 땅콩 버터보다 더 좋아해요. 아몬드 버터는 유기농이 아니어도 꽤 비싸요. 유기농 라벨에 대한 프리미엄이 더 높아져요.
@@ -19,7 +19,7 @@ link: "https://medium.com/short-sweet-valuable/organic-almond-butter-religion-37
 ## 직접 만들어요
 
 우리는 유기농 아몬드로부터 직접 우리만의 유기농 아몬드 버터를 만들어요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -54,6 +54,5 @@ This article was published on June 19th, 2024 in the Short. Sweet. Valuable. pub
 
 <div class="content-ad"></div>
 
-```
+
 ![Organic Almond Butter Religion](/assets/img/2024-06-20-OrganicAlmondButterReligion_2.png)
-```

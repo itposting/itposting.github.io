@@ -101,7 +101,7 @@ ReactPy로 시작하고 싶다면, 아래의 저의 글을 확인해보세요: h
 
 <div class="content-ad"></div>
 
-```
+
 ![Python Frontend Libraries for Data Science](/assets/img/2024-06-19-Top-5PythonFrontendLibrariesforDataScience_6.png)
 
 PyQt는 유연한 Python 프로그래밍 언어와 강력한 Qt C++ 크로스 플랫폼 프레임워크를 원활하게 통합하여 강력한 GUI 모듈로 기능하는 플러그인 형태로 구현된 크로스 플랫폼 GUI 툴킷의 Python 바인딩입니다.
@@ -109,7 +109,7 @@ PyQt는 유연한 Python 프로그래밍 언어와 강력한 Qt C++ 크로스 �
 QtCore는 핵심 비 GUI 기능을 위한 기능이며, QtGui는 GUI 기능을 위한 기능과 같이 특정 작업에 맞게 설계된 여러 모듈로 구성됩니다. PyQt는 최신 위젯 모음과 Windows, Unix, Linux, macOS, iOS 및 Android와 호환되는 여러 운영 체제와의 호환성으로 인해 그래픽 응용 프로그램을 개발하는 데 널리 사용됩니다.
 
 위에서 언급된 OS 중에서 데스크탑 앱이 필요하다면 PyQt가 최고의 선택 중 하나입니다. 다양한 위젯 세트, 좋은 사용자 정의 가능성을 제공하며 모든 Python 규칙을 따르므로 쉽게 작업할 수 있습니다. 또한 비디오 및 오디오와 같은 멀티미디어를 지원합니다.
-```
+
 
 <div class="content-ad"></div>
 

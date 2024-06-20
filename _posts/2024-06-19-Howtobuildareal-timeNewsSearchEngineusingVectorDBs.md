@@ -217,7 +217,6 @@ NEWS_TOPIC = "news" # 이것은 가져올 기사의 카테고리입니다
 다음 단계는 구현 세부 정보에 들어가기 전에 환경과 필수 패키지를 설치하는 것입니다.
 다음은 Makefile 설치 단계의 모습입니다:
 
-```js
 # Makefile
 ...
 install:
@@ -231,9 +230,8 @@ install:
  @echo "pyproject.toml 위치로 변경 중..."
  @bash -c " PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring poetry install"
 ...
-```
 
-환경을 준비하려면 make install을 실행하세요.```
+환경을 준비하려면 make install을 실행하세요.
 
 <div class="content-ad"></div>
 
@@ -256,7 +254,6 @@ install:
 
 구현 내용에 대해 알아보겠습니다:
 
-```js
 import datetime
 import functools
 import logging
@@ -350,7 +347,6 @@ class NewsFetcher:
     def sources(self) -> List[callable]:
         """뉴스 가져오기 함수 목록입니다."""
         return [self.fetch_from_newsapi, self.fetch_from_newsdataapi]
-```
 
 <div class="content-ad"></div>
 
@@ -384,7 +380,6 @@ class NewsFetcher:
 
 여기 Kafka로 메시지 처리를 담당하는 주요 기능이 있습니다:
 
-```js
 def run(self) -> NoReturn:
         """지속적으로 Kafka 주제로 메시지를 가져와 보냅니다."""
         while self.running.is_set():
@@ -401,7 +396,6 @@ def run(self) -> NoReturn:
             except Exception as e:
                 logger.error(f"프로듀서 작업자 {self.producer_id}에서 오류 발생: {e}")
                 self.running.clear()  # 오류 시 스레드를 중지합니다
-```
 
 구현에서 고려해야 할 중요 사항:
 
@@ -429,7 +423,6 @@ def run(self) -> NoReturn:
 
 예를 들어, 위 CommonDocument 모델은 다양한 뉴스 페이로드 형식 사이의 연결 역할을 나타내므로 이와 같이 구성됩니다:
 
-```js
 class CommonDocument(BaseModel):
     article_id: str = Field(default_factory=lambda: str(uuid4()))
     title: str = Field(default_factory=lambda: "N/A")
@@ -473,7 +466,6 @@ class CommonDocument(BaseModel):
     def to_kafka_payload(self) -> dict:
         """Kafka 페이로드의 공통 표현을 준비합니다."""
         return self.model_dump(exclude_none=False)
-```
 
 해석해보겠습니다:
 
@@ -512,7 +504,6 @@ class CommonDocument(BaseModel):
 그럼 시작해봐요!
 프로젝트의 루트 디렉토리에서, Makefile에 데이터 수집을 실행하는 명령어가 있습니다:
 
-```js
 ....
 
 run_producers:
@@ -520,7 +511,6 @@ run_producers:
  @bash -c "poetry run python -m src.producer"
 
 ...
-```
 
 이 🔗Makefile은 우리가 구축 중인 솔루션과 상호작용하기 위한 유용한 명령어가 포함되어 있습니다. 이 경우에는 make run_producers를 사용하여 run_producers를 실행해야 합니다. 이렇게 하면 KafkaSwarm이 시작되고 NewsAPIs에서 기사를 가져와 형식을 지정한 다음 Kafka 클러스터로 보내는 스레드를 다룰 것입니다.
 
@@ -534,7 +524,7 @@ run_producers:
 ![이미지](/assets/img/2024-06-19-Howtobuildareal-timeNewsSearchEngineusingVectorDBs_9.png)
 
 이 시점에서는 API에서 뉴스 기사를 가져와 형식을 맞춘 후 Kafka로 메시지를 보내는 데이터 수집 파이프라인의 구현 및 테스트가 완료되었습니다. 다음으로는 Kafka에서 새 메시지를 처리하는 "컨슈머" 또는 적재 파이프라인을 구현할 것입니다.
-```  
+
 
 <div class="content-ad"></div>
 
@@ -863,11 +853,11 @@ UI는 다음과 같은 기능을 갖춘 기본 Streamlit [8] 애플리케이션�
 
 다음은 예시입니다:
 
-```
+
 ![How to build a real-time News Search Engine using VectorDBs - Part 1](/assets/img/2024-06-19-Howtobuildareal-timeNewsSearchEngineusingVectorDBs_11.png)
 
 ![How to build a real-time News Search Engine using VectorDBs - Part 2](/assets/img/2024-06-19-Howtobuildareal-timeNewsSearchEngineusingVectorDBs_12.png)
-```
+
 
 <div class="content-ad"></div>
 

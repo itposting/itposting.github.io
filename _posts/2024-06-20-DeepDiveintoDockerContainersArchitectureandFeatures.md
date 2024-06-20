@@ -11,7 +11,7 @@ link: "https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture
 ---
 
 
-```
+
 ![Container Architecture](/assets/img/2024-06-20-DeepDiveintoDockerContainersArchitectureandFeatures_0.png)
 
 # 개요
@@ -19,7 +19,7 @@ link: "https://medium.com/@dmosyan/deep-dive-into-docker-containers-architecture
 컨테이너는 코드와 모든 의존성을 포장하여 응용 프로그램이 한 컴퓨팅 환경에서 다른 환경으로 빠르고 신뢰성 있게 실행되도록 하는 표준 소프트웨어 단위입니다. VM과의 주요 차이점은 컨테이너가 자체 완전한 OS를 필요로하지 않는다는 것입니다. 사실, 동일 호스트의 모든 컨테이너는 호스트의 OS를 공유합니다. 이로써 CPU, RAM 및 저장소와 같은 대규모 시스템 리소스가 확보됩니다.
 
 ![Container Features](/assets/img/2024-06-20-DeepDiveintoDockerContainersArchitectureandFeatures_1.png)
-```
+
 
 <div class="content-ad"></div>
 

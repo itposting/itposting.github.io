@@ -11,7 +11,7 @@ link: "https://medium.com/long-sweet-valuable/i-found-a-hidden-camera-in-my-airb
 ---
 
 
-```
+
 <img src="/assets/img/2024-06-19-IFoundaHiddenCamerainMyAirbnb_0.png" />
 
 완벽한 휴가용 임대 숙소였어요. 산디에고 비치 프론트에 위치한 이 콘도는 멋진 전망을 자랑했죠.
@@ -19,7 +19,7 @@ link: "https://medium.com/long-sweet-valuable/i-found-a-hidden-camera-in-my-airb
 나는 늦게까지 일어나 물 위에 뜬 달을 보았어요. 침대에 들어가려고 했을 때, 남편이 자고 계신 침실로 향하기 위해 아이폰의 플래시를 켜봤어요.
 
 침실에 있는 선반 위로 빛이 비쳤을 때, 작은 빛이 반사돼 다시 내게 돌아왔어요.
-```
+
 
 <div class="content-ad"></div>
 

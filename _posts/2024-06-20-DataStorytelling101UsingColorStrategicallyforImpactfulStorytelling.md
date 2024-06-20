@@ -31,7 +31,7 @@ link: "https://medium.com/microsoft-power-bi/data-visualization-using-color-stra
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-DataStorytelling101UsingColorStrategicallyforImpactfulStorytelling_1.png)
 
 - 주요 정보 강조하기
@@ -41,7 +41,7 @@ link: "https://medium.com/microsoft-power-bi/data-visualization-using-color-stra
 
 - 맥락 제공하기
 회색의 연한 색조를 사용하여 데이터 세트의 배경 정보나 일반적인 추세를 표시하여 뷰어가 색상에 압도당하지 않고 상황을 이해할 수 있도록 합니다.
-```  
+
 
 <div class="content-ad"></div>
 

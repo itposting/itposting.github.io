@@ -11,7 +11,7 @@ link: "https://medium.com/@lekushlev/mastering-serial-communication-arduino-mega
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-20-MasteringSerialCommunicationArduinoMega2560MasterandUnoSlaveUARTTutorial_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/@lekushlev/mastering-serial-communication-arduino-mega
 아두이노 프로젝트의 영역에서 시리얼 통신은 기본적인 기술입니다. 이것은 새로운 언어로 대화하는 것을 배우는 것과 같습니다. 하지만 단어 대신에 전기 신호를 사용합니다. 이 튜토리얼에서는 두 가지 인기 있는 아두이노 보드인 메가 2560을 마스터로, 그리고 우노를 슬레이브로하여 UART (Universal Asynchronous Receiver-Transmitter) 통신을 설정하는 방법을 알아볼 것입니다. 이 안내서를 끝까지 따라오면 이 두 보드가 서로 '대화'할 수 있는 방법에 대해 명확히 이해하게 될 것입니다.
 
 # 필요한 것
-```
+
 
 <div class="content-ad"></div>
 
@@ -49,7 +49,7 @@ digitalWrite(LED_BUILTIN, HIGH);
 ```
 
 # 루프
-```
+
 
 <div class="content-ad"></div>
 
@@ -116,7 +116,7 @@ if (Serial1.available() > 0) {
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 if (received == '1') {
    digitalWrite(LED_BUILTIN, LOW);
@@ -152,7 +152,7 @@ void loop() {
     }
 }
 ```
-```
+
 
 <div class="content-ad"></div>
 

@@ -41,7 +41,7 @@ link: "https://medium.com/@researchgraph/automated-knowledge-graph-construction-
 
 <div class="content-ad"></div>
 
-```
+
 ![Automated Knowledge Graph Construction with Large Language Models](/assets/img/2024-06-20-AutomatedKnowledgeGraphConstructionwithLargeLanguageModels_1.png)
 
 Further research revealed that despite possessing more fundamental world knowledge, LLMs struggled to recall relational facts and deduce relationships between actions and events. Despite possessing numerous advantages, LLMs also suffer from challenges such as:
@@ -53,7 +53,7 @@ Further research revealed that despite possessing more fundamental world knowled
 - Bias, privacy and toxicity: LLMs may give biassed or offensive responses, whereas Knowledge Graphs are typically built from reliable data sources devoid of these biases.
 
 Knowledge Graphs do not encounter these same issues and exhibit better consistency, reasoning ability, and interpretability, though they do have their own set of limitations. Aside from those discussed previously, Knowledge Graphs also lack the flexibility that LLMs enjoy from their unsupervised training process.
-```
+
 
 <div class="content-ad"></div>
 

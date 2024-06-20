@@ -11,7 +11,7 @@ link: "https://medium.com/runners-life/marathon-age-grading-alternatives-explori
 ---
 
 
-```
+
 ![마라톤 나이 그레이딩 대안 탐색](/assets/img/2024-06-19-MarathonAgeGradingAlternativesExploringtheUpdated2023RaceResultDataset_0.png)
 
 다른 연령 및 성별의 러너들 사이의 비교는 어떻게 하나요?
@@ -19,7 +19,7 @@ link: "https://medium.com/runners-life/marathon-age-grading-alternatives-explori
 지난 몇 주간, 이 정확한 질문을 탐색해 왔어요.
 
 저는 약 2,000,000 개의 개별 마라톤 완주 정보를 포함한 대규모 데이터셋을 수집한 후, 서로 다른 시간에 대한 백분위수 및 z-점수를 계산하여 전통적인 나이 그레이딩 시스템의 대안을 만들었어요.
-```
+
 
 <div class="content-ad"></div>
 

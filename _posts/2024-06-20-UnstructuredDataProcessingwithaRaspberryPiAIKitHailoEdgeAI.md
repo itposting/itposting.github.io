@@ -51,7 +51,7 @@ AI 키트는 초당 13 테라 오퍼레이션(TOPS)을 처리할 수 있는 신�
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-UnstructuredDataProcessingwithaRaspberryPiAIKitHailoEdgeAI_5.png)
 
 Now, we can begin querying our vectors, and I will demonstrate how to do it using a Jupyter notebook.
@@ -59,7 +59,7 @@ Now, we can begin querying our vectors, and I will demonstrate how to do it usin
 ## Querying the Database and Displaying Images
 
 ![image](/assets/img/2024-06-20-UnstructuredDataProcessingwithaRaspberryPiAIKitHailoEdgeAI_6.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -116,7 +116,7 @@ dmesg | grep -i hailo
 
 <div class="content-ad"></div>
 
-```
+
 
 ![이미지](/assets/img/2024-06-20-UnstructuredDataProcessingwithaRaspberryPiAIKitHailoEdgeAI_8.png)
 
@@ -125,7 +125,7 @@ dmesg | grep -i hailo
 ![이미지](/assets/img/2024-06-20-UnstructuredDataProcessingwithaRaspberryPiAIKitHailoEdgeAI_9.png)
 
 # 모델 동물원
-```
+
 
 <div class="content-ad"></div>
 

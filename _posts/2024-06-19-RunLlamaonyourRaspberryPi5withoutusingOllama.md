@@ -58,9 +58,9 @@ Windows PC에서 WSL을 설정하는 데 이 안내서를 사용했다는 점을
 
 설치가 완료되면 다음 명령을 사용하여 설치되었는지 확인할 수 있습니다.
 
-```
+
 After the installation is done, you can verify that it is installed with this command
-```
+
 
 WSL 설치 후 컴퓨터를 다시 시작하는 것이 강력히 권장됩니다. 재부팅 후 시작 메뉴에서 Linux 배포판을 찾을 수 있습니다.
 

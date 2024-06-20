@@ -41,7 +41,7 @@ Seaborn의 목표는 항상 파이썬의 주요 플로팅 라이브러리인 Mat
 
 <div class="content-ad"></div>
 
-```
+
 ![Plot](/assets/img/2024-06-20-IntroducingSeabornObjects_1.png)
 
 Plot() 클래스는 그래픽을 위한 빈 캔버스를 설정합니다. 다음 코드를 입력하여 예제를 확인하세요 (JupyterLab을 사용하여 표시됨):
@@ -52,7 +52,7 @@ so.Plot()
 ```
 
 ![Plot](/assets/img/2024-06-20-IntroducingSeabornObjects_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -74,9 +74,9 @@ tips.head(3)
 
 <div class="content-ad"></div>
 
-```
+
 so.Plot(data=tips, x="total_bill", y="tip")
-```
+
 
 ![Image](/assets/img/2024-06-20-IntroducingSeabornObjects_4.png)
 
@@ -89,7 +89,7 @@ fig = so.Plot(data=tips, x='total_bill', y='tip').add(so.Dot(), color='sex')
 
 <div class="content-ad"></div>
 
-```
+
 ![그림](/assets/img/2024-06-20-IntroducingSeabornObjects_5.png)
 
 여기에서는 먼저 Plot()을 호출하여 플롯을 초기화한 다음 Dot()을 호출하여 점 표시기를 추가하여 산점도를 생성했습니다! 직관적으로 산점도에는 점이 사용되기 때문에 이로써 산점도가 생성되었습니다.
@@ -101,7 +101,7 @@ fig = so.Plot(data=tips, x='total_bill', y='tip').add(so.Dot(), color='sex')
 - 좌표 인수 할당 (예: x 및/또는 y),
 - add() 메서드를 사용하여 플롯에 레이어 추가,
 - add() 내부의 메서드를 호출하여 마커/플롯 유형 지정.
-```
+
 
 <div class="content-ad"></div>
 
@@ -243,7 +243,7 @@ so.Plot(tips, x='sex')
 데이터셋에는 여성보다 남성이 거의 2배 많이 있어 보입니다.
 
 # Summary
-```
+
 
 <div class="content-ad"></div>
 

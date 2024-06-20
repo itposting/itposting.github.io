@@ -41,7 +41,7 @@ Twitter (지금은 X)와 LinkedIn의 경우, 공유 기능이 시스템 전체 �
 
 <div class="content-ad"></div>
 
-```
+
 ![image 1](/assets/img/2024-06-19-DidApplejustdeclarewaronOpenAI_3.png)
 
 WWDC 키노트에서, 멋진 크레이그 페데리기가 Siri의 지연 때문에 ChatGPT와 주목을 나눠야 한다는 사실에 자신을 젠더고 있을 것으로 의심했습니다 (상당히 큰 선두를 잃은 후).
@@ -49,7 +49,7 @@ WWDC 키노트에서, 멋진 크레이그 페데리기가 Siri의 지연 때문�
 ![image 2](/assets/img/2024-06-19-DidApplejustdeclarewaronOpenAI_4.png)
 
 그럼에도 불구하고, 페데리기는 동시에 애플에 시간을 벌려주었습니다, 왜냐하면 이미 경쟁사의 능력을 흡수하는 방안이 이미 마련되어 있기 때문입니다.
-```
+
 
 <div class="content-ad"></div>
 

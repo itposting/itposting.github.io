@@ -96,7 +96,7 @@ xz -d metal-arm64.raw.xz
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 3](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_3.png)
 
 Finally flash the image
@@ -104,7 +104,7 @@ Finally flash the image
 ![Image 4](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_4.png)
 
 ![Image 5](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -148,7 +148,7 @@ talos-bootstrap install
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_6.png)
 
 ![Image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_7.png)
@@ -156,7 +156,7 @@ talos-bootstrap install
 After some time, the talos-bootstrap should find your Raspberry Pi nodes in talos maintenance mode. Select your first node:
 
 ![Image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -180,7 +180,7 @@ After some time, the talos-bootstrap should find your Raspberry Pi nodes in talo
 
 <div class="content-ad"></div>
 
-```
+
 ![Node custom address](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_12.png)
 
 Select a custom address for your node.
@@ -188,7 +188,7 @@ Select a custom address for your node.
 ![Gateway address](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_13.png)
 
 Set your gateway address. In most cases, it's your router address.
-```
+
 
 <div class="content-ad"></div>
 
@@ -233,7 +233,7 @@ Kubernetes 엔드포인트를 사용자 정의하십시오:
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_19.png)
 
 ![image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_20.png)
@@ -241,7 +241,7 @@ Kubernetes 엔드포인트를 사용자 정의하십시오:
 다이얼로그를 완료하면 talos-boostrap을 실행하는 경로에 kubeconfig 파일이 생성됩니다.
 
 ![image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_21.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -271,7 +271,7 @@ k8s-control   Ready    control-plane   4m55s   v1.30.1
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_23.png)
 
 ![image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_24.png)
@@ -279,7 +279,7 @@ k8s-control   Ready    control-plane   4m55s   v1.30.1
 ![image](/assets/img/2024-06-20-IsThistheFastestWaytoDeployKubernetesDiveintoSettingUpaRaspberryPiCluster_25.png)
 
 ## Testing
-```
+
 
 <div class="content-ad"></div>
 

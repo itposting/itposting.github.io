@@ -51,7 +51,7 @@ crontab - e;
 
 ## 시각적 텍스트 편집기를 사용하여 Crontab 편집
 
-Visual Studio Code, Sublime Text 또는 Atom과 같은 시각적 텍스트 편집기를 선호하는 경우 VISUAL 환경 변수를 설정하여 기본 편집기를 지정할 수 있습니다. 예를 들어 Visual Studio Code를 사용하려면 터미널에서 다음 명령을 실행하세요:```
+Visual Studio Code, Sublime Text 또는 Atom과 같은 시각적 텍스트 편집기를 선호하는 경우 VISUAL 환경 변수를 설정하여 기본 편집기를 지정할 수 있습니다. 예를 들어 Visual Studio Code를 사용하려면 터미널에서 다음 명령을 실행하세요:
 
 <div class="content-ad"></div>
 
@@ -152,14 +152,14 @@ export VISUAL="code --wait"
 
 - "backup.sh" 라는 쉘 스크립트 파일을 만들고 실행 가능하게 만듭니다:
 
-````
+
 
 <div class="content-ad"></div>
 
 ```js
 #!/bin/bash
 # 백업 명령어
-````
+```
 
 2. 스크립트를 매일 새벽 3시에 실행되도록 스케줄링하십시오:
 
@@ -271,9 +271,7 @@ crontab - l;
 
 또는 크론 작업의 실행에 대한 기본 정보를 확인하기 위해 시스템 로그를 확인할 수도 있습니다. 이를 위해 터미널을 열고 아래 명령어를 입력하세요:
 
-```js
 grep -i cron /var/log/system.log
-```
 
 <div class="content-ad"></div>
 

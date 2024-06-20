@@ -105,7 +105,7 @@ sudo chown -R admin:admin /media/exthdd
 sudo mount -t exfat /dev/sda1 /media/exthdd
 ```
 
-모든 것이 잘 되면 다음 명령어를 사용하여 디스크의 내용을 볼 수 있어야 합니다:```
+모든 것이 잘 되면 다음 명령어를 사용하여 디스크의 내용을 볼 수 있어야 합니다:
 
 <div class="content-ad"></div>
 
@@ -238,7 +238,7 @@ net use Z: "\\rpi-home\media-library /user:<username> <password>
 ```
 
 macOS에서는 “smb:\\rpi-home\media-library” URL을 사용하여 Finder에서 서버에 연결할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

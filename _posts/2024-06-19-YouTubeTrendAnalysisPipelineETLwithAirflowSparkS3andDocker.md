@@ -144,7 +144,7 @@ Docker 데스크톱을 열어서 모든 것이 올바르게 완료되었는지 �
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-YouTubeTrendAnalysisPipelineETLwithAirflowSparkS3andDocker_2.png)
 
 - 포트를 클릭하면 Airflow 로그인 페이지로 이동합니다. 이 링크를 처음 열어보는 경우 자격 증명을 제공해야 합니다.
@@ -153,7 +153,7 @@ Docker 데스크톱을 열어서 모든 것이 올바르게 완료되었는지 �
 ![이미지](/assets/img/2024-06-19-YouTubeTrendAnalysisPipelineETLwithAirflowSparkS3andDocker_3.png)
 
 - 로그인 페이지에서 자격 증명을 입력한 후, 로컬 호스트에서 Airflow가 실행 중인 것을 확인할 수 있습니다. 다음과 같이 나타납니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -332,7 +332,7 @@ YouTube Data API 문서를 참조하여 API의 다른 부분에서 사용 가능
 
 <div class="content-ad"></div>
 
-```md
+
 # Python callable function to extract data from YouTube API
 def extract_data(**kwargs):
     api_key = kwargs['api_key']
@@ -461,7 +461,7 @@ preprocess_data_pyspark_task= PythonOperator(
 )
 
 extract_task >> preprocess_data_pyspark_task
-```
+
 
 여기서는 이 코드가 하는 일을 설명해 드렸습니다.
 
@@ -471,7 +471,7 @@ extract_task >> preprocess_data_pyspark_task
 - 그리고 정리된 데이터는 "Transformed_Youtube_Data_currentDate"라는 폴더에 저장됩니다.
 - 이 폴더 안에는 정리된 데이터가 담긴 "part-" 접두사가 붙은 새 CSV 파일이 생성됩니다.
 
-만약 Airflow를 보신다면 아래와 같이 첫 번째 작업에 새로운 작업이 추가된 것을 보실 수 있습니다:```
+만약 Airflow를 보신다면 아래와 같이 첫 번째 작업에 새로운 작업이 추가된 것을 보실 수 있습니다:
 
 <div class="content-ad"></div>
 

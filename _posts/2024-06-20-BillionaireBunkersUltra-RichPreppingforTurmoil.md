@@ -31,7 +31,7 @@ link: "https://medium.com/@foresightbureau/billionaire-bunkers-ultra-rich-preppi
 
 <div class="content-ad"></div>
 
-```
+
 ![Billionaire Bunker](/assets/img/2024-06-20-BillionaireBunkersUltra-RichPreppingforTurmoil_1.png)
 
 Follow us on social media:
@@ -47,7 +47,7 @@ Follow us on social media:
 - Website: [foresightbureau.com](https://foresightbureau.com)
 
 Disclaimer
-```
+
 
 <div class="content-ad"></div>
 

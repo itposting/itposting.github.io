@@ -61,7 +61,7 @@ link: "https://medium.com/towards-data-science/microservices-vs-monolithic-appro
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-MicroservicesvsMonolithicApproachesinData_1.png)
 
 ## 가정 2: 높은 상호 운용성과 거버넌스
@@ -69,7 +69,7 @@ link: "https://medium.com/towards-data-science/microservices-vs-monolithic-appro
 마이크로서비스 인프라를 가정할 때, 이 서비스들이 서로 통신하고 상호 운용 가능하다는 것을 암시합니다. 소프트웨어 엔지니어링에서는 계약, 이벤트 기반 통신 및 Datadog와 같은 중앙 집중식 로깅 시스템을 통해 이를 가능하게 합니다.
 
 이를 데이터로 옮기는 것은 까다로울 수 있습니다. 데이터 수집 서비스, 데이터 웨어하우스에 위치한 데이터 변환 서비스 및 BI 도구(제3자 SAAS)가 있다면, 이들을 어떻게 연결하고 함께 거버넌스할 수 있을까요?
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/macoclock/will-apple-intelligence-bring-me-back-to-the
 ---
 
 
-```
+
 ![image](/assets/img/2024-06-19-WillAppleIntelligenceBringMeBacktotheiPhone_0.png)
 
 그래서, WWDC 키노트가 올해 또 다시 끝났습니다. 항상 그렇듯, 이야기할 만한 다양한 내용이 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/macoclock/will-apple-intelligence-bring-me-back-to-the
 작년에 비해 각 운영 체제의 업데이트가 어느 정도 점잖게 이루어졌다는 점을 제외하고 매우 흥미로운 이벤트였습니다. 그것은 새롭게 변화된 것보다는 청소를 한 것처럼 느껴졌습니다. 어제 밤 제 WWDC 반응 라이브 스트림 중 한 사람이 언급했 듯이, 올해의 WWDC는 "드디어"의 순간으로 가득 찼습니다.
 
 네, iPad용 계산기가 포함되어 있습니다. 드디어.
-```
+
 
 <div class="content-ad"></div>
 

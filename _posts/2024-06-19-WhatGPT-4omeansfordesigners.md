@@ -69,7 +69,7 @@ GPT-4o로 전환하여 GPT-4와 비교해서 성능이 어떤지 테스트해 �
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-19-WhatGPT-4omeansfordesigners_1.png)
 
 I found a random draft of an app design online and asked ChatGPT (with the GPT-4o model) to provide me with some suggestions for improving the UI design.
@@ -77,11 +77,11 @@ I found a random draft of an app design online and asked ChatGPT (with the GPT-4
 ![Image 2](/assets/img/2024-06-19-WhatGPT-4omeansfordesigners_2.png)
 
 This is the result I received. It was extensive, and at the bottom, there were some actionable suggestions.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-19-WhatGPT-4omeansfordesigners_3.png](/assets/img/2024-06-19-WhatGPT-4omeansfordesigners_3.png)
 
 ![2024-06-19-WhatGPT-4omeansfordesigners_4.png](/assets/img/2024-06-19-WhatGPT-4omeansfordesigners_4.png)
@@ -89,7 +89,7 @@ This is the result I received. It was extensive, and at the bottom, there were s
 그런 다음 GPT-4로 전환하여 동일한 프롬프트를 요청했습니다.
 
 결과는 다음과 같습니다. - GPT-4o와 유사한 품질이지만 덜 많은 정보를 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

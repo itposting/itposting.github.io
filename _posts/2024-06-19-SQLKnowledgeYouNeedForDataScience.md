@@ -47,9 +47,9 @@ link: "https://medium.com/towards-data-science/sql-knowledge-you-need-for-data-s
 
 어쨌든, 알아야 할 주요하고 가장 중요한 SQL 명령어는 다음과 같아요:
 
-```
+
 SELECT * FROM (표준 쿼리)
-```
+
 
 <div class="content-ad"></div>
 
@@ -222,7 +222,7 @@ JOIN 명령어는 두 테이블을 특정 열과 id에 따라 결합하는 것�
 
 JOIN 작업은 아마 가장 어려울 것이므로 꼭 이해해야 합니다! 저도 여전히 실수를 com하지만 첫 직장에서 나쁜 경험을 한 후 많이 개선했습니다. 그러니 제 처럼 하지 말고 꼼꼼히 익히세요!
 
-이러한 기본 함수를 알고 있다면, SQL 연습 문제가 포함된 입사 시 데이터 과학 인터뷰에 합격할 수 있을 것입니다.```
+이러한 기본 함수를 알고 있다면, SQL 연습 문제가 포함된 입사 시 데이터 과학 인터뷰에 합격할 수 있을 것입니다.
 
 <div class="content-ad"></div>
 
@@ -335,7 +335,7 @@ CONCAT은 두 개의 문자열을 결합하고, SUBSTRING은 문자열을 필터
 LIKE를 통해 `J%`는 J로 시작하는 값들을 검색합니다.
 
 마지막으로, PATINDEX(`%[0-9]%`, LastName) > 0은 LastName에 0부터 9 사이의 숫자 중 하나가 포함된 첫 번째 발생을 찾기 위한 패턴 인덱스 검색입니다.
-```
+
 
 <div class="content-ad"></div>
 

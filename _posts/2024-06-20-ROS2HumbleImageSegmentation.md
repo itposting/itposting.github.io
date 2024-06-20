@@ -11,7 +11,7 @@ link: "https://medium.com/@kabilankb2003/ros2-humble-image-segmentation-ef3f7734
 ---
 
 
-```
+
 <img src="/assets/img/2024-06-20-ROS2HumbleImageSegmentation_0.png" />
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/@kabilankb2003/ros2-humble-image-segmentation-ef3f7734
 이 튜토리얼에서는 DeepLabV3 모델을 사용하여 이미지의 의미론적 세분화를 수행하는 ROS2 노드를 만들 것입니다. ResNet-101 백본을 사용한 이 모델은 의미론적 세분할 작업에 대한 최신 아키텍처입니다. 노드는 웹캠 피드를 구독하고 이미지를 처리한 후 세그멘테이션을 수행하고 세분화된 이미지를 게시할 것입니다.
 
 ## 준비물
-```
+
 
 <div class="content-ad"></div>
 
@@ -75,7 +75,7 @@ self.model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_resnet101', wei
 - 후처리: 모델의 출력은 각 픽셀의 클래스 점수를 포함하는 텐서입니다. 각 픽셀에서 가장 높은 점수가 클래스를 결정합니다. 그런 다음 결과는 PASCAL VOC 컬러 맵을 사용하여 컬러맵으로 변환된 세그멘테이션 이미지로 변환됩니다.
 
 ![image](/assets/img/2024-06-20-ROS2HumbleImageSegmentation_2.png)  
-```
+
 
 <div class="content-ad"></div>
 

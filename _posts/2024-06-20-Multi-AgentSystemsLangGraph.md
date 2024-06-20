@@ -158,7 +158,7 @@ tools = [random_number,python_repl_tool]
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 from langchain.agents import AgentExecutor, create_openai_tools_agent
 from langchain_core.messages import BaseMessage, HumanMessage
@@ -205,8 +205,8 @@ code_node = functools.partial(agent_node, agent=code_agent, name="Coder")
 ```
 
 이제 슈퍼바이저를 생성해 봅시다!
-```
-```
+
+
 
 <div class="content-ad"></div>
 

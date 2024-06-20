@@ -48,9 +48,7 @@ https://ex.service.example.com/history?selectedSources=someSources'' > 200
 ```plaintext
 그 후에는 데이터베이스 버전을 추출하기 위해 sqlmap을 실행해 보았지만, 불행히도 sqlmap은 PostgreSQL이 DBMS임을 제외하고는 아무것도 추출하지 못했습니다. 그러나 포기하지 않고 대신 ghauri(https://github.com/r0oth3x49/ghauri.git)를 사용해 보았어요!
 
-```js
 ghauri -u "https://ex.service.example.com/history?selectedSources=someSources" --dbms=postgres --cookie="JSESSIONID=09326D266052B6B0F7E391B7BBD3A284" --dbs
-```
 
 Boom! 🚀
 ```
@@ -92,7 +90,7 @@ Ghauri는 저장된 세션에서 다음 인젝션 지점을 재개했습니다:
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-HowIGotMyFirstBounty_1.png)
 
 마지막으로, 이해하지 못하는 도구, 기술 또는 프로그램에만 집착하지 마세요. 그렇게 하면 탈진하게 될 거예요. 이미 인터넷은 취약점으로 가득 찬 곳이니까요.
@@ -100,4 +98,3 @@ Ghauri는 저장된 세션에서 다음 인젝션 지점을 재개했습니다:
 Twitter/X: https://x.com/MachIaVellill
 
 سَلامٌ
-```

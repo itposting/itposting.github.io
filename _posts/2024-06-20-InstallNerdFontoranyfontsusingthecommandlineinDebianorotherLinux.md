@@ -11,7 +11,7 @@ link: "https://medium.com/@almatins/install-nerdfont-or-any-fonts-using-the-comm
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-20-InstallNerdFontoranyfontsusingthecommandlineinDebianorotherLinux_0.png)
 
 요즘 LazyVim을 설치하고 있는데 NerdFonts를 설치해야 해요. 인터넷에서 알아보니 터미널을 사용해서 편하게 설치할 수 있다는 걸 알게 됐어요. 아래는 설치 방법입니다.

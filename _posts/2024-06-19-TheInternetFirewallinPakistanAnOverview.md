@@ -11,7 +11,7 @@ link: "https://medium.com/@dailytrendingnow/the-internet-firewall-in-pakistan-an
 ---
 
 
-```
+
 ![image](/assets/img/2024-06-19-TheInternetFirewallinPakistanAnOverview_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/@dailytrendingnow/the-internet-firewall-in-pakistan-an
 파키스탄의 인터넷 방화벽인 파키스탄 인터넷 방화벽(PIF)은 해당 국가 내의 인터넷 트래픽을 통제하고 규제하기 위해 설계된 시스템입니다. 이 시스템은 파키스탄 통신통신 규제당국(PTA)이 설정한 기준에 따라 불법이나 부적절하거나 해로운 콘텐츠에 대한 액세스를 차단하는 것을 목표로 합니다. 이 기사는 인터넷 방화벽의 개요, 시행, 영향 및 그 주변의 논쟁에 대한 포괄적인 개요를 제공합니다.
 
 ## 인터넷 방화벽의 목적
-```
+
 
 <div class="content-ad"></div>
 

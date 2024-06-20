@@ -11,7 +11,7 @@ link: "https://medium.com/runners-life/is-there-a-better-system-for-age-grading-
 ---
 
 
-```
+
 <img src="/assets/img/2024-06-19-IsThereaBetterSystemforAgeGradingMarathonResults_0.png" />
 
 서로 다른 두 명의 러너 사이에 경주 결과를 공정하게 비교하려면 어떻게 해야 할까요?
@@ -19,7 +19,7 @@ link: "https://medium.com/runners-life/is-there-a-better-system-for-age-grading-
 예를 들어, 세 명의 러너가 모두 3:00에 마라톤을 완주했다고 가정해 봅시다. 표면적으로 보면 세 명 모두 잘 한 것으로 말할 수 있습니다.
 
 하지만 그 세 명의 러너가 25세 남성, 40세 여성, 60세 남성이라면 어떨까요? 그 시간은 각각의 러너에게 동일한 만큼 힘든 것이 아닙니다. 그렇다면 누가 가장 우수한 성적을 거뒀을까요?
-```
+
 
 <div class="content-ad"></div>
 

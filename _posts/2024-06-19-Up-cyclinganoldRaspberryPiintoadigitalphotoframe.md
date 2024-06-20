@@ -41,7 +41,7 @@ NZD $6.78은 USD $4.25 정도입니다 - 그 정도로 돈이 많이 나가지�
 
 <div class="content-ad"></div>
 
-```
+
 ![Up-cycling an old Raspberry Pi into a digital photo frame](/assets/img/2024-06-19-Up-cyclinganoldRaspberryPiintoadigitalphotoframe_1.png)
 
 $11.50 NZD is approximately $7.20 USD. The resolution is adequate and it has a DVI input. My 9-year-old couldn't believe that such a budget-friendly purchase was possible!
@@ -49,7 +49,7 @@ $11.50 NZD is approximately $7.20 USD. The resolution is adequate and it has a D
 ## A few more bits and pieces
 
 Raspberry Pis have an HDMI output, so I needed to convert that into the DVI format. Fortunately, I already had a 0.5m male-to-male HDMI cable that came with electronic items in a drawer. I only needed to buy an adapter to convert it to a female DVI-D.
-```
+
 
 <div class="content-ad"></div>
 
@@ -65,7 +65,7 @@ PB Tech가 다시 도와주었습니다. 32GB 마이크로 SD나 전자 모니�
 
 아래는 Markdown 형식으로 변환해 보겠습니다.
 
-```
+
 ![Image 1](/assets/img/2024-06-19-Up-cyclinganoldRaspberryPiintoadigitalphotoframe_3.png)
 
 그리고... $6.54 NZD: SD 카드보다 심지어 더 싸요.
@@ -73,7 +73,7 @@ PB Tech가 다시 도와주었습니다. 32GB 마이크로 SD나 전자 모니�
 마지막 항목은 USB-A에서 USB-micro로 변환하는 것이었어요: $3.82. 제 서랍에 다 떨어져 있었던데요 — 이제는 USB-C 세상이에요.
 
 ![Image 2](/assets/img/2024-06-19-Up-cyclinganoldRaspberryPiintoadigitalphotoframe_4.png)
-```
+
 
 <div class="content-ad"></div>
 

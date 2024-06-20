@@ -112,7 +112,7 @@ Off를 On으로 변경하세요.
 
 <div class="content-ad"></div>
 
-```
+
 Fill it with this 6LdK7xITAAzzAAJQTfL7fu6I-0aPl8KHHieAT_yJg, both of them will look like this.
 
 ![Image 17](/assets/img/2024-06-19-HowtoInstallDVWAIn2023OnWindowsEnvironment_17.png)
@@ -120,7 +120,7 @@ Fill it with this 6LdK7xITAAzzAAJQTfL7fu6I-0aPl8KHHieAT_yJg, both of them will l
 Click the Stop Button and Start again for the Apache. (Restart it)
 
 ![Image 18](/assets/img/2024-06-19-HowtoInstallDVWAIn2023OnWindowsEnvironment_18.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -146,13 +146,13 @@ php.ini 파일을 다시 열어보세요.
 
 다음과 같이 수정해주세요.
 
-```
+
 <img src="/assets/img/2024-06-19-HowtoInstallDVWAIn2023OnWindowsEnvironment_23.png" />
 
 XAMPP를 다시 시작하세요
 
 <img src="/assets/img/2024-06-19-HowtoInstallDVWAIn2023OnWindowsEnvironment_24.png" />
-```
+
 
 <div class="content-ad"></div>
 

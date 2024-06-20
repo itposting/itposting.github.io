@@ -186,7 +186,7 @@ DS2501은 OneWire 프로토콜과 통신합니다. Wikipedia, 해커 블로그 �
 
 <div class="content-ad"></div>
 
-```
+
 ![Connector](/assets/img/2024-06-19-GetridoftheDELLchargernotrecognizedlimitation_5.png)
 
 저는 납땜 과정을 간단하게 하기 위해 커넥터를 나사로 풀었습니다. 핀들은 노란색 투명 재료로 밀봉되어 있었어요. 이것을 부드럽게 플라이어로 조심스럽게 제거해야 했습니다. 부드럽게 말씀드리자면 밀봉된 케이블을 손상시키지 않고 이미 납땜된 것도 깨지지 않게 하려는 거예요.
@@ -194,13 +194,13 @@ DS2501은 OneWire 프로토콜과 통신합니다. Wikipedia, 해커 블로그 �
 ![Chip Components](/assets/img/2024-06-19-GetridoftheDELLchargernotrecognizedlimitation_6.png)
 
 칩을 준비할 때, 다이오드와 저항을 납땜해야 합니다. 이를 위해 노트북 충전기에 있던 것처럼. 다이오드는 최대한 작은 것을 사용하는 것을 권장합니다. 다시 노트북을 닫는 작업을 간단하게 하기 위해서에요. 저는 상당히 큰 다이오드밖에 없었는데, 그럼에도 맞았지만 과정을 간단하게하지는 못했어요. -_-”
-```
+
 
 <div class="content-ad"></div>
 
 아래과 같이 표 태그를 Markdown 형식으로 변경해 주세요.
 
-```
+
 <img src="/assets/img/2024-06-19-GetridoftheDELLchargernotrecognizedlimitation_7.png" />
 
 마지막으로, 노트북 내부 구성 요소와 연결되지 않도록 모든 전선을 절연해주세요. 일부 히트 수축 튜브와 절연 테이프를 사용했어요.
@@ -208,7 +208,7 @@ DS2501은 OneWire 프로토콜과 통신합니다. Wikipedia, 해커 블로그 �
 <img src="/assets/img/2024-06-19-GetridoftheDELLchargernotrecognizedlimitation_8.png" />
 
 취소할 수 있는 해결책을 위해:
-```
+
 
 <div class="content-ad"></div>
 

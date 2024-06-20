@@ -37,7 +37,7 @@ LLM은 ChatGPT, Gemini, MetaAI, Mistral AI 등과 같은 인기 있는 AI 챗봇
 
 LLM 모델이 영어에서 말레이어로 번역하는 작업을 할 수 있도록 하려면 소스(영어)와 대상(말레이어) 언어 쌍이 있는 데이터셋을 사용해야 합니다. 따라서, Huggingface에서 "Helsinki-NLP/opus-100"라는 데이터셋을 사용할 것입니다. 이 데이터셋은 1백만 개의 영어-말레이어 훈련 데이터셋을 가지고 있어서 좋은 정확도를 얻기에 충분하며, 검증 및 테스트 데이터셋에 각각 2,000개의 데이터가 있습니다. 데이터는 이미 사전 분할되어 있어서 데이터셋을 다시 분할할 필요가 없습니다.
 
-```
+
 # 필요한 라이브러리 가져오기
 # 아직 안 했다면 (!pip install datasets, tokenizers)를 사용하여 데이터셋 및 토크나이저 라이브러리 설치하기.
 import os
@@ -86,7 +86,7 @@ for data in tqdm(raw_train_dataset["translation"]):
             fp.write('\n'.join(dataset_my))
             dataset_my = []
         file_count += 1
-```
+
 
 <div class="content-ad"></div>
 
@@ -223,7 +223,6 @@ def causal_mask(size):
 
 Sin 함수는 임베딩 벡터의 각 짝수 차원 값에 적용되고, 코사인 함수는 홀수 차원 값에 적용됩니다. 최종적으로, 결과적인 위치 인코더 벡터는 임베딩 벡터에 추가됩니다. 이제 우리는 토큰의 의미와 위치를 모두 잡을 수 있는 임베딩 벡터를 갖게 되었습니다. 주의할 점은 위치 인코딩의 값이 각 시퀀스에서 동일하다는 것입니다.
 
-```js
 # 입력 임베딩과 위치 인코딩
 class EmbeddingLayer(nn.Module):
     def __init__(self, vocab_size: int, d_model: int):
@@ -267,7 +266,6 @@ class PositionalEncoding(nn.Module):
         
         # 과적합을 방지하기 위해 드롭아웃을 수행합니다.
         return self.dropout(input_embdding)
-```
 
 ## 단계 5: 멀티 헤드 어텐션 블록
 
@@ -293,12 +291,12 @@ class PositionalEncoding(nn.Module):
 이제 왜 Multi-Head Attention이 필요한지 알게 되었습니다. 이제 어떻게 작용하는지 살펴보겠습니다. Multi-Head Attention은 실제로 어떻게 작동하는 걸까요? 바로 살펴보겠습니다.
 
 행렬 곱셈에 익숙하시다면, 이 메카니즘을 이해하는 것은 꽤 쉬운 작업일 것입니다. 먼저 전체 플로우 다이어그램을 살펴보고 Multi-Head Attention의 입력부터 출력까지의 플로우를 아래 일목요연하게 설명하겠습니다.
-```
+
 
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-BuildyourownLargeLanguageModelLLMFromScratchUsingPyTorch_7.png)
 
 1. 먼저, 인코더 입력의 3개 복사본을 만들어봅시다 (입력 임베딩과 위치 인코딩의 조합, 이것은 단계 4에서 했었습니다). 각각을 Q, K, V라고 이름 붙여봅시다. 이들은 단지 인코더 입력의 복사본일 뿐입니다. 인코더 입력 형태: (seq_len, d_model), seq_len: 최대 시퀀스 길이, d_model: 이 경우에는 임베딩 벡터 차원이 512입니다.
@@ -306,7 +304,7 @@ class PositionalEncoding(nn.Module):
 2. 다음으로, Q를 가중치 W_q, K를 가중치 W_k, V를 가중치 W_v와 행렬 곱셈을 수행하겠습니다. 각 가중치 행렬의 형태는 (d_model, d_model)입니다. 새로 얻게 된 쿼리, 키, 밸류 임베딩 벡터의 형태는 (seq_len, d_model)입니다. 가중치 매개변수들은 모델에 의해 무작위로 초기화되며 나준에 모델이 훈련을 시작할 때 업데이트될 것입니다. 어째서 우리가 처음부터 하는 가중치 행렬 곱셈이 필요한 것일까요? 왜냐하면 이것들은 쿼리, 키, 밸류 임베딩 벡터에 더 나은 표현을 제공하기 위해 필요한 학습 가능한 매개변수들이기 때문입니다.
 
 3. 어텐션 논문에 따르면, 헤드(heads) 수는 8입니다. 각 새로운 쿼리, 키, 밸류 임베딩 벡터는 8개의 더 작은 유닛으로 나뉘어집니다. 임베딩 벡터의 새로운 형태는 (seq_len, d_model/num_heads) 또는 (seq_len, d_k)입니다. [ d_k = d_model/num_heads ].
-```  
+
 
 <div class="content-ad"></div>
 
@@ -645,7 +643,7 @@ model = build_model(source_vocab_size, target_vocab_size)
 
 지금은 모델을 훈련할 시간입니다. 훈련 프로세스는 매우 간단합니다. 우리는 단계 3에서 생성한 훈련 DataLoader를 사용할 것입니다. 총 훈련 데이터셋 수가 100만이므로 GPU 장치에서 모델을 훈련하는 것을 강력히 권장합니다. 20 epoch를 완료하는 데 약 5시간이 소요되었습니다. 각 epoch 이후에는 모델 가중치와 옵티마이저 상태를 저장하여 중지된 지점부터 훈련을 다시 시작하는 것이 더 쉽기 때문에 이전 지점에서 훈련을 재개하는 것보다 더 나을 것입니다.
 
-매 에포크 이후에는 검증을 시작합니다. 검증 데이터셋 크기는 2000으로 매우 합리적입니다. 검증 프로세스 중에는 디코더 출력이 [SEP] 토큰을 받을 때까지 한 번만 인코더 출력을 계산하면 됩니다. 이것은 디코더가 [SEP] 토큰을 받기 전까지 동일한 인코더 출력을 계속 보내야 하기 때문입니다.```
+매 에포크 이후에는 검증을 시작합니다. 검증 데이터셋 크기는 2000으로 매우 합리적입니다. 검증 프로세스 중에는 디코더 출력이 [SEP] 토큰을 받을 때까지 한 번만 인코더 출력을 계산하면 됩니다. 이것은 디코더가 [SEP] 토큰을 받기 전까지 동일한 인코더 출력을 계속 보내야 하기 때문입니다.
 
 <div class="content-ad"></div>
 
@@ -822,7 +820,7 @@ Testing Time! Let’s do some translation testing.
 
 ![image](/assets/img/2024-06-19-BuildyourownLargeLanguageModelLLMFromScratchUsingPyTorch_8.png)
 
-“The translation seems to be working pretty well.”```
+“The translation seems to be working pretty well.”
 
 <div class="content-ad"></div>
 

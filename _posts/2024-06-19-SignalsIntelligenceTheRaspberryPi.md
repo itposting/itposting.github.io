@@ -11,7 +11,7 @@ link: "https://medium.com/@investigator515/signals-intelligence-the-raspberry-pi
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-19-SignalsIntelligenceTheRaspberryPi_0.png)
 
 라즈베리파이는 소형이면서도 효과적인 SIGINT 연구 스테이션을 제공합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@investigator515/signals-intelligence-the-raspberry-pi
 미디엄 회원이 아니라면 substack를 통해 무료로 읽을 수 있습니다.
 
 신호 분석을 초보자의 관점에서 시작할 때, 시작하기가 어렵고 다루어야 할 정보가 많을 수 있습니다. 하드웨어 기반 시스템, 웹 기반 시스템이 있으며 무엇이라도 라디오 스펙트럼에서 보고 있는 것이죠?! 이렇게 하면 새로운 프로젝트가 재미있고 흥미로운 것으로 변할 수 있는데, 여기에 참여하는 동안 인내력과 동기부여를 빼앗기기도 합니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/macoclock/the-12-exceptional-macos-apps-that-will-turn
 ---
 
 
-```
+
 ![](/assets/img/2024-06-19-The12exceptionalmacOSappsthatwillturnyouintoaProductivityGenius_0.png)
 
 맥 macOS는 피자 속 반죽처럼 멋지지 않아요.
@@ -19,7 +19,7 @@ link: "https://medium.com/macoclock/the-12-exceptional-macos-apps-that-will-turn
 단조로운 빵을 맛있게 만드는 건 야채 조각, 치즈, 토핑, 후추 등입니다. 마찬가지로 macOS도 평범한데, 일을 즐겁게 만드는 건 애플리케이션들이에요.
 
 아직 macOS의 기본 기능에 의존하고 있다면, 시간과 정신적 에너지, 생산성을 낭비하고 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -446,7 +446,7 @@ Commander One처럼 Forklift도 다음과 같은 기능을 제공해요:
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-The12exceptionalmacOSappsthatwillturnyouintoaProductivityGenius_14.png)
 
 이것은 파일과 앱을 추적하고 빠르게 접근할 수 있는 메뉴 바 앱입니다. 특히 사용 빈도가 높은 20%에 대해서요.
@@ -454,7 +454,7 @@ Commander One처럼 Forklift도 다음과 같은 기능을 제공해요:
 "파일을 찾을 때 Spotlight를 사용하는 것이 어떻게 되지 않나요?"라고 물을 수도 있습니다. 그러나 Trickster의 키보드 탐색은 더 편합니다. 어디서나 Trickster를 드러낼 때 ⌃Z를 누르기만 하면 됩니다. 그리고 화살표 키로 파일을 찾아 열 수 있습니다.
 
 가장 좋은 점은, 추가되거나 열거나 수정된 모든 파일을 추적하여 CPU를 과부하시키지 않습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -482,7 +482,7 @@ FilePane은 필수적이지는 않지만 한 번 사용하면 필요한 앱입�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-The12exceptionalmacOSappsthatwillturnyouintoaProductivityGenius_15.png)
 
 단순히 파일(들)을 Yoink와 비슷한 선반에 넣으면 마법이 시작됩니다.
@@ -490,11 +490,11 @@ FilePane은 필수적이지는 않지만 한 번 사용하면 필요한 앱입�
 예를 들어 설명해보겠습니다.
 
 이미지를 끌어다 놓는다고 가정해 보면, 다음과 같은 작업이 표시됩니다:
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-The12exceptionalmacOSappsthatwillturnyouintoaProductivityGenius_16.png)
 
 - 자르기, 회전하기, 크기 조정하기, 변환하기, 압축하기
@@ -504,7 +504,7 @@ FilePane은 필수적이지는 않지만 한 번 사용하면 필요한 앱입�
 비슷하게, 텍스트 파일을 끌어다 놓으면 다음 옵션이 나타납니다: 단어 및 글리프 수 보기 및 PDF로 변환하기.
 
 PDF 파일을 끌어다 놓으면 다음 옵션이 나타납니다: 여러 이미지로 분할하기 및 인쇄하기.
-```
+
 
 <div class="content-ad"></div>
 
@@ -542,7 +542,7 @@ PDF 파일을 끌어다 놓으면 다음 옵션이 나타납니다: 여러 이�
 - Euclid는 많은 Excel 수식을 알고 있습니다. 익숙하다면 시도해보세요.
 - 단위를 변환할 수 있습니다.
 
-```md
+
 면적
 길이
 부피
@@ -570,7 +570,7 @@ PDF 파일을 끌어다 놓으면 다음 옵션이 나타납니다: 여러 이�
 농도
 --------
 연료 효율성
-```
+
 
 <img src="/assets/img/2024-06-19-The12exceptionalmacOSappsthatwillturnyouintoaProductivityGenius_18.png" />
 

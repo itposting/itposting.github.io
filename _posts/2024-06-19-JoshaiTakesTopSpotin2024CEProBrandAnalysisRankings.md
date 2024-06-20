@@ -29,7 +29,7 @@ Josh.ai는 구글을 앞지르기 위해 두 번째 연속으로 강조된 브�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-JoshaiTakesTopSpotin2024CEProBrandAnalysisRankings_2.png)
 
 Josh.ai는 불렛 브랜드로 강조되며, Apple을 제쳐내고 세 번째 자리를 차지했습니다. Josh.ai의 영향력은 2022년에 크게 증가했으며, 미국과 캐나다 전역에 1,300명 이상의 인증된 딜러를 초과했습니다. CEDIA 2022에서 소개된 Geneva OS는 클라이언트가 연결된 환경과 상호 작용하는 방식을 혁신적으로 변화시키는 중요 업데이트였습니다.
@@ -37,7 +37,7 @@ Josh.ai는 불렛 브랜드로 강조되며, Apple을 제쳐내고 세 번째 �
 ## 2021 결과:
 
 ![이미지](/assets/img/2024-06-19-JoshaiTakesTopSpotin2024CEProBrandAnalysisRankings_3.png)
-```
+
 
 <div class="content-ad"></div>
 

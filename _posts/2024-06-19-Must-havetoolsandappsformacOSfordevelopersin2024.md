@@ -11,14 +11,14 @@ link: "https://medium.com/@sumitsahoo/must-have-tools-and-apps-for-macos-for-dev
 ---
 
 
-```
+
 ![매체 기사](/assets/img/2024-06-19-Must-havetoolsandappsformacOSfordevelopersin2024_0.png)
 
 여기가 내 첫 번째 매체 기사야.
 
 10년 이상 동안 macOS를 활용해온 나는 아키텍처, 클라우드, 모바일 앱, 웹 앱에 집중하며 반드시 필요한 다음과 같은 도구들을 소개하고 싶다.
 VS Code, Intellij IDEA, Xcode, Android Studio, Docker와 같이 흔히 쓰는 것들은 건너뛰겠어. 그런데 Fleet에 관심 있는 사람 있나요? 나한테 알려줘.
-```
+
 
 <div class="content-ad"></div>
 
@@ -66,7 +66,7 @@ Warp Terminal은 macOS용 현대적이고 빠르며 사용자 정의가 가능�
 <div class="content-ad"></div>
 
 
-```
+
 ![Image](/assets/img/2024-06-19-Must-havetoolsandappsformacOSfordevelopersin2024_1.png)
 
 요즘 모든 도구와 마찬가지로 이것도 AI (GPT ahem ahem) 기능을 갖추고 있습니다. Mac에서 숨겨진 파일을 표시하는 명령을 요청할 수 있어요. 가장 좋아하는 기능은 구문 강조, 자동 제안 및 북마크 옵션으로 시간을 많이 절약할 수 있습니다.
@@ -76,7 +76,7 @@ brew를 사용하여 설치해보세요
 ```js
 brew install --cask warp
 ``` 
-```
+
 
 <div class="content-ad"></div>
 
@@ -102,7 +102,7 @@ Fork는 맥과 윈도우용 빠르고 친근한 Git 클라이언트에요. 사�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-Must-havetoolsandappsformacOSfordevelopersin2024_3.png)
 
 Fork를 사용하는 이유는 macOS 앱 같은 느낌이 들기 때문이에요 :) SourceTree나 Tower와 같은 대안이 있지만, 난 항상 간단함 때문에 Fork로 돌아오게 되죠.
@@ -187,7 +187,7 @@ Mac App Store 앱이 아닌 앱을 최신 상태로 유지하는 필수 앱입�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-Must-havetoolsandappsformacOSfordevelopersin2024_9.png)
 
 brew를 사용하여 설치하세요
@@ -197,7 +197,7 @@ brew install --cask macupdater
 ```
 
 최신 버전 (무료)
-```
+
 
 <div class="content-ad"></div>
 
@@ -306,7 +306,7 @@ brew install --cask numi
 AltTab의 개발자로써, 이 앱은 macOS에 윈도우의 "alt-tab" 창 전환기능을 가져옵니다. 윈도우에서 앱 전환 중 미리 보기를 그리워한 적이 있나요? macOS에서 창을 찾는 고통을 알고 계시겠죠. 동일한 앱에 대해 여러 창이 있는 경우 cmd+tab로는 그것들이 표시되지도 않아요. 이상한 이동을 해야만 하는데요. 즉, cmd+tab 그리고 cmd+~입니다. 하지만 더 이상 그럴 필요가 없어요. AltTab은 이러한 모든 문제를 해결하면서 멋지게 보여줍니다. 내 의견으로는 반드시 필요한 도구이며, 무료입니다!
 
 <img src="/assets/img/2024-06-19-Must-havetoolsandappsformacOSfordevelopersin2024_18.png" />
-```
+
 
 <div class="content-ad"></div>
 

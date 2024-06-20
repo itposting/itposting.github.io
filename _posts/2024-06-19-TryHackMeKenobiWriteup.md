@@ -33,9 +33,9 @@ nmap을 사용하여 기계를 SMB 공유에 대해 열거할 수 있습니다.
 
 Nmap은 다양한 네트워킹 작업을 자동화하여 실행할 수 있는 능력을 가지고 있어요. 공유를 열거하는 스크립트가 있어요!
 
-```
+
 nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.3.132
-```
+
 
 SMB에는 445번과 139번이라는 두 개의 포트가 있어요.
 
@@ -63,7 +63,7 @@ smbclient //`machine’s ip`/anonymous
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-TryHackMeKenobiWriteup_4.png)
 
 파일: log.txt
@@ -71,11 +71,11 @@ smbclient //`machine’s ip`/anonymous
 SMB 공유를 재귀적으로 다운로드할 수도 있습니다. 아이디와 비밀번호를 'nothing'으로 제출하실 수 있습니다.
 
 smbget -R smb://`머신의 아이피`/anonymous
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-TryHackMeKenobiWriteup_5.png)
 
 공유된 파일을 열어보세요. 발견된 몇 가지 흥미로운 정보들이 있습니다.
@@ -83,7 +83,7 @@ smbget -R smb://`머신의 아이피`/anonymous
 유저를 위해 SSH 키를 생성할 때 Kenobi에 대한 생성된 정보
 
 ProFTPD 서버에 관한 정보.
-```
+
 
 <div class="content-ad"></div>
 
@@ -139,7 +139,7 @@ searchsploit ProFTPD `버전 번호`
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-TryHackMeKenobiWriteup_8.png)
 
 Exploits running: 4
@@ -147,7 +147,7 @@ Exploits running: 4
 ProFtpd의 mod_copy 모듈(http://www.proftpd.org/docs/contrib/mod_copy.html)에서 exploit을 발견했어요.
 
 mod_copy 모듈은 SITE CPFR 및 SITE CPTO 명령을 구현하며, 이를 사용하여 서버의 한 곳에서 다른 곳으로 파일/디렉터리를 복사할 수 있습니다. 인증되지 않은 클라이언트는 이러한 명령을 이용하여 파일을 파일 시스템의 어디서든 원하는 대상으로 복사할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -163,15 +163,15 @@ FTP 서비스가 Kenobi 사용자로 실행되고 (공유 파일에서) 그 사�
 
 '/var/tmp' 디렉토리를 우리의 머신에 연결해 봅시다.
 
-```
+
 sudo mkdir /mnt/kenobiNFS
 sudo mount machine_ip:/var /mnt/kenobiNFS
 ls -la /mnt/kenobiNFS
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Screenshot 10](/assets/img/2024-06-19-TryHackMeKenobiWriteup_10.png)
 
 We now have a network mount on our deployed machine! We can go to `/var/tmp` and get the private key then login to Kenobi’s account.
@@ -179,7 +179,7 @@ We now have a network mount on our deployed machine! We can go to `/var/tmp` and
 ![Screenshot 11](/assets/img/2024-06-19-TryHackMeKenobiWriteup_11.png)
 
 ![Screenshot 12](/assets/img/2024-06-19-TryHackMeKenobiWriteup_12.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -259,7 +259,7 @@ find / -perm -u=s -type f 2>/dev/null
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지1](/assets/img/2024-06-19-TryHackMeKenobiWriteup_19.png)
 
 ![이미지2](/assets/img/2024-06-19-TryHackMeKenobiWriteup_20.png)
@@ -267,12 +267,11 @@ find / -perm -u=s -type f 2>/dev/null
 우리는 /bin/sh 쉘을 복사하여 curl이라고 이름 지었으며 올바른 권한을 부여한 다음 그 위치를 경로에 넣었습니다. 이는 /usr/bin/menu 이진 파일이 실행될 때 경로 변수를 사용하여 "curl" 이진 파일을 찾게 한다는 것을 의미합니다. 실제로 이는 /usr/sh의 버전이며 이 파일이 root로 실행되는 동안 우리의 쉘도 root로 실행됩니다!
 
 루트 플래그(/root/root.txt)는 무엇인가요?
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-TryHackMeKenobiWriteup_21.png)
 
 Root Flag: 177b3cd8562289f37382721c28381f02
-```

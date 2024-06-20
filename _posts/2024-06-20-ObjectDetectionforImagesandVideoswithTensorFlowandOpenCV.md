@@ -68,7 +68,7 @@ pip install tensorflow
 OpenCV를 설치하는 것도 어렵지 않습니다: pip install opencv-python으로 해결할 수 있습니다.
 
 이제 기본 패키지가 설치되었으므로 TensorFlow Object Detection API를 살펴볼 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -486,7 +486,7 @@ if __name__ == '__main__':
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-20-ObjectDetectionforImagesandVideoswithTensorFlowandOpenCV_4.png)
 
 ![Image 2](/assets/img/2024-06-20-ObjectDetectionforImagesandVideoswithTensorFlowandOpenCV_5.png)
@@ -494,7 +494,7 @@ if __name__ == '__main__':
 ![Image 3](/assets/img/2024-06-20-ObjectDetectionforImagesandVideoswithTensorFlowandOpenCV_6.png)
 
 ## On videos
-```
+
 
 <div class="content-ad"></div>
 

@@ -76,7 +76,7 @@ docker swarm init --advertise-addr 192.168.99.100
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-DockerSwarminaRaspberryPiSimulatingaSwarmwithDocker-in-DockerDinD_2.png)
 
 ## 워커들을 배포하세요.
@@ -99,7 +99,7 @@ sudo docker pull alpine
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 sudo docker rename helloworld.1.6mwtenk3wdxik9kpposg6hd3j Worker1
 sudo docker start Worker1
@@ -114,7 +114,7 @@ sudo docker exec -it worker2 /bin/sh
 ```
 
 이 방법은 VM이나 클러스터를 사용하는 경우에 적합하지만, 제 경우에는 도커 내부에서 도커를 실행해야 합니다:
-```  
+
 
 <div class="content-ad"></div>
 

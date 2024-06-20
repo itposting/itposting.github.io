@@ -55,16 +55,16 @@ v0.13에서 일어난 크고 작은 수정 사항 가운데, 아마 가장 주�
 
 <div class="content-ad"></div>
 
-```
+
 bash <(curl -sL https://hkdb.github.io/app/getapp.sh)
-```
+
 
 ![2024-06-20-appv013isOfficiallyReleased_1](/assets/img/2024-06-20-appv013isOfficiallyReleased_1.png)
 
 만약 명령어를 잊어버렸다면 걱정하지 마세요! 이제는 터미널에 명령어를 복사하여 붙여넣을 수 있는 빠르고 간편한 랜딩 페이지가 있습니다:
 
 또한 Richard의 제안을 고려하여 사용자가 최신 릴리스로 앱을 업그레이드하는 유일한 작업은 다음 명령어를 실행하는 것뿐입니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -77,4 +77,3 @@ bash <(curl -sL https://hkdb.github.io/app/getapp.sh)
 이게 너무 쉽다는 게 좋네요. 또한 이 새로운 코드 일부를 재사용하여 저장소에 오랫동안 있던 "컴파일해서 설치하기" 스크립트를 다시 만드는 데도 좋은 부가 효과가 있었어요. 현재 기여자와 사용자들 모두가 같은 생각을 가지기를 바랍니다.
 
 이미 app을 시도해 보신 적이 있나요? 생각을 알려주세요!
-```  

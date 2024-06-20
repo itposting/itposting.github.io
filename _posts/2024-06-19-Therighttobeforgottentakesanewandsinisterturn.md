@@ -11,7 +11,7 @@ link: "https://medium.com/enrique-dans/the-right-to-be-forgotten-takes-a-new-and
 ---
 
 
-```
+
 ![Image](/assets/img/2024-06-19-Therighttobeforgottentakesanewandsinisterturn_0.png)
 
 그 때 내가 그것에 대해 경고했고 이에 대해 광범위하게 쓴 적이 있습니다: 터무니없고 실재하지 않는 권리를 창출하는 것은 결코 좋은 결과를 이끌어내지 않습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/enrique-dans/the-right-to-be-forgotten-takes-a-new-and
 소위 “망각의 권리”는 특히 유명하지 않은 개인 (유명인이 아닌 경우)의 부정적인 정보를 삭제할 수 있는 (EU 시민이나 VPN을 사용하는 방법을 모르는 사람들을 위한) 권리를 열거한다고 주장하는 법률적 이상현상이며, 사람들에게 유형상으로 유럽 전역을 돌아다니며 신문 자료에서 페이지를 제거할 권한을 부여합니다.
 
 수세기에 걸쳐 뉴스에 등장한 사람들은 게재된 후 자신에 대해 잘못되거나 틀린 내용이 있으면 수정을 요청할 수밖에 없었습니다. 종종, 이러한 수정은 어찌됐던 유용하지 않았는데, 그것은 그날의 뉴스 사이에서 숨겨져 있고집단 상상력이 기억하는 것은 원래 뉴스였기 때문입니다, 비록 그것이 틀려도 오류가 있더라도 말이죠.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/learning-sql/advanced-data-analysis-in-mysql-statistic
 ---
 
 
-```
+
 ![Advanced Data Analysis in MySQL - Statistical Functions 0](/assets/img/2024-06-20-AdvancedDataAnalysisinMySQLStatisticalFunctions_0.png)
 
 ![Advanced Data Analysis in MySQL - Statistical Functions 1](/assets/img/2024-06-20-AdvancedDataAnalysisinMySQLStatisticalFunctions_1.png)
@@ -19,7 +19,7 @@ link: "https://medium.com/learning-sql/advanced-data-analysis-in-mysql-statistic
 각 데이터 세트의 분석 중요한 부분은 통계 속성을 분석하는 것입니다. 특히 기계 학습에 사용하려면 데이터에 대한 적절한 통찰력을 갖고 사전 처리 및 특성 추출을 수행해야 합니다.
 
 데이터베이스에 대규모 데이터 집합이 있는 경우 데이터베이스에서 이러한 분석을 직접 실행하는 것이 도움이 됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -43,7 +43,7 @@ link: "https://medium.com/learning-sql/advanced-data-analysis-in-mysql-statistic
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-20-AdvancedDataAnalysisinMySQLStatisticalFunctions_2.png)
 
 The fields are mostly self-explanatory, but to be on the safe side, we list the descriptions of the non-obvious fields for the tables employees and salaries below:
@@ -56,7 +56,7 @@ The fields are mostly self-explanatory, but to be on the safe side, we list the 
 - salaries.to_date: The date by which the salary was paid.
 
 ## Install the statistics extension
-``` 
+
 
 <div class="content-ad"></div>
 
@@ -167,7 +167,7 @@ FROM salaries;
 
 <img src="https://miro.medium.com/v2/resize:fit:500/1*2x2aLPiAXX_Hz7zNAxE7hA.gif" />
 
-분산 함수는 var_pop()의 동의어로, 특정 열의 모든 필드의 모평균 분산을 계산합니다. 반면에 var_samp()는 표본 분산을 계산합니다.```
+분산 함수는 var_pop()의 동의어로, 특정 열의 모든 필드의 모평균 분산을 계산합니다. 반면에 var_samp()는 표본 분산을 계산합니다.
 
 <div class="content-ad"></div>
 
@@ -338,7 +338,7 @@ FROM
 //10,Weicheng,Hatcliff,F,152687
 ```
 
-위의 SQL 쿼리는 현재 상위 10명의 최고 수입자를 제공합니다 (salaries 테이블의 to_date가 현재 유효한 급여인 경우 MAX입니다).```
+위의 SQL 쿼리는 현재 상위 10명의 최고 수입자를 제공합니다 (salaries 테이블의 to_date가 현재 유효한 급여인 경우 MAX입니다).
 
 <div class="content-ad"></div>
 

@@ -44,7 +44,7 @@ private val screenRecordingCallback = { state: Int ->
 ```
 
 # 3️⃣. — 콜백 추가 — WindowManager
-```
+
 
 <div class="content-ad"></div>
 

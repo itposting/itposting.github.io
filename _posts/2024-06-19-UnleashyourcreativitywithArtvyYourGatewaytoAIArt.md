@@ -21,7 +21,7 @@ Artvy는 안정된 확산 및 중간 알고리즘을 통해 AI 생성 작품의 
 
 <div class="content-ad"></div>
 
-```
+
 ![Artvy](/assets/img/2024-06-19-UnleashyourcreativitywithArtvyYourGatewaytoAIArt_0.png)
 
 Explore More:
@@ -30,4 +30,3 @@ Explore More:
 - [Artvy AI Art Style — Loish](Link to Loish article)
 - [DeepArtio Website](https://www.deepartio.com)
 - Join the AI Art Community
-```

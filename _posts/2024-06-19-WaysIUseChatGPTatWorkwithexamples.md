@@ -11,7 +11,7 @@ link: "https://medium.com/learning-data/ways-i-use-chatgpt-at-work-with-examples
 ---
 
 
-```
+
 ![Image](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_0.png)
 
 나는 ChatGPT를 매일 업무 및 개인적인 질문에 사용합니다. 그것을 내 조수로 생각합니다. 내 대화가 시간 초과되어 잊어버리고 때때로 환각에 빠질 수 있기 때문에 항상 정확하지는 않습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/learning-data/ways-i-use-chatgpt-at-work-with-examples
 그러나 ChatGPT는 여전히 업무에 유용합니다. Excel과 SQL에 관한 질문에 답변하거나 머릿속이 공허할 때 아이디어를 떠올리는 데 유용합니다.
 
 내가 일할 때 ChatGPT를 사용하는 가장 좋아하는 방법을 확인해보세요!
-```
+
 
 <div class="content-ad"></div>
 
@@ -55,7 +55,7 @@ ChatGPT에게 엑셀 오류를 해결하거나, 엑셀 수식을 설명하거나
 
 아래는 Markdown 형식으로 변경한 표입니다.
 
-```
+
 <img src="/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_3.png" />
 
 <img src="/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_4.png" />
@@ -63,7 +63,7 @@ ChatGPT에게 엑셀 오류를 해결하거나, 엑셀 수식을 설명하거나
 ## 3. 기사 콘텐츠 브레인스토밍.
 
 ChatGPT를 사용하여 기사 아이디어를 생성했다면, 이제 콘텐츠가 필요합니다. 다행히도 ChatGPT는 논문 개요를 작성할 수 있습니다!
-```
+
 
 <div class="content-ad"></div>
 
@@ -131,7 +131,7 @@ ChatGPT 프롬프트 문구: "급여가 90백분위에 있다는 것은 무엇�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_9.png)
 
 ChatGPT가 말합니다: “급여가 90 백분위에 있다면, 그 급여 값은 특정 데이터 집합 내의 급여 중 90% 이상보다 크거나 같다는 것을 의미합니다. 다시 말해, 이는 해당 그룹의 사람들 중 90%의 급여보다 높다는 것을 나타냅니다.”
@@ -139,7 +139,7 @@ ChatGPT가 말합니다: “급여가 90 백분위에 있다면, 그 급여 값�
 이제 이 90 백분위에 대한 간단한 설명으로 동료에게 이메일을 보낼 수 있습니다. 더 많은 맥락이 필요하다면, ChatGPT에게 예제를 요청할 수도 있습니다.
 
 ## 6. 구글 검색처럼 기본적인 질문을 하려면.
-```
+
 
 <div class="content-ad"></div>
 
@@ -163,7 +163,7 @@ ChatGPT에게 내 상황을 설명하고 물었던 내 문장: "나는 데이터
 
 <div class="content-ad"></div>
 
-```
+
 ![image 1](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_12.png)
 
 ![image 2](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_13.png)
@@ -171,11 +171,11 @@ ChatGPT에게 내 상황을 설명하고 물었던 내 문장: "나는 데이터
 ChatGPT가 제 회의 생산성을 높이기 위한 일반적인 지침을 제공했습니다. 이에는 회의 전에 매니저와 안건을 공유하거나 각 항목에 대한 구체적인 시간대를 설정하고 토론을 집중하게 하기 위해 차트, 그래프 또는 슬라이드와 같은 시각 보조 도구를 사용하는 것이 포함됩니다.
 
 제 ChatGPT 프롬프트: "사무실 업무를 위해 상사에게 그들의 선호하는 의사 소통 스타일에 대해 물어볼 수 있는 몇 가지 방법이 무엇인가요?"
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_14.png)
 
 ![Image 2](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_15.png)
@@ -183,7 +183,7 @@ ChatGPT가 제 회의 생산성을 높이기 위한 일반적인 지침을 제�
 ChatGPT gave suggestions that hadn’t occurred to me, like discussing frequency and timing and clarifying times/dates that are best for discussion.
 
 ## 8. To ask for time productivity tips.
-```
+
 
 <div class="content-ad"></div>
 
@@ -197,7 +197,7 @@ ChatGPT gave suggestions that hadn’t occurred to me, like discussing frequency
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_18.png)
 
 ChatGPT가 제게 일할 때 생산성을 높이는 방법을 나열했어요. 특히, 다음과 같은 것들이 도움이 되었어요: 가능한 경우 회의를 최소화하고 동료에게 간결한 이메일을 보내달라고 요청하는 것, 작업 사이에 짧은 휴식을 가지고 에너지를 충전하는 것, 그리고 업무를 위임하는 것입니다.
@@ -205,7 +205,7 @@ ChatGPT가 제게 일할 때 생산성을 높이는 방법을 나열했어요. �
 ChatGPT의 초기 제안 목록이 마음에 들지 않는다면 "시간 관리를 위한 Pomodoro 기술이 마음에 들지 않아요. 대신 사용할 다른 시간 관리 방법이 있을까요?" 또는 "직장에서 회의를 최소화하는 구체적인 방법 중 일부는 무엇인가요?"와 같은 프롬프트를 사용해서 말해볼 수 있어요.
 
 ## 9. IT 책상으로부터 이메일을 해석하는 방법
-```
+
 
 <div class="content-ad"></div>
 
@@ -223,11 +223,11 @@ ChatGPT의 초기 제안 목록이 마음에 들지 않는다면 "시간 관리�
 
 제 ChatGPT 프롬프트: "[빈칸에 나열할 목록 삽입]을(를) 알파벳 순으로 정렬하세요."
 
-```
+
 ![이미지](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_20.png)
 
 ![이미지](/assets/img/2024-06-19-WaysIUseChatGPTatWorkwithexamples_21.png)
-```
+
 
 <div class="content-ad"></div>
 

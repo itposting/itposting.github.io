@@ -54,6 +54,5 @@ Facebook 그룹 토이박스 3D 프린팅 커뮤니티에 가입해보세요. �
 
 <div class="content-ad"></div>
 
-```
+
 ![Tips for a TOYBOX 3D Printer Newbie](/assets/img/2024-06-19-TipsforaTOYBOX3DPrinterNewbie_1.png)
-```

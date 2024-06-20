@@ -86,9 +86,9 @@ Generalized Linear Models(GLM)은 반응 변수가 정규 분포가 아닌 분�
 
 비선형 관계를 선형 형태로 변환하기 위해 링크 함수가 사용됩니다. 이 함수는 포아송 회귀의 로그입니다. 이로 인해 포아송 회귀 모델은 종종 로그-선형 모델이라고도 불립니다. 포아송 회귀 모델의 일반적인 수학적 형태는 다음과 같습니다:
 
-```
+
 <img src="/assets/img/2024-06-20-TinyMLPoissonRegression_3.png" />
-```
+
 
 여기서 μi는 반응 변수 Yi의 기대값입니다.
 
@@ -183,7 +183,7 @@ warnings.filterwarnings('ignore')
 “차량 속성 및 배출 데이터셋”은 2000년에 제조된 다양한 차량에 대한 포괄적인 정보를 포함하고 있습니다. 이 데이터셋에는 제조사, 모델, 차량 클래스, 엔진 크기, 실린더 수, 변속기 유형 및 연료 유형과 같은 세부 정보가 포함되어 있습니다. 또한 연료 소비 및 이산화탄소 배출에 대한 범위를 제공하여 각 차량의 환경 영향에 대한 통찰을 제공합니다. 이 데이터셋은 소형부터 중형까지 다양한 차종을 포함하며, 전통적인 모델부터 고성능 모델까지 모두 포함하고 있습니다. 이 정보를 통해 분석가와 연구자는 차량 특성, 연료 효율성 및 배출 추세를 연구할 수 있습니다. 이 데이터셋은 자동차 산업 환경을 이해하고 환경 지속 가능성 및 교통 정책에 대한 논의에 정보를 제공하는 소중한 자료원으로 사용됩니다.
 
 링크: https://www.kaggle.com/datasets/krupadharamshi/fuelconsumption/data
-```  
+
 
 <div class="content-ad"></div>
 
@@ -199,7 +199,7 @@ df.info()
 ```
 
 <img src="/assets/img/2024-06-20-TinyMLPoissonRegression_9.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -220,10 +220,10 @@ df.drop_duplicates(inplace=True)
 
 <div class="content-ad"></div>
 
-```
+
 # 데이터 프레임 정리 후에 결과 표시
 df.describe()
-```
+
 
 ![이미지](/assets/img/2024-06-20-TinyMLPoissonRegression_11.png)
 
@@ -236,7 +236,7 @@ plt.savefig('.\\figures\\pairplot.png', dpi=300, bbox_inches='tight')
 
 <div class="content-ad"></div>
 
-```md
+
 <img src="/assets/img/2024-06-20-TinyMLPoissonRegression_12.png" />
 
 ```js
@@ -265,7 +265,7 @@ plt.show()
 ```
 
 <img src="/assets/img/2024-06-20-TinyMLPoissonRegression_13.png" />
-```  
+
 
 <div class="content-ad"></div>
 
@@ -528,6 +528,5 @@ void loop()
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-TinyMLPoissonRegression_21.png)
-```

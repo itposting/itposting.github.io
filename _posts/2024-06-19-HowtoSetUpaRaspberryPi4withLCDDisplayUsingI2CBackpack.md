@@ -76,21 +76,21 @@ sudo raspi-config
 
 멋지네요! 선호하는 방법을 선택한 후 — 그래픽 사용자 인터페이스(GUI) 또는 명령줄 — 라즈베리 파이에서 I2C 인터페이스를 활성화할 수 있습니다!
 
-I2C 인터페이스를 활성화한 후에는 변경 사항이 적용되도록 라즈베리 파이를 다시 부팅해야 합니다.```
+I2C 인터페이스를 활성화한 후에는 변경 사항이 적용되도록 라즈베리 파이를 다시 부팅해야 합니다.
 
 <div class="content-ad"></div>
 
-```
+
 sudo reboot
-```
+
 
 라즈베리 파이가 재부팅되면 I2C 인터페이스가 활성화되어 사용 가능해집니다.
 
 다음으로, I2C 작업에 필요한 두 가지 도구를 설치해야 합니다. 먼저, 다음 명령어를 라즈베리 파이 터미널에서 실행해 주세요:
 
-```
+
 sudo apt-get install -y i2c-tools python3-smbus
-```
+
 
 <div class="content-ad"></div>
 
@@ -124,7 +124,7 @@ i2c-dev
 
 <div class="content-ad"></div>
 
-```
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*aSoaYOvlXfjAdWZAuO4LqQ.gif)
 
 Raspberry Pi를 다시 부팅하려면:
@@ -134,7 +134,7 @@ sudo reboot
 ```
 
 ![image](/assets/img/2024-06-19-HowtoSetUpaRaspberryPi4withLCDDisplayUsingI2CBackpack_4.png)
-```
+
 
 <div class="content-ad"></div>
 

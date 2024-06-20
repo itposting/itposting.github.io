@@ -46,7 +46,7 @@ link: "https://medium.com/@vikramaditya.nishant/how-i-made-a-fully-3d-printed-ar
 
 <div class="content-ad"></div>
 
-```
+
 ![image1](/assets/img/2024-06-20-HowImadeafully3d-printedARCrocketandqualifiedfornationals_1.png)
 
 To enhance the strength of the fin can tube, which lacks internal structure (only containing parachutes), we incorporated helical ribs.
@@ -54,11 +54,11 @@ To enhance the strength of the fin can tube, which lacks internal structure (onl
 ![image2](/assets/img/2024-06-20-HowImadeafully3d-printedARCrocketandqualifiedfornationals_2.png)
 
 To reinforce each part without significant weight gain, we integrated fillets across the design.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Rocket](/assets/img/2024-06-20-HowImadeafully3d-printedARCrocketandqualifiedfornationals_3.png)
 
 The shock cord mount broke (left). We solved this by using a slicer modifier to add 4 perimeters (right). We did the same with the payload tube.
@@ -66,11 +66,11 @@ The shock cord mount broke (left). We solved this by using a slicer modifier to 
 ## 조정 방법
 
 고도를 제어하기 위해 질량을 변경해야 하는데, 중심 축을 움직이지 않도록 조정해야 합니다. 중심 축을 움직이면 안전성에 영향을 줄 수 있습니다. 이를 해결하기 위해 질량을 중심 축에 두어야 합니다. 우리는 2부식 페이로드를 사용하여 이를 달성했습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![로켓 이미지](/assets/img/2024-06-20-HowImadeafully3d-printedARCrocketandqualifiedfornationals_4.png)
 
 왼쪽의 전이 구간에는 페니를 넣을 수 있는 관이 있었어요. 그런 다음, 우리는 넣은 3개의 나사로 우주선 관로 페이로드 관을 장착했어요. 이 3개의 나사는 페이로드 관의 3개 구멍에 넣는 열린 삽입기(bottom-right)에 들어갔어요.
@@ -78,7 +78,7 @@ The shock cord mount broke (left). We solved this by using a slicer modifier to 
 # 작동했나요?
 
 네, 잘 작동했어요! 19점으로 국가대회에 진출할 수 있었어요. 한 주 동안 4개의 예비 우주선을 만들었고, 새로운 기능을 원할 때마다 디자인을 빠르게 업데이트할 수 있었어요. 한 부분이 고장 나더라도 전체 우주선을 버리지 않고 교체할 수 있었어요. 모든 부품이 모듈식이기 때문에, 우주선 간에 부품을 그대로 옮길 수 있었고, 충격 줄과 낙하산 보호대에 30회 이상 쏘아올릴 수 있었어요. ARC 팀이 이에 관심이 있는 경우, 전체 3D 프린팅된 로켓을 꼭 추천드리겠어요.
-```
+
 
 <div class="content-ad"></div>
 

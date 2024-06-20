@@ -68,7 +68,7 @@ for chunk in chunks:
 ```
 
 ## 3. 문장 분할기
-```
+
 
 <div class="content-ad"></div>
 
@@ -95,7 +95,7 @@ for chunk in chunks:
 ```
 
 ## 5. Markdown Splitter
-```
+
 
 <div class="content-ad"></div>
 
@@ -114,7 +114,7 @@ for chunk in chunks:
 대량의 문서를 디지털 콘텐츠 분석에서 일관된 주제별 섹션으로 분리하는 것은 상당한 어려움을 겪을 수 있습니다. 위에서 설명한 전통적인 방법들은 종종 주제가 변화하는 미묘한 부분을 정확하게 감지하지 못할 수 있습니다. 우리는 인공지능, 컴퓨터, 데이터 과학 및 응용국제 학회(ACDSA 2024)에서 발표된 논문에서 이 문제를 해결하기 위한 혁신적인 접근 방식을 제안합니다.
 
 ## 핵심 도전 과제
-```
+
 
 <div class="content-ad"></div>
 

@@ -105,13 +105,13 @@ docker-compose up -d
 
 아래는 Markdown 형식으로 변환되었습니다:
 
-```
+
 ![Initial Ralph dashboard screen](/assets/img/2024-06-19-InstallRalphAssetManagementSystemwithDockerOnUbuntu2204_6.png)
 
 You will see the initial Ralph dashboard screen.
 
 ![Change the default password by clicking on the profile](/assets/img/2024-06-19-InstallRalphAssetManagementSystemwithDockerOnUbuntu2204_7.png)
-```
+
 
 <div class="content-ad"></div>
 

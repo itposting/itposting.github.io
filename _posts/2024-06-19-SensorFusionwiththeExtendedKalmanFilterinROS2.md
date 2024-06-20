@@ -73,9 +73,9 @@ x의 가우시안 표현에서 시작하지만 비선형 함수 g를 선택하�
 
 위의 이미지에서 높은 차수의 테일러 전개가 점 a = 0 주변에서 g를 더 가까운 근사로 제공하는 것을 볼 수 있습니다. 그러나 고차 다항식이 늘어날수록 요구되는 계산도 증가하며, 문제가 빠르게 풀기 어려워집니다. 다행히도 Kalman 필터가 자주 업데이트되는 경우(작은 Δt), 관심점 a의 차이가 매우 작아야합니다. 따라서 우리는 다음 (매우 가까운) 각 지점 a에서의 함수 g의 값을 및 기울기(점 a에서의 미분)를 사용하여 함수 g의 선형 근사를 얻기 위해 1차 다항식(선)을 사용할 수 있습니다. 이 문제는 본질적으로 아래와 같이 간소화됩니다:
 
-```
+
 ![2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_9.png](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_9.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -109,7 +109,7 @@ g와 그 기울기 g′의 값은 그들의 인자 (u_t와 x_t-1)에 따라 달�
 
 <div class="content-ad"></div>
 
-```
+
 ![sensor fusion](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_14.png)
 
 가우시안에서, 모션 모델 또는 상태 전이 확률은 아래와 같이 표기됩니다. 여기서 R_t는 보통의 프로세스 노이즈 공분산입니다.
@@ -117,7 +117,7 @@ g와 그 기울기 g′의 값은 그들의 인자 (u_t와 x_t-1)에 따라 달�
 ![motion model](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_15.png)
 
 기울기가 숫자인 스칼라 케이스와는 달리, g'(u_t, μ_t-1)으로 알려진 G_t는 행렬입니다. 비선형 함수 g에 대한 상태 x의 일차 편미분값을 모두 포함하는 이 행렬은 야코비안이라고 합니다. 이 야코비안 행렬은 상태의 차원인 n×n의 크기를 가지며, 현재 제어 및 이전 사후 평균에 따라 값이 달라집니다. 따라서 야코비안 값은 시간이 지남에 따라 변합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -157,7 +157,7 @@ g와 그 기울기 g′의 값은 그들의 인자 (u_t와 x_t-1)에 따라 달�
 
 아래는 Markdown 형식입니다.
 
-```
+
 ![sensorfusion1](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_22.png)
 
 EKF를 사용하여 동일한 모델을 사용하려면 선형화해야 합니다. 먼저로봇의 상태 형식을 재정의합니다.
@@ -165,7 +165,7 @@ EKF를 사용하여 동일한 모델을 사용하려면 선형화해야 합니�
 ![sensorfusion2](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_23.png)
 
 이후 비선형 함수 g를 정의합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -191,7 +191,7 @@ x 업데이트 방정식의 x, y, 그리고 θ에 대한 도함수를 나타내�
 
 <div class="content-ad"></div>
 
-```
+
 ![sensor fusion](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_27.png)
 
 이전 그림에서 EKF와 LKF를 비교한 것처럼, 선형화가 두 알고리즘의 주요 차이점입니다. 관련 기능 및 해당 야코비안을 확인한 후, EKF의 구현은 LKF의 구현을 밀접하게 따릅니다. 아래는 선형화된 속도 모션 모델의 Python 구현입니다. 행렬 g와 야코비안 G를 모두 반환합니다.
@@ -232,7 +232,7 @@ def velocity_motion_model_linearized_1():
 ```
 
 다음으로, 다음과 같이 간단한 관측 모델을 구현합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -299,7 +299,7 @@ class KalmanFilter:
 ```
 
 성능:
-``` 
+
 
 <div class="content-ad"></div>
 
@@ -539,7 +539,7 @@ def odometry_imu_observation_model_with_acceleration_motion_model_linearized_1()
 
 성능:
 
-더 정교한 모션 모델을 사용하고 오도메트리 데이터와 IMU 데이터를 퓨즈하는 개선된 EKF를 평가하는 시간입니다. 특히, 노이즈 매개변수를 다음과 같이 설정하겠습니다:```
+더 정교한 모션 모델을 사용하고 오도메트리 데이터와 IMU 데이터를 퓨즈하는 개선된 EKF를 평가하는 시간입니다. 특히, 노이즈 매개변수를 다음과 같이 설정하겠습니다:
 
 <div class="content-ad"></div>
 
@@ -552,7 +552,7 @@ obs_noise_std = [100.0, 100.0, 1000.0, 6.853891945200942e-06, 1.0966227112321507
 
 아래 비디오와 이어지는 두 그림에서 볼 수 있듯이 가속도 모델과 센서 퓨전이 포함된 새 필터는 이전 필터보다 훨씬 더 잘 수행됩니다. 특히 IMU로부터 제공된 더 나은 방향성 덕분에 추정 궤적이 초기에 실제 궤적에 훨씬 가까웠음을 볼 수 있습니다. 그러나 마지막에는 지그재그 패턴을 따르기 시작했습니다.
 
-더 나은 결과를 얻기 위한 레시피는 없습니다. 이것이 필터를 설계하는 것을 과학보다는 예술로 만드는 것입니다. 위의 지그재그 궤적을 개선할 수 있는 더 나은 모션 모델로 수정할 수 있을 것이라고 생각할 수 있습니다. 이 결과를 본 것처럼 나도 같은 방식으로 느꼈습니다. 모션 모델을 개선해 보겠습니다.```
+더 나은 결과를 얻기 위한 레시피는 없습니다. 이것이 필터를 설계하는 것을 과학보다는 예술로 만드는 것입니다. 위의 지그재그 궤적을 개선할 수 있는 더 나은 모션 모델로 수정할 수 있을 것이라고 생각할 수 있습니다. 이 결과를 본 것처럼 나도 같은 방식으로 느꼈습니다. 모션 모델을 개선해 보겠습니다.
 
 <div class="content-ad"></div>
 
@@ -566,7 +566,7 @@ obs_noise_std = [100.0, 100.0, 1000.0, 6.853891945200942e-06, 1.0966227112321507
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_38.png)
 
 ![Image](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_39.png)
@@ -574,7 +574,7 @@ obs_noise_std = [100.0, 100.0, 1000.0, 6.853891945200942e-06, 1.0966227112321507
 The observation model function h remains the same, but the Jacobian H now has two columns filled with zeros corresponding to the unobserved state variables v_x and v_y.
 
 ![Image](/assets/img/2024-06-19-SensorFusionwiththeExtendedKalmanFilterinROS2_40.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -664,7 +664,7 @@ obs_noise_std = [100.0, 100.0, 1000.0, 6.853891945200942e-06, 1.0966227112321507
 
 마지막으로 ROS 2 패키지를 복제하고 빌드해야 합니다. 아래 단계를 따라 진행할 수 있습니다. ros2_ws를 실제 ROS 2 작업 공간으로 교체해야 합니다.
 
-```
+
 # 종속성 설치
 sudo apt install python3-pykdl
 
@@ -673,7 +673,7 @@ cd ros2_ws/src
 git clone https://github.com/carlos-argueta/rse_prob_robotics.git
 cd ..
 colcon build --symlink-install
-```
+
 
 <div class="content-ad"></div>
 
@@ -715,7 +715,7 @@ ros2 bag play linkou-2023-12-27-2-med --clock
 ```
 
 위 단계를 따르면 확장 칼만 필터를 실행하고 결과를 실시간으로 확인할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

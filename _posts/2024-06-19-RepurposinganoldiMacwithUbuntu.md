@@ -11,7 +11,7 @@ link: "https://medium.com/@esantana_io/repurposing-an-old-imac-with-ubuntu-650d9
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-19-RepurposinganoldiMacwithUbuntu_0.png)
 
 2011년, 제 주요 작업 기계는 21.5인치 iMac (Mid-2011)이었는데, 정말 멋진 하드웨어였습니다. 그 때 대부분의 작업은 Linux로 하다가 Mac OS X로 전환했는데, 아름다운 그래픽 사용자 인터페이스와 터미널을 제공했습니다. High Sierra(10.13)가 이 iMac에서 공식으로 지원되는 마지막 macOS 버전이었습니다. 더 최신 macOS 버전을 비공식으로 설치하려고 했지만 많은 문제가 발생했습니다. 결국, 그냥 보관하고 잊어버렸죠.
@@ -19,7 +19,7 @@ link: "https://medium.com/@esantana_io/repurposing-an-old-imac-with-ubuntu-650d9
 ![이미지](/assets/img/2024-06-19-RepurposinganoldiMacwithUbuntu_1.png)
 
 2024년으로 빠르게 이동했을 때, Action Retro의 YouTube 비디오에서 16년 된 iMac에 Ubuntu를 설치하는 것을 보았습니다. 이를 영감받아 똑같이 해보기로 결심했고, 경험은 정말 놀라울 정도로 멋졌습니다. 참고로, 이 iMac을 이전에 500GB SSD와 12GB RAM으로 업그레이드한 적이 있어서 Ubuntu를 실행하는 데 원활한 성능에 크게 기여한다고 생각합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -80,4 +80,3 @@ sudo apt-get install gnome-sushi
 이 기사를 즐겁게 보셨기를 바랍니다. 좋았다면 박수를 보내주세요. 그렇지 않았다면 박수를 보내주세요.
 
 고맙습니다. 즐거운 하루 보내세요.
-```

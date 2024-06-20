@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/six-duckdb-sql-enhancements-you-should-le
 ---
 
 
-```
+
 ![Image](/assets/img/2024-06-20-SixDuckDBSQLenhancementsyoushouldlearn_0.png)
 
 DuckDB의 SQL은 원래 PostgreSQL을 기반으로 하였으며, 이는 모방하기에 좋은 SQL 버전입니다. 그러나 시간이 흐름에 따라 DuckDB는 SQL 제공에 몇 가지 유용한 추가 기능을 도입하여 여러분의 삶을 조금 더 쉽게 만들었습니다. 다른 보다 인기 있는 RDBMS들이 언젠가는 이러한 유용한 SQL 확장을 본뜬다면 전혀 놀라지 않을 것입니다.
@@ -19,7 +19,7 @@ DuckDB의 SQL은 원래 PostgreSQL을 기반으로 하였으며, 이는 모방�
 DuckDB에 대해 들어보지 못한 분들을 위해, 이는 C++로 작성된 인메모리 데이터베이스로서 분석용 SQL 워크로드를 위해 설계되었습니다. 또한 Polars와 같은 성능으로 빠르며 경쟁력이 있습니다.
 
 아래 링크를 통해 DuckDB의 기능에 대해 깊이 있는 탐구를 해보세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -98,7 +98,7 @@ db.sql("INSERT INTO purchases VALUES (12345, 2019, 15000), (12345,2020, 19500), 
 db.sql("SELECT * FROM purchases")
 ```
 
-```
+
 | productID | year  | sales |
 |-----------|-------|-------|
 |     12345 |  2019 | 15000 |
@@ -107,7 +107,7 @@ db.sql("SELECT * FROM purchases")
 |    987654 |  2019 |   510 |
 |    987654 |  2020 |  1900 |
 |    987654 |  2021 |  2100 |
-```
+
 
 <div class="content-ad"></div>
 
@@ -188,7 +188,7 @@ DuckDB는 서로 다른 데이터 유형을 가져오는 모든 유형을 지원
 
 ## 4. 재사용 가능한 열 별칭
 
-전통적인 SQL에서는 select 문 내에서 점진적으로 계산된 표현식을 처리할 때 일반적으로 각 열에 대해 전체 표현식을 복제하거나 각 계산 단계를 공통 테이블 표현식(CTE)으로 캡슐화해야 합니다. 그러나 재사용 가능한 열 별칭을 사용하면 이제 열 별칭을 동일한 select 문 전체에서 사용할 수 있으며, where 및 order by 절에서도 사용할 수 있어 프로세스를 간소화하고 중복을 줄일 수 있습니다. 예를 들어,```
+전통적인 SQL에서는 select 문 내에서 점진적으로 계산된 표현식을 처리할 때 일반적으로 각 열에 대해 전체 표현식을 복제하거나 각 계산 단계를 공통 테이블 표현식(CTE)으로 캡슐화해야 합니다. 그러나 재사용 가능한 열 별칭을 사용하면 이제 열 별칭을 동일한 select 문 전체에서 사용할 수 있으며, where 및 order by 절에서도 사용할 수 있어 프로세스를 간소화하고 중복을 줄일 수 있습니다. 예를 들어,
 
 <div class="content-ad"></div>
 

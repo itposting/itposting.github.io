@@ -135,9 +135,9 @@ Step 2.4: Snowflake 객체 및 구성을 저장할 Git 저장소를 설정하세
 
 여기에 그들의 구조를 보여주는 샘플 스니펫이 있어요:
 
-```
+
 ![Snowflake CLI](/assets/img/2024-06-20-CICDandDevOpsforSnowflakeAComprehensiveGuide_10.png)
-```
+
 
 5. 로컬 Snow CLI 사용
 
@@ -157,7 +157,7 @@ Step 2.4: Snowflake 객체 및 구성을 저장할 Git 저장소를 설정하세
 
 표시되어 있는 내용을 아래와 같이 번역해 드리겠습니다.
 
-```
+
 ![2024-06-20-CICDandDevOpsforSnowflakeAComprehensiveGuide_12](/assets/img/2024-06-20-CICDandDevOpsforSnowflakeAComprehensiveGuide_12.png)
 
 그 후에는 EXECUTE IMMEDIATE FROM 명령어를 사용하여 외부 파일이나 URL에 저장된 SQL 문을 실행할 것입니다. 우리의 경우에는 이 명령어를 사용하여 대상 데이터베이스로 객체를 배포할 것이며, 배포 스크립트 경로를 참조하게 됩니다. 예를 들면 sf_deploy_dev.sql과 같습니다.
@@ -165,7 +165,7 @@ Step 2.4: Snowflake 객체 및 구성을 저장할 Git 저장소를 설정하세
 ![2024-06-20-CICDandDevOpsforSnowflakeAComprehensiveGuide_13](/assets/img/2024-06-20-CICDandDevOpsforSnowflakeAComprehensiveGuide_13.png)
 
 Snowflake CLI 명령어에서는 계정, 사용자, 창고와 같은 입력값을 지정하여 연결을 설정할 것입니다. 이후에는 이러한 입력값들을 GitHub 비밀에 저장하여 보안 및 편의성을 갖출 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/swlh/how-to-build-a-raspberry-pi-arcade-machine-3de4df
 ---
 
 
-```
+
 ![Arcade Machine](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_0.png)
 
 어릴 적 친구들과 함께 밤새도록 오래된 CRT TV에서 레트로 게임을 즐기던 추억이 여전히 내 마음속에 살아있어요. 비디오 게임은 제 성장 과정에서 중요한 역할을 해 왔고, 2000년대에 게임 산업이 빠르게 발전함에 따라 옥상 방의 구름 잡힌 빈틈 채우고 있는 빈틈새를 잊고 있었어요. 전문적으로 처음 일하러 간 인턴십 때, 회사에서 DIY 아케이드 기계가 있어 빠도록 내 어린 시절의 향수에 시달리기 시작했죠.
@@ -19,11 +19,11 @@ link: "https://medium.com/swlh/how-to-build-a-raspberry-pi-arcade-machine-3de4df
 그 이후로 제게 꿈이었던 아케이드를 직접 만드는 것이 되었고, 대학에서 처음 학기에 몇 명의 친구들과 함께 그것을 실현했어요.
 
 저희가 그렇게 만든 방법은 다음과 같아요.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![How to Build a Raspberry Pi Arcade Machine - Image 1](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_1.png)
 
 ![How to Build a Raspberry Pi Arcade Machine - Image 2](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_2.png)
@@ -31,7 +31,7 @@ link: "https://medium.com/swlh/how-to-build-a-raspberry-pi-arcade-machine-3de4df
 For our design, we chose to build a full-size arcade machine with two sets of controls suitable for fighting games like Street Fighter, Super Smash Brothers, and Tekken.
 
 To streamline our project, we followed a premade plan available at TheGeekPub.
-```
+
 
 <div class="content-ad"></div>
 
@@ -45,7 +45,7 @@ To streamline our project, we followed a premade plan available at TheGeekPub.
 
 <div class="content-ad"></div>
 
-```
+
 ![Arcade Machine](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_3.png)
 
 기계의 총 비용은 650달러 캐나다 달러이며, 부품 중에서 가장 비용이 많이 드는 것은 모니터, 페인트, 조이스틱, 라즈베리 파이 및 목재입니다.
@@ -53,7 +53,7 @@ To streamline our project, we followed a premade plan available at TheGeekPub.
 우리는 다행히도 우리 대학의 기계 공작실에서 대부분의 시간을 보냈기 때문에 도구를 구매할 필요가 없었습니다. 기술적으로 말하면, 여기서 모든 작업은 절단기와 손전드릴만 있으면 충분히 할 수 있지만, 다른 도구를 보유하면 작업이 훨씬 빨라질 것입니다.
 
 여기 우리가 아케이드를 만들기 위해 사용한 모든 하드웨어 목록과 사용된 도구가 있습니다. 부품의 상세 비용 분석 및 구입 링크는 이 스프레드시트에서 확인하실 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -122,7 +122,7 @@ To streamline our project, we followed a premade plan available at TheGeekPub.
 
 <div class="content-ad"></div>
 
-```
+
 ![HowtoBuildaRaspberryPiArcadeMachine_8](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_8.png)
 
 # 페인팅 (시도 1)
@@ -130,7 +130,7 @@ To streamline our project, we followed a premade plan available at TheGeekPub.
 우리는 오비탈 샌더와 점점 더 가는 모래지를 사용하여 조각들을 갈아주었습니다. 그 후에 매트 프라이머를 바르고 유광 검정 마감을 하였습니다. 유광 층은 매우 균일한 층을 얻기가 어려웠고 스프레이 캔을 사용하면서 조차도 작은 먼지 입자가 오렌지 껍질이라는 효과를 일으키게 되었습니다. 회고적으로 생각해보면, 아마도 페인트 양동이와 붓을 사용하는 편이 나을 것이었을지도 모릅니다.
 
 ![HowtoBuildaRaspberryPiArcadeMachine_9](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_9.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -184,7 +184,7 @@ To streamline our project, we followed a premade plan available at TheGeekPub.
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_15.png)
 
 # Keyboard Tray
@@ -192,7 +192,7 @@ To streamline our project, we followed a premade plan available at TheGeekPub.
 We installed a keyboard tray by attaching a pair of rollers to a piece of wood. Since we are new to handling hardware, we were not aware of the clever design of the rails that allows you to adjust the height and inset before tightening the screws.
 
 ![image](/assets/img/2024-06-19-HowtoBuildaRaspberryPiArcadeMachine_16.png)
-```
+
 
 <div class="content-ad"></div>
 

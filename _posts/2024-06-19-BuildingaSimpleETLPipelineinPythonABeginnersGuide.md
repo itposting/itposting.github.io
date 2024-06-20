@@ -30,7 +30,7 @@ pip install requests pandas
 날씨 데이터를 가져오기 위해 OpenWeatherMap API를 사용할 것입니다. 먼저 API 키를 얻어야 합니다.
 
 1. API 키 등록하세요:
-```
+
 
 <div class="content-ad"></div>
 
@@ -169,7 +169,7 @@ if __name__ == '__main__':
 이번 튜토리얼에서는 Python으로 간단한 ETL(추출, 변환, 적재) 파이프라인을 만들었습니다. API에서 데이터를 가져와 변환한 뒤 CSV 파일로 저장했습니다. 이 기본 프로젝트를 통해 데이터 엔지니어링 및 분석에서 중요한 ETL 프로세스를 이해할 수 있습니다.
 
 **추가 자료**
-```
+
 
 <div class="content-ad"></div>
 

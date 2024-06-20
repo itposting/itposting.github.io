@@ -147,7 +147,7 @@ docker run --rm -it -e GOARCH=arm64 \
 
 <div class="content-ad"></div>
 
-```
+
 ![그림](/assets/img/2024-06-19-BuildingGopackagesforWindowsonARM_1.png)
 
 이 예제에서는 Parallels Workstation을 사용합니다.
@@ -155,7 +155,7 @@ docker run --rm -it -e GOARCH=arm64 \
 # CI에 어떻게 통합할 수 있을까요?
 
 이것은 일반적인 Docker 이미지이기 때문에 GitHub Actions 및 Gitlab CI에서 손쉽게 사용할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

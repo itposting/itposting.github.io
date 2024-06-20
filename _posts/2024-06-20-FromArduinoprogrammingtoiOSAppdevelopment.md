@@ -163,7 +163,7 @@ void temperatureCharacteristicRead(BLEDevice central, BLECharacteristic characte
 ```
 
 # iOS 앱 설계
-```
+
 
 <div class="content-ad"></div>
 
@@ -358,7 +358,7 @@ func connect(to peripheral: Peripheral) {
 }
 ```
 
-연결이 성공하면 didConnect 대리자 메서드가 호출됩니다. CentralUseCase는 이 정보를 ScanViewModel에게 onConnection 클로저를 호출하여 전달합니다.```
+연결이 성공하면 didConnect 대리자 메서드가 호출됩니다. CentralUseCase는 이 정보를 ScanViewModel에게 onConnection 클로저를 호출하여 전달합니다.
 
 <div class="content-ad"></div>
 
@@ -408,7 +408,7 @@ useCase.onConnection = { [weak self] peripheral in
 Connect 화면에서 사용자는 Arduino와 상호 작용하여 LED 및 온도와 관련된 정보를 교환할 수 있습니다.
 
 <img src="/assets/img/2024-06-20-FromArduinoprogrammingtoiOSAppdevelopment_7.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -604,7 +604,7 @@ Text("\(lastTemperature) °C")
 
 # 연결 해제
 
-연결 해제 버튼을 누르면 흐름이 약간 다른 방향으로 진행됩니다. 연결 해제 작업은 CBCentralManager 객체에 속하므로 CentralUseCase에서 수행되어야 합니다. 이를 가능하게 하기 위해 사용자가 버튼을 누르면 현재 화면이 해제되고 사용자는 스캔 화면으로 돌아갑니다.```
+연결 해제 버튼을 누르면 흐름이 약간 다른 방향으로 진행됩니다. 연결 해제 작업은 CBCentralManager 객체에 속하므로 CentralUseCase에서 수행되어야 합니다. 이를 가능하게 하기 위해 사용자가 버튼을 누르면 현재 화면이 해제되고 사용자는 스캔 화면으로 돌아갑니다.
 
 <div class="content-ad"></div>
 
@@ -645,7 +645,7 @@ func disconnect(from peripheral: Peripheral) {
 }
 ```
 
-# 결론```
+# 결론
 
 <div class="content-ad"></div>
 

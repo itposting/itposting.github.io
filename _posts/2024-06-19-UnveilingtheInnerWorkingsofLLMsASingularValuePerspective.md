@@ -193,11 +193,11 @@ def get_singular_values(model_path, matrix_type, layer_number, head_number):
     return list(singular_values)
 ```
 
-HuggingFace에서 구현된 방식으로 인해 K, Q 및 V 행렬에 대한 지정된 헤드의 가중치를 추출할 수 있는 이유는 행별로 슬라이싱을 통해할 수 있습니다.```
+HuggingFace에서 구현된 방식으로 인해 K, Q 및 V 행렬에 대한 지정된 헤드의 가중치를 추출할 수 있는 이유는 행별로 슬라이싱을 통해할 수 있습니다.
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-UnveilingtheInnerWorkingsofLLMsASingularValuePerspective_1.png)
 
 O 행렬의 경우 선형 대수를 통해 O 가중치에서 지정된 헤드에 대한 가중치를 추출하기 위해 열별로 슬라이싱을 할 수 있습니다! 자세한 내용은 다음 그림에서 확인할 수 있습니다.
@@ -205,7 +205,7 @@ O 행렬의 경우 선형 대수를 통해 O 가중치에서 지정된 헤드에
 ![이미지](/assets/img/2024-06-19-UnveilingtheInnerWorkingsofLLMsASingularValuePerspective_2.png)
 
 ## 결과
-```
+
 
 <div class="content-ad"></div>
 
@@ -247,7 +247,7 @@ O 행렬의 경우 선형 대수를 통해 O 가중치에서 지정된 헤드에
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-UnveilingtheInnerWorkingsofLLMsASingularValuePerspective_3.png)
 
 이 시점까지 참석해 주셔서 축하드립니다! 이 기사에서 새로운 것을 배우셨으면 좋겠습니다. 선형 대수의 좋은 오래된 개념들을 적용하여, LLM의 훈련이 얼마나 잘 이루어졌는지 이해하는 것은 정말 흥미롭습니다.
@@ -255,7 +255,7 @@ O 행렬의 경우 선형 대수를 통해 O 가중치에서 지정된 헤드에
 이 유형의 콘텐츠를 좋아하신다면, 저의 Medium 계정을 팔로우해주시어 앞으로의 다른 글 알림을 받아보세요.
 
 # 저자 소개
-```
+
 
 <div class="content-ad"></div>
 

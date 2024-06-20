@@ -21,7 +21,7 @@ HUSKY는 숫자, 테이블, 및 기반 지식 추론을 포함하는 다양한 �
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-MeetHUSKYANewAgentOptimizedforMulti-StepReasoning_1.png)
 
 # HUSKY 내부
@@ -29,7 +29,7 @@ HUSKY는 숫자, 테이블, 및 기반 지식 추론을 포함하는 다양한 �
 HUSKY는 복잡한 작업을 해결하기 위해 자세한 행동 계획을 사용합니다. 먼저, 다음 단계를 생성하고, 그 단계에는 실행해야 할 작업과 필요한 도구가 포함됩니다. 그런 다음, 전문 모델을 사용하여 작업을 실행하고 솔루션 상태를 업데이트합니다. 이 접근 방식을 통해 HUSKY는 대규모 언어 모델 (LLM)을 사용하여 성능을 최적화한 전통적인 계획 시스템의 현대 버전처럼 동작합니다.
 
 ![이미지](/assets/img/2024-06-19-MeetHUSKYANewAgentOptimizedforMulti-StepReasoning_2.png)
-```
+
 
 <div class="content-ad"></div>
 

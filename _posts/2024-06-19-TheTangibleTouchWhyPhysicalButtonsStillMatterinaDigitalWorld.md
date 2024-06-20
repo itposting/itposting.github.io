@@ -11,7 +11,7 @@ link: "https://medium.com/cantata/the-tangible-touch-why-physical-buttons-still-
 ---
 
 
-```
+
 ![image](/assets/img/2024-06-19-TheTangibleTouchWhyPhysicalButtonsStillMatterinaDigitalWorld_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/cantata/the-tangible-touch-why-physical-buttons-still-
 터치스크린과 음성 명령에 의해 점점 더 주도되는 세상에서, 버튼을 누르는 단순한 즐거움을 간과하기 쉽습니다. 자동차의 조향 휠 컨트롤에서 나오는 만족스러운 '딸깍' 소리나 전등 스위치의 탄탄한 느낌처럼, 물리적 버튼은 이길 수 없는 촉감 경험을 제공합니다.
 
 과거의 유물일 뿐인 것처럼 보이지만, 이들 겸손한 버튼이 현대화되고 디지털화된 삶에서 여전히 상당한 가치를 지니는 이유를 알아봅시다. 촉감 요인: 왜 우리는 물리적 상호작용을 원하는가
-```
+
 
 <div class="content-ad"></div>
 

@@ -39,7 +39,7 @@ sudo nano /etc/systemd/system/vncserver.service
 
 <div class="content-ad"></div>
 
-```
+
 [Unit]
 Description=start vnc at boot
 After=multi-user.target
@@ -50,17 +50,17 @@ ExecStart=/usr/bin/x11vnc -display :0 -auth guess -forever -loop -noxdamage -rep
 
 [Install]
 WantedBy=multi-user.target
-```
+
 
 “After=multi-user.target”는 서비스가 활성화된 모든 서비스 이후에 실행되도록합니다. 이것은 시스템이 비그래픽 다중 사용자 세션을 수용할 준비가 된 상태를 나타냅니다. 
 
 /boot/config.txt 파일에서 다음 플래그를 주석 처리 해제하세요.
 
-```
+
 framebuffer_width=1280
 framebuffer_height=720
 hdmi_force_hotplug=1
-```
+
 
 <div class="content-ad"></div>
 
@@ -87,11 +87,11 @@ systemctl status vncserver
 이제 VNC 서버가 가동 중이므로 클라이언트를 준비해봅시다.
 여러 가지 클라이언트가 있지만, 저는 RealVNC를 사용하고 있습니다. 다음 링크에서 다운로드할 수 있습니다: [https://www.realvnc.com/en/connect/download/viewer/](https://www.realvnc.com/en/connect/download/viewer/)
 
-설치가 완료되면 "File"을 클릭한 후 "New Connection"을 클릭하여 새로운 VNC 연결을 만들어보세요. 다음과 같은 창이 표시될 것입니다,```
+설치가 완료되면 "File"을 클릭한 후 "New Connection"을 클릭하여 새로운 VNC 연결을 만들어보세요. 다음과 같은 창이 표시될 것입니다,
 
 <div class="content-ad"></div>
 
-```
+
 ![](/assets/img/2024-06-19-KalisetuponRaspberryPiPart3SetupVNCserverandclient_1.png)
 
 VNC 서버 IP 주소 또는 호스트명을 입력해주세요. 원하는대로 다른 설정도 사용자 정의할 수 있어요.
@@ -101,7 +101,7 @@ VNC 서버 IP 주소 또는 호스트명을 입력해주세요. 원하는대로 
 ![](/assets/img/2024-06-19-KalisetuponRaspberryPiPart3SetupVNCserverandclient_2.png)
 
 나중에 VNC 서버와의 암호화된 연결을 수립하기 위해 SSH 터널을 설정하겠어요. 그 전에 VNC 연결이 성공적으로 설정되었는지 테스트해볼게요. "계속"을 클릭하고, 이전에 구성한 VNC 서버 암호를 제공해주세요. 이제 그래픽 사용자 인터페이스(GUI)를 통해 Kali 상자에 액세스할 수 있어야 해요.
-```
+
 
 <div class="content-ad"></div>
 

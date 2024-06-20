@@ -11,7 +11,7 @@ link: "https://medium.com/@alexey.yeryomenko/automatic-number-plate-recognition-
 ---
 
 
-```
+
 <img src="/assets/img/2024-06-20-AutomaticNumberPlateRecognitionwithRaspberryPi_0.png" />
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/@alexey.yeryomenko/automatic-number-plate-recognition-
 이 프로젝트의 목표는 Raspberry Pi 마이크로 컴퓨터를 사용하여 주차 장벽을 제어하기 위한 자동 번호판 인식 시스템을 설계하는 것입니다.
 
 왜 이 프로젝트를 하게 되었을까요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -122,7 +122,7 @@ gpu_mem=128
 
 `requirements.txt` 파일을 사용하여 pip 패키지 관리자를 통해 모든 필요한 라이브러리와 모듈을 설치하세요:
 
-```
+
 matplotlib>=3.2.2
 numpy>=1.18.5
 opencv-python==4.5.4.60
@@ -139,7 +139,7 @@ tensorboard>=2.4.1
 pandas>=1.1.4
 seaborn>=0.11.0
 easyocr>=1.6.2
-```
+
 
 수동으로 직접 설치하거나 기존 환경에 구현할 경우 (하지 마세요 :)), 현재 OpenCV 버전에 문제가 있으므로 정확한 버전 4.5.4.60을 설치해야 합니다.
 
@@ -266,7 +266,7 @@ Baseline으로 25회의 에포크가 충분하다고 결정했어요.
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-20-AutomaticNumberPlateRecognitionwithRaspberryPi_12.png" />
 
 프로젝트의 첫 번째 버전으로는 충분해 보이지만, 실제 응용 프로그램 중 발견된 특수 사례들을 통해 나중에 업데이트할 수 있습니다.
@@ -366,7 +366,7 @@ class Detector():
         return {'file_name': self.file_name, 'orig_img': self.im0, 'cropped_img': cropped_img, 'bbox': bbox,
                 'det_conf': det_conf}
 ```    
-```
+
 
 <div class="content-ad"></div>
 
@@ -410,7 +410,7 @@ def correct_skew(img):
 
 ![이미지](/assets/img/2024-06-20-AutomaticNumberPlateRecognitionwithRaspberryPi_13.png)
 
-위 이미지 처리 단계 이후에는 인식을 위해 충분히 좋은 이미지로 간주할 수 있습니다.```
+위 이미지 처리 단계 이후에는 인식을 위해 충분히 좋은 이미지로 간주할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -656,7 +656,7 @@ class Visualize():
 ![Image 3](/assets/img/2024-06-20-AutomaticNumberPlateRecognitionwithRaspberryPi_19.png)
 
 Performance
-```
+
 
 <div class="content-ad"></div>
 
@@ -680,7 +680,7 @@ htop에서 CPU 활용률이 거의 100%에 가깝다는 것을 알 수 있습니
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지1](/assets/img/2024-06-20-AutomaticNumberPlateRecognitionwithRaspberryPi_22.png)
 
 ![이미지2](/assets/img/2024-06-20-AutomaticNumberPlateRecognitionwithRaspberryPi_23.png)
@@ -688,7 +688,7 @@ htop에서 CPU 활용률이 거의 100%에 가깝다는 것을 알 수 있습니
 그래서 레고를 아들에게 빌려 Raspberry Pi Build Hat을 사용하여 나만의 주차장 바리어를 만들기로 결정했고, "실제" 조건에서 완전한 엔드 투 엔드 테스트를 제공하기로 했습니다.
 
 LEG 월드 햇 프로프라이어터리 라이브러리를 기반으로 한 Action 모듈용 간단한 랩퍼:
-```
+
 
 <div class="content-ad"></div>
 

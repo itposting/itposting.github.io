@@ -55,7 +55,7 @@ kubectl apply -f kubernetes/kube-ops-view.yaml
 
 ## 단계 3: 대시보드에 액세스하기
 
-배포가 완료되면 Kube-Ops-View 대시보드에 액세스할 수 있습니다. 기본적으로 클러스터 내에서 서비스로 노출됩니다. 로컬로 액세스하려면 kubectl port-forward를 사용하세요:```
+배포가 완료되면 Kube-Ops-View 대시보드에 액세스할 수 있습니다. 기본적으로 클러스터 내에서 서비스로 노출됩니다. 로컬로 액세스하려면 kubectl port-forward를 사용하세요:
 
 <div class="content-ad"></div>
 

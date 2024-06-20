@@ -21,7 +21,7 @@ link: "https://medium.com/@stevenhoang/step-by-step-guide-installing-k3s-on-a-ra
 
 <div class="content-ad"></div>
 
-```
+
 ![](/assets/img/2024-06-19-Step-By-StepGuideInstallingK3sonaRaspberryPi4Cluster_0.png)
 
 우리 구성에서는 3대의 Raspberry Pi 4 장치가 스위치에 연결되어 있습니다. 이 스위치는 저의 인터넷 공급업체에서 제공한 라우터에 연결되어 있습니다. 추가로, 인터넷 접속을 위한 정적 공개 IP 주소가 제공되었습니다.
@@ -29,11 +29,11 @@ link: "https://medium.com/@stevenhoang/step-by-step-guide-installing-k3s-on-a-ra
 아래 표는 우리 Raspberry Pi 클러스터의 각 노드에 대한 특정 IP 구성을 요약합니다:
 
 제가 192.168.1.85에서 실행 중인 Pi를 마스터 모드로 선택하여 아래 지침에 따라 설치를 시작하겠습니다.
-```  
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Step-By-Step Guide Installing K3s on a Raspberry Pi 4 Cluster](/assets/img/2024-06-19-Step-By-StepGuideInstallingK3sonaRaspberryPi4Cluster_1.png)
 
 # K3s Installation
@@ -41,11 +41,11 @@ link: "https://medium.com/@stevenhoang/step-by-step-guide-installing-k3s-on-a-ra
 # Pi Os installation
 
 프로젝트에서 K3s 클러스터가 필요하다고 생각하여 Raspberry Pi OS Lite 64비트를 선택했습니다. 이 OS 변형은 데스크톱 환경이 포함되어 있지 않기 때문에 노드 설치에는 SSH가 주요 방법이 될 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-Step-By-StepGuideInstallingK3sonaRaspberryPi4Cluster_2.png" />
 
 SD 카드에 OS를 플래시하기 전에 각 노드의 노드 이름과 로그인 세부 정보를 구성하는 것이 매우 중요합니다.
@@ -53,7 +53,7 @@ SD 카드에 OS를 플래시하기 전에 각 노드의 노드 이름과 로그�
 <img src="/assets/img/2024-06-19-Step-By-StepGuideInstallingK3sonaRaspberryPi4Cluster_3.png" />
 
 각 노드의 OS 준비가 완료되면 다음 클러스터를 설정했습니다:
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@jbkendrick_50942/the-paradox-of-apple-simplicity-7db7
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-19-TheParadoxofAppleSimplicity_0.png)
 
 일반적으로, Apple의 애플리케이션, 서비스 및 기기는 사용하기 쉬운 것 같지만, 수십 년간의 DOS, Windows 및 ChromeOS 사용 경험 이후 Apple이 몇 가지 간단한 것을 얼마나 어렵게 만들었는지 종종 놀랍습니다. 그러나 Apple이 그런 선택을 한 이유가 있는지, 그리고 이러한 차이가 실제로 개선인지 알아볼 필요가 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@jbkendrick_50942/the-paradox-of-apple-simplicity-7db7
 몇 가지 예를 들어보겠습니다 . . .
 
 ## 파일 이동
-```
+
 
 <div class="content-ad"></div>
 

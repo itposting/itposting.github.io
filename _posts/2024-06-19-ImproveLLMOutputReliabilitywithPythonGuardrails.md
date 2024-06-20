@@ -74,7 +74,7 @@ description을 key:value 쌍으로 필터 매개변수로 변환합니다.
 {
   "filters": $FOUND_FILTERS,
 }
-```
+
 
 시작! 항상 유효한 json blob로 응답해야 함을 상기시킵니다.
 
@@ -96,7 +96,7 @@ def search_params_guardrails(tool_output: dict) -> str:
         filters["offer_type"] = 'sale' if price_threshold >= min_sale_price else 'rent'
         
     return {"filters":filters}
-```
+
 
 샘플 코드의 첫 번째 부분에서는 OpenAI 모델, Prompt Template, JsonOutputParser(지시사항과 함께 유효한 JSON을 얻는 데 도움을 주는) 및 다른 LLM이 설정한 기타 필터에 기초하여 `offer_type` 필드를 추가하는 기본 api_params_guardrail 기능을 준비합니다.
 

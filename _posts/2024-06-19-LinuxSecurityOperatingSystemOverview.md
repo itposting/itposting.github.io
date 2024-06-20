@@ -11,7 +11,7 @@ link: "https://medium.com/@cybersecuritystephen/linux-security-operating-system-
 ---
 
 
-```
+
 ![Linux Security Operating System Overview](/assets/img/2024-06-19-LinuxSecurityOperatingSystemOverview_0.png)
 
 Windows와 Linux을 비교하는 통계 기사에 따르면, Linux 운영 체제가 모든 웹사이트 중 38.5%에서 사용되며 상위 백만 웹사이트 중 46.8%에서 사용됩니다.¹ 이는 인터넷의 상당 부분이 웹사이트에 Linux를 사용하고 있다는 것을 의미하므로 Linux의 실제 보안 상태를 알고 싶어합니다.
@@ -19,7 +19,7 @@ Windows와 Linux을 비교하는 통계 기사에 따르면, Linux 운영 체제
 # 간략한 역사
 
 Linux의 모든 보안 기능에 대해 탐구하기 전에 시간을 내어 Linux가 어떻게 발전해 왔는지 살펴봅시다. "Linux는 초기에 1990년대 초에 Unix 운영 체제의 클론으로 개발되었습니다. 따라서 Linux는 핵심 Unix 보안 모델인 Discretionary Access Control (DAC)의 형태를 계승합니다."²
-```
+
 
 <div class="content-ad"></div>
 
@@ -91,7 +91,7 @@ Linux 커널에 새로운 보안 기능을 통합할 때의 중요한 설계 제
 
 <div class="content-ad"></div>
 
-```
+
 ![Linux Security](/assets/img/2024-06-19-LinuxSecurityOperatingSystemOverview_2.png)
 
 # 결론
@@ -99,7 +99,7 @@ Linux 커널에 새로운 보안 기능을 통합할 때의 중요한 설계 제
 Linux 운영 체제는 다양한 내장 보안 기능을 제공하지만, 최종 사용자는 온라인에서 보다 안전하게 보호하기 위해 방화벽을 구성하고 백신 소프트웨어를 설치해야 합니다. 귀하의 Linux 배포본의 모든 설정을 구성하는 것이 보안의 효과적인 도움으로 중요하므로 각 배포본에 대한 최선의 정책을 연구하는 것이 항상 권장됩니다. 본 논문에 나열된 모든 최상의 실천 방법을 고려한다면, 귀하의 Linux 시스템이 매우 안전하다고 확신할 수 있을 것입니다.
 
 # 참고문헌
-```
+
 
 <div class="content-ad"></div>
 

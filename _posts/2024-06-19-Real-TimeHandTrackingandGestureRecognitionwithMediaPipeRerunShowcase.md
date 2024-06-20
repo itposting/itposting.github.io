@@ -124,7 +124,7 @@ GestureDetectorLogger 클래스 내의 detect 함수는 이미지를 인자로 �
 
 <div class="content-ad"></div>
 
-```md
+
 ![이미지](/assets/img/2024-06-19-Real-TimeHandTrackingandGestureRecognitionwithMediaPipeRerunShowcase_1.png)
 
 아래 코드를 사용하여 직접 시도해볼 수 있어요:
@@ -141,7 +141,7 @@ run_from_sample_image(SAMPLE_IMAGE_PATH)
 ```
 
 # 재실행을 사용하여 확인, 디버그 및 데모하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -221,7 +221,7 @@ def run_from_video_capture(vid: int | str, max_frame_count: int | None) -> None:
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*c1Us-7PoWSP0rgVdlMQUhA.gif" />
 
-Rerun Viewer에서 데이터를 시각화하려면 Rerun SDK를 사용하여 데이터를 로깅하는 것이 중요합니다. 이전에 언급된 가이드는 이 프로세스에 대한 통찰을 제공합니다. 이 문맥에서는 정규화된 값으로 손 랜드마크 포인트를 추출한 다음, 이미지의 너비와 높이를 사용하여 이미지 좌표로 변환합니다. 이러한 좌표는 2D 포인트로 Rerun SDK에 로깅됩니다. 추가로, 랜드마크 간의 연결을 식별하고 2D 라인스트립으로 로깅합니다.```
+Rerun Viewer에서 데이터를 시각화하려면 Rerun SDK를 사용하여 데이터를 로깅하는 것이 중요합니다. 이전에 언급된 가이드는 이 프로세스에 대한 통찰을 제공합니다. 이 문맥에서는 정규화된 값으로 손 랜드마크 포인트를 추출한 다음, 이미지의 너비와 높이를 사용하여 이미지 좌표로 변환합니다. 이러한 좌표는 2D 포인트로 Rerun SDK에 로깅됩니다. 추가로, 랜드마크 간의 연결을 식별하고 2D 라인스트립으로 로깅합니다.
 
 <div class="content-ad"></div>
 
@@ -286,7 +286,7 @@ class GestureDetectorLogger:
 
 <div class="content-ad"></div>
 
-```
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*rNILX857c8TfScr6t7KKgQ.gif)
 
 ```python

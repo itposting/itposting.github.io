@@ -37,7 +37,7 @@ NDVI 및 “표준” 위양색을 위해 B5 (근적외선), B4 (적색) 및 B3 
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-WorkingWithLandsatSurfaceReflectanceDatainQGIS_1.png)
 
 다중 스펙트럼(색상) 이미지를 만들려면 "가상 래스터"를 생성하세요.
@@ -45,7 +45,7 @@ NDVI 및 “표준” 위양색을 위해 B5 (근적외선), B4 (적색) 및 B3 
 래스터 `기타` 가상 래스터 만들기...
 
 각 입력 파일을 별도의 밴드에 배치하는 것을 확인하세요 (이것은 중요합니다 — 그렇지 않으면 이미지가 단일 그레이스케일 밴드가 됩니다!)
-```
+
 
 <div class="content-ad"></div>
 
@@ -197,10 +197,9 @@ OSM에서 검색 및 다운로드를 하기 전에 검색 영역을 제한하는
 
 <div class="content-ad"></div>
 
-```md
+
 ![이미지](/assets/img/2024-06-19-WorkingWithLandsatSurfaceReflectanceDatainQGIS_11.png)
 
 데이터의 전체 범위로 경계를 설정하려면 Project ` Import/Export ` Export Map to PDF …(벡터를 유지하기 위함) 또는 Export Map to TIFF …(모든 것을 픽셀로 래스터로 변환하기 위함)를 클릭하세요. 그런 다음 Layer에서 Calculate & drop-down 목록에서 내보내고자 하는 레이어를 선택하세요. QGIS는 선택한 레이어의 크기에 맞는 전체 해상도의 이미지를 렌더링 및 내보내며 지리 위치 정보와 함께 완성됩니다. (적어도 GeoTIFF를 위해, 제 설치에서는 GeoPDF 옵션이 작동하지 않습니다.)
 
 도움이 되었다면, 연락을 유지하고 싶거나, 원격 감지 및 지도 제작에 대한 실습에 관심이 있다면 LinkedIn을 통해 연락하시거나, robertbsimmon@gmail.com으로 이메일을 보내거나 제 포트폴리오를 확인해보세요.
-```

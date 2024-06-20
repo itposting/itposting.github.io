@@ -79,7 +79,7 @@ Snowflake IPO는 미친 짓이었습니다. 주식은 240USD 정도에 상장되
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-WhoisSridharRamaswamyandwhatdoesthismeanforSnowflake_1.png)
 
 의사록가들은 IPO 이후 기간 동안 주가가 조작되어 기존 스노우플레이크 주주가 최대한의 가치를 실현할 수 있게 했다고 주장할 것입니다. 결국, 2021년 당시 매출은 단지 약 500백만 달러에 불과했으며, 시장 자본화 수익비율(또는 "매출 배수"는 2020/2021년 당시 약 100배 정도로 엄청나게 높은 값을 나타냅니다.
@@ -87,7 +87,7 @@ Snowflake IPO는 미친 짓이었습니다. 주식은 240USD 정도에 상장되
 ![이미지](/assets/img/2024-06-20-WhoisSridharRamaswamyandwhatdoesthismeanforSnowflake_2.png)
 
 여러 면에서, 이것이 슬룻만이 고용된 이유였습니다.
-```
+
 
 <div class="content-ad"></div>
 

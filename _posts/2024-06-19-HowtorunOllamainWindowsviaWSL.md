@@ -33,16 +33,16 @@ Windows 터미널을 관리자 권한으로 열고 다음 명령을 실행하여
 
 <div class="content-ad"></div>
 
-```
+
 wsl -- install -d ubuntu
-```
+
 
 그런 다음 사용자 이름과 비밀번호를 사용하여 설정하세요. Ollama는 WSL에서만 작동합니다.
 
 3. WSL 버전을 2로 업데이트:
 
 Ollama는 제대로 작동하기 위해 WSL 2가 필요합니다. WSL 버전을 업데이트하려면 다음 명령을 실행하세요:
-```
+
 
 <div class="content-ad"></div>
 

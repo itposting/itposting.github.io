@@ -140,7 +140,7 @@ DataTable을 사용하면 여러 CSV 파일을 효율적으로 읽을 수 있습
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-5ThingsIWishthePandasLibraryCouldDo_1.png)
 
 For instance, consider an experiment to study the correlation between DataFrame size and the run-time to execute a function on the DataFrame.
@@ -148,7 +148,7 @@ For instance, consider an experiment to study the correlation between DataFrame 
 We start with a random DataFrame comprising a thousand rows and two columns.
 
 Next, we define a function that takes a row of the DataFrame and returns its sum. This function is implemented below:
-```
+
 
 <div class="content-ad"></div>
 
@@ -247,7 +247,7 @@ Pandas는 일상적인 탭형 데이터 분석, 관리 및 처리 작업에 놀�
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-5ThingsIWishthePandasLibraryCouldDo_3.png)
 
 Visit us at DataDrivenInvestor.com
@@ -255,7 +255,7 @@ Visit us at DataDrivenInvestor.com
 Subscribe to DDIntel [here](link_here).
 
 Have a unique story to share? Submit to DDIntel [here](link_here).
-```
+
 
 <div class="content-ad"></div>
 

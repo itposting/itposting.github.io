@@ -127,7 +127,7 @@ link: "https://medium.com/@dheeruthedeployer/linux-directory-structure-03ab5c23e
 
 <div class="content-ad"></div>
 
-```
+
 /
 ├── bin
 ├── boot
@@ -155,16 +155,16 @@ link: "https://medium.com/@dheeruthedeployer/linux-directory-structure-03ab5c23e
  ├── log
  ├── spool
  └── tmp
-```
 
-```
+
+
 |- / (Root)
 
 설명: 모든 다른 디렉토리가 뻗어나온 최상위 디렉토리입니다.
 예시: /bin, /etc, /home은 모두 /의 하위 디렉토리입니다.
-```
 
-```
+
+
 |- /bin
 
 설명: 모든 사용자가 필요로 하는 기본 명령어와 도구를 위한 필수 바이너리 실행 파일이 들어 있습니다.
@@ -172,9 +172,9 @@ link: "https://medium.com/@dheeruthedeployer/linux-directory-structure-03ab5c23e
 /bin/ls (디렉토리 내용 나열)
 /bin/bash (Bourne Again Shell)
 /bin/cp (파일과 디렉토리 복사)
-```
 
-```
+
+
 |- /boot
 
 설명: 부트로더 파일과 커널 이미지가 들어 있습니다.
@@ -182,7 +182,7 @@ link: "https://medium.com/@dheeruthedeployer/linux-directory-structure-03ab5c23e
 /boot/vmlinuz (리눅스 커널)
 /boot/initrd.img (초기 RAM 디스크 이미지)
 /boot/grub/grub.cfg (GRUB 부트로더 구성 파일)
-```
+
 
 <div class="content-ad"></div>
 
@@ -230,34 +230,34 @@ link: "https://medium.com/@dheeruthedeployer/linux-directory-structure-03ab5c23e
 
 <div class="content-ad"></div>
 
-```md
+
 |- /media
 
 Description: USB 드라이브, CD 및 DVD와 같은 탈착식 미디어를 연결하는 데 사용됩니다.
 예시:
 /media/cdrom (CD-ROM을 연결하는 마운트 포인트)
 /media/usb (USB 드라이브를 연결하는 마운트 포인트)
-```
 
-```md
+
+
 |- /mnt
 
 Description: 임시로 파일 시스템을 마운트하는 일반적인 마운트 포인트입니다.
 예시:
 관리자는 다음과 같이 파일 시스템을 임시로 마운트할 수 있습니다:
 sudo mount /dev/sdb1 /mnt
-```
 
-```md
+
+
 |- /opt
 
 Description: 선택적 소프트웨어 패키지 및 타사 응용 프로그램이 포함됩니다.
 예시:
 /opt/google (Google 애플리케이션의 설치 디렉토리)
 /opt/vmware (VMware 애플리케이션의 설치 디렉토리)
-```
 
-```md
+
+
 |- /proc
 
 Description: 프로세스 및 시스템에 대한 정보를 제공하는 가상 파일 시스템입니다.
@@ -265,7 +265,7 @@ Description: 프로세스 및 시스템에 대한 정보를 제공하는 가상 
 /proc/cpuinfo (CPU 정보)
 /proc/meminfo (메모리 사용량 정보)
 /proc/1234 (PID가 1234인 프로세스에 대한 정보를 포함하는 디렉토리)
-```
+
 
 <div class="content-ad"></div>
 

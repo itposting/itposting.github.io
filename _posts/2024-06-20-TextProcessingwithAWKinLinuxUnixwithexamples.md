@@ -11,7 +11,7 @@ link: "https://medium.com/@ahmedmansouri/text-processing-with-awk-in-linux-unix-
 ---
 
 
-```
+
 ![Image](/assets/img/2024-06-20-TextProcessingwithAWKinLinuxUnixwithexamples_0.png)
 
 awk은 패턴 스캔 및 처리를 위한 강력한 프로그래밍 언어이자 명령 줄 유틸리티입니다. 주로 텍스트 처리에 사용되며 데이터 추출 및 보고 도구로 사용됩니다. 본 안내서는 awk의 기본 개념을 이해하는 데 도움을 주고 Linux/Unix 환경에서 효과적으로 사용하는 방법을 보여줄 것입니다.
@@ -19,7 +19,7 @@ awk은 패턴 스캔 및 처리를 위한 강력한 프로그래밍 언어이자
 # awk 소개
 
 awk은 창안자 Alfred Aho, Peter Weinberger, Brian Kernighan의 이름에서 따왔습니다. 사용자가 지정한 패턴과 작업을 적용하여 텍스트를 한 줄씩 처리합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -27,9 +27,9 @@ awk은 창안자 Alfred Aho, Peter Weinberger, Brian Kernighan의 이름에서 �
 
 awk의 기본 구문은 다음과 같습니다:
 
-```
+
 awk '패턴 { 동작 }' 파일
-```
+
 
 - 패턴: 일치시킬 조건을 지정합니다.
 - 동작: 패턴이 일치할 때 무엇을 할지 지정합니다.
@@ -60,7 +60,7 @@ Charlie White 32 160
 
 ## 1. Printing Specific Columns separated by space
 
-To print the first names (1st field) and ages (3rd field) separated by space:```
+To print the first names (1st field) and ages (3rd field) separated by space:
 
 <div class="content-ad"></div>
 
@@ -185,7 +185,6 @@ awk '{ sum += $3; count++ } END { print sum / count }' data.txt
 
 <div class="content-ad"></div>
 
-```js
 awk '{print NR, $0}' data.txt
 
 ----- 출력 -----
@@ -195,13 +194,11 @@ awk '{print NR, $0}' data.txt
 3 Alice Johnson 35 170
 4 Bob Brown 28 175
 5 Charlie White 32 160
-```
 
 ## 9. 필드 수 출력
 
 각 줄의 필드 수를 출력합니다.
 
-```js
 awk '{ print "Number of fields:", NF }' data.txt
 
 ----- 출력 -----
@@ -211,13 +208,11 @@ Number of fields: 4
 Number of fields: 4
 Number of fields: 4
 Number of fields: 4
-```
 
 <div class="content-ad"></div>
 
 ## 10. 첫 번째 및 마지막 필드 인쇄
 
-```js
 awk '{ print $1, $NF }' data.txt
 
 
@@ -228,7 +223,6 @@ Jane 165
 Alice 170
 Bob 175
 Charlie 160
-```
 
 ## 11. 대문자로 필드 인쇄
 
@@ -236,10 +230,8 @@ Charlie 160
 
 <div class="content-ad"></div>
 
-```js
 awk '{ print toupper($1) }' data.txt
 
-```
 
 ### 결과
 
@@ -253,10 +245,8 @@ CHARLIE
 
 2번째 필드에서 하위 문자열 추출: 1번째 문자부터 3번째 문자까지
 
-```js
 awk '{print substr($2,1,3)}' data.txt
 
-```
 
 ### 결과
 
@@ -272,7 +262,6 @@ Whi
 
 각 줄의 2번째 필드의 길이를 출력합니다.
 
-```js
 awk '{ print length($2) }' data.txt
 
 
@@ -283,7 +272,6 @@ awk '{ print length($2) }' data.txt
 7
 5
 5
-```
 
 ## 14. 사용자 정의 함수
 
@@ -291,7 +279,6 @@ awk '{ print length($2) }' data.txt
 
 보다 복잡한 작업을 위해 awk 스크립트 내에서 함수를 정의할 수 있어요:
 
-```js
 awk '
 function square(x) { return x * x }
 { print $3, " --> square :" , square($3) }
@@ -305,7 +292,6 @@ function square(x) { return x * x }
 35  --> square : 1225
 28  --> square : 784
 32  --> square : 1024
-```
 
 # 결론
 

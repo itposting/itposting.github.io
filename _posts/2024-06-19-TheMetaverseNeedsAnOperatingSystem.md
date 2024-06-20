@@ -11,7 +11,7 @@ link: "https://medium.com/@theo/the-metaverse-needs-an-operating-system-5fe135ec
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-19-TheMetaverseNeedsAnOperatingSystem_0.png)
 
 만약 내가 처럼 오래된 개발자라면, 신강에 가서 동전을 던지고 컴퓨터 잡지 페이지에서 신클레어 스펙트럼이나 암스트라드 CPC-464에 대해 BASIC이나 기계어로 게임을 코딩한 뒤 집으로 뛰어가던 시절을 기억할 것입니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@theo/the-metaverse-needs-an-operating-system-5fe135ec
 (더 오래된 분이라면 어셈블리 언어와 펀칭카드를 기억할 것이고, 미리 예언합니다. 신이 그대를 사랑합니다.)
 
 첫 번째 시도에서는 항상 작동하지 않았지만, 많은 사람들에게 소프트웨어 엔지니어링 또는 게임 개발의 시작이었습니다. 그것은 컴퓨팅의 황금 시대 같았고, 다른 언어의 단어를 마법 같은 것으로 변환하는 발견이었습니다.
-```
+
 
 <div class="content-ad"></div>
 

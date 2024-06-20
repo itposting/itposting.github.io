@@ -53,7 +53,7 @@ VM을 빌드하기 전에 프로젝트 레이아웃을 먼저 설정해 봅시�
 - 그리고 mod.rs가 포함된 하위 디렉토리로, 해당 하위 디렉토리의 이름을 따르는 모듈이 정의됩니다. 여기에서는 components, components::jvm, 그리고 components::uart 모듈이 있습니다.
 
 컴파일은 main.rs 또는 라이브러리의 경우 lib.rs에서 시작됩니다. 다른 파일이나 디렉토리의 모듈은 명시적으로 프로젝트에 포함되어야 합니다. 그렇지 않을 경우 무시됩니다. 이 경우 mod avrora;와 mod components; 라인은 avrora 및 components 모듈을 가져와서 전체 크레이트에서 사용할 수 있도록 만듭니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -258,7 +258,7 @@ collect! 매크로는 submit!()를 통해 등록된 모든 Component 객체를 �
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-NielslearnsRust4ThreedifferentwaysmaketheVMmodular_1.png)
 
 특정 링크된 섹션에 코드를 배치하여 마법이 일어납니다. 인벤토리 크레이트의 소스를 살펴보면(조밀하지만 500줄 미만이고 그 중 절반은 주석입니다), 생성될 링커 섹션이 운영 체제에 따라 다르다는 것을 알 수 있습니다. 리눅스의 경우 .init_array가 되고, 윈도우의 경우 .CRT$XCU가 되며 macOS의 경우 __DATA,__mod_init_func가 됩니다. 각각은 main() 함수에 진입하기 전에 실행될 코드를 포함하고 있습니다.
@@ -266,7 +266,7 @@ collect! 매크로는 submit!()를 통해 등록된 모든 Component 객체를 �
 AVR의 경우 이러한 종류의 코드가 .initN 섹션으로 들어가지만, 안타깝게도 인벤토리 크레이트는 AVR에서 작동하지 않습니다:
 
 ![이미지](/assets/img/2024-06-20-NielslearnsRust4ThreedifferentwaysmaketheVMmodular_2.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -93,9 +93,9 @@ ldapsearch `형식 옵션` `인증 옵션` `도메인 옵션` `쿼리 필터` `�
 
 <img src="/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_3.png" />
 
-```
+
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(objectClass=user)” dn
-```
+
 
 안녕하세요! Ldapsearch는 더 복잡할 것입니다. 종종, 필요한 옵션을 갖춘 첫 번째 쿼리를 작성한 다음 필터와 필요한 속성 목록을 조정하기 위해 마지막 두 부분을 수정합니다. 중요한 점은 이곳에서 전제로 한 것은 AD에 액세스할 수 있는 계정의 일반 텍스트 자격 증명을 가지고 있다는 것입니다. 이 쿼리에 대해, 제목 계정에 대한 일반 텍스트 사용자 이름과 암호를 사용했으며 이는 손상된 서비스 계정을 시뮬레이션합니다. 사용자 이름과 암호는 반드시 필요하지 않을 수 있지만 어떤 종류의 인증이 필요할 것입니다. 이 블로그에서는 이러한 방식으로 쿼리를 작성할 것이며, "옵션" 섹션에서 다른 방법에 대해 설명하겠습니다.
 
@@ -133,7 +133,7 @@ dsquery * -filter “(&(objectclass=computer)(name=*win*))” -attr name samacco
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_5.png)
 
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(&(objectclass=computer)(name=*win*))” name samaccountname
@@ -141,7 +141,7 @@ ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\
 실제로 이를 시작할 때는 앞으로 진행하기 위해 필요한 속성만 반환하는 것이 좋습니다. 대규모 AD 환경에서는 많은 결과를 반환할 수 있으며, OPSEC 고려사항과 AD 개체를 통해 읽을 때의 주의 기준에 따라 더 적은 속성이 더 좋을 수 있습니다. 잠재적인 대상을 좁힐 때, 구체적인 결과를 얻기 위해 와일드카드를 사용하지 않고 이동할 가능성이 높습니다.
 
 와일드카드를 사용하는 또 다른 이점은 찾고 있는 내용을 알아보기 어렵게 만들기 위해 부분 단어를 사용할 수 있다는 것입니다. 예를 들어, password 또는 administrator를 검색하는 대신 *sword* 또는 *minis*와 같이 검색할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -155,7 +155,7 @@ AD에서 사용자를 찾는 것은 복잡할 수 있습니다. 특히 도메인
 
 <div class="content-ad"></div>
 
-```
+
 dsquery * -filter “(&(objectclass=user)(!(objectclass=computer)(name=*W*)))” -attr name samaccountname -d 192.168.88.195
 
 시스템 관리자가 관리 기능과 일상적인 사용을 위한 서로 다른 계정을 가지는 것이 일반적입니다. 이와 같은 쿼리를 사용하면 -sa 또는 -da와 같은 추가 권한을 나타내는 이름을 가진 계정을 찾을 수 있습니다.
@@ -163,7 +163,7 @@ dsquery * -filter “(&(objectclass=user)(!(objectclass=computer)(name=*W*)))”
 ![이미지](/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_7.png)
 
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(&(objectclass=user)(name=*W*))” name samaccountname
-```
+
 
 <div class="content-ad"></div>
 
@@ -177,7 +177,7 @@ dsquery에서는, 그룹 개체 유형을 사용하여 이름별로 그룹을 �
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_8.png)
 
 dsquery group -name *admin* -d 192.168.88.195
@@ -185,15 +185,15 @@ dsquery group -name *admin* -d 192.168.88.195
 dsquery * -filter “(&(objectclass=group)(name=*admin*))” -attr name samaccountname -d 192.168.88.195
 
 dsquery * -filter “(&(objectclass=group)(samaccountname=도메인 관리자))” -attr name samaccountname member -d 192.168.88.195
-```
+
 
 <div class="content-ad"></div>
 
 ldapsearch에서는 구문이 dsquery와 매우 유사합니다. 아래는 이름에 *admin*이 포함된 그룹을 찾는 ldapsearch 구문입니다.
 
-```
+
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(&(objectclass=group)(name=*admin*))” name samaccountname
-```
+
 
 그룹에 대한 운영 참고 사항으로, 목록을 좁힐 때는 적은 속성으로 시작하고 확장하는 것이 좋습니다. 또한 그룹의 설명을 확인하는 것도 좋은 아이디어입니다. 그룹 이름에 사용된 약어나 줄임말에 대한 자세한 내용이 그룹 설명에 포함되어 있는 경우가 많습니다. 그룹 설명에서 약어나 줄임말을 설명하는 경우가 종종 있습니다.
 
@@ -209,7 +209,7 @@ dsquery에서 컴퓨터 객체 유형이나 와일드카드를 사용할 수 있
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_10.png" />
 
 dsquery computer -name *DC* -d 192.168.88.195
@@ -217,15 +217,15 @@ dsquery computer -name *DC* -d 192.168.88.195
 dsquery * -filter “(&(objectclass=computer)(name=*DC*))” -attr name samaccountname operatingsystem -d 192.168.88.195
 
 Ldapquery will be very similar, and again, I recommend adding the operating system attribute to the filter or output.
-```
+
 
 <div class="content-ad"></div>
 
 <img src="/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_11.png" />
 
-```
+
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D 'PLANETEXPRESS\SService' -w 'L1feD3@thSeamlessContinuum' -b 'DC=PLANETEXPRESS,DC=LOCAL' "(&(objectclass=computer)(name=*DC*))" name samaccountname operatingsystem
-```
+
 
 대부분의 쿼리와 마찬가지로, 컴퓨터에 대한 모든 속성을 나열한 후 타겟팅하는 것을 권장합니다. 또한, 컴퓨터의 sAMAccountName은 이름에 $가 추가된 것입니다. 명령행을 사용할 때, 이것이 무슨 일을 하느냐에 따라 문제를 일으킬 수 있습니다.
 
@@ -245,19 +245,19 @@ ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D 'PLANETEXPRESS\SS
 
 아래는 표와 동일한 내용을 Markdown 형식으로 작성한 것입니다.
 
-```
+
 dsquery * -filter “(description=*password*)” -attr name description -d 192.168.88.195
 
 dsquery * -filter “(description=*admin*)” -attr name description -d 192.168.88.195
 
 주의할 점은 출력물이 조금 더 길어진다는 점입니다. 이제 같은 쿼리를 ldapsearch로 살펴봅시다.
-```
+
 
 위 내용을 참고해주시고, 필요하시면 질문해주시기 바랍니다.
 
 <div class="content-ad"></div>
 
-```
+
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(description=*password*)” name description
 
 ![이미지](/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_14.png)
@@ -265,7 +265,7 @@ ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\
 ![이미지](/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_15.png)
 
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(description=*admin*)” name description
-```
+
 
 <div class="content-ad"></div>
 
@@ -289,7 +289,7 @@ ldapsearch에서도 쿼리를 수행할 때 `=를 사용해야 할 것입니다.
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_17.png" />
 
 ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\SService’ -w ‘L1feD3@thSeamlessContinuum’ -b ‘DC=PLANETEXPRESS,DC=LOCAL’ “(&(objectclass=user)(pwdlastset`=132655849658851779))” name pwdlastset
@@ -297,7 +297,7 @@ ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\
 설명: 주로 시간을 얻는 데 관련된 운영 참고 사항이 있습니다. 온라인 변환기를 사용하여 시간을 얻고 변환할 수 있습니다. 또한 PowerShell 또는 Windows 명령 줄 (dsquery 예제에 표시된대로 w32tm.exe /ntte `에포크 시간`)을 사용하여 사람이 읽을 수 있는 버전을 얻을 수도 있습니다. 이전에 언급된 바와 같이, 이것은 클라이언트의 결과를 개선하는 데 확인하는 빠른 확인 사항이 될 수도 있습니다.
 
 ## Member Of
-```
+
 
 <div class="content-ad"></div>
 
@@ -305,11 +305,11 @@ ldapsearch -LLL -x -h DC-THESHIP.PLANETEXPRESS.LOCAL -p 389 -D ‘PLANETEXPRESS\
 
 dsquery를 사용하여 그룹의 구성원인 사용자를 쿼리하는 방법은 다음과 같습니다:
 
-```
+
 <img src="/assets/img/2024-06-20-AnIntroductiontoManualActiveDirectoryQueryingwithDsqueryandLdapsearch_18.png" />
 
 dsquery * -filter “(&(memberof=CN=Staff,DC=PLANETEXPRESS,DC=LOCAl)(memberof=CN=ShipCrew,DC=PLANETEXPRESS,DC=LOCAL))” -attr name memberof -d 192.168.88.195
-```
+
 
 <div class="content-ad"></div>
 

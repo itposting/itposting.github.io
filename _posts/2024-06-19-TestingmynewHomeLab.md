@@ -11,7 +11,7 @@ link: "https://medium.com/@josejgp/testing-my-new-homelab-427e433f1ca9"
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-19-TestingmynewHomeLab_0.png)
 
 새로운 홈랩을 설정했어요. 계속 공부를 하기 위한 아이디어인데, 설정은 아주 간단해요. 인터넷에서 볼 수 있는 멋진 홈랩들과는 거리가 먼데, 누구나 출발점으로 달성할 수 있는 것이에요.
@@ -22,7 +22,7 @@ link: "https://medium.com/@josejgp/testing-my-new-homelab-427e433f1ca9"
 - TP-Link TL-PA4010P (D-Link에 연결하고 홈 와이파이를 사용하지 않으려고 이것을 사용하여 모든 것을 함께 사용함)
 
 ![이미지](/assets/img/2024-06-19-TestingmynewHomeLab_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -63,7 +63,7 @@ nmap -Pn -sV --script=vulners
 
 작업을 마치면 컨테이너를 중지시킬 수 있습니다: sudo docker stop myarch
 
-집 서버를 실행하는 컨테이너를 손쉽게 설정할 수 있습니다. 다음 단계는 Docker 네트워크를 설정하는 것입니다.```
+집 서버를 실행하는 컨테이너를 손쉽게 설정할 수 있습니다. 다음 단계는 Docker 네트워크를 설정하는 것입니다.
 
 <div class="content-ad"></div>
 

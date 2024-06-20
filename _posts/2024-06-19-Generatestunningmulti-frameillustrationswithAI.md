@@ -51,7 +51,7 @@ link: "https://medium.com/design-bootcamp/generate-stunning-multi-frame-illustra
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 6](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_6.png)
 
 ![Image 7](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_7.png)
@@ -59,7 +59,7 @@ link: "https://medium.com/design-bootcamp/generate-stunning-multi-frame-illustra
 ![Image 8](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_8.png)
 
 ![Image 9](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_9.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -81,7 +81,7 @@ DALL-E에게 9패널 또는 16패널 이미지를 생성하도록 요청하면 �
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_13.png" />
 
 <img src="/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_14.png" />
@@ -89,24 +89,24 @@ DALL-E에게 9패널 또는 16패널 이미지를 생성하도록 요청하면 �
 <img src="/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_15.png" />
 
 # Chemistry Teacher
-```
+
 
 <div class="content-ad"></div>
 
 Markdown 형식으로 테이블 태그를 변경해주세요.
 
-```
+
 ![이미지](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_16.png)
 
 # 낚시 선생님
 ![이미지](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_17.png)
 
 # 야구 선수
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Astronaut](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_18.png)
 
 # Astronaut
@@ -114,11 +114,11 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 ![Roller Coaster Enthusiasts](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_19.png)
 
 # Roller Coaster Enthusiasts
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_20.png)
 
 # Master of the Grilled Fish
@@ -126,11 +126,11 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 ![image](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_21.png)
 
 # Battle Masters
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_22.png)
 
 # Masters of Synchronized Swimming
@@ -138,13 +138,13 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 ![image](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_23.png)
 
 # Ballet Master on Ice
-```
+
 
 <div class="content-ad"></div>
 
 아래는 Markdown 형식으로 변경해 봅니다.
 
-```
+
 ![Generatestunningmulti-frameillustrationswithAI_24](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_24.png)
 
 # Singer
@@ -152,11 +152,11 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 ![Generatestunningmulti-frameillustrationswithAI_25](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_25.png)
 
 # Environmental Guards
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Street Dancer](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_26.png)
 
 # Street Dancer
@@ -164,11 +164,11 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 ![Expressionist Cat](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_27.png)
 
 # Expressionist Cat
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_28.png" />
 
 # Gourmet
@@ -176,11 +176,11 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 <img src="/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_29.png" />
 
 # Homework Robot Cat
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_30.png)
 
 # Other Examples
@@ -188,7 +188,7 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 ideogram.ai is great at drawing various animals using the prompt template I created.
 
 ![image](/assets/img/2024-06-19-Generatestunningmulti-frameillustrationswithAI_31.png)
-```
+
 
 <div class="content-ad"></div>
 

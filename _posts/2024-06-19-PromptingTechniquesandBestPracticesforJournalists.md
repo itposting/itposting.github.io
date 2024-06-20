@@ -53,7 +53,7 @@ LLM으로부터 더 나은 결과를 얻기 위해서는 모든 프롬프트가 
 
 <div class="content-ad"></div>
 
-```
+
 ![Prompting Techniques and Best Practices for Journalists 1](/assets/img/2024-06-19-PromptingTechniquesandBestPracticesforJournalists_1.png)
 
 ![Prompting Techniques and Best Practices for Journalists 2](/assets/img/2024-06-19-PromptingTechniquesandBestPracticesforJournalists_2.png)
@@ -61,7 +61,7 @@ LLM으로부터 더 나은 결과를 얻기 위해서는 모든 프롬프트가 
 ![Prompting Techniques and Best Practices for Journalists 3](/assets/img/2024-06-19-PromptingTechniquesandBestPracticesforJournalists_3.png)
 
 ## Few-shot Prompting
-```
+
 
 <div class="content-ad"></div>
 

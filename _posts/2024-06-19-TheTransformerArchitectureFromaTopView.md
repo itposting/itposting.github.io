@@ -63,7 +63,7 @@ Transformer 아키텍처에는 Encoder와 Decoder 두 가지가 모두 존재하
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-TheTransformerArchitectureFromaTopView_1.png" />
 
 - 모델로 텍스트를 처리하기 전에 첫 번째 단계는 토큰화입니다.
@@ -74,7 +74,7 @@ Transformer 아키텍처에는 Encoder와 Decoder 두 가지가 모두 존재하
 # 2. 임베딩 레이어
 
 <img src="/assets/img/2024-06-19-TheTransformerArchitectureFromaTopView_2.png" />
-```
+
 
 <div class="content-ad"></div>
 

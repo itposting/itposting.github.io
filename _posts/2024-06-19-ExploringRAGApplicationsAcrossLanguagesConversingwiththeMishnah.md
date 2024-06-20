@@ -59,7 +59,7 @@ RAG 시스템의 한 가지 주요 장점은 비용 효율성입니다. RAG를 �
 
 이 프로젝트의 데이터셋은 유대교 전통에서 중심적인 고대 래빈 신학 텍스트인 미슈나입니다. 이 텍스트를 선택한 이유는 내 마음에 가깝기 때문이며, 동시에 단순한 주제이기 때문에 언어 모델에 대한 도전을 제공합니다. 데이터셋은 원래 히브리어와 일치하는 영어 번역이 있는 유대 래빈 신학 텍스트의 보물창고인 Sefaria-Export 리포지토리²에서 얻었습니다. 이 일치는 RAG 애플리케이션의 다른 단계에서 다른 언어로 전환할 수 있도록 돕습니다.
 
-참고: 여기서 적용된 동일한 과정은 사용자가 선택한 다른 텍스트 모음에도 적용할 수 있습니다. 이 예시는 또한 히브리어로 보여진 것처럼 RAG 기술을 다른 언어에서 사용할 수 있는 방법을 보여줍니다.```
+참고: 여기서 적용된 동일한 과정은 사용자가 선택한 다른 텍스트 모음에도 적용할 수 있습니다. 이 예시는 또한 히브리어로 보여진 것처럼 RAG 기술을 다른 언어에서 사용할 수 있는 방법을 보여줍니다.
 
 <div class="content-ad"></div>
 
@@ -165,7 +165,7 @@ tractate  mishnah                                            english
 4  Mishnah Arakhin        1  <b>One cannot be charged for a valuation less ...
 ```
 
-좋아 보이니, 이제 벡터 데이터베이스 단계로 넘어갈 수 있습니다.```
+좋아 보이니, 이제 벡터 데이터베이스 단계로 넘어갈 수 있습니다.
 
 혹시 필요하신 점이 있으면 언제든지 물어주세요.
 
@@ -538,7 +538,7 @@ class SimpleQAChainWithTranslation:
 qa_chain = SimpleQAChainWithTranslation(translation_chain, simple_retriever, hebrew_llm_chain)
 ```
 
-해보세요! 이전과 동일한 질문을 사용하지만, 이번에는 히브리어로 요청합니다:```
+해보세요! 이전과 동일한 질문을 사용하지만, 이번에는 히브리어로 요청합니다:
 
 <div class="content-ad"></div>
 
@@ -584,7 +584,7 @@ Seder Moed Mishnah Shabbat פרק 13, משנה 3
 
 We got an accurate, one word answer to our question. Pretty neat, right?
 
-# Interesting Challenges and Solutions```
+# Interesting Challenges and Solutions
 
 <div class="content-ad"></div>
 

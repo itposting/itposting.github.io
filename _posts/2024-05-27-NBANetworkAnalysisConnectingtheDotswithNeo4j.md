@@ -254,7 +254,7 @@ LIMIT 500
 
 # 감사의 말
 
-이 프로젝트의 MVP인 João Pedro Boufleur에게 특별한 찬사를 보냅니다. 그의 기여는 이 모험의 성공에 필수적이었습니다.```
+이 프로젝트의 MVP인 João Pedro Boufleur에게 특별한 찬사를 보냅니다. 그의 기여는 이 모험의 성공에 필수적이었습니다.
 
 <div class="content-ad"></div>
 

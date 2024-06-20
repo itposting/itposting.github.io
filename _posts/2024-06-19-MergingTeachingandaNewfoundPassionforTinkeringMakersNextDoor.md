@@ -11,7 +11,7 @@ link: "https://medium.com/publiclibrarysg/merging-teaching-and-a-newfound-passio
 ---
 
 
-```
+
 ![Image](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_0.png)
 
 Elle Goh를 만나보세요. 그녀는 큰 포부를 가진 23세로, 비영리 학생 보육 센터에서 어린이들을 양육하는 일을 하고 있습니다. 아동심리학과 초기교육 배경을 가진 이 열정적인 교사는 유치원에서 1년간 근무한 후, 현재의 역할로 이동하여 초등학교 학생들에게 지원과 지도를 제공하고 있습니다.
@@ -19,11 +19,11 @@ Elle Goh를 만나보세요. 그녀는 큰 포부를 가진 23세로, 비영리 
 Elle은 TikTok을 스크롤하던 중 라이브러리에서 MakeIT을 우연히 발견했고, 디지털 패브리케이션 입문 워크숍에 참석한 뒤, 새롭게 배운 지식을 활용하여 자신과 학생들을 위한 다양한 유용한 항목을 만들고 있습니다.
 
 # MakeIT를 통해 3D 프린팅에 대한 새로운 열정을 발견하기
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_1.png)
 
 Elle attended her first 3D printing Starter Session, which is a beginner-friendly hands-on workshop for participants with no prior experience, and was blown away by the technology as well as how it was readily available to the public.
@@ -31,7 +31,7 @@ Elle attended her first 3D printing Starter Session, which is a beginner-friendl
 The Starter Session had such a profound impact on Elle that she confessed her imagination went into overdrive with this newfound possibility.
 
 "When I attended the 3D printing Starter class, it looked so futuristic, and it felt surreal that anyone can use it in our public libraries for free as long as you are a member of NLB."
-```
+
 
 <div class="content-ad"></div>
 
@@ -45,7 +45,7 @@ The Starter Session had such a profound impact on Elle that she confessed her im
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_2.png)
 
 MakeIT에서의 여정은 처음 Starter Session 이후 3개월 뒤에 바느질의 세계로 뻗어갔습니다. 기술에 익숙하지 않았음에도 불구하고 Elle은 도전을 받아들였습니다.
@@ -53,7 +53,7 @@ MakeIT에서의 여정은 처음 Starter Session 이후 3개월 뒤에 바느질
 "바느질은 봉제와 어디에서 잘라야 하는지 아는 기술과 예술성이 더 많이 필요해서 더 어려웠습니다", 라고 그녀는 생각했습니다.
 
 온라인 자료를 활용하고, 헌신적인 코치들로부터의 직접적인 지도를 받으며, Elle은 학습 곡선에 직면하여, 시간이 흐르면서 자신의 바느질 기술을 쌓아가기로 다짐하였습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -67,7 +67,7 @@ MakeIT에서 엘은 시간을 보내어 자신과 가족을 위한 다양한 창
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_3.png)
 
 "더욱 쉽게 쿠폰을 모을 수 있도록 러버 밴드가 통과할 수 있는 추가 칸도 포함되어 있어요" 엘이 덧붙였어요.
@@ -75,7 +75,7 @@ MakeIT에서 엘은 시간을 보내어 자신과 가족을 위한 다양한 창
 그녀의 열정은 사랑스럽고 기능적인 북극곰 폰 스탠드와 같이 독특한 작품으로 이끌었어요.
 
 ![Image 2](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_4.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -119,7 +119,7 @@ Elle은 그녀의 다음 프로젝트로, 1학년 학생들이 알파벳 문자�
 
 <div class="content-ad"></div>
 
-```
+
 ![Image description](/assets/img/2024-06-19-MergingTeachingandaNewfoundPassionforTinkeringMakersNextDoor_9.png)
 
 MakeIT 도서관 커뮤니티 안에서, 엘은 세션 중 따뜻함과 동료애를 즐기고 있어요. 내성적인 성격을 가진 엘은 포용적인 분위기가 편안함을 느끼는 데 도움이 된다고 말합니다.
@@ -127,7 +127,7 @@ MakeIT 도서관 커뮤니티 안에서, 엘은 세션 중 따뜻함과 동료�
 "처음 시작할 때 MakeIT 커뮤니티는 매우 초대적이고 환영해줬어요. 모두가 친절했고 자주 일을 칭찬해주며 자신의 프로젝트와 심지어 개인적인 이야기까지 이야기할 때도 있었어요."
 
 엘은 또한 MakeIT 코치들이 지도, 가르침의 꿀팁, 속임수를 제공하고 소속감을 유지하는 데 어떤 역할을 하는지 언급합니다.
-```
+
 
 <div class="content-ad"></div>
 

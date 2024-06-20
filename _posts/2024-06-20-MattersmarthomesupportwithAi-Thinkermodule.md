@@ -34,7 +34,7 @@ Zigbee, Z-Wave, Bluetooth LE Mesh 등의 프로토콜을 기반으로 하는 IoT
 
 <div class="content-ad"></div>
 
-```
+
 ![Device Architecture](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_1.png)
 
 ## Matter의 기기 아키텍처 및 어떤 장치들이 Matter에 액세스할 수 있는가
@@ -42,7 +42,7 @@ Zigbee, Z-Wave, Bluetooth LE Mesh 등의 프로토콜을 기반으로 하는 IoT
 1. WiFi 및 Ethernet 지원 장치는 LAN 라우터에 직접 연결할 수 있습니다.
 
 2. Matter 프로토콜(주로 Thread 프로토콜을 지원하는 하위 장치, Zigbee 프로토콜이나 Bluetooth 프로토콜을 지원하는 하위 장치 등)를 지원하는 하위 장치는 먼저 Matter 프로토콜을 지원하는 게이트웨이 장치에 연결한 다음 게이트웨이 장치를 홈 라우터에 연결합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -112,11 +112,11 @@ export BOUFFALOLAB_SDK_ROOT=/opt/bouffalolab_sdk
 ![2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_5](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_5.png)
 
 ![2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_6](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_6.png)
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_7.png)
 
 ![Image 2](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_8.png)
@@ -124,7 +124,7 @@ export BOUFFALOLAB_SDK_ROOT=/opt/bouffalolab_sdk
 ![Image 3](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_9.png)
 
 ![Image 4](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_10.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -141,7 +141,7 @@ export BOUFFALOLAB_SDK_ROOT=/opt/bouffalolab_sdk
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_12.png)
 
 ![Image 2](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_13.png)
@@ -149,7 +149,7 @@ export BOUFFALOLAB_SDK_ROOT=/opt/bouffalolab_sdk
 ![Image 3](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_14.png)
 
 ![Image 4](/assets/img/2024-06-20-MattersmarthomesupportwithAi-Thinkermodule_15.png)
-```
+
 
 <div class="content-ad"></div>
 

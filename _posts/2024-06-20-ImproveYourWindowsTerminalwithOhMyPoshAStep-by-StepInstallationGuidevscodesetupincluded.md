@@ -115,9 +115,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 만약 이와 같은 오류가 vscode에서 발생한다면:
 
-```
+
 ![Error](/assets/img/2024-06-20-ImproveYourWindowsTerminalwithOhMyPoshAStep-by-StepInstallationGuidevscodesetupincluded_3.png)
-```
+
 
 터미널을 관리자 모드로 실행하여 다음 명령어를 실행해주세요:
 
@@ -129,9 +129,9 @@ Install-Module PsReadLine -Force
 
 만약 vscode에서 이런 식으로 나쁜 인코딩이 발생한다면:
 
-```
+
 <img src="/assets/img/2024-06-20-ImproveYourWindowsTerminalwithOhMyPoshAStep-by-StepInstallationGuidevscodesetupincluded_4.png" />
-```
+
 
 다음 코드를 vscode 설정 파일인 setting.json에 추가해보세요:
 

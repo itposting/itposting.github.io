@@ -130,7 +130,7 @@ order by 2 desc
 
 <div class="content-ad"></div>
 
-```
+
 ![Customer Segmentation Report](/assets/img/2024-06-19-CustomerSegmentationReportwithSQLandPowerBI_4.png)
 
 2.3. What was the best month for sales in a specific year and how much was earned that month?
@@ -138,7 +138,7 @@ order by 2 desc
 In 2003
 
 There were more purchases in November and the next highest sales was October.
-```
+
 
 <div class="content-ad"></div>
 
@@ -155,7 +155,7 @@ order by 2 desc
 
 2004년에도
 
-2004년에도 11월에 가장 높은 매출이 있었으며, 다음으로 10월에 높은 매출이 있었습니다.```
+2004년에도 11월에 가장 높은 매출이 있었으며, 다음으로 10월에 높은 매출이 있었습니다.
 
 <div class="content-ad"></div>
 
@@ -172,7 +172,7 @@ order by 2 desc
 
 2005년도에
 
-2005년에는 최다 구매가 5월에 발생하여 올해의 판매 정점을 나타냈습니다. 세 연도 동안의 처음 다섯 개월 구매를 비교하면, 2005년의 판매량이 비교적 높고, 그 다음이 2004년이며, 가장 낮은 것은 2003년입니다. 이는 회사의 매출이 연도를 통틀어 꾸준히 증가하고 있다는 것을 시사합니다.```
+2005년에는 최다 구매가 5월에 발생하여 올해의 판매 정점을 나타냈습니다. 세 연도 동안의 처음 다섯 개월 구매를 비교하면, 2005년의 판매량이 비교적 높고, 그 다음이 2004년이며, 가장 낮은 것은 2003년입니다. 이는 회사의 매출이 연도를 통틀어 꾸준히 증가하고 있다는 것을 시사합니다.
 
 <div class="content-ad"></div>
 
@@ -190,7 +190,7 @@ order by 2 desc
 2.4. 회사가 11월에 일반적으로 가장 높은 매출액을 기록하는 제품은 무엇인가요?
 
 11월에는 클래식 및 빈티지 자동차의 구매가 두드러지게 증가하여 2003년부터 2004년까지 전반적인 높은 매출에 크게 기여했습니다. 반면에 기차는 동일한 달에 회사의 수익 최소화를 보여주었습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -217,7 +217,7 @@ order by 3 desc
 최근성은 마지막 주문 또는 구매 이후 경과한 일 수를 나타내며, Euro Shopping Channel과 La Rochelle Gifts는 데이터에서 가장 최근 구매를 한 날짜에 해당합니다(최대 날짜). 최근성 값이 높을수록 마지막 구매 이후의 기간이 길어집니다. RFM 결과에 따르면 Toys of Finland. Co는 데이터 집합에서 현재 또는 최대 날짜로부터 100일 이상이 지난 마지막 구매를 했습니다.
 또한, 주문 사이의 평균 일 수를 살펴보면 고객들이 얼마나 자주 구매를 하는지에 대한 통찰을 제공합니다. Euro Shopping Channel은 평균 3일 간격으로 가장 꾸준한 고객 중 하나로 나타납니다.
 마찬가지로, 고객 당 금액 값을 검토하면 Euro Shopping Channel이 가장 많이 지출한 것을 확인할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -241,7 +241,7 @@ order by recency
 ## 5.0 RFM 보고서 기반의 고객 세분화
 
 제공된 결과는 RFM 기준에 따른 고객 세분화에 대한 통찰을 제공합니다. rfm_recency=1에 속한 고객은 최근 구매 이후 지난 기간이 길어서, 데이터 세트에서 최대 날짜로부터 112일까지 구매를 한 Boards & Toys Co.와 같이 특징 지어집니다. 반면, rfm_recency=4는 최근 구매를 나타내며, 데이터 세트에서 가장 최근 구매가 14일 전인 Salzburg Collectables과 같은 상황입니다. 이는 rfm_recency=1 또는 2에 속한 고객이 마지막 주문 이후 상당한 시간이 지나자 "잠재적 이탈 고객"일 수 있다는 것을 나타냅니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -249,7 +249,7 @@ order by recency
 
 이러한 RFM 카테고리를 분석하여, 최근 구매를 보유한 최고의 고객은(rfm_recency=4), 가장 높은 금액을 지출한 고객(rfm_monetary=4) 및 가장 많은 주문을 가진 고객(rfm_frequency=4)으로 식별할 수 있습니다.
 
-```
+
 ---고객을 네 가지 세분류로 분류합니다.
 
 with customer_segment as
@@ -269,10 +269,10 @@ select*,
   NTILE(4) OVER (order by Frequency_of_orders) as rfm_frequency,
   NTILE(4) OVER (order by MonetaryValue) as rfm_monetary
 from customer_segment 
-```
+
 
 ![Customer Segmentation Report](/assets/img/2024-06-19-CustomerSegmentationReportwithSQLandPowerBI_10.png)
-```
+
 
 <div class="content-ad"></div>
 

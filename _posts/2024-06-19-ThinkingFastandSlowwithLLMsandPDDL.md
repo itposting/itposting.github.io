@@ -34,7 +34,7 @@ ChatGPT는 주어진 구문 형식으로 필요한 조치 순서를 즉시 제�
 
 <div class="content-ad"></div>
 
-```
+
 ![ThinkingFastandSlowwithLLMsandPDDL_2](/assets/img/2024-06-19-ThinkingFastandSlowwithLLMsandPDDL_2.png)
 
 ChatGPT는 지금 파란 블록을 집어 빨간 블록 위에 쌓으라고 제안했습니다. 하지만 이것은 우리가 원하는 바가 전혀 아닙니다: 파란 블록은 바닥에 있어야 합니다. 또한 탑이 완전하지 않습니다. 우리가 도와보겠습니다:
@@ -42,7 +42,7 @@ ChatGPT는 지금 파란 블록을 집어 빨간 블록 위에 쌓으라고 제�
 ![ThinkingFastandSlowwithLLMsandPDDL_3](/assets/img/2024-06-19-ThinkingFastandSlowwithLLMsandPDDL_3.png)
 
 ChatGPT는 단서를 받고 단순히 마지막에 추가했습니다. 이제 초록 블록이 파란 블록 위에, 그리고 파란 블록이 빨간 블록 위에 쌓여 있습니다. 출력을 올바른 형식으로 만들기 위해 더 많은 단서를 제공함으로써 해결 할 수 있을 수도 있지만, 우리는 모두 ChatGPT가 실제로 두 가지 동일하게 잘못된 솔루션 사이를 왔다갔다하며 순환하기 시작하는 것을 보았습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -214,7 +214,6 @@ PDDL은 s-표현식을 사용하는데, 이는 LISP에 익숙하지 않은 사�
 
 블록월드 도메인을 위한 유형과 술어는 도메인 파일에서 매우 일찍 정의되어 있습니다:
 
-```js
 (:types block) 
 
 (:predicates
@@ -224,7 +223,6 @@ PDDL은 s-표현식을 사용하는데, 이는 LISP에 익숙하지 않은 사�
  (handempty)
  (ontable ?x - block)
 )
-```
 
 <div class="content-ad"></div>
 
@@ -247,7 +245,7 @@ PDDL은 s-표현식을 사용하는데, 이는 LISP에 익숙하지 않은 사�
     (not (ontable ?x))
   )
 )
-```
+
 
 <div class="content-ad"></div>
 

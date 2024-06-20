@@ -21,7 +21,7 @@ OpenCV를 탐구하는 내 교재에서는 자동 비전 객체 추적을 배웠
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-Real-TimeFaceRecognitionAnEnd-To-EndProject_1.png)
 
 이 프로젝트는 이 훌륭한 "Open Source Computer Vision Library" 인 OpenCV를 사용하여 수행되었습니다. 이 튜토리얼에서는 Raspberry Pi (즉, Raspbian을 사용한 OS)와 Python에 중점을 두지만 Mac에서 코드를 테스트하고 또한 잘 작동하는 것을 확인했습니다.
@@ -29,7 +29,7 @@ OpenCV를 탐구하는 내 교재에서는 자동 비전 객체 추적을 배웠
 OpenCV는 계산 효율성을 위해 설계되었으며 실시간 애플리케이션에 중점을 두고 있습니다. 따라서 카메라를 사용한 실시간 얼굴 인식에 적합합니다.
 
 ## 3 단계
-``` 
+
 
 <div class="content-ad"></div>
 
@@ -85,7 +85,7 @@ python
 
 저희가 현재 3.5 버전 (또는 그 이상)을 실행 중이라고 확인해주세요.
 
-인터프리터 안에 (``` 가 표시될 것입니다), OpenCV 라이브러리를 import 해주세요:
+인터프리터 안에 ( 가 표시될 것입니다), OpenCV 라이브러리를 import 해주세요:
 
 ```js
 import cv2
@@ -385,7 +385,7 @@ cv2.destroyAllWindows()
 face_id = input('\n 사용자 ID를 입력하고 <return>을 누르세요 ==> ')
 ```
 
-그리고 각 캡처된 프레임마다 "데이터셋" 디렉토리에 파일로 저장해야 합니다.``` 
+그리고 각 캡처된 프레임마다 "데이터셋" 디렉토리에 파일로 저장해야 합니다. 
 
 <div class="content-ad"></div>
 
@@ -412,7 +412,7 @@ PI 사진에서 보여지는 것과 같이:
 
 ![Image](/assets/img/2024-06-19-Real-TimeFaceRecognitionAnEnd-To-EndProject_9.png)
 
-내 코드에서는 각 ID로부터 30개의 샘플을 캡처하고 있습니다. 마지막 "elif"에서 이를 변경할 수 있습니다. 샘플의 수는 얼굴 샘플을 캡처하는 루프를 종료하는 데 사용됩니다.```
+내 코드에서는 각 ID로부터 30개의 샘플을 캡처하고 있습니다. 마지막 "elif"에서 이를 변경할 수 있습니다. 샘플의 수는 얼굴 샘플을 캡처하는 루프를 종료하는 데 사용됩니다.
 
 <div class="content-ad"></div>
 

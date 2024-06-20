@@ -11,7 +11,7 @@ link: "https://medium.com/@cstoppgmr/can-containers-use-swap-space-cdf9d73d8db5"
 ---
 
 
-```
+
 ![image](/assets/img/2024-06-19-CanContainersUseSwapSpace_0.png)
 
 Linux을 잘 아시는 분이라면 스왑 공간에 익숙할 것입니다. 간단히 말하면, 스왑은 가상 메모리로 사용되는 디스크의 일부입니다. 물리적 메모리 (RAM)가 가득 찼을 때 RAM에서 드물게 사용되는 데이터를 일시적으로 스왑 공간으로 이동할 수 있습니다. 이렇게 함으로써 새로운 메모리 요구에 맞춰 RAM을 확보합니다.
@@ -19,7 +19,7 @@ Linux을 잘 아시는 분이라면 스왑 공간에 익숙할 것입니다. 간
 스왑을 사용하는 장점은 메모리 사용량의 갑작스러운 변화를 다룰 수 있어 Out-Of-Memory(OOM) Killer가 충분한 메모리 없이 프로세스를 종료하는 것을 방지할 수 있다는 것입니다.
 
 특히 Memory Cgroups(제어 그룹)로 관리되는 컨테이너의 경우, 다음과 같은 의문이 생깁니다. 그들은 여전히 스왑 공간을 사용할 수 있을까? 그렇다면, 어떠한 잠재적인 문제가 있을까요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -132,7 +132,7 @@ mem_alloc을 실행하기 전에 스왑 공간 사용량을 확인하세요. 사
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-CanContainersUseSwapSpace_4.png)
 
 mem_alloc를 호출한 후에는 교체 공간이 실제로 사용 중입니다.
@@ -140,7 +140,7 @@ mem_alloc를 호출한 후에는 교체 공간이 실제로 사용 중입니다.
 ![이미지](/assets/img/2024-06-19-CanContainersUseSwapSpace_5.png)
 
 mem_alloc가 노드에서 사용 가능한 최대 메모리(12GB)를 거의 요청했기 때문에 cat /proc/zoneinfo를 확인하면 normal 존의 높은 값이 free 값과 근접함을 알 수 있습니다. 이 상황에서 free가 high보다 작을 때 시스템은 익명 메모리 페이지를 회수하고 교체 공간에 기록합니다.
-```
+
 
 <div class="content-ad"></div>
 

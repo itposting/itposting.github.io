@@ -203,7 +203,7 @@ Gephi의 주요 섹션입니다.
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-AreyouabeginnerinGephiMakeyourfirstnetworknow_14.png)
 
 # Resources
@@ -211,7 +211,7 @@ Gephi의 주요 섹션입니다.
 🌐 Gephi website.
 
 💠 Do you want to continue learning more about Gephi? Check out all the stories I’ve written about Gephi here.
-```
+
 
 <div class="content-ad"></div>
 

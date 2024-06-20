@@ -57,7 +57,7 @@ ssh -i C:\Users\<username>/.ssh/id_rsa <username>@<Server_IP>
 
 효율성을 위한 함수 및 별칭 만들기
 
-PowerShell에서 새 함수와 별칭을 만드는 것은 간단한 프로세스입니다. 새 함수를 정의하려면 function 명령어를 사용하고 실행할 코드가 포함된 스크립트 블록을 사용하면 됩니다. 예를 들어, Connect-Kali라는 함수를 생성하려면 다음 구문을 사용하면 됩니다.```
+PowerShell에서 새 함수와 별칭을 만드는 것은 간단한 프로세스입니다. 새 함수를 정의하려면 function 명령어를 사용하고 실행할 코드가 포함된 스크립트 블록을 사용하면 됩니다. 예를 들어, Connect-Kali라는 함수를 생성하려면 다음 구문을 사용하면 됩니다.
 
 <div class="content-ad"></div>
 
@@ -71,7 +71,7 @@ function Connect-Kali { ssh -i C:\Users\<username>/.ssh/id_rsa <username>@<Serve
 Test-Path $PROFILE 
 ```
 
-명령이 False를 반환하면 다음 문법을 사용하여 프로필을 만들어야 합니다.```
+명령이 False를 반환하면 다음 문법을 사용하여 프로필을 만들어야 합니다.
 
 <div class="content-ad"></div>
 

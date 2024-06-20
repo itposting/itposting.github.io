@@ -41,7 +41,7 @@ Firebase가 프로젝트 설정을 시작합니다. 설정이 완료되면 '계�
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-ConnectESP32WithGooglesFirebase_2.png" />
 
 # ➡️Authentication Setup :
@@ -49,7 +49,7 @@ Firebase가 프로젝트 설정을 시작합니다. 설정이 완료되면 '계�
 우리가 먼저 해야 할 일은 프로젝트의 인증 옵션을 설정하는 것입니다. 왼쪽 상단의 인증 메뉴 옵션을 선택하면 인증 페이지로 이동됩니다. 시작하기 버튼을 선택하세요.
 
 <img src="/assets/img/2024-06-19-ConnectESP32WithGooglesFirebase_3.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -73,7 +73,7 @@ Firebase가 프로젝트 설정을 시작합니다. 설정이 완료되면 '계�
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-ConnectESP32WithGooglesFirebase_8.png)
 
 Rule을 클릭하고 아래 그림에 표시된 대로 코드를 변경하세요.
@@ -81,7 +81,7 @@ Rule을 클릭하고 아래 그림에 표시된 대로 코드를 변경하세요
 그리고 Publish 버튼을 누르세요.
 
 ![image](/assets/img/2024-06-19-ConnectESP32WithGooglesFirebase_9.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -111,7 +111,7 @@ Rule을 클릭하고 아래 그림에 표시된 대로 코드를 변경하세요
 ```
 
 다음으로 Wi-Fi 자격 증명을 캡처해야 합니다. WIFI_AP를 Wi-Fi 식별자로, WIFI_PASSWORD를 Wi-Fi 암호로 대체하세요.
-```
+
 
 <div class="content-ad"></div>
 

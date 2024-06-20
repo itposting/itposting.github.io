@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/graph-visualization-7-steps-from-
 ---
 
 
-```
+
 <img src="/assets/img/2024-06-19-GraphVisualization7StepsfromEasytoAdvanced_0.png" />
 
 일부 데이터 유형(예: 소셜 네트워크 또는 지식 그래프)는 그래프 형식으로 "원래" 표현될 수 있습니다. 이 유형의 데이터 시각화는 도전적일 수 있으며, 이를 위한 보편적인 레시피는 없습니다. 이 기사에서는 오픈 소스 NetworkX 라이브러리를 사용한 그래프 시각화의 여러 단계를 보여 드리겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/graph-visualization-7-steps-from-
 시작해보겠습니다!
 
 ## 기본 예제
-```
+
 
 <div class="content-ad"></div>
 
@@ -80,9 +80,9 @@ print 출력을 보면 레이아웃 자체가 좌표를 가진 사전(dictionary
 
 이미지 태그를 Markdown 형식으로 변경하세요.
 
-```
+
 ![Graph Visualization](/assets/img/2024-06-19-GraphVisualization7StepsfromEasytoAdvanced_2.png)
-```
+
 
 이 유형의 그래프는 최적의 것이 아닙니다. 다른 방법을 시도해 보죠.
 
@@ -162,7 +162,7 @@ nx.draw(G, pos=pos, node_color=node_colors, with_labels=True)
 ```
 
 결과는 다음과 같습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -264,7 +264,7 @@ nx.draw_networkx_labels(G.subgraph(node_people), pos=pos, font_weight="normal", 
 
 <div class="content-ad"></div>
 
-```
+
 ![그래프 시각화](/assets/img/2024-06-19-GraphVisualization7StepsfromEasytoAdvanced_9.png)
 
 ## 6. 노드 속성
@@ -378,7 +378,7 @@ with open('d3_graph.json', 'w', encoding='utf-8') as f_out:
 ```
 
 이 문서는 JavaScript 자체에 집중하고 있지 않습니다. D3.JS로 그래프를 그리는 코드 예제는 온라인에서 쉽게 찾을 수 있습니다. (이것은 좋은 시작점일 수 있습니다. 전체 소스 코드 링크도 이 페이지의 끝에 있습니다.)
-```
+
 
 <div class="content-ad"></div>
 

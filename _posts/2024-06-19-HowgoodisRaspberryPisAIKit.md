@@ -51,7 +51,7 @@ Raspberry Pi CEO인 Eben은 Apple 및 Qualcomm SoC의 AI PC를 위해 최근 출
 
 <div class="content-ad"></div>
 
-```
+
 ![Raspberry Pi AI Kit](/assets/img/2024-06-19-HowgoodisRaspberryPisAIKit_3.png)
 
 라즈베리 파이는 이미 저렴한 40나노미터에서 IO 기능을 사용하여 분리된 아키텍처를 갖고 있습니다. CPU 및 GPU는 16나노미터에 있습니다. 코어는 16나노미터에 있지만 NPU를 추가하면 면적이 커져 비용이 많이 드는 문제가 발생할 수 있습니다.
@@ -59,7 +59,7 @@ Raspberry Pi CEO인 Eben은 Apple 및 Qualcomm SoC의 AI PC를 위해 최근 출
 비 AI 응용 프로그램을 위해 라즈베리 파이 5를 사용하려는 사용자도 있을텐데요 ;-) 이들은 불필요한 NPU 다이 면적 비용을 위해 더 많은 돈을 지불해야 합니다. 이제 선택권이 생겼고 하드웨어 엔지니어들은 선택권을 좋아합니다. . .
 
 라즈베리 파이 3 버전 자체는 AI 응용 프로그램에 사용되었지만 AI 워크로드는 클라우드에서 실행되었습니다. 이 새로운 라즈베리 파이 5는 Hailo-8L을 사용하여 에지에서 작은 모델과 최적화된 LLM(로컬 모델 매니저)을 직접 수행할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

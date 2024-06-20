@@ -241,13 +241,13 @@ finetune_forecast_trainer.train()
 
 predictions_test = finetune_forecast_trainer.predict(test_dataset)
 
-이후에는 사적 데이터셋을 통해 예측을 받은 후 결과를 플롯합니다:```
+이후에는 사적 데이터셋을 통해 예측을 받은 후 결과를 플롯합니다:
 
 <div class="content-ad"></div>
 
 아래는 테이블 태그를 마크다운 형식으로 변경하도록 했습니다.
 
-```
+
 <img src="/assets/img/2024-06-19-TinyTimeMixersTTMAPowerfulZero-ShotForecastingModelbyIBM_9.png" />
 
 # 마무리 말씀
@@ -255,7 +255,7 @@ predictions_test = finetune_forecast_trainer.predict(test_dataset)
 Tiny Time Mixer (TTM)은 다른 접근 방식을 따른 혁신적인 모델로서, 더 작지만 효율적인 모델들을 위한 길을 열어두었습니다.
 
 특히, TTM은 어텐션을 사용하지 않았고 여전히 강력한 시계열(Time Series) 기반 모델을 구축할 수 있다는 것을 입증했습니다.
-```
+
 
 <div class="content-ad"></div>
 

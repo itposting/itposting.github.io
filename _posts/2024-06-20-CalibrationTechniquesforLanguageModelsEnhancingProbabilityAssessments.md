@@ -11,7 +11,7 @@ link: "https://medium.com/generative-ai/calibration-techniques-for-language-mode
 ---
 
 
-```
+
 ![Calibration Techniques for Language Models](/assets/img/2024-06-20-CalibrationTechniquesforLanguageModelsEnhancingProbabilityAssessments_0.png)
 
 언어 모델, 특히 대형 언어 모델(LLMs)은 인간과 유사한 언어를 이해하고 생성하는 능력으로 인공지능 분야를 혁신했습니다. 이러한 모델은 제로샷 설정에서 다양한 작업을 수행할 뿐만 아니라 맞춤식 프롬프트를 통해 놀라운 유연성과 다양성을 바탕으로 여러 도메인에서 탁월하게 유용합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/generative-ai/calibration-techniques-for-language-mode
 그러나 그들의 효과적인 성능에도 불구하고, 이 모델들의 교정(calibration)은 종종 도전이 되는 핵심적인 측면 중 하나입니다 — 즉, 다양한 결과에 대한 확률이 그 결과가 정확할 가능성을 정확히 반영하는지 보장하는 것입니다.
 
 본 문서에서는 LLMs의 교정이 필요한 이유를 탐구하고, 그들의 확률 평가를 둘러싼 핵심 문제를 식별하며, 더 나은 모델 교정을 위한 현대적인 방법을 탐구합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -53,7 +53,7 @@ LLM의 본질은 정확성뿐만 아니라 올바른 신뢰 수준이 할당된 
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-CalibrationTechniquesforLanguageModelsEnhancingProbabilityAssessments_1.png)
 
 ## Verbalized Confidence
@@ -61,7 +61,7 @@ LLM의 본질은 정확성뿐만 아니라 올바른 신뢰 수준이 할당된 
 “Verbalized Confidence” refers to techniques where a Language Model (LLM) not only provides answers but also rates its confidence in its response explicitly. This approach involves the use of certain methodologies to obtain more reliable assessments of the model’s confidence in its answers.
 
 ## Basic Implementation
-```
+
 
 <div class="content-ad"></div>
 

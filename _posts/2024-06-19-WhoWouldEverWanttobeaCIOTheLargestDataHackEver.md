@@ -11,13 +11,13 @@ link: "https://medium.com/@billatnapier/who-would-ever-want-to-be-a-cio-the-larg
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-19-WhoWouldEverWanttobeaCIOTheLargestDataHackEver_0.png)
 
 외주 업체에 데이터와 처리를 맡기면 자신의 데이터 보호를 다른 사람에게 의지하게 됩니다. 그렇다면, 왜 2020년대에도 우리는 아직도 고객 데이터를 제대로 암호화하고 보호하지 않는 걸까요? 따라서 침입자가 접근 통제를 우회하더라도 암호화된 데이터와 여러 겹의 암호화층을 마주해야 합니다. 데이터베이스의 경우 안전한 격리 내에서 처리하고 열 암호화를 사용해야 합니다.
 
 그리고, 무언가 잘못되면 누가 책임을 져야할까요? 아마도 CIO(최고 정보 책임자)일 것입니다. 사실, 사이버 보안 분야에서 이는 가장 스트레스 받는 일 중 하나일 겁니다. CIO들에게는 가장 많은 기업이 사이버 보안 예산을 위험에 대비해서 균형을 맞추어야 한다는 부담이 있습니다. 또한, CIO는 개발자와 관리자의 실수에 대한 책임을 져야 할 수도 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -39,7 +39,7 @@ Snowflake는 다른 회사를 위해 클라우드 시스템을 운영하므로 �
 
 <div class="content-ad"></div>
 
-```md
+
 ![이미지](/assets/img/2024-06-19-WhoWouldEverWanttobeaCIOTheLargestDataHackEver_3.png)
 
 고객들은 다음과 같이 rapeflake의 사용량을 확인할 수 있습니다:
@@ -61,7 +61,7 @@ ORDER BY CREATED_ON;
 ```
 
 이 규칙을 감지하는 Python 프로그램은 여기에서 제공됩니다. 해킹으로부터의 가능성은 [이 기사]에 개요가 되어 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

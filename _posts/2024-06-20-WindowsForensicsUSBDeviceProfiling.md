@@ -82,7 +82,7 @@ USBSTOR 장치인 VID_0781 및 PID_5581을 계속 검사할 것입니다. 이전
 <div class="content-ad"></div>
 
 아래는 Markdown 형식으로 변환되어 있습니다:
-```
+
 ![이미지](/assets/img/2024-06-20-WindowsForensicsUSBDeviceProfiling_4.png)
 
 $iSerialNumber 키를 검사하면 다음과 같은 추가 정보가 확인됩니다:
@@ -91,7 +91,7 @@ $iSerialNumber 키를 검사하면 다음과 같은 추가 정보가 확인됩�
 - Service: USBSTOR (USB 저장 장치 프로토콜)입니다
 
 ![이미지](/assets/img/2024-06-20-WindowsForensicsUSBDeviceProfiling_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -137,7 +137,7 @@ $iSerialNumber 키를 검사하면 다음과 같은 추가 정보가 확인됩�
 SOFTWARE 하이브에서 Windows Portable Devices를 찾아 볼륨 이름을 얻을 수 있습니다.
 
 ![이미지](/assets/img/2024-06-20-WindowsForensicsUSBDeviceProfiling_10.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -223,4 +223,4 @@ VSN은 Vbr0에 저장되어 있습니다. 또한, 분석 중인 장치가 NTFS �
 
 ## Last Mount Point/Drive Letter Determination
 
-안녕하세요! 장치의 드라이브 문자를 레지스트리에서 확인하지 못했습니다. 그 드라이브 문자는 재사용되었기 때문입니다. 또한 이벤트 로그를 통해 확인할 수 없습니다. 있었던 시간의 이벤트가 덮어써졌기 때문이죠. 하지만 시스템에서 다양한 쉘 항목(예: LNK 파일)을 조사하고 그 중 일치하는 VSN을 포함하는 것이 가능한 접근 방식입니다. 토지 조사 이미지를 촬영할 때 쉘 항목을 복사해 낼 걸 그랬어요. 그때는 레지스트리와 이벤트 로그만 복사했습니다. 제 실수였죠. 여러분의 시스템에서 이를 수행하려면 이미지와 함께 LNK 아티팩트를 추출하는 것을 권장합니다.```
+안녕하세요! 장치의 드라이브 문자를 레지스트리에서 확인하지 못했습니다. 그 드라이브 문자는 재사용되었기 때문입니다. 또한 이벤트 로그를 통해 확인할 수 없습니다. 있었던 시간의 이벤트가 덮어써졌기 때문이죠. 하지만 시스템에서 다양한 쉘 항목(예: LNK 파일)을 조사하고 그 중 일치하는 VSN을 포함하는 것이 가능한 접근 방식입니다. 토지 조사 이미지를 촬영할 때 쉘 항목을 복사해 낼 걸 그랬어요. 그때는 레지스트리와 이벤트 로그만 복사했습니다. 제 실수였죠. 여러분의 시스템에서 이를 수행하려면 이미지와 함께 LNK 아티팩트를 추출하는 것을 권장합니다.

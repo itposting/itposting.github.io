@@ -68,7 +68,7 @@ Y축을 중심으로 회전을 상쇄하기 위해 탭을 X축을 따라 연장�
 
 <div class="content-ad"></div>
 
-```
+
 ![BuildingaShipVfromTheorytoPracticethetravails_6](/assets/img/2024-06-20-BuildingaShipVfromTheorytoPracticethetravails_6.png)
 
 디자인 측면에서 매우 간단하고 좋은 결과를 얻었어요 — 거의. 인쇄할 때 선체는 이렇게 보였어요:
@@ -76,7 +76,7 @@ Y축을 중심으로 회전을 상쇄하기 위해 탭을 X축을 따라 연장�
 ![BuildingaShipVfromTheorytoPracticethetravails_7](/assets/img/2024-06-20-BuildingaShipVfromTheorytoPracticethetravails_7.png)
 
 아! 마침내 찾았다. FreeCAD에서 여러 곡선을 사용하여 표면을 생성할 때, 표면에는 두께가 없어요. 그래서 표면에 두께를 추가해야 합니다. 그러나 두께는 주요 축 중 하나에만 한 번에 추가할 수 있어요. 즉, 두께는 곡선이 주요 축을 횡단하는 선체 일부 영역에서 너무 얇아요. 특히 X-Y 대 Z. 이것이 위 모델에서 보이는 결함을 일으켰어요.
-```
+
 
 <div class="content-ad"></div>
 

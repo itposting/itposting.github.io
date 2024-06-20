@@ -21,7 +21,7 @@ link: "https://medium.com/@sparksasha/kanzashi-flower-hair-scrunchie-tutorial-14
 
 <div class="content-ad"></div>
 
-```
+
 ![Kanzashi Flower Hair Scrunchie Tutorial Part 2](/assets/img/2024-06-20-KanzashiFlowerHairScrunchieTutorial_2.png)
 
 ![Kanzashi Flower Hair Scrunchie Tutorial Part 3](/assets/img/2024-06-20-KanzashiFlowerHairScrunchieTutorial_3.png)
@@ -29,4 +29,3 @@ link: "https://medium.com/@sparksasha/kanzashi-flower-hair-scrunchie-tutorial-14
 Photo by Hobby3DStudio on Creative Fabrica
 
 Disclaimer: This article contains affiliate links, which means we may earn a commission at no additional cost to you if you make a purchase through these links.
-```  

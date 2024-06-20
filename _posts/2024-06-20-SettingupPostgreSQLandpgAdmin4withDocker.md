@@ -188,7 +188,7 @@ docker inspect -f '{range .NetworkSettings.Networks}{.IPAddress}{end}' sqltutori
 
 <div class="content-ad"></div>
 
-```
+
 테이블 - `데이터 보기/편집 -` 모든 행
 
 <img src="/assets/img/2024-06-20-SettingupPostgreSQLandpgAdmin4withDocker_14.png" />
@@ -196,7 +196,7 @@ docker inspect -f '{range .NetworkSettings.Networks}{.IPAddress}{end}' sqltutori
 그다음, 데이터 출력 창에서 행 추가를 클릭해야합니다:
 
 <img src="/assets/img/2024-06-20-SettingupPostgreSQLandpgAdmin4withDocker_15.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -236,6 +236,5 @@ SELECT * FROM CATTABLE;
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-20-SettingupPostgreSQLandpgAdmin4withDocker_18](/assets/img/2024-06-20-SettingupPostgreSQLandpgAdmin4withDocker_18.png)
-```

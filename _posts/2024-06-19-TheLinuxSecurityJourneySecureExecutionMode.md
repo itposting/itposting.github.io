@@ -21,6 +21,5 @@ link: "https://medium.com/@boutnaru/the-linux-security-journey-secure-execution-
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-19-TheLinuxSecurityJourneySecureExecutionMode](/assets/img/2024-06-19-TheLinuxSecurityJourneySecureExecutionMode_0.png) 
-``` 

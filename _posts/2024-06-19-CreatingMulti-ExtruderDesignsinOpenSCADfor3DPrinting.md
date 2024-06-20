@@ -125,7 +125,7 @@ _WhichExtruder = "All"; // ["All", 1, 2, 3, 4, 5]
 ```
 
 실제 그리기 코드는 Extruder 모듈을 사용하여 원하는 엑스트루더를 설정합니다:
-```
+
 
 <div class="content-ad"></div>
 

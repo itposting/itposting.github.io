@@ -294,7 +294,7 @@ systemctl status photoprism
 
 <div class="content-ad"></div>
 
-```md
+
 ![이미지](/assets/img/2024-06-20-ProxmoxInstallingPhotoprisminLXC_7.png)
 
 지금은 이전에 설정한 IP 주소와 포트 2342를 통해 서버에 액세스할 수 있어야 합니다.
@@ -304,7 +304,7 @@ http://YOUR-IP:2342
 ```
 
 ## 크레딧:
-```
+
 
 <div class="content-ad"></div>
 

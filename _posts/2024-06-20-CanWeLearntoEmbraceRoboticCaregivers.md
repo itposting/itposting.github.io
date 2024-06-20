@@ -11,14 +11,14 @@ link: "https://medium.com/neodotlife/can-we-learn-to-embrace-robotic-caregivers-
 ---
 
 
-```
+
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*YeyFnXQkQXlwixSpe3KfVA.gif)
 
 로빈 도노방
 멀리서 “나는 AI를 좋아하지 않아,” 엄마가 소리쳤다. 우리가 인사를 나누기 전. 나는 부모님께 로봇과 더 어려운 주제인 노년을 위한 로봇 간병에 대해 질문하기 위해 전화했다. 엄마는 차가운 기술이 따스하고 일상적인 작업을 대신하고자 한다는 의심에 가득 찬 모습이다. 아무리 편리하다고 해도 상관 없다고 생각한다. 아빠는 좀 더 낙관적이지만, 이미 몇 번의 실수를 겪었던 사회가 로봇을 어떻게 안전하게 통합할지에 대해 조심스럽게 생각한다.
 
 남부 캐롤라이나 해안의 아파트에 살고 있는 부모님은 퇴직자 이웃들과 함께 노년의 불확실성을 간접적으로 체험하고 있다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -31,7 +31,7 @@ link: "https://medium.com/faun/essential-linux-terminal-hacks-for-efficiency-par
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-EssentialLinuxTerminalHacksforefficiencyPart2_1.png)
 
 ## 3. Show Date and time in History:
@@ -71,7 +71,7 @@ export HISTTIMEFORMAT="%d-%m-%y %r "
 
 <div class="content-ad"></div>
 
-```
+
 || — Command runs only if the previous cmd fails.
 
 ![Screenshot](/assets/img/2024-06-19-EssentialLinuxTerminalHacksforefficiencyPart2_3.png)
@@ -79,7 +79,7 @@ export HISTTIMEFORMAT="%d-%m-%y %r "
 ## 5. View content with Less:
 
 Viewing a file with large data using “cat” spams the whole window, using less shows a chunk of content, and then you can scroll up or down.
-```
+
 
 <div class="content-ad"></div>
 
@@ -106,7 +106,7 @@ cat /etc/passwd | column -s ':' -t
 <img src="/assets/img/2024-06-19-EssentialLinuxTerminalHacksforefficiencyPart2_4.png" />
 
 ## 6. 파일 자르기
-```
+
 
 <div class="content-ad"></div>
 
@@ -143,7 +143,7 @@ tail -f <file>
 
 ## 8. View exit code:
 
-Exit codes show the results of execution, typically useful for shell scripts. Use `echo $?` to view the exit code of the previous command.```  
+Exit codes show the results of execution, typically useful for shell scripts. Use `echo $?` to view the exit code of the previous command.  
 
 <div class="content-ad"></div>
 

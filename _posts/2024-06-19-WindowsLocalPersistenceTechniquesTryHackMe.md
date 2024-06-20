@@ -53,7 +53,7 @@ net localgroup administrators thmuser0 /add
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_2.png)
 
 이제, '관리자' 그룹에 추가하는 것은 쉽게 알아차릴 수 있고 상당히 의심스러운 일로 간주될 수 있습니다. 우리는 의심을 피하고 싶어요!
@@ -61,7 +61,7 @@ net localgroup administrators thmuser0 /add
 다른 옵션으로는 사용자를 '백업 연산자' 그룹에 추가하는 것이 있습니다. 이 그룹은 관리자 권한을 부여하지는 않지만, 시스템의 모든 파일 및 레지스트리 키를 읽기/쓰기할 수 있는 권한을 제공해줍니다. 정말 강력한 기능이죠! 이를 통해 우리는 필요한 해시를 얻기 위해 SAM 및 SYSTEM 하이브를 이용할 수 있게 될 겁니다.
 
 ![이미지2](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -106,7 +106,7 @@ reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /t REG_DW
 이제 thmuser1로 돌아가서 우리 작은 문제가 해결되었는지 확인해 보겠습니다:
 
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -122,7 +122,7 @@ python3.9 /opt/impacket/examples/secretsdump.py -sam sam.bak -system system.bak 
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_10](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_10.png)
 
 Look at all of our produce! How glorious, now: let’s test out the administrator hash. We will login again with evil-winrm, but this time instead of a password, we will use the -H flag for our hash:
@@ -130,7 +130,7 @@ Look at all of our produce! How glorious, now: let’s test out the administrato
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_11](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_11.png)
 
 As you can see, I’m not flawless — I copied too much!
-```
+
 
 <div class="content-ad"></div>
 
@@ -154,7 +154,7 @@ As you can see, I’m not flawless — I copied too much!
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 secedit /export /cfg config.inf
 ```
@@ -164,7 +164,7 @@ secedit /export /cfg config.inf
 ![Image 2](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_14.png)
 
 이 시점에서 저의 방법은 THM 방과 상당히 다릅니다. 어떤 이유로 RDP에 접속 권한을 잃었기 때문에 다른 경로를 시도했습니다. 컴퓨터를 재부팅해야 할 수도 있지만, 지금은 이 방법이 작동하는지 확인해 보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -222,7 +222,7 @@ PowerShell 시간이에요. 권한을 변경하길 희망하고 있어요.
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_25.png)
 
 Lesson: If it isn’t working, you’re the problem.
@@ -230,7 +230,7 @@ Lesson: If it isn’t working, you’re the problem.
 OH
 
 ![image](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_26.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -256,15 +256,15 @@ OH
 
 아래와 같이 표 태그를 Markdown 형식으로 변경해주세요.
 
-```
+
 | Tag 1 | Tag 2 |
 |-------|-------|
 | Data1 | Data2 |
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Screenshot](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_33.png)
 
 서버 측 문제일 것 같네요. 방이 끝났지만, 타이머는 계속 돌아가고 있어요. 이번 방을 잠시 멈추고 나중에 플래그 3부터 다시 시작하려고 해요. 두 번 해야 하는 이 작업 덕분에, 이번에는 가이드 원칙을 더 잘 이해하게 되었어요. 여러분도 그럴 수 있을 거에요!
@@ -272,7 +272,7 @@ OH
 플래그: THM'IM_JUST_A_NORMAL_USER'
 
 # 플래그 3
-```
+
 
 <div class="content-ad"></div>
 
@@ -298,7 +298,7 @@ pstools는 시스템 정보를 수집하고 검색하는 데 도움이 되는 �
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_35.png)
 
 변경이 필요한 RID Hijack을 수행할 때 레지스트리 편집기를 통해 변경사항을 가할 수 있습니다.
@@ -306,7 +306,7 @@ pstools는 시스템 정보를 수집하고 검색하는 데 도움이 되는 �
 그 후, 로컬 머신으로 이동하여 대상 계정을 찾습니다:
 
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_36.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -320,7 +320,7 @@ pstools는 시스템 정보를 수집하고 검색하는 데 도움이 되는 �
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_39](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_39.png)
 
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_40](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_40.png)
@@ -328,7 +328,7 @@ pstools는 시스템 정보를 수집하고 검색하는 데 도움이 되는 �
 플래그 명령을 실행해보고 작동하는지 확인해 봅시다. 하지만 보시다시피, thmuser3이 여전히 1010 RID를 가지고 있더라도 thmuser3을 통해 어드민 뷰를 확인할 수 있습니다.
 
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_41](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_41.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -372,7 +372,7 @@ Flag4은 존재하지 않는 것처럼 보입니다. 그러나 Flag5 및 Flag6�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_45.png)
 
 이 명령어는 Powershell을 백그라운드에서 열어서 C:\Windows\System32\backdoor.ps1으로 저장한 스크립트를 실행합니다.
@@ -380,7 +380,7 @@ Flag4은 존재하지 않는 것처럼 보입니다. 그러나 Flag5 및 Flag6�
 리스너를 설정해봐요:
 
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_46.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -388,11 +388,11 @@ Flag4은 존재하지 않는 것처럼 보입니다. 그러나 Flag5 및 Flag6�
 
 이제까지 플래그를 실행해 봅시다:
 
-```
+
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_47.png)
 
 답변: THM'NO_SHORTCUTS_IN_LIFE'
-```
+
 
 <div class="content-ad"></div>
 
@@ -496,7 +496,7 @@ $args[0] 부분은 이전 스크린샷에서 본 %1을 재현할 거예요.
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_58.png)
 
 답변: THM'SUSPICIOUS_SERVICES'
@@ -504,7 +504,7 @@ $args[0] 부분은 이전 스크린샷에서 본 %1을 재현할 거예요.
 # Flag 8:
 
 서비스는 쉽게 악용될 수 있습니다. 지금까지 우리는 새로운 서비스를 추가했지만, 왜 귀찮게 할까요? 기존 서비스를 수정할 수도 있습니다. 이것이 좀 더 교활한 방법입니다 — 만약 누군가가 의심스러운 서비스 이름을 검색하려 한다면, 그들은 그런 것을 찾지 못할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -518,7 +518,7 @@ binPath를 페이로드로 지정해야 합니다. 또한 AutoStart로 설정하
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_60.png)
 
 BINARY_PATH_NAME, start, 및 SERVICE_START_NAME을 조정하여 우리의 악의적인 목적에 맞게 맞추었습니다. 그런 다음 리스너를 설정하고 서비스를 시작했습니다:
@@ -526,7 +526,7 @@ BINARY_PATH_NAME, start, 및 SERVICE_START_NAME을 조정하여 우리의 악의
 정말 간단하죠!
 
 답변: THM'IN_PLAIN_SIGHT'
-```
+
 
 <div class="content-ad"></div>
 
@@ -604,7 +604,7 @@ C:\Users\<your_username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\S
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_67.png](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_67.png)
 
 I checked my commands, everything seems okay. I deleted the nothing.exe file to see if that prevents any issues:
@@ -612,7 +612,7 @@ I checked my commands, everything seems okay. I deleted the nothing.exe file to 
 ![2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_68.png](/assets/img/2024-06-19-WindowsLocalPersistenceTechniquesTryHackMe_68.png)
 
 We can see that my revshell is activated in the startup settings:
-```
+
 
 <div class="content-ad"></div>
 

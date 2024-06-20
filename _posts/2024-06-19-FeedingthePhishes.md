@@ -37,9 +37,9 @@ link: "https://medium.com/specter-ops-posts/feeding-the-phishes-276c3579bba7"
 
 예를 들어, 스택오버플로에서 링크를 구문 분석하기 위해 발견한 몇 가지 최고의 정규 표현식 필터 중 일부는 다음과 같습니다:
 
-```
+
 (http|ftp|https):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-])
-```
+
 
 <div class="content-ad"></div>
 

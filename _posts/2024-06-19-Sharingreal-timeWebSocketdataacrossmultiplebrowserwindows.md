@@ -41,7 +41,7 @@ link: "https://medium.com/itnext/sharing-real-time-websocket-data-across-multipl
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-Sharingreal-timeWebSocketdataacrossmultiplebrowserwindows_0.png)
 
 ## 2. 데모 비디오
@@ -49,7 +49,7 @@ link: "https://medium.com/itnext/sharing-real-time-websocket-data-across-multipl
 이상적으로 큰 화면에서 비디오를 시청하세요.
 
 ## 3. 저장소
-```
+
 
 <div class="content-ad"></div>
 

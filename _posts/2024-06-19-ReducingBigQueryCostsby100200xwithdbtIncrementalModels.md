@@ -69,7 +69,7 @@ LEFT JOIN { ref('other_table') } AS cw on lake.id = cw.id
 - 다양한 JOIN 연산.
 - WHERE 절 필터링이 있는 dbt is_incremental() 구문.
 
-이 중 주요 원인으로 눈에 띄는 항목이 있기를 바라며, 이미 dbt의 incremental 기능을 사용 중이라면 왜 쿼리에 시간이 오래 걸릴 수 있는지 살펴봅시다. 각각이 지연에 기여할 수 있는 이유를 살펴봅시다.```
+이 중 주요 원인으로 눈에 띄는 항목이 있기를 바라며, 이미 dbt의 incremental 기능을 사용 중이라면 왜 쿼리에 시간이 오래 걸릴 수 있는지 살펴봅시다. 각각이 지연에 기여할 수 있는 이유를 살펴봅시다.
 
 <div class="content-ad"></div>
 
@@ -169,7 +169,7 @@ SELECT DISTINCT * from lake_base
 - 분할 — 일별로 분할함으로써 예측값을 매일 다른 테이블로 분리하게 됩니다. 테이블을 분할하고 dbt에 기본으로 내장된 is_incremental() 플래그를 사용하여 dbt가 작은 데이터 서브셋만 읽고 스캔하도록 강제할 수 있으며 이전 데이터를 다시 처리하지 않을 수 있습니다.
 - 증분 전략 — dbt에는 여기 및 여기에 증분 전략에 대한 훌륭한 문서가 있지만 insert_overwrite를 선택함으로써 전체 파티션을 교체하여기존 파티션에 스캔 및 병합하지 않도록 합니다.
 
-참고: 매일 데이터를 한 번만 가져오고 따라서 매일 예측값을 생성하는 것입니다. dbt labs의 Jerco가 가르쳐준 것처럼 —```
+참고: 매일 데이터를 한 번만 가져오고 따라서 매일 예측값을 생성하는 것입니다. dbt labs의 Jerco가 가르쳐준 것처럼 —
 
 <div class="content-ad"></div>
 

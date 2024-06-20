@@ -64,7 +64,7 @@ gᵢ (gradient)와 hᵢ (Hessian)로 도함수를 대체할 것입니다:
 
 <div class="content-ad"></div>
 
-```
+
 ![링크 텍스트](/assets/img/2024-06-19-TinyMLXGBoostRegression_6.png)
 
 XGBoost의 주목할만한 특성 중 하나는 손실 함수가 두 번 미분 가능해야 한다는 요구사항입니다. 특정 문제에 대해 사용자 정의 오류 함수를 이용하여 XGBoost를 적용하려는 경우, 오류 계산 뿐만 아니라 그레이디언트(일차 도함수) 및 헤시안(이차 도함수)에 대한 정보도 필요하다는 점을 명심하는 것이 중요합니다.
@@ -72,11 +72,11 @@ XGBoost의 주목할만한 특성 중 하나는 손실 함수가 두 번 미분 
 ## 1.1 — 의사 결정 트리
 
 의사 결정 트리의 작동을 고려할 때, 방정식 L을 다시 쓸 필요가 있습니다. 각 샘플 xᵢ가 leaf j와 연관되어 있음을 알 수 있습니다. 따라서 각 leaf에 대해 샘플이 포함된 집합 인덱스 Iⱼ를 만들 수 있습니다. 
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-TinyMLXGBoostRegression_7.png)
 
 Iⱼ가 정의되어 있으며, Iⱼ에 속하는 각 인덱스 i에 대해 샘플 xᵢ가 통과한 결정 경로 q는 잎 j로 이어진다.
@@ -84,7 +84,7 @@ Iⱼ가 정의되어 있으며, Iⱼ에 속하는 각 인덱스 i에 대해 샘�
 또한, 모델이 샘플 xᵢ에 대해 응답하는 것이 xᵢ가 속한 잎에서 관련된 가중치임을 알 수 있습니다:
 
 ![image](/assets/img/2024-06-19-TinyMLXGBoostRegression_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -108,7 +108,7 @@ Iⱼ가 정의되어 있으며, Iⱼ에 속하는 각 인덱스 i에 대해 샘�
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-19-TinyMLXGBoostRegression_12.png)
 
 The objective is to find the set of weights w that minimizes L. This may seem challenging at first glance, but let’s analyze it more closely.
@@ -116,7 +116,7 @@ The objective is to find the set of weights w that minimizes L. This may seem ch
 ![Image 2](/assets/img/2024-06-19-TinyMLXGBoostRegression_13.png)
 
 As previously noted, our error function for a leaf is quadratic, implying that the minimum is determined by the inflection point of the curve, where the first derivative is equal to zero.
-```
+
 
 <div class="content-ad"></div>
 
@@ -138,13 +138,13 @@ wᵈ를 고립시키면 다음과 같이 됩니다:
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-TinyMLXGBoostRegression_16.png)
 
 이전 방정식은 각 새 트리의 각 분리를 평가하는 데 사용됩니다. 엔트로피나 지니 계수가 전통적으로 의사결정 트리 구성에 사용되는 방법과 마찬가지로 분리에서 양쪽 노드인 왼쪽 노드와 오른쪽 노드가 생성됩니다. 분할별 이득은 새로운 리프인 Lₗ(왼쪽)과 Lᵣ(오른쪽)의 합을 이전 오차인 Lₜ에서 뺀 것으로 정의됩니다. (우리가 Leaf가 하나만 분석하므로 T=1이라고 가정합니다.)
 
 ![image](/assets/img/2024-06-19-TinyMLXGBoostRegression_17.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -178,7 +178,7 @@ reg_lambda: 이 파라미터는 잎의 가중치에 영향을 미치며, 값이 
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-19-TinyMLXGBoostRegression_22.png)
 
 - max_child_weight: 자식 노드마다 ℎ의 합이 이 매개변수로 설정된 값보다 크기 때문에 분할이 수행됩니다. ℎ는 오차 함수(𝑙)의 도함수에 의해 결정됩니다. 따라서 ℎ의 값이 낮을 때는 해당 리프가 이미 충분히 "순수"하며 더 이상 분할할 필요가 없다는 것을 나타냅니다.
@@ -186,7 +186,7 @@ reg_lambda: 이 파라미터는 잎의 가중치에 영향을 미치며, 값이 
 ![Image 2](/assets/img/2024-06-19-TinyMLXGBoostRegression_23.png)
 
 여기서 Python 구현에 사용 가능한 매개변수 전체 목록을 찾을 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -280,7 +280,7 @@ df_diabetes.info()
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-TinyMLXGBoostRegression_25.png)
 
 ```js
@@ -290,7 +290,7 @@ df_diabetes.describe()
 ![image](/assets/img/2024-06-19-TinyMLXGBoostRegression_26.png)
 
 2.3— Exploratory Data Analysis
-```
+
 
 <div class="content-ad"></div>
 
@@ -407,7 +407,7 @@ report_best_scores(best_model.cv_results_, 1)
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-TinyMLXGBoostRegression_29.png)
 
 ```js
@@ -425,7 +425,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```md
+
 ![image](/assets/img/2024-06-19-TinyMLXGBoostRegression_30.png)
 
 2.9— 훈련 데이터로 모델 평가
@@ -441,7 +441,7 @@ print("RMSE: ", mse**(1/2.0))
 ```
 
 ![image](/assets/img/2024-06-19-TinyMLXGBoostRegression_31.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -473,7 +473,7 @@ print("RMSE: ", mse**(1/2.0))
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-TinyMLXGBoostRegression_33.png" />
 
 ```js
@@ -491,7 +491,7 @@ plt.show()
 <img src="/assets/img/2024-06-19-TinyMLXGBoostRegression_34.png" />
 
 2.11 — 테스트 데이터를 사용하여 모델 평가하기
-```
+
 
 <div class="content-ad"></div>
 

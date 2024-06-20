@@ -65,9 +65,9 @@ pfx 패스워드를 손에 쥐고 openssl을 사용하여 인증서와 키를 �
 
 이 키와 인증서를 사용하여 이블 윈알엠으로 세션을 시작하여 "legacyy" 사용자로 액세스를 얻었습니다.
 
-```
+
 <img src="/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_9.png" />
-```
+
 
 콘솔 히스토리 분석
 
@@ -77,7 +77,7 @@ pfx 패스워드를 손에 쥐고 openssl을 사용하여 인증서와 키를 �
 
 아래는 Markdown 형식으로 변환해 보겠습니다.
 
-```
+
 <img src="/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_10.png" />
 
 <img src="/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_11.png" />
@@ -85,7 +85,7 @@ pfx 패스워드를 손에 쥐고 openssl을 사용하여 인증서와 키를 �
 Logging in as svc_deploy
 
 With new credentials, I logged in as the svc_deploy user. Now, it was time to gather some serious intel.
-```
+
 
 <div class="content-ad"></div>
 
@@ -99,7 +99,7 @@ With new credentials, I logged in as the svc_deploy user. Now, it was time to ga
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지1](/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_14.png)
 
 BloodHound 분석
@@ -107,11 +107,11 @@ BloodHound 분석
 BloodHound를 실행하여 SharpHound 데이터를 업로드하고 svc_deploy 사용자를 소유로 표시했습니다. "Outbound Object Control"에 대한 빠른 검색에서 svc_deploy가 Timelapse 도메인의 dc01의 로컬 관리자 비밀번호를 읽을 수 있는 LAPS Readers 그룹의 구성원임을 확인했습니다.
 
 ![이미지2](/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_15.png)
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_16.png)
 
 다이어그램에서 svc_deploy 사용자가 LAPS_READERS 그룹의 구성원이며 DC01.TIMELAPSE.HTB의 암호를 읽을 수 있음을 보여줍니다.
@@ -119,11 +119,11 @@ BloodHound를 실행하여 SharpHound 데이터를 업로드하고 svc_deploy �
 LAPS 악용
 
 Active Directory의 LAPS(Local Administrator Password Solution)는 도메인 가입된 컴퓨터의 로컬 관리자 암호를 관리하는 기능입니다. AdmPwd 모듈을 사용하여 LAPS Readers 그룹의 구성원이 실제로 dc01의 LAPS 암호를 읽을 수 있음을 확인했습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image1](/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_17.png)
 
 ![image2](/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_18.png)
@@ -131,7 +131,7 @@ Active Directory의 LAPS(Local Administrator Password Solution)는 도메인 가
 Using AdmPWD module to extract password of Administrator user:
 
 ![image3](/assets/img/2024-06-20-TimesUpTimelapseHowIBrute-ForcedLAPS-edandLaughedMyWaytoAdminonHackTheBox_19.png)
-```
+
 
 <div class="content-ad"></div>
 

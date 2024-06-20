@@ -190,7 +190,7 @@ print(f"question_embedding.shape:  {question_embedding.shape}")
 >> question_embedding.shape:  torch.Size([1, 64])
 ```
 
-우리는 Matryoshka 텍스트 임베딩의 첫 번째 두 차원을 산포도로 시각화할 수 있습니다. 그러나 이 임베딩 모델은 명시적으로 2차원의 Matryoshka 차원에 최적화되지는 않았습니다.```
+우리는 Matryoshka 텍스트 임베딩의 첫 번째 두 차원을 산포도로 시각화할 수 있습니다. 그러나 이 임베딩 모델은 명시적으로 2차원의 Matryoshka 차원에 최적화되지는 않았습니다.
 
 <div class="content-ad"></div>
 
@@ -248,7 +248,7 @@ print(wikipedia_texts[1])
 >> '알버트 아인슈타인은 독일 제국의 퀴르템베르크 왕국 울름에서 1879년 3월 14일에 태어났습니다.'
 ```
 
-저는 matryoshka_dim=768로 코드를 다시 실행했고 유사한 결과를 얻었습니다. 그러나 더 높은 차원은 더 많은 메모리와 계산이 필요합니다.```
+저는 matryoshka_dim=768로 코드를 다시 실행했고 유사한 결과를 얻었습니다. 그러나 더 높은 차원은 더 많은 메모리와 계산이 필요합니다.
 
 <div class="content-ad"></div>
 

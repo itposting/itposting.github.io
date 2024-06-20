@@ -99,7 +99,7 @@ maxdepth vs. mindepth:
 
 -mindepth levels
 levels(0 이상의 정수)보다 작은 수준에서는 어떤 테스트나 작업도 적용하지 않습니다. -mindepth 1은 시작점을 제외한 모든 파일을 처리합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -137,7 +137,7 @@ $ chmod 744 script
 
 아래 Markdown 형식으로 table 태그를 변경하세요.
 
-```
+
 <img src="/assets/img/2024-06-19-CrontabinLinuxBeginnersGuidetoScheduletheDeletionofOutdatedFiles_7.png" />
 
 성공입니다! 모든 것이 파일에서 지워졌고 실제 파일은 삭제하지 않았습니다! 이제 마지막 퍼즐 조각으로 넘어가 봅시다!!
@@ -145,13 +145,13 @@ $ chmod 744 script
 # 3| Cron 작업 추가
 
 다시 한 번, 위와 같은 단계를 따라하여 폴더 내에 파일을 생성하실 겁니다.
-```
+
 
 <div class="content-ad"></div>
 
 아래는 Markdown 형식으로 표를 표시합니다.
 
-```
+
 ![Crontab Image 8](/assets/img/2024-06-19-CrontabinLinuxBeginnersGuidetoScheduletheDeletionofOutdatedFiles_8.png)
 
 다음으로, 매주 월요일 오전 7시에 실행되는 cron 작업을 만들어야 합니다. 이를 위해 https://crontab-generator.org/ 로 이동하여 약간의 안내를 받겠습니다.
@@ -159,7 +159,7 @@ $ chmod 744 script
 ![Crontab Image 9](/assets/img/2024-06-19-CrontabinLinuxBeginnersGuidetoScheduletheDeletionofOutdatedFiles_9.png)
 
 다음 명령을 실행하여 crontab을 엽니다:
-```
+
 
 <div class="content-ad"></div>
 

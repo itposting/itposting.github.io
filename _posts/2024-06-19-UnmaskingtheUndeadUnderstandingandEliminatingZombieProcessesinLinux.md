@@ -33,11 +33,11 @@ link: "https://medium.com/it-security-in-plain-english/unmasking-the-undead-unde
 
 사용하실 때는 아래와 같이 Markdown 형식의 테이블로 변환해주시면 됩니다.
 
-```
+
 | 명령어 |
 | --- |
 | ps aux | grep Z |
-```
+
 
 출력 결과에서 STAT 열에 "Z"가 있는 경우에는 좀비 프로세스를 나타냅니다.
 
@@ -148,7 +148,7 @@ int main() {
 
 ## 좀비 프로세스 관리 스크립트
 
-실제 시나리오에서 여러 응용 프로그램에 의해 생성된 좀비 프로세스를 만날 수 있습니다. 아래는 좀비 프로세스를 관리하고 제거하는 데 도움이 되는 몇 가지 스크립트입니다.```
+실제 시나리오에서 여러 응용 프로그램에 의해 생성된 좀비 프로세스를 만날 수 있습니다. 아래는 좀비 프로세스를 관리하고 제거하는 데 도움이 되는 몇 가지 스크립트입니다.
 
 <div class="content-ad"></div>
 
@@ -172,7 +172,7 @@ done
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 chmod +x monitor_zombies.sh
 ./monitor_zombies.sh
@@ -190,7 +190,7 @@ for ppid in $ZOMBIE_PARENTS; do
     kill -9 $ppid
 done
 ``` 
-```
+
 
 <div class="content-ad"></div>
 

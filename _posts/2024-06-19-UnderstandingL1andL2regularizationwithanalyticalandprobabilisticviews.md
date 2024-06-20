@@ -44,7 +44,7 @@ link: "https://medium.com/intuition/understanding-l1-and-l2-regularization-with-
 
 마크다운 형식으로 변경된 문구입니다.
 
-```
+
 ![Understanding L1 and L2 regularization with analytical and probabilistic views](/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_2.png)
 
 scikit-learn 라이브러리의 PolynomialFeatures 및 Ridge 클래스를 사용하여 데이터를 적합시킵니다. 결과는 아래와 같습니다.
@@ -52,7 +52,7 @@ scikit-learn 라이브러리의 PolynomialFeatures 및 Ridge 클래스를 사용
 ![Understanding L1 and L2 regularization with analytical and probabilistic views](/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_3.png)
 
 왼쪽 그림은 정규화가 없는 다항 회귀를 보여주며, 오른쪽 그림은 정규화가 적용된 다항 회귀를 보여줍니다. 정규화가 없는 다항 회귀는 원래 데이터에 비해 지나치게 복잡한 함수를 사용했기 때문에 데이터에 과적합되었습니다. 반면, 정규화가 적용된 다항 회귀는 과적합을 방지하면서 모델의 복잡성을 줄일 수 있어서 정규화가 적용되었다면 정규화가 없는 것보다 더 나은 적합을 할 수 있습니다. 일반적으로, 위의 예시처럼 모델이 과적합되는 것을 방지하기 위해 정규화를 사용합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -77,7 +77,7 @@ L1 정규화[2]는 계수의 절댓값 또는 계수의 l1-노름을 정규화 �
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_6.png)
 
 where w is the parameter. From now on, we will learn how to solve this problem.
@@ -85,7 +85,7 @@ where w is the parameter. From now on, we will learn how to solve this problem.
 ## 2.1 Analytical derivation of L1 regularization
 
 How can we optimize the L1 regularization formula? To solve it analytically, this formula can be seen as constraint optimization with Lagrange multipliers.
-```
+
 
 <div class="content-ad"></div>
 
@@ -109,7 +109,7 @@ How can we optimize the L1 regularization formula? To solve it analytically, thi
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_10.png" />
 
 포함 된 좌표 감소 방법을 사용하기 때문에, 다른 비대상 매개변수를 고정한 채 각 매개변수에 대해 이 공식을 최소화해야 합니다.
@@ -117,7 +117,7 @@ How can we optimize the L1 regularization formula? To solve it analytically, thi
 <img src="/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_11.png" />
 
 마지막 공식은 조금 까다롭습니다 (적어도 저에게는 그렇습니다). 각 항목의 차원을 고려할 때, X의 전치 행렬의 i번째 행만 i번째 경사에 관련되어 있음을 이해할 수 있습니다. i번째 매개변수의 경사를 정식화하려면 위의 공식을 재정의해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -133,7 +133,7 @@ Lasso 문제에서 L1 정규화 항을 대체하면 다음과 같습니다:
 
 아래에 있는 표를 Markdown 형식으로 변경해주세요.
 
-```
+
 ![Understanding L1 and L2 regularization](/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_14.png)
 
 주어진 마지막 방정식을 재정립하여 𝛽를 구할 수 있습니다:
@@ -141,7 +141,7 @@ Lasso 문제에서 L1 정규화 항을 대체하면 다음과 같습니다:
 ![Understanding L1 and L2 regularization](/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_15.png)
 
 부호 및 최댓값 함수를 사용하여 조건부 분기를 구성할 수 있습니다. 이제 우리는 수렴할 때까지 이 최종 공식을 반복하여 파라미터를 업데이트합니다. 구체적인 예시를 풀어보겠습니다. 시각화를 위해 두 개의 매개변수로 함수를 최적화하고 바이어스 항이 없다고 가정합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -187,7 +187,7 @@ b0 = 1.11, b1 = 2.04
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_20.png" />
 
 이전 예제에 적용할 때 MLE와 대조적인 점을 살펴보면:
@@ -195,7 +195,7 @@ b0 = 1.11, b1 = 2.04
 <img src="/assets/img/2024-06-19-UnderstandingL1andL2regularizationwithanalyticalandprobabilisticviews_21.png" />
 
 MAP 추정을 하는 데는 사전 확률이 필요하다는 것을 알 수 있습니다. 이를 위해 어떤 확률 분포든 사용할 수 있습니다. 이제 L1 정규화로 돌아가보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 

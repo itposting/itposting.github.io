@@ -34,7 +34,7 @@ link: "https://medium.com/towards-data-science/creating-an-assistant-with-openai
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-CreatinganAssistantwithOpenAIAssistantAPIandStreamlit_0.png)
 
 안타깝게도 발표된 장점에도 불구하고, API에 대한 문서는 특히 사용자 정의 함수 호출 및 Streamlit와 같은 프레임워크를 사용한 앱 구축과 관련하여 제대로 작성되지 않았다고 생각했습니다.
@@ -42,7 +42,7 @@ link: "https://medium.com/towards-data-science/creating-an-assistant-with-openai
 이 블로그 포스트에서는 OpenAI Assistant API 및 사용자 정의 함수 호출을 사용하여 Streamlit 인터페이스와 함께 AI 어시스턴트를 구축하는 방법을 안내해드리겠습니다. 이를 통해 Assistant API를 효과적으로 사용하고자 하는 분들께 도움이 될 것입니다.
 
 # 사용 사례: 세금 계산 어시스턴트
-```
+
 
 <div class="content-ad"></div>
 

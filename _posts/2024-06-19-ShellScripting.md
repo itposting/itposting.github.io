@@ -71,7 +71,7 @@ echo 명령어에서 변수를 출력하려면 변수 앞에 "$" 기호를 사�
 
 <div class="content-ad"></div>
 
-```
+
 ![스크립트 실행 전 사용자 입력을 받을 수 있습니다](/assets/img/2024-06-19-ShellScripting_1.png)
 
 스크립트 실행 전에 사용자 입력을 받을 수 있습니다.:
@@ -79,7 +79,7 @@ echo 명령어에서 변수를 출력하려면 변수 앞에 "$" 기호를 사�
 ![스크립트 실행 전 사용자 입력 받기](/assets/img/2024-06-19-ShellScripting_2.png)
 
 여기서 num1=$1은, 우리가 bash scriptname.sh라는 명령어로 스크립트를 실행할 때 변수에 값을 제공할 것으로 예상됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -93,7 +93,7 @@ echo 명령어에서 변수를 출력하려면 변수 앞에 "$" 기호를 사�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-ShellScripting_4.png)
 
 출력할 수 있을까요? echo 명령어로 시도해 봅시다:
@@ -101,7 +101,7 @@ echo 명령어에서 변수를 출력하려면 변수 앞에 "$" 기호를 사�
 ![이미지](/assets/img/2024-06-19-ShellScripting_5.png)
 
 echo 문이 작동하고 변수 값이 출력된 것을 확인할 수 있었어요. 이제 스크립트로 시도해 볼게요:
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +127,7 @@ For 루프:
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-ShellScripting_10.png)
 
 bash 배열을 만드는 방법은 무엇인가요?
@@ -135,7 +135,7 @@ bash 배열을 만드는 방법은 무엇인가요?
 Bash 배열은 매우 특별합니다. 다른 프로그래밍 언어와 달리 문자열, 정수 등과 같은 다양한 유형의 요소를 저장할 수 있습니다.
 
 구문: array_name=()
-```
+
 
 <div class="content-ad"></div>
 
@@ -159,7 +159,7 @@ gokul은 우리가 참조하는 배열 이름입니다. @는 중괄호 내부에
 
 <div class="content-ad"></div>
 
-```
+
 syntax : function_name()' — — — — — Code — — — — -'
 
 function_name 함수를 통해 해당 함수를 필요한 곳 어디서든 호출할 수 있습니다.
@@ -167,7 +167,7 @@ function_name 함수를 통해 해당 함수를 필요한 곳 어디서든 호�
 <img src="/assets/img/2024-06-19-ShellScripting_13.png" />
 
 저희는 각각 덧셈, 뺄셈, 나눗셈을 위한 sum, sub, div 3개의 함수를 생성했습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -185,9 +185,9 @@ Case :
 
 테이블 태그를 마크다운 형식으로 변경하면 됩니다.
 
-\```
+\
 It allows you to compare an expression against a list of patterns and execute specific code blocks based on the match.
-\```
+\
 
 Lets see example below.
 

@@ -12,7 +12,7 @@ link: "https://medium.com/towards-artificial-intelligence/python-streamlit-and-g
 
 
 
-```
+
 ![Python Streamlit](/assets/img/2024-06-19-PythonStreamlitAndGPT4HowToMapUNHCRRefugeeData_0.png)
 
 파이썬 Streamlit은 상호 작용적인 웹 인터페이스를 만드는 놀라운 프레임워크입니다. GPT-4는 빠르게 작동하는 Streamlit 코드를 만들어 줄 수 있어요.
@@ -20,7 +20,7 @@ link: "https://medium.com/towards-artificial-intelligence/python-streamlit-and-g
 파이썬 Plotly와 함께 사용하면 데이터 시각화에 아름다운 지도와 차트를 손쉽게 만들 수 있어요.
 
 대부분의 경우, 제가 증명해줄 필요가 있죠. 그러니까 제가 어떻게 보여줄지 기대해 주세요.
-```  
+
 
 <div class="content-ad"></div>
 
@@ -55,7 +55,7 @@ UNHCR(UN High Commission for Refugees)는 전 세계적으로 난민의 움직�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-PythonStreamlitAndGPT4HowToMapUNHCRRefugeeData_2.png)
 
 이 프로젝트에 관심 있는 데이터 필드는 다음과 같습니다:
@@ -65,7 +65,7 @@ UNHCR(UN High Commission for Refugees)는 전 세계적으로 난민의 움직�
 - 인정된 결정 - 망명을 찾는 사람이 수용되었는지 (국가별 숫자 합계)
 
 출신 국가와 망명 국가 모두 코로플레스 맵을 만드는 데 사용할 수 있는 3자리 ISO 코드가 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -91,7 +91,7 @@ eula=false를 eula=true로 변경하고 파일을 저장하세요.
 
 <div class="content-ad"></div>
 
-```
+
 [Unit]
 Description=Minecraft 서버
 After=network.target
@@ -107,7 +107,7 @@ ExecStart=java -Xms2G -Xmx8G -jar /opt/minecraft/server.jar --nogui
 
 [Install]
 WantedBy=multi-user.target
-```
+
 
 파일을 저장합니다. 그런 다음 systemctl daemon-reload를 실행하여 새 서비스가 인식되도록하고, 부팅 시 실행되도록 systemctl enable minecraft를 사용하여 활성화한 다음 systemctl start minecraft를 사용하여 서버를 시작합니다. 이것은 수동으로 시작해야 하는 유일한 시간입니다. 이 구성에서 몇 가지 중요한 옵션을 주목합시다.
 
@@ -117,7 +117,7 @@ WantedBy=multi-user.target
 - /opt/minecraft/server.jar: 서버 파일의 절대 경로입니다 (파일 및 디렉토리 이름에 따라 달라질 수 있음).
 
 집 네트워크에서만 게임을 하려면 바로 진행하면 됩니다! 그러나 아직도 연락하는 고등학교 친구와 15개 시간대가 떨어진 곳에서 게임을 하고 싶다면 Minecraft 서버를 인터넷에 노출해야 합니다. 아래에서 계속 읽어보세요.
-```
+
 
 <div class="content-ad"></div>
 

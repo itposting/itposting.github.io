@@ -76,7 +76,7 @@ Towergate 보험은 520개 회사의 로고를 분석하여 그들의 색상 선
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-20-DataVisualization101LeveragingColorPsychologyforEffectiveDashboardsReports_7.png" />
 
 ## 파트 3: 데이터 시각화에서의 공통 색상 지각
@@ -88,13 +88,13 @@ Towergate 보험은 520개 회사의 로고를 분석하여 그들의 색상 선
 - 녹색은 일반적으로 자연, 성장, 조화 및 때로는 질투를 나타내는 것으로 인식됩니다.
 - 노란색은 행복, 낙관주의, 에너지, 때로는 주의를 불러일으킵니다.
 - 검은색은 일반적으로 권력, 세련미, 격식, 명복(일부 문화에 따라)와 관련이 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
 Markdown 형식의 표로 변경해주시면 됩니다.
 
-```
+
 | ![Data Visualization101 - Leveraging Color Psychology for Effective Dashboards and Reports](/assets/img/2024-06-20-DataVisualization101LeveragingColorPsychologyforEffectiveDashboardsReports_8.png) |
 |:--:|
 | 이미지 1 |
@@ -102,7 +102,7 @@ Markdown 형식의 표로 변경해주시면 됩니다.
 | ![Data Visualization101 - Leveraging Color Psychology for Effective Dashboards and Reports](/assets/img/2024-06-20-DataVisualization101LeveragingColorPsychologyforEffectiveDashboardsReports_9.png) |
 |:--:|
 | 이미지 2 |
-```
+
 
 그러나 컨텍스트에 따라 색상의 의미가 다를 수 있다는 점을 기억하는 것이 중요합니다. 예를 들어, 빨강은 일부 동양 문화에서 행운을 상징할 수 있지만, 흰색은 아시아 일부 지역에서 애도에 사용됩니다. 이 원칙은 데이터 시각화에도 동일하게 적용됩니다. 여기에서 빨강과 같은 색상은 종종 부정적인 값을 나타내거나 감소하는 추세를 나타냅니다, 반면 초록색은 일반적으로 긍정적인 값을 나타내거나 증가하는 추세를 나타냅니다. 그러나 이 규칙은 모든 경우에 적용되지 않습니다. 그 이유는 색상이 특정 컨텍스트에 따라 다른 의미를 갖을 수 있기 때문입니다.
 

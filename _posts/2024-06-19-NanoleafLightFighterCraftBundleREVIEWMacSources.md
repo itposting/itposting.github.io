@@ -21,7 +21,7 @@ link: "https://medium.com/@macsources/nanoleaf-light-fighter-craft-bundle-review
 
 <div class="content-ad"></div>
 
-```
+
 ![NanoleafLightFighterCraftBundleREVIEWMacSources_1](/assets/img/2024-06-19-NanoleafLightFighterCraftBundleREVIEWMacSources_1.png)
 
 ![NanoleafLightFighterCraftBundleREVIEWMacSources_2](/assets/img/2024-06-19-NanoleafLightFighterCraftBundleREVIEWMacSources_2.png)
@@ -29,7 +29,7 @@ link: "https://medium.com/@macsources/nanoleaf-light-fighter-craft-bundle-review
 # Light Fighter Craft Bundle 소개
 
 Light Fighter Craft Bundle은 스타 워즈 프랜차이즈에 헌정된 Nanoleaf 세트의 일부입니다. 더 오래된 형제인 Dark Fighter Craft Bundle은 Light Fighter보다 조금 더 큰 전투기로 만드는 2개의 추가 삼각 패널을 제공합니다. Ultra Black Triangles와 패널 수를 제외하면 두 세트 사이의 유일한 차이점입니다. 이 키트는 다른 모든 Nanoleaf 제품과 마찬가지로 Apple HomeKit, Google Home, Amazon Alexa뿐만 아니라 Razer Chroma 또는 Signal RGB와 같은 일부 PC 소프트웨어와 완전히 호환됩니다.
-```
+
 
 <div class="content-ad"></div>
 

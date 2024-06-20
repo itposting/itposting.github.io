@@ -104,7 +104,7 @@ Bartlett의 구형성 검정은 요인 분석의 맥락에서 사용되는 통�
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-TinyMLPrincipalComponentAnalysis_4.png)
 
 Here:
@@ -114,7 +114,7 @@ Here:
 - The matrix is symmetric (rij=rji) because the correlation between Xi and Xj is the same as the correlation between Xj and Xi.
 
 The formula to compute rij (Pearson correlation coefficient between Xi and Xj) is given by:
-```
+
 
 <div class="content-ad"></div>
 
@@ -177,12 +177,12 @@ PCA에서 주성분(요인)을 형성하기 위해 원래 변수들의 선형 �
 
 여기에는 Z가 표준화된 데이터 행렬이고, Vk는 k번째 고유값에 해당하는 고유벡터 행렬의 k번째 열입니다. Fk의 개별 요소는 다음과 같이 표현될 수 있습니다:
 
-```
+
 | Fk1 |
 | Fk2 |
 | ... |
 | Fkn |
-```
+
 
 이 식에서 Fki는 k번째 주성분의 i번째 관측값, Zij는 j번째 표준화된 변수의 i번째 관측값, Vjk는 j번째 고유벡터의 k번째 요소입니다.
 
@@ -211,14 +211,14 @@ PCA에서 요인 적재량은 표준화된 데이터의 공분산 행렬 또는 
 
 아래와 같은 테이블을 Markdown 포맷으로 바꿔주세요.
 
-```
+
 | 변수 | 설명 |
 |------|------|
 | Xj   | j번째 원본 변수 |
 | λjk  | Xj와 k번째 요인 간의 관계를 나타내는 요인 로딩 |
 | Fk   | k번째 잠재 요인 |
 | εj   | j번째 변수와 연관된 오차 |
-```
+
 
 <div class="content-ad"></div>
 
@@ -299,10 +299,10 @@ Decathlon
 - Javeline (투창)
 - 1500m (1500m 달리기)
 
-```
+
 patch = './data/decathlon.csv'
 df = pd.read_csv(patch, index_col=0)
-```
+
 
 <div class="content-ad"></div>
 
@@ -365,7 +365,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-TinyMLPrincipalComponentAnalysis_16.png)
 
 6.2 — 고유값과 고유벡터
@@ -432,7 +432,7 @@ plt.xticks(rotation=45, ha='right')  # 더 잘 보이도록 x축 레이블 회�
 ```
 
 ![image](/assets/img/2024-06-20-TinyMLPrincipalComponentAnalysis_21.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -564,7 +564,7 @@ fig.show()
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-20-TinyMLPrincipalComponentAnalysis_26.png)
 
 9 - Inverse Transform
@@ -575,7 +575,7 @@ X_reconstructed
 ```
 
 ![Image](/assets/img/2024-06-20-TinyMLPrincipalComponentAnalysis_27.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -696,8 +696,7 @@ void loop() {
 
 아래는 Markdown 형식으로 변경된 코드입니다:
 
-```
+
 code: bc1qzydjy4m9yhmjjrkgtrzhsgmkq79qenvcvc7qzn
 
 ![image](/assets/img/2024-06-20-TinyMLPrincipalComponentAnalysis_29.png)
-```

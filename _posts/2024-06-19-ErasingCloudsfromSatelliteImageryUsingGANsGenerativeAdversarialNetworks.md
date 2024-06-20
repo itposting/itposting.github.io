@@ -21,7 +21,7 @@ GAN(Generative Adversarial Networks)이라는 아이디어는 2014년 Goodfellow
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-ErasingCloudsfromSatelliteImageryUsingGANsGenerativeAdversarialNetworks_1.png)
 
 우리는 분류 자체에 흥미가 없지만 EuroSat 데이터셋의 주요 기능 중 하나는 모든 이미지에 맑은 하늘이 있습니다. 그것이 정확히 우리가 필요한 것입니다. [3]에서 이 접근법을 채택하여, 우리는 이 Sentinel-2 샷을 대상으로 사용하고 입력을 추가하여 (구름) 노이즈를 생성할 것입니다.
@@ -29,7 +29,7 @@ GAN(Generative Adversarial Networks)이라는 아이디어는 2014년 Goodfellow
 그래서 우리가 GANs에 대해 실제로 이야기하기 전에 데이터를 준비해 봅시다. 우선, 데이터를 다운로드하고 모든 클래스를 하나의 디렉토리로 병합해야 합니다.
 
 🐍전체 Python 코드: GitHub.
-```
+
 
 <div class="content-ad"></div>
 
@@ -148,7 +148,7 @@ plt.show()
 
 <img src="/assets/img/2024-06-19-ErasingCloudsfromSatelliteImageryUsingGANsGenerativeAdversarialNetworks_2.png" />
 
-위에서 볼 수 있듯이 이미지의 구름은 매우 현실적이며 다양한 "밀도"와 질감을 가지며 실제 구름과 유사합니다.```
+위에서 볼 수 있듯이 이미지의 구름은 매우 현실적이며 다양한 "밀도"와 질감을 가지며 실제 구름과 유사합니다.
 
 <div class="content-ad"></div>
 
@@ -179,7 +179,7 @@ GAN의 경우, 당신은 판별자(D)라고 불립니다. 판별자의 목표는
 
 <div class="content-ad"></div>
 
-```
+
 ![Erasing Clouds from Satellite Imagery Using GANs](/assets/img/2024-06-19-ErasingCloudsfromSatelliteImageryUsingGANsGenerativeAdversarialNetworks_4.png)
 
 In other words, we can define a value function V(G,D):
@@ -187,7 +187,7 @@ In other words, we can define a value function V(G,D):
 ![Value function V(G,D)](/assets/img/2024-06-19-ErasingCloudsfromSatelliteImageryUsingGANsGenerativeAdversarialNetworks_5.png)
 
 where we want to minimize the term log(1-D(G(z))) to train G and maximize log D(x) to train D (in this notation x — real data sample and z — noise).
-```
+
 
 <div class="content-ad"></div>
 
@@ -352,7 +352,7 @@ class UNet(nn.Module):
       return F.sigmoid(output)
 ```
 
-이제 데이터를 훈련/테스트 세트로 분할하고 torch 데이터 세트로 래핑해야합니다:```
+이제 데이터를 훈련/테스트 세트로 분할하고 torch 데이터 세트로 래핑해야합니다:
 
 <div class="content-ad"></div>
 
@@ -410,11 +410,11 @@ scheduler_D = optim.lr_scheduler.StepLR(optimizer_D, step_size=10, gamma=0.1)
 scheduler_G = optim.lr_scheduler.StepLR(optimizer_G, step_size=10, gamma=0.1)
 ```
 
-이전 GAN 알고리즘 그림의 손실 함수와는 다른 것을 볼 수 있습니다. 특히 L1 손실을 추가했습니다. 이 아이디어는 우리가 무작위로 이미지를 생성하는 것이 아니라 입력에서 대부분의 정보를 유지하고 노이즈만 제거하려고 한다는 것입니다. 따라서 G 손실은 다음과 같을 것입니다:```
+이전 GAN 알고리즘 그림의 손실 함수와는 다른 것을 볼 수 있습니다. 특히 L1 손실을 추가했습니다. 이 아이디어는 우리가 무작위로 이미지를 생성하는 것이 아니라 입력에서 대부분의 정보를 유지하고 노이즈만 제거하려고 한다는 것입니다. 따라서 G 손실은 다음과 같을 것입니다:
 
 <div class="content-ad"></div>
 
-```
+
 G_loss = log(1 − D(G(z))) + 𝝀 |G(z)-y|
 
 instead of just
@@ -422,7 +422,7 @@ instead of just
 G_loss = log(1 − D(G(z)))
 
 𝝀 is an arbitrary coefficient, which balances two components of the losses.
-```
+
 
 <div class="content-ad"></div>
 

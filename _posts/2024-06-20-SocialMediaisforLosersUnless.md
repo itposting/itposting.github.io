@@ -133,11 +133,11 @@ link: "https://medium.com/bouncin-and-behavin-academy/social-media-is-for-losers
 
 Sure, here is how you can change the table tag to Markdown format:
 
-```
+
 | Header 1 | Header 2 | Header 3 |
 | -------- | -------- | -------- |
 | Cell 1   | Cell 2   | Cell 3   |
 | Cell 4   | Cell 5   | Cell 6   |
-```
+
 
 Let me know if you need further assistance!

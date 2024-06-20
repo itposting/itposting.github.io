@@ -75,7 +75,7 @@ with open('retail_transactions.jsonl', 'w') as f:
 
 ## #1 데이터 수집 — 수확
 
-파일에서 거래 기록을 읽는 가장 간단한 방법 중 하나는 데이터 세트를 리스트로 반복하고 이후에 이를 Pandas DataFrame으로 변환하는 것입니다.```
+파일에서 거래 기록을 읽는 가장 간단한 방법 중 하나는 데이터 세트를 리스트로 반복하고 이후에 이를 Pandas DataFrame으로 변환하는 것입니다.
 
 <div class="content-ad"></div>
 
@@ -108,7 +108,7 @@ txn_generator = read_json_file('retail_transactions.jsonl')
 
 ## #2 데이터 유효성 검사 — Pydantic
 
-JSON 데이터 목록이 주어진다고 가정해보세요. 데이터는 데이터 처리 후 거래 기록 정보를 포함합니다. 다음은 샘플 거래 정보입니다:```
+JSON 데이터 목록이 주어진다고 가정해보세요. 데이터는 데이터 처리 후 거래 기록 정보를 포함합니다. 다음은 샘플 거래 정보입니다:
 
 <div class="content-ad"></div>
 
@@ -152,7 +152,7 @@ except ValidationError as exc:
 # 유효성 검사 성공
 ```
 
-때로는 더 엄격한 유효성 검사 규칙을 적용할 필요가 있습니다. Pydantic 기본 모델은 가능한 경우 문자열 데이터를 정수로 변환하려고 시도합니다. 이를 피하려면 strict=True를 모델 수준이나 필드 수준에서 설정할 수 있습니다.```
+때로는 더 엄격한 유효성 검사 규칙을 적용할 필요가 있습니다. Pydantic 기본 모델은 가능한 경우 문자열 데이터를 정수로 변환하려고 시도합니다. 이를 피하려면 strict=True를 모델 수준이나 필드 수준에서 설정할 수 있습니다.
 
 <div class="content-ad"></div>
 

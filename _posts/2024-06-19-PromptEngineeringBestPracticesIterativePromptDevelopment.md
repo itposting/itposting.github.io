@@ -35,7 +35,7 @@ link: "https://medium.com/towards-artificial-intelligence/prompt-engineering-bes
 
 <div class="content-ad"></div>
 
-```
+
 ![Prompt Engineering Best Practices](/assets/img/2024-06-19-PromptEngineeringBestPracticesIterativePromptDevelopment_1.png)
 
 애플리케이션을 개발할 때 LLM을 사용하여 프롬프트를 작성할 때, 프로세스는 꽤 유사할 수 있습니다. 무엇을 하고자 하는지, 완료하고자 하는 작업에 대한 아이디어가 있으며, 명확하고 구체적인 프롬프트를 작성하는 첫 번째 시도를 할 수 있습니다. 그리고 적절하다면 시스템이 생각할 시간을 주는 방식으로 적기를 노령할 수 있습니다.
@@ -43,7 +43,7 @@ link: "https://medium.com/towards-artificial-intelligence/prompt-engineering-bes
 그런 다음 실행하여 얻는 결과를 확인할 수 있습니다. 처음에 충분히 잘 작동하지 않는 경우에는, 예를 들어, 지시사항이 충분히 명확하지 않거나, 알고리즘이 충분한 시간을 가지지 못한 이유 등을 파악하면서 반복적인 프로세스를 통해 아이디어를 수정하고, 프롬프트를 개선하고, 이 과정을 여러 번 반복하여 애플리케이션에 적합한 프롬프트를 얻을 수 있습니다.
 
 앤드루 엔지
-```
+
 
 <div class="content-ad"></div>
 
@@ -119,8 +119,8 @@ Windows 및 MacOS 기호를 모두 충족하는 운영 체제 옵션을 제공�
 ```
 당신이 이 정보를 가지고 마케팅 팀이 온라인 소매 웹사이트 설명을 작성하는 것을 도와야 한다고 가정해보겠습니다. 여기서 말하는 프롬프트는, 기술사양을 기반으로 한 제품에 대한 소매 웹사이트 설명을 작성하는 마케팅 팀을 도와야 한다면 어떤 제품 설명을 작성할 것인지에 대한 정보를 쓰세요. 기술사양에 제공된 정보를 기반으로 제품 설명을 작성하세요.
 
-기술적 사양: ```{fact_sheet_laptop}```
-```
+기술적 사양: {fact_sheet_laptop}
+
 
 <div class="content-ad"></div>
 
@@ -138,7 +138,7 @@ prompt = f"""
 
 최대 50단어를 사용하십시오.
 
-기술 사양: ```{fact_sheet_laptop}```
+기술 사양: {fact_sheet_laptop}
 """
 response = get_completion(prompt)
 print(response)
@@ -150,9 +150,9 @@ print(response)
 
 그러니까 47개의 단어에요. 나쁘지 않아요. 대형 언어 모델은 명확한 단어 수에 대한 지시를 따르는 데 꽤 괜찮지만, 때로는 60이나 65개의 단어로 무언가를 출력할 때도 있지만, 타당한 범위 내에 있어요. 할 수 있는 일 중 일부는 최대 세 문장을 사용하는 것이죠.
 
-```
+
 len(response.split())
-```
+
 
 # 4. 일부 세부사항에 집중하도록 LLM에 강제하기
 
@@ -177,7 +177,7 @@ ID를 모두 포함하십시오.
 
 최대 50단어로 작성하십시오.
 
-기술 사양서: ```{fact_sheet_laptop}```
+기술 사양서: {fact_sheet_laptop}
 """
 response = get_completion(prompt)
 print(response)
@@ -199,7 +199,7 @@ prompt = f"""
 
 단어 수를 최대 50개로 제한합니다.
 
-기술 사양서: ```{fact_sheet_laptop}```
+기술 사양서: {fact_sheet_laptop}
 """
 response = get_completion(prompt)
 print(response)
@@ -210,7 +210,7 @@ print(response)
 # 5. 복잡한 응답 얻기
 
 chatGPT의 능력에 대한 더 나은 이해를 위해 좀 더 복잡한 프롬프트를 살펴봅시다. 설명 뒤에 제품의 치수를 제공하는 테이블을 포함하도록 요청하고 모든 내용을 HTML로 형식화해야 합니다. 실제로 이러한 프롬프트를 얻기 위해서는 여러 번의 반복한 작업이 필요할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -232,7 +232,7 @@ prompt = f"""
 웹사이트에서 사용할 수 있는 HTML 형식으로 모든 것을 서식화해주세요. 
 설명을 <div> 요소에 넣어주세요.
 
-기술 사양: ```{fact_sheet_laptop}```
+기술 사양: {fact_sheet_laptop}
 """
 
 response = get_completion(prompt)
@@ -247,7 +247,7 @@ display(HTML(response))
 ```
 
 <img src="/assets/img/2024-06-19-PromptEngineeringBestPracticesIterativePromptDevelopment_2.png" />
-```
+
 
 <div class="content-ad"></div>
 

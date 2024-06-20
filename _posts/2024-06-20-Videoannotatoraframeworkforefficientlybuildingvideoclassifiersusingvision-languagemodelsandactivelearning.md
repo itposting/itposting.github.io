@@ -51,7 +51,7 @@ VA는 모델 구축을 데이터 주석 프로세스에 매끄럽게 통합하�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-Videoannotatoraframeworkforefficientlybuildingvideoclassifiersusingvision-languagemodelsandactivelearning_0.png)
 
 ## 확장 가능한 비디오 분류기를 통한 비디오 이해
@@ -59,7 +59,7 @@ VA는 모델 구축을 데이터 주석 프로세스에 매끄럽게 통합하�
 이진 분류는 독립성과 유연성을 제공하여 다른 모델과 독립적으로 하나의 모델을 추가하거나 개선할 수 있도록 합니다. 또한 사용자에게 이해하기 쉽고 구축하기 쉬운 추가적인 혜택이 있습니다. 여러 모델의 예측을 결합하면 동영상 콘텐츠의 다양한 수준에서 더 깊은 이해를 얻을 수 있습니다. (그림 2 참조)
 
 ![이미지](/assets/img/2024-06-20-Videoannotatoraframeworkforefficientlybuildingvideoclassifiersusingvision-languagemodelsandactivelearning_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -73,7 +73,7 @@ VA는 모델 구축을 데이터 주석 프로세스에 매끄럽게 통합하�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-Videoannotatoraframeworkforefficientlybuildingvideoclassifiersusingvision-languagemodelsandactivelearning_2.png)
 
 ## 단계 2 — 액티브 러닝
@@ -81,7 +81,7 @@ VA는 모델 구축을 데이터 주석 프로세스에 매끄럽게 통합하�
 다음 단계는 전통적인 액티브 러닝 루프를 포함합니다. VA는 그런 다음 비디오 임베딩 위에 가벼운 이진 분류기를 구축하고, 이 분류기는 대상 코퍼스 내의 모든 클립에 점수를 매기도록 하며, 피드 내의 일부 예시를 주어 더 많은 주석 및 개선을 위해 제시합니다. 이는 그림 4에서 설명된 내용입니다.
 
 ![이미지](/assets/img/2024-06-20-Videoannotatoraframeworkforefficientlybuildingvideoclassifiersusingvision-languagemodelsandactivelearning_3.png)
-```
+
 
 <div class="content-ad"></div>
 

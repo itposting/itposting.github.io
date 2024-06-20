@@ -73,7 +73,7 @@ PATH 환경 변수를 선택한 다음 그 아래에 있는 "편집..." 버튼�
 
 아래 Markdown 형식을 이용하여 표 태그를 변경해주세요.
 
-```
+
 ![Neovim을 Windows에 설치하는 이미지 1](/assets/img/2024-06-20-NeovimbutitsinWindows_7.png)
 
 여기서 "새로 만들기"를 선택하고 Neovim이 설치된 경로를 추가하세요. 저의 경우, C:\tools\neovim\nvim-win64\bin에 설치되었는데, 다른 경로도 조금씩 다를 수 있으니 확인해보세요.
@@ -81,7 +81,7 @@ PATH 환경 변수를 선택한 다음 그 아래에 있는 "편집..." 버튼�
 말할 필요도 없이, 이미 열려 있는 터미널에서는 여전히 nvim을 사용할 수 없습니다. 새로운 터미널을 열기보다는 Chocolatey를 통해 환경 변수를 새로 고칠 수 있는 이 명령어를 실행하세요: RefreshEnv.cmd. 이제 nvim 명령어를 실행하면 Neovim이 열릴 것입니다!
 
 ![Neovim을 Windows에 설치하는 이미지 2](/assets/img/2024-06-20-NeovimbutitsinWindows_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -146,7 +146,7 @@ Add-AppxPackage [이름]
 Windows 터미널을 설치한 후에는 Windows 시작 메뉴를 열 때 "최근 추가된" 섹션에서 찾을 수 있습니다. 쉽게 찾을 수 있도록 시작 메뉴에 고정하는 것을 추천합니다.
 
 # Nerd 폰트 설치하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -188,15 +188,15 @@ Windows Terminal을 열고 창 헤더 어디든 마우스 오른쪽 버튼을 �
 
 "외형"으로 스크롤을 내려주세요:
 
-```
+
 <img src="/assets/img/2024-06-20-NeovimbutitsinWindows_22.png" />
-```
+
 
 마지막으로 "글꼴" 옵션을 변경해주세요:
 
-```
+
 <img src="/assets/img/2024-06-20-NeovimbutitsinWindows_23.png" />
-```
+
 
 <div class="content-ad"></div>
 

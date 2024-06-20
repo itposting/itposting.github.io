@@ -95,7 +95,7 @@ PID(Proportional Integral Derivative) 직경 제어 없이도 제작한 ekstrude
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-Part1Makeyourfilamentathomeforcheap_0.png)
 
 ## 지구 지키기
@@ -103,7 +103,7 @@ PID(Proportional Integral Derivative) 직경 제어 없이도 제작한 ekstrude
 장기 계획은 재활용업체로부터 재생 플라스틱 펠릿을 구매하여 버진 플라스틱 펠릿과 60:40 비율로 혼합하고 생산된 필라멘트를 전자 상거래 웹사이트에서 판매하는 것입니다. 또한 지역 사회가 자신들의 플라스틱 폐기물을 필라멘트로 재활용할 수 있도록 도와주기 위해 기계를 만들 수 있습니다. 가끔 재활용한 플라스틱은 구조적 특성을 잃기도 합니다. 그래서 버진 플라스틱과 혼합하는 것이 중요하지만 약간 약한 플라스틱은 강도가 크게 필요하지 않은 3D 프린팅 부품에도 적합합니다. 그러나 100% 버진 플라스틱으로 필라멘트를 만들면 생산된 필라멘트는 우수한 강도를 가집니다.
 
 ## 왜 ABS인가요?
-```
+
 
 <div class="content-ad"></div>
 

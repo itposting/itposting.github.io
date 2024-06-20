@@ -134,9 +134,9 @@ AI가 이해하는 각 개념을 나타내는 각 별의 거대한 밤하늘 지
 디코더
 디코더는 다른 선형 변환을 사용하여 특징에서 원래 활성화를 재구성하려고 시도합니다:
 
-```
+
 ![image](/assets/img/2024-06-19-HowLLMsThink_4.png)
-```
+
 
 W^dec와 b^dec는 디코더의 가중치와 바이어스입니다. 용어 fi(x) W^dec는 재구성에 특징 i의 기여를 나타냅니다.
 
@@ -163,7 +163,7 @@ W^dec와 b^dec는 디코더의 가중치와 바이어스입니다. 용어 fi(x) 
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-HowLLMsThink_6.png" />
 
 Similarly, there are features that respond to references to cities, countries, and other geographical entities. For example, a feature for “Paris” might activate when the text talks about the Eiffel Tower, French culture, or events happening in the city. This helps the model understand and contextualize discussions about these places.
@@ -171,7 +171,7 @@ Similarly, there are features that respond to references to cities, countries, a
 The model can also identify and activate features related to security vulnerabilities in code or systems. For example, there might be a feature that recognizes mentions of “buffer overflow” or “SQL injection,” which are common security issues in software development. This capability is crucial for applications involving cybersecurity, as it allows the model to detect and highlight potential risks.
 
 <img src="/assets/img/2024-06-19-HowLLMsThink_7.png" />
-```
+
 
 <div class="content-ad"></div>
 

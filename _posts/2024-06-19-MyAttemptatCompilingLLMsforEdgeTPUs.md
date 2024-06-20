@@ -11,7 +11,7 @@ link: "https://medium.com/@johndilan/my-attempt-at-compiling-llms-for-edge-tpus-
 ---
 
 
-```
+
 ![2024-06-19-MyAttemptatCompilingLLMsforEdgeTPUs_0](/assets/img/2024-06-19-MyAttemptatCompilingLLMsforEdgeTPUs_0.png)
 
 AI의 세계가 계속 발전함에 따라, Raspberry Pi 5 및 Coral AI Edge TPU와 같은 엣지 장치로 강력한 머신러닝 모델을 가져오는 약속은 매우 매력적입니다. 네트워크 가장자리에 정교한 AI의 강력함을 가지고 있는 것을 상상해보세요. 지속적인 클라우드 연결이 필요하지 않고 로컬에서 실행됩니다. 그러나 이러한 제약된 환경에서 대형 언어 모델(LLMs)을 배치하는 경우에는 상당한 어려움이 있습니다.
@@ -19,7 +19,7 @@ AI의 세계가 계속 발전함에 따라, Raspberry Pi 5 및 Coral AI Edge TPU
 # 라즈베리 파이 5와 코랄 AI Edge TPU와의 나의 여정
 
 최근, 나는 라즈베리 파이 5와 Coral AI Edge TPU를 이용하여 엣지에서 LLMs의 기능을 가져오는 임무를 시작했습니다. 익숙하지 않은 사람들을 위해, Edge TPU는 엣지에서 머신러닝 추론을 가속화하기 위해 설계되었으며, 탁월한 성능을 제공하면서 최소한의 전력을 소비합니다. 그러나 내 여정은 빠르게 번거로운 고난으로 변했습니다.
-```
+
 
 <div class="content-ad"></div>
 

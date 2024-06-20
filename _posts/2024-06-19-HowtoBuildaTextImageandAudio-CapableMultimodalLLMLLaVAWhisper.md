@@ -199,7 +199,7 @@ def img2txt(input_text, input_image):
 
 Markdown 형식으로 표를 변경하겠습니다.
 
-```
+
 def transcribe(audio):
 
     # 입력 오디오가 None이거나 비어 있는지 확인합니다.
@@ -220,11 +220,11 @@ def transcribe(audio):
     result_text = result.text
 
     return result_text
-```
+
 
 "text_to_speech" 함수는 gTTs 패키지를 사용하여 텍스트와 파일 경로를 인수로 취합니다. 텍스트는 오디오로 변환되고, 그 오디오 파일은 지정된 파일 경로에 저장됩니다.
 
-```
+
 def text_to_speech(text, file_path):
     language = 'en'
 
@@ -235,7 +235,7 @@ def text_to_speech(text, file_path):
     audioobj.save(file_path)
 
     return file_path
-```
+
 
 <div class="content-ad"></div>
 

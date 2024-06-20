@@ -71,7 +71,7 @@ Now let’s look at how this assistant works.
 
 <div class="content-ad"></div>
 
-```
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*0UBKNLacq0ZOXF-f9Tzvzg.gif)
 
 ## [4] 디코더: 레이어 1 + ReLU
@@ -79,7 +79,7 @@ Now let’s look at how this assistant works.
 인코딩 프로세스가 완료되면, 다음 단계는 관련 피처를 디코드하여 최종 출력을 '다시' 작성하는 것입니다. 이를 위해, 우리는 마지막 단계의 피처를 해당 가중치 및 편향과 곱한 다음 ReLU 레이어를 적용합니다. 결과는 3x4 매트릭스입니다.
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*yCWisBAtVJ35IZB164Vvew.gif)
-```  
+
 
 <div class="content-ad"></div>
 
@@ -173,7 +173,7 @@ Now let’s look at how this assistant works.
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-19-DeepDiveintoAnthropicsSparseAutoencodersbyHand_4.png)
 
 ![Image 2](/assets/img/2024-06-19-DeepDiveintoAnthropicsSparseAutoencodersbyHand_5.png)
@@ -181,11 +181,11 @@ Now let’s look at how this assistant works.
 ## [7] 희소성: 제로
 
 이미 0인 모든 다른 값들은 변경하지 않고 그대로 유지합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*gtDUWgJ11gs1bh77CEt-Qw.gif)
 
 ## [8] 희소성 : 가중치
@@ -193,7 +193,7 @@ Now let’s look at how this assistant works.
 Step 6에서 얻은 그래디언트 행렬의 각 행을 Step 4에서 얻은 해당 디코더 가중치로 곱합니다. 이 단계는 잘못된 정보를 추가하여 결과를 재구성하는 동안 모델이 큰 가중치를 학습하는 것을 방지하는 데 중요합니다.
 
 ![image](https://miro.medium.com/v2/resize:fit:1104/1*kM4XIHlPsa7su69XV11H7Q.gif)
-```
+
 
 <div class="content-ad"></div>
 
@@ -241,9 +241,9 @@ P.S. 본 연습을 직접 진행하고 싶다면 여기에 빈 템플릿 링크�
 
 지퍼가 진리의 코덱스를 안전하게 보호할 수 있도록 도와주는 재미를 누려보세요!
 
-```
+
 <img src="/assets/img/2024-06-19-DeepDiveintoAnthropicsSparseAutoencodersbyHand_6.png" />
-```
+
 
 이 작업을 지원해준 톰 예 교수님께 특별히 감사드립니다!
 

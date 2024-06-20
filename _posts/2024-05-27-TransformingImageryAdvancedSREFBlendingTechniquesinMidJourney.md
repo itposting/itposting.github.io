@@ -20,23 +20,23 @@ link: "https://medium.com/@promptdervish/transforming-imagery-advanced-sref-blen
 
 <div class="content-ad"></div>
 
-```md
+
 전문 스튜디오 초상 사진. 더블렛을 입은 왕자와 빨간 머리 공주가 유니크한 의상을 입고 서로 마주보며 서로를 사랑스럽게 바라봅니다. 렘브란트 조명 사용. --ar 2:3 --style raw --stylize 1
-```
+
 
 그런 다음, 임의의 SREF ID를 사용한 이미지 중 하나와 함께 이를 결합했습니다. 어떤 추가적인 것도 없이 간단히 혼합했습니다. 이 조합을 통해 원본 이미지를 밝게하고 배경을 약간 변경하고자 했습니다. 그들이 밝아졌고, 그녀의 드레스가 파란색에서 흰색으로 바뀐 것을 주목해주세요.
 
-```md
+
 https://s.mj.run/h-qSBRaD4DE https://s.mj.run/CCRptYYRWv8 --ar 2:3
-```
+
 
 다음 조합에서는 밝히고 배경을 추가하려고 시도했습니다. 그렇게 성공적이었습니다: 그녀의 드레스가 밝아지고, 그의 의상에 일부 새로운 붉은 색 디테일과 금 장식이 생겼습니다. 아치 형태에 조금 놀라웠지만, 실제로 #3는 상당히 멋져 보입니다.
 
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 
 https://s.mj.run/h-qSBRaD4DE https://s.mj.run/uZ36l-hDQsE --ar 2:3
 
@@ -46,17 +46,17 @@ https://s.mj.run/L1_rPjYej0k https://s.mj.run/h-qSBRaD4DE --ar 2:3
 
 I decided to take another step towards flamboyance for a more striking difference in the images. Firstly, I have combined them as simple image references.
 
-```
+
 
 <div class="content-ad"></div>
 
-```md
+
 https://s.mj.run/h-qSBRaD4DE https://s.mj.run/l7tQBc4KhhA 햇빛이 비치는 테라스에서 더블렛을 입은 왕자와 새틴 드레스를 입은 공주가 함께 있는 모습; 날씨의 따뜻함이 그 들의 사랑을 반영하며, 테라스는 숨막히는 풍경을 제공합니다. 이 디자인은 역사적 로맨스 소설 표지와 비슷한 스타일로 만들어졌어요. --ar 2:3
 
 이 중간 이미지는 꽤나 독특한 SREF ID로부터 왔어요. 간단한 참조 이미지 조합이 배경에 생동감을 불어넣고 그들의 의상을 환한 장식물로 꾸밉니다. 이제 우리는 조금의 발화를 더해볼게요. 아래 코드는 동일한 두 이미지를 왼쪽 이미지를 캐릭터 참조로, 중간 이미지를 스타일 참조로 넣어 합쳤어요.
 
 이 두 캐릭터에 대한 참조가 작동한다는 사실에 놀랐어요. 보통 제한은 단일 캐릭터만 가능하다고 기대하죠. 다른 종류의 프롬프트를 충분히 시도해보지 않아서 그것을 테스트할만한 겁니다. 얼굴이 가깝고 프롬프트가 유사하기 때문에 여기에서 작동한다고 의심해요. 얼굴을 섞어 동일하게 만들거나 하는 것으로 생각했는데 그런 것 같아 보이지 않았어요.
-```
+
 
 <div class="content-ad"></div>
 

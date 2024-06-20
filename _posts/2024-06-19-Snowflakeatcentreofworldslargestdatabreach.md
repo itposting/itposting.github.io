@@ -23,9 +23,9 @@ Cloud AI 데이터 플랫폼 Snowflake는 어려운 한 달을 보내고 있습�
 
 호주 보안 서비스에서 안내를 발행했습니다:
 
-```
+
 ![Snowflake](/assets/img/2024-06-19-Snowflakeatcentreofworldslargestdatabreach_0.png)
-```
+
 
 그들은 Snowflake 환경을 이용한 여러 회사의 성공적인 침해 사례를 인식하고 있다고 말했습니다.
 
@@ -33,13 +33,13 @@ Snowflake사는 지난 주말 "위협 활동"에 관한 침해 사례 지표를 
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-19-Snowflakeatcentreofworldslargestdatabreach](/assets/img/2024-06-19-Snowflakeatcentreofworldslargestdatabreach_1.png)
 
 또한 위협 배우자가 인포스틸러를 사용하여 Snowflake 그 자체와 그 고객들에게 접속한 것으로 주장합니다: [링크](https://web.archive.org/web/20240531140540/https://hudsonrock.com/blog/snowflake-massive-breach-access-through-infostealer-infection)
 
 위협 배우자는 의심스러운 주장을 계속하지만, 어쨌든 Snowflake는 일부 내용이 사실이라고 확인했습니다. 그러나 이 블로그는 사실이 아니라고 매체와 고객들에게 주장하고 있습니다. 이것은 쇠오빠의 블로그입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -94,7 +94,7 @@ Snowflake가 말하길:
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-Snowflakeatcentreofworldslargestdatabreach_3.png)
 
 # 자신을 보호하는 방법
@@ -102,7 +102,7 @@ Snowflake가 말하길:
 Snowflake를 사용한다면, 먼저 다단계 인증을 활성화하고 데이터베이스의 인증을 강화해야 합니다. 그런 다음 Snowflake 자체의 액세스 로그를 확인하여 데이터를 사용한 사용자를 확인해야 합니다. Snowflake가 대신해주지 않는다는 것을 기억해야 합니다.
 
 Infostealers는 심각한 문제입니다. 실제 세계에서는 오랫동안 봇넷 등을 앞지르고 있으며, 진정한 해결책은 견고한 다단계 인증(그리고 안전한 인증으로 암호를 완전히 대체하는 것이 이상적)입니다.
-```
+
 
 <div class="content-ad"></div>
 

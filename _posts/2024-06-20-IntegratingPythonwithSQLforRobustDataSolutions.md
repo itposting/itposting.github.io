@@ -71,7 +71,7 @@ connection = engine.connect()
 
 # SQLAlchemy
 
-SQLAlchemy는 데이터베이스 작업을 효율적으로 처리하는 ORM(Object-Relational Mapping)입니다. SQLAlchemy를 사용하는 몇 가지 장점은 다음과 같습니다:```
+SQLAlchemy는 데이터베이스 작업을 효율적으로 처리하는 ORM(Object-Relational Mapping)입니다. SQLAlchemy를 사용하는 몇 가지 장점은 다음과 같습니다:
 
 <div class="content-ad"></div>
 
@@ -141,13 +141,13 @@ user_posts_df = pd.read_sql('SELECT * FROM user_posts', conn)
 
 <div class="content-ad"></div>
 
-```
+
 ![User_posts dataset](/assets/img/2024-06-20-IntegratingPythonwithSQLforRobustDataSolutions_2.png)
 
 We have three different datasets. Here is the user_posts dataset.
 
 ![Friendships dataset](/assets/img/2024-06-20-IntegratingPythonwithSQLforRobustDataSolutions_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -189,7 +189,7 @@ conn_params = {
 - 포트 이름.
 
 이제 두 번째 단계인 연결을 설정하겠습니다.
-```  
+
 
 <div class="content-ad"></div>
 

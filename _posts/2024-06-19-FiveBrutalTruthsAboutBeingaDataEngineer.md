@@ -11,7 +11,7 @@ link: "https://medium.com/@lgsoliveira/five-brutal-truths-about-being-a-data-eng
 ---
 
 
-```
+
 ![Five Brutal Truths About Being a Data Engineer](/assets/img/2024-06-19-FiveBrutalTruthsAboutBeingaDataEngineer_0.png)
 
 I like my job! 🙂
@@ -19,7 +19,7 @@ I like my job! 🙂
 I really do!
 
 But sometimes I have that feeling...
-```
+
 
 <div class="content-ad"></div>
 

@@ -34,15 +34,11 @@ link: "https://medium.com/@sagarkpanda/simplify-docker-management-with-portainer
 ```js
 도커 볼륨을 생성하려면 다음 명령어를 실행하세요.
 
-```js
 docker volume create portainer_volume
-```
 
 위 볼륨을 마운트하여 포테이너 도커 이미지를 실행하세요.
 
-```js
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
-```
 
 → -v /var/run/docker.sock:/var/run/docker.sock
 ```
@@ -69,7 +65,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-19-SimplifyDockerManagementwithPortainer_3](/assets/img/2024-06-19-SimplifyDockerManagementwithPortainer_3.png)
 
 ![2024-06-19-SimplifyDockerManagementwithPortainer_4](/assets/img/2024-06-19-SimplifyDockerManagementwithPortainer_4.png)
@@ -77,7 +73,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 그리고 모든 데이터가 있는 대시보드가 나타납니다.
 
 왼쪽 패널의 메뉴를 탐색하면 App 템플릿, 컨테이너, 이미지 등이 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -99,7 +95,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-SimplifyDockerManagementwithPortainer_8.png)
 
 컨테이너를 선택하시고, 이제 중지, 시작, 재시작 또는 제거 등의 조작을 할 수 있습니다.
@@ -107,7 +103,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 이미지도 마찬가지로 모든 이미지를 리스트업합니다 (docker image ls), 태그 등.
 
 ![이미지](/assets/img/2024-06-19-SimplifyDockerManagementwithPortainer_9.png)
-```
+
 
 <div class="content-ad"></div>
 

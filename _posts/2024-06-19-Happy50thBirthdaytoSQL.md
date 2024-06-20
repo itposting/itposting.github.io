@@ -97,7 +97,7 @@ SSD 스토리지를 사용하여 20GB 크기의 데이터베이스를 생성할 
 
 위 예시에서 나타나 있는 코드 블록을 마크다운 형식으로 변경해 드리겠습니다.
 
-```
+
 We will then enable public access to the database, and create a new VPC security group to open up TCP Port 3306:
 
 ![Image](/assets/img/2024-06-19-Happy50thBirthdaytoSQL_13.png)
@@ -105,13 +105,13 @@ We will then enable public access to the database, and create a new VPC security
 Then finally to create the database:
 
 ![Image](/assets/img/2024-06-19-Happy50thBirthdaytoSQL_14.png)
-```
+
 
 <div class="content-ad"></div>
 
 아래는 마크다운 형식으로 변경해 주세요:
 
-```
+
 It will then take a few minutes to create the database:
 
 ![Create Database](/assets/img/2024-06-19-Happy50thBirthdaytoSQL_15.png)
@@ -119,7 +119,7 @@ It will then take a few minutes to create the database:
 We should then get the details:
 
 ![Get Details](/assets/img/2024-06-19-Happy50thBirthdaytoSQL_16.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -157,7 +157,7 @@ CREATE DATABASE MyDataBase;
 
 <div class="content-ad"></div>
 
-```
+
 ![Happy 50th Birthday to SQL](/assets/img/2024-06-19-Happy50thBirthdaytoSQL_19.png)
 
 Next, right-click on the SCHEMAS area on the left-hand side, and refresh. You should now see the MyDataBase schema. Now, double-click on it to select it.
@@ -214,7 +214,7 @@ SELECT * FROM Students ORDER BY FirstName DESC
 
 <div class="content-ad"></div>
 
-```
+
 ![SQL 50th Birthday](/assets/img/2024-06-19-Happy50thBirthdaytoSQL_24.png)
 
 만약 다음과 같이 시도한다면:
@@ -224,24 +224,24 @@ SELECT LastName, FirstName FROM Students ORDER BY LastName
 ```
 
 다음과 같은 결과가 나옵니다:
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 LastName  FirstName
 -------------------
 Smith     Frank
 Smithes   Colin
 Smyth     Bob
-```
+
 
 ## 데이터베이스의 보안
 
 보안 그룹은 방금 RDS 데이터베이스를 생성한 호스트의 IP 주소 하나만을 위한 방화벽을 열었습니다:
 
 <img src="/assets/img/2024-06-19-Happy50thBirthdaytoSQL_25.png" />
-```
+
 
 <div class="content-ad"></div>
 

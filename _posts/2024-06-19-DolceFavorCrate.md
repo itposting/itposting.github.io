@@ -21,7 +21,7 @@ link: "https://medium.com/@teachcraft99/dolce-favor-crate-293449754070"
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-19-DolceFavorCrate_2.png)
 
 ![Image 2](/assets/img/2024-06-19-DolceFavorCrate_3.png)
@@ -29,7 +29,7 @@ link: "https://medium.com/@teachcraft99/dolce-favor-crate-293449754070"
 ![Image 3](/assets/img/2024-06-19-DolceFavorCrate_4.png)
 
 Photo by 3D SVG Crafts on Creative Fabrica
-```
+
 
 <div class="content-ad"></div>
 

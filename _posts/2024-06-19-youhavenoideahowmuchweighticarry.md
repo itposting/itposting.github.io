@@ -11,7 +11,7 @@ link: "https://medium.com/@vourline/you-have-no-idea-how-much-weight-i-carry-d3e
 ---
 
 
-```
+
 ![Image](/assets/img/2024-06-19-youhavenoideahowmuchweighticarry_0.png)
 
 다른 쪽이 항상 푸른 것은 아니에요..
@@ -19,7 +19,7 @@ link: "https://medium.com/@vourline/you-have-no-idea-how-much-weight-i-carry-d3e
 대부분의 사람들은 막내가 되는 것이 축복이라고 생각해요.
 
 맏이나 중간 아이들은 종종 더 어린 아이를 부러워하며, 더 어린 사람이라면 삶이 훨씬 쉬울 것이라고 생각해요.
-```
+
 
 <div class="content-ad"></div>
 

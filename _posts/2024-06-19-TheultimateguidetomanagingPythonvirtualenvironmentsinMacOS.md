@@ -43,7 +43,7 @@ $ xcode-select --install
 ```
 
 - 패키지 설치하기:
-```
+
 
 <div class="content-ad"></div>
 

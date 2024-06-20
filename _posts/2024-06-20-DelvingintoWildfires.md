@@ -59,7 +59,7 @@ FireVision Historical Maps의 아래 화재 크기 분포를 보면 대규모 �
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-20-DelvingintoWildfires_8.png](/assets/img/2024-06-20-DelvingintoWildfires_8.png)
 
 화재의 특성은 과거 한 해 동안 어떻게 변했을까요? 다음 세 가지 차트(그리고 몇 가지 추가 데이터)는 2011년부터 2020년까지의 화재에 대해 몇 가지 중요한 사항을 강조합니다:
@@ -69,11 +69,11 @@ FireVision Historical Maps의 아래 화재 크기 분포를 보면 대규모 �
 - 자연 발화 화재(주로 번개에 의해 발생)는 여름에 정점을 이루며, 10월부터 4월까지는 무시해도 될 정도입니다.
 
 ![2024-06-20-DelvingintoWildfires_9.png](/assets/img/2024-06-20-DelvingintoWildfires_9.png)
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Delving into Wildfires 10](/assets/img/2024-06-20-DelvingintoWildfires_10.png)
 
 ![Delving into Wildfires 11](/assets/img/2024-06-20-DelvingintoWildfires_11.png)
@@ -81,7 +81,7 @@ FireVision Historical Maps의 아래 화재 크기 분포를 보면 대규모 �
 # 왜 머신 러닝을 사용해야 할까요?
 
 과거 산불 데이터를 살펴보고 직관을 개발하는 것은 유용하지만, 특정 장소에서 미래에 일어날 일을 예측하는 데 충분하지는 않습니다. 여기서 머신 러닝이 모델링 기술로 등장합니다. ML은 복잡한 상호작용에서 발생하는 패턴들이 있는 산불 특성과 같은 것들을 예측할 때 특히 유용할 수 있습니다. 이러한 패턴은 다양한 위치별 변수들의 복잡한 상호작용에서 발생합니다:
-```
+
 
 <div class="content-ad"></div>
 

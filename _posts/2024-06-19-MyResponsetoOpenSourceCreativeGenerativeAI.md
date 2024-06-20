@@ -21,7 +21,7 @@ link: "https://medium.com/better-programming/response-to-open-source-creative-ge
 
 <div class="content-ad"></div>
 
-```
+
 ![My Response to Open Source Creative Generative AI](/assets/img/2024-06-19-MyResponsetoOpenSourceCreativeGenerativeAI_0.png)
 
 # 낮은 임금, 부탁드립니다
@@ -29,7 +29,7 @@ link: "https://medium.com/better-programming/response-to-open-source-creative-ge
 저는 이것을 큰 기술 노력으로 보며, 기술 임금을 낮추고 창의적인 작업자들의 협상 위치를 감소시키며, 예술의 상품화를 유도하고, 새롭게 확장 가능한 소비 시장을 창출하며, 보다 통합적으로 사회를 초인간주의로 이끌 것으로 보고 있습니다.
 
 요컨데 크게 지불 받는 10대가 자신들을 불필요하게 만들기 위한 도구를 만들고 있으며, 이는 역사상 올바른(조금 막바지에 있긴 하지만) 위치에 있기 때문에 가능한 것입니다. 사람들은 이 기술을 '기술을 민주화'하기 위해 밀고 나가는 사람들이 실제로 피해를 입을 위험이 거의 없다는 것을 거의 깨닫지 못합니다. 왜냐하면 그 사람들은 연간 400K 정도의 급여를 받기 때문입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -183,7 +183,7 @@ AI 예술 생성기가 완벽한 복제본을 생성하지 않기 때문에 저�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-MyResponsetoOpenSourceCreativeGenerativeAI_1.png)
 
 # 표현의 한계가 없어진다
@@ -191,7 +191,7 @@ AI 예술 생성기가 완벽한 복제본을 생성하지 않기 때문에 저�
 생성적 AI의 한 가지 장점은 우리가 창작 능력을 증진시키는 데 도움을 줄 수 있다는 점입니다. AI를 활용하면 우리는 쉽게 텍스트나 이미지를 생성하여 창작 작업의 영감이나 시작점으로 활용할 수 있습니다.
 
 예를 들어, 작가는 GPT-3를 사용하여 기사의 개요나 초고를 생성한 뒤 그것을 보완하고 발전시킬 수 있습니다. 마찬가지로, 예술가는 DALL-E를 사용하여 자신의 작품에 영감을 주는 이미지를 생성할 수 있습니다. 이처럼, 창작적인 시기에 갇히는 것이 아니라 자동으로 제안을 생성할 수 있습니다. 마찬가지로, 컴퓨터 코드를 작성하거나 알고리즘을 개발하는 것에도 동일하게 적용됩니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -51,7 +51,7 @@ Apple TV의 고화질 스크린 세이버를 알고 있다면, 이제 이를 Mac
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-19-macOSSonoma1stimpressions_1.png](/assets/img/2024-06-19-macOSSonoma1stimpressions_1.png)
 
 위젯 추가하려면 데스크톱에서 마우스 오른쪽 버튼을 클릭한 다음 끌어다 놓으세요. 다른 앱에서 작업 중일 때는 투명해지고 선택한 배경 화면과 어우러져 주의를 적게 끕니다.
@@ -59,7 +59,7 @@ Apple TV의 고화질 스크린 세이버를 알고 있다면, 이제 이를 Mac
 별로 위젯을 좋아하지 않는다고 말했는데, 항상 시계가 보이는 것은 꽤 멋진 것 같아요... 이제 데스크톱에 배터리 충전 위젯도 추가했어요 — 저랑 무슨 일이 생긴 걸까요?
 
 ![2024-06-19-macOSSonoma1stimpressions_2.png](/assets/img/2024-06-19-macOSSonoma1stimpressions_2.png)
-```
+
 
 <div class="content-ad"></div>
 

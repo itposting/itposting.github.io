@@ -62,7 +62,7 @@ LLM이 만나게 될 쿼리 유형을 추가할 수 있습니다. 여기서 한 
 
 <div class="content-ad"></div>
 
-```
+
 # 여기에는 LLM을 사용하여 만든 몇 가지 평가 쿼리가 나와 있어요.
 평가 쿼리는 다음과 같아요:
 - 'Filtering', 'Crime Analysis', 'Data Comparison', 'Advanced Queries', 'Imaginary Data', 'Irrelevant Queries', 'Prompt Injections', 'Line Chart', 'Bar Chart', 'Pie Chart', 'Map', 'Single-Value', 'Sankey' 같이 다양한 카테고리로 구성돼요.
@@ -72,11 +72,11 @@ LLM이 만나게 될 쿼리 유형을 추가할 수 있습니다. 여기서 한 
 이제 우리는 에이전트의 응답 "유효성"을 수치적으로 정의할 방법이 필요해요 - 우수한 응답과 좋지 않은 응답을 구별할 수 있는 점수 메커니즘이요.
 
 이 논리 다이어그램은 설계된 평가 메트릭이 작동하는 방식을 설명해줘.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-ImprovingPerformanceforDataVisualizationAIAgent_5.png)
 
 전체 점수를 계산하려면 코드가 필요한 속성을 갖추었는지 확인하는 기본적인 방법을 사용하거나 Large Language Model (LLM)을 사용하여 평가를 수행할 수 있습니다. 제 구현에서는 각 쿼리에 대해 작은 점수 평가기를 구축하여 DSPy 서명을 사용했습니다.
@@ -104,7 +104,7 @@ class Scorer(dspy.Signature):
 def check_code_run(code):
     score = 0
     try:
-        code = code.split('```')[1]
+        code = code.split('')[1]
         exec(code)
         score += 10
         return score
@@ -121,7 +121,7 @@ def evaluating_response(code, query):
 ```
 
 평가 지표를 정의한 후, '미훈련' 시스템의 성능을 확인해보겠습니다. DSPy를 최적화하기 위해 DSPy 모듈 및 서명을 사용하여 에이전트를 다시 만들어야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -179,7 +179,7 @@ print(agent('What is the distribution of crimes by type by histogram?').code)
 ```
 
 <img src="/assets/img/2024-06-19-ImprovingPerformanceforDataVisualizationAIAgent_6.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -286,7 +286,7 @@ scorer = dspy.ChainOfThough(Scorer)
 
 <div class="content-ad"></div>
 
-```
+
 ![Improving Performance for Data Visualization AI Agent](/assets/img/2024-06-19-ImprovingPerformanceforDataVisualizationAIAgent_10.png)
 
 ## 학습세트 생성하기
@@ -319,7 +319,7 @@ def full_metric(example, pred, trace=None):
 # 쿼리, 코드 쌍을 DSPy Example로 포맷팅
 trainset = [dspy.Example(query=q, code=c).with_inputs('query') for q, c in zip(eval_full_df['Query'], eval_full_df['Best Response'])]
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -401,11 +401,11 @@ compiled_prompt_opt.__dict__
 ```
 
 <img src="/assets/img/2024-06-19-ImprovingPerformanceforDataVisualizationAIAgent_12.png" />
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-ImprovingPerformanceforDataVisualizationAIAgent_13.png" />
 
 # 결과
@@ -413,7 +413,7 @@ compiled_prompt_opt.__dict__
 아래는 각 프롬프트 기법에 대한 컴파일된 결과입니다. 전체적으로 가장 큰 개선은 시그니처 및 접두사를 최적화한 COPRO_AGENT에서 나왔습니다. 즉, 원래 지시사항 및 접두사가 매우 최적화되지 않았음을 의미합니다. 전체적으로 COPRO 에이전트는 데이터셋에서 71%의 성능을 보였으며, FewShoot는 63%의 성능을 보였으며, 베이스 라인은 60%였습니다.
 
 <img src="/assets/img/2024-06-19-ImprovingPerformanceforDataVisualizationAIAgent_14.png" />
-```
+
 
 <div class="content-ad"></div>
 

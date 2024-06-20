@@ -39,7 +39,7 @@ FROM authors;
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-20-MasteringSQLAggregationFunctionsAComprehensiveGuidewithExamples_1.png" />
 
 ```js
@@ -58,7 +58,7 @@ SELECT COUNT(au_id)
 FROM authors
 WHERE city IN ("San Jose", "Salt Lake City");
 ```   
-```
+
 
 <div class="content-ad"></div>
 
@@ -108,7 +108,7 @@ ORDER BY SUM(qty) DESC;
 
 # 3. AVG
 
-숫자 열의 평균 값을 계산합니다.```
+숫자 열의 평균 값을 계산합니다.
 
 <div class="content-ad"></div>
 
@@ -134,7 +134,7 @@ ORDER BY COUNT(title_id) DESC;
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-MasteringSQLAggregationFunctionsAComprehensiveGuidewithExamples_8.png)
 
 # 4. MIN
@@ -144,7 +144,7 @@ ORDER BY COUNT(title_id) DESC;
 예시:
 SELECT MIN(열_이름)
 FROM 테이블_이름;
-```
+
 
 <div class="content-ad"></div>
 
@@ -161,7 +161,7 @@ GROUP BY pub_id;
 # 5. MAX
 
 컬럼에서 최대값을 검색합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -222,7 +222,7 @@ ORDER BY SUM(ytd_sales) DESC;
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-MasteringSQLAggregationFunctionsAComprehensiveGuidewithExamples_12.png)
 
 ```js
@@ -236,7 +236,7 @@ GROUP BY pub_id, title;
 ![image](/assets/img/2024-06-20-MasteringSQLAggregationFunctionsAComprehensiveGuidewithExamples_13.png)
 
 # 8. WITH ROLLUP
-```
+
 
 <div class="content-ad"></div>
 
@@ -330,7 +330,7 @@ ORDER BY SUM(qty) DESC;
 
 # 결론
 
-SQL 집계 함수는 데이터 분석과 보고에 꼭 필요합니다. 데이터를 요약하고 측정하며, 의사 결정에 유용한 통찰력을 제공합니다.```
+SQL 집계 함수는 데이터 분석과 보고에 꼭 필요합니다. 데이터를 요약하고 측정하며, 의사 결정에 유용한 통찰력을 제공합니다.
 
 <div class="content-ad"></div>
 

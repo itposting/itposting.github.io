@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/how-does-an-image-text-foundation
 ---
 
 
-```
+
 ![How Does an Image-Text Multimodal Foundation Model work](/assets/img/2024-06-19-HowDoesanImage-TextMultimodalFoundationModelWork_0.png)
 
 요즘에는 다중 모드 기반 모델이 급증하고 있습니다. 이 모델들은 텍스트, 이미지, 비디오, 오디오 등 다양한 종류의 데이터를 이해하며, 둘 이상의 모드로부터의 데이터 지식이 필요한 작업을 수행할 수 있습니다. 이러한 모델들이 어떻게 작동하는지 궁금한 적이 있나요?
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/how-does-an-image-text-foundation
 다중 모드 모델을 이해하는 핵심은 서로 다른 데이터 모드 간의 정렬 방식을 이해하는 것입니다.
 
 본 문서에서는 CoCa라는 간단한 이미지-텍스트 이중 모드 모델을 사용하여 다중 모드 모델의 내부 작업 방식을 설명합니다. 저는 CoCa를 좋아합니다. CoCa는 직관적인 디자인을 가지고 있으며, 다른 다중 모드 모델에서 아이디어를 차용했습니다.
-```
+
 
 <div class="content-ad"></div>
 

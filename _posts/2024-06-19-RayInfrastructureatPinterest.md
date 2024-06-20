@@ -155,7 +155,7 @@ Airflow에서 PythonOperator를 활용하여 사용자가 작업 구성을 제�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-RayInfrastructureatPinterest_9.png)
 
 # 테스트
@@ -163,7 +163,7 @@ Airflow에서 PythonOperator를 활용하여 사용자가 작업 구성을 제�
 유닛 테스트 및 통합 테스트
 
 레이 애플리케이션을 개발할 때 이용할 수 있는 두 가지 유형의 테스트를 제공합니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -226,12 +226,12 @@ Ray는 컴퓨팅 플랫폼으로 개발자가 API를 통해 쉽게 워크로드�
 
 아래는 Markdown 형식으로 표로 변환하였습니다.
 
-```
+
 | 파일 | 이미지 |
 |:-------------------------:|:-------------------------:|
 | 2024-06-19-RayInfrastructureatPinterest_14.png | <img src="/assets/img/2024-06-19-RayInfrastructureatPinterest_14.png" /> |
 | 2024-06-19-RayInfrastructureatPinterest_15.png | <img src="/assets/img/2024-06-19-RayInfrastructureatPinterest_15.png" /> |
-```
+
 
 # 사용 사례
 

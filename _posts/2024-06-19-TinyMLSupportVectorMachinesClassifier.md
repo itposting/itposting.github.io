@@ -68,7 +68,7 @@ yi(xi · w + b) − 1 ≥ 0 ∀i
 
 표를 마크다운 형식으로 변경해주세요.
 
-```
+
 | xi · w + b = +1 for H1 |
 |------------------------|
 | xi · w + b = −1 for H2 |
@@ -76,11 +76,11 @@ yi(xi · w + b) − 1 ≥ 0 ∀i
 Figure 1을 참고하여, d1은 H1로부터 초평면까지의 거리를 나타내고, d2는 H2로부터의 거리를 나타냅니다. H1과 H2로부터의 초평면의 등거리는 d1 = d2로 정의되며, 이를 SVM의 여백이라고 합니다. 초평면을 가능한 한 Support Vectors로부터 최대한 멀리 위치시키기 위해 이 여백을 최대화해야 합니다.
 
 간단한 벡터 기하학에 따르면, 여백은 (1/||w||)와 같고, 이를 최대화하기 위해서는 (1.3)의 제약 조건 하에 찾아야 할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![TinyMLSupportVectorMachinesClassifier_3](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_3.png)
 
 kwk을 최소화하는 것은 (0.5*||w||²)을 최소화하는 것과 동일한 것이며, 이 용어의 사용은 나중에 이차 프로그래밍(QP) 최적화를 수행할 수 있게 합니다. 따라서 우리는 다음을 찾아야 합니다:
@@ -88,11 +88,11 @@ kwk을 최소화하는 것은 (0.5*||w||²)을 최소화하는 것과 동일한 
 ![TinyMLSupportVectorMachinesClassifier_4](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_4.png)
 
 이 최소화의 제약 사항을 고려하기 위해 Lagrange 배수 α를 할당해야 합니다. 여기서 αi ≥ 0 ∀i 여야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_5.png)
 
 우리는 최소화하는 w와 b 및 최대화하는 α를 찾고 싶습니다 (αi ≥ 0 ∀i를 유지하면서). 이를 위해 LP를 w와 b에 대해 미분하여 도함수를 0으로 설정할 수 있습니다:
@@ -100,11 +100,11 @@ kwk을 최소화하는 것은 (0.5*||w||²)을 최소화하는 것과 동일한 
 ![이미지](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_6.png)
 
 ![이미지](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_7.png)
-```  
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_8.png)
 
 이 새로운 제약 조건 LD는 주 기본 LP의 이중 형식으로 참조됩니다. 중요한 점은 이 이중 형식이 각 입력 벡터 xi의 내적만 계산하면 되므로 커널 트릭에서 중요하다는 점입니다.
@@ -112,7 +112,7 @@ kwk을 최소화하는 것은 (0.5*||w||²)을 최소화하는 것과 동일한 
 LP를 최소화하는 것에서 LD를 최대화하는 것으로 전환한 후, 우리는 다음을 찾아야 합니다:
 
 ![image](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_9.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -126,7 +126,7 @@ LP를 최소화하는 것에서 LD를 최대화하는 것으로 전환한 후, �
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_11.png)
 
 서포트 벡터의 지수 집합을 나타내는 S입니다. S는 αi ` 0인 지수 i를 찾아 결정됩니다. ys로 곱하고 (1.1) 및 (1.2)에서 ys² = 1을 사용하여:
@@ -134,7 +134,7 @@ LP를 최소화하는 것에서 LD를 최대화하는 것으로 전환한 후, �
 ![image](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_12.png)
 
 임의의 서포트 벡터 xs를 사용하는 대신, S에 속하는 모든 서포트 벡터를 평균하는 것이 더 나은 방법입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -150,11 +150,11 @@ LP를 최소화하는 것에서 LD를 최대화하는 것으로 전환한 후, �
 
 아래의 내용을 다음과 같이 결합할 수 있어요:
 
-```
+
 ![img](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_15.png)
 
 ![img](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_16.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -188,7 +188,7 @@ w, b 및 ξi에 대해 미분하고 도함수를 0으로 설정합니다:
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_21.png)
 
 k(xi, xj)는 Kernel Functions라는 함수 패밀리의 예시입니다 (k(xi, xj) = (xi^T)*(xj)가 선형 커널로 알려져 있습니다). 커널 함수의 집합은 두 벡터의 내적을 계산하는 것을 기반으로 하고 있어서 (4.2)의 변형으로 구성되어 있습니다. 이것은 함수들이 어떤 잠재적으로 비선형 특징 매핑 함수 x → φ(x)에 의해 더 높은 차원의 공간으로 다시 구성될 수 있다는 것을 의미합니다. 이는 매핑된 입력들의 내적만 계산하면 되기 때문에 우리는 명시적으로 φ를 계산할 필요가 없다는 것을 뜻합니다.
@@ -196,7 +196,7 @@ k(xi, xj)는 Kernel Functions라는 함수 패밀리의 예시입니다 (k(xi, x
 이 커널 트릭이 유용한 이유는 입력 x의 공간에서 선형적으로 분류/회귀할 수 없는 많은 문제들이 존재하기 때문입니다. 이는 적합한 매핑 x→ φ(x)가 주어진 상태에서 더 높은 차원의 특징 공간에 있을 수 있기 때문입니다.
 
 ![이미지](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_22.png)
-```  
+
 
 <div class="content-ad"></div>
 
@@ -338,7 +338,7 @@ fig = go.Figure()
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 fig.add_trace(go.Scatter3d(x=df['sepal width (cm)'], y= df['petal length (cm)'], z=df['petal width (cm)'], mode='markers', marker=dict(color='blue')))
 ```
@@ -352,7 +352,7 @@ fig.update_layout(scene=dict(xaxis_title='꽃 받침 길이 (cm)', yaxis_title='
 <img src="/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_29.png" />
 
 5 — 훈련 및 테스트 데이터로 분할
-```
+
 
 <div class="content-ad"></div>
 
@@ -367,7 +367,7 @@ model = SVC(gamma=0.0000001, kernel='linear')
 ```
 
 7. Train the model
-```
+
 
 <div class="content-ad"></div>
 
@@ -401,7 +401,7 @@ print(f'Model accuracy: {round(metrics.accuracy_score(y_train, training_predict)
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_32.png)
 
 9 — Hyperlane Train Data Visualization
@@ -471,7 +471,7 @@ print(metrics.confusion_matrix(y_test, test_predict))
 
 <div class="content-ad"></div>
 
-```md
+
 ![image](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_35.png)
 
 ```js
@@ -481,7 +481,7 @@ print(f'모델 정확도: {round(metrics.accuracy_score(y_test, test_predict)*10
 ![image](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_36.png)
 
 11 — 하이퍼플레인 테스트 데이터 시각화
-```
+
 
 <div class="content-ad"></div>
 
@@ -596,7 +596,7 @@ with open('./SVMClassifier/SVMClassifier.h', 'w') as file:
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 #include "SVMClassifier.h"
 ```
@@ -609,7 +609,7 @@ Eloquent::ML::Port::SVM classifier;
 void setup() {
   Serial.begin(115200);
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -711,7 +711,7 @@ best_model.fit(X_train, y_train)
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_39.png)
 
 5-가장 좋은 모델 보고

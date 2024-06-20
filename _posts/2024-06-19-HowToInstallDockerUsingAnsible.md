@@ -30,16 +30,16 @@ docker run --rm -it -v $PWD:/app -v ~/.ssh/id_rsa:/root/.ssh/id_rsa alpinelinux/
 ### 단계 2: Ansible 구성
 Ansible 작업을 실행하려는 기계의 IP 주소를 포함하는 inventory.ini 파일을 준비하십시오. 파일의 샘플 내용은 다음과 같습니다:
 
-```md
+
 [all]
 # 이 경우, node1은 192.168.18.131 IP 주소를 가진 호스트명이며 garis는 sudo 사용자입니다.
 node1 ansible_host=192.168.18.131 ansible_user=garis ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-```
+
 
 ### 단계 3: Docker 설치용 Ansible 플레이북 생성
 다음으로, playbooks라는 디렉토리 아래 docker.yml이라는 플레이북을 생성하십시오. 이 플레이북에는 원격 Ubuntu 서버에 Docker를 설치하는 데 필요한 모든 작업이 포함되어 있습니다. 플레이북은 다음과 같습니다:
 
-```md
+
 ---
 - name: Ubuntu에 Docker 설치
   hosts: all
@@ -122,7 +122,7 @@ node1 ansible_host=192.168.18.131 ansible_user=garis ansible_ssh_common_args='-o
       loop:
         - docker.service
         - containerd.service
-```
+
 
 <div class="content-ad"></div>
 

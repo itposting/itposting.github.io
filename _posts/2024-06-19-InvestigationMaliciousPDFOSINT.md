@@ -67,13 +67,13 @@ PDF는 객체의 조합입니다. 이해해야 할 일부 용어가 있습니다
 
 <div class="content-ad"></div>
 
-```
+
 ![encoded object one by one](/assets/img/2024-06-19-InvestigationMaliciousPDFOSINT_3.png)
 
 opening encoded object one by one
 
 ![better view in VScode or any other code editor tool](/assets/img/2024-06-19-InvestigationMaliciousPDFOSINT_4.png)
-```  
+
 
 <div class="content-ad"></div>
 
@@ -103,7 +103,7 @@ Virustotal의 세부 정보를 확인하고 exe 파일의 해시를 열어야 �
 
 <div class="content-ad"></div>
 
-```
+
 ![InvestigationMaliciousPDFOSINT_10](/assets/img/2024-06-19-InvestigationMaliciousPDFOSINT_10.png)
 
 we see uri in one of the object. Lets investigate into that:
@@ -111,11 +111,11 @@ we see uri in one of the object. Lets investigate into that:
 ![InvestigationMaliciousPDFOSINT_11](/assets/img/2024-06-19-InvestigationMaliciousPDFOSINT_11.png)
 
 what virustotal says about this URL:
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-InvestigationMaliciousPDFOSINT_12.png)
 
 ![이미지](/assets/img/2024-06-19-InvestigationMaliciousPDFOSINT_13.png)
@@ -123,11 +123,11 @@ what virustotal says about this URL:
 ![이미지](/assets/img/2024-06-19-InvestigationMaliciousPDFOSINT_14.png)
 
 VT 커뮤니티 섹션에서 파일 스캔 보고서를 발견했습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-InvestigationMaliciousPDFOSINT_15.png)
 
 커뮤니티 탭과 VirusTotal의 정보를 항상 확인해보세요. 이러한 도구들은 보다 철저한 악성 코드 조사에 도움이 됩니다.
@@ -136,7 +136,7 @@ VT 커뮤니티 섹션에서 파일 스캔 보고서를 발견했습니다.
 
 - [샘플1](https://bazaar.abuse.ch/download/c1290b6740600c80533b4e8f8172f15ca4b3d6d4faab96b56912782a98ac5518/)
 - [샘플2](https://bazaar.abuse.ch/download/3779f1b904ee4cf41f4a266505490682559d09337deb30a2cc08793c2e69385c/)
-```
+
 
 <div class="content-ad"></div>
 

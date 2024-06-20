@@ -101,22 +101,22 @@ Python-3.11.7 설치 중...
 
 <div class="content-ad"></div>
 
-```md
+
 [~]$ pyenv global 3.11.7
 [~]$ pyenv versions
 system
 
 - 3.11.7 (set by /home/vandermeij/.pyenv/version)
-```
+
 
 지금은 Python 3.11.7이 활성화된 Python 버전으로, 전역적이며 시스템 전역으로 적용되었음을 확인했습니다.
 
 다시 한 번 기본 Python 버전을 확인해보세요:
 
-```md
+
 [~]$ which python
 /home/vandermeij/.pyenv/shims/python
-```
+
 
 <div class="content-ad"></div>
 

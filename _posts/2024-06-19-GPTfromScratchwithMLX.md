@@ -74,11 +74,11 @@ First, you know Caius Marcius is chief enemy to the people.
 ...
 ```
 
-먼저 파일을 하나의 긴 문자열로 읽어 text 변수에 저장합니다. 그런 다음 set() 함수를 사용하여 텍스트에 있는 모든 고유한 문자를 얻어서 우리의 어휘가 됩니다. vocab을 출력하여 우리의 어휘에 있는 모든 문자를 하나의 문자열로 볼 수 있으며, 우리는 총 65개의 문자가 있어서 이것이 우리의 토큰이 될 것입니다.```
+먼저 파일을 하나의 긴 문자열로 읽어 text 변수에 저장합니다. 그런 다음 set() 함수를 사용하여 텍스트에 있는 모든 고유한 문자를 얻어서 우리의 어휘가 됩니다. vocab을 출력하여 우리의 어휘에 있는 모든 문자를 하나의 문자열로 볼 수 있으며, 우리는 총 65개의 문자가 있어서 이것이 우리의 토큰이 될 것입니다.
 
 <div class="content-ad"></div>
 
-```md
+
 # 단어장 생성하기
 with open('input.txt', 'r', encoding='utf-8') as f:
     text = f.read()
@@ -89,11 +89,11 @@ print(''.join(vocab))
 # !$&',-.3:;?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 print(vocab_size)
 # 65
-```
+
 
 생산 모델은 바이트 페어 인코딩과 같은 토큰화 알고리즘을 사용하여 하위 단어 청크의 더 큰 어휘를 생성할 것입니다. 오늘 우리의 초점은 아키텍처에 있기 때문에, 문자 수준의 토큰화를 계속할 것입니다. 다음으로, 단어장을 정수로 매핑하여 토큰 ID로 알려진 것으로 이동할 것입니다. 그런 다음 텍스트를 토큰으로 인코딩하고 문자열로 다시 디코딩할 수 있습니다.
 
-```md
+
 # 단어장을 정수로 매핑하기
 itos = {i:c for i,c in enumerate(vocab)} # int to string
 stoi = {c:i for i,c in enumerate(vocab)} # string to int
@@ -104,10 +104,10 @@ print(encode("hello world"))
 # [46, 43, 50, 50, 53, 1, 61, 53, 56, 50, 42]
 print(decode(encode("hello world")))
 # hello world
-```
+
 
 모든 문자 및 해당 어휘의 인덱스를 반복하여 숫자를 문자에 매핑하는 itos와 문자를 숫자에 매핑하는 stoi 사전을 생성하기 위해 enumerate() 함수를 사용합니다. 그런 다음 이러한 매핑을 사용하여 encode 및 decode 함수를 만듭니다. 이제 전체 텍스트를 인코딩하고 훈련 및 검증 데이터로 나눌 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -195,7 +195,7 @@ def get_batches(X, y, b_size, shuffle=True):
 다음은 컨텍스트 길이가 8 인 4 개의 예제의 미니 배치 예제입니다.
 
 ![2024-06-19-GPTfromScratchwithMLX_1.png](/assets/img/2024-06-19-GPTfromScratchwithMLX_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -242,7 +242,7 @@ class GPT(nn.Module):
 ## 위치 임베딩
 
 다음은 위치 임베딩이에요. 위치 임베딩의 목적은 시퀀스에서 각 토큰의 위치에 대한 정보를 인코딩하는 거예요. 이걸 우리의 입력 임베딩에 추가해서 각 토큰의 완전한 표현을 얻을 수 있어요. 그 표현에는 시퀀스에서 토큰의 위치에 대한 정보가 담겨있어요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -279,7 +279,7 @@ def __call__(self, x):
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-GPTfromScratchwithMLX_4.png)
 
 하지만 self-attention은 for-loop를 사용하지 않습니다. 핵심 아이디어는 이전 토큰의 평균을 행렬 곱셈으로 얻을 수 있다는 것입니다!
@@ -287,7 +287,7 @@ def __call__(self, x):
 ![이미지](/assets/img/2024-06-19-GPTfromScratchwithMLX_5.png)
 
 입력 시퀀스를 특별한 행렬로 왼쪽부터 곱하면 원하는 결과를 얻을 수 있습니다. 이 행렬을 주목해보면 이는 어텐션 가중치라고 알려져 있습니다. 어텐션 가중치 행렬의 각 행은 주어진 토큰의 표현에 각 다른 토큰이 얼마나 많이 기여하는지를 나타냅니다. 예를 들어, 두 번째 행의 경우 [0.5, 0.5, 0, 0]입니다. 이것은 두 번째 행의 결과가 0.5*토큰1 + 0.5*토큰2 + 0*토큰3 + 0*토큰4, 즉 토큰1과 토큰2의 평균이 됨을 의미합니다. 어텐션 가중치는 하삼각 행렬입니다 (우상단 항목이 0). 이는 미래 토큰이 주어진 토큰의 표현에 포함되지 않도록 보장합니다. 이는 토큰이 이전 토큰과만 통신할 수 있도록 하며, 생성 중에 모델은 이전 토큰에만 액세스할 수 있는 것이 보장됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -301,7 +301,7 @@ def __call__(self, x):
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-GPTfromScratchwithMLX_7.png)
 
 각 행의 합이 1인 가중치를 계속 얻습니다. 훈련 중에는 왼쪽 행렬의 숫자를 학습하여 각 토큰이 다른 토큰의 표현에 얼마나 많이 참여하는지를 지정할 수 있습니다. 이것이 토큰이 서로에게 "주의"를 기울이는 방법입니다. 그러나 여전히 이 왼쪽 행렬이 어디에서 나왔는지 이해하지 못했습니다. 이러한 사전 소프트맥스 주의 가중치는 토큰 자체에서 계산되지만 간접적으로 세 개의 선형 변환을 통해 수행됩니다.
@@ -309,7 +309,7 @@ def __call__(self, x):
 ## Keys, Queries, and Values
 
 ![이미지](/assets/img/2024-06-19-GPTfromScratchwithMLX_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -332,7 +332,7 @@ class Attention(nn.Module):
 
 <div class="content-ad"></div>
 
-```md
+
 class Attention(nn.Module):
     def __init__(self, head_size):
         super().__init__()
@@ -345,11 +345,11 @@ class Attention(nn.Module):
         K = self.k_proj(x) # (B, T, head_size)
         Q = self.q_proj(x) # (B, T, head_size)
         V = self.v_proj(x) # (B, T, head_size)
-```
+
 
 앞서로부터 전달받은 값으로 key, query, value를 계산한 뒤, 입력 모양을 미래의 편리함을 위해 변수 B, T, C로 나눕니다.
 
-```md
+
 class Attention(nn.Module):
     def __init__(self, head_size):
         super().__init__()
@@ -364,10 +364,10 @@ class Attention(nn.Module):
         V = self.v_proj(x) # (B, T, head_size)
         attn_weights = (Q @ K.transpose([0, 2, 1])) / math.sqrt(self.head_size)
         # attn_weights.shape = (B, T, T)
-```
+
 
 이어서, 어텐션 가중치를 계산합니다. 키 텐서의 마지막 두 차원만 바꿔야 하므로 차원 변환은 마지막 두 차원에 대해서만 이루어집니다. 배치 차원은 여러 학습 예제를 병렬로 전달하기 위한 것뿐입니다. mlx의 전치 함수는 차원의 새로운 순서를 입력으로 받기 때문에, 마지막 두 차원을 전치하기 위해 [0, 2, 1]을 전달합니다. 그리고 여기에 주목할 점: 어텐션 가중치들은 head_size의 제곱근에 역수를 적용합니다. 이는 스케일드 어텐션이라 불리며, 목적은 Q와 K가 단위 분산을 가질 때, attn_weights도 단위 분산을 가지게 하는 것입니다. attn_weights의 분산이 높으면 softmax가 이 작은 값과 큰 값을 0 또는 1로 매핑하여 복잡성이 적은 표현을 얻도록 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -444,7 +444,7 @@ class Attention(nn.Module):
         o = (attn_weights @ V) # (B, T, head_size)
 ```
 
-이제 최종 어텐션 가중치를 얻기 위해 행별로 softmax 처리하고 이러한 가중치를 값에 곱하여 출력을 얻을 수 있습니다. softmax에 axis=-1을 전달하여 행이 있는 마지막 차원을 따라 softmax를 수행하려는 것을 지정합니다.```
+이제 최종 어텐션 가중치를 얻기 위해 행별로 softmax 처리하고 이러한 가중치를 값에 곱하여 출력을 얻을 수 있습니다. softmax에 axis=-1을 전달하여 행이 있는 마지막 차원을 따라 softmax를 수행하려는 것을 지정합니다.
 
 <div class="content-ad"></div>
 
@@ -635,7 +635,7 @@ class MultiHeadAttention(nn.Module):
 # MLP
 
 아키텍처의 다음 부분은 멀티레이어 퍼셉트론 또는 MLP입니다. 이는 2개의 쌓인 선형 레이어를 의미합니다. 여기에 말할 것은 많지 않아요, 이것은 표준 신경망입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -659,7 +659,7 @@ class MLP(nn.Module):
 # 블록
 
 GPT 블록은 주의가 뒤따르는 MLP로 구성됩니다. 이러한 블록은 구조를 깊게 만들기 위해 반복됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -681,7 +681,7 @@ class Block(nn.Module):
 ## 레이어 정규화 및 스킵 연결
 
 ![GPTfromScratchwithMLX_10](/assets/img/2024-06-19-GPTfromScratchwithMLX_10.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -839,7 +839,7 @@ wpe
 wte
 ```
 
-isinstance() 함수를 사용하여 linear 및 embedding 레이어를 찾은 다음 목록에 추가합니다. 예를 들어, "blocks.layers.0.mlp.c_fc"에 도달하는 경우, 이는 MLP의 첫 번째 linear 레이어입니다. 이 경우 첫 번째 if 문이 트리거되어 ("block.layers.0.mlp.c_fc.weight", [`초기화된 weight 값 여기에 추가`])의 튜플이 목록에 추가됩니다. 우리는 특정한 이 방법으로 가중치를 초기화하고자 하기 때문에 이름에 ".weight"를 추가해야 합니다. 이제 잔류 투영 초기화를 처리해야 합니다.```
+isinstance() 함수를 사용하여 linear 및 embedding 레이어를 찾은 다음 목록에 추가합니다. 예를 들어, "blocks.layers.0.mlp.c_fc"에 도달하는 경우, 이는 MLP의 첫 번째 linear 레이어입니다. 이 경우 첫 번째 if 문이 트리거되어 ("block.layers.0.mlp.c_fc.weight", [`초기화된 weight 값 여기에 추가`])의 튜플이 목록에 추가됩니다. 우리는 특정한 이 방법으로 가중치를 초기화하고자 하기 때문에 이름에 ".weight"를 추가해야 합니다. 이제 잔류 투영 초기화를 처리해야 합니다.
 
 <div class="content-ad"></div>
 
@@ -865,7 +865,7 @@ def _init_parameters(self):
 선형 레이어인지 확인한 후 "c_proj"가 이름에 있는지 확인하고, 잔차 투영이라고 명명한 대로 특별한 초기화를 적용할 수 있습니다. 마지막으로 편향을 0으로 초기화해야 합니다.
 
 선형 브랜치 아래에 다른 if 문을 추가하여 nn.Module 객체가 편향 특성을 가지고 있는지 확인합니다. 그런 경우 해당 값을 0으로 초기화된 목록에 추가합니다. 마지막으로 튜플 목록을 중첩된 딕셔너리로 변환해야 합니다. 다행히 mlx에는 매개변수 딕셔너리를 처리하는 기능이 구현되어 있으며,이 목록을 중첩 된 매개변수 딕셔너리로 변환하기 위해 util.tree_unflatten() 함수를 사용할 수 있습니다. 이를 매개변수를 초기화하기 위해 update 메서드에 전달합니다. 이제 생성자에서 _init_parameters()를 호출할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -926,7 +926,7 @@ class GPT(nn.Module):
 
 # 훈련 루프
 
-모델을 훈련하기 위해서는 손실 함수가 필요합니다. 다음 토큰을 예측하므로 교차 엔트로피 손실을 사용합니다.```
+모델을 훈련하기 위해서는 손실 함수가 필요합니다. 다음 토큰을 예측하므로 교차 엔트로피 손실을 사용합니다.
 
 <div class="content-ad"></div>
 
@@ -951,7 +951,7 @@ optimizer = optim.AdamW(learning_rate=lr)
 ```
 
 다음으로, 모델을 인스턴스화합니다. 그러나 mlx는 게으르게 평가되기 때문에 파라미터가 할당되고 생성되지 않습니다. 파라미터에 mx.eval을 호출하여 생성되도록 보장해야 합니다. 그런 다음 nn.value_and_grad()를 사용하여 손실 및 모델 파라미터의 그래디언트를 반환하는 함수를 얻을 수 있습니다. 이것이 우리가 최적화하는 데 필요한 모든 것입니다. 마지막으로 AdamW 옵티마이저를 초기화합니다.
-```  
+
 
 <div class="content-ad"></div>
 
@@ -989,18 +989,18 @@ for epoch in range(num_epochs):
 
 <div class="content-ad"></div>
 
-```
+
 completion = decode(model.generate(1000)[0].tolist())
 print(completion)
 with open('completions.txt', 'w') as f:
     f.write(completion)
-```
+
 
 마지막으로, 모델에서 생성하는 코드를 추가합니다. 생성 결과는 여전히 (B, T) 형태이므로 0에서 색인화하여 1차원으로 만든 다음 mlx 배열을 Python 리스트로 변환해야 합니다. 그런 다음 앞서 설명한 decode 함수에 전달하고 파일에 쓸 수 있습니다.
 
 다음은 학습에 사용할 매개변수입니다 (이를 변경해보실 수 있습니다):
 
-```
+
 ctx_len = 128
 n_emb = 128
 dropout = 0.1
@@ -1010,7 +1010,7 @@ n_layers = 3
 num_epochs = 20
 batch_size = 64
 lr = 1e-3
-```
+
 
 <div class="content-ad"></div>
 

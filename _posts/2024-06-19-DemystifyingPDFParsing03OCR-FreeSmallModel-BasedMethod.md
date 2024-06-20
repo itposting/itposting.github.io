@@ -345,7 +345,7 @@ class BARTDecoder(nn.Module):
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-DemystifyingPDFParsing03OCR-FreeSmallModel-BasedMethod_0.png)
 
 생성된 예시는 그림 3에 나와 있습니다. 샘플은 여러 구성 요소로 구성됩니다: 배경, 문서, 텍스트, 레이아웃.
@@ -356,7 +356,7 @@ class BARTDecoder(nn.Module):
 - 레이아웃은 그리드를 무작위로 배치하는 간단한 규칙 기반 알고리즘에 의해 생성됩니다.
 
 또한 다양한 이미지 렌더링 기술을 사용하여 실제 문서를 흉내 냅니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -507,7 +507,7 @@ def split_markdown(
 
 두 번째 도전 과제는 PDF의 차트가 마크다운 파일의 위치와 정렬되지 않는 것입니다.
 
-이를 해결하기 위해 누가트는 먼저 pdffigures2를 사용하여 차트를 추출합니다. 인식된 제목은 TeX 소스 코드 내의 제목들과 Levenshtein 거리를 기반으로 일치시킵니다. 이 방법을 사용하면 각 그림 또는 표의 TeX 소스 코드 및 페이지 번호를 결정할 수 있습니다. Figure 7의 JSON 구조는 차트 제목과 해당 페이지 번호를 포함합니다.```
+이를 해결하기 위해 누가트는 먼저 pdffigures2를 사용하여 차트를 추출합니다. 인식된 제목은 TeX 소스 코드 내의 제목들과 Levenshtein 거리를 기반으로 일치시킵니다. 이 방법을 사용하면 각 그림 또는 표의 TeX 소스 코드 및 페이지 번호를 결정할 수 있습니다. Figure 7의 JSON 구조는 차트 제목과 해당 페이지 번호를 포함합니다.
 
 <div class="content-ad"></div>
 
@@ -579,9 +579,9 @@ Pix2Struct은 ViT를 기반으로 한 이미지 인코더-텍스트 디코더입
 
 Pix2Struct의 구조는 논문에 그림으로 표시되어 있지 않으며 온라인에서도 찾을 수 없기 때문에, ViT 구조를 기반으로 한 참조 다이어그램을 제공합니다. Figure 8에 나와있는 것과 같이.
 
-```
+
 ![Pix2Struct Architecture](/assets/img/2024-06-19-DemystifyingPDFParsing03OCR-FreeSmallModel-BasedMethod_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -630,7 +630,7 @@ Pix2Struct는 HTML 소스 파일과 쌍을 이루는 8000만 개의 스크린샷
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-DemystifyingPDFParsing03OCR-FreeSmallModel-BasedMethod_6.png)
 
 ## Fine-tuning
@@ -638,7 +638,7 @@ Pix2Struct는 HTML 소스 파일과 쌍을 이루는 8000만 개의 스크린샷
 Fine-tuning Pix2Struct starts with preprocessing the downstream data. This step guarantees that the image input and text output precisely reflect the task.
 
 ![image](/assets/img/2024-06-19-DemystifyingPDFParsing03OCR-FreeSmallModel-BasedMethod_7.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -706,7 +706,7 @@ Pix2Struct의 실험에 따르면, 그의 성능은 여러 작업에서 도넛�
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-DemystifyingPDFParsing03OCR-FreeSmallModel-BasedMethod_11.png)
 
 Furthermore, Nougat can conveniently acquire table captions and associate them with corresponding tables.
@@ -714,11 +714,11 @@ Furthermore, Nougat can conveniently acquire table captions and associate them w
 ## Pipeline-Based vs. OCR-Free
 
 Figure 17 compares the overall architecture and performance of two methods. The upper left illustrates the pipeline-based method, while Donut model is represented on the lower left.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-DemystifyingPDFParsing03OCR-FreeSmallModel-BasedMethod_12.png)
 
 Figure 17의 오른쪽에 나타난 것처럼, 도넛은 파이프라인 기반 방법에 비해 저장 공간을 적게 사용하고 더 높은 정확성을 제공합니다. 그러나 느린 속도로 작동합니다. 다른 OCR 무료 솔루션이 도넛과 유사합니다.
@@ -726,7 +726,7 @@ Figure 17의 오른쪽에 나타난 것처럼, 도넛은 파이프라인 기반 
 ## OCR-Free Small Model-Based Method의 제한사항
 
 - 파이프라인 기반 방법은 여러 모델을 사용하지만 각 모델은 가벼워요. 총 매개변수 수는 OCR 무료 모델보다 중요하게 적을 수 있습니다. 이 요소는 대규모 배포에 대해 도전을 제공할 수 있으며 OCR 무료 모델의 느린 구문 분석 속도로 이어질 수 있습니다. 예를 들어, 작은 모델이지만 Nougat의 매개변수 양은 250MB 또는 350MB입니다. 그러나 Nougat 논문에 명시된대로 생성 속도가 느립니다:
-```
+
 
 <div class="content-ad"></div>
 

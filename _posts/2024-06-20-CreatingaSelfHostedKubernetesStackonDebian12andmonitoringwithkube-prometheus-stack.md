@@ -60,11 +60,11 @@ link: "https://medium.com/@safewebbox/creating-a-self-hosted-kubernetes-stack-on
 
 <div class="content-ad"></div>
 
-```
+
 Master Node - kube-master - 10.10.0.100 
 Worker Node 1 - kube-worker01 - 10.10.0.101 
 Worker Node 2 - kube-worker02 - 10.10.0.102
-```
+
 
 ## 기본 OS 설정
 
@@ -150,7 +150,7 @@ sudo ufw allow 30000:32767/tcp
 sudo ufw reload
 ```
 
-## Containerd 설치하기```
+## Containerd 설치하기
 
 <div class="content-ad"></div>
 
@@ -216,18 +216,18 @@ sudo nano /etc/containerd/config.toml
 
 <div class="content-ad"></div>
 
-```
+
 시스템디C그룹 = true
-```
+
 
 저장하고 나가기
 
 컨테이너디 다시 시작 및 활성화
 
-```
+
 sudo systemctl restart containerd
 sudo systemctl enable containerd
-```
+
 
 <div class="content-ad"></div>
 
@@ -254,7 +254,7 @@ sudo apt install kubelet kubeadm kubectl -y
 sudo apt-mark hold kubelet kubeadm kubectl
 ```
 
-# Kubernetes 클러스터 설치```
+# Kubernetes 클러스터 설치
 
 <div class="content-ad"></div>
 
@@ -383,7 +383,7 @@ sudo kubeadm k8s-master:6443에 가입 --token 21nm87.x1lgd4jf0lqiiiau \\
 
 # 테스트 워커 노드가 올바르게 가입되었습니다.
 
-마스터 노드에서 실행하기```
+마스터 노드에서 실행하기
 
 <div class="content-ad"></div>
 
@@ -401,7 +401,7 @@ k8s-worker02.safewebbox.com   Ready    <none>          23시간   v1.28.11
 ```
 
 # Pod Networking
-```
+
 
 <div class="content-ad"></div>
 
@@ -442,7 +442,7 @@ watch kubectl get pods -n kube-system
 
 <div class="content-ad"></div>
 
-```
+
 이름                                                준비됨   상태    재시작      나이
 **calico-kube-controllers-7ddc4f45bc-sfjh5            1/1     실행중   0             24시간
 calico-node-r5x4f                                   1/1     실행중   0             24시간
@@ -457,14 +457,14 @@ kube-proxy-5t2sj                                    1/1     실행중   0       
 kube-proxy-89ldw                                    1/1     실행중   0             24시간
 kube-proxy-ckwl2                                    1/1     실행중   0             24시간
 kube-scheduler-k8s-master.safewebbox.com            1/1     실행중   3 (23시간 전)   24시간
-```
+
 
 ## 노드 확인
 
 마스터 노드에서 실행
 
 실행
-```
+
 
 <div class="content-ad"></div>
 
@@ -557,13 +557,13 @@ users:
 
 로컬 머신에서
 
-내보내기 설정```
+내보내기 설정
 
 <div class="content-ad"></div>
 
-```md
+
 export KUBECONFIG=~/.kube/config
-```
+
 
 ## kubectl 명령어 테스트
 
@@ -602,7 +602,7 @@ client-key-data: DATA+OMITTED
 ```
 
 ## Lens 설정
-```
+
 
 <div class="content-ad"></div>
 
@@ -675,7 +675,7 @@ users:
 하이퍼스케일러 또는 제공된 버전의 Kubernetes와 자체 호스팅/온프렘 Kubernetes 설치의 주요 차이점은 간단합니다. Kubernetes 서비스 모델은 인그레스 포인트, 로드 밸런서, 지속적인 데이터 및 기타 여러 가지를 포함한 전체 설정을 제공할 것입니다.
 
 하지만 자체 호스팅된 구성에서는 이러한 것들을 설정해주어야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -782,7 +782,7 @@ kubectl get deploy,rs,po
 
 <div class="content-ad"></div>
 
-```
+
 **이름                    준비 상태   최신 상태   이용 가능   나이**
 deployment.apps/nginx   3/3        3           3           2분 8초
 
@@ -793,20 +793,20 @@ replicaset.apps/nginx-6d777db949   3            3          3          2분 8초
 pod/nginx-6d777db949-jttpw   1/1         실행 중       0          23초
 pod/nginx-6d777db949-qmdk8   1/1         실행 중       0          23초
 pod/nginx-6d777db949-sr8x6   1/1         실행 중       0          2분 8초
-```
+
 
 위 배포에 대한 로드 밸런서 서비스를 생성해주세요
 
-```
+
 kubectl expose deploy/nginx --type=LoadBalancer --port=80
-```
+
 
 우리가 만든 nginx 서비스에 대해 설명해주세요
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 kubectl get svc
 kubectl describe svc/nginx
@@ -1240,7 +1240,7 @@ prometheus-kube-prometheus-stack-prometheus-0               2/2         실행 �
 watch kubectl get pod -n monitoring
 ```
 
-위 명령을 사용해 주세요. 이 명령은 출력이 변경될 때마다 위의 결과를 업데이트합니다.```
+위 명령을 사용해 주세요. 이 명령은 출력이 변경될 때마다 위의 결과를 업데이트합니다.
 
 <div class="content-ad"></div>
 
@@ -1270,9 +1270,9 @@ kubectl get svc -n monitoring
 
 아래와 같이 YAML 파일을 만들어주세요.
 
-```
+
 nano servicemonitor.yaml
-```
+
 
 다음 내용을 추가해주세요.
 
@@ -1328,7 +1328,7 @@ servicemonitor.monitoring.coreos.com/prometheus-self가 생성되었습니다.
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-CreatingaSelfHostedKubernetesStackonDebian12andmonitoringwithkube-prometheus-stack_3.png)
 
 # Alert Manager
@@ -1336,7 +1336,7 @@ servicemonitor.monitoring.coreos.com/prometheus-self가 생성되었습니다.
 ## URL
 
 http://10.10.0.242:9093
-```
+
 
 <div class="content-ad"></div>
 
@@ -1361,11 +1361,11 @@ http://10.10.0.241
 
 <div class="content-ad"></div>
 
-```
+
 ![PreInstalled Dashboards](/assets/img/2024-06-20-CreatingaSelfHostedKubernetesStackonDebian12andmonitoringwithkube-prometheus-stack_6.png)
 
 ![PreInstalled Dashboards](/assets/img/2024-06-20-CreatingaSelfHostedKubernetesStackonDebian12andmonitoringwithkube-prometheus-stack_7.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -1417,7 +1417,7 @@ loki-loki-distributed-query-frontend-6db884fbdd-zfs2s       1/1     Running   0 
 prometheus-kube-prometheus-stack-prometheus-0               2/2     Running   0          23시간
 ```
 
-시작할 때 변경 사항을 보기 위해 watch 명령어를 사용하세요.```
+시작할 때 변경 사항을 보기 위해 watch 명령어를 사용하세요.
 
 <div class="content-ad"></div>
 

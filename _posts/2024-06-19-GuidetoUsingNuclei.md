@@ -75,7 +75,7 @@ subfinder -d targetdomain.site -silent | httpx | nuclei -t http/exposures/
 
 # 템플릿
 
-템플릿은 Nuclei가 스캔 중에 무엇을 찾을지를 정의합니다. 특정 유형의 취약점에 대한 것이거나 보다 일반적인 내용일 수도 있습니다.```
+템플릿은 Nuclei가 스캔 중에 무엇을 찾을지를 정의합니다. 특정 유형의 취약점에 대한 것이거나 보다 일반적인 내용일 수도 있습니다.
 
 <div class="content-ad"></div>
 

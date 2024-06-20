@@ -41,7 +41,7 @@ link: "https://medium.com/@gektor650/comparing-video-stream-latencies-raspberry-
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-RaspberryPi5VideoStreamLatenciesComparingUDPTCPRTSPandWebRTC_1.png)
 
 - 라즈베리 파이 5
@@ -51,7 +51,7 @@ link: "https://medium.com/@gektor650/comparing-video-stream-latencies-raspberry-
 운영 체제로는 최신 공식 Debian Bookworm 포트를 사용하고 있습니다. 사용자 지정 설정은 없으며 모든 것은 공식 라즈베리 스토어와 라즈베리 파이 이미저에서 찾을 수 있습니다.
 
 ![이미지](/assets/img/2024-06-19-RaspberryPi5VideoStreamLatenciesComparingUDPTCPRTSPandWebRTC_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -169,7 +169,7 @@ rpicam-vid -t 0 --inline -o - | cvlc stream:///dev/stdin --sout '#rtp{sdp=rtsp:/
 
 ![image](/assets/img/2024-06-19-RaspberryPi5VideoStreamLatenciesComparingUDPTCPRTSPandWebRTC_10.png)
 
-...... 네. 작동하지 않아요.```
+...... 네. 작동하지 않아요.
 
 <div class="content-ad"></div>
 
@@ -197,11 +197,11 @@ rpicam-vid -t 0 --width 1280 --height 720 --framerate 30 --codec libav --libav-f
 ffplay tcp://라즈베리파이IP주소:1234 -vf "setpts=N/30" -fflags nobuffer -flags low_delay -framedrop
 ```
 
-의외로 LibAv는 큰 딜레이가 있습니다 — 약 10.5초가 됩니다. 기본 코덱과 TCP로는 0.5초였으나, 이제 10.5초가 소요됩니다.```
+의외로 LibAv는 큰 딜레이가 있습니다 — 약 10.5초가 됩니다. 기본 코덱과 TCP로는 0.5초였으나, 이제 10.5초가 소요됩니다.
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-RaspberryPi5VideoStreamLatenciesComparingUDPTCPRTSPandWebRTC_11.png)
 
 차량에 적용하면 그 지연 시간으로 인해 차량이 필드 밖으로 멀리 나갈 것을 볼 수 있습니다. 200야드 또는 190미터입니다. 농담이 아닙니다.
@@ -209,7 +209,7 @@ ffplay tcp://라즈베리파이IP주소:1234 -vf "setpts=N/30" -fflags nobuffer 
 ![Image](/assets/img/2024-06-19-RaspberryPi5VideoStreamLatenciesComparingUDPTCPRTSPandWebRTC_12.png)
 
 # Raspberry PI 5 UDP 비디오 스트림과 libav 코덱 (mpegts)
-```
+
 
 <div class="content-ad"></div>
 
@@ -283,7 +283,7 @@ nano mediamtx.yml
 ```
 
 - 일곱 번째로, 아래로 스크롤하고 이 구성을 붙여넣습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -297,7 +297,7 @@ cam1:
 
 그 다음 RPICAM-VID 명령어에게 (이전에 다뤘던 것과 동일하게) 스트림을 FFMPEG로 보내도록 요청할 겁니다.
 
-FFMPEG은 그것을 RTSP 프로토콜을 통해 로컬로 MediaMTX로 보낼 겁니다.```
+FFMPEG은 그것을 RTSP 프로토콜을 통해 로컬로 MediaMTX로 보낼 겁니다.
 
 <div class="content-ad"></div>
 
@@ -356,7 +356,7 @@ http://RASPBERRY_PI_IP_HERE:8889/cam1
 전체 화면으로 변경해보고, 지연 시간을 확인해 보세요.
 
 ![Raspberry Pi Video Stream Latencies Comparing UDP, TCP, RTSP, and WebRTC](/assets/img/2024-06-19-RaspberryPi5VideoStreamLatenciesComparingUDPTCPRTSPandWebRTC_20.png)
-```
+
 
 <div class="content-ad"></div>
 

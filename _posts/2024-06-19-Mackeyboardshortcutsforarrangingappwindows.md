@@ -21,7 +21,7 @@ Microsoft Windows는 이동하는 단축키를 기본으로 제공하는 반면,
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-Mackeyboardshortcutsforarrangingappwindows_0.png)
 
 - Or open an app’s Window menu (Hold ⎇ for more options)
@@ -29,7 +29,7 @@ Microsoft Windows는 이동하는 단축키를 기본으로 제공하는 반면,
 ![image](/assets/img/2024-06-19-Mackeyboardshortcutsforarrangingappwindows_1.png)
 
 and select the option you want, for example:
-```  
+
 
 <div class="content-ad"></div>
 
@@ -55,7 +55,7 @@ and select the option you want, for example:
 
 <div class="content-ad"></div>
 
-```
+
 ![image1](/assets/img/2024-06-19-Mackeyboardshortcutsforarrangingappwindows_2.png)
 
 4. 대화 상자 안에 세 가지 입력 사항이 있습니다:
@@ -70,7 +70,7 @@ and select the option you want, for example:
 기존 단축키와 충돌하지 않도록 주의하세요.
 
 ![image2](/assets/img/2024-06-19-Mackeyboardshortcutsforarrangingappwindows_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -88,7 +88,7 @@ C49RG9x는 제 외부 모니터의 이름인데, 여러분의 것은 다를 수 
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-06-19-Mackeyboardshortcutsforarrangingappwindows_4.png](/assets/img/2024-06-19-Mackeyboardshortcutsforarrangingappwindows_4.png)
 
 바로 가기 키를 기억하기 위해서, 모든 키가 서로 옆에 있다는 것을 유의해 주세요. 다른 화살표 키를 사용하면 됩니다. 또한, 다른 모니터로 이동하는 것은 동일한 모니터에서 창을 분할 보기로 이동하는 것보다 한 키가 더 필요합니다.
@@ -96,7 +96,7 @@ C49RG9x는 제 외부 모니터의 이름인데, 여러분의 것은 다를 수 
 각 앱은 다른 기본 바로 가기 키를 가질 수 있습니다. 따라서 이러한 바로 가기 키를 방해하지 않도록 4와 5 키를 사용했습니다.
 
 더 생산적으로 작업할 수 있기를 바라겠습니다.
-```
+
 
 <div class="content-ad"></div>
 

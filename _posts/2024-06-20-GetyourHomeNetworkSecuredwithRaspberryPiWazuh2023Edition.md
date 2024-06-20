@@ -89,13 +89,13 @@ Raspberry용 Wazuh 설치에 대해 알아야 할 몇 가지 사항이 있습니
 
 이 표 태그를 Markdown 형식으로 바꾸세요.
 
-```
+
 Create a Markdown table:
 
 | Header 1 | Header 2 |
 |----------|----------|
 | Content 1| Content 2|
-```
+
 
 <div class="content-ad"></div>
 
@@ -188,7 +188,7 @@ Wazuh에 데이터를 가져오도록 몇 분 정도 기다리시고, 여기서 
 
 <div class="content-ad"></div>
 
-```
+
 ![Get your Home Network Secured with Raspberry Pi Wazuh 2023 Edition](/assets/img/2024-06-20-GetyourHomeNetworkSecuredwithRaspberryPiWazuh2023Edition_4.png)
 
 Then create your bot, and fetch your HTTP API Token:
@@ -196,7 +196,7 @@ Then create your bot, and fetch your HTTP API Token:
 ![Get your Home Network Secured with Raspberry Pi Wazuh 2023 Edition](/assets/img/2024-06-20-GetyourHomeNetworkSecuredwithRaspberryPiWazuh2023Edition_5.png)
 
 ## 텔레그램과의 사용자 정의 통합 관리 방법
-```
+
 
 <div class="content-ad"></div>
 
@@ -342,10 +342,9 @@ Wazuh 관리자를 재시작하려면 systemctl restart wazuh-manager를 실행�
 
 <div class="content-ad"></div>
 
-```
+
 ![Raspberry Pi Wazuh Edition](/assets/img/2024-06-20-GetyourHomeNetworkSecuredwithRaspberryPiWazuh2023Edition_6.png)
 
 Congratulations!
 
 Feel free to add me on LinkedIn!
-```

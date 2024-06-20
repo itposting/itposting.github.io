@@ -82,7 +82,7 @@ sudo apt install ubuntu-desktop gnome
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-GnomeDesktoponWSL-2UsingUbuntu_2.png)
 
 VcXsrv를 시작하면 전체 검은 화면이 표시될 수 있습니다. 이는 아직 내용이 채워지지 않은 전체 화면의 효과입니다. Alt-Tab을 눌러 WSL의 Ubuntu 명령줄로 전환할 수 있습니다.
@@ -92,4 +92,3 @@ VcXsrv를 시작하면 전체 검은 화면이 표시될 수 있습니다. 이�
 - 사용하지 않을 때는 GNOME을 그냥 둘 수 있습니다. 그러나 GNOME을 종료하려면 VcXsrv 창을 닫거나 WSL의 Ubuntu 명령줄에서 Ctrl-C를 누르면 됩니다.
 
 성능이 조금 느릴 수 있습니다. 지금은 GPU 가속화를 활성화하는 방법을 모르겠지만, 이것이 시작점입니다!
-```

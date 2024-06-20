@@ -307,7 +307,7 @@ for i in range(N_INST_TEST):
     print(f"\033[95mORTHOGONALIZED COMPLETION:\n{orthogonalized_generations[i]}\n")
 ```
 
-이제 모델을 사용할 준비가 되었습니다. 모델을 Hugging Face 형식으로 변환하여 HF 허브에 업로드합니다.```
+이제 모델을 사용할 준비가 되었습니다. 모델을 Hugging Face 형식으로 변환하여 HF 허브에 업로드합니다.
 
 <div class="content-ad"></div>
 
@@ -336,7 +336,7 @@ hf_model.push_to_hub(f"{MODEL_ID}-abliterated")
 이전 섹션의 abliterated 및 소스 모델을 Open LLM Leaderboard 및 Nous의 벤치마크 스위트에서 평가했습니다. 여기에 결과가 있습니다:
 
 <img src="/assets/img/2024-06-19-UncensoranyLLMwithabliteration_2.png" />
-```
+
 
 <div class="content-ad"></div>
 

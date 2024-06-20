@@ -31,7 +31,7 @@ X를 비어 있지 않은 집합이라고 하고, 커널 k가 다음과 같이 �
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_1.png" />
 
 입력 x를 사용하는 함수 f를 고려해 봅시다. 여기서 x는 (x₁, x₂)로 정의된 벡터입니다.
@@ -39,11 +39,11 @@ X를 비어 있지 않은 집합이라고 하고, 커널 k가 다음과 같이 �
 <img src="/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_2.png" />
 
 함수 f(・)는 ℝ²를 ℝ에 매핑하는 함수 공간의 원소입니다. 이 예제에서는 이 함수 공간에서 f(・)를 ℝ³로 표현할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_3.png)
 
 Given the function
@@ -51,11 +51,11 @@ Given the function
 ![image](/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_4.png)
 
 The linear functional f can be represented as:
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_5.png" />
 
 보통 임의의 함수는 피처 𝜙(𝑥)의 선형 조합으로 나타낼 수 있습니다. x에서 f를 평가하는 𝑓(𝑥)는 피처 공간에서의 내적입니다:
@@ -63,11 +63,11 @@ The linear functional f can be represented as:
 <img src="/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_6.png" />
 
 예를 들어, x = (-1, 4)에서 평가된 f는
-```  
+
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_7.png)
 
 ## 무한 차원의 특성 공간
@@ -75,7 +75,7 @@ The linear functional f can be represented as:
 이 개념은 자연스럽게 무한 차원의 특성 공간으로 확장됩니다. 예를 들어, 우리는 지수 함수 eˣ를 이용하여 그의 테일러 급수 표현을 확장할 수 있습니다.
 
 ![이미지](/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -95,9 +95,9 @@ The linear functional f can be represented as:
 
 X의 x에서의 평가 기능 L은 다음과 같이 정의됩니다.
 
-```
+
 <img src="/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_11.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -123,9 +123,9 @@ X의 x에서의 평가 기능 L은 다음과 같이 정의됩니다.
 
 리즈 표현 정리는 힐버트 공간에서의 모든 연속 선형 함수 L이 F의 고정된 요소와의 내적으로 표현될 수 있다는 것을 명시합니다. 공식적으로, 힐버트 공간 F에서 어떤 연속 선형 함수 𝐿에 대해,
 
-```
+
 ![리즈 표현 정리](/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_14.png)
-```
+
 
 리즈 표현 정리는 선형 함수의 추상적 세계를 보다 익숙한 내적 개념으로 이어주어, 선형 함수를 내적의 기하학적 직관을 사용해 이해하고 조작할 수 있게 합니다. 본질적으로, 리즈 표현 정리는 힐버트 공간 H의 모든 연속 선형 함수에 대해, 그 함수를 완전히 나타내는 동일한 H 내의 고유 요소가 존재함을 명시합니다. 이는 선형 함수를 고정된 "대표" 벡터와의 내적으로 생각할 수 있다는 것을 의미합니다. 이는 힐버트 공간에서 선형 함수와 내적 사이의 근본적인 연결을 확립합니다. 복제 커널 힐버트 공간(RKHS)의 맥락에서, 이 개념은 함수의 평가가 커널 함수와의 내적을 사용하여 계산될 수 있음을 보여주기 위해 확장됩니다.
 
@@ -188,7 +188,7 @@ X의 x에서의 평가 기능 L은 다음과 같이 정의됩니다.
 
 <div class="content-ad"></div>
 
-```
+
 ![Reproducing Kernel Hilbert Space for Machine Learning](/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_24.png)
 
 Functional analysis has traditionally been utilized to examine the characteristics of transformational functions like the Fourier transform. To demonstrate this, let's take a look at an aperiodic pulse function.
@@ -196,11 +196,11 @@ Functional analysis has traditionally been utilized to examine the characteristi
 ![Aperiodic Pulse Function](/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_25.png)
 
 The Fourier transform of the aperiodic pulse function 𝑓(𝑥) is:
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_26.png)
 
 예를 들어,
@@ -208,7 +208,7 @@ The Fourier transform of the aperiodic pulse function 𝑓(𝑥) is:
 ![이미지](/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_27.png)
 
 아래 예시에서 우리는 함수(1, cos(𝑥), cos(2𝑥), cos(3𝑥), ...)를 기저로 사용하여 계단 함수를 나타냅니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -220,7 +220,7 @@ The Fourier transform of the aperiodic pulse function 𝑓(𝑥) is:
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_29.png" />
 
 '𝑓(𝑥)'가 어떻게 커널 'k'를 복제하는지 알아봅시다.
@@ -228,7 +228,7 @@ The Fourier transform of the aperiodic pulse function 𝑓(𝑥) is:
 <img src="/assets/img/2024-06-19-ReproducingKernelHilbertSpaceforMachineLearning_30.png" />
 
 이를 위해 '𝑓(𝑥)'를 특정 포인트의 커널들의 선형 결합으로 표현합니다.
-```
+
 
 <div class="content-ad"></div>
 

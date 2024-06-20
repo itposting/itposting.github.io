@@ -136,7 +136,7 @@ Alexa와 음성 제어 통합
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-OutdoorAlexaSpeakersTop7WithProsCons_4.png)
 
 Check price on Amazon
@@ -144,7 +144,7 @@ Check price on Amazon
 Download the Alexa application on your smartphone, press the button on the Oontz speaker, and instruct Alexa to initiate music playback, manage smart devices, inquire about weather forecasts, and retrieve news updates. The speaker showcases excellent audio quality and possesses an impressive wireless range of 100 feet. The battery has a lifespan of up to 14 hours on a single charge, making it a top-notch affordable portable speaker.
 
 # Pros
-```
+
 
 <div class="content-ad"></div>
 

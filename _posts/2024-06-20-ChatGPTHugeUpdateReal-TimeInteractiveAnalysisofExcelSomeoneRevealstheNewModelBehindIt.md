@@ -89,7 +89,7 @@ OpenAI는 계속해서 트렌드 세터 역할을 하고, 종종 다른 기술 �
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-20-ChatGPTHugeUpdateReal-TimeInteractiveAnalysisofExcelSomeoneRevealstheNewModelBehindIt_11.png)
 
 Regardless, the rivalry benefits users with continuous advancements.
@@ -97,7 +97,7 @@ Regardless, the rivalry benefits users with continuous advancements.
 It’s been an exciting week for AI enthusiasts and professionals alike.
 
 ![Image 2](/assets/img/2024-06-20-ChatGPTHugeUpdateReal-TimeInteractiveAnalysisofExcelSomeoneRevealstheNewModelBehindIt_12.png)
-```
+
 
 <div class="content-ad"></div>
 

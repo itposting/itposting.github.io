@@ -78,7 +78,7 @@ display(data)
 
 <div class="content-ad"></div>
 
-```
+
 ![Forecasting Stock Using Deep Reinforcement Learning - 0](/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_0.png)
 
 ![Forecasting Stock Using Deep Reinforcement Learning - 1](/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_1.png)
@@ -86,7 +86,7 @@ display(data)
 이 코드는 Python으로 작성된 'huge stock market'이라는 Kaggle 데이터 세트에서 데이터를 가져옵니다. 초기에 코드는 데이터 세트 내 'goog.us.txt'라는 CSV 파일에서 데이터를 읽습니다. 코드는 CSV 파일을 읽은 후 'Date' 열을 Pandas 라이브러리를 사용하여 Pandas datetime 객체로 변환합니다. 데이터는 'Date' 열로 인덱싱됩니다. 'AAPL' 주식에 대한 데이터는 지정된 파일이 발견되지 않을 경우 Pandas DataReader를 사용하여 Yahoo Finance로부터 얻습니다.
 
 그런 다음 코드는 가져온 데이터의 최소 날짜와 최대 날짜를 표시합니다. Pandas의 슬라이싱 기능을 사용하여 데이터를 교육 및 테스트 두 부분으로 분할합니다. 분할 인덱스는 데이터의 길이의 절반으로 계산되고 해당 날짜가 'date_split'으로 저장됩니다. 'train' 변수에는 분할 인덱스까지의 데이터가 포함되고, 'test' 변수에는 분할 인덱스 이후의 데이터가 포함됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -136,7 +136,7 @@ plot_train_test(train, test, date_split)
 
 위 코드는 "plot_train_test"라는 사용자 정의 함수를 호출하는 것으로 보입니다. 이 함수의 세 가지 인수는 'train', 'test', 'date_split'입니다. 'train'과 'test'는 각각 훈련 및 테스트 데이터를 포함하는 Pandas 데이터프레임입니다. 'date_split'은 데이터가 훈련 및 테스트로 분리된 날짜를 나타냅니다.
 
-'plot_train_test' 함수는 훈련 및 테스트 데이터를 시각화하는 플롯을 생성합니다. 코드가 가져온 주식 시장 데이터를 플롯하여 Jupyter 노트북에 표시하는 데 이 함수를 사용할 수 있습니다. 이 함수의 구현이 제공되지 않았으므로 플롯을 생성하는 방법에 대한 자세한 내용을 제공하기 어렵습니다.```
+'plot_train_test' 함수는 훈련 및 테스트 데이터를 시각화하는 플롯을 생성합니다. 코드가 가져온 주식 시장 데이터를 플롯하여 Jupyter 노트북에 표시하는 데 이 함수를 사용할 수 있습니다. 이 함수의 구현이 제공되지 않았으므로 플롯을 생성하는 방법에 대한 자세한 내용을 제공하기 어렵습니다.
 
 <div class="content-ad"></div>
 
@@ -355,7 +355,7 @@ def train_dqn(env, epoch_num=50):
 
 이 코드는 간단한 주식 거래 환경을 위해 Deep Q-Network(DQN)을 훈련하는 train_dqn() 함수를 정의합니다. 이 함수는 두 개의 매개변수를 사용합니다: 거래 환경을 나타내는 env 매개변수와 몇 번의 에포크를 훈련할지를 지정하는 epoch_num 매개변수입니다.
 
-코드는 Chainer의 Chain 클래스의 하위 클래스인 Q_Network 클래스를 정의합니다. Q-Network에는 첫 번째 두 레이어에 ReLU 활성화 함수가 있는 세 개의 완전 연결 레이어가 있습니다. 모델 그래디언트는 reset() 메서드에 의해 초기화됩니다.```
+코드는 Chainer의 Chain 클래스의 하위 클래스인 Q_Network 클래스를 정의합니다. Q-Network에는 첫 번째 두 레이어에 ReLU 활성화 함수가 있는 세 개의 완전 연결 레이어가 있습니다. 모델 그래디언트는 reset() 메서드에 의해 초기화됩니다.
 
 <div class="content-ad"></div>
 
@@ -413,7 +413,7 @@ plot_loss_reward(total_losses, total_rewards)
 
 이 코드는 "plot_loss_reward"라는 사용자 정의 함수를 호출합니다. 'total_losses'와 'total_rewards'라는 두 인자를 허용합니다. 이는 각 훈련 에폭마다 총 손실 값과 총 보상 값의 목록입니다.
 
-Plot_loss_reward는 훈련 에폭을 통해 손실 및 보상 값의 추세를 시각화하는 플롯을 생성합니다. 주식 시장 예측에 사용되는 DQN 모델의 훈련 중에는 코드가 이 함수를 사용하여 손실 및 보상 값을 플롯합니다.```
+Plot_loss_reward는 훈련 에폭을 통해 손실 및 보상 값의 추세를 시각화하는 플롯을 생성합니다. 주식 시장 예측에 사용되는 DQN 모델의 훈련 중에는 코드가 이 함수를 사용하여 손실 및 보상 값을 플롯합니다.
 
 <div class="content-ad"></div>
 
@@ -508,7 +508,7 @@ def plot_train_test_by_q(train_env, test_env, Q, algorithm_name):
 
 plot_train_test_by_q()는 훈련된 DQN 모델의 거래 행동과 성능을 훈련 및 테스트 데이터 세트에서 시각화합니다. 이 알고리즘은 train_env와 test_env(훈련 및 테스트 환경), Q(훈련된 Q-Network), algorithm_name(알고리즘 이름) 네 가지 인수를 사용합니다.
 
-훈련된 Q-Network를 사용하여 함수는 환경을 초기화하고 훈련 및 테스트 데이터를 반복합니다. 두 데이터 세트 모두에서 조치, 보상 및 지속적인 이윤을 누적합니다.```
+훈련된 Q-Network를 사용하여 함수는 환경을 초기화하고 훈련 및 테스트 데이터를 반복합니다. 두 데이터 세트 모두에서 조치, 보상 및 지속적인 이윤을 누적합니다.
 
 <div class="content-ad"></div>
 
@@ -530,7 +530,7 @@ train_profits, test_profits = plot_train_test_by_q(Environment(train), Environme
 
 파이썬을 사용하여, 이 코드는 훈련된 DQN 모델의 성능을 훈련 및 테스트 데이터로 평가합니다. 'plot_train_test_by_q' 함수는 'Environment' 클래스의 인스턴스(훈련 데이터용과 테스트 데이터용)와 훈련된 DQN 모델 'dqn'을 인자로 전달받아 호출됩니다. 모델의 예측 결과를 기반으로, plot_train_test_by_q 함수는 훈련 및 테스트 데이터에서 얻은 수익을 반환합니다.
 
-DQN 모델의 예측에 따라, 'train_profits' 변수에는 훈련 데이터에서 얻은 수익이 저장되고, 'test_profits'에는 DQN 모델의 예측에 따라 얻은 테스트 데이터 수익이 저장됩니다.```
+DQN 모델의 예측에 따라, 'train_profits' 변수에는 훈련 데이터에서 얻은 수익이 저장되고, 'test_profits'에는 DQN 모델의 예측에 따라 얻은 테스트 데이터 수익이 저장됩니다.
 
 <div class="content-ad"></div>
 
@@ -760,7 +760,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_12.png)
 
 이 코드는 Python으로 작성되었으며 주식 시장 예측을 위해 DDQN 모델과 '매수 및 보유' 전략의 성능을 비교하는 플롯을 생성하는 데 사용됩니다. Matplotlib 라이브러리의 'plt' 모듈을 사용하여 플롯을 생성합니다.
@@ -768,7 +768,7 @@ plt.show()
 코드는 먼저 Matplotlib 라이브러리의 'figure' 함수를 사용하여 플롯의 크기를 설정하며 'figsize' 매개변수를 인수로 취합니다. 결과 플롯은 너비 23인치, 높이 8인치입니다.
 
 그런 다음 코드는 Matplotlib 라이브러리의 'plot' 함수를 사용하여 '매수 및 보유' 전략을 플롯합니다. 플롯의 x 축은 가져온 데이터의 색인으로 설정되고 y 축은 주식을 사고 보유함으로써 얻는 이윤의 상대적 이득을 나타냅니다. 이 플롯의 레이블은 '매수 및 보유'로 설정됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -923,7 +923,7 @@ def train_dddqn(env, epoch_num=50):
 
 제공된 코드는 트레이딩 환경을 해결하기 위해 Dueling Double Deep Q-Network (Dueling DDQN)을 훈련하는 train_dddqn() 함수를 정의합니다. 이 함수는 환경 env를 인수로 받고 선택적인 epoch_num 매개변수를 취하며 기본값은 50입니다. epoch_num은 훈련 에포크 수를 나타냅니다.
 
-이 코드와 이전의 더블 DQN 구현 간의 주요 차이점은 Q_Network 클래스의 정의입니다. Dueling DDQN은 Q-Network 아키텍처를 수정하여 상태 가치를 추정하는 스트림과 각 작업의 어드밴티지 값을 추정하는 또 다른 스트림을 포함합니다. 두 스트림이 결합되어 최종 Q-값을 계산합니다.```
+이 코드와 이전의 더블 DQN 구현 간의 주요 차이점은 Q_Network 클래스의 정의입니다. Dueling DDQN은 Q-Network 아키텍처를 수정하여 상태 가치를 추정하는 스트림과 각 작업의 어드밴티지 값을 추정하는 또 다른 스트림을 포함합니다. 두 스트림이 결합되어 최종 Q-값을 계산합니다.
 
 <div class="content-ad"></div>
 
@@ -939,7 +939,7 @@ dddqn, total_losses, total_rewards = train_dddqn(Environment(train), epoch_num=2
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_13.png)
 
 이 코드 라인은 훈련 데이터셋을 사용하여 거래 환경에서 Dueling Double Deep Q-Network (Dueling DDQN)을 훈련하는 train_dddqn() 함수를 호출합니다. 이 함수는 두 개의 인수를 사용합니다:
@@ -948,7 +948,7 @@ dddqn, total_losses, total_rewards = train_dddqn(Environment(train), epoch_num=2
 - epoch_num=25: 이는 실행될 훈련 epochs의 수를 지정합니다. 이 경우, 25번의 epochs를 의미합니다. 각 epoch은 훈련 데이터셋을 완전히 통과하는 것을 의미하며, 에이전트가 환경과 상호 작용하고 Q-Network을 업데이트하며 경험으로부터 학습하는 것을 포함합니다.
 
 train_dddqn() 함수는 세 가지 값을 반환합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -979,7 +979,7 @@ train_profits, test_profits = plot_train_test_by_q(Environment(train), Environme
 
 <div class="content-ad"></div>
 
-```
+
 ![plot_train_test_by_q](/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_15.png)
 
 "plot_train_test_by_q" 함수 호출은 훈련된 Dueling Double DQN(DDDQN) 모델의 성능을 훈련 및 테스트 데이터에 대해 평가하고, 거래 과정에서 에이전트가 생성한 이익을 시각화하는 데 사용됩니다.
@@ -990,7 +990,7 @@ train_profits, test_profits = plot_train_test_by_q(Environment(train), Environme
 - Environment(test): 테스트 데이터셋을 사용하여 초기화 된 거래 환경의 인스턴스입니다.
 - dddqn: 환경에서 거래 결정을 내리는 데 사용되는 훈련된 DDDQN 모델입니다.
 - `Dueling Double DQN`: DDDQN 모델을 사용하고 있음을 나타내는 생성된 플롯의 제목 역할을 하는 문자열입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1212,7 +1212,7 @@ plt.show()
 ```
 
 이 코드는 MACD(Moving Average Convergence Divergence) 및 관련 지표를 계산하는 addMACD 함수를 정의합니다. 이 함수는 주식 시장 데이터를 포함한 pandas DataFrame에 대해 사용됩니다. MACD는 트레이더들이 잠재적인 추세 반전, 매수/매도 과열 상태, 거래 진입 또는 종료 지점을 식별하는 데 사용되는 인기 있는 모멘텀 기반 기술적 분석 도구입니다. 이 코드는 빠른/느린 지수 이동 평균(EMA) 및 MACD 라인, 시그널 라인, MACD 히스토그램을 시각화하는 두 개의 플롯을 생성합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1267,7 +1267,7 @@ signals['positions'] = signals['signal'].diff()
 - 'Close' 가격 데이터에 대해 긴 이동평균(SMA)을 `long_window` (100) 크기의 창을 사용하여 계산합니다. 계산된 SMA는 `signals` DataFrame의 새 열인 `long_mavg`에 저장됩니다.
 - 짧은 이동평균이 긴 이동평균보다 큰 경우, 40번째 데이터 이후부터 각 데이터 포인트에 대해 트레이딩 신호가 생성됩니다. 짧은 이평선이 더 길면 신호는 1.0 (매수 신호)로 설정되고, 그렇지 않으면 0.0 (수행 없음)으로 설정됩니다.
 - 연속하는 트레이딩 신호 간의 차이를 계산하여 트레이딩 주문을 생성합니다. 생성된 주문은 `signals` DataFrame의 새 열 'positions'에 저장됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1359,7 +1359,7 @@ plt.show()
 
 <img src="/assets/img/2024-06-19-ForecastingStockUsingDeepReinforcementLearning_22.png" />
 
-해당 코드는 이동평균 교차 전략에서 생성된 거래 신호를 사용하여 시간 경과에 따른 포트폴리오 가치를 계산하고 자산 곡선과 매수/매도 신호를 시각화합니다.```
+해당 코드는 이동평균 교차 전략에서 생성된 거래 신호를 사용하여 시간 경과에 따른 포트폴리오 가치를 계산하고 자산 곡선과 매수/매도 신호를 시각화합니다.
 
 <div class="content-ad"></div>
 

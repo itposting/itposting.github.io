@@ -64,7 +64,7 @@ SQL 트랜잭션의 시작을 BEGIN TRANSACTION 키워드로 표시합니다.
 
 <div class="content-ad"></div>
 
-```md
+
 BEGIN TRANSACTION;
 
 - Account A 잔액에서 100을 차감합니다.
@@ -80,7 +80,7 @@ BEGIN TRANSACTION;
   WHERE account_id = 'B';
   -- 모든 것이 잘 되었다면 트랜잭션을 커밋합니다.
   COMMIT;
-```
+
 
 이 트랜잭션은 다음을 수행합니다:
 

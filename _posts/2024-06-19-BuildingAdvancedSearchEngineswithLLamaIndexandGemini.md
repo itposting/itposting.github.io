@@ -48,7 +48,7 @@ RAG(축약어인 Retrieval Augmented Generation)에는 Retriever와 Generator �
 
 <div class="content-ad"></div>
 
-```
+
 ![Retriever Component](/assets/img/2024-06-19-BuildingAdvancedSearchEngineswithLLamaIndexandGemini_0.png)
 
 RAG 파이프라인에서 Retriever 구성 요소의 중요성을 이해해봅시다.
@@ -56,7 +56,7 @@ RAG 파이프라인에서 Retriever 구성 요소의 중요성을 이해해봅�
 사용자 정의 검색기를 개발할 때, 우리의 Bed을 가장 잘 수행하는 검색기 유형을 결정하는 것이 중요합니다. 우리의 목적에 따라 우리는 Keyword Search와 Vector Search를 통합한 Hybrid Search를 구현할 것입니다.
 
 Vector Search는 유사성 또는 의미 검색을 기반으로 사용자 쿼리에 대한 관련 문서를 식별하며, Keyword Search는 용어 발생 빈도에 기반하여 문서를 찾습니다. 이 통합은 LlamaIndex를 사용하여 두 가지 방법으로 달성할 수 있습니다. Hybrid Search의 사용자 정의 검색기를 구축할 때, 중요한 결정 사항은 AND 또는 OR 연산자 중 어느 것을 사용할지 선택하는 것입니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -171,7 +171,7 @@ keyword_index = SimpleKeywordTableIndex(nodes, storage_context=storage_context)
 LlamaIndex를 사용하여 하이브리드 검색을 위한 사용자 지정 검색기를 만들기 위해 먼저 스키마를 정의해야 합니다. 이는 노드를 적절하게 구성함으로써 수행됩니다. 검색기에는 벡터 인덱스 검색기와 키워드 검색기 모두가 필요합니다. 이를 통해 하이브리드 검색을 수행하고 결과를 결합하여 혼돈을 최소화할 수 있습니다. 게다가 우리는 결과를 결합할 때 사용할 모드(AND 또는 OR)를 지정해야 합니다.
 
 노드가 구성되면 각 노드 ID에 대해 번들을 조회하고 벡터 및 키워드 검색기를 사용합니다. 선택한 모드에 따라 사용자 지정 검색기를 정의하고 완성합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -218,7 +218,7 @@ class CustomRetriever(BaseRetriever):
 
 # Step7: Define Retrievers
 
-이제 사용자 정의 검색기 클래스가 정의되었으므로, 검색기를 인스턴스화하고 쿼리 엔진을 합성해야 합니다. 응답 씨네사이저는 사용자 쿼리와 주어진 텍스트 청크 세트를 기반으로 LLM에서 응답을 생성하는 데 사용됩니다. 응답 씨네사이저에서 출력은 응답 객체이며, 이 객체는 사용자 정의 검색기를 하나의 매개 변수로 취합니다.```
+이제 사용자 정의 검색기 클래스가 정의되었으므로, 검색기를 인스턴스화하고 쿼리 엔진을 합성해야 합니다. 응답 씨네사이저는 사용자 쿼리와 주어진 텍스트 청크 세트를 기반으로 LLM에서 응답을 생성하는 데 사용됩니다. 응답 씨네사이저에서 출력은 응답 객체이며, 이 객체는 사용자 정의 검색기를 하나의 매개 변수로 취합니다.
 
 <div class="content-ad"></div>
 
@@ -242,7 +242,7 @@ custom_query_engine = RetrieverQueryEngine(
 
 # Step8: Run Custom Retriever Query Engine
 
-마침내, 현저하게 환각을 줄이는 사용자 정의 검색기를 개발했습니다. 그 효과를 테스트하기 위해, 우리는 컨텍스트 내부와 외부에서 한 가지 프롬프트를 포함한 사용자 쿼리를 실행하고 생성된 답변을 평가했습니다.```
+마침내, 현저하게 환각을 줄이는 사용자 정의 검색기를 개발했습니다. 그 효과를 테스트하기 위해, 우리는 컨텍스트 내부와 외부에서 한 가지 프롬프트를 포함한 사용자 쿼리를 실행하고 생성된 답변을 평가했습니다.
 
 <div class="content-ad"></div>
 
@@ -256,7 +256,7 @@ print(custom_query_engine.query("과학이란 무엇인가요?")
 
 # 결론
 
-우리는 LlamaIndex를 사용하여 벡터와 키워드 검색기를 결합하여 Gemini LLM 및 임베딩의 지원을 받아 하이브리드 검색을 수행하는 맞춤형 리트리버를 성공적으로 구현했습니다. 이 접근은 전형적인 RAG 파이프라인에서 LLM 환각을 어느 정도 감소시킴으로써 효과적입니다.```
+우리는 LlamaIndex를 사용하여 벡터와 키워드 검색기를 결합하여 Gemini LLM 및 임베딩의 지원을 받아 하이브리드 검색을 수행하는 맞춤형 리트리버를 성공적으로 구현했습니다. 이 접근은 전형적인 RAG 파이프라인에서 LLM 환각을 어느 정도 감소시킴으로써 효과적입니다.
 
 <div class="content-ad"></div>
 

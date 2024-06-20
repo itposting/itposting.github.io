@@ -21,7 +21,7 @@ link: "https://medium.com/@enchantedcshel/seashells-in-bloom-7de992804f52"
 
 <div class="content-ad"></div>
 
-```
+
 ![Seashells in Bloom](/assets/img/2024-06-19-SeashellsinBloom_0.png)
 
 저는 정말 왜 조개껍질을 이렇게 좋아하는지 몰랐어요. 그런데 몇몇 사람들은 조개껍질을 사랑과 생식력과 연관 짓는다는 것을 알게 되었어요. 또한 조개껍질은 육체적인 세계와 영적인 세계 사이의 안전한 여정을 상징한다고 믿어지며, 조개껍질 보석은 착용자의 영혼을 보호하고 행운을 가져다 준다고 합니다.
@@ -29,7 +29,7 @@ link: "https://medium.com/@enchantedcshel/seashells-in-bloom-7de992804f52"
 저는 Etsy나 Pinterest에 있는 모든 사람들처럼 매우 창의적이지 않지만, 거의 모든 것을 조개껍질과 바위로 장식하는 것을 좋아해요.
 
 ![Seashells in Bloom](/assets/img/2024-06-19-SeashellsinBloom_1.png)
-```
+
 
 <div class="content-ad"></div>
 

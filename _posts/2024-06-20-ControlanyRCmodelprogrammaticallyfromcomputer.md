@@ -41,7 +41,7 @@ link: "https://medium.com/@kelvinkoko/control-any-rc-model-programmatically-from
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-20-ControlanyRCmodelprogrammaticallyfromcomputer_2.png" />
 
 이 프로젝트는 오픈 소스로, 새로운 프로토콜을 추가할 수 있도록 허용합니다. 계속 활발히 유지되는 이 프로젝트에는 공동 작업자들이 계속해서 새로운 모델 지원을 추가하고 있습니다. 그래서 나는 컴퓨터와 연결해서 RC 모델을 수정하지 않고도 모든 RC 모델을 프로그래밍 방식으로 제어할 수 있게끔 고려 중입니다.
@@ -49,11 +49,11 @@ link: "https://medium.com/@kelvinkoko/control-any-rc-model-programmatically-from
 # 구현
 
 이 모듈은 시리얼 및 PPM 입력을 수락하며, 이상적으로 컴퓨터에서 직접 시리얼 신호를 보내는 것이 좋을 것입니다. 그러나 작성 시점에 라디오 송신기의 시리얼 사양에 대한 명확한 문서를 찾지 못했기 때문에 (참고 자료가 있는 경우 알려주세요!). 개념을 먼저 테스트하고 싶었기 때문에, 컴퓨터에서 시리얼 명령을 수신하고 그에 따라 PPM 신호를 생성하는 변환기로 아두이노를 사용했습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 3](/assets/img/2024-06-20-ControlanyRCmodelprogrammaticallyfromcomputer_3.png)
 
 아두이노에는 이미 PPMEncoder 라이브러리가 있습니다. 따라서 제 프로그램은 주로 시리얼 통신을 초기화하고 라이브러리를 호출하여 PPM 신호를 생성합니다. 컴퓨터 측에서는 시리얼 포트 연결을 지원하고 스티어링(채널 1)과 스로틀(채널 2)의 타겟 펄스 폭을 전송하는 간단한 파이썬 애플리케이션을 작성했습니다.
@@ -61,7 +61,7 @@ link: "https://medium.com/@kelvinkoko/control-any-rc-model-programmatically-from
 ![Image 4](/assets/img/2024-06-20-ControlanyRCmodelprogrammaticallyfromcomputer_4.png)
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 

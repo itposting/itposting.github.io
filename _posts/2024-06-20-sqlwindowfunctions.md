@@ -11,7 +11,7 @@ link: "https://medium.com/@aspinfo/sql-window-functions-897eafdf3eff"
 ---
 
 
-```
+
 <img src="/assets/img/2024-06-20-sqlwindowfunctions_0.png" />
 
 SQL 윈도우 함수는 현재 행과 관련된 일련의 테이블 행 전체에서 계산을 수행하는 강력한 도구입니다. 이러한 함수는 결과 집합을 단일 행으로 그룹화하지 않고, 순위, 러닝 합계, 이동 평균 등을 포함한 복잡한 쿼리를 실행하는 방법을 제공합니다. 여기에 일반적으로 사용되는 SQL 윈도우 함수 중 일부가 있습니다:
@@ -19,11 +19,11 @@ SQL 윈도우 함수는 현재 행과 관련된 일련의 테이블 행 전체�
 # 1. ROW_NUMBER()
 
 결과 집합의 각 파티션 내에서 행에 고유한 연속 정수를 할당하며, 각 파티션의 첫 번째 행에 대해 1부터 시작합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 SELECT 
     column1,
@@ -43,7 +43,7 @@ SELECT
 FROM 
     table_name;
 ``` 
-```
+
 
 <div class="content-ad"></div>
 

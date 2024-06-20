@@ -72,7 +72,7 @@ proc_pidinfo API를 살펴보면서 시작했습니다. 이 API는 단일 프로
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-DecodingMachInvestigatingmacOSsKernelforAdvancedCPUMetrics_1.png)
 
 해설: fill_taskprocinfo 함수에서 이 코드 조각은 CPU 시간 정보를 수집하는 방법을 보여줍니다. recount_task_times 함수는 작업에 대한 총 시스템 및 사용자 시간을 수집하며, proc_pidinfo API가 CPU 사용량을 보고하는 방법을 이해하는 데 중요합니다.
@@ -80,7 +80,7 @@ proc_pidinfo API를 살펴보면서 시작했습니다. 이 API는 단일 프로
 recount_task_times()로 호출 스택을 따라가면, 최종적으로 집계되는 필드는 rt_usage라는 것을 알 수 있습니다:
 
 ![이미지](/assets/img/2024-06-19-DecodingMachInvestigatingmacOSsKernelforAdvancedCPUMetrics_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -95,7 +95,7 @@ host_process_info() 함수는 각 CPU 코어가 사용한 전체 CPU 시간을 �
 <div class="content-ad"></div>
 
 
-```
+
 ![이미지](/assets/img/2024-06-19-DecodingMachInvestigatingmacOSsKernelforAdvancedCPUMetrics_3.png)
 
 설명: 이 함수에서는 recount_processor_usage가 Mach 시간의 CPU 사용률 데이터를 제공하고, hz_tick_interval을 사용하여 해당 데이터를 틱으로 변환합니다. 이 변환 단계는 서로 다른 API 간에 CPU 시간 보고에 대한 불일치를 이해하는 데 중요합니다.
@@ -103,7 +103,7 @@ host_process_info() 함수는 각 CPU 코어가 사용한 전체 CPU 시간을 �
 이것은 host_process_info와 Mach Recount 서브시스템 간의 연결이고, Recount로부터 얻은 지표가 Mach 시간으로 보고되며 반환되기 전에 상수 요소 hz_tick_interval로 나눠진다는 사실이 더 중요합니다.
 
 저는 실험 중에 이전에 관찰했던 내용이 변환 시간 단위 사이에 상수 요소가 포함되어 있다는 명백한 확인을 발견해서 기뻤습니다.
-```
+
 
 <div class="content-ad"></div>
 

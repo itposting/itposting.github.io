@@ -54,7 +54,7 @@ link: "https://medium.com/towards-data-science/optimizing-deep-learning-models-w
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-OptimizingDeepLearningModelswithWeightQuantization_4.png)
 
 # 📖 부동 소수점 숫자 구성
@@ -62,7 +62,7 @@ link: "https://medium.com/towards-data-science/optimizing-deep-learning-models-w
 데이터 형식을 변경하면 모델 크기를 줄이는 이유에 대해 자세히 살펴보겠습니다. 컴퓨터에서 숫자에 대해 이야기할 때, 0과 1에 대해 모두 이야기합니다. 이진 인코딩 시스템은 컴퓨터 작업의 기초이며, 정수 및 부동 소수점 숫자와 같은 다양한 숫자 표현은 이러한 비트를 구성하는 특정 방법을 갖고 있습니다.
 
 ## 정수 표현
-```
+
 
 <div class="content-ad"></div>
 
@@ -183,23 +183,23 @@ Compute the quantization scale (S):
 
 컨버팅 비티에이엘 테이블:
 
-```
+
 | 값       | 양자화된 값 |
 |----------|------------|
 |   3.14   |    3.0     |
 |  -2.718  |   -2.5     |
 |   6.626  |    6.5     |
-```
+
 
 오리지널 값으로 돌아가기:
 
-```
+
 | 양자화된 값 | 값       |
 |------------|----------|
 |    3.0     |   3.14   |
 |   -2.5     |  -2.718  |
 |    6.5     |   6.626  |
-```
+
 
 <div class="content-ad"></div>
 
@@ -231,7 +231,7 @@ print(weights_sym_dequant.double().mean(), weights_sym_dequant.double().min(), w
 >>> tensor(0.1585, dtype=torch.float64) tensor(-111., dtype=torch.float64) tensor(127., dtype=torch.float64)
 >>> tensor(0.0056, dtype=torch.float64) tensor(-3.9148, dtype=torch.float64) tensor(4.4791, dtype=torch.float64)
 ```
-그런 다음 대칭 양자화 함수를 적용하면, 새로 양자화된 배열도 거의 0에 가까운 평균값을 가지며, 최솟값은 -111이고 최댓값은 127입니다.```
+그런 다음 대칭 양자화 함수를 적용하면, 새로 양자화된 배열도 거의 0에 가까운 평균값을 가지며, 최솟값은 -111이고 최댓값은 127입니다.
 
 <div class="content-ad"></div>
 
@@ -245,7 +245,7 @@ print(weights_sym_dequant.double().mean(), weights_sym_dequant.double().min(), w
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-OptimizingDeepLearningModelswithWeightQuantization_15.png)
 
 스케일(S) 값을 계산하세요:
@@ -253,7 +253,7 @@ print(weights_sym_dequant.double().mean(), weights_sym_dequant.double().min(), w
 ![이미지](/assets/img/2024-06-19-OptimizingDeepLearningModelswithWeightQuantization_16.png)
 
 제로포인트(Z) 값을 계산하세요:
-```
+
 
 <div class="content-ad"></div>
 
@@ -267,13 +267,13 @@ print(weights_sym_dequant.double().mean(), weights_sym_dequant.double().min(), w
 
 <div class="content-ad"></div>
 
-```
+
 # 비대칭 방식을 사용하여 양자화하기 - 정규 분포 데이터
 weights_assym_quant, weights_assym_dequant = assymmetric_quantize(weights)
 print(weights_assym_quant.double().mean(), weights_assym_quant.double().min(), weights_assym_quant.double().max())
 >>> tensor(-8.8287, dtype=torch.float64) tensor(-128., dtype=torch.float64) tensor(127., dtype=torch.float64)
 >>> tensor(0.0056, dtype=torch.float64) tensor(-3.9207, dtype=torch.float64) tensor(4.4808, dtype=torch.float64)
-```
+
 
 ![이미지](/assets/img/2024-06-19-OptimizingDeepLearningModelswithWeightQuantization_18.png)
 
@@ -286,7 +286,7 @@ skewed_weights = torch.from_numpy(skewed_weights)
 print(skewed_weights.mean(), skewed_weights.min(), skewed_weights.max())
 >>> tensor(-5.0192, dtype=torch.float64) tensor(-6.9999, dtype=torch.float64) tensor(16.4827, dtype=torch.float64)
 ```
-```  
+
 
 <div class="content-ad"></div>
 
@@ -299,7 +299,7 @@ print(weights_sym_quant.double().mean(), weights_sym_quant.double().min(), weigh
 
 이 분포는 정규분포가 아니기 때문에 양자화된 가중치의 평균 값은 -38.67, 최솟값은 -54이며 최대값은 127입니다. 문제는 전체 int8의 범위가 완전히 활용되지 않는다는 것입니다. 최솟값이 -64인데 이는 양자화가 사용 가능한 비트를 최대로 활용하지 못한다는 것을 의미합니다. 이로 인해 많은 서로 다른 값을 동일한 양자화된 값으로 반올림하여 고유성과 데이터 내의 세부 정보를 상실할 수 있습니다.
 
-가중치를 다시 부동소수점으로 역양자화할 때, 평균값은 대략적으로 원래 가중치의 값에 도달합니다.```
+가중치를 다시 부동소수점으로 역양자화할 때, 평균값은 대략적으로 원래 가중치의 값에 도달합니다.
 
 <div class="content-ad"></div>
 
@@ -315,7 +315,7 @@ print(weights_assym_quant.double().mean(), weights_assym_quant.double().min(), w
 양자화된 값들을 원래의 부동 소수점 범위로 돌리면 어떻게 되는지 알아보겠습니다. 대칭 방법에서의 값들은 원래 데이터와 비교했을 때 그렇게 고른 분포를 보여주지 않는데, 비대칭 방법의 경우와는 다르게 퍼져 있는 것이 흥미롭습니다.
 
 ![이미지](/assets/img/2024-06-19-OptimizingDeepLearningModelswithWeightQuantization_21.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -382,18 +382,18 @@ torch.ao.quantization.prepare(quantized_model, inplace=True)
 
 <div class="content-ad"></div>
 
-```md
+
 evaluate(quantized_model, criterion, data_loader, neval_batches=num_calibration_batches)
-```
+
 
 4. Convert the calibrated model to a quantized model.
 
-```md
+
 torch.ao.quantization.convert(quantized_model, inplace=True)
-```
+
 
 We will load the pretrained model for the MNIST dataset as the original model, quantize this model, and compare the results in both size and performance. Performance is evaluated using Top 1 and Top 5 Accuracy.
-```
+
 
 <div class="content-ad"></div>
 

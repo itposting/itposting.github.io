@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/deep-learning-to-predict-engageme
 ---
 
 
-```
+
 ![image](/assets/img/2024-06-19-DeepLearningtoPredictEngagementinOnlinePlatforms_0.png)
 
 # 요약
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/deep-learning-to-predict-engageme
 에딘버러 대학에서 MSc 논문의 일환으로, 저는 딥러닝 기술을 사용하여 준니버스의 사용자 참여를 예측했습니다. 준니버스는 비과학자들이 행성 탐사와 같은 특정 분야에 기여할 수 있는 온라인 시민 과학 플랫폼입니다. 준니버스는 100편 이상의 논문 발표에 기여했습니다. 실제 환경에서 시민 과학자들은 영국의 농업 유출물이 영국 강의 안전 한 한계를 초과하는 수위의 오염 증가를 입증했습니다.
 
 이 문맥에서 참여는 이전 행동을 고려할 때 플랫폼의 미래 사용을 예측할 수 있는지 여부입니다. 이는 여러 형태로 나타날 수 있습니다, 예를 들면:
-```
+
 
 <div class="content-ad"></div>
 
@@ -44,7 +44,7 @@ Zooniverse는 친철하게 2021년 10월 19일에서 2022년 8월 14일까지 �
 
 <div class="content-ad"></div>
 
-```md
+
 | Column Name |               Column Desc               | Column Type |
 |-------------|-----------------------------------------|-------------|
 | id          | 클릭스트림 항목을 식별하는 고유 식별자  | bigint      |
@@ -56,7 +56,7 @@ Zooniverse는 친철하게 2021년 10월 19일에서 2022년 8월 14일까지 �
 | latitude    | 국가 위도                               | float       |
 | longitude   | 국가 경도                               | float       |
 | timestamp   | 클릭스트림 타임스탬프                   | bigint      |
-```
+
 
 Zooniverse의 계층 구조에서 각 행은 다음 거래를 나타냅니다.
 
@@ -65,7 +65,7 @@ Zooniverse의 계층 구조에서 각 행은 다음 거래를 나타냅니다.
 - 사용자는 프로젝트에 연관된 작업을 수행합니다. 작업에는 여러 주제가 포함될 수 있습니다 (하지만 대부분은 하나만 포함합니다).
 
 <img src="/assets/img/2024-06-19-DeepLearningtoPredictEngagementinOnlinePlatforms_2.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -73,14 +73,14 @@ Zooniverse의 계층 구조에서 각 행은 다음 거래를 나타냅니다.
 
 데이터에는 약 38,500,990개의 고유 이벤트가 포함되어 있습니다. 서로 다른 지역별 이벤트 분포는 다음과 같습니다:
 
-```
+
 | 국가명        | 백분율     |
 |---------------|------------|
 | 핀란드         | 59.4       |
 | 미국           | 25.5       |
 | 싱가포르       | 10.8       |
 | 중국           | 4.3        |
-```
+
 
 위도와 경도는 국가 정보를 중복해서 나타내므로 제거되었습니다. 주제 ID 및 작업 ID도 제거되었는데, 이 정보의 세분화가 참여 패턴 학습에 기여하지 않았기 때문입니다.
 
@@ -110,7 +110,7 @@ Zooniverse 및 Coursera, StackOverflow, Snap과 같은 다른 온라인 플랫�
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-DeepLearningtoPredictEngagementinOnlinePlatforms_4.png)
 
 The feature space was designed to represent user information over various time intervals. Because many users only completed two sessions, a lot of data would be repeated for these users. Any model for predicting user behavior would need to be carefully interrogated to ensure it did not memorize these aspects of user behavior and project results that mimicked the most likely user, rather than the projection of users.
@@ -118,7 +118,7 @@ The feature space was designed to represent user information over various time i
 Therefore, it was important to design experiments that enabled differentiation between the small number of highly active users and the large population of inactive, short-term contributors.
 
 # Experiments
-```
+
 
 <div class="content-ad"></div>
 

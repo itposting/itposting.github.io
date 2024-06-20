@@ -150,7 +150,7 @@ data = {
 response = requests.post(url, headers=headers, json=data)
 ```
 
-III. 문서 검색 애플리케이션 만들기:```
+III. 문서 검색 애플리케이션 만들기:
 
 <div class="content-ad"></div>
 
@@ -377,7 +377,7 @@ Pattern II는 필터링을 통한 쿼리 이해에 초점을 맞춘 사전 검�
 마이크로소프트에 대해
 
 마이크로소프트 (나스닥 "MSFT" @microsoft)는 지능형 클라우드와 지능형 엣지 시대에 대한 디지털 전환을 실현합니다. 그 사명은 지구상의 모든 사람과 기관에 더 높은 성공을 이루도록 자율화하는 것입니다.
-```
+
 
 
 <div class="content-ad"></div>

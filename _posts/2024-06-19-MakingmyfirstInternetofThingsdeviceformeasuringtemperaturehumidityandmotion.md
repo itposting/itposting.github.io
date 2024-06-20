@@ -21,13 +21,13 @@ link: "https://medium.com/@datawarrior/making-my-first-internet-of-things-device
 
 <div class="content-ad"></div>
 
-```
+
 스크린에 쓰는 것은 Heltec.display->drawString(0, 0, "Hello Nikola!");을 이용하면 매우 간단합니다. 모든 것이 초기화된 후에 호출합니다. 처음 두 개의 숫자는 첫 번째 문자의 위치를 나타냅니다 (이 경우 상단 왼쪽). 그리고 나서 Heltec.display->display()를 호출하여 화면에 표시하거나 화면을 지우려면 clear()를 호출할 수 있습니다. 같은 위치에 여러 문자열을 쓰면 다른 것 위에 계속 그려집니다.
 
 이제 모든 것이 작동하므로 회로 설계를 진행할 수 있습니다.
 
 # 회로 설계
-```
+
 
 <div class="content-ad"></div>
 
@@ -41,7 +41,7 @@ link: "https://medium.com/@datawarrior/making-my-first-internet-of-things-device
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-MakingmyfirstInternetofThingsdeviceformeasuringtemperaturehumidityandmotion_2.png)
 
 프로그래밍 및 입력값을 읽는 부분에서 핀 번호 지정에 약간 어려움을 겪었습니다. 그래서 D11(온도 및 습도 센서)를 ESP8266의 입력 D8에 연결하고 모션 센서 D7에 연결했습니다. 처음에 코드에서 7번 및 8번 핀 id에서 읽을 것으로 생각했지만, 그렇지 않았습니다. ESP8266에는 다음 다이어그램이 함께 제공됩니다.
@@ -49,7 +49,7 @@ link: "https://medium.com/@datawarrior/making-my-first-internet-of-things-device
 ![이미지](/assets/img/2024-06-19-MakingmyfirstInternetofThingsdeviceformeasuringtemperaturehumidityandmotion_3.png)
 
 핀의 실제 id는 GPI로 시작하는 이 분홍색 열에 있습니다. 따라서 핀 8은 GPI015이며, id는 15이고, 핀 7은 GPI013이며, id는 13입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -76,7 +76,7 @@ def analytics():
 
 <div class="content-ad"></div>
 
-```
+
 ![Device Image](/assets/img/2024-06-19-MakingmyfirstInternetofThingsdeviceformeasuringtemperaturehumidityandmotion_4.png)
 
 # 기기 납땜하기
@@ -84,7 +84,7 @@ def analytics():
 웹 서비스와 기기가 작동하고 서로 연결된 후에는 기기를 완성하여 영구적으로 만들어야 합니다. 작은 보드에 부품을 납땜합니다. Freenove 키트에는 이 종류의 기기에 적합한 사이즈인 5×7cm 크기의 3~4개의 납땜 보드가 포함되어 있습니다. 새로운 납땜용 인두를 구입해야 했고, 제가 선택한 것은 Meterk Soldering Iron Kit 60 W 14 in 1 입니다. 케이스, 인두, 집게, 납선 등 필요한 모든 것이 포함되어 있습니다.
 
 이번이 제 인생에서 처음으로 납땜을 해 보았습니다. 아마도 필요한 것보다 훨씬 많은 납선을 사용했을 것으로 생각됩니다만, 모든 것은 어느 정도 괜찮았습니다. 몇 가지 실수로 인해 일부 부분을 납땜을 다시 해야 했고, 또는 납땜이 제자리에 있지 않을 때도 있었습니다. 납땜 중 문제가 발생한 것 중 하나는 두 센서 모두 데이터 핀이 가운데에 있고, GND와 VCC 핀이 옆에 있는 것이었습니다. 초반 계획대로 두 센서 모두 보드에 납땜하기(일반적인 계획) 위해서는 보드 상에서 전선이 교차하지 않도록 하는 것이 꽤 까다로웠습니다. 따라서 운동 센서에 외부 전선을 납땜했습니다. 만약 케이스를 만든다면, 다른 센서와 비교하여 조금 더 밖쪽에 있고 높은 것이 합리적일 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/long-short-term-memory-lstm-impro
 ---
 
 
-```
+
 ![그림](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_0.png)
 
 이 글에서는 Long-Short-Term Memory Networks (LSTM)에 대해 소개하겠습니다. 이는 일반적인 바닐라 순환 신경망(RNN)의 변형으로서 장기 의존성을 처리하는 데 능숙합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/long-short-term-memory-lstm-impro
 이들은 의사결정에 필요하거나 중요하지 않다고 판단되는 특정 정보를 기억하거나 잊는 서로 다른 "게이트"를 사용합니다.
 
 LSTM은 RNN의 최신 버전으로, 산업 내에서 폭넓게 사용되며 우리가 오늘날 보는 모든 멋진 대형 언어 모델 (LLMs)의 기반이 됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -31,7 +31,7 @@ Recurrent Neural Networks(RNN)은 일반적인 피드포워드 신경망의 변�
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_1.png)
 
 네트워크를 통해 전달되는 벡터 h를 주목해보세요. 이것이 순환 신경망(RNNs) 뒤에 숨겨진 주요 기능인 은닉 상태입니다. 이것이 시퀀스 데이터에 대해 잘 작동하는 이유입니다.
@@ -39,7 +39,7 @@ Recurrent Neural Networks(RNN)은 일반적인 피드포워드 신경망의 변�
 은닉 상태는 이전에 계산된 은닉 상태와 해당 시간 단계에서의 새 입력을 결합합니다. 그런 다음 해당 시간 단계의 최종 출력을 계산하기 위해 시그모이드 활성화 함수가 적용됩니다. 수학적으로 표현하면:
 
 ![image](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -57,7 +57,7 @@ V, U 및 W의 가중 행렬은 시간에 걸쳐 백프로파게이션을 통해 
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_3.png)
 
 For example, when predicting Y_1, the RNN would use the inputs of X_1 plus the output from the previous time step from Y_0. As Y_0 influences Y_1, we can then see that Y_0 will also indirectly influence Y_2, demonstrating the recurrent nature.
@@ -65,7 +65,7 @@ For example, when predicting Y_1, the RNN would use the inputs of X_1 plus the o
 If you want a full intro to RNNs then check out my previous blog.
 
 # Vanishing & Exploding Problem
-```
+
 
 <div class="content-ad"></div>
 
@@ -79,7 +79,7 @@ BPTT의 일반적인 공식은 다음과 같습니다:
 
 <div class="content-ad"></div>
 
-```
+
 ![image 1](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_4.png)
 
 RNN에서 J는 임의의 가중치 행렬이며 U, W 또는 V일 수 있으며 E는 총 오차입니다.
@@ -87,7 +87,7 @@ RNN에서 J는 임의의 가중치 행렬이며 U, W 또는 V일 수 있으며 E
 RNN은 일반적인 신경망보다 더 깊은 경향이 있습니다(각 시간 단계는 하나의 레이어입니다). 따라서 그래디언트가 1보다 작거나 큰 경우에는 역방향으로 전파될 때 그래디언트가 소멸되거나 폭발될 수 있습니다.
 
 ![image 2](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -120,14 +120,14 @@ LSTMs는 1997년 Hochreiter & Schmidhuber에 의해 소개되었으며, 그 기�
 
 일반적인 RNN에서는 순환 셀이 다음과 같이 보입니다:
 
-```
+
 |  Table  |  Tag   |
 |---------|--------|
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Long Short Term Memory - LSTM Improving RNNs](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_6.png)
 
 However, the LSTM cell is a lot more complicated:
@@ -135,7 +135,7 @@ However, the LSTM cell is a lot more complicated:
 ![LSTM Cell](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_7.png)
 
 I appreciate there is a lot going on here, but lets break it down step by step.
-```
+
 
 <div class="content-ad"></div>
 
@@ -175,7 +175,7 @@ W_f 행렬에서 올바른 값을 찾아 역전파를 통해 이 정보를 학�
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_9.png)
 
 Where:
@@ -192,7 +192,7 @@ Where:
 - X_t: 현재 입력.
 
 tanh을 사용하면 셀 상태를 증가시키거나 감소시킬 수 있습니다. tanh는 출력을 -1과 1 사이로 압축하기 때문입니다. 시그모이드는 기억에 새로운 것을 추가하기 위해 이전 게이트와 유사한 이유로 사용됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -216,7 +216,7 @@ tanh을 사용하면 셀 상태를 증가시키거나 감소시킬 수 있습니
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-LongShortTermMemoryLSTMImprovingRNNs_11.png)
 
 Where:
@@ -232,7 +232,7 @@ Where:
 - C_t: 새로운 셀 상태.
 
 그게 전부에요! 언급할 중요한 점은 모든 가중치 행렬이 BPTT를 사용하여 어떤 요소를 잊고 기억할지 학습해야 한다는 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

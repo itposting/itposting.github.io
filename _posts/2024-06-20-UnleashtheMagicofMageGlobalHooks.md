@@ -11,7 +11,7 @@ link: "https://medium.com/mage-ai/unleash-the-magic-of-mage-global-hooks-9fee337
 ---
 
 
-```
+
 ![Global hooks in Mage](/assets/img/2024-06-20-UnleashtheMagicofMageGlobalHooks_0.png)
 
 # TLDR
@@ -19,7 +19,7 @@ link: "https://medium.com/mage-ai/unleash-the-magic-of-mage-global-hooks-9fee337
 Mage의 글로벌 훅은 API 작업 앞뒤에서 사용자 정의 코드를 실행할 수 있는 강력한 기능입니다. 이를 통해 응용 프로그램의 다양한 구성 요소 간에 기능을 확장하거나 외부 시스템과 통합하거나 데이터를 유효성 검사하는 유연성을 제공합니다. 대상 조건과 비동기 실행을 통해, 글로벌 훅은 세밀한 제어와 성능 최적화를 제공합니다.
 
 ![Global hooks GIF](https://miro.medium.com/v2/resize:fit:1400/1*OirhBHxPRCvHwConOgnGgQ.gif)
-```
+
 
 <div class="content-ad"></div>
 
@@ -108,7 +108,7 @@ Mage는 개발자들이 대부분의 요구 사항을 선택하거나 전환할 
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-UnleashtheMagicofMageGlobalHooks_4.png)
 
 - 다음으로 실행 드롭다운을 클릭하고 후크를 위해 파이프라인을 선택하세요.
@@ -119,7 +119,7 @@ Mage는 개발자들이 대부분의 요구 사항을 선택하거나 전환할 
 - 프로젝트에서 블록 이름으로 데이터를 추출할 블록을 추가하세요.
 - 병합될 데이터의 출력 유형을 선택하세요.
 - 마지막으로 화면 하단의 '변경 사항 저장'을 클릭하여 후크를 저장하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -135,10 +135,9 @@ Mage는 개발자들이 대부분의 요구 사항을 선택하거나 전환할 
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-UnleashtheMagicofMageGlobalHooks_8.png)
 
 # 결론
 
 마지막으로, 글로벌 후크는 개발자들에게 애플리케이션을 강화하고 사용자 정의 기능을 원활하게 통합할 수 있는 유연하고 확장 가능한 기능을 제공하는 강력한 기능입니다. 사용자 정의 코드를 애플리케이션 라이프사이클의 특정 시점에서 실행할 수 있도록 허용함으로써, 글로벌 후크는 코드 중복, 교차 관심사 및 외부 시스템 통합과 같은 일반적인 문제를 해결합니다. 데이터 유효성 검사 및 변환부터 로깅 및 모니터링까지, 글로벌 후크는 개발자가 프로젝트 전반에 걸쳐 일관되게 다양한 사용 사례를 실행할 수 있도록 합니다. 또한, 특정 구성 요소를 대상으로 하거나 비동기 실행과 같은 기능은 세밀한 제어와 성능 최적화를 제공합니다. Mage의 글로벌 후크에 대한 자세한 정보는 문서를 참조하십시오.
-```

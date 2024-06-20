@@ -104,7 +104,7 @@ CNN의 현대 아키텍처는 얀 르쿤과 그의 동료들에 의해 1980년�
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_12.png)
 
 마찬가지로, 남은 항목들은 동일한 공식을 사용하여 계산할 수 있습니다. 이 과정은 서로 다른 유형의 필터를 적용함으로써 반복되며, 각각이 이미지의 다른 특징을 캡처하는 것을 보여줍니다. 예를 들어, 필터 개수가 하나 이상이 될 수 있어서 스트라이드 개념이 도입됩니다.
@@ -112,11 +112,11 @@ CNN의 현대 아키텍처는 얀 르쿤과 그의 동료들에 의해 1980년�
 ## 2.2— 패딩 레이어
 
 기본 CNN은 (n x n) 크기의 흑백 이미지와 (f x f) 크기의 필터/커널을 사용하여 결과를 제공하며, 출력 크기는 (n - f + 1) x (n - f + 1)이 됩니다. 예를 들어, (8 x 8) 이미지와 (3 x 3) 필터를 사용한 어떤 합성 곱 작업의 경우, 출력 이미지 크기는 (6 x 6)이 됩니다. 이러한 크기의 감소는 이미지 처리 중 일관적으로 발생하며, 레이어의 출력이 일반적으로 입력보다 작습니다. 또한, 합성 곱 작업에서 사용되는 필터는 픽셀을 횡단하면서 항상 모서리에 초점을 두지 않습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![TinyML CNN](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_13.png)
 
 머신 러닝에서 일반적으로 사용되는 여러 유형의 패딩이 있습니다:
@@ -127,7 +127,7 @@ CNN의 현대 아키텍처는 얀 르쿤과 그의 동료들에 의해 1980년�
 - Full 패딩: 이 유형의 패딩은 입력의 테두리 주위에 여러 레이어의 0을 추가하여 원본 이미지 크기보다 큰 출력 피쳐 맵을 생성합니다. Full 패딩은 덜 일반적이지만 더 큰 출력 크기가 필요한 특정 시나리오에서 사용할 수 있습니다.
 
 ## 2.3 —Pooling Layer
-```
+
 
 <div class="content-ad"></div>
 
@@ -226,7 +226,7 @@ import os
 ```
 
 3.2 — 데이터셋 불러오기
-```
+
 
 <div class="content-ad"></div>
 
@@ -271,7 +271,7 @@ for i, ax in enumerate(axis.flat):
 ```
 
 ![이미지](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_19.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -352,7 +352,7 @@ def test_model(model, x_test, y_test):
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 test_model(model, X_test, y_test)
 ```
@@ -383,7 +383,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_24.png)
 
 3.8.3— 예측 유효성 검사 결과
@@ -399,7 +399,7 @@ for i, ax in enumerate(axis.flat):
 ```
 
 ![이미지](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_25.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -584,7 +584,7 @@ model_quant_float32.h 또는 model_quant_int8.h 파일을 열어서 다음에서
 
 아래와 같이 변경해주세요:
 
-```
+
 and model len
 
 ![image](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_29.png)
@@ -592,7 +592,7 @@ and model len
 and cut in model.h:
 
 ![image](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_30.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -663,7 +663,7 @@ void loop() {
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-TinyMLConvolutionalNeuralNetworksCNN_33.png)
 
 Full project in: [TinyML/13_CNN at main · thommaskevin/TinyML](https://github.com/thommaskevin/TinyML)
@@ -671,7 +671,7 @@ Full project in: [TinyML/13_CNN at main · thommaskevin/TinyML](https://github.c
 ## If you like it, consider buying my coffee ☕️💰 (Bitcoin)
 
 code: bc1qzydjy4m9yhmjjrkgtrzhsgmkq79qenvcvc7qzn
-```
+
 
 <div class="content-ad"></div>
 

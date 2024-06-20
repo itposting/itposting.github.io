@@ -178,7 +178,7 @@ MDL에서는 모델, 열, 뷰, 그리고 관계의 의미론적 명명과 설명
 Wren Engine을 사용하면 "모델 정의 언어"로 시맨틱 표현을 설계할 수 있고, AI 애플리케이션인 WrenAI에서 해당 주변에 UI를 구축하며 여기서도 오픈 소스로 제공됩니다. WrenAI 뒤에서는 서로 다른 엔티티 간의 관계를 정의하고, 일대다, 다대일, 일대일로 선언할 수 있습니다.
 
 <img src="/assets/img/2024-06-19-HowwedesignoursemanticengineforLLMsThebackboneofthesemanticlayerforLLMarchitecture_1.png" />
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/mapping-the-pok%C3%A9mon-world-a-
 ---
 
 
-```
+
 ![Network Analysis](/assets/img/2024-06-20-MappingthePokmonWorldANetworkAnalysisofHabitat-BasedEncounters_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/mapping-the-pok%C3%A9mon-world-a-
 네트워크 분석은 다양한 개체의 관계, 연결 및 그룹화를 의미 있게 이해하기 위한 견고하면서도 직관적인 접근법입니다. 소셜 미디어 관점에서는 네트워크 분석을 사용하여 가장 의미 있는 연결을 가진 프로필을 이해할 수 있고, 전자 상거래 회사는 제품 간의 탐색 관계를 이해하기 위해 웹 분석을 활용할 수 있으며, 기업은 이메일 교신을 분석하여 어떤 팀이 자주 협업하는지 이해할 수 있습니다. 여러분이 작업 중인 데이터가 어떤 네트워크에 닮아 있다면, 네트워크 분석을 확실히 적용할 수 있습니다.
 
 이 글에서는 Python을 통한 네트워크 분석, 네트워크 분석에서 얻을 수 있는 실용적인 통찰력, 그리고 인기 TV 및 게임 시리즈인 포켓몬과 함께 하는 재미있는 프로젝트에 대해 소개하겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -81,11 +81,11 @@ nx.closeness_centrality(G)
 
 ## 엣지 중심성
 
-노드 사이의 일부 연결 또는 엣지가 다른 것들보다 중요한가요? 우리 그래프를 다시 살펴보면 어떤 엣지가 두드러지나요? A ~ B 및 A ~ C의 엣지는 특정 노드 클러스터를 연결하기 때문에 두드러집니다. 중요성을 정량화하는 원래의 점으로 돌아오면, NetworkX에서 정의한 엣지 중심성이라는 측정을 통해 이를 수행할 수 있습니다:```
+노드 사이의 일부 연결 또는 엣지가 다른 것들보다 중요한가요? 우리 그래프를 다시 살펴보면 어떤 엣지가 두드러지나요? A ~ B 및 A ~ C의 엣지는 특정 노드 클러스터를 연결하기 때문에 두드러집니다. 중요성을 정량화하는 원래의 점으로 돌아오면, NetworkX에서 정의한 엣지 중심성이라는 측정을 통해 이를 수행할 수 있습니다:
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-MappingthePokmonWorldANetworkAnalysisofHabitat-BasedEncounters_5.png)
 
 좀 더 실용적으로 말하자면, 엣지 중심성(edge betweenness centrality)이 높을수록 해당 엣지가 모든 노드 사이의 최단 경로를 볼 때 자주 지나간다는 뜻입니다. 이들은 우리 네트워크를 유지하는 주요 다리 역할을 합니다.
@@ -93,7 +93,7 @@ nx.closeness_centrality(G)
 엣지 중심성이 어떻게 유용하게 활용될 수 있는지 실제 예시를 살펴보겠습니다. 다양한 엔티티 간 거래 데이터를 살펴보고 있다고 가정해봅시다. 이 데이터를 가져와 엔티티를 나타내는 네트워크를 만들어 보면, 엣지는 서로 정기적으로 거래하는 엔티티들을 나타냅니다. 엣지 중심성이 가장 높은 엣지를 살펴보면, 본질적으로 이 준 금융 시스템을 연결하는 주요 연결점을 찾을 수 있습니다. 어떤 엔티티나 기관이 가장 많은 영향력을 가지는지 이해할 수 있으며, 그들을 제거하면 자금 흐름이 방해될 수 있습니다.
 
 엣지 중심성을 어떻게 계산할까요? 원래의 예시로 돌아가서, NetworkX의 edge_betweenness_centrality 메서드를 사용할 수 있습니다. A~B 및 A~C 엣지에 대해 제 예측이 맞았는지 확인해보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -105,7 +105,7 @@ nx.edge_betweenness_centrality(G)
 
 ## 커뮤니티
 
-우리의 그래프는 아주 쉽게 읽을 수 있고 상대적으로 작지만, 실제 데이터는 매우 견고하고 큽니다(보통 빅데이터라고 합니다). 이로 인해 네트워크 그래프가 매우 크고 읽기 어려울 수 있습니다. 그러므로 네트워크 내의 네트워크나 커뮤니티를 살펴보는 것이 도움이 될 수 있습니다.```
+우리의 그래프는 아주 쉽게 읽을 수 있고 상대적으로 작지만, 실제 데이터는 매우 견고하고 큽니다(보통 빅데이터라고 합니다). 이로 인해 네트워크 그래프가 매우 크고 읽기 어려울 수 있습니다. 그러므로 네트워크 내의 네트워크나 커뮤니티를 살펴보는 것이 도움이 될 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -210,7 +210,7 @@ pokemon_edgelist.head()
 
 <div class="content-ad"></div>
 
-```
+
 ![Network Mapping](/assets/img/2024-06-20-MappingthePokmonWorldANetworkAnalysisofHabitat-BasedEncounters_8.png)
 
 ## 네트워크 구축
@@ -218,7 +218,7 @@ pokemon_edgelist.head()
 이미 Python에서 네트워크 그래프를 빌드하고 다양한 측정을 수행하는 방법을 검토했습니다. 이제 위의 데이터프레임과 같은 데이터를 입력으로 받아 네트워크 분석을 end-to-end로 수행하는 단일 객체를 만들겠습니다.
 
 이 네트워크 분석 객체에는 다음을 수행하는 메서드가 포함될 것입니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -295,7 +295,7 @@ class NetworkGraph():
       # 네트워크 그래프 생성 및 표시
       net.show(html_filename)
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -321,7 +321,7 @@ pokemon_na.closeness_df.sort_values(by='centrality', ascending=False).head()
 ```
 
 ![이미지](/assets/img/2024-06-20-MappingthePokmonWorldANetworkAnalysisofHabitat-BasedEncounters_9.png)
-```
+
 
 <div class="content-ad"></div>
 

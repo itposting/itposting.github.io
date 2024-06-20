@@ -11,7 +11,7 @@ link: "https://medium.com/@printerventure/can-i-pause-a-3d-print-overnight-and-r
 ---
 
 
-```
+
 ![3D printing](/assets/img/2024-06-19-CanIPausea3DPrintOvernightandResumeLaterin2024_0.png)
 
 3D 프린팅 세계에서 시간 관리가 중요합니다. 몇 시간 또는 몇 일이 걸릴 수있는 인쇄물이 있지만 인쇄 품질을 희생하지 않고 효율성을 극대화하는 방법을 찾는 것이 중요합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@printerventure/can-i-pause-a-3d-print-overnight-and-r
 가장 흔한 질문 중 하나는 3D 프린트를 밤에 멈추고 나중에 다시 시작할 수 있는지 여부입니다.
 
 이 블로그 포스트에서는 이 주제에 대해 자세히 살펴보고 3D 프린트를 밤에 멈추고 다시 시작하는 안전한 방법을 제공할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

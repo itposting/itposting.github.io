@@ -11,7 +11,7 @@ link: "https://medium.com/@lewisjdoyle/the-choice-between-mac-and-a-pc-is-about-
 ---
 
 
-```
+
 ![Mac vs PC](/assets/img/2024-06-19-ThechoicebetweenMacandaPCisabouttochange_0.png)
 
 맥 대 PC는 시대가 변해도 계속 논쟁이 될 주제 중 하나입니다. 왜냐하면 이것은 주관적인 결정이기 때문이죠.
@@ -19,7 +19,7 @@ link: "https://medium.com/@lewisjdoyle/the-choice-between-mac-and-a-pc-is-about-
 맥과 PC는 각자의 독특한 강점을 가지고 있지만 안심하세요, 두 플랫폼에서 모든 작업을 수행할 수 있습니다. 그들의 다재다능함은 당신이 할 수 있는 일에 제한이 없도록 보장합니다.
 
 생각해 보세요: PC를 소유하고 있다면 게임을 할 수도 있고, 오피스 문서를 만들고 수정할 수 있고, 콘텐츠를 만들고 편집하며, 좋아하는 비디오를 보고 코딩할 수 있습니다. 맥에 대해서도 똑같이 말할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

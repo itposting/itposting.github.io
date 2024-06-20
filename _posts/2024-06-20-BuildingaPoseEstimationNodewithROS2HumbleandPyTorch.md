@@ -97,7 +97,7 @@ main 함수는 ROS 2 Python 클라이언트 라이브러리를 초기화하고 �
 
 <div class="content-ad"></div>
 
-```
+
 ![Building a Pose Estimation Node with ROS 2](/assets/img/2024-06-20-BuildingaPoseEstimationNodewithROS2HumbleandPyTorch_2.png)
 
 # 결론
@@ -105,7 +105,7 @@ main 함수는 ROS 2 Python 클라이언트 라이브러리를 초기화하고 �
 본 튜토리얼을 따라하면 최신 딥러닝 기법을 사용하여 실시간 포즈 추정이 가능한 견고한 ROS 2 노드를 만들 수 있습니다. 이 설정은 인간-로봇 상호작용 및 감시를 포함한 다양한 로봇 응용 프로그램으로 확장할 수 있습니다.
 
 실시간 포즈 추정은 AMR 및 로봇의 능력에 새로운 차원을 추가하여 인간의 동작 및 자세를 이해하고 반응할 수 있습니다. 이 기능은 인간-로봇 상호작용을 향상시키며 안전성을 향상시키고 로봇이 자율적으로 또는 협업적으로 수행할 수 있는 작업 범위를 확장시킵니다. 기술이 계속 발전함에 따라 로봇학의 다양한 분야에서 더 많은 혁신적인 응용 프로그램이 예상됩니다.
-```
+
 
 <div class="content-ad"></div>
 

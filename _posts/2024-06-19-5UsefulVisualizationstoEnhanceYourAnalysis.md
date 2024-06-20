@@ -87,7 +87,7 @@ sns.stripplot(data=df);
 - 시각적으로 적어도 이상치 실례가 적습니다.
 - 대부분의 수치 변수는 0에서 5 사이로 범위가 있습니다. 이는 데이터의 설명에 해당 변수가 범주화되었음을 보여줍니다. 따라서 여기서 가장 좋은 방법은 해당 변수를 범주형으로 변환하는 것입니다.
 - 이 데이터셋의 학생들은 15 ~ 23세 사이입니다.
-- 첫 번째 학기(G1)와 두 번째 학기(G2) 성적의 분포는 매우 유사합니다.```
+- 첫 번째 학기(G1)와 두 번째 학기(G2) 성적의 분포는 매우 유사합니다.
 
 <div class="content-ad"></div>
 
@@ -155,7 +155,7 @@ sns.boxenplot(data=df, x='traveltime', y='G3');
 
 <img src="/assets/img/2024-06-19-5UsefulVisualizationstoEnhanceYourAnalysis_6.png" />
 
-Travel Time == 1의 학점만을 분리해 보면 다음과 같은 그래픽을 볼 수 있습니다.```
+Travel Time == 1의 학점만을 분리해 보면 다음과 같은 그래픽을 볼 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -169,7 +169,7 @@ plt.title('Distribution KDE of Final Grade on Travel Time == 1');
 
 <img src="/assets/img/2024-06-19-5UsefulVisualizationstoEnhanceYourAnalysis_7.png" />
 
-실제로 상자 그림을 향상시킨 것입니다. 그러나 더 많은 그래픽 유형을 공부할 필요가 있습니다. 계속 전진하겠습니다.```
+실제로 상자 그림을 향상시킨 것입니다. 그러나 더 많은 그래픽 유형을 공부할 필요가 있습니다. 계속 전진하겠습니다.
 
 <div class="content-ad"></div>
 

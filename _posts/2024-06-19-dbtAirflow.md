@@ -180,7 +180,7 @@ with DAG(
 
 <div class="content-ad"></div>
 
-```
+
 ![Screenshot 1](/assets/img/2024-06-19-dbtAirflow_3.png)
 
 By the end of this first iteration, we were able to meet half of the requirements we specified during ideation:
@@ -188,7 +188,7 @@ By the end of this first iteration, we were able to meet half of the requirement
 ![Screenshot 2](/assets/img/2024-06-19-dbtAirflow_4.png)
 
 ## Iteration 2: Introducing Extra Tasks
-```
+
 
 <div class="content-ad"></div>
 

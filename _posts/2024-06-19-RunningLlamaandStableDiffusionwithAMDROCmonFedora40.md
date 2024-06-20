@@ -161,7 +161,7 @@ Environment=”HSA_OVERRIDE_GFX_VERSION=10.3.0"
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-RunningLlamaandStableDiffusionwithAMDROCmonFedora40_5.png)
 
 # Fedora 40에서 ROCm을 이용하여 llama.cpp 및 Mikupad 설정하기
@@ -169,7 +169,7 @@ Environment=”HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Ollama 및 Open WebUI는 쉽지만 무거운 것으로 간주될 수 있습니다. 다른 극단인 llama.cpp 자체, LM Studio, Ollama 및 KoboldCpp를 구동하는 추론 엔진을 살펴봅시다. Mikupad에서 이를 실행할 것인데, 이는 매우 가벼운 프런트 엔드입니다.
 
 문서는 충분히 간단합니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -184,7 +184,7 @@ cd llama.cpp
 sudo dnf install rocm-hip-devel hipblas-devel rocblas-devel
 ```
 
-이러한 패키지를 설치한 후 AMD 지원으로 컴파일하는 명령을 사용하세요. 필요한 경우 오버라이드가 활성화되었는지 확인하세요.```
+이러한 패키지를 설치한 후 AMD 지원으로 컴파일하는 명령을 사용하세요. 필요한 경우 오버라이드가 활성화되었는지 확인하세요.
 
 <div class="content-ad"></div>
 
@@ -236,7 +236,7 @@ open mikupad.html
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-RunningLlamaandStableDiffusionwithAMDROCmonFedora40_9.png)
 
 # Fedora 40에서 ROCm과 함께 Stable Diffusion WebUI 설정하기
@@ -245,7 +245,7 @@ Stable Diffusion WebUI(이하 SDWebUI)의 문서는 간단해 보이지만 몇 �
 
 - Python 3.10 가상 환경을 생성하려고 하는데 Fedora는 Python 3.12를 사용합니다.
 - 기본적으로 이전 버전의 PyTorch를 설치하려고 하는데, 해당 버전은 ROCm 5.6이 필요하나 Fedora는 ROCm 6.0을 사용합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -261,7 +261,7 @@ sudo dnf install conda
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 conda create -n “diffusion-installer” python=3.10.6
 conda activate diffusion-installer
@@ -274,7 +274,7 @@ conda install -c conda-forge gcc=12.1.0
 ```
 
 그런 다음 수동으로 설치해야 합니다. 자동 스크립트를 사용하면 오래된 PyTorch를 바로 다운로드하게 되어 발생하는 귀찮은 중복을 피할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -295,9 +295,9 @@ export TORCH_COMMAND="pip install torch==2.3.0+rocm6.0 torchvision torchaudio --
 
 아래와 같이 작성해보세요:
 
-```
+
 ![이미지](/assets/img/2024-06-19-RunningLlamaandStableDiffusionwithAMDROCmonFedora40_10.png)
-```
+
 
 이제 손가락 교차해보세요!
 

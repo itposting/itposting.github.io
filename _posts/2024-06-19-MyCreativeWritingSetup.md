@@ -11,7 +11,7 @@ link: "https://medium.com/macoclock/my-creative-writing-setup-8691c3a65b3f"
 ---
 
 
-```
+
 ![My Creative Writing Setup](/assets/img/2024-06-19-MyCreativeWritingSetup_0.png)
 
 저는 드디어 2년간의 노력 끝에 첫 소설을 마쳤고 이미 두 번째 작품에도 착수했습니다. 또한 여러 단편 소설을 쓰고 있으며 몇 가지 게임 보조 자료도 천천히 작업 중에 있어요.
@@ -19,7 +19,7 @@ link: "https://medium.com/macoclock/my-creative-writing-setup-8691c3a65b3f"
 많은 분들이 이러한 정보를 궁금해하니, 창작 작업을 위한 제 세팅을 공유하는 시간이 된 것 같아요. "창작 작업"이라고 명시한 이유는 다른 글쓰기 활동을 위한 도구 체인이 따로 있기 때문이에요. 이에 대해 미래 게시물에서 더 읽어보실 수 있어요.
 
 ## 아이디어 기록
-```
+
 
 <div class="content-ad"></div>
 
@@ -71,7 +71,7 @@ Mac 버전은 Setapp의 일부로 제공받고 있어요. Apple Pencil로 좀 �
 
 <div class="content-ad"></div>
 
-```
+
 ![My Creative Writing Setup](/assets/img/2024-06-19-MyCreativeWritingSetup_3.png)
 
 I mentioned MarginNote before in my note-taking post, and it remains my main way of taking notes on PDFs and ePubs. It also lets you then collate notes from multiple documents into large mind maps for further exploration of connected ideas.
@@ -79,7 +79,7 @@ I mentioned MarginNote before in my note-taking post, and it remains my main way
 ## Apple Notes
 
 I mostly use Apple notes for gathering images and text ideas based on research. For examples, images acquired from The State Library of Victoria for my second novel. The in-built image annotation features of macOS also means I can scrawl ideas on those images. It’s still a bit of a miscellaneous dumping ground for research, but the integration with the rest of macOS means it’s easy to get content in and out.
-```
+
 
 <div class="content-ad"></div>
 

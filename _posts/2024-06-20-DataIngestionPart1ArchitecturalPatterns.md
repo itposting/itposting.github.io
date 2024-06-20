@@ -27,7 +27,7 @@ link: "https://medium.com/the-modern-scientist/the-art-of-data-ingestion-powerin
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-DataIngestionPart1ArchitecturalPatterns_2.png)
 
 이 접근 방식 안에서 두 가지 주요 하위 패턴이 있습니다:
@@ -36,7 +36,7 @@ link: "https://medium.com/the-modern-scientist/the-art-of-data-ingestion-powerin
 - 복제 및 변환 — 여기서 작업 데이터는 분석에 보다 적합한 형식으로 복제됩니다. 이는 저장 프로시저, 머티얼라이즈드 뷰 또는 작업 응용 프로그램의 저장 레이어 내에서 구현될 수 있으며, 효율적인 분석 쿼리를 위해 최적화된 데이터의 병렬 버전을 생성합니다.
 
 이 모델은 데이터 관리의 간소화와 원시 데이터의 가용성을 제공하지만, 상당한 제한 사항이 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -53,9 +53,9 @@ link: "https://medium.com/the-modern-scientist/the-art-of-data-ingestion-powerin
 
 <div class="content-ad"></div>
 
-```
+
 ![Table](/assets/img/2024-06-20-DataIngestionPart1ArchitecturalPatterns_3.png)
-```
+
 
 이 방식의 주요 이점은 다음과 같습니다:
 

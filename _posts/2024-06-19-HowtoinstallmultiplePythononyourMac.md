@@ -91,9 +91,9 @@ pyenv global <version>
 
 예를 들어 전역 Python 버전을 Python 3.9.10으로 설정하려면 다음 명령을 실행하십시오:
 
-```
+
 pyenv global 3.9.10
-```
+
 
 이렇게하면 Python 3.9.10이 시스템의 기본 Python 버전으로 설정됩니다.
 

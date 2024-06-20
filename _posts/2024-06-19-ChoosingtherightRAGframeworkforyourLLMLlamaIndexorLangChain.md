@@ -13,20 +13,20 @@ link: "https://medium.com/generative-ai/choosing-the-right-rag-framework-for-you
 
 이미지(`<img>`) 태그를 Markdown 형식으로 변경하겠습니다.
 
-```
+
 ![Choosing the right RAG framework for your LLMLlamaIndex or LangChain](/assets/img/2024-06-19-ChoosingtherightRAGframeworkforyourLLMLlamaIndexorLangChain_0.png)
-```
+
 
 큰 언어 모델(Large Language Models, LLMs)은 현대의 주요 인공지능 기술 중 하나입니다. 2022년 11월에 OpenAI가 자체 생성 신생대화봇(Generative AI chatbot)을 공개하면서, 이런 첨단 기술들의 응용 가능성에 대한 사람들의 관심이 커졌습니다. ChatGPT의 놀라운 기능을 보고 나서 기업, 개발자, 개인들이 자신만의 맞춤형 ChatGPT 버전을 원했습니다. 이것이 Gen AI 모델 개발, 통합, 관리를 용이하게 하는 도구/프레임워크에 대한 수요 급증을 야기했습니다.
 
 시장에는 이런 수요를 채우는 두 주요 프레임워크가 있습니다: LlamaIndex와 LangChain. 하지만, 이 두 프레임워크의 목표는 개발자가 자신만의 맞춤형 LLM 응용프로그램을 만드는 데 도움을 주는 것입니다. 이들 프레임워크 각각은 고유의 장단점을 갖고 있습니다. 본 블로그 포스트의 목적은 LlamaIndex와 LangChain 사이의 주요 차이점을 드러내어 당신이 특정 용례에 맞는 적절한 프레임워크를 선택하는 데 도움을 주는 것입니다.
 
 # LlamaIndex 소개
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![LlamaIndex](/assets/img/2024-06-19-ChoosingtherightRAGframeworkforyourLLMLlamaIndexorLangChain_1.png)
 
 LlamaIndex는 사용자 정의 데이터를 기반으로 한 LLM(Llama Language Model)을 색인하고 쿼리하는 프레임워크입니다. 구조화된 데이터(관계형 데이터베이스), 비구조화된 데이터(NoSQL 데이터베이스) 및 반구조화된 데이터(세일즈포스 CRM 데이터)와 같은 다양한 소스를 통해 데이터 연결을 가능케 합니다.
@@ -34,7 +34,7 @@ LlamaIndex는 사용자 정의 데이터를 기반으로 한 LLM(Llama Language 
 데이터가 소유권이라고 할지라도, 최신 LLM의 이해 가능한 임베딩(embedding)으로 대규모로 색인화할 수 있습니다. 따라서 모델을 다시 교육할 필요가 사라집니다.
 
 # LlamaIndex 작동 방식은?
-```
+
 
 <div class="content-ad"></div>
 
@@ -70,7 +70,7 @@ os.environ["OPENAI_API_KEY"] = "your_api_key_here"
 에이전트, 지수, 쿼리 엔진 및 데이터셋과 같은 더 많은 리소스를 탐색하려면 Llama 인덱스 개발자를 위한 커뮤니티 공유 리소스/구성 요소에 액세스하기 위해 Llama 허브로 이동해주세요.
 
 # 🦙LlamaIndex로 QnA 애플리케이션 개발하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -111,7 +111,7 @@ print(response)
 
 <div class="content-ad"></div>
 
-```
+
 ![Choosing the right RAG framework for your LLMLlamaIndex or LangChain](/assets/img/2024-06-19-ChoosingtherightRAGframeworkforyourLLMLlamaIndexorLangChain_3.png)
 
 검색 엔진은 데이터 인덱스를 검색하여 관련 조각을 가져올 것입니다.
@@ -193,7 +193,7 @@ import os
 os.environ["cohere_apikey"] = "여러분의_API_키_여기에_입력"
 ```
 
-이후에는 LangChain을 활용하여 개발을 시작할 수 있습니다! 더 자세한 예제, 가이드 및 사용 사례는 LangChain 문서를 참조해 주세요.```
+이후에는 LangChain을 활용하여 개발을 시작할 수 있습니다! 더 자세한 예제, 가이드 및 사용 사례는 LangChain 문서를 참조해 주세요.
 
 <div class="content-ad"></div>
 
@@ -275,7 +275,7 @@ qa = RetrievalQA.from_chain_type(
 
 # 람마인덱스(LlamaIndex) vs 랑체인(LangChain)의 최상의 사용 사례
 
-람마인덱스(LlamaIndex):```
+람마인덱스(LlamaIndex):
 
 <div class="content-ad"></div>
 
@@ -293,7 +293,7 @@ Langchain과 LlamaIndex의 결합된 사용 사례: (
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-ChoosingtherightRAGframeworkforyourLLMLlamaIndexorLangChain_7.png)
 
 - 전문가 AI 에이전트 구축: LangChain은 여러 데이터 원본을 통합하고 LlamaIndex는 유사 의미 검색 능력으로 빠른 응답을 생성하고 정리할 수 있습니다.
@@ -302,7 +302,7 @@ Langchain과 LlamaIndex의 결합된 사용 사례: (
 # LlamaIndex 대 LangChain: 적절한 프레임워크 선택
 
 ![이미지](/assets/img/2024-06-19-ChoosingtherightRAGframeworkforyourLLMLlamaIndexorLangChain_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -328,7 +328,7 @@ LangChain은 보다 넓은 프레임워크 내에서 여러 도구를 사용하�
 
 <div class="content-ad"></div>
 
-```
+
 Finally remember that it’s not a classic case of either or, in the real world, you can implement a system whose architecture may contain both the frameworks, each playing their own unique roles.
 
 # FAQs
@@ -336,7 +336,7 @@ Finally remember that it’s not a classic case of either or, in the real world,
 Q1: How do LlamaIndex and LangChain differ in their primary focus?
 
 A1: LangChain’s main focus is the development & deployment of LLMs, along with the customization of LLMs using fine-tuning methods. However, LlamaIndex aims to provide an end-to-end ML workflow, along with data management & model evaluation.
-```
+
 
 <div class="content-ad"></div>
 

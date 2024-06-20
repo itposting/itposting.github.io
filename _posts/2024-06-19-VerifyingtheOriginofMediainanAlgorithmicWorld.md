@@ -316,7 +316,7 @@ ManifestStore가 자산의 해시(매니페스트 포함)가 매니페스트 자
 그러므로 이론적으로, 모든 것이 예상대로 작동한다면, 주어진 미디어 파일의 생성 및 수정 이력이 완전히 고려되고 실제임을 완전히 이해하는 데 이 데이터를 사용할 수 있습니다.
 
 <img src="/assets/img/2024-06-19-VerifyingtheOriginofMediainanAlgorithmicWorld_3.png" />
-```
+
 
 <div class="content-ad"></div>
 

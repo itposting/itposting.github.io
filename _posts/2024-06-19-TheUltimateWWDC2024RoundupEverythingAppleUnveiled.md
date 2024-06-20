@@ -53,7 +53,7 @@ link: "https://medium.com/@vizllx/the-ultimate-wwdc-2024-roundup-everything-appl
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-06-19-TheUltimateWWDC2024RoundupEverythingAppleUnveiled_5.png)
 
 - Universal Control for effortless cross-device use
@@ -61,15 +61,15 @@ link: "https://medium.com/@vizllx/the-ultimate-wwdc-2024-roundup-everything-appl
 ![Image 2](/assets/img/2024-06-19-TheUltimateWWDC2024RoundupEverythingAppleUnveiled_6.png)
 
 - Redesigned Safari with new privacy features
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Enhanced productivity tools for professionals](/assets/img/2024-06-19-TheUltimateWWDC2024RoundupEverythingAppleUnveiled_7.png)
 
 ![⌚ WatchOS 11: Your Ultimate Health Companion](/assets/img/2024-06-19-TheUltimateWWDC2024RoundupEverythingAppleUnveiled_8.png)
-```
+
 
 <div class="content-ad"></div>
 

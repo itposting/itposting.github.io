@@ -206,7 +206,7 @@ df.info()
 
 <div class="content-ad"></div>
 
-```
+
 ---
 ```js
 df.describe()
@@ -228,11 +228,11 @@ for x in ['Age', 'Annual Income (k$)', 'Spending Score (1-100)']:
     plt.grid()
 plt.show()
 ```
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-TinyMLGaussianMixtureModel_12.png)
 
 ```js
@@ -242,7 +242,7 @@ sns.pairplot(df, vars=['Spending Score (1-100)', 'Annual Income (k$)', 'Age'])
 ![image](/assets/img/2024-06-19-TinyMLGaussianMixtureModel_13.png)
 
 2.4 — Evaluation Methods
-```
+
 
 <div class="content-ad"></div>
 
@@ -295,23 +295,23 @@ plt.grid()
 
 <div class="content-ad"></div>
 
-```md
+
 # 가설 검정 수행
 threshold = 3.84 # 자유도가 1이고 유의수준 alpha=0.05 일 때 카이제곱 분포의 임계값
 num_components = np.argmax(lrts) + 1 # 최대 우도를 갖는 구성 요소의 수
 print("선택된 구성 요소(클러스터) 수:", num_components)
-```
+
 
 2.5 — 가우시안 혼합 모델
 
-```md
+
 algorithm = (GaussianMixture(n_components=num_components, init_params='k-means++', max_iter=300, 
                         tol=0.0001, random_state=42))
 algorithm.fit(X)
-```
+
 
 ![이미지](/assets/img/2024-06-19-TinyMLGaussianMixtureModel_16.png)
-```
+
 
 <div class="content-ad"></div>
 

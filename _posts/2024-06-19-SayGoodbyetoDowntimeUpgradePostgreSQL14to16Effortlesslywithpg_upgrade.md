@@ -97,9 +97,9 @@ sudo pg_upgradecluster 14 main
 
 <div class="content-ad"></div>
 
-```
+
 sudo pg_dropcluster 14 main
-```
+
 
 단계 5: 마지막 작업 — 이전 패키지 제거
 
@@ -149,7 +149,7 @@ exit
 
 <div class="content-ad"></div>
 
-```
+
 # 클러스터 초기화
 sudo su
 yum install postgresql16-server postgresql16
@@ -161,13 +161,13 @@ vim /var/lib/pgsql/16/data/postgresql.conf
 
 # 시작
 sudo systemctl start postgresql-16
-```
+
 
 제 4단계: 대코스믹 변화 — pg_upgrade 심포니
 
 우주의 장엄한 공연 중 하이라이트 — 멋진 pg_upgrade 유틸리티! 버전 14에서 우주의 PostgreSQL 16로의 원활한 전환을 경험해보세요.
 
-```
+
 /usr/pgsql-16/bin/pg_upgrade \
   -b /usr/pgsql-14/bin/ \
   -B /usr/pgsql-16/bin/ \
@@ -175,7 +175,7 @@ sudo systemctl start postgresql-16
   -D /var/lib/pgsql/16/data/ \
   -o ' -c config_file=/var/lib/pgsql/14/data/postgresql.conf' \
   -O ' -c config_file=/var/lib/pgsql/16/data/postgresql.conf'
-```
+
 
 <div class="content-ad"></div>
 

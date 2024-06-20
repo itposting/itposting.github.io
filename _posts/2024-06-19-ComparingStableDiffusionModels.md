@@ -17,7 +17,7 @@ link: "https://medium.com/@promptingpixels/comparing-stable-diffusion-models-2c1
 
 주요 릴리스에 대해 알아야 할 내용은 다음과 같습니다:
 
-```
+
 | 버전 번호    | 릴리스 날짜     |
 |-------------|----------------|
 | 1.1         | 2022년 6월     |
@@ -31,7 +31,7 @@ link: "https://medium.com/@promptingpixels/comparing-stable-diffusion-models-2c1
 | XL Turbo    | 2023년 11월    |
 | Cascade     | 2024년 2월     |
 | 3.0         | 곧 출시 예정    |
-``` 
+
 
 더 필요한 정보가 있거나 궁금한 점이 있으면 언제든지 물어주세요!
 

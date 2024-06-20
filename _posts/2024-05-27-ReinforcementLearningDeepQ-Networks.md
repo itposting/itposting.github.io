@@ -298,7 +298,7 @@ state_dim = env.observation_space.shape[0];
 action_dim = env.action_space.n;
 ```
 
-우리는 LunarLander 환경을 초기화하고 상태 및 액션 공간의 차원을 가져옵니다. state_dim은 상태의 특징 수를 나타내고, action_dim은 가능한 액션 수를 나타냅니다.```
+우리는 LunarLander 환경을 초기화하고 상태 및 액션 공간의 차원을 가져옵니다. state_dim은 상태의 특징 수를 나타내고, action_dim은 가능한 액션 수를 나타냅니다.
 
 <div class="content-ad"></div>
 

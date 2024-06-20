@@ -53,7 +53,7 @@ df.tail(10)
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-CompleteExploratoryDataAnalysisEDAusingPython_3.png)
 
 데이터에 대해 더 잘 이해하기 위해 각 열의 비 널 레코드 수, 데이터 유형, 데이터 세트의 메모리 사용량을 확인하기 위해 info()를 사용합니다.
@@ -63,7 +63,7 @@ df.info()
 ```
 
 ![image](/assets/img/2024-06-20-CompleteExploratoryDataAnalysisEDAusingPython_4.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -225,7 +225,7 @@ msno.bar(df)
 이 막대그래프는 데이터셋에서 누락되지 않은 데이터에 비례하는 값을 보여줍니다. 누락된 값의 수도 함께 표시됩니다. 데이터 포인트의 총 수가 2000개이므로, 이보다 적은 수의 데이터를 갖는 열에는 누락된 값이 있습니다. 예를 들어, '나이'에 해당하는 '1990' 값은 '나이' 열에 1990개의 누락되지 않은 값이 있다는 것을 의미합니다.
 
 # 누락된 값 보완하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -264,7 +264,7 @@ df['Age'].fillna(df['Age'].mean(), inplace=True)
 df['Marital_Status'].fillna(df['Marital_Status'].mode()[0], inplace=True)
 ```
 
-이러한 대체 작업을 완료한 후에는 'Age' 및 'Marital_Status'의 모든 결측값이 처리되었는지 확인하기 위해 데이터셋을 다시 확인할 수 있습니다:```
+이러한 대체 작업을 완료한 후에는 'Age' 및 'Marital_Status'의 모든 결측값이 처리되었는지 확인하기 위해 데이터셋을 다시 확인할 수 있습니다:
 
 <div class="content-ad"></div>
 
@@ -352,7 +352,7 @@ outliers = (abs_z_scores > 3).all(axis=1)
 
 <div class="content-ad"></div>
 
-```
+
 ![Exploratory Data Analysis](/assets/img/2024-06-20-CompleteExploratoryDataAnalysisEDAusingPython_11.png)
 
 3. IQR (Interquartile Range): 이상치를 IQR을 기반으로 식별합니다. IQR 바깥의 일정 범위를 벗어나는 포인트는 이상치로 간주될 수 있습니다.
@@ -366,7 +366,7 @@ outliers = ((df < (Q1 - 1.5 * IQR)) | (df > (Q3 + 1.5 * IQR))).any(axis=1)
 ```
 
 ![Exploratory Data Analysis](/assets/img/2024-06-20-CompleteExploratoryDataAnalysisEDAusingPython_12.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -404,14 +404,14 @@ sns.histplot(df['Positive_Axillary_Nodes'], bins=15, kde=True, color='lightgreen
 
 - 질문: 데이터셋이 다양한 결혼 상태에 분포되어 있고, 각 카테고리에 속한 환자의 백분율은 어떻게 되나요?
 
-```md
+
 marital_counts = df['Marital_Status'].value_counts()
 plt.figure(figsize=(10, 6))
 plt.pie(marital_counts, labels=marital_counts.index, autopct='%1.1f%%', startangle=90, colors=sns.color_palette('Blues'))
-```
+
 
 ![Marital Status Distribution](/assets/img/2024-06-20-CompleteExploratoryDataAnalysisEDAusingPython_14.png)
-```  
+
 
 <div class="content-ad"></div>
 
@@ -486,7 +486,7 @@ sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', square=True)
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-20-CompleteExploratoryDataAnalysisEDAusingPython_16.png" />
 
 결과적으로 나타나는 상관 행렬 및 히트맵은 데이터셋 내의 수치적 특징 사이의 관계를 시각적으로 제공합니다. 상관 행렬을 분석함으로써 어떤 특징이 유방암 생존 예측에 상당한 영향을 미칠 수 있는지 통찰력을 얻을 수 있습니다. 이 정보는 우리의 추가 분석을 이끄는 데 도움이 되며, 생존률에 영향을 미치는 중요한 요소의 발견으로 이어질 수도 있습니다.
@@ -494,7 +494,7 @@ sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', square=True)
 기억하세요, 탐색적 데이터 분석은 반복적인 과정이며, 초기 단계에서 얻은 통찰력을 바탕으로 추가 분석 및 시각화를 수행할 수 있습니다.
 
 다변량 분석
-```
+
 
 <div class="content-ad"></div>
 
@@ -605,7 +605,7 @@ sns.pairplot(df, hue='Survival_Status')
 분석: Pair plot을 통해 대각선의 상단과 하단에 대칭 패턴이 나타납니다. 이는 특징 쌍 간의 관계가 축을 교환해도 일관되게 유지됨을 나타냅니다. 이 대칭성은 상삼각형 또는 하삼각형 중 하나를 분석해도 본질적으로 동일한 정보를 제공한다는 것을 시사합니다.
 
 Pair plot의 대각선 플롯은 각 구체적인 특징의 단일 변수 분포를 시각적으로 나타내는 커널 밀도 부드러운 히스토그램을 보여줍니다. 이를 통해 각 변수의 분포를 살펴볼 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -629,7 +629,7 @@ sns.scatterplot(x='종양_크기', y='양성_겨드랑이_림프_절', data=df, 
 인사이트: 이 산점도에서 양성 겨드랑이 림프절의 수와 종양 크기 간에 중간 정도의 양의 관계를 관찰합니다. 점의 밀도는 데이터의 분포를 시사하며, 종양 크기가 클수록 양성 겨드랑이 림프절 수가 증가하는 경향을 보입니다. 그러나 많은 이상치 점이 이 경향에서 벗어나며, 잠재적 이상 현상을 조사해야 합니다. 이 그래프는 특정 범위의 양성 겨드랑이 림프절 및 종양 크기를 대표하는 밀도 높은 클러스터를 강조하며, 의료 의사 결정에 유용한 통찰을 제공합니다.
 
 # 6. 조인트 플롯
-```
+
 
 <div class="content-ad"></div>
 

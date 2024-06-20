@@ -59,7 +59,7 @@ Notes 앱에는 실제로 누락된 기능이지만 Reminders 앱에서 주요�
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-WhyCantAppleTeachitsProductivityAppstoShareNicely_2.png)
 
 이것은 정말 좋아요! 그러나 캘린더 이벤트를 이동하면 노트에 업데이트되지 않고 원래 날짜를 계속 표시할 것이라는 점에 유의하세요. 그리고 다시 한 번 iOS의 캘린더에는 공유 시트가 없습니다. 이것도 정리할 필요가 있어 보입니다.
@@ -67,7 +67,7 @@ Notes 앱에는 실제로 누락된 기능이지만 Reminders 앱에서 주요�
 자, 그럼 Reminders와 그 일정을 공유해보겠어요. 아니요, 드래그는 실패할 것이고 캘린더 이벤트를 위한 공유 시트가 없습니다. 이것 또한 일관성이 없고 개선할 여지가 있습니다.
 
 ## Reminders
-```
+
 
 <div class="content-ad"></div>
 

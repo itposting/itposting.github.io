@@ -104,7 +104,7 @@ lecmd -f $file
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지 1](/assets/img/2024-06-19-WindowsForensicsOfficeDocuments_2.png)
 
 파일이 처음 열린 시간을 나타내는 타임스탬프는 64비트 FILETIME에서, big endian 형식으로 “T” 뒤에 나오는 바이트 입니다. 아래 화면은 아이템 1에 대한 디코딩된 시간을 보여줍니다.
@@ -112,7 +112,7 @@ lecmd -f $file
 ![이미지 2](/assets/img/2024-06-19-WindowsForensicsOfficeDocuments_3.png)
 
 ![이미지 3](/assets/img/2024-06-19-WindowsForensicsOfficeDocuments_4.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -141,17 +141,17 @@ Position 값은 사용자가 마지막으로 보고 있던 문서의 위치를 �
 
 일하고 있는 문서를 추적 중이었던 것이 회사 작업을 위해 작업 중이던 것이기 때문에 사용자가 마지막으로 중지한 위치를 확인할 때 concept 확인을 위해 다른 문서로 전환할 것입니다. Reading Locations에 나열된 Document 1이라는 파일을 사용할 것입니다.
 
-```
+
 ![이미지](/assets/img/2024-06-19-WindowsForensicsOfficeDocuments_7.png)
-```
 
-```
+
+
 ![이미지](/assets/img/2024-06-19-WindowsForensicsOfficeDocuments_8.png)
-```
 
-```
+
+
 ![이미지](/assets/img/2024-06-19-WindowsForensicsOfficeDocuments_9.png)
-```
+
 
 <div class="content-ad"></div>
 

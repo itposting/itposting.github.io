@@ -31,7 +31,7 @@ Lawny를 만나보세요! 이 잔디 깎는 기계는 앞면 카메라가 장착
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_1.png)
 
 모터를 제어하려면 릴레이와 컨트롤러가 필요합니다. 제 경우에는 라즈베리 파이 5를 사용했어요 (가지고 있었기 때문에). 그러나 어떤 라즈베리 기기라도 펄스 폭 변조 및 카메라를 지원할 수 있습니다.
@@ -39,7 +39,7 @@ Lawny를 만나보세요! 이 잔디 깎는 기계는 앞면 카메라가 장착
 ![이미지](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_2.png)
 
 그것은 정적 잔디깎이가 될 거예요. 하지만 저는 한 곳뿐만 아니라 어디든 잔디를 자르고, 잔디깎이를 왼쪽과 오른쪽으로 회전시키고 싶어요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -123,7 +123,7 @@ Lawny를 만나보세요! 이 잔디 깎는 기계는 앞면 카메라가 장착
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지1](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_13.png)
 
 옆면이 완료되면 자동차 풀비둘기 모터 2개를 추가합니다. 이 전기 모터는 더 많은 토크를 가진 기어박스가 있어 무거운 프로젝트에 더 잘 작동할 것입니다.
@@ -131,7 +131,7 @@ Lawny를 만나보세요! 이 잔디 깎는 기계는 앞면 카메라가 장착
 ![이미지2](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_14.png)
 
 다음으로, 전자 부품을 위한 앞쪽 상자를 만들어야 합니다. 이 상자는 밀폐되어 있어야 하며 부품이 습기와 풀로부터 안전하게 보호되도록 도와줍니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -177,9 +177,9 @@ Lawny를 만나보세요! 이 잔디 깎는 기계는 앞면 카메라가 장착
 
 이미지 태그를 다음과 같이 변경하겠습니다.
 
-```
+
 ![이미지](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_23.png)
-```
+
 
 # 하나의 PWM 신호, 하나의 릴레이, 두 가지 방향
 
@@ -189,7 +189,7 @@ Input 1에 신호를 보내면 모터가 회전합니다.
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_24.png)
 
 Input 2로 신호를 보내면 H-Bridge는 전류 극성을 변경하고 모터는 반대 방향으로 회전합니다.
@@ -197,11 +197,11 @@ Input 2로 신호를 보내면 H-Bridge는 전류 극성을 변경하고 모터�
 ![이미지](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_25.png)
 
 Raspberry PI의 두 핀 간에 입력을 전환하기 위해 간단한 릴레이를 추가할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_26.png)
 
 # Connection schema
@@ -209,7 +209,7 @@ Raspberry PI의 두 핀 간에 입력을 전환하기 위해 간단한 릴레이
 I will have two electric circuits. The first one is a 5V circuit with controller elements. Twelve-volt connections have thin lines on the schema.
 
 We have :
-```
+
 
 <div class="content-ad"></div>
 
@@ -229,7 +229,7 @@ We have :
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_28.png)
 
 Further, I am adding both windshield wiper motors and connecting their black and yellow wires to the H-Bridge motor’s output.
@@ -237,7 +237,7 @@ Further, I am adding both windshield wiper motors and connecting their black and
 ![image](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_29.png)
 
 ![image](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_30.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -301,7 +301,7 @@ Further, I am adding both windshield wiper motors and connecting their black and
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-MeetLawnyPhone-ControlledFPVLawnmowerwithRaspberryPI_40.png)
 
 Finally, I can do another Lawny test!
@@ -309,7 +309,7 @@ Finally, I can do another Lawny test!
 ## Upgrades #2
 
 On the second test, Lawny didn’t manage to go on top of the tall grass.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@chandravi.kala/creating-dashboard-in-excel-step-by-st
 ---
 
 
-```
+
 <img src="/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_0.png" />
 
 아래에서 사용된 데이터 세트는 Tableau 커뮤니티에서 제공되는 Superstore 데이터 세트입니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@chandravi.kala/creating-dashboard-in-excel-step-by-st
 Microsoft Excel에서 대시보드를 만드는 단계
 
 - 새 엑셀 워크북 열기
-```
+
 
 <div class="content-ad"></div>
 
@@ -33,7 +33,7 @@ Microsoft Excel에서 대시보드를 만드는 단계
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_2.png)
 
 Select the data and click insert Pivot Table
@@ -41,11 +41,11 @@ Select the data and click insert Pivot Table
 1. Click the option - From table/Range
 
 2. Leave the table range as is and click new worksheet. A new sheet will be created, and rename it as Analyze
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Step3](/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_3.png)
 
 ![Step4](/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_4.png)
@@ -53,7 +53,7 @@ Select the data and click insert Pivot Table
 3. 오른쪽에는 피벗 테이블 필드가 나타날 것입니다. 필터, 열, 행, 값으로 구성된 네 가지 섹션이 있을 것입니다. 매출을 값으로 드래그하여 매출의 합계(집계)로 표시하고, 하위 범주를 행으로 이동시킵니다. 새로운 피벗 테이블 데이터가 생성됩니다.
 
 ![Step5](/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -77,13 +77,13 @@ Select the data and click insert Pivot Table
 
 <div class="content-ad"></div>
 
-```
+
 ![Dashboard](/assets/img/2024-06-19-CreateDashboardinMicrosoftExcelStepbyStepMethodPart1_9.png)
 
 - Edit the title and right-click on the bar to sort it.
 - Hide all remaining buttons.
 - Remove the gridlines.
-```
+
 
 <div class="content-ad"></div>
 

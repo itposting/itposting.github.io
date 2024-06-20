@@ -45,7 +45,7 @@ link: "https://medium.com/towards-data-science/a-weekend-ai-project-using-speech
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-AWeekendAIProjectUsingSpeechRecognitionPTTandaLargeActionModelonaRaspberryPi_1.png)
 
 이 글을 쓰는 시점에 라즈베리파이 모델마다 (RPi 5는 더 빠르지만 더 비싸다) 및 RAM 크기에 따라 약 $80-120 정도의 비용이 듭니다 (최소 4GB RAM이 필요함). 디스플레이, 버튼 및 와이어 세트는 아마존에서 $10-15 정도로 구매할 수 있습니다. 소리 녹음을 위해서는 USB 마이크로폰이면 됩니다. 라즈베리파이 설정은 간단합니다. 이에 대한 충분한 자습서가 있습니다. 언급해야 할 점은 Raspbian의 32비트 및 64비트 버전이 모두 사용 가능하다는 것입니다. 대부분의 현대적인 Python 라이브러리는 더 이상 32비트 버전으로 제공되지 않기 때문에 64비트 버전이 필요합니다.
@@ -53,7 +53,7 @@ link: "https://medium.com/towards-data-science/a-weekend-ai-project-using-speech
 이제 소프트웨어 부분에 대해 이야기해 봅시다.
 
 ## Push-to-Talk (PTT)
-```
+
 
 <div class="content-ad"></div>
 
@@ -117,7 +117,7 @@ class GPIOButton:
         return gpio.input(pin) if gpio is not None else 0
 ```
 
-이 방식을 통해 라즈베리 파이가 없는 사용자들을 위해 “가상 버튼”을 만들 수도 있어요. 예를 들어, 이 “버튼”은 애플리케이션이 시작된 후 처음 5초 동안 눌린 상태일 수 있어요:```
+이 방식을 통해 라즈베리 파이가 없는 사용자들을 위해 “가상 버튼”을 만들 수도 있어요. 예를 들어, 이 “버튼”은 애플리케이션이 시작된 후 처음 5초 동안 눌린 상태일 수 있어요:
 
 <div class="content-ad"></div>
 
@@ -138,7 +138,7 @@ class VirtualButton(GPIOButton):
 
 ## 소리 녹음 및 음성 인식
 
-PTT(푸시 투 토크) 버튼을 사용하여 소리를 녹음할 수 있습니다. 이를 위해 Python 사운드카드 라이브러리를 사용할 것입니다. 0.5초씩 오디오를 녹음하며, 이 정확도는 우리의 작업에 충분히 적합합니다:```
+PTT(푸시 투 토크) 버튼을 사용하여 소리를 녹음할 수 있습니다. 이를 위해 Python 사운드카드 라이브러리를 사용할 것입니다. 0.5초씩 오디오를 녹음하며, 이 정확도는 우리의 작업에 충분히 적합합니다:
 
 <div class="content-ad"></div>
 
@@ -218,7 +218,7 @@ with recorder.get_microphone() as mic:
             ptt.reset_state()
 ```
 
-전체 코드는 기사의 끝에 제공되지만, 이 부분만으로 아이디어를 이해할 수 있습니다. 여기서는 무한한 “메인” 루프가 있습니다. 마이크는 항상 활성화되어 있지만, 녹음은 버튼이 눌릴 때만 시작됩니다. PTT 버튼이 놓일 때, 오디오 버퍼를 음성 인식에 사용할 수 있습니다.```
+전체 코드는 기사의 끝에 제공되지만, 이 부분만으로 아이디어를 이해할 수 있습니다. 여기서는 무한한 “메인” 루프가 있습니다. 마이크는 항상 활성화되어 있지만, 녹음은 버튼이 눌릴 때만 시작됩니다. PTT 버튼이 놓일 때, 오디오 버퍼를 음성 인식에 사용할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -284,7 +284,7 @@ class OLEDDisplay:
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*o863KNDptmNqkTmz1kBamw.gif" />
 
-깜박임은 비디오 녹화의 부작용이며, 인간 눈에는 보이지 않습니다. 미술가가 아니라서 제 그림 실력이 죄송합니다 ;)```
+깜박임은 비디오 녹화의 부작용이며, 인간 눈에는 보이지 않습니다. 미술가가 아니라서 제 그림 실력이 죄송합니다 ;)
 
 <div class="content-ad"></div>
 

@@ -195,11 +195,11 @@ ORDER BY 1;
 
 We will make a 2 * 4 pivot table for this question.
 
-Next, we can create a pivot table using DECODE(). A sample answer and output are shown below:```
+Next, we can create a pivot table using DECODE(). A sample answer and output are shown below:
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-HowtoPivotTablesinSQL_8.png" />
 
 ```js
@@ -228,7 +228,7 @@ FROM EMPLOYEES
 JOIN REGION USING (REGIONID)
 GROUP BY Country;
 ``` 
-```
+
 
 <div class="content-ad"></div>
 
@@ -349,7 +349,7 @@ JOIN (
 - CUBE(A, B, C): (A, B, C), (A, B), (A, C), (B, C), (A), (B), (C), ()
 - ROLLUP(A, B, C): (A, B, C), (A, B), (A), ()
 
-PIVOT() 절 작동 방식을 이해한 후에는 이를 part 1에 있는 Northwind 데이터세트로 연습해볼 수 있을 거예요.```
+PIVOT() 절 작동 방식을 이해한 후에는 이를 part 1에 있는 Northwind 데이터세트로 연습해볼 수 있을 거예요.
 
 <div class="content-ad"></div>
 

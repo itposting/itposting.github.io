@@ -96,7 +96,7 @@ Settings.embed_model = embed_model
 
 아래의 표를 Markdown 형식으로 변경하세요:
 
-```
+
 Download the relevant data:
 
 ```js
@@ -196,7 +196,7 @@ query_engine_tools = [
 - num_expansions는 각 노드 아래에서 탐색할 가능한 하위 동작 수를 나타냅니다.
 - num_expansions=2는 각 부모 동작에 대해 가능한 다음 동작을 탐색할 것을 의미합니다.
 - max_rollouts는 탐색 공간의 각 탐사가 얼마나 깊게 이어지는지를 나타냅니다.
-- max_rollouts=5는 트리에서 최대 깊이 5까지 탐사됨을 의미합니다.```
+- max_rollouts=5는 트리에서 최대 깊이 5까지 탐사됨을 의미합니다.
 
 <div class="content-ad"></div>
 
@@ -236,7 +236,7 @@ LlamaIndex의 노트북은 여러 가지 다양한 순열을 거칩니다...
 
 <div class="content-ad"></div>
 
-```
+
 ![Language Agent Tree Search - Image 1](/assets/img/2024-06-20-LanguageAgentTreeSearchLATS_1.png)
 
 ![Language Agent Tree Search - Image 2](/assets/img/2024-06-20-LanguageAgentTreeSearchLATS_2.png)
@@ -244,4 +244,3 @@ LlamaIndex의 노트북은 여러 가지 다양한 순열을 거칩니다...
 ![Language Agent Tree Search - Image 3](/assets/img/2024-06-20-LanguageAgentTreeSearchLATS_3.png)
 
 [Click here for more information](https://llamahub.ai/l/agent/llama-index-agent-lats?from=agent)
-```

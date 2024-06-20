@@ -124,7 +124,7 @@ $ fire_alarm <fct> no, no, no, no, no, no, no, no, no, no, no, no, no, n…
 
 상관 관계 플롯을 수행
 
-<img src="/assets/img/2024-06-20-ClassificationModelinRwithCaretPackage_1.png" />```
+<img src="/assets/img/2024-06-20-ClassificationModelinRwithCaretPackage_1.png" />
 
 <div class="content-ad"></div>
 
@@ -474,4 +474,4 @@ Confusion Matrix and Statistics
        '양성' 클래스 : yes
 ```
 
-자세한 내용은 깃허브 저장소를 방문해 주세요. 이 절을 읽어 주셔서 감사합니다.```
+자세한 내용은 깃허브 저장소를 방문해 주세요. 이 절을 읽어 주셔서 감사합니다.

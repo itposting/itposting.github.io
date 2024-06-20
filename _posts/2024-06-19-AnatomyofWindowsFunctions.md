@@ -88,7 +88,7 @@ myTable을 PARTITION BY depto로 지정하여 SELECT 및 SUM(value)을 실행합
 
 <div class="content-ad"></div>
 
-```md
+
 ![AnatomyofWindowsFunctions_2](/assets/img/2024-06-19-AnatomyofWindowsFunctions_2.png)
 
 이 예제는 해당 기능이 '창' 함수로 불리는 이유를 이해하는 데 도움이 됩니다. OVER 절은 해당 함수가 작동할 '창' 즉, 테이블의 일련의 줄을 정의합니다.
@@ -96,7 +96,7 @@ myTable을 PARTITION BY depto로 지정하여 SELECT 및 SUM(value)을 실행합
 위의 경우, SUM() 함수는 depto 열 (RH 및 SALES)에 의해 생성된 파티션에서 작동합니다. 이 함수는 depto 열의 각 항목에 대해 '값' 열의 모든 값들을 각각 개별적으로 합산합니다. 줄이 속한 그룹 (RH 또는 SALES)에 따라 '총계' 열의 값이 결정됩니다.
 
 2 — 시간과 순서의 인식
-```
+
 
 <div class="content-ad"></div>
 
@@ -298,7 +298,7 @@ WHERE SUM() OVER() > 10 -- 이 기능은 postgres에서는 불가능합니다.
 
 윈도우 함수의 또 다른 고전적인 사례! 때로는 하나의 열 집합을 기준으로 하여 테이블의 행을 중복 제거해야 할 때가 있습니다.
 
-물론 SQL에서는 DISTINCT 절을 사용할 수 있지만, 이는 전체 행이 중복될 때만 작동합니다. 테이블에 같은 ID 열의 값이지만 나머지 열에서는 다른 값이 있는 여러 행이 있는 경우 다음 로직을 사용하여 중복을 제거할 수 있습니다:```
+물론 SQL에서는 DISTINCT 절을 사용할 수 있지만, 이는 전체 행이 중복될 때만 작동합니다. 테이블에 같은 ID 열의 값이지만 나머지 열에서는 다른 값이 있는 여러 행이 있는 경우 다음 로직을 사용하여 중복을 제거할 수 있습니다:
 
 <div class="content-ad"></div>
 

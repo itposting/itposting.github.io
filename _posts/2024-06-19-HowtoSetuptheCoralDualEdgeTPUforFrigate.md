@@ -11,7 +11,7 @@ link: "https://medium.com/@timothydmoody/how-to-setup-the-coral-dual-edge-tpu-fo
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_0.png)
 
 # 전체 비디오 튜토리얼
@@ -19,7 +19,7 @@ link: "https://medium.com/@timothydmoody/how-to-setup-the-coral-dual-edge-tpu-fo
 # Coral AI PCIe 가속기 드라이버 설치
 
 여기서부터 모든 것을 간소화하는 이 스크립트를 사용하시면 됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -106,7 +106,7 @@ sudo systemctl status mosquitto
 
 아래와 같이 테이블 태그를 Markdown 형식으로 변경해주세요.
 
-```
+
 ![이미지](/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_5.png)
 
 MQTT 구성 파일을 편집합니다.
@@ -116,14 +116,14 @@ vim /etc/mosquitto/mosquitto.conf
 ```
 
 이 두 줄을 추가하세요...
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 allow_anonymous true
 listener 1883
-```
+
 
 설정 파일은 다음과 같이 보일 것입니다...
 
@@ -287,15 +287,13 @@ logger:
 
 IP 주소를 교체해야 합니다.
 
-```js
 hostname -I
-```
 
 IP 카메라가 있다면이 프로세스가 훨씬 쉽습니다. 하지만 제가 저렴한 웹캠을 사용하고 있습니다.
 
 <div class="content-ad"></div>
 
-```md
+```
 ![이미지](/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_8.png)
 
 프리게이트 도커 컨테이너 실행
@@ -318,7 +316,7 @@ docker run -d \
 ```
 
 노트: 우리는 apex 장치를 컨테이너로 모두 전달하고 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -345,7 +343,7 @@ RTSP_RTSPADDRESS=192.168.XXX.XXX:554 ./rtsp-simple-server
 ```
 
 ![How to Setup the Coral Dual Edge TPU for Frigate](/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_10.png)
-```  
+
 
 <div class="content-ad"></div>
 
@@ -382,13 +380,13 @@ curl -sS https://gist.githubusercontent.com/dataslayermedia/fb20aae9dea64bca286b
 ## 제품 하드웨어 링크
 
 1080P 웹캠
-```
+
 
 <div class="content-ad"></div>
 
 아래는 표 형식을 변경한 것입니다.
 
-```
+
 <img src="/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_11.png" />
 
 Coral AI Dual Edge TPU
@@ -396,12 +394,11 @@ Coral AI Dual Edge TPU
 <img src="/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_12.png" />
 
 Zima Board
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Dual Edge TPU Adapter Low Profile](/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_13.png)
 
 ![Dual Edge TPU Adapter Low Profile](/assets/img/2024-06-19-HowtoSetuptheCoralDualEdgeTPUforFrigate_14.png)
-```

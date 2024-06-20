@@ -34,11 +34,11 @@ for train_index, test_index in tscv.split(X):
 In the rolling window approach, your model moves forward in time with a fixed-size training window that slides along your dataset. It’s like taking steps into the future while always keeping an eye on the past.
 
 ![TimeSeriesSplittingTechniques](/assets/img/2024-06-19-TimeSeriesSplittingTechniquesEnsuringAccurateModelValidation_1.png)
-```  
+
 
 <div class="content-ad"></div>
 
-```
+
 파이썬 코드:
 
 ```python
@@ -54,7 +54,7 @@ for date in pd.date_range('2021-01-01', '2021-12-31', freq='M'):
 
 
 ![시각](/assets/img/2024-06-19-TimeSeriesSplittingTechniquesEnsuringAccurateModelValidation_2.png)
-```
+
 
 <div class="content-ad"></div>
 

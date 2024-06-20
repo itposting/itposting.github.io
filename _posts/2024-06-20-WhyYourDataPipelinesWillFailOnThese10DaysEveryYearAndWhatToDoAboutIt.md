@@ -146,7 +146,7 @@ if f"{prev_month}/{prev_day}" in file_str:
 
 - 스크립트에 31일이 있는 월을 알려주는 논리 작성
 - 이전 논리에 따라 이전 월 값 또는 현재 월 값을 반환할지 확인하는 논리 작성
-```
+
 
 <div class="content-ad"></div>
 

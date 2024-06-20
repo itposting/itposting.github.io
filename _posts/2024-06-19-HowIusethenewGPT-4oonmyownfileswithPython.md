@@ -11,7 +11,7 @@ link: "https://medium.com/@woyera/how-i-use-the-new-gpt-4o-on-my-own-files-9bb8d
 ---
 
 
-```
+
 ![2024-06-19-HowIusethenewGPT-4oonmyownfileswithPython_0.png](/assets/img/2024-06-19-HowIusethenewGPT-4oonmyownfileswithPython_0.png)
 
 현재 인공 지능 뉴스를 따라갔다면 OpenAI가 최근에 최신 모델인 GPT-4o를 발표했다는 것을 알고 계실 것입니다. 가장 인상적인 새로운 기능은 다중 모달리티인데, 아쉽게도 이러한 기능들은 아직 공개되지 않았습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@woyera/how-i-use-the-new-gpt-4o-on-my-own-files-9bb8d
 우리가 다중 모달 특징들이 롤아웃되길 기다리는 동안, 나는 여러분의 데이터에 GPT-4o를 사용하는 가장 쉬운 방법을 보여드리겠습니다, 어시스턴트!
 
 OpenAI는 최근에 어시스턴트를 업데이트하여 데이터를 섭취하는 능력을 크게 향상시켰습니다. GPT-4o의 효율성과 어시스턴트가 이제 최대 10,000개의 파일을 섭취할 수 있는 데, 여러분만의 어시스턴트를 만들기에 더 좋은 시기가 온 적이 없습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -85,7 +85,7 @@ Finally, you will use the vector store id that we copied earlier and paste it in
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-HowIusethenewGPT-4oonmyownfileswithPython_10.png)
 
 벡터 저장소에 애니메이션을 연결한 후에는 옵션 된 파일의 내용에 관한 질문으로 에이전트를 테스트해 보세요.
@@ -93,7 +93,7 @@ Finally, you will use the vector store id that we copied earlier and paste it in
 내 어시스턴트의 경우, Colleen Hoover의 소설 'Verity'가 있는 벡터 저장소에 연결하도록 만들었습니다. 여러분의 파트너가 요청한대로 그리고 답변을 참조하면서 이 답변을 생성하는 모습을 확인할 수 있어요!
 
 ![이미지](/assets/img/2024-06-19-HowIusethenewGPT-4oonmyownfileswithPython_11.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -110,16 +110,12 @@ Finally, you will use the vector store id that we copied earlier and paste it in
 ```python
 예를 들어, 다음과 같이 코드를 작성할 수 있습니다.
 
-```python
 import time
 from openai import OpenAI
-```
 
 먼저 API 키를 사용하여 클라이언트를 만듭니다.
 
-```python
 client = OpenAI(api_key='여기에 키를 입력하세요')
-```
 
 그런 다음 대화를 저장할 "스레드"를 만듭니다.
 ```
@@ -162,24 +158,24 @@ else:
 ```
 
 쓰레드로부터의 응답 및 실행에서의 메시지를 얻으려면 다음을 사용합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 message_response = client.beta.threads.messages.list(thread_id=empty_thread.id) 
 messages = message_response.data
 
 latest_message = messages[0]
 print(f" response: {latest_message.content[0].text.value}")
-```
+
 
 Put all the code together, and ask the OpenAI Assistant Interface the same question as earlier. It should give the same answer, and it did!
 
 ![Image](/assets/img/2024-06-19-HowIusethenewGPT-4oonmyownfileswithPython_12.png)
 
 This is the complete script!
-```
+
 
 <div class="content-ad"></div>
 
@@ -231,7 +227,7 @@ print(f"Response: {latest_message.content[0].text.value}")
 도우미 API를 응용 프로그램에 통합하려면 수많은 다양한 방법을 사용할 수 있습니다. 이것은 API에 인터페이스를 제공하는 가장 쉬운 방법 중 하나였습니다.
 
 Streamlit은 우리에게 도우미를 표시할 수 있는 쉬운 프론트엔드를 제공합니다. 사이트를 Streamlit을 통해 호스팅하는 것을 선택한다면 다음 코드를 사용해보세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -304,4 +300,3 @@ if st.button("Send") and user_input:
 <img src="/assets/img/2024-06-19-HowIusethenewGPT-4oonmyownfileswithPython_13.png" />
 
 AI 모델 선택 및 비즈니스 통합 전체 프로세스를 다른 사람에게 맡기고 싶다면, www.woyera.com에서 연락하세요.
-```

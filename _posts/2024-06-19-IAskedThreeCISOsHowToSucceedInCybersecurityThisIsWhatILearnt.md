@@ -154,8 +154,7 @@ CISO와 같은 급여를 받으면서도 그에 따라오는 압박과 짐을 �
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-IAskedThreeCISOsHowToSucceedInCybersecurityThisIsWhatILearnt_1.png)
 
 Taimur Ijlal은 핀테크 산업에서 20년 이상 국제적으로 사이버 보안 및 IT 리스크 관리 분야에서 다수의 수상 경력을 가진 정보 보안 리더입니다. Taimur은 링크드인 또는 "Cloud Security Guy"라는 YouTube 채널에서 연락할 수 있으며, 거기에서는 주로 클라우드 보안, 인공 지능 및 일반 사이버 보안 직업에 관한 게시물을 자주 올립니다.
-```

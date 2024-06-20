@@ -52,7 +52,7 @@ ps 명령어와 함께 제공할 수 있는 유용한 옵션 세트는 -eFH입�
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-19-LinuxProcessAnalysis_2.png" />
 
 # Advanced Usage
@@ -60,7 +60,7 @@ ps 명령어와 함께 제공할 수 있는 유용한 옵션 세트는 -eFH입�
 - Network Files with Specific Protocol:
 
 - Explains how to filter network connections by protocol (TCP/UDP).
-```
+
 
 <div class="content-ad"></div>
 

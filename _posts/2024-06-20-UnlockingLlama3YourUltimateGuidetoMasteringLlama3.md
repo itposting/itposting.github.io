@@ -277,7 +277,7 @@ demo.launch(debug=True)
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*tQMX7SYlik7Riuwd5FE_Jg.gif" />
 
 ## 방법 2: Ollama 사용하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -292,7 +292,7 @@ Ollama를 시작하려면 소프트웨어를 다운로드하기만 하면 됩니
 
 <div class="content-ad"></div>
 
-```
+
 js
 Compile the text ollama run llama3:instruct.
 
@@ -301,7 +301,7 @@ Also, use llama3, llama3:70b, llama3:70b-instruct as arguments for different typ
 ## Running the Model
 
 - Once the model is downloaded, you can start querying. Input your context directly through the terminal or use the API to interact with the model.
-```
+
 
 <div class="content-ad"></div>
 

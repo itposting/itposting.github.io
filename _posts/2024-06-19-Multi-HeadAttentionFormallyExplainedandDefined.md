@@ -113,7 +113,7 @@ h를 다중 헤드 어텐션 레이어에서 사용될 어텐션 헤드의 수�
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-Multi-HeadAttentionFormallyExplainedandDefined_4.png)
 
 서로 다른 이름을 가지고 있지만, 쿼리, 키, 값은 본질적으로 동일한 정의를 가지고 있습니다: 입력 행렬과 가중치 행렬의 곱입니다.
@@ -121,7 +121,7 @@ h를 다중 헤드 어텐션 레이어에서 사용될 어텐션 헤드의 수�
 여기서 k와 v가 양의 정수일 때, 가중치 행렬은 다음 행렬 공간에 있습니다:
 
 ![image](/assets/img/2024-06-19-Multi-HeadAttentionFormallyExplainedandDefined_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -194,7 +194,7 @@ Q2: 주어진 쿼리 Q와 주어진 키 K, 행 i, 열 j에 대해, 아래와 같
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-Multi-HeadAttentionFormallyExplainedandDefined_11.png)
 
 Q3: 특정 쿼리 Q와 주어진 키 K에 대해 다음 매트릭스의 한 행을 어떻게 해석할 수 있나요?
@@ -202,7 +202,7 @@ Q3: 특정 쿼리 Q와 주어진 키 K에 대해 다음 매트릭스의 한 행�
 ![Image](/assets/img/2024-06-19-Multi-HeadAttentionFormallyExplainedandDefined_12.png)
 
 (아래 "Recap" 이후에 해답이 있습니다.)
-```
+
 
 <div class="content-ad"></div>
 
@@ -216,7 +216,7 @@ Q3: 특정 쿼리 Q와 주어진 키 K에 대해 다음 매트릭스의 한 행�
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-06-19-Multi-HeadAttentionFormallyExplainedandDefined_14.png)
 
 ## Solution — Exercise 4
@@ -224,7 +224,7 @@ Q3: 특정 쿼리 Q와 주어진 키 K에 대해 다음 매트릭스의 한 행�
 ![Image](/assets/img/2024-06-19-Multi-HeadAttentionFormallyExplainedandDefined_15.png)
 
 The (scaled) attention scores are the dot products between the projections of the input tokens both in the query space and the key space. They provide a raw score of “how much each input token attends to each input token”.
-```
+
 
 <div class="content-ad"></div>
 

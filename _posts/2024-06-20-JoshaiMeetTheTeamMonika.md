@@ -11,7 +11,7 @@ link: "https://medium.com/@joshdotai/josh-ai-meet-the-team-monika-368c305c4105"
 ---
 
 
-```
+
 ![Monika](/assets/img/2024-06-20-JoshaiMeetTheTeamMonika_0.png)
 
 Name: Monika
@@ -19,7 +19,7 @@ Name: Monika
 What do you do at Josh? Graphic Design Intern
 
 Where are you from originally? Rockwall, TX
-```
+
 
 <div class="content-ad"></div>
 

@@ -94,7 +94,7 @@ def frame_segmentation(path_to_extracted_frames, frame_count, save_path_for_mask
 
 ![비디오 링크](https://miro.medium.com/v2/resize:fit:1200/1*YSFCLiOQ-kPB-bf_4MQQ1g.gif)
 
-create_mask.py를 실행한 후, 마스크 비디오가 템플릿의 하위 폴더에 있음을 확인해주세요.```
+create_mask.py를 실행한 후, 마스크 비디오가 템플릿의 하위 폴더에 있음을 확인해주세요.
 
 <div class="content-ad"></div>
 

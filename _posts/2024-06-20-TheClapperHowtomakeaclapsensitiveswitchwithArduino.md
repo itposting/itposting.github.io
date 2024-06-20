@@ -247,7 +247,7 @@ if (clapCount == 2 && (millis() - lastClapTime <= clapDelay)) {
 }
 ```
 
-여기서, 스위치를 토글하기 전에 클랩 횟수가 2이고 연이어 발생한 클랩이 clapDelay 시간 내에 있는지 확인합니다.```
+여기서, 스위치를 토글하기 전에 클랩 횟수가 2이고 연이어 발생한 클랩이 clapDelay 시간 내에 있는지 확인합니다.
 
 <div class="content-ad"></div>
 

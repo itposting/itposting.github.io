@@ -11,7 +11,7 @@ link: "https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-20-CreatingaLinuxservicewithsystemd_0.png)
 
 웹 애플리케이션을 작성하는 동안, 계산이 많이 드는 작업을 비동기식 작업자 스크립트로 옮기거나 나중에 작업을 예약하거나, 심지어 클라이언트와 직접 통신하기 위해 소켓을 수신하는 데몬을 작성해야 하는 경우가 종종 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c
 가끔 더 나은 도구가 있을 수도 있지만—항상 기존 소프트웨어를 먼저 사용하는 것을 고려하십시오—직접 서비스를 작성함으로써 제약사항에 바인딩되어 있을 때 얻을 수 없는 유연성을 얻을 수 있습니다.
 
 멋진 점은 리눅스 서비스를 만들기가 상당히 쉽다는 것입니다: 원하는 프로그래밍 언어로 장기 실행 프로그램을 작성하고, systemd를 사용하여 서비스로 변환하십시오.
-```
+
 
 <div class="content-ad"></div>
 
@@ -98,7 +98,7 @@ After= 지시문이 무엇을 하는 지 궁금해할 수도 있습니다. 이�
 
 <div class="content-ad"></div>
 
-```md
+
 ## 종료 시 재시작
 
 기본적으로 systemd는 프로그램이 어떤 이유로든 종료되면 서비스를 다시 시작하지 않습니다. 일반적으로 항상 사용 가능해야 하는 서비스에 대해 원하는 동작이 아니므로 종료 시 항상 다시 시작하도록 지시합니다:

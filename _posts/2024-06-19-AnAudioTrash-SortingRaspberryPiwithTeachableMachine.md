@@ -206,7 +206,7 @@ scp -r ./* pi@raspberrypi.local:~/pi_garbage_classifier/
 python /home/pi/pi_garbage_classifier/app.py
 
 
-앱이 시작하는 데 몇 초 정도 걸립니다. 카메라 램프가 깜박일 때, 카메라 앞에 다양한 물체를 두어 시스템을 테스트할 수 있습니다. 물체의 클래스를 알리고 콘솔에 다음 출력이 나타날 것입니다 (그림 8).```
+앱이 시작하는 데 몇 초 정도 걸립니다. 카메라 램프가 깜박일 때, 카메라 앞에 다양한 물체를 두어 시스템을 테스트할 수 있습니다. 물체의 클래스를 알리고 콘솔에 다음 출력이 나타날 것입니다 (그림 8).
 
 <div class="content-ad"></div>
 
@@ -230,7 +230,7 @@ sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 @python /home/pi/pi_garbage_classifier/app.py
 ```
 
-이렇게 autostart 파일이 보이게 됩니다.```
+이렇게 autostart 파일이 보이게 됩니다.
 
 <div class="content-ad"></div>
 

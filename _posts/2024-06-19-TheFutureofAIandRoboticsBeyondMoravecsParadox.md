@@ -71,10 +71,9 @@ AI와 로봇 기술의 지속적인 발전은 사회의 다양한 측면에 혁�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-19-TheFutureofAIandRoboticsBeyondMoravecsParadox_2.png)
 
 모라벡 패러독스를 넘어서는 여정은 지금 막 시작에 불과하며, 흥미진진하고 변화를 가져다줄 것으로 약속되어 있습니다. 우리가 인공지능과 로봇공학의 전선을 개척하고 혁신을 이어 나갈수록, 미래는 더 스마트하고 연결된, 지속 가능한 세계를 위한 끝없는 가능성을 품고 있습니다.
 
 #flyingmum #PamC #Technology #AI #MoravecsParadox #ArtificialIntelligence #MachineLearning #DeepLearning #DataScience #TechInnovation #FutureTech #QuantumComputing #SmartCities #AIResearch
-```

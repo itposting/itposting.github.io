@@ -39,7 +39,6 @@ v. 스마트폰 화면 크기, 주사율, 후면 카메라 수, 운영 체제, �
 -----1. 상점에서 브랜드 및 모델 수 그리고 브랜드 당 모델 수를 찾아보세요.
 정렬 기능을 사용하여 롤링 합계로 모델 수를 확인하세요.
 
-```sql
 select count(distinct brand_name) as Number_of_brands from SmartPhones_data;
 select count(distinct model) as number_of_models from SmartPhones_data;
 
@@ -47,9 +46,7 @@ with cte as(
 select brand_name, count(distinct model) as number_of_models from SmartPhones_data 
 group by brand_name)
 select c.*, sum(c.number_of_models) over(order by number_of_models desc, brand_name asc) as total_number_of_models from cte c
-```
 
-```sql
 ----2. 각 브랜드의 휴대폰 및 모델의 총 가격, 또한 브랜드 및 모델과 함께 각 브랜드의 휴대폰 가격을 찾아보세요.
 sql
 select brand_name, sum(price) as total_cost from SmartPhones_data group by brand_name order by 1 asc;
@@ -61,77 +58,60 @@ select brand_name, model, sum(price) as total_cost from SmartPhones_data group b
 cte2 as(select c.*, sum(total_cost) over(partition by brand_name order by total_cost) as total_cost_by_brand from cte c)
 ,cte3 as(select c1.*, dense_rank() over(partition by brand_name order by total_cost_by_brand desc) as rnk from cte2 c1)
 select brand_name, total_cost_by_brand from cte3 where rnk=1
-```
 
 저는 window 함수를 사용하여 각 브랜드의 총 비용을 롤링 합산하여 결과를 확인했습니다. (역공학)
 
-```sql
 ----3. 최고 평점을 받은 상위 3개 브랜드와 모델을 찾아보세요.
 sql
 select brand_name, model from(
 select distinct brand_name, model, rating, dense_rank() over(order by rating desc) as rnk from SmartPhones_data)a 
 where a.rnk<=3 order by rnk
-```
 
 <div class="content-ad"></div>
 
 이 데이터를 사용하여 안전하지만 5G는 아닌 더 빠른 모델을 선택할 수 있습니다. 이는 5G 모델이 아닙니다. 
 
-```js
 ---4. 5g를 갖고 있지 않거나 ir 블라스터를 갖고 있는 모바일 기기.
 select 모델 from SmartPhones_data where has_5g = 0 and has_ir_blaster = 1
-```
 
-```js
 select count(distinct processor_brand) number_of_processor_brands from smartphones_data
 
 select processor_brand, count(모델) from SmartPhones_data where processor_brand is not null 
 group by processor_brand
 order by 2 desc 
-```
 
-```js
 ---6. 모델당 코어 수. 코어 수에 따라 순위를 매깁니다.
 select distinct 모델, num_cores as number_of_cores from SmartPhones_data
 
 select * from (
 select distinct 모델, num_cores as number_of_cores, dense_rank() over(order by num_cores desc) as rank from 
 SmartPhones_data)a order by 3
-```
 
 <div class="content-ad"></div>
 
-```js
 ----7. 브랜드와 모델별로 가장 높은 프로세서 속도.
 select brand_name, model, processor_speed from(
 select brand_name, model, processor_speed, dense_rank() over(order by processor_speed desc) as rnk
 from SmartPhones_data)a where a.rnk=1
-```
 
 <img src="/assets/img/2024-06-19-ADataAnalysisProjectSmartPhonesDataAnalysis_1.png" />
 
-```js
 ----8. 가장 높은 배터리 용량을 가진 상위 5개 모델 및 그들의 브랜드.
 select brand_name, model, battery_capacity from (
 select brand_name, model, battery_capacity, dense_rank() over(order by battery_capacity desc) as rnk 
 from SmartPhones_data )a where a.rnk<=5
-```
 
-```js
 ----9. 가장 높은 RAM 용량과 내부 메모리를 가진 상위 5개 브랜드 및 모델 나열.
 select brand_name, model, ram_capacity, internal_memory from(
 select brand_name, model, ram_capacity, internal_memory, dense_rank() over(order by ram_capacity desc, internal_memory desc) as
 rnk from smartphones_data)a where rnk <=5
-```
 
 <div class="content-ad"></div>
 
-```js
 ---10. 화면 크기가 작은 상위 10개 모델 및 브랜드를 나열합니다.
 select brand_name, model, screen_size from(
 select brand_name, model, screen_size, dense_rank() over(order by screen_size) as rnk from SmartPhones_data)a
 where a.rnk<=10
-```
 
 이와 유사하게, 나머지로부터도 통찰을 얻을 수 있습니다. 이전 질문을 참조하여 이러한 작업을 수행할 수 있었으면 좋겠습니다. 그렇지 않으면 아래 질문에 대한 통찰을 얻는 데 대해 궁금한 점이 있으면 댓글을 통해 질문할 수 있습니다.
 

@@ -119,7 +119,7 @@ MACHINE ?= "raspberrypi4"
 bitbake core-image-base
 ```
 
-축하합니다! 라즈베리 파이를 위한 첫 번째 Linux 이미지를 빌드했습니다. 완성된 이미지는 tmp/deploy/images/repberrypi4/core-image-base-raspberrypi4.wic.bz2 경로에 있습니다. 이 파일은 압축되어 있습니다. 압축을 해제하려면 bzip2 명령 또는 7zip과 같은 도구를 사용하세요.``` 
+축하합니다! 라즈베리 파이를 위한 첫 번째 Linux 이미지를 빌드했습니다. 완성된 이미지는 tmp/deploy/images/repberrypi4/core-image-base-raspberrypi4.wic.bz2 경로에 있습니다. 이 파일은 압축되어 있습니다. 압축을 해제하려면 bzip2 명령 또는 7zip과 같은 도구를 사용하세요. 
 
 <div class="content-ad"></div>
 

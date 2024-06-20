@@ -11,7 +11,7 @@ link: "https://medium.com/@pietrowicz-eric/how-to-flash-the-arduino-bootloader-t
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-06-19-HowtoFlashtheArduinoBootloadertoaCustomnRF52832Design_0.png)
 
 내가 사용 중인 사용자 정의 nRF52832 보드 디자인 작업 중이었고, 장치에 데모 소프트웨어를 프로그래밍하고 싶었습니다. 제품 보드는 Zephyr RTOS를 실행하지만 Arduino로 빠르고 더러운 프로토타입 환경을 원했습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@pietrowicz-eric/how-to-flash-the-arduino-bootloader-t
 부트로더를 프로그래밍하려면 어떤 종류의 J-Link 프로그래머가 필요합니다. nRF52832 개발 키트, J-Link EDU Mini (취미 프로젝트용) 또는 완전한 J-Link 프로그래머(상용 프로젝트용)를 사용할 수 있습니다.
 
 부트로더를 설치한 후 이와 같은 UART에서 USB 변환기가 필요합니다. 이것은 부트로더가 설치된 후 Arduino IDE에서 nRF52832를 플래싱하는 데 사용될 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

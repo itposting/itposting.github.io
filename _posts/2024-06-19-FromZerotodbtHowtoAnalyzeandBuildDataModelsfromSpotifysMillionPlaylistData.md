@@ -46,7 +46,7 @@ link: "https://medium.com/inthepipeline/from-zero-to-dbt-how-to-analyze-and-buil
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-FromZerotodbtHowtoAnalyzeandBuildDataModelsfromSpotifysMillionPlaylistData_1.png)
 
 ## 데이터셋 다운로드
@@ -54,11 +54,11 @@ link: "https://medium.com/inthepipeline/from-zero-to-dbt-how-to-analyze-and-buil
 Spotify 정책에 따라 등록하고 여기서 원시 데이터를 다운로드해야 합니다. 우리는 spotify_million_playlist_dataset.zip 파일을 사용할 거에요 (크기는 5.4 GB 👀).
 
 이 zip 파일은 31GB로 풀리니 충분한 공간이 있는지 확인해주세요! (나중에 Parquet으로 변환하면 용량이 줄어듭니다)
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![image](https://miro.medium.com/v2/resize:fit:960/1*HbIZkLZc-9ClzgToTNLvsg.gif)
 
 데이터셋을 다운로드하고 압축 해제한 후, data 폴더에는 천 개의 분할된 JSON 파일로 구성되어 있음을 발견할 것입니다. 이러한 파일들은 다음과 같은 패턴으로 명명되어 있습니다:
@@ -69,7 +69,7 @@ Spotify 정책에 따라 등록하고 여기서 원시 데이터를 다운로드
 - mpd.slice.999000–999999.json
 
 분할된 JSON 파일 중 하나에서 플레이리스트 항목의 전형적인 예시는 다음과 같습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -134,7 +134,7 @@ JSON의 모든 조각은 두 개의 키만 포함하고 있습니다.
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-19-FromZerotodbtHowtoAnalyzeandBuildDataModelsfromSpotifysMillionPlaylistData_5.png)
 
 # 덕DB로 분석하기
@@ -142,7 +142,7 @@ JSON의 모든 조각은 두 개의 키만 포함하고 있습니다.
 JSON 데이터의 구조를 파악한 후에는 DuckDB를 사용하여 데이터를 분석할 수 있습니다. DuckDB는 SQL 데이터 유형을 JSON 파일 내에서 자동으로 감지하는 기능을 제공하므로 분석에 SQL 구문을 손쉽게 적용할 수 있습니다.
 
 ## DuckDB 대화형 셸 열기
-```
+
 
 <div class="content-ad"></div>
 
@@ -235,7 +235,7 @@ FROM read_json_auto('./mpd.slice*.json', maximum_object_size = 40000000);
 
 ## Parquet으로 변환
 
-변환 과정 중간에 메모리 부족 오류를 방지하기 위해 일부 임시 파일이 필요할 수 있습니다. DuckDB 쉘에서 계속하여, 먼저 다음을 실행하세요:```
+변환 과정 중간에 메모리 부족 오류를 방지하기 위해 일부 임시 파일이 필요할 수 있습니다. DuckDB 쉘에서 계속하여, 먼저 다음을 실행하세요:
 
 <div class="content-ad"></div>
 
@@ -250,7 +250,7 @@ COPY playlist TO 'playlists.parquet';
 ```
 
 쉽죠?
-```
+
 
 <div class="content-ad"></div>
 

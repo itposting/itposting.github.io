@@ -102,7 +102,7 @@ from openai import OpenAI
 client = OpenAI(api_key="여기에 키를 입력하세요")
 ```
 
-또는 키가 환경 변수로 저장된 경우에는 클라이언트가 자동으로 찾아내기 때문에 코딩할 필요가 없습니다...```
+또는 키가 환경 변수로 저장된 경우에는 클라이언트가 자동으로 찾아내기 때문에 코딩할 필요가 없습니다...
 
 <div class="content-ad"></div>
 
@@ -208,7 +208,7 @@ else:
 
 ## 스레드 생성
 
-스레드를 만들려면 단순히 client.beta.threads.create()를 호출하고, 이 스레드를 사용하여 조수가 실행될 때 조수에 전달되는 첫 번째 메시지를 지정하면 됩니다.```
+스레드를 만들려면 단순히 client.beta.threads.create()를 호출하고, 이 스레드를 사용하여 조수가 실행될 때 조수에 전달되는 첫 번째 메시지를 지정하면 됩니다.
 
 <div class="content-ad"></div>
 

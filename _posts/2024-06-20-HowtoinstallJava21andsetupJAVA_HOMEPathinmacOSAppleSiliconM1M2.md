@@ -83,16 +83,16 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 <div class="content-ad"></div>
 
-```
+
 source ~/.zshenv
-```
+
 
 자바 홈 경로가 zShell 환경 파일에 성공적으로 설정되었습니다. 건배🍻
 
 # 단계 5: JAVA_HOME 설정 확인 ✔️
 
 Java가 올바르게 설치되었고 JAVA_HOME 경로가 설정되었는지 확인하려면 터미널을 열고 다음을 입력하세요:
-```
+
 
 <div class="content-ad"></div>
 

@@ -97,10 +97,9 @@ PC에서 macOS 부팅 가능한 USB를 만드는 것은 OS 아키텍처의 차�
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-06-20-FreeDownloadmacOSSonomaDMGFilefromGoogleDrive_3.png" />
 
 이제 Windows PC를 사용하여 만든 macOS 부팅 가능한 USB가 있습니다. 이 USB 드라이브를 사용하여 Mac 컴퓨터에서 USB 드라이브로 부팅하여 macOS를 설치할 수 있습니다.
 
 UUByte DMG Editor와 같은 도구를 사용하면 PC에서 macOS 부팅 가능한 USB를 만드는 것이 더 쉬워지지만, 항상 정품 macOS 설치 파일을 사용하고 전체 지침을 따라 잠재적인 문제나 데이터 손실을 방지하도록 유의하세요.
-```

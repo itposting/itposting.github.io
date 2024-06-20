@@ -315,9 +315,9 @@ Press ESC in 5 seconds to skip startup.nsh, any other key to continue.
 
 <div class="content-ad"></div>
 
-```md
+
 echo "@echo test startup script" > fs0:\startup.nsh
-```
+
 
 여기서 ESP의 볼륨 라벨인 fs0:에 스크립트 파일을 만들었어요.
 

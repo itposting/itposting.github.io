@@ -11,7 +11,7 @@ link: "https://medium.com/code-like-a-girl/sql-window-functions-the-ultimate-too
 ---
 
 
-```
+
 ![SQL Window Functions](/assets/img/2024-06-19-SQLWindowFunctionsTheUltimateToolforDataEnthusiasts_0.png)
 
 요즘에는 엄청난 양의 데이터를 다루고 있습니다. 이 주요한 도전에 따라 다양한 소스의 복잡도도 함께 증가하고 있습니다. 이러한 환경에서 SQL은 여전히 영웅이며, 이 데이터 바다에서 가치 있는 통찰을 추출하고 탐색하는 데 꼭 필요한 도구입니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/code-like-a-girl/sql-window-functions-the-ultimate-too
 SQL이 제공하는 많은 강력한 기능 중에서도 윈도우 함수는 특히 주목할 만한 요소입니다. 이러한 함수들은 테이블 행 집합을 대상으로 높명한 계산을 가능하게 하며, 고급 데이터 분석에 필수적이며 데이터와 상호작용하는 방법을 변화시키는 데 중요합니다.
 
 이 기사에서는 SQL의 윈도우 함수 개념을 해부하고 이해할 것입니다. 언제 윈도우 함수를 사용해야 하는지, 그리고 SQL 쿼리에서 효과적으로 구현하는 방법에 대해 살펴볼 것입니다. 이 가이드를 마치면 윈도우 함수의 강력함과 유연성에 대한 깊은 이해를 얻게 될 것이며, 데이터 분석 기술을 향상시키기 위한 실제 예제를 활용할 수 있을 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -104,7 +104,7 @@ SQL이 제공하는 많은 강력한 기능 중에서도 윈도우 함수는 특
 
 <div class="content-ad"></div>
 
-```
+
 source.data_records
 
 ![Image 2](/assets/img/2024-06-19-SQLWindowFunctionsTheUltimateToolforDataEnthusiasts_2.png)
@@ -112,7 +112,7 @@ source.data_records
 and temp.data_records:
 
 ![Image 3](/assets/img/2024-06-19-SQLWindowFunctionsTheUltimateToolforDataEnthusiasts_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -177,18 +177,18 @@ select
 
 <div class="content-ad"></div>
 
-```md
+
 lag(fct.level) over (partition by fct.identifier order by fct.date_ref) as previous_level,
 lag(fct.date_ref) over (partition by fct.identifier order by fct.date_ref) as previous_date
-```
+
 
 and assign a rank to each record within the partition by using DENSE_RANK() function:
 
-```md
-dense_rank() over (partition by fct.identifier order by fct.date_ref desc) as ranks
-```
 
-This code will return the following result:```
+dense_rank() over (partition by fct.identifier order by fct.date_ref desc) as ranks
+
+
+This code will return the following result:
 
 <div class="content-ad"></div>
 
@@ -211,7 +211,7 @@ and previous_date <> change_level_date
 
 <div class="content-ad"></div>
 
-```
+
 ![SQL Window Functions](/assets/img/2024-06-19-SQLWindowFunctionsTheUltimateToolforDataEnthusiasts_5.png)
 
 이 결과를 통해 다음을 알 수 있습니다:
@@ -220,7 +220,7 @@ and previous_date <> change_level_date
 - 식별자 3의 경우: 레벨이 2023년 02월 20일에 B에서 A로 변경되었습니다.
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 

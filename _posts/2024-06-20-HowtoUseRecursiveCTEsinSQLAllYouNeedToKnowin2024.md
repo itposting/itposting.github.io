@@ -129,7 +129,7 @@ WITH RECURSIVE RecursiveCTE AS (
 ```
 
 MySQL Workbench에서 재귀 CTE를 작성하려면 CTE 이름 앞에 RECURSIVE 키워드를 입력해야 합니다.
-```  
+
 
 <div class="content-ad"></div>
 

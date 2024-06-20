@@ -66,7 +66,7 @@ link: "https://medium.com/@bernardbad/the-secret-to-foolproof-ai-prompts-prompti
 
 위의 텍스트를 친절하게 한국어로 번역해 드리겠습니다.
 
-```
+
 | 파일 이름                                            | 설명                              |
 |-------------------------------------------------|--------------------------------|
 | 2024-06-20-TheSecrettoFoolproofAIPromptsPromptingWithData_3.png | AIPrompt 데이터 사용 방법을 보여주는 이미지 |
@@ -74,7 +74,7 @@ link: "https://medium.com/@bernardbad/the-secret-to-foolproof-ai-prompts-prompti
 정말 멋지죠? 간단하면서도 마법처럼 잘 작동합니다.
 
 ## 3/ 직접 해보기
-```
+
 
 <div class="content-ad"></div>
 

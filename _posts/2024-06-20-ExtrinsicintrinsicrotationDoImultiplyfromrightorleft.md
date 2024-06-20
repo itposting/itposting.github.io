@@ -97,7 +97,7 @@ Tada! 저희는 x-축 주위의 회전을 위한 회전 행렬을 유도했어�
 
 <div class="content-ad"></div>
 
-```
+
 ![](/assets/img/2024-06-20-ExtrinsicintrinsicrotationDoImultiplyfromrightorleft_7.png)
 
 우리는 처음에 Rotation1 행렬을 사용하여 원래의 전역 좌표계를 회전합니다. 그런 다음, Rotation2 행렬을 사용하여 결과 좌표계를 회전하고 마지막으로 세 번째 회전 행렬을 사용합니다. 물론, 행렬 곱셈은 가교적이기 때문에 괄호는 그저 명확하게 문장을 만들기 위함입니다: 점을 변환하려면 오른쪽에서 왼쪽으로 읽고 따라서 먼저 Rotation1을 적용한 다음 Rotation2, 마지막으로 Rotation3을 적용합니다. 이에 대해 불확실함을 느끼신다면, 꼭 3Blue1Brown의 이 비디오를 확인하십시오.
@@ -105,7 +105,7 @@ Tada! 저희는 x-축 주위의 회전을 위한 회전 행렬을 유도했어�
 그래서 외적 인 경우 (R=Rotation3⋅Rotation2⋅Rotation1)은 이해하기 쉬워야 합니다. 그렇다면 모두 일어나는 내재적 회전 순서는 어떨까요? 모든 것이 반대로 진행되는 과정입니다: R = Rotation1⋅Rotation2⋅Rotation3. 점을 변환한다면, 먼저 Rotation3을 적용한 다음 Rotation2, 그리고 Rotation1을 적용하여 변환된 점 P'를 얻게 됩니다. 이것은 내재적 회전 순서에 정의된 단계 순서와 모순이 있는 것으로 보입니다. 이 혼동을 해소하기 위해, 우리는 점 P의 좌표를 명시하고 있는 좌표계에 대해 명확히 지정해야 합니다. 다음의 새로운 구문을 도입합니다.
 
 ![](/assets/img/2024-06-20-ExtrinsicintrinsicrotationDoImultiplyfromrightorleft_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -134,7 +134,7 @@ P₂ 점은 원래 좌표계와 새롭게 회전된 파란색 좌표계 A와 관
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-06-20-ExtrinsicintrinsicrotationDoImultiplyfromrightorleft_14.png)
 
 그래서, 이게 우리에게 무엇을 말해주고 있는 걸까요? 다음 연습을 상상해보세요: 원래 좌표계 xyz가 있고 이것을 z축을 중심으로 45도 회전하여 좌표계 A를 얻는다고 합시다. 그런 다음 A를 중심으로(z축을 중심으로) 다시 45도 회전하여 좌표계 B를 얻습니다. 여러분의 역할은 B를 기준으로 한 점이 주어졌을 때, 그 점이 원래 좌표계에 대해 어떤 좌표를 갖는지 찾는 것입니다.
@@ -142,7 +142,7 @@ P₂ 점은 원래 좌표계와 새롭게 회전된 파란색 좌표계 A와 관
 이 문제를 어떻게 해결할까요? 그래프를 보시죠. 우리는 우하단 코너에 B를 기준으로 한 점을 볼 수 있습니다. 그 점을 원래 좌표로 "변환"하는 것은 어떻게 할까요? 간단히 변환되는 과정을 따라가면 됩니다. 먼저, B가 A에 대해 어디에 있는지를 정의하는 회전 행렬과 곱합니다. 이렇게 하면 P₃가 A에 대해 어느 위치에 있는지 알 수 있습니다. 그런 다음, A가 원래 좌표계에 대해 어디에 있는지를 정의하는 회전 행렬과 곱합니다. 이렇게 하면 P₃가 원래 좌표계에 대해 어느 위치에 있는지 알 수 있습니다. 이게 전부입니다.
 
 ![image](/assets/img/2024-06-20-ExtrinsicintrinsicrotationDoImultiplyfromrightorleft_15.png)
-```
+
 
 <div class="content-ad"></div>
 

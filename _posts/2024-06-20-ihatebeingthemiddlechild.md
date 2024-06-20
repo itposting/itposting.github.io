@@ -11,7 +11,7 @@ link: "https://medium.com/@andengxzs_/i-hate-being-the-middle-child-fae3acb9512d
 ---
 
 
-```
+
 ![Middle Child](/assets/img/2024-06-20-ihatebeingthemiddlechild_0.png)
 
 막내 자매와 맏이 형제에 관한 어려움에 대해 많이 이야기합니다. 그런데, 중간 아이는 어떻게 될까요?
@@ -19,7 +19,7 @@ link: "https://medium.com/@andengxzs_/i-hate-being-the-middle-child-fae3acb9512d
 중간 아이는 가족으로부터 주의를 받지 못한다고 합니다. 대부분 주목받는 것은 보통 맏이 형제와 막내 자매입니다.
 
 그 부분에 동감합니다.
-```
+
 
 <div class="content-ad"></div>
 
