@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>AWS Glue ETL을 사용하여 DynamoDB에서 Redshift로 데이터 이전하기 | itposting</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://itposting.github.io///post/2024-06-19-DynamoDBtoRedshiftusingAWSGlueETL" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="AWS Glue ETL을 사용하여 DynamoDB에서 Redshift로 데이터 이전하기 | itposting" data-gatsby-head="true"/><meta property="og:title" content="AWS Glue ETL을 사용하여 DynamoDB에서 Redshift로 데이터 이전하기 | itposting" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-06-19-DynamoDBtoRedshiftusingAWSGlueETL_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://itposting.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://itposting.github.io///post/2024-06-19-DynamoDBtoRedshiftusingAWSGlueETL" data-gatsby-head="true"/><meta name="twitter:title" content="AWS Glue ETL을 사용하여 DynamoDB에서 Redshift로 데이터 이전하기 | itposting" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-06-19-DynamoDBtoRedshiftusingAWSGlueETL_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | itposting" data-gatsby-head="true"/><meta name="article:published_time" content="2024-06-19 16:04" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-23YXDLKDCL"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-23YXDLKDCL');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-4a646156c659a948.js" defer=""></script><script src="/_next/static/chunks/348-d11c34b645b13f5b.js" defer=""></script><script src="/_next/static/chunks/162-4172e84c8e2aa747.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-0fd008072af5a644.js" defer=""></script><script src="/_next/static/FH3Qr-mLAesqA0X5IFRQr/_buildManifest.js" defer=""></script><script src="/_next/static/FH3Qr-mLAesqA0X5IFRQr/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">IT Posting</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">AWS Glue ETL을 사용하여 DynamoDB에서 Redshift로 데이터 이전하기</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="AWS Glue ETL을 사용하여 DynamoDB에서 Redshift로 데이터 이전하기" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">IT Posting</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jun 19, 2024</span><span class="posts_reading_time__f7YPP">3<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-06-19-DynamoDBtoRedshiftusingAWSGlueETL&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<p>AWS Glue ETL을 사용하여 DynamoDB에서 Redshift로의 파이프라인을 구축하는 과정은 여러 단계로 이루어져 있습니다. 아래에 이를 설정하는 자세한 가이드가 있어요:</p>
+<p>단계 1: DynamoDB와 Redshift 설정하기</p>
+<ol>
+<li>DynamoDB:
+이미 하지 않았다면 DynamoDB 테이블을 생성하고 데이터로 채워 넣어주세요.</li>
+</ol>
+<p>2.Redshift:
+Amazon Redshift 클러스터를 설정하세요.
+Redshift에 DynamoDB 테이블 구조와 일치하도록 데이터베이스와 테이블을 생성해주세요.</p>
+<p>단계 2: DynamoDB용 AWS Glue 크롤러 생성하기</p>
+<ol>
+<li>
+<p>AWS Glue 콘솔을 엽니다.</p>
+</li>
+<li>
+<p>새 크롤러를 생성합니다:
+이름: 크롤러에 이름을 지정합니다.
+데이터 원본: DynamoDB를 선택하고 테이블을 선택합니다.
+IAM 역할: 없는 경우 필요한 권한을 가진 IAM 역할을 생성합니다.
+데이터베이스: 기존의 Glue 데이터베이스를 선택하거나 새 데이터베이스를 생성합니다.
+실행 빈도: 요구 사항에 따라 설정합니다.</p>
+</li>
+<li>
+<p>크롤러 실행:
+이 작업을 통해 Glue 데이터 카탈로그에 DynamoDB 테이블을 위한 테이블이 생성됩니다.</p>
+</li>
+</ol>
+<p>단계 3: AWS Glue ETL 작업 생성하기</p>
+<ol>
+<li>
+<p>AWS Glue 콘솔을 엽니다.</p>
+</li>
+<li>
+<p>새 작업을 만듭니다:
+이름: 작업에 이름을 지정합니다.
+IAM 역할: 동일한 역할 또는 필요한 권한이 있는 다른 역할을 사용합니다.
+유형: "Spark"를 선택합니다.
+Glue 버전: 적절한 Glue 버전을 선택합니다.
+보안 구성, 스크립트 라이브러리 및 작업 매개변수: 필요에 따라 구성합니다.
+작업 북마킹: 처리된 데이터를 추적하려면 활성화합니다.</p>
+</li>
+<li>
+<p>스크립트 편집기:
+Glue Studio 시각적 편집기를 사용하거나 스크립트를 직접 편집할 수 있습니다.</p>
+</li>
+</ol>
+<p>단계 4: ETL 스크립트 작성</p>
+<p>다음은 다이나모DB에서 Redshift로 데이터를 이동하는 예제 스크립트입니다:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">from</span> awsglue.transforms <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">from</span> awsglue.utils <span class="hljs-keyword">import</span> getResolvedOptions
+<span class="hljs-keyword">from</span> pyspark.context <span class="hljs-keyword">import</span> SparkContext
+<span class="hljs-keyword">from</span> awsglue.context <span class="hljs-keyword">import</span> GlueContext
+<span class="hljs-keyword">from</span> awsglue.job <span class="hljs-keyword">import</span> Job
+
+<span class="hljs-comment"># Glue 컨텍스트 초기화</span>
+args = getResolvedOptions(sys.argv, [<span class="hljs-string">'JOB_NAME'</span>])
+sc = SparkContext()
+glueContext = GlueContext(sc)
+spark = glueContext.spark_session
+job = Job(glueContext)
+job.init(args[<span class="hljs-string">'JOB_NAME'</span>], args)
+
+<span class="hljs-comment"># DynamoDB 테이블을 소스로 정의</span>
+dynamodb_table = <span class="hljs-string">"dynamodb_table_name"</span>
+datasource0 = glueContext.create_dynamic_frame.from_catalog(
+    database=<span class="hljs-string">"your_glue_database"</span>,
+    table_name=dynamodb_table
+)
+
+<span class="hljs-comment"># 필요한 변환 작업 적용</span>
+applymapping1 = ApplyMapping.apply(
+    frame=datasource0,
+    mappings=[
+        (<span class="hljs-string">"dynamodb_column1"</span>, <span class="hljs-string">"string"</span>, <span class="hljs-string">"redshift_column1"</span>, <span class="hljs-string">"string"</span>),
+        (<span class="hljs-string">"dynamodb_column2"</span>, <span class="hljs-string">"number"</span>, <span class="hljs-string">"redshift_column2"</span>, <span class="hljs-string">"int"</span>),
+        <span class="hljs-comment"># 필요한 경우 더 많은 열 추가</span>
+    ]
+)
+</code></pre>
+<h1>Redshift 연결 옵션 정의하기</h1>
+<p>redshift_tmp_dir = “s3://your-bucket/temp-dir/”
+redshift_connection_options = '
+“url”: “jdbc:redshift://your-redshift-cluster:5439/your_database”,
+“user”: “your_redshift_user”,
+“password”: “your_redshift_password”,
+“dbtable”: “your_redshift_table”,
+“redshiftTmpDir”: redshift_tmp_dir
+'</p>
+<h1>Redshift로 쓰기</h1>
+<p>datasink4 = glueContext.write_dynamic_frame.from_jdbc_conf(
+frame = applymapping1,
+catalog_connection = “your_redshift_connection”,
+connection_options = redshift_connection_options
+)</p>
+<h1>작업 완료하기</h1>
+<p>job.commit()</p>
+<p>단계 5: Glue Job 실행 및 예약하기</p>
+<ol>
+<li>작업 실행
+AWS Glue 콘솔에서 작업을 수동으로 실행할 수 있습니다.</li>
+<li>작업 일정 설정:
+Glue 트리거를 사용하여 특정 간격에 작업을 실행할 수 있는 일정을 설정하세요.</li>
+</ol>
+<p>단계 6: ETL 작업 모니터링 및 관리</p>
+<ol>
+<li>모니터링:
+AWS Glue의 모니터링 기능을 사용하여 작업 실행, 오류 및 성능을 추적하세요.</li>
+<li>오류 처리:
+필요한 경우 스크립트에 오류 처리를 구현하세요.</li>
+<li>최적화:
+특히 대규모 데이터 집합을 처리할 때 성능을 위해 ETL 작업을 최적화하세요.</li>
+</ol>
+<p>이러한 단계를 따르면 AWS Glue ETL 작업을 사용하여 DynamoDB에서 Redshift로 데이터를 전송하는 파이프라인을 설정할 수 있습니다. 감사합니다.</p>
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"AWS Glue ETL을 사용하여 DynamoDB에서 Redshift로 데이터 이전하기","description":"","date":"2024-06-19 16:04","slug":"2024-06-19-DynamoDBtoRedshiftusingAWSGlueETL","content":"\n\nAWS Glue ETL을 사용하여 DynamoDB에서 Redshift로의 파이프라인을 구축하는 과정은 여러 단계로 이루어져 있습니다. 아래에 이를 설정하는 자세한 가이드가 있어요:\n\n단계 1: DynamoDB와 Redshift 설정하기\n\n1. DynamoDB:\n이미 하지 않았다면 DynamoDB 테이블을 생성하고 데이터로 채워 넣어주세요.\n\n2.Redshift:\nAmazon Redshift 클러스터를 설정하세요.\nRedshift에 DynamoDB 테이블 구조와 일치하도록 데이터베이스와 테이블을 생성해주세요.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n단계 2: DynamoDB용 AWS Glue 크롤러 생성하기\n\n1. AWS Glue 콘솔을 엽니다.\n2. 새 크롤러를 생성합니다:\n이름: 크롤러에 이름을 지정합니다.\n데이터 원본: DynamoDB를 선택하고 테이블을 선택합니다.\nIAM 역할: 없는 경우 필요한 권한을 가진 IAM 역할을 생성합니다.\n데이터베이스: 기존의 Glue 데이터베이스를 선택하거나 새 데이터베이스를 생성합니다.\n실행 빈도: 요구 사항에 따라 설정합니다.\n\n3. 크롤러 실행:\n이 작업을 통해 Glue 데이터 카탈로그에 DynamoDB 테이블을 위한 테이블이 생성됩니다.\n\n단계 3: AWS Glue ETL 작업 생성하기\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n1. AWS Glue 콘솔을 엽니다.\n2. 새 작업을 만듭니다:\n이름: 작업에 이름을 지정합니다.\nIAM 역할: 동일한 역할 또는 필요한 권한이 있는 다른 역할을 사용합니다.\n유형: \"Spark\"를 선택합니다.\nGlue 버전: 적절한 Glue 버전을 선택합니다.\n보안 구성, 스크립트 라이브러리 및 작업 매개변수: 필요에 따라 구성합니다.\n작업 북마킹: 처리된 데이터를 추적하려면 활성화합니다.\n\n3. 스크립트 편집기:\nGlue Studio 시각적 편집기를 사용하거나 스크립트를 직접 편집할 수 있습니다.\n\n단계 4: ETL 스크립트 작성\n\n다음은 다이나모DB에서 Redshift로 데이터를 이동하는 예제 스크립트입니다:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```python\nimport sys\nfrom awsglue.transforms import *\nfrom awsglue.utils import getResolvedOptions\nfrom pyspark.context import SparkContext\nfrom awsglue.context import GlueContext\nfrom awsglue.job import Job\n\n# Glue 컨텍스트 초기화\nargs = getResolvedOptions(sys.argv, ['JOB_NAME'])\nsc = SparkContext()\nglueContext = GlueContext(sc)\nspark = glueContext.spark_session\njob = Job(glueContext)\njob.init(args['JOB_NAME'], args)\n\n# DynamoDB 테이블을 소스로 정의\ndynamodb_table = \"dynamodb_table_name\"\ndatasource0 = glueContext.create_dynamic_frame.from_catalog(\n    database=\"your_glue_database\",\n    table_name=dynamodb_table\n)\n\n# 필요한 변환 작업 적용\napplymapping1 = ApplyMapping.apply(\n    frame=datasource0,\n    mappings=[\n        (\"dynamodb_column1\", \"string\", \"redshift_column1\", \"string\"),\n        (\"dynamodb_column2\", \"number\", \"redshift_column2\", \"int\"),\n        # 필요한 경우 더 많은 열 추가\n    ]\n)\n```  \n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n# Redshift 연결 옵션 정의하기\nredshift_tmp_dir = “s3://your-bucket/temp-dir/”\nredshift_connection_options = '\n“url”: “jdbc:redshift://your-redshift-cluster:5439/your_database”,\n“user”: “your_redshift_user”,\n“password”: “your_redshift_password”,\n“dbtable”: “your_redshift_table”,\n“redshiftTmpDir”: redshift_tmp_dir\n'\n\n# Redshift로 쓰기\ndatasink4 = glueContext.write_dynamic_frame.from_jdbc_conf(\nframe = applymapping1,\ncatalog_connection = “your_redshift_connection”,\nconnection_options = redshift_connection_options\n)\n\n# 작업 완료하기\njob.commit()\n\n단계 5: Glue Job 실행 및 예약하기\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n1. 작업 실행\nAWS Glue 콘솔에서 작업을 수동으로 실행할 수 있습니다.\n2. 작업 일정 설정:\nGlue 트리거를 사용하여 특정 간격에 작업을 실행할 수 있는 일정을 설정하세요.\n\n단계 6: ETL 작업 모니터링 및 관리\n\n1. 모니터링:\nAWS Glue의 모니터링 기능을 사용하여 작업 실행, 오류 및 성능을 추적하세요.\n2. 오류 처리:\n필요한 경우 스크립트에 오류 처리를 구현하세요.\n3. 최적화:\n특히 대규모 데이터 집합을 처리할 때 성능을 위해 ETL 작업을 최적화하세요.\n\n이러한 단계를 따르면 AWS Glue ETL 작업을 사용하여 DynamoDB에서 Redshift로 데이터를 전송하는 파이프라인을 설정할 수 있습니다. 감사합니다.","ogImage":{"url":"/assets/img/2024-06-19-DynamoDBtoRedshiftusingAWSGlueETL_0.png"},"coverImage":"/assets/img/2024-06-19-DynamoDBtoRedshiftusingAWSGlueETL_0.png","tag":["Tech"],"readingTime":3},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003cp\u003eAWS Glue ETL을 사용하여 DynamoDB에서 Redshift로의 파이프라인을 구축하는 과정은 여러 단계로 이루어져 있습니다. 아래에 이를 설정하는 자세한 가이드가 있어요:\u003c/p\u003e\n\u003cp\u003e단계 1: DynamoDB와 Redshift 설정하기\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eDynamoDB:\n이미 하지 않았다면 DynamoDB 테이블을 생성하고 데이터로 채워 넣어주세요.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e2.Redshift:\nAmazon Redshift 클러스터를 설정하세요.\nRedshift에 DynamoDB 테이블 구조와 일치하도록 데이터베이스와 테이블을 생성해주세요.\u003c/p\u003e\n\u003cp\u003e단계 2: DynamoDB용 AWS Glue 크롤러 생성하기\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003eAWS Glue 콘솔을 엽니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e새 크롤러를 생성합니다:\n이름: 크롤러에 이름을 지정합니다.\n데이터 원본: DynamoDB를 선택하고 테이블을 선택합니다.\nIAM 역할: 없는 경우 필요한 권한을 가진 IAM 역할을 생성합니다.\n데이터베이스: 기존의 Glue 데이터베이스를 선택하거나 새 데이터베이스를 생성합니다.\n실행 빈도: 요구 사항에 따라 설정합니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e크롤러 실행:\n이 작업을 통해 Glue 데이터 카탈로그에 DynamoDB 테이블을 위한 테이블이 생성됩니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e단계 3: AWS Glue ETL 작업 생성하기\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003eAWS Glue 콘솔을 엽니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e새 작업을 만듭니다:\n이름: 작업에 이름을 지정합니다.\nIAM 역할: 동일한 역할 또는 필요한 권한이 있는 다른 역할을 사용합니다.\n유형: \"Spark\"를 선택합니다.\nGlue 버전: 적절한 Glue 버전을 선택합니다.\n보안 구성, 스크립트 라이브러리 및 작업 매개변수: 필요에 따라 구성합니다.\n작업 북마킹: 처리된 데이터를 추적하려면 활성화합니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e스크립트 편집기:\nGlue Studio 시각적 편집기를 사용하거나 스크립트를 직접 편집할 수 있습니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e단계 4: ETL 스크립트 작성\u003c/p\u003e\n\u003cp\u003e다음은 다이나모DB에서 Redshift로 데이터를 이동하는 예제 스크립트입니다:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-python\"\u003e\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e sys\n\u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e awsglue.transforms \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e *\n\u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e awsglue.utils \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e getResolvedOptions\n\u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e pyspark.context \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e SparkContext\n\u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e awsglue.context \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e GlueContext\n\u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e awsglue.job \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e Job\n\n\u003cspan class=\"hljs-comment\"\u003e# Glue 컨텍스트 초기화\u003c/span\u003e\nargs = getResolvedOptions(sys.argv, [\u003cspan class=\"hljs-string\"\u003e'JOB_NAME'\u003c/span\u003e])\nsc = SparkContext()\nglueContext = GlueContext(sc)\nspark = glueContext.spark_session\njob = Job(glueContext)\njob.init(args[\u003cspan class=\"hljs-string\"\u003e'JOB_NAME'\u003c/span\u003e], args)\n\n\u003cspan class=\"hljs-comment\"\u003e# DynamoDB 테이블을 소스로 정의\u003c/span\u003e\ndynamodb_table = \u003cspan class=\"hljs-string\"\u003e\"dynamodb_table_name\"\u003c/span\u003e\ndatasource0 = glueContext.create_dynamic_frame.from_catalog(\n    database=\u003cspan class=\"hljs-string\"\u003e\"your_glue_database\"\u003c/span\u003e,\n    table_name=dynamodb_table\n)\n\n\u003cspan class=\"hljs-comment\"\u003e# 필요한 변환 작업 적용\u003c/span\u003e\napplymapping1 = ApplyMapping.apply(\n    frame=datasource0,\n    mappings=[\n        (\u003cspan class=\"hljs-string\"\u003e\"dynamodb_column1\"\u003c/span\u003e, \u003cspan class=\"hljs-string\"\u003e\"string\"\u003c/span\u003e, \u003cspan class=\"hljs-string\"\u003e\"redshift_column1\"\u003c/span\u003e, \u003cspan class=\"hljs-string\"\u003e\"string\"\u003c/span\u003e),\n        (\u003cspan class=\"hljs-string\"\u003e\"dynamodb_column2\"\u003c/span\u003e, \u003cspan class=\"hljs-string\"\u003e\"number\"\u003c/span\u003e, \u003cspan class=\"hljs-string\"\u003e\"redshift_column2\"\u003c/span\u003e, \u003cspan class=\"hljs-string\"\u003e\"int\"\u003c/span\u003e),\n        \u003cspan class=\"hljs-comment\"\u003e# 필요한 경우 더 많은 열 추가\u003c/span\u003e\n    ]\n)\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch1\u003eRedshift 연결 옵션 정의하기\u003c/h1\u003e\n\u003cp\u003eredshift_tmp_dir = “s3://your-bucket/temp-dir/”\nredshift_connection_options = '\n“url”: “jdbc:redshift://your-redshift-cluster:5439/your_database”,\n“user”: “your_redshift_user”,\n“password”: “your_redshift_password”,\n“dbtable”: “your_redshift_table”,\n“redshiftTmpDir”: redshift_tmp_dir\n'\u003c/p\u003e\n\u003ch1\u003eRedshift로 쓰기\u003c/h1\u003e\n\u003cp\u003edatasink4 = glueContext.write_dynamic_frame.from_jdbc_conf(\nframe = applymapping1,\ncatalog_connection = “your_redshift_connection”,\nconnection_options = redshift_connection_options\n)\u003c/p\u003e\n\u003ch1\u003e작업 완료하기\u003c/h1\u003e\n\u003cp\u003ejob.commit()\u003c/p\u003e\n\u003cp\u003e단계 5: Glue Job 실행 및 예약하기\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e작업 실행\nAWS Glue 콘솔에서 작업을 수동으로 실행할 수 있습니다.\u003c/li\u003e\n\u003cli\u003e작업 일정 설정:\nGlue 트리거를 사용하여 특정 간격에 작업을 실행할 수 있는 일정을 설정하세요.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e단계 6: ETL 작업 모니터링 및 관리\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e모니터링:\nAWS Glue의 모니터링 기능을 사용하여 작업 실행, 오류 및 성능을 추적하세요.\u003c/li\u003e\n\u003cli\u003e오류 처리:\n필요한 경우 스크립트에 오류 처리를 구현하세요.\u003c/li\u003e\n\u003cli\u003e최적화:\n특히 대규모 데이터 집합을 처리할 때 성능을 위해 ETL 작업을 최적화하세요.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e이러한 단계를 따르면 AWS Glue ETL 작업을 사용하여 DynamoDB에서 Redshift로 데이터를 전송하는 파이프라인을 설정할 수 있습니다. 감사합니다.\u003c/p\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-06-19-DynamoDBtoRedshiftusingAWSGlueETL"},"buildId":"FH3Qr-mLAesqA0X5IFRQr","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
