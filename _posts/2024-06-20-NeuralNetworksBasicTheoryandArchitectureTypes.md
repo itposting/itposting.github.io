@@ -503,7 +503,7 @@ GAN은 생성적 AI 작업(모델을 기반으로 실제 데이터를 생성하�
 
 <div class="content-ad"></div>
 
-```
+
 # 트레이닝 이미지 내의 채널 수. 컬러 이미지의 경우, 채널 수는 3입니다.
 nc = 3
 
@@ -566,7 +566,7 @@ class Generator(nn.Module):
 
     def forward(self, input):
         return self.pipeline(input)
-```
+
 
 저는 다음 기사에서 이미지 생성을 위한 GAN을 구현했습니다: GAN: training a Generative Adversarial Network for image generation | by Greg Postalian-Yrausquin | Jun, 2024 | Medium
 
