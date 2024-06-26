@@ -4084,42 +4084,67 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://itposting.github.io/post/2024-06-22-10waystolearntheRaspberryPi</loc
+=======
+      >https://itposting.github.io/post/2024-06-21-LinuxUnveilingtheMysteriesofZombieProcesses</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://itposting.github.io/post/2024-06-22-12700162893ExplainedTroubleshootingCommonErrors</loc
+=======
+      >https://itposting.github.io/post/2024-06-22-5LinuxCommandsthatMakesYouaHappyDev</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://itposting.github.io/post/2024-06-22-3dMattevsGlossyPLAFilamentWhichShouldYouChoose</loc
+=======
+      >https://itposting.github.io/post/2024-06-22-CheatSheetLinuxCommandsforDevOps</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://itposting.github.io/post/2024-06-22-5WaysToCalculateMedianInSQL</loc
+=======
+      >https://itposting.github.io/post/2024-06-22-DecipheringtheKubernetesNetworkingMazeNavigatingLoad-BalanceBGPIPVSandBeyond</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://itposting.github.io/post/2024-06-22-AGentleIntroductiontoLargeLanguageModelsLLMs</loc
+=======
+      >https://itposting.github.io/post/2024-06-22-InvestigationofaCross-regionalNetworkPerformanceIssue</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://itposting.github.io/post/2024-06-22-AGuidetoFunctionalDataEngineeringinBigQuery</loc
+=======
+      >https://itposting.github.io/post/2024-06-22-KubernetesvsDockerABeginnersGuide</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://itposting.github.io/post/2024-06-22-AHouseIsMoreThanaHomeItsPee-StainedCarpetsandaLeakySepticTank</loc
     >
   </url>
@@ -5099,28 +5124,44 @@
   <url>
     <loc
       >https://itposting.github.io/post/2024-06-22-WhyYouShouldNeverScheduleCronJobsExactlyatMidnight</loc
+=======
+      >https://itposting.github.io/post/2024-06-22-SevenMonthsWiththe14-InchM3MaxMacBookPro</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://itposting.github.io/post/2024-06-22-WhydosmarthomesassumeonepersonlivesthereAnOOUXteardown</loc
+=======
+      >https://itposting.github.io/post/2024-06-22-ShellTrapsandPOSIXSignals</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://itposting.github.io/post/2024-06-22-Windows11KB5039212UpdateJune2024Whatsnew</loc
+=======
+      >https://itposting.github.io/post/2024-06-22-TextProcessingwithAWKinLinuxUnixwithexamples</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://itposting.github.io/post/2024-06-22-WindowsShortcutsWithPowerShellHowToMakeCustomizeAndPointThemToPlaces</loc
+=======
+      >https://itposting.github.io/post/2024-06-22-TheLinuxProcessJourneylogin</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 
   <url>
+<<<<<<< HEAD
     <loc>https://itposting.github.io/post/2024-06-22-YourInputMatters</loc>
   </url>
 
@@ -5143,6 +5184,10 @@
   <url>
     <loc
       >https://itposting.github.io/post/2024-06-22-macOSTimeMachineonyourCloudStoragesystemOneDriveforme</loc
+=======
+    <loc
+      >https://itposting.github.io/post/2024-06-22-TheLinuxSecurityJourneyEGIDEffectiveGroupID</loc
+>>>>>>> da02a45 (add post)
     >
   </url>
 

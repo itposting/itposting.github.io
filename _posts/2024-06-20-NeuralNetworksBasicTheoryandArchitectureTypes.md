@@ -3,13 +3,12 @@ title: "신경망 기본 이론과 구조 유형"
 description: ""
 coverImage: "/assets/img/2024-06-20-NeuralNetworksBasicTheoryandArchitectureTypes_0.png"
 date: 2024-06-20 19:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-20-NeuralNetworksBasicTheoryandArchitectureTypes_0.png
 tag: Tech
 originalTitle: "Neural Networks: Basic Theory and Architecture Types"
 link: "https://medium.com/towards-artificial-intelligence/neural-networks-basic-theory-and-architecture-types-38d9f53e1e1c"
 ---
-
 
 이 이야기에서는 신경망의 이론적 기초와 이로부터 파생된 기술, 그리고 PyTorch를 사용한 구현의 가장 중요한 측면을 높은 수준에서 리뷰하고 설명해보려고 합니다. 가능한 간단한 언어를 사용하여 설명하겠습니다. 또한 다른 문서에서 문서화한 사용 사례 예시를 소개할 예정입니다.
 
@@ -71,7 +70,6 @@ link: "https://medium.com/towards-artificial-intelligence/neural-networks-basic-
 
 <div class="content-ad"></div>
 
-
 ![Neural Networks Theory](/assets/img/2024-06-20-NeuralNetworksBasicTheoryandArchitectureTypes_6.png)
 
 일반적으로 매개변수는 무작위 변수를 사용하여 초기화됩니다. 이 변수는 가우시안 분포를 따릅니다. 모든 입력이 독립적이며 레이어에 무한 개수의 뉴런이 있는 이상적인 경우에는 출력과 훈련된 매개변수도 가우시안 분포를 형성합니다.
@@ -79,7 +77,6 @@ link: "https://medium.com/towards-artificial-intelligence/neural-networks-basic-
 이러한 분포는 매개변수, 변수 또는 출력으로 형성된 다변량 공간 상의 파형패킷으로 볼 수 있습니다. 이는 양자장론에서 자유 입자를 모델링하기 위해 사용되는 수학적 구조와 유사합니다. 양자장론에서 상호작용으로 나타나는 작은 편차가 있는 것과 같이, 신경망에서는 변수간의 종속성과 레이어 당 유한 개수의 뉴런 삽입에 의해 생성됩니다. 특히, 네트워크 구성원 간의 내부 또는 보이지 않는 구조에 의해 생성되는 이러한 편차는 시스템의 예측력의 원천입니다. 그러나 이러한 편차가 너무 커지면 시스템이 발산하여 혼돈스럽게 됩니다.
 
 양자장론과 마찬가지로, 자유(가우시안) 경우에서의 작은 편차로 인한 문제들에 대한 수학적 해석을 위해 섭동 이론을 사용할 수 있습니다. 물리적 입자간의 상호작용을 이해하는 데 사용되는 수학은 신경망의 내부 동작을 이해하는 데 활용됩니다.
-
 
 <div class="content-ad"></div>
 
@@ -99,7 +96,7 @@ link: "https://medium.com/towards-artificial-intelligence/neural-networks-basic-
 
 <div class="content-ad"></div>
 
-만약 신경망과 기계 학습 내부의 수학을 더 잘 이해하고 싶다면 Ian Goodfellow, Yoshua Bengio, 그리고 Aaron Courville의 책을 참고하실 수 있어요. 해당 책은 Deep Learning (deeplearningbook.org)에서 구할 수 있어요. 그리고, Goodfellow은 적대적 생성 신경망(Generative Adversarial Networks)의 발명과도 함께 언급되어 있어요. 
+만약 신경망과 기계 학습 내부의 수학을 더 잘 이해하고 싶다면 Ian Goodfellow, Yoshua Bengio, 그리고 Aaron Courville의 책을 참고하실 수 있어요. 해당 책은 Deep Learning (deeplearningbook.org)에서 구할 수 있어요. 그리고, Goodfellow은 적대적 생성 신경망(Generative Adversarial Networks)의 발명과도 함께 언급되어 있어요.
 
 # 다중 계층 퍼셉트론 (MLP)
 
@@ -173,10 +170,10 @@ model = SimpleClassifier()
 ```python
 #모델 로드
 model = SimpleClassifier()
-model.train()  
+model.train()
 
 #학습 파라미터(사이클 수 및 학습률)입니다.
-num_epochs = 100 
+num_epochs = 100
 learning_rate = 0.00001
 #과적합을 줄이기 위해
 regularization = 0.0000001
@@ -185,10 +182,10 @@ regularization = 0.0000001
 criterion = nn.CrossEntropyLoss()
 
 #기울기를 찾는 알고리즘
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=regularization) 
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=regularization)
 
 #이 코드는 학습 루프를 수행하는 동안 최상의 모델을 유지합니다.
-best_model_wts = copy.deepcopy(model.state_dict()) 
+best_model_wts = copy.deepcopy(model.state_dict())
 best_acc = 0.0
 best_f1 = 0.0
 best_epoch = 0
@@ -210,9 +207,9 @@ for epoch in range(num_epochs):
     print('-' * 10)
     for phase in phases:
         if phase == 'train':
-            model.train()  
+            model.train()
         else:
-            model.eval()   
+            model.eval()
         running_loss = 0.0
         running_corrects = 0
         running_fp = 0
@@ -242,11 +239,11 @@ for epoch in range(num_epochs):
                 #통계. f1 메트릭을 사용합니다.
                 running_loss += loss.item() * inputs.size(0)
                 running_corrects += torch.sum(predictions == labels.data)
-                running_fp += torch.sum((predictions != labels.data) & (predictions >= 0.5))   
-                running_tp += torch.sum((predictions == labels.data) & (predictions >= 0.5))    
-                running_fn += torch.sum((predictions != labels.data) & (predictions < 0.5))   
-                running_tn += torch.sum((predictions == labels.data) & (predictions < 0.5))    
-                print(f'에포크 {epoch+1}, {phase:5} 손실: {epoch_loss:.7f} F1: {epoch_f1:.7f} 정확도: {epoch_acc:.7f} 부분 손실: {loss.item():.7f} 최상의 f1: {best_f1:.7f}') 
+                running_fp += torch.sum((predictions != labels.data) & (predictions >= 0.5))
+                running_tp += torch.sum((predictions == labels.data) & (predictions >= 0.5))
+                running_fn += torch.sum((predictions != labels.data) & (predictions < 0.5))
+                running_tn += torch.sum((predictions == labels.data) & (predictions < 0.5))
+                print(f'에포크 {epoch+1}, {phase:5} 손실: {epoch_loss:.7f} F1: {epoch_f1:.7f} 정확도: {epoch_acc:.7f} 부분 손실: {loss.item():.7f} 최상의 f1: {best_f1:.7f}')
 
         #손실, 정확도 및 f1 메트릭 계산
         epoch_loss = running_loss / dataset_sizes[phase]
@@ -307,7 +304,7 @@ from torch.nn.modules.flatten import Flatten
 class CNNClassifier(nn.Module):
     def __init__(self):
         super(CNNClassifier, self).__init__()
-        self.dropout = nn.Dropout(0.05) 
+        self.dropout = nn.Dropout(0.05)
         self.pipeline = nn.Sequential(
             #in channels is 1, because the input is grayscale
             nn.Conv2d(in_channels = 1, out_channels = 10, kernel_size = 5, stride = 1, padding=1),
@@ -350,7 +347,6 @@ CNN에 대해 더 자세히 알아보기 좋은 정보를 찾는 것을 시작�
 
 아키텍처의 하위 클래스로 오토인코더가 있습니다. 입력과 출력의 수가 동일한 특정 구성으로 상상할 수 있습니다. 모델은 입력된 데이터를 재현하는 방법을 학습하도록 구성되어 있으며 한 개 이상의 숨겨진 레이어를 통해 통과합니다.
 
-
 <div class="content-ad"></div>
 
 모델은 두 부분으로 설계되어 있습니다. 입력을 다른 표현으로 변환하는 Encoder와 이 표현을 기반으로 입력의 버전을 재구성하는 Decoder입니다. 아이디어는 재구성이 초기 데이터와 가능한 한 유사해야 한다는 것입니다.
@@ -362,7 +358,6 @@ CNN에 대해 더 자세히 알아보기 좋은 정보를 찾는 것을 시작�
 NLP에서 오토인코더를 사용하는 한 가지 훌륭한 방법은 다음과 같습니다:
 
 <div class="content-ad"></div>
-
 
 ![Neural Network Example](/assets/img/2024-06-20-NeuralNetworksBasicTheoryandArchitectureTypes_10.png)
 
@@ -413,7 +408,7 @@ class Encdec(nn.Module):
             nn.ReLU(),
             nn.Conv2d(in_channels = 10, out_channels = 10, kernel_size = 5, stride = 1, padding=1),
             nn.ReLU(),
-            nn.Conv2d(in_channels = 10, out_channels = nc, kernel_size = 5, stride = 1, padding=1),      
+            nn.Conv2d(in_channels = 10, out_channels = nc, kernel_size = 5, stride = 1, padding=1),
             nn.ReLU(),
             nn.Flatten(),
             nn.Linear(10092, 2000),
@@ -424,14 +419,14 @@ class Encdec(nn.Module):
             nn.ReLU(),
             nn.Linear(1000, 500),
             nn.ReLU(),
-            nn.Linear(500, nc*64*64),   
-            nn.Unflatten(1, torch.Size([nc, 64, 64])),         
-            nn.Tanh()            
+            nn.Linear(500, nc*64*64),
+            nn.Unflatten(1, torch.Size([nc, 64, 64])),
+            nn.Tanh()
          )
-        
+
     def encode(self, x):
         return self.encoder(x)
-    
+
     def decode(self, x):
         return self.decoder(x)
 
@@ -442,7 +437,6 @@ netEncDec = Encdec(nc, nz, nr)
 ```
 
 자세한 내용은 위키피디아에서 오토인코더 아키텍처에 대해 더 알아보기 시작점으로 참조할 수 있습니다: [오토인코더 - 위키백과](https://ko.wikipedia.org/wiki/%EC%98%A4%ED%86%A0%EC%9D%B8%EC%BD%94%EB%8D%94)
-
 
 <div class="content-ad"></div>
 
@@ -571,6 +565,3 @@ class Generator(nn.Module):
 저는 다음 기사에서 이미지 생성을 위한 GAN을 구현했습니다: GAN: training a Generative Adversarial Network for image generation | by Greg Postalian-Yrausquin | Jun, 2024 | Medium
 
 이것들은 머신 러닝을 위한 신경망의 기본입니다. 하지만 모든 아키텍처에 대한 완전한 설명은 아닙니다. 이 주제는 아주 거대하고 매혹적이며, 새로운 기술과 알고리즘이 지속적으로 등장하고 있는 폭발적인 성장을 이루고 있습니다. 이러한 많은 것들은 이 문서에서 설명된 아키텍처의 수정이나 결합입니다.
-
-신경망 뒤의 수학은 정보의 흐름, 데이터 및 오류가 네트워크 내에서 어떻게 전파되는지 이해하려고 노력하며, 가장 효율적인 레이어 구성(네트워크의 깊이), 뉴런(네트워크의 너비), 활성화 함수 및 훈련 알고리즘을 이론화하려고 합니다.
-`test`
