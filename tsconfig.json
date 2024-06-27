@@ -15,9 +15,18 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "react": ["./node_modules/@types/react"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "scripts/sitemap.js", "scripts/sitemap-common.js", "scripts/sitemap-common.js", "components/\bGoogleAd"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "scripts/sitemap.js",
+    "scripts/sitemap-common.js",
+    "scripts/sitemap-common.js",
+    "components/\bGoogleAd"
+  ],
   "exclude": ["node_modules"]
 }

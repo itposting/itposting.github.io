@@ -23,8 +23,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import markdownToHtml from "@/lib/markdownToHtml";
 
-const md = markdownIt({ html: true }).use(highlightjs).use(markdownContainer, "tip");
-
 const cx = classnames.bind(style);
 const components = { Image, GoogleAd };
 type Props = {
