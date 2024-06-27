@@ -73,7 +73,7 @@ void loop() {
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![image](/assets/img/2024-06-20-TheClapperHowtomakeaclapsensitiveswitchwithArduino_2.png)
 
 여기에는 포트 튜닝 전후의 신호 데이터가 표시되어 있습니다. Y축에서 볼 수 있듯이, 튜닝 전에는 40 이상의 값이 나타나는 반면, 튜닝 후에는 10 미만으로 감소된 것을 확인할 수 있습니다.
@@ -81,7 +81,7 @@ void loop() {
 포트 튜닝 전.
 
 ![image](/assets/img/2024-06-20-TheClapperHowtomakeaclapsensitiveswitchwithArduino_3.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -105,7 +105,7 @@ echo 문이 작동하고 변수 값이 출력된 것을 확인할 수 있었어�
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![ShellScripting_6](/assets/img/2024-06-19-ShellScripting_6.png)
 
 ![ShellScripting_7](/assets/img/2024-06-19-ShellScripting_7.png)
@@ -113,7 +113,7 @@ echo 문이 작동하고 변수 값이 출력된 것을 확인할 수 있었어�
 It gives nothing, because variable "t" is not global. So, to make it global, we should export the variable with the command `export t`.
 
 ![ShellScripting_8](/assets/img/2024-06-19-ShellScripting_8.png)
-```
+
 
 <div class="content-ad"></div>
 

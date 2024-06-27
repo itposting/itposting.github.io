@@ -49,7 +49,7 @@ CNI는 2가지 모델에서 작동합니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-22-DecipheringtheKubernetesNetworkingMazeNavigatingLoad-BalanceBGPIPVSandBeyond_1.png)
 
 LB-controller: MetalLB, PureLB,...은 Kubernetes의 LoadBalancer 서비스 유형의 기능을 제공합니다.
@@ -58,7 +58,7 @@ LB-controller: MetalLB, PureLB,...은 Kubernetes의 LoadBalancer 서비스 유�
 새로운 IP가 할당되면:
 
 ![이미지](/assets/img/2024-06-22-DecipheringtheKubernetesNetworkingMazeNavigatingLoad-BalanceBGPIPVSandBeyond_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -108,7 +108,7 @@ Kubernetes의 각 노드는 자체 CIDR을 갖고 있어 올바른 노드로 트
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-22-DecipheringtheKubernetesNetworkingMazeNavigatingLoad-BalanceBGPIPVSandBeyond_5.png)
 
 서비스에 관한 경우, IPTABLES/IPVS가 중요한 역할을 합니다. Netfilter에서, 서비스 IP 주소는 무작위로 관련 pod IP 주소로 변경됩니다(로드 밸런싱 알고리즘에 따라). Kube-proxy는 Netfilter 규칙을 업데이트하고 pod IP 주소를 서비스에 할당하는 책임이 있습니다.
@@ -116,7 +116,7 @@ Kubernetes의 각 노드는 자체 CIDR을 갖고 있어 올바른 노드로 트
 노드가 svc 목적지를 갖는 패킷을 받을 때, Netfilter에서 규칙이 서비스와 일치하고 대상 pod IP 주소로 경유됩니다.
 
 그렇다면, 그 과정이 어떻게 이루어지는 걸까요?
-```
+
 
 <div class="content-ad"></div>
 

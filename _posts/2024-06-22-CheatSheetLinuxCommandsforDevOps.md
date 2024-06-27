@@ -199,7 +199,7 @@ pkill 프로세스_이름
 
 <div class="content-ad"></div>
 
-```
+
 58. w - 현재 사용자를 표시합니다.
 
 59. su - 사용자 전환.
@@ -210,7 +210,7 @@ pkill 프로세스_이름
 
 61. tail — 파일의 마지막 부분을 표시합니다. 실시간 로그 모니터링에 자주 사용됩니다.
 예시: tail monitor.logs
-```
+
 
 <div class="content-ad"></div>
 

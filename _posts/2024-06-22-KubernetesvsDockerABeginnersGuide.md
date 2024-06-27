@@ -84,7 +84,7 @@ Docker Swarm 또는 Kubernetes를 사용할지 결정할 때 다음 사항을 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-22-KubernetesvsDockerABeginnersGuide_5.png" />
 
 - 다양한 기능: Kubernetes는 여러 배포 전략, 네트워크 인그레스 관리 및 관찰 가능성을 포함하여 다양한 기능을 제공합니다.
@@ -94,7 +94,7 @@ Docker Swarm 또는 Kubernetes를 사용할지 결정할 때 다음 사항을 �
 # 결론
 
 <img src="/assets/img/2024-06-22-KubernetesvsDockerABeginnersGuide_6.png" />
-```
+
 
 <div class="content-ad"></div>
 

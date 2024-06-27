@@ -73,7 +73,7 @@ Tin cans are great objects to upcycle. So we can try the prompt “decoration ob
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![2024-06-23-ScraptoChicMidjourney-InspiredUpcycling_8](/assets/img/2024-06-23-ScraptoChicMidjourney-InspiredUpcycling_8.png)
 
 내가 종종 이미지를 변형하고 리믹스하는 것을 좋아해요. 원래 프로젝트 아이디어에 더 이상 적용되지 않을 수 있는 이미지를 만들어 낼 수도 있지만, 미래 프로젝트에는 아주 좋을지도 몰라요.
@@ -81,7 +81,7 @@ Tin cans are great objects to upcycle. So we can try the prompt “decoration ob
 여기 의자 디자인의 예시가 있어요. 초기 이미지의 다양한 강렬한 변형을 만들어내는 과정에서 이 디자인이 나왔어요. 나는 내가 가진 폐기물로 이 의자를 만들 수 있다고 믿어요. 언젠가 이 의자를 만들게 될 것을 희망해요.
 
 ![2024-06-23-ScraptoChicMidjourney-InspiredUpcycling_9](/assets/img/2024-06-23-ScraptoChicMidjourney-InspiredUpcycling_9.png)
-```
+
 
 <div class="content-ad"></div>
 

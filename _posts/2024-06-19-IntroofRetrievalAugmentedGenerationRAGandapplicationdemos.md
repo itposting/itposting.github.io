@@ -184,6 +184,5 @@ Thomas와 Kin이 이 훌륭한 행사를 기획해 준 데에 감사드립니다
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![2024-06-19-IntroofRetrievalAugmentedGenerationRAGandapplicationdemos_15](/assets/img/2024-06-19-IntroofRetrievalAugmentedGenerationRAGandapplicationdemos_15.png)
-```  

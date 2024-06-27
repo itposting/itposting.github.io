@@ -78,7 +78,7 @@ link: "https://medium.com/towards-data-science/hands-on-generative-adversarial-n
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![Image](/assets/img/2024-06-22-Hands-onGenerativeAdversarialNetworksGANforSignalProcessingwithPython_4.png)
 
 Now, in practice:
@@ -88,7 +88,7 @@ Now, in practice:
 - Another constant can be considered to be in front of the noise factor as a sort of amplitude of the noise
 
 So at the end of the day, it looks more like this:
-```
+
 
 <div class="content-ad"></div>
 

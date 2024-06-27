@@ -214,7 +214,7 @@ Colima 도구가 응답하지 않을 경우 limactl을 사용하여 linux 가상
 
 <div class="content-ad"></div>
 
-```Markdown
+
 # 리눅스 가상 머신의 인스턴스 목록을 나열합니다.
 $ limactl ls
 
@@ -226,7 +226,7 @@ $ limactl delete colima
 
 # Lima에 대한 도움말 정보를 표시합니다.
 $ limactl --help
-```
+
 
 # Colima 명령어
 

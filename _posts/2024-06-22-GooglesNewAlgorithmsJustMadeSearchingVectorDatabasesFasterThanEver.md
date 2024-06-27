@@ -21,7 +21,7 @@ link: "https://medium.com/gitconnected/googles-new-algorithms-just-made-searchin
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![Vector Databases](/assets/img/2024-06-22-GooglesNewAlgorithmsJustMadeSearchingVectorDatabasesFasterThanEver_0.png)
 
 # But First, How Do Vector Databases Work Exactly?
@@ -29,7 +29,7 @@ link: "https://medium.com/gitconnected/googles-new-algorithms-just-made-searchin
 Vector databases work by storing vector data so that it can be queried and worked with efficiently.
 
 Real-world entities/data points are first converted into embeddings.
-```
+
 
 <div class="content-ad"></div>
 

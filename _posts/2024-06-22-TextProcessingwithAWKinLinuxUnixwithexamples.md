@@ -36,9 +36,9 @@ awk '패턴 { 동작 }' 파일
 
 아래는 Markdown 형식으로 표의 내용을 변경한 코드 예시입니다:
 
-```markdown
+
 | 표형식의 데이터 |
-```
+
 
 # 일반적인 사용 사례 및 예시
 
@@ -64,7 +64,7 @@ Charlie White 32 160
 
 ## 1. Printing Specific Columns separated by space
 
-To print the first names (1st field) and ages (3rd field) separated by space:```
+To print the first names (1st field) and ages (3rd field) separated by space:
 
 <div class="content-ad"></div>
 

@@ -738,7 +738,7 @@ report_best_scores(best_model.cv_results_, 1)
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![Image](/assets/img/2024-06-19-TinyMLSupportVectorMachinesClassifier_40.png)
 
 Full project in: [TinyML/05_support_vector_machine](https://github.com/thommaskevin/TinyML)
@@ -746,4 +746,3 @@ Full project in: [TinyML/05_support_vector_machine](https://github.com/thommaske
 References:
 
 FLETCHER, Tristan. Support vector machines explained. Tutorial paper, p. 1–19, 2009.
-```

@@ -197,9 +197,9 @@ server {
 
 <div class="content-ad"></div>
 
-```Markdown
+
 sudo systemctl restart nginx.service
-```
+
 
 ![Building your own website in Ubuntu](/assets/img/2024-06-23-BuildingyourownwebsiteinUbuntu_8.png)
 
