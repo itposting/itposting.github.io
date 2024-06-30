@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>Flutter에서 MQTT 사용하여 ESP8266 IoT 기기 연결하는 완벽 가이드  PART II | itposting</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://itposting.github.io///post/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="Flutter에서 MQTT 사용하여 ESP8266 IoT 기기 연결하는 완벽 가이드  PART II | itposting" data-gatsby-head="true"/><meta property="og:title" content="Flutter에서 MQTT 사용하여 ESP8266 IoT 기기 연결하는 완벽 가이드  PART II | itposting" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://itposting.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://itposting.github.io///post/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII" data-gatsby-head="true"/><meta name="twitter:title" content="Flutter에서 MQTT 사용하여 ESP8266 IoT 기기 연결하는 완벽 가이드  PART II | itposting" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | itposting" data-gatsby-head="true"/><meta name="article:published_time" content="2024-06-23 16:56" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-23YXDLKDCL"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-23YXDLKDCL');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-ac4aa08aae62f90e.js" defer=""></script><script src="/_next/static/chunks/463-0429087d4c0b0335.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-d849684d6d83f07a.js" defer=""></script><script src="/_next/static/QYe6gFAUryFKFgjKBoIfo/_buildManifest.js" defer=""></script><script src="/_next/static/QYe6gFAUryFKFgjKBoIfo/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">IT Posting</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">Flutter에서 MQTT 사용하여 ESP8266 IoT 기기 연결하는 완벽 가이드  PART II</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="Flutter에서 MQTT 사용하여 ESP8266 IoT 기기 연결하는 완벽 가이드  PART II" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">IT Posting</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jun 23, 2024</span><span class="posts_reading_time__f7YPP">8<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<p>지난 글에서는 Esp8266을 MQTT 브로커에 연결하도록 구성하는 방법에 대해 논의했습니다. 아직 확인하지 않으셨다면, 먼저 그 글을 읽는 것을 적극 권장합니다.</p>
+<img src="/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_0.png">
+<h2>파트 3: Flutter 애플리케이션 만들기</h2>
+<p>먼저 Flutter 앱을 생성하고 원하는 이름으로 지어보세요.</p>
+<div class="content-ad"></div>
+<p>애플리케이션의 상태를 수정하고 주제를 게시하거나 구독하는 다양한 더 좋은 방법이 있지만, 여기서는 StreamBuilder를 사용하여 간단하게 유지하려고 합니다. 다른 해결책으로는 Bloc, Provider 등이 있을 수 있습니다.</p>
+<p>다음 라이브러리/패키지를 설치하십시오.</p>
+<p>그런 다음 프로젝트에 위젯을 만드십시오.</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HomePage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">StatefulWidget</span> {
+  <span class="hljs-keyword">const</span> <span class="hljs-title class_">HomePage</span>({<span class="hljs-variable language_">super</span>.<span class="hljs-property">key</span>});
+
+  @override
+  <span class="hljs-title class_">State</span>&#x3C;<span class="hljs-title class_">HomePage</span>> <span class="hljs-title function_">createState</span>() => <span class="hljs-title function_">_HomePageState</span>();
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">_HomePageState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">State</span>&#x3C;<span class="hljs-title class_">HomePage</span>> {
+
+
+  @override
+  <span class="hljs-title class_">Widget</span> <span class="hljs-title function_">build</span>(<span class="hljs-params">BuildContext context</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-title class_">Container</span>(); <span class="hljs-comment">// 이 부분은 나준에 업데이트할 예정입니다.</span>
+  }
+}
+</code></pre>
+<div class="content-ad"></div>
+<p>MQTTServerClient 객체를 만들고 Future 객체를 초기화합니다.</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HomePage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">StatefulWidget</span> {
+  <span class="hljs-keyword">const</span> <span class="hljs-title class_">HomePage</span>({<span class="hljs-title class_">Key</span> key}) : <span class="hljs-variable language_">super</span>(<span class="hljs-attr">key</span>: key);
+
+  @override
+  <span class="hljs-title class_">State</span>&#x3C;<span class="hljs-title class_">HomePage</span>> <span class="hljs-title function_">createState</span>() => <span class="hljs-title function_">_HomePageState</span>();
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">_HomePageState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">State</span>&#x3C;<span class="hljs-title class_">HomePage</span>> {
+
+  late <span class="hljs-title class_">MqttServerClient</span> client; <span class="hljs-comment">// 참고: 브라우저용 MqttBrowserClient도 있습니다</span>
+
+  late <span class="hljs-title class_">Future</span> _onConnect; <span class="hljs-comment">// 브로커에 연결되었는지 확인하기 위해 사용합니다</span>
+
+  @override
+  <span class="hljs-title class_">Widget</span> <span class="hljs-title function_">build</span>(<span class="hljs-params">BuildContext context</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-title class_">Container</span>(); <span class="hljs-comment">// 이 부분은 나중에 업데이트할 것입니다</span>
+  }
+}
+</code></pre>
+<p>다음으로 연결을 위한 라이프사이클 함수를 만들어보겠습니다.</p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Future</span>&#x3C;<span class="hljs-keyword">void</span>> <span class="hljs-title function_">onConnected</span>() <span class="hljs-keyword">async</span> {
+  <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">i</span>(<span class="hljs-string">"Connected"</span>); <span class="hljs-comment">// print를 사용하거나 Logger 라이브러리를 설치하여 사용할 수 있습니다</span>
+
+  <span class="hljs-comment">// "test" 토픽에 구독합니다</span>
+  client.<span class="hljs-title function_">subscribe</span>(<span class="hljs-string">"test"</span>, <span class="hljs-title class_">MqttQos</span>.<span class="hljs-property">atLeastOnce</span>);
+
+  <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">i</span>(<span class="hljs-string">"Subscribed"</span>);
+}
+
+<span class="hljs-title class_">Future</span>&#x3C;<span class="hljs-keyword">void</span>> <span class="hljs-title function_">connect</span>() <span class="hljs-keyword">async</span> {
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">i</span>(<span class="hljs-string">"Connection Initiated"</span>);
+
+    <span class="hljs-keyword">await</span> client.<span class="hljs-title function_">connect</span>(<span class="hljs-string">"test2"</span>, <span class="hljs-string">"testpass123A"</span>);
+
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">e</span>(e);
+  }
+}
+</code></pre>
+<div class="content-ad"></div>
+<p>그럼 initState 메소드를 작성합니다.</p>
+<pre><code class="hljs language-js">@override
+  <span class="hljs-keyword">void</span> <span class="hljs-title function_">initState</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">initState</span>();
+
+    <span class="hljs-keyword">try</span>{
+      client = <span class="hljs-title class_">MqttServerClient</span>.<span class="hljs-title function_">withPort</span>(<span class="hljs-string">"&#x3C;MQTT 호스트>"</span>,<span class="hljs-string">"&#x3C;임의의 이름>"</span>,&#x3C;포트 번호 예: <span class="hljs-number">8883</span>>);
+
+      client.<span class="hljs-property">secure</span> = <span class="hljs-literal">true</span>;
+
+      <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">i</span>(<span class="hljs-string">"클라이언트가 생성되었습니다"</span>);
+
+
+    <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">i</span>(<span class="hljs-string">"프로토콜이 설정되었습니다"</span>);
+
+    client.<span class="hljs-title function_">logging</span>(<span class="hljs-attr">on</span>: <span class="hljs-literal">true</span>);
+
+    <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">i</span>(<span class="hljs-string">"로깅이 설정되었습니다"</span>);
+
+    client.<span class="hljs-property">onConnected</span> = onConnected;
+
+    _onConnect = <span class="hljs-title function_">connect</span>();
+
+    }<span class="hljs-keyword">catch</span>(e){
+      <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">e</span>(e);
+    }
+
+  }
+</code></pre>
+<p>마지막으로 위젯을 작성합니다.</p>
+<pre><code class="hljs language-js">  @override
+  <span class="hljs-title class_">Widget</span> <span class="hljs-title function_">build</span>(<span class="hljs-params">BuildContext context</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-title class_">Scaffold</span>(
+      <span class="hljs-attr">body</span>: <span class="hljs-title class_">FutureBuilder</span>(
+        <span class="hljs-attr">future</span>: _onConnect,
+        <span class="hljs-attr">builder</span>: (context, snapshot) {
+
+          <span class="hljs-comment">// 연결이 진행 중인 경우 로딩 화면을 표시합니다</span>
+          <span class="hljs-keyword">if</span>(snapshot.<span class="hljs-property">connectionState</span> == <span class="hljs-title class_">ConnectionState</span>.<span class="hljs-property">waiting</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">const</span> <span class="hljs-title class_">Center</span>(
+              <span class="hljs-attr">child</span>: <span class="hljs-title class_">CircularProgressIndicator</span>(),
+            );
+          }
+
+          <span class="hljs-keyword">return</span> <span class="hljs-title class_">StreamBuilder</span>&#x3C;<span class="hljs-title class_">List</span>&#x3C;<span class="hljs-title class_">MqttReceivedMessage</span>&#x3C;<span class="hljs-title class_">MqttMessage</span>?>>>(
+
+            <span class="hljs-attr">stream</span>: client.<span class="hljs-property">updates</span>,
+
+            <span class="hljs-attr">builder</span>: (context, snapshot) {
+
+              <span class="hljs-keyword">if</span>(snapshot.<span class="hljs-property">hasData</span>){
+                <span class="hljs-comment">// "test" 토픽에서 Esp8266에서 전송한 데이터를 읽습니다</span>
+                final message = snapshot.<span class="hljs-property">data</span>!.<span class="hljs-property">first</span>.<span class="hljs-property">payload</span> <span class="hljs-keyword">as</span> <span class="hljs-title class_">MqttPublishMessage</span>;
+
+                final payload = <span class="hljs-title class_">MqttPublishPayload</span>.<span class="hljs-title function_">bytesToStringAsString</span>(message.<span class="hljs-property">payload</span>.<span class="hljs-property">message</span>);
+
+                <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">i</span>(payload);
+
+                <span class="hljs-keyword">return</span> <span class="hljs-title class_">Center</span>(
+                  <span class="hljs-attr">child</span>: <span class="hljs-title class_">Column</span>(
+                    <span class="hljs-attr">mainAxisAlignment</span>: <span class="hljs-title class_">MainAxisAlignment</span>.<span class="hljs-property">center</span>,
+                    <span class="hljs-attr">children</span>: &#x3C;<span class="hljs-title class_">Widget</span>>[
+                      <span class="hljs-keyword">const</span> <span class="hljs-title class_">Text</span>(<span class="hljs-string">"센서 데이터"</span>),
+                      <span class="hljs-title class_">Text</span>(payload),
+                    ],
+                  ),
+                );
+              }
+
+              <span class="hljs-keyword">return</span> <span class="hljs-keyword">const</span> <span class="hljs-title class_">Center</span>(
+                <span class="hljs-attr">child</span>: <span class="hljs-title class_">Column</span>(
+                  <span class="hljs-attr">mainAxisAlignment</span>: <span class="hljs-title class_">MainAxisAlignment</span>.<span class="hljs-property">center</span>,
+                  <span class="hljs-attr">children</span>: &#x3C;<span class="hljs-title class_">Widget</span>>[
+                    <span class="hljs-title class_">Text</span>(<span class="hljs-string">"데이터 없음"</span>),
+                  ],
+                ),
+              );
+            },
+          );
+        }
+      ),
+    );
+  }
+</code></pre>
+<div class="content-ad"></div>
+<p>전체 코드</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> <span class="hljs-string">'package:flutter/material.dart'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'package:logger/web.dart'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'package:mqtt_client/mqtt_client.dart'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'package:mqtt_client/mqtt_server_client.dart'</span>;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">runApp</span>(<span class="hljs-keyword">const</span> <span class="hljs-title class_">MyApp</span>());
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MyApp</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">StatelessWidget</span> {
+  <span class="hljs-keyword">const</span> <span class="hljs-title class_">MyApp</span>({key});
+
+  <span class="hljs-comment">// 애플리케이션의 루트인 위젯입니다.</span>
+  @override
+  <span class="hljs-title class_">Widget</span> <span class="hljs-title function_">build</span>(<span class="hljs-params">BuildContext context</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-title class_">MaterialApp</span>(
+      <span class="hljs-attr">title</span>: <span class="hljs-string">'Flutter Demo'</span>,
+      <span class="hljs-attr">theme</span>: <span class="hljs-title class_">ThemeData</span>(
+        <span class="hljs-attr">colorScheme</span>: <span class="hljs-title class_">ColorScheme</span>.<span class="hljs-title function_">fromSeed</span>(<span class="hljs-attr">seedColor</span>: <span class="hljs-title class_">Colors</span>.<span class="hljs-property">deepPurple</span>),
+        <span class="hljs-attr">useMaterial3</span>: <span class="hljs-literal">true</span>,
+      ),
+      <span class="hljs-attr">home</span>: <span class="hljs-keyword">const</span> <span class="hljs-title class_">HomePage</span>(),
+    );
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">HomePage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">StatefulWidget</span> {
+  <span class="hljs-keyword">const</span> <span class="hljs-title class_">HomePage</span>({key});
+
+  @override
+  <span class="hljs-title class_">State</span>&#x3C;<span class="hljs-title class_">HomePage</span>> <span class="hljs-title function_">createState</span>() => <span class="hljs-title function_">_HomePageState</span>();
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">_HomePageState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">State</span>&#x3C;<span class="hljs-title class_">HomePage</span>> {
+  late <span class="hljs-title class_">MqttServerClient</span> client;
+
+  <span class="hljs-title class_">Future</span>&#x3C;<span class="hljs-keyword">void</span>> <span class="hljs-title function_">onConnected</span>() <span class="hljs-keyword">async</span> {
+    <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">i</span>(<span class="hljs-string">"Connected"</span>);
+
+    <span class="hljs-comment">// "test" 주제에 구독합니다.</span>
+    client.<span class="hljs-title function_">subscribe</span>(<span class="hljs-string">"test"</span>, <span class="hljs-title class_">MqttQos</span>.<span class="hljs-property">atLeastOnce</span>);
+
+    <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">i</span>(<span class="hljs-string">"Subscribed"</span>);
+  }
+
+  <span class="hljs-title class_">Future</span>&#x3C;<span class="hljs-keyword">void</span>> <span class="hljs-title function_">connect</span>() <span class="hljs-keyword">async</span> {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">i</span>(<span class="hljs-string">"Connection Initiated"</span>);
+
+      <span class="hljs-keyword">await</span> client.<span class="hljs-title function_">connect</span>(<span class="hljs-string">"test2"</span>,<span class="hljs-string">"testpass123A"</span>);
+    } <span class="hljs-keyword">catch</span>(e) {
+      <span class="hljs-title class_">Logger</span>().<span class="hljs-title function_">e</span>(e);
+    }
+  }
+
+  late <span class="hljs-title class_">Future</span> _onConnect;
+
+  @override
+  <span class="hljs-keyword">void</span> <span class="hljs-title function_">initState</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">initState</span>();
+
+    <span class="hljs-keyword">try</span> {
+      client = <span class="hljs-title class_">MqttServerClient</span>.<span class="hljs-title function_">withPort</span>(<span class="hljs-string">"&#x3C;MQTT HOST>"</span>,<span class="hljs-string">"&#x3C;ANY NAME>"</span>,&#x3C;PORT like 8883>);
+
+      client.secure = true;
+      Logger().i("Client created");
+
+      Logger().i("Protocol set");
+
+      client.logging(on: true);
+      Logger().i("Logging set");
+
+      client.onConnected = onConnected;
+
+      _onConnect = connect();
+
+    } catch(e) {
+      Logger().e(e);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: FutureBuilder(
+        future: _onConnect,
+        builder: (context, snapshot) {
+          if(snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+
+          return StreamBuilder&#x3C;List&#x3C;MqttReceivedMessage&#x3C;MqttMessage?>>>(
+            stream: client.updates,
+            builder: (context, snapshot) {
+              if(snapshot.hasData) {
+                // "test" 주제에서 Esp8266이 보낸 데이터를 읽습니다.
+                final message = snapshot.data!.first.payload as MqttPublishMessage;
+                final payload = MqttPublishPayload.bytesToStringAsString(message.payload.message);
+                Logger().i(payload);
+
+                return Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: &#x3C;Widget>[
+                      const Text("Sensor Data"),
+                      Text(payload),
+                    ],
+                  ),
+                );
+              }
+
+              return const Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: &#x3C;Widget>[
+                    Text("No data"),
+                  ],
+                ),
+              );
+            },
+          );
+        }
+      ),
+    );
+  }
+}
+</code></pre>
+<p>이제 Esp8266을 전원에 연결하고 앱을 실행하세요.</p>
+<p>다음과 같은 화면이 나타납니다.</p>
+<div class="content-ad"></div>
+<p><img src="https://miro.medium.com/v2/resize:fit:1200/1*SWHkvNtFqG3cDvk6oGLxew.gif" alt="이미지"></p>
+<h1>우하하 !! 우리가 MQTT를 사용하여 Esp8266에서 앱으로 데이터 성공적으로 전송했어요 !</h1>
+<h2>마지막으로</h2>
+<p>대부분의 경우에는 IOT 디바이스에서 모바일 앱으로 데이터를 직접 전송하는 것은 유용하지 않을 수 있습니다. 센서 데이터와 관련된 많은 처리가 필요하기 때문입니다. 이를 위해 센서에서 데이터를 가져오기 위해 브로커에 연결할 전용 백엔드가 필요하며, 그런 다음 처리된 데이터를 다른 주제에 발행하여 이를 모바일 애플리케이션이 구독하게 할 수 있습니다. 나는 미래에 IOT의 전체 인프라에 대한 자세한 기사를 쓸지도 모르겠어요.</p>
+<div class="content-ad"></div>
+<p>감사합니다. 궁금한 점이 있으면 언제든지 말해주세요!</p>
+<p>만약 유용하다고 느끼신다면 LinkedIn에서 저를 팔로우해 주세요.</p>
+<img src="/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_1.png">
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"Flutter에서 MQTT 사용하여 ESP8266 IoT 기기 연결하는 완벽 가이드  PART II","description":"","date":"2024-06-23 16:56","slug":"2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII","content":"\n지난 글에서는 Esp8266을 MQTT 브로커에 연결하도록 구성하는 방법에 대해 논의했습니다. 아직 확인하지 않으셨다면, 먼저 그 글을 읽는 것을 적극 권장합니다.\n\n\u003cimg src=\"/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_0.png\" /\u003e\n\n## 파트 3: Flutter 애플리케이션 만들기\n\n먼저 Flutter 앱을 생성하고 원하는 이름으로 지어보세요.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n애플리케이션의 상태를 수정하고 주제를 게시하거나 구독하는 다양한 더 좋은 방법이 있지만, 여기서는 StreamBuilder를 사용하여 간단하게 유지하려고 합니다. 다른 해결책으로는 Bloc, Provider 등이 있을 수 있습니다.\n\n다음 라이브러리/패키지를 설치하십시오.\n\n그런 다음 프로젝트에 위젯을 만드십시오.\n\n```js\nclass HomePage extends StatefulWidget {\n  const HomePage({super.key});\n\n  @override\n  State\u003cHomePage\u003e createState() =\u003e _HomePageState();\n}\n\nclass _HomePageState extends State\u003cHomePage\u003e {\n\n\n  @override\n  Widget build(BuildContext context) {\n    return Container(); // 이 부분은 나준에 업데이트할 예정입니다.\n  }\n}\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\nMQTTServerClient 객체를 만들고 Future 객체를 초기화합니다.\n\n```js\nclass HomePage extends StatefulWidget {\n  const HomePage({Key key}) : super(key: key);\n\n  @override\n  State\u003cHomePage\u003e createState() =\u003e _HomePageState();\n}\n\nclass _HomePageState extends State\u003cHomePage\u003e {\n\n  late MqttServerClient client; // 참고: 브라우저용 MqttBrowserClient도 있습니다\n\n  late Future _onConnect; // 브로커에 연결되었는지 확인하기 위해 사용합니다\n\n  @override\n  Widget build(BuildContext context) {\n    return Container(); // 이 부분은 나중에 업데이트할 것입니다\n  }\n}\n```\n\n다음으로 연결을 위한 라이프사이클 함수를 만들어보겠습니다.\n\n```js\nFuture\u003cvoid\u003e onConnected() async {\n  Logger().i(\"Connected\"); // print를 사용하거나 Logger 라이브러리를 설치하여 사용할 수 있습니다\n\n  // \"test\" 토픽에 구독합니다\n  client.subscribe(\"test\", MqttQos.atLeastOnce);\n\n  Logger().i(\"Subscribed\");\n}\n\nFuture\u003cvoid\u003e connect() async {\n  try {\n    Logger().i(\"Connection Initiated\");\n\n    await client.connect(\"test2\", \"testpass123A\");\n\n  } catch (e) {\n    Logger().e(e);\n  }\n}\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n그럼 initState 메소드를 작성합니다.\n\n```js\n@override\n  void initState() {\n    super.initState();\n\n    try{\n      client = MqttServerClient.withPort(\"\u003cMQTT 호스트\u003e\",\"\u003c임의의 이름\u003e\",\u003c포트 번호 예: 8883\u003e);\n\n      client.secure = true;\n\n      Logger().i(\"클라이언트가 생성되었습니다\");\n\n\n    Logger().i(\"프로토콜이 설정되었습니다\");\n\n    client.logging(on: true);\n\n    Logger().i(\"로깅이 설정되었습니다\");\n\n    client.onConnected = onConnected;\n\n    _onConnect = connect();\n\n    }catch(e){\n      Logger().e(e);\n    }\n\n  }\n```\n\n마지막으로 위젯을 작성합니다.\n\n```js\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      body: FutureBuilder(\n        future: _onConnect,\n        builder: (context, snapshot) {\n\n          // 연결이 진행 중인 경우 로딩 화면을 표시합니다\n          if(snapshot.connectionState == ConnectionState.waiting){\n            return const Center(\n              child: CircularProgressIndicator(),\n            );\n          }\n\n          return StreamBuilder\u003cList\u003cMqttReceivedMessage\u003cMqttMessage?\u003e\u003e\u003e(\n\n            stream: client.updates,\n\n            builder: (context, snapshot) {\n\n              if(snapshot.hasData){\n                // \"test\" 토픽에서 Esp8266에서 전송한 데이터를 읽습니다\n                final message = snapshot.data!.first.payload as MqttPublishMessage;\n\n                final payload = MqttPublishPayload.bytesToStringAsString(message.payload.message);\n\n                Logger().i(payload);\n\n                return Center(\n                  child: Column(\n                    mainAxisAlignment: MainAxisAlignment.center,\n                    children: \u003cWidget\u003e[\n                      const Text(\"센서 데이터\"),\n                      Text(payload),\n                    ],\n                  ),\n                );\n              }\n\n              return const Center(\n                child: Column(\n                  mainAxisAlignment: MainAxisAlignment.center,\n                  children: \u003cWidget\u003e[\n                    Text(\"데이터 없음\"),\n                  ],\n                ),\n              );\n            },\n          );\n        }\n      ),\n    );\n  }\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n전체 코드\n\n```js\nimport 'package:flutter/material.dart';\nimport 'package:logger/web.dart';\nimport 'package:mqtt_client/mqtt_client.dart';\nimport 'package:mqtt_client/mqtt_server_client.dart';\n\nvoid main() {\n  runApp(const MyApp());\n}\n\nclass MyApp extends StatelessWidget {\n  const MyApp({key});\n\n  // 애플리케이션의 루트인 위젯입니다.\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      title: 'Flutter Demo',\n      theme: ThemeData(\n        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),\n        useMaterial3: true,\n      ),\n      home: const HomePage(),\n    );\n  }\n}\n\nclass HomePage extends StatefulWidget {\n  const HomePage({key});\n\n  @override\n  State\u003cHomePage\u003e createState() =\u003e _HomePageState();\n}\n\nclass _HomePageState extends State\u003cHomePage\u003e {\n  late MqttServerClient client;\n\n  Future\u003cvoid\u003e onConnected() async {\n    Logger().i(\"Connected\");\n\n    // \"test\" 주제에 구독합니다.\n    client.subscribe(\"test\", MqttQos.atLeastOnce);\n\n    Logger().i(\"Subscribed\");\n  }\n\n  Future\u003cvoid\u003e connect() async {\n    try {\n      Logger().i(\"Connection Initiated\");\n\n      await client.connect(\"test2\",\"testpass123A\");\n    } catch(e) {\n      Logger().e(e);\n    }\n  }\n\n  late Future _onConnect;\n\n  @override\n  void initState() {\n    super.initState();\n\n    try {\n      client = MqttServerClient.withPort(\"\u003cMQTT HOST\u003e\",\"\u003cANY NAME\u003e\",\u003cPORT like 8883\u003e);\n\n      client.secure = true;\n      Logger().i(\"Client created\");\n\n      Logger().i(\"Protocol set\");\n\n      client.logging(on: true);\n      Logger().i(\"Logging set\");\n\n      client.onConnected = onConnected;\n\n      _onConnect = connect();\n\n    } catch(e) {\n      Logger().e(e);\n    }\n  }\n\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      body: FutureBuilder(\n        future: _onConnect,\n        builder: (context, snapshot) {\n          if(snapshot.connectionState == ConnectionState.waiting) {\n            return const Center(\n              child: CircularProgressIndicator(),\n            );\n          }\n\n          return StreamBuilder\u003cList\u003cMqttReceivedMessage\u003cMqttMessage?\u003e\u003e\u003e(\n            stream: client.updates,\n            builder: (context, snapshot) {\n              if(snapshot.hasData) {\n                // \"test\" 주제에서 Esp8266이 보낸 데이터를 읽습니다.\n                final message = snapshot.data!.first.payload as MqttPublishMessage;\n                final payload = MqttPublishPayload.bytesToStringAsString(message.payload.message);\n                Logger().i(payload);\n\n                return Center(\n                  child: Column(\n                    mainAxisAlignment: MainAxisAlignment.center,\n                    children: \u003cWidget\u003e[\n                      const Text(\"Sensor Data\"),\n                      Text(payload),\n                    ],\n                  ),\n                );\n              }\n\n              return const Center(\n                child: Column(\n                  mainAxisAlignment: MainAxisAlignment.center,\n                  children: \u003cWidget\u003e[\n                    Text(\"No data\"),\n                  ],\n                ),\n              );\n            },\n          );\n        }\n      ),\n    );\n  }\n}\n```\n\n이제 Esp8266을 전원에 연결하고 앱을 실행하세요.\n\n다음과 같은 화면이 나타납니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n![이미지](https://miro.medium.com/v2/resize:fit:1200/1*SWHkvNtFqG3cDvk6oGLxew.gif)\n\n# 우하하 !! 우리가 MQTT를 사용하여 Esp8266에서 앱으로 데이터 성공적으로 전송했어요 !\n\n## 마지막으로\n\n대부분의 경우에는 IOT 디바이스에서 모바일 앱으로 데이터를 직접 전송하는 것은 유용하지 않을 수 있습니다. 센서 데이터와 관련된 많은 처리가 필요하기 때문입니다. 이를 위해 센서에서 데이터를 가져오기 위해 브로커에 연결할 전용 백엔드가 필요하며, 그런 다음 처리된 데이터를 다른 주제에 발행하여 이를 모바일 애플리케이션이 구독하게 할 수 있습니다. 나는 미래에 IOT의 전체 인프라에 대한 자세한 기사를 쓸지도 모르겠어요.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n감사합니다. 궁금한 점이 있으면 언제든지 말해주세요!\n\n만약 유용하다고 느끼신다면 LinkedIn에서 저를 팔로우해 주세요.\n\n\u003cimg src=\"/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_1.png\" /\u003e\n","ogImage":{"url":"/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_0.png"},"coverImage":"/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_0.png","tag":["Tech"],"readingTime":8},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003cp\u003e지난 글에서는 Esp8266을 MQTT 브로커에 연결하도록 구성하는 방법에 대해 논의했습니다. 아직 확인하지 않으셨다면, 먼저 그 글을 읽는 것을 적극 권장합니다.\u003c/p\u003e\n\u003cimg src=\"/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_0.png\"\u003e\n\u003ch2\u003e파트 3: Flutter 애플리케이션 만들기\u003c/h2\u003e\n\u003cp\u003e먼저 Flutter 앱을 생성하고 원하는 이름으로 지어보세요.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e애플리케이션의 상태를 수정하고 주제를 게시하거나 구독하는 다양한 더 좋은 방법이 있지만, 여기서는 StreamBuilder를 사용하여 간단하게 유지하려고 합니다. 다른 해결책으로는 Bloc, Provider 등이 있을 수 있습니다.\u003c/p\u003e\n\u003cp\u003e다음 라이브러리/패키지를 설치하십시오.\u003c/p\u003e\n\u003cp\u003e그런 다음 프로젝트에 위젯을 만드십시오.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eextends\u003c/span\u003e \u003cspan class=\"hljs-title class_ inherited__\"\u003eStatefulWidget\u003c/span\u003e {\n  \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e({\u003cspan class=\"hljs-variable language_\"\u003esuper\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003ekey\u003c/span\u003e});\n\n  @override\n  \u003cspan class=\"hljs-title class_\"\u003eState\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e\u003e \u003cspan class=\"hljs-title function_\"\u003ecreateState\u003c/span\u003e() =\u003e \u003cspan class=\"hljs-title function_\"\u003e_HomePageState\u003c/span\u003e();\n}\n\n\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003e_HomePageState\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eextends\u003c/span\u003e \u003cspan class=\"hljs-title class_ inherited__\"\u003eState\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e\u003e {\n\n\n  @override\n  \u003cspan class=\"hljs-title class_\"\u003eWidget\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ebuild\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003eBuildContext context\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eContainer\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 이 부분은 나준에 업데이트할 예정입니다.\u003c/span\u003e\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003eMQTTServerClient 객체를 만들고 Future 객체를 초기화합니다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eextends\u003c/span\u003e \u003cspan class=\"hljs-title class_ inherited__\"\u003eStatefulWidget\u003c/span\u003e {\n  \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e({\u003cspan class=\"hljs-title class_\"\u003eKey\u003c/span\u003e key}) : \u003cspan class=\"hljs-variable language_\"\u003esuper\u003c/span\u003e(\u003cspan class=\"hljs-attr\"\u003ekey\u003c/span\u003e: key);\n\n  @override\n  \u003cspan class=\"hljs-title class_\"\u003eState\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e\u003e \u003cspan class=\"hljs-title function_\"\u003ecreateState\u003c/span\u003e() =\u003e \u003cspan class=\"hljs-title function_\"\u003e_HomePageState\u003c/span\u003e();\n}\n\n\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003e_HomePageState\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eextends\u003c/span\u003e \u003cspan class=\"hljs-title class_ inherited__\"\u003eState\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e\u003e {\n\n  late \u003cspan class=\"hljs-title class_\"\u003eMqttServerClient\u003c/span\u003e client; \u003cspan class=\"hljs-comment\"\u003e// 참고: 브라우저용 MqttBrowserClient도 있습니다\u003c/span\u003e\n\n  late \u003cspan class=\"hljs-title class_\"\u003eFuture\u003c/span\u003e _onConnect; \u003cspan class=\"hljs-comment\"\u003e// 브로커에 연결되었는지 확인하기 위해 사용합니다\u003c/span\u003e\n\n  @override\n  \u003cspan class=\"hljs-title class_\"\u003eWidget\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ebuild\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003eBuildContext context\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eContainer\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 이 부분은 나중에 업데이트할 것입니다\u003c/span\u003e\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e다음으로 연결을 위한 라이프사이클 함수를 만들어보겠습니다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-title class_\"\u003eFuture\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-keyword\"\u003evoid\u003c/span\u003e\u003e \u003cspan class=\"hljs-title function_\"\u003eonConnected\u003c/span\u003e() \u003cspan class=\"hljs-keyword\"\u003easync\u003c/span\u003e {\n  \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ei\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Connected\"\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// print를 사용하거나 Logger 라이브러리를 설치하여 사용할 수 있습니다\u003c/span\u003e\n\n  \u003cspan class=\"hljs-comment\"\u003e// \"test\" 토픽에 구독합니다\u003c/span\u003e\n  client.\u003cspan class=\"hljs-title function_\"\u003esubscribe\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"test\"\u003c/span\u003e, \u003cspan class=\"hljs-title class_\"\u003eMqttQos\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003eatLeastOnce\u003c/span\u003e);\n\n  \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ei\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Subscribed\"\u003c/span\u003e);\n}\n\n\u003cspan class=\"hljs-title class_\"\u003eFuture\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-keyword\"\u003evoid\u003c/span\u003e\u003e \u003cspan class=\"hljs-title function_\"\u003econnect\u003c/span\u003e() \u003cspan class=\"hljs-keyword\"\u003easync\u003c/span\u003e {\n  \u003cspan class=\"hljs-keyword\"\u003etry\u003c/span\u003e {\n    \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ei\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Connection Initiated\"\u003c/span\u003e);\n\n    \u003cspan class=\"hljs-keyword\"\u003eawait\u003c/span\u003e client.\u003cspan class=\"hljs-title function_\"\u003econnect\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"test2\"\u003c/span\u003e, \u003cspan class=\"hljs-string\"\u003e\"testpass123A\"\u003c/span\u003e);\n\n  } \u003cspan class=\"hljs-keyword\"\u003ecatch\u003c/span\u003e (e) {\n    \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ee\u003c/span\u003e(e);\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e그럼 initState 메소드를 작성합니다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e@override\n  \u003cspan class=\"hljs-keyword\"\u003evoid\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003einitState\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n    \u003cspan class=\"hljs-variable language_\"\u003esuper\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003einitState\u003c/span\u003e();\n\n    \u003cspan class=\"hljs-keyword\"\u003etry\u003c/span\u003e{\n      client = \u003cspan class=\"hljs-title class_\"\u003eMqttServerClient\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003ewithPort\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"\u0026#x3C;MQTT 호스트\u003e\"\u003c/span\u003e,\u003cspan class=\"hljs-string\"\u003e\"\u0026#x3C;임의의 이름\u003e\"\u003c/span\u003e,\u0026#x3C;포트 번호 예: \u003cspan class=\"hljs-number\"\u003e8883\u003c/span\u003e\u003e);\n\n      client.\u003cspan class=\"hljs-property\"\u003esecure\u003c/span\u003e = \u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e;\n\n      \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ei\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"클라이언트가 생성되었습니다\"\u003c/span\u003e);\n\n\n    \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ei\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"프로토콜이 설정되었습니다\"\u003c/span\u003e);\n\n    client.\u003cspan class=\"hljs-title function_\"\u003elogging\u003c/span\u003e(\u003cspan class=\"hljs-attr\"\u003eon\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e);\n\n    \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ei\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"로깅이 설정되었습니다\"\u003c/span\u003e);\n\n    client.\u003cspan class=\"hljs-property\"\u003eonConnected\u003c/span\u003e = onConnected;\n\n    _onConnect = \u003cspan class=\"hljs-title function_\"\u003econnect\u003c/span\u003e();\n\n    }\u003cspan class=\"hljs-keyword\"\u003ecatch\u003c/span\u003e(e){\n      \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ee\u003c/span\u003e(e);\n    }\n\n  }\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e마지막으로 위젯을 작성합니다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e  @override\n  \u003cspan class=\"hljs-title class_\"\u003eWidget\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ebuild\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003eBuildContext context\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eScaffold\u003c/span\u003e(\n      \u003cspan class=\"hljs-attr\"\u003ebody\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eFutureBuilder\u003c/span\u003e(\n        \u003cspan class=\"hljs-attr\"\u003efuture\u003c/span\u003e: _onConnect,\n        \u003cspan class=\"hljs-attr\"\u003ebuilder\u003c/span\u003e: (context, snapshot) {\n\n          \u003cspan class=\"hljs-comment\"\u003e// 연결이 진행 중인 경우 로딩 화면을 표시합니다\u003c/span\u003e\n          \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e(snapshot.\u003cspan class=\"hljs-property\"\u003econnectionState\u003c/span\u003e == \u003cspan class=\"hljs-title class_\"\u003eConnectionState\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003ewaiting\u003c/span\u003e){\n            \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eCenter\u003c/span\u003e(\n              \u003cspan class=\"hljs-attr\"\u003echild\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eCircularProgressIndicator\u003c/span\u003e(),\n            );\n          }\n\n          \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eStreamBuilder\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eList\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eMqttReceivedMessage\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eMqttMessage\u003c/span\u003e?\u003e\u003e\u003e(\n\n            \u003cspan class=\"hljs-attr\"\u003estream\u003c/span\u003e: client.\u003cspan class=\"hljs-property\"\u003eupdates\u003c/span\u003e,\n\n            \u003cspan class=\"hljs-attr\"\u003ebuilder\u003c/span\u003e: (context, snapshot) {\n\n              \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e(snapshot.\u003cspan class=\"hljs-property\"\u003ehasData\u003c/span\u003e){\n                \u003cspan class=\"hljs-comment\"\u003e// \"test\" 토픽에서 Esp8266에서 전송한 데이터를 읽습니다\u003c/span\u003e\n                final message = snapshot.\u003cspan class=\"hljs-property\"\u003edata\u003c/span\u003e!.\u003cspan class=\"hljs-property\"\u003efirst\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003epayload\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eas\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eMqttPublishMessage\u003c/span\u003e;\n\n                final payload = \u003cspan class=\"hljs-title class_\"\u003eMqttPublishPayload\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003ebytesToStringAsString\u003c/span\u003e(message.\u003cspan class=\"hljs-property\"\u003epayload\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003emessage\u003c/span\u003e);\n\n                \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ei\u003c/span\u003e(payload);\n\n                \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eCenter\u003c/span\u003e(\n                  \u003cspan class=\"hljs-attr\"\u003echild\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eColumn\u003c/span\u003e(\n                    \u003cspan class=\"hljs-attr\"\u003emainAxisAlignment\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eMainAxisAlignment\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003ecenter\u003c/span\u003e,\n                    \u003cspan class=\"hljs-attr\"\u003echildren\u003c/span\u003e: \u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eWidget\u003c/span\u003e\u003e[\n                      \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eText\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"센서 데이터\"\u003c/span\u003e),\n                      \u003cspan class=\"hljs-title class_\"\u003eText\u003c/span\u003e(payload),\n                    ],\n                  ),\n                );\n              }\n\n              \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eCenter\u003c/span\u003e(\n                \u003cspan class=\"hljs-attr\"\u003echild\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eColumn\u003c/span\u003e(\n                  \u003cspan class=\"hljs-attr\"\u003emainAxisAlignment\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eMainAxisAlignment\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003ecenter\u003c/span\u003e,\n                  \u003cspan class=\"hljs-attr\"\u003echildren\u003c/span\u003e: \u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eWidget\u003c/span\u003e\u003e[\n                    \u003cspan class=\"hljs-title class_\"\u003eText\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"데이터 없음\"\u003c/span\u003e),\n                  ],\n                ),\n              );\n            },\n          );\n        }\n      ),\n    );\n  }\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e전체 코드\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'package:flutter/material.dart'\u003c/span\u003e;\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'package:logger/web.dart'\u003c/span\u003e;\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'package:mqtt_client/mqtt_client.dart'\u003c/span\u003e;\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'package:mqtt_client/mqtt_server_client.dart'\u003c/span\u003e;\n\n\u003cspan class=\"hljs-keyword\"\u003evoid\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003emain\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-title function_\"\u003erunApp\u003c/span\u003e(\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eMyApp\u003c/span\u003e());\n}\n\n\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eMyApp\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eextends\u003c/span\u003e \u003cspan class=\"hljs-title class_ inherited__\"\u003eStatelessWidget\u003c/span\u003e {\n  \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eMyApp\u003c/span\u003e({key});\n\n  \u003cspan class=\"hljs-comment\"\u003e// 애플리케이션의 루트인 위젯입니다.\u003c/span\u003e\n  @override\n  \u003cspan class=\"hljs-title class_\"\u003eWidget\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ebuild\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003eBuildContext context\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eMaterialApp\u003c/span\u003e(\n      \u003cspan class=\"hljs-attr\"\u003etitle\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e'Flutter Demo'\u003c/span\u003e,\n      \u003cspan class=\"hljs-attr\"\u003etheme\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eThemeData\u003c/span\u003e(\n        \u003cspan class=\"hljs-attr\"\u003ecolorScheme\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eColorScheme\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003efromSeed\u003c/span\u003e(\u003cspan class=\"hljs-attr\"\u003eseedColor\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eColors\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003edeepPurple\u003c/span\u003e),\n        \u003cspan class=\"hljs-attr\"\u003euseMaterial3\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e,\n      ),\n      \u003cspan class=\"hljs-attr\"\u003ehome\u003c/span\u003e: \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e(),\n    );\n  }\n}\n\n\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eextends\u003c/span\u003e \u003cspan class=\"hljs-title class_ inherited__\"\u003eStatefulWidget\u003c/span\u003e {\n  \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e({key});\n\n  @override\n  \u003cspan class=\"hljs-title class_\"\u003eState\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e\u003e \u003cspan class=\"hljs-title function_\"\u003ecreateState\u003c/span\u003e() =\u003e \u003cspan class=\"hljs-title function_\"\u003e_HomePageState\u003c/span\u003e();\n}\n\n\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003e_HomePageState\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eextends\u003c/span\u003e \u003cspan class=\"hljs-title class_ inherited__\"\u003eState\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-title class_\"\u003eHomePage\u003c/span\u003e\u003e {\n  late \u003cspan class=\"hljs-title class_\"\u003eMqttServerClient\u003c/span\u003e client;\n\n  \u003cspan class=\"hljs-title class_\"\u003eFuture\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-keyword\"\u003evoid\u003c/span\u003e\u003e \u003cspan class=\"hljs-title function_\"\u003eonConnected\u003c/span\u003e() \u003cspan class=\"hljs-keyword\"\u003easync\u003c/span\u003e {\n    \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ei\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Connected\"\u003c/span\u003e);\n\n    \u003cspan class=\"hljs-comment\"\u003e// \"test\" 주제에 구독합니다.\u003c/span\u003e\n    client.\u003cspan class=\"hljs-title function_\"\u003esubscribe\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"test\"\u003c/span\u003e, \u003cspan class=\"hljs-title class_\"\u003eMqttQos\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003eatLeastOnce\u003c/span\u003e);\n\n    \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ei\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Subscribed\"\u003c/span\u003e);\n  }\n\n  \u003cspan class=\"hljs-title class_\"\u003eFuture\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-keyword\"\u003evoid\u003c/span\u003e\u003e \u003cspan class=\"hljs-title function_\"\u003econnect\u003c/span\u003e() \u003cspan class=\"hljs-keyword\"\u003easync\u003c/span\u003e {\n    \u003cspan class=\"hljs-keyword\"\u003etry\u003c/span\u003e {\n      \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ei\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Connection Initiated\"\u003c/span\u003e);\n\n      \u003cspan class=\"hljs-keyword\"\u003eawait\u003c/span\u003e client.\u003cspan class=\"hljs-title function_\"\u003econnect\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"test2\"\u003c/span\u003e,\u003cspan class=\"hljs-string\"\u003e\"testpass123A\"\u003c/span\u003e);\n    } \u003cspan class=\"hljs-keyword\"\u003ecatch\u003c/span\u003e(e) {\n      \u003cspan class=\"hljs-title class_\"\u003eLogger\u003c/span\u003e().\u003cspan class=\"hljs-title function_\"\u003ee\u003c/span\u003e(e);\n    }\n  }\n\n  late \u003cspan class=\"hljs-title class_\"\u003eFuture\u003c/span\u003e _onConnect;\n\n  @override\n  \u003cspan class=\"hljs-keyword\"\u003evoid\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003einitState\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n    \u003cspan class=\"hljs-variable language_\"\u003esuper\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003einitState\u003c/span\u003e();\n\n    \u003cspan class=\"hljs-keyword\"\u003etry\u003c/span\u003e {\n      client = \u003cspan class=\"hljs-title class_\"\u003eMqttServerClient\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003ewithPort\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"\u0026#x3C;MQTT HOST\u003e\"\u003c/span\u003e,\u003cspan class=\"hljs-string\"\u003e\"\u0026#x3C;ANY NAME\u003e\"\u003c/span\u003e,\u0026#x3C;PORT like 8883\u003e);\n\n      client.secure = true;\n      Logger().i(\"Client created\");\n\n      Logger().i(\"Protocol set\");\n\n      client.logging(on: true);\n      Logger().i(\"Logging set\");\n\n      client.onConnected = onConnected;\n\n      _onConnect = connect();\n\n    } catch(e) {\n      Logger().e(e);\n    }\n  }\n\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      body: FutureBuilder(\n        future: _onConnect,\n        builder: (context, snapshot) {\n          if(snapshot.connectionState == ConnectionState.waiting) {\n            return const Center(\n              child: CircularProgressIndicator(),\n            );\n          }\n\n          return StreamBuilder\u0026#x3C;List\u0026#x3C;MqttReceivedMessage\u0026#x3C;MqttMessage?\u003e\u003e\u003e(\n            stream: client.updates,\n            builder: (context, snapshot) {\n              if(snapshot.hasData) {\n                // \"test\" 주제에서 Esp8266이 보낸 데이터를 읽습니다.\n                final message = snapshot.data!.first.payload as MqttPublishMessage;\n                final payload = MqttPublishPayload.bytesToStringAsString(message.payload.message);\n                Logger().i(payload);\n\n                return Center(\n                  child: Column(\n                    mainAxisAlignment: MainAxisAlignment.center,\n                    children: \u0026#x3C;Widget\u003e[\n                      const Text(\"Sensor Data\"),\n                      Text(payload),\n                    ],\n                  ),\n                );\n              }\n\n              return const Center(\n                child: Column(\n                  mainAxisAlignment: MainAxisAlignment.center,\n                  children: \u0026#x3C;Widget\u003e[\n                    Text(\"No data\"),\n                  ],\n                ),\n              );\n            },\n          );\n        }\n      ),\n    );\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e이제 Esp8266을 전원에 연결하고 앱을 실행하세요.\u003c/p\u003e\n\u003cp\u003e다음과 같은 화면이 나타납니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e\u003cimg src=\"https://miro.medium.com/v2/resize:fit:1200/1*SWHkvNtFqG3cDvk6oGLxew.gif\" alt=\"이미지\"\u003e\u003c/p\u003e\n\u003ch1\u003e우하하 !! 우리가 MQTT를 사용하여 Esp8266에서 앱으로 데이터 성공적으로 전송했어요 !\u003c/h1\u003e\n\u003ch2\u003e마지막으로\u003c/h2\u003e\n\u003cp\u003e대부분의 경우에는 IOT 디바이스에서 모바일 앱으로 데이터를 직접 전송하는 것은 유용하지 않을 수 있습니다. 센서 데이터와 관련된 많은 처리가 필요하기 때문입니다. 이를 위해 센서에서 데이터를 가져오기 위해 브로커에 연결할 전용 백엔드가 필요하며, 그런 다음 처리된 데이터를 다른 주제에 발행하여 이를 모바일 애플리케이션이 구독하게 할 수 있습니다. 나는 미래에 IOT의 전체 인프라에 대한 자세한 기사를 쓸지도 모르겠어요.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e감사합니다. 궁금한 점이 있으면 언제든지 말해주세요!\u003c/p\u003e\n\u003cp\u003e만약 유용하다고 느끼신다면 LinkedIn에서 저를 팔로우해 주세요.\u003c/p\u003e\n\u003cimg src=\"/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_1.png\"\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII"},"buildId":"QYe6gFAUryFKFgjKBoIfo","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

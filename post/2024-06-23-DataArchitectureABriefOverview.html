@@ -1,0 +1,417 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>데이터 아키텍처 간단 개요 | itposting</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://itposting.github.io///post/2024-06-23-DataArchitectureABriefOverview" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="데이터 아키텍처 간단 개요 | itposting" data-gatsby-head="true"/><meta property="og:title" content="데이터 아키텍처 간단 개요 | itposting" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-06-23-DataArchitectureABriefOverview_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://itposting.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://itposting.github.io///post/2024-06-23-DataArchitectureABriefOverview" data-gatsby-head="true"/><meta name="twitter:title" content="데이터 아키텍처 간단 개요 | itposting" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-06-23-DataArchitectureABriefOverview_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | itposting" data-gatsby-head="true"/><meta name="article:published_time" content="2024-06-23 16:18" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-23YXDLKDCL"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-23YXDLKDCL');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-ac4aa08aae62f90e.js" defer=""></script><script src="/_next/static/chunks/463-0429087d4c0b0335.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-d849684d6d83f07a.js" defer=""></script><script src="/_next/static/QYe6gFAUryFKFgjKBoIfo/_buildManifest.js" defer=""></script><script src="/_next/static/QYe6gFAUryFKFgjKBoIfo/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">IT Posting</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">데이터 아키텍처 간단 개요</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="데이터 아키텍처 간단 개요" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">IT Posting</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jun 23, 2024</span><span class="posts_reading_time__f7YPP">13<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-06-23-DataArchitectureABriefOverview&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<p>데이터 아키텍처는 성공적인 데이터 엔지니어링의 중요한 요소입니다. 조직 전반에서 데이터 수집, 저장, 처리 및 활용 방식의 기초를 제공합니다. 잘 설계된 데이터 아키텍처를 통해 기업은 원활한 데이터 통합, 높은 성능, 확장성 및 효과적인 데이터 거버넌스를 달성할 수 있습니다.</p>
+<p>이 블로그 포스트에서는 우수한 데이터 아키텍처의 핵심 원칙을 탐구하고 핵심 아키텍처 개념을 논의하며 견고하고 확장 가능한 데이터 시스템을 설계하는 데 도움이 되는 다양한 데이터 아키텍처 패턴을 살펴볼 것입니다.</p>
+<h1>데이터 아키텍처란 무엇인가요?</h1>
+<p>데이터 아키텍처는 조직 내에서 데이터가 수집, 저장, 관리되고 사용되는 방식을 개요로 설명하는 구조화된 프레임워크를 의미합니다. 데이터 흐름, 데이터 모델 및 데이터 처리에 사용되는 기술을 정의합니다. 견고한 데이터 아키텍처는 데이터가 다양한 비즈니스 요구에 대해 접근 가능하고 신뢰할 수 있으며 관련성이 있도록 보장하여 효율적인 의사 결정과 운영 효율성을 촉진합니다.</p>
+<div class="content-ad"></div>
+<p>데이터 아키텍처는 기업 아키텍처의 하위 집합으로, 조직의 전체 IT 인프라 및 프로세스를 포괄합니다. 기업 아키텍처에는 비즈니스, 애플리케이션, 기술, 데이터 아키텍처와 같은 다양한 구성 요소가 포함됩니다. 기업 아키텍처의 더 넓은 맥락을 이해하면 데이터 아키텍처가 조직의 전체 전략 내에서 어떤 역할과 중요성을 발휘하는지를 이해할 수 있습니다.</p>
+<p>[이미지는 여기에 들어가는데, 이미지의 경로가 이상해서 제대로 표시되지 않았어요!]</p>
+<h1>데이터 아키텍처의 진화</h1>
+<p>과거 몇 10년 동안 데이터 아키텍처는 효율적인 데이터 분석의 필요성 증가와 데이터를 비즈니스 이익으로 활용하기 위한 데이터 전략의 현대화로 인해 상당한 변화를 겪었습니다. 이러한 진화는 각각이 특정 아키텍처 관행과 기술로 특징 지어지는 여러 중요한 단계로 나타납니다.</p>
+<div class="content-ad"></div>
+<h2>2000년 이전: 기업 데이터 웨어하우스 (EDW) 시대</h2>
+<p>이 기간 동안 주목된 것은 기업 데이터 웨어하우스 (EDW)의 성공과 구현이었습니다. 조직은 다양한 소스로부터 데이터를 저장, 관리 및 분석할 수 있는 중앙 저장소를 생성하기 위해 노력했습니다. 주요 목표는 구조화되고 일관된 데이터 저장을 통해 비즈니스 인텔리전스 및 보고 요구를 지원하는 것이었습니다.</p>
+<p>특징:</p>
+<ul>
+<li>중앙 데이터 저장</li>
+<li>정의된 스키마를 가진 구조화된 데이터</li>
+<li>비즈니스 인텔리전스 및 보고에 초점을 맞춤</li>
+</ul>
+<div class="content-ad"></div>
+<p>한계:</p>
+<ul>
+<li>시행 및 유지 관리 비용 증가</li>
+<li>증가하는 데이터 양으로 인한 확장성 문제</li>
+<li>다양한 데이터 원본 통합의 어려움</li>
+</ul>
+<h2>2000년부터 2010년까지: EDW 후기</h2>
+<p>이 기간에는 전통적인 데이터 웨어하우스의 한계에 대한 대처 방향으로의 변화가 있었습니다. 조직들은 분산된 데이터와 데이터 실로에 대한 도전에 직면하며, 일관성 없고 조각난 분석을 유발했습니다. 데이터 마트가 인기를 얻게 되었는데, 이는 부서가 자체 데이터를 관리할 수 있게 해 주었지만, 더 많은 분열을 유발했습니다.</p>
+<div class="content-ad"></div>
+<p>특징:</p>
+<ul>
+<li>데이터 웨어하우스 및 데이터 마트에 의존</li>
+<li>조각난 데이터 분석</li>
+<li>데이터 사일로의 등장</li>
+</ul>
+<p>한계:</p>
+<ul>
+<li>부서간 일관되지 않은 데이터 분석</li>
+<li>기업 전체 통찰력을 위한 데이터 통합의 어려움</li>
+<li>여러 데이터 시스템 유지비용 증가</li>
+</ul>
+<div class="content-ad"></div>
+<h2>2010년부터 2020년까지: 논리 데이터 웨어하우스 (LDW) 시대</h2>
+<p>논리 데이터 웨어하우스(LDW)는 단편화된 데이터 환경에 대한 해결책으로 등장했습니다. LDW는 데이터 웨어하우스, 데이터 마트 및 데이터 레이크를 포함한 다양한 저장 시스템에서의 데이터 접근을 통합하는 공통 의미 계층을 도입했습니다. 이 접근 방식은 더 통합된 데이터 분석과 향상된 데이터 접근성을 가능케 했습니다.</p>
+<p>주요 특징:</p>
+<ul>
+<li>공통 의미 계층을 통한 통합된 데이터 접근</li>
+<li>데이터 웨어하우스, 데이터 마트 및 데이터 레이크의 통합</li>
+<li>향상된 데이터 분석 기능</li>
+</ul>
+<div class="content-ad"></div>
+<p>혜택:</p>
+<ul>
+<li>데이터 일관성 및 통합이 향상됩니다.</li>
+<li>확장성과 유연성이 향상됩니다.</li>
+<li>대규모 데이터 및 고급 분석에 대한 지원이 좋아집니다.</li>
+</ul>
+<p>제한 사항:</p>
+<ul>
+<li>여러 데이터 저장 시스템에 대한 계속된 의존이 필요합니다.</li>
+<li>Semantic 레이어 관리의 복잡성이 증가합니다.</li>
+<li>LDW를 구현하고 유지하는 데 전문 기술이 필요합니다.</li>
+</ul>
+<div class="content-ad"></div>
+<h2>2020년부터의 시대: 증강 데이터 분석과 활성 메타데이터의 시대</h2>
+<p>현재와 미래의 데이터 아키텍처 단계는 인공 지능, 기계 학습 및 데이터 조정과 같은 첨단 기술에 의해 주도되는 증강 데이터 분석의 부상으로 특징 지어집니다. 이 시대는 데이터 접근의 민주화와 셀프 서비스 분석을 가능하게 하는 활성 메타데이터를 기반으로 합니다.</p>
+<p>특징:</p>
+<ul>
+<li>AI와 기계 학습을 활용한 증강 데이터 분석</li>
+<li>메타데이터를 활용한 데이터 셀프 서비스</li>
+<li>고급 데이터 조정 및 추천 엔진</li>
+<li>적응적인 실천과 활성 메타데이터 분석</li>
+</ul>
+<div class="content-ad"></div>
+<p>혜택:</p>
+<ul>
+<li>향상된 데이터 접근성 및 셀프 서비스 기능</li>
+<li>고급 분석을 통한 의사 결정 개선</li>
+<li>변화하는 비즈니스 요구에 대한 적응 능력 향상</li>
+</ul>
+<p>활성 메타데이터: 메타데이터는 오늘날 핵심 역할을 담당하며 데이터의 다양한 측면을 설명하고 지능적인 데이터 관리를 가능케 합니다. 네 가지 유형의 메타데이터가 있습니다:</p>
+<ul>
+<li>기술 메타데이터: 데이터 저장, 구조 및 처리에 관한 정보.</li>
+<li>운영 메타데이터: 데이터 워크플로우, 프로세스 및 사용에 대한 데이터.</li>
+<li>비즈니스 메타데이터: 데이터의 비즈니스 의미와 사용에 대한 맥락 정보.</li>
+<li>소셜 메타데이터: 데이터 상호작용 및 사용 패턴에서 유도된 인사이트.</li>
+</ul>
+<div class="content-ad"></div>
+<p>활성 메타데이터는 데이터를 설명하는 것뿐만 아니라 시스템 간 작업을 식별하여 더 동적이고 지능적인 데이터 작업을 용이하게 합니다.</p>
+<p>사용 사례:</p>
+<ul>
+<li>마스터 데이터 관리</li>
+<li>기업 간 데이터 교환</li>
+<li>애플리케이션 데이터 통합</li>
+<li>파트너 데이터 교환</li>
+</ul>
+<p>활성 메타데이터와 증강 분석으로 발전하는 것은 데이터 아키텍처의 능력을 전통적인 방식을 넘어서게 하여 다양한 사용 사례에 걸쳐 더 정교한 데이터 관리와 분석을 가능케 합니다.</p>
+<div class="content-ad"></div>
+<h1>주요 아키텍처 원칙과 개념</h1>
+<p>핵심 아키텍처 원칙과 개념을 이해하는 것은 효과적인 데이터 아키텍처를 설계하는 데 중요합니다. 이러한 원칙들은 견고하고 확장 가능하며 유연한 데이터 시스템을 구축하는 데 기반을 제공합니다.</p>
+<h2>주요 기업의 원칙</h2>
+<p>주요 기업들은 자체 아키텍처 원칙을 따라 자신들의 시스템의 효과성과 효율성을 보장합니다. 예를 들어:</p>
+<div class="content-ad"></div>
+<p>AWS 웰 아키텍처 프레임워크에는 여섯 가지 핵심이 있습니다:</p>
+<ul>
+<li>운영 우수성</li>
+<li>보안</li>
+<li>신뢰성</li>
+<li>성능 효율성</li>
+<li>비용 최적화</li>
+<li>지속 가능성</li>
+</ul>
+<p>구글 클라우드의 클라우드 네이티브 아키텍처를 위한 다섯 가지 원칙은 다음과 같습니다:</p>
+<ul>
+<li>자동화를 위한 디자인</li>
+<li>상태 관리에 똑똑하게</li>
+<li>관리형 서비스 우선</li>
+<li>깊이 우선 방어 실천</li>
+<li>항상 아키텍처 구축중임.</li>
+</ul>
+<div class="content-ad"></div>
+<p>이 프레임워크와 "데이터 엔지니어링 기본"과 같은 다른 리소스에서 영감을 받아, 여기에는 좋은 데이터 아키텍처를 설계하는 데 필수적인 몇 가지 조직화된 원칙과 개념이 있습니다.</p>
+<h2>도메인과 서비스</h2>
+<p>도메인은 데이터 아키텍처가 지원하는 특정 영역의 비즈니스 또는 지식입니다. 서비스는 도메인 내에서 특정 작업을 수행하는 기능입니다.</p>
+<p>혜택:</p>
+<div class="content-ad"></div>
+<ul>
+<li>조직적 명확성: 명확히 정의된 도메인과 서비스는 데이터와 프로세스를 조직화하는 데 도움이 됩니다.</li>
+<li>집중된 개발: 팀은 특정 서비스에 집중하여 효율성과 전문성을 향상시킬 수 있습니다.</li>
+</ul>
+<h2>분산 시스템</h2>
+<p>분산 시스템은 서로 다른 네트워크 컴퓨터에 위치한 구성 요소가 통신하고 조정하여 공통 목표를 달성하는 시스템입니다. 확장 가능하고 강인한 데이터 아키텍처를 구축하는 데 필수적입니다.</p>
+<p>혜택:</p>
+<div class="content-ad"></div>
+<ul>
+<li>확장성: 더 많은 노드를 추가하여 부하 처리 용이.</li>
+<li>신뢰성: 중복된 노드는 일부 노드가 실패해도 시스템 가용성을 보장합니다.</li>
+</ul>
+<h2>확장성과 탄력성</h2>
+<p>확장성은 시스템이 자원을 추가함으로써 증가하는 작업 양을 처리하는 능력입니다. 탄력성은 수요에 따라 자원을 동적으로 확장 또는 축소하는 능력입니다.</p>
+<p>혜택:</p>
+<div class="content-ad"></div>
+<ul>
+<li>비용 효율성: 사용한 리소스에 대해서만 지불하세요.</li>
+<li>성능 최적화: 피크 시간에는 성능을 유지하고 낮은 사용량 기간에는 비용을 최적화하세요.</li>
+</ul>
+<h2>가용성 및 신뢰성</h2>
+<p>가용성은 시스템이 운영 및 접근 가능한 시간의 백분율입니다. 신뢰성은 시스템이 시간이 지남에 따라 올바르고 일관되게 작동하는 능력입니다.</p>
+<p>주요 지표:</p>
+<div class="content-ad"></div>
+<ul>
+<li>가동 시간: 시스템이 작동 중인 시간의 백분율.</li>
+<li>고장 사이의 평균 시간 (MTBF): 시스템 고장 사이의 평균 시간.</li>
+<li>복구에 소요되는 평균 시간 (MTTR): 고장 난 시스템을 수리하는 데 걸리는 평균 시간.</li>
+</ul>
+<p>전략:</p>
+<ul>
+<li>중복성: 고장 시 대체 시스템을 구현.</li>
+<li>장애 조치 기구: 고장 시 대기 시스템으로 자동 전환.</li>
+</ul>
+<h2>이벤트 주도형 아키텍처</h2>
+<div class="content-ad"></div>
+<p>이벤트 주도 아키텍처는 시스템이 이벤트나 상태 변경에 대응하는 설계 패러다임입니다. 이 접근 방식은 높은 결합도를 갖추고, 유연성과 확장성을 촉진합니다.</p>
+<p>활용 사례:</p>
+<ul>
+<li>실시간 분석</li>
+<li>사물 인터넷 시스템</li>
+<li>통지 시스템</li>
+</ul>
+<h2>사용자 액세스: 단일 vs. 멀티테넌트</h2>
+<div class="content-ad"></div>
+<p>Single-tenant 아키텍처는 각 고객에게 소프트웨어 및 데이터베이스의 전용 인스턴스를 할당하며, 멀티테넌트 아키텍처는 다중 고객 사이에서 리소스를 공유합니다.</p>
+<p>고려해야 할 사항:</p>
+<ul>
+<li>성능: Single-tenant는 더 나은 성능을 제공할 수 있지만, 멀티테넌트는 비용 효율적입니다.</li>
+<li>보안: 멀티테넌트 시스템은 다른 고객들을 위한 데이터 격리 및 보안을 보장해야 합니다.</li>
+<li>유지 보수: 멀티테넌트 시스템은 중앙에서 유지 및 업데이트하기 쉽습니다.</li>
+</ul>
+<p>이러한 원칙을 준수하고 이러한 개념을 이해하여 현대 비즈니스 환경의 요구 사항을 충족하면서 확장 가능하고 신뢰할 수 있으며 비용 효율적인 데이터 아키텍처를 설계할 수 있습니다.</p>
+<div class="content-ad"></div>
+<h1>주요 데이터 아키텍처 패턴</h1>
+<p>지난 수십 년간 데이터 아키텍처에서는 효과적으로 데이터를 관리하고 활용하기 위한 필수 요소로 여러 가지 핵심 패턴이 나타났습니다. 각 패턴에는 강점, 약점 및 이상적인 사용 사례가 있습니다. 여기에서 이러한 패턴을 간단히 살펴보고, 다양한 맥락에서 어떻게 적용할 수 있는지 설명하겠습니다.</p>
+<h2>1. 데이터 웨어하우스</h2>
+<p>데이터 웨어하우스는 구조화된 데이터를 저장하고 보고 및 분석하기 위해 설계된 중앙 저장소입니다. 쿼리 성능과 데이터 집계에 최적화되어 있어 비즈니스 인텔리전스 애플리케이션에 이상적입니다.</p>
+<div class="content-ad"></div>
+<p>아래는 해당 데이터 아키텍처에 대한 간략한 설명입니다:</p>
+<p>특징:</p>
+<ul>
+<li>중앙 집중 저장: 여러 출처에서 수집한 데이터를 한 곳에 저장합니다.</li>
+<li>구조화된 데이터: 데이터가 체계적으로 구성되어 일반적으로 스키마를 따릅니다.</li>
+<li>분석 최적화: 빠른 쿼리 및 데이터 검색을 위해 설계되었습니다.</li>
+</ul>
+<p>혜택:</p>
+<div class="content-ad"></div>
+<ul>
+<li>높은 성능: 복잡한 쿼리와 데이터 분석에 최적화되어 있습니다.</li>
+<li>데이터 통합: 다양한 소스에서 데이터를 통합하여 통일된 뷰를 제공합니다.</li>
+<li>일관성: 스키마 강제화를 통해 데이터 품질과 일관성을 준수합니다.</li>
+</ul>
+<p>사용 사례:</p>
+<ul>
+<li>비즈니스 인텔리전스 및 보고</li>
+<li>과거 데이터 분석</li>
+<li>다중 시스템에서 데이터 통합</li>
+</ul>
+<h2>2. 데이터 레이크</h2>
+<div class="content-ad"></div>
+<p>Data lakes는 방대한 양의 원시, 비구조화 및 반구조화 데이터를 저장합니다. 데이터 웨어하우스와 달리 데이터 레이크는 데이터에 엄격한 스키마를 부과하지 않아 데이터 수집 및 저장에 더 많은 유연성을 제공합니다.</p>
+<p><img src="/assets/img/2024-06-23-DataArchitectureABriefOverview_2.png" alt="DataArchitectureABriefOverview_2.png"></p>
+<p>특징:</p>
+<ul>
+<li>원시 데이터 저장: 데이터를 원시 형식으로 저장합니다.</li>
+<li>확장성: 대량의 데이터를 처리할 수 있습니다.</li>
+<li>스키마형 읽기: 데이터 저장 시가 아닌 데이터를 읽을 때 스키마가 적용됩니다.</li>
+</ul>
+<div class="content-ad"></div>
+<p>장점:</p>
+<ul>
+<li>유연성: 구조화된, 비구조화된 및 반구조화된 데이터를 포함한 다양한 데이터 유형을 저장할 수 있습니다.</li>
+<li>확장성: 대규모 데이터 작업을 처리하기에 적합합니다.</li>
+<li>비용 효율성: 데이터 웨어하우스와 비교하여 대량의 데이터를 저장하는 데 비용이 저렴할 수 있습니다.</li>
+</ul>
+<p>도전:</p>
+<ul>
+<li>데이터 관리: 적절한 관리 없이 데이터 레이크는 데이터 스왐프가 될 수 있습니다.</li>
+<li>성능: 데이터 웨어하우스와 비교하여 쿼리 성능이 느릴 수 있습니다.</li>
+</ul>
+<div class="content-ad"></div>
+<p>사용 사례:</p>
+<ul>
+<li>대규모 데이터 분석</li>
+<li>기계 학습 및 데이터 과학</li>
+<li>로그 및 이벤트 데이터 저장</li>
+</ul>
+<h2>3. 현대 데이터 스택</h2>
+<p>현대 데이터 스택은 데이터 통합, 변환, 저장 및 분석을 용이하게 하는 일련의 모듈식 클라우드 기반 도구의 집합을 가리킵니다. 이 방식은 기민성, 확장성 및 사용 편의성을 강조합니다.</p>
+<div class="content-ad"></div>
+<p>아래는 마크다운 형식으로 변경한 내용입니다.</p>
+<p><img src="/assets/img/2024-06-23-DataArchitectureABriefOverview_3.png" alt="Data Architecture Overview"></p>
+<p>Components:</p>
+<ul>
+<li>Data Ingestion: Tools like Fivetran or Stitch for extracting and loading data.</li>
+<li>Data Transformation: Tools like dbt (data build tool) for transforming data within the warehouse.</li>
+<li>Data Storage: Cloud data warehouses like Snowflake or Google BigQuery.</li>
+<li>Data Visualization: Tools like Looker, Tableau, or Mode for data exploration and visualization.</li>
+</ul>
+<p>Benefits:</p>
+<div class="content-ad"></div>
+<ul>
+<li>모듈성: 쉽게 교체하거나 업그레이드할 수 있는 유연한 구성 요소입니다.</li>
+<li>확장성: 데이터 양과 사용량에 맞게 확장되는 클라우드 기반 솔루션입니다.</li>
+<li>사용 편의성: 사용자 친화적인 인터페이스와 자동화로 광범위한 기술 전문 지식이 필요하지 않습니다.</li>
+</ul>
+<p>사용 사례:</p>
+<ul>
+<li>데이터 분석 솔루션의 신속한 배포</li>
+<li>민첩한 데이터 관리 및 변환</li>
+<li>셀프 서비스 분석 및 보고</li>
+</ul>
+<h2>4. 통합 배치 및 스트리밍 아키텍처</h2>
+<div class="content-ad"></div>
+<p>통합 배치 및 스트리밍 아키텍처는 실시간 및 일괄 데이터를 하나의 프레임워크에서 처리하는 것을 목표로 합니다. 이 접근 방식은 데이터 처리 파이프라인을 간소화하고 일괄 및 스트리밍 데이터를 관리하기 위한 별도 시스템의 복잡성을 줄입니다.</p>
+<p><img src="/assets/img/2024-06-23-DataArchitectureABriefOverview_4.png" alt="이미지"></p>
+<p>주요 아키텍처:</p>
+<ul>
+<li>람다 아키텍처: 데이터 흐름을 별도 경로로 분리하여 일괄 및 스트리밍 처리를 결합합니다.</li>
+<li>카파 아키텍처: 모든 데이터를 스트림으로 처리함으로써 람다 아키텍처를 간소화합니다.</li>
+</ul>
+<div class="content-ad"></div>
+<h2>람다 아키텍처:</h2>
+<ul>
+<li>Batch Layer: 대규모의 과거 데이터를 처리합니다.</li>
+<li>Speed Layer: 즉각적인 인사이트를 위해 실시간 데이터를 처리합니다.</li>
+<li>Serving Layer: 배치 및 스피드 레이어의 출력을 통합된 결과로 병합합니다.</li>
+</ul>
+<p>장점:</p>
+<ul>
+<li>포괄적인 데이터 처리: 과거 및 실시간 데이터를 처리합니다.</li>
+<li>장애 허용성: 배치 재처리를 통해 데이터 정확성을 보장합니다.</li>
+</ul>
+<div class="content-ad"></div>
+<p>도전:</p>
+<ul>
+<li>복잡성: 별도의 배치 및 스트리밍 시스템을 관리하는 것은 어려울 수 있습니다.</li>
+</ul>
+<h2>Kappa 아키텍처:</h2>
+<ul>
+<li>통합형 스트림 처리: 모든 데이터를 스트림으로 처리하여 아키텍처를 간소화합니다.</li>
+<li>재처리: 데이터 스트림을 재처리하여 과거 분석을 수행할 수 있습니다.</li>
+</ul>
+<div class="content-ad"></div>
+<p>혜택:</p>
+<ul>
+<li>간단함: 단일 데이터 처리 모델을 사용하여 복잡성을 줄임.</li>
+<li>유연성: 관리 및 확장이 더 쉬움.</li>
+</ul>
+<h2>5. 데이터 레이크하우스</h2>
+<p>데이터 레이크하우스는 데이터 레이크와 데이터 웨어하우스의 기능을 결합하여, 데이터 레이크의 유연성과 데이터 웨어하우스의 성능 및 관리 기능을 제공합니다.</p>
+<div class="content-ad"></div>
+<img src="/assets/img/2024-06-23-DataArchitectureABriefOverview_5.png">
+<p>특징:</p>
+<ul>
+<li>통합 스토리지: 구조화된 및 구조화되지 않은 데이터를 모두 저장합니다.</li>
+<li>ACID 트랜잭션: 데이터 작업에 대한 원자성, 일관성, 격리 및 내구성을 지원합니다.</li>
+<li>스키마 강제: 스키마를 읽거나 쓸 때 스키마에 대한 강제를 허용합니다.</li>
+</ul>
+<p>혜택:</p>
+<div class="content-ad"></div>
+<ul>
+<li>유연성: 다양한 데이터 유형과 워크로드를 처리할 수 있습니다.</li>
+<li>성능: 고성능 쿼리 및 데이터 관리를 위해 최적화되었습니다.</li>
+<li>데이터 관리: 견고한 데이터 관리 및 거버넌스 기능을 제공합니다.</li>
+</ul>
+<p>사용 사례:</p>
+<ul>
+<li>통합 데이터 분석 및 보고</li>
+<li>기계 학습 및 AI 워크로드</li>
+<li>실시간 및 일괄 데이터 처리</li>
+</ul>
+<h2>6. 데이터 매쉬</h2>
+<div class="content-ad"></div>
+<p>데이터 메시는 도메인 주도 설계의 원칙을 데이터 관리에 적용한 분산형 데이터 아키텍처로, 중앙 집중식 데이터 레이크나 데이터 웨어하우스에서 데이터 소유 및 책임을 특정 비즈니스 도메인과 일치시키는 분산 모델로 전환합니다.</p>
+<p><img src="/assets/img/2024-06-23-DataArchitectureABriefOverview_6.png" alt="이미지"></p>
+<p>특징:</p>
+<ul>
+<li>도메인 중심: 데이터는 해당 도메인이 가장 잘 아는 곳에서 관리됩니다.</li>
+<li>제품으로서의 데이터: 각 도메인은 데이터를 제품으로 취급하여 품질과 사용성을 보장합니다.</li>
+<li>셀프 서비스 데이터 인프라: 도메인이 자체적으로 데이터를 관리할 수 있도록 필요한 도구와 플랫폼을 제공합니다.</li>
+<li>연합된 지배 체계: 중앙 집중식 정책과 표준을 분산 방식으로 시행합니다.</li>
+</ul>
+<div class="content-ad"></div>
+<p>혜택:</p>
+<ul>
+<li>확장성: 비즈니스가 성장함에 따라 조직이 데이터 아키텍처를 확장하는 것을 가능하게 합니다.</li>
+<li>민첩성: 더 빠르고 유연한 데이터 관리와 분석을 가능하게 합니다.</li>
+<li>소유권: 도메인 내에서 데이터 소유권과 책임을 강조합니다.</li>
+</ul>
+<p>사용 사례:</p>
+<ul>
+<li>다양한 데이터 요구 사항을 가진 대규모 조직</li>
+<li>데이터 거버넌스 및 품질을 향상시키려는 기업</li>
+<li>데이터 인프라를 확장하려는 조직</li>
+</ul>
+<div class="content-ad"></div>
+<h2>7. 데이터 패브릭</h2>
+<p>데이터 패브릭은 온프레미스 및 클라우드 환경을 횡단하며 이종 데이터 원본 및 응용 프로그램을 연결하여 통합 데이터 환경을 만드는 구조적 방법론입니다. 일관된 데이터 관리와 거버넌스를 보장하며 심층적인 데이터 접근과 통합을 제공하여 데이터 환경의 일관성을 유지하고자 합니다.</p>
+<p><img src="/assets/img/2024-06-23-DataArchitectureABriefOverview_7.png" alt="데이터 아키텍처 개요"></p>
+<p>특징:</p>
+<div class="content-ad"></div>
+<ul>
+<li>통합 액세스: 모든 데이터 원본에 대한 단일 액세스 포인트를 제공합니다.</li>
+<li>통합: 다양한 데이터 환경을 연결하여 데이터 이동 및 통합을 가능하게 합니다.</li>
+<li>자동화: AI 및 기계 학습을 활용하여 데이터 관리 작업을 자동화합니다.</li>
+<li>거버넌스: 데이터 풍경 전반에 걸쳐 데이터 품질, 보안 및 규정 준수를 보장합니다.</li>
+</ul>
+<p>혜택:</p>
+<ul>
+<li>일관성: 조직 전반에서 일관된 데이터를 보장합니다.</li>
+<li>효율성: 데이터 실로를 줄이고 데이터 액세스를 간소화합니다.</li>
+<li>민첩성: 신속한 데이터 통합 및 이동을 용이하게 합니다.</li>
+</ul>
+<p>사용 사례:</p>
+<div class="content-ad"></div>
+<ul>
+<li>하이브리드 데이터 환경을 가진 조직</li>
+<li>데이터 통합 및 관리를 개선하고자 하는 기업</li>
+<li>데이터 지배와 준수를 보장해야 하는 비즈니스</li>
+</ul>
+<h1>추가 자료</h1>
+<ul>
+<li>Ross Pettit의 “Utility from Value Add 구분하기”</li>
+<li>Joshua Klahr의 “현대 데이터 아키텍처의 여섯 가지 원칙”</li>
+<li>Snowflake의 “데이터 웨어하우스 아키텍처란?” 웹 페이지</li>
+<li>Erik Bernhardsson의 “소프트웨어 인프라 2.0: 워크리스트”</li>
+<li>Etai Mizrahi의 “데이터 빚을 앞서가는 방법”</li>
+<li>Neal Ford의 “전략 대 전술: SOA와 무관한 수구의 함정”</li>
+<li>Dustin Lange 등의 “Deequ로 규모에 맞게 테스트 데이터 품질 유지하기”</li>
+<li>IBM Education의 “3계층 아키텍처”</li>
+<li>TOGAF 프레임워크 웹사이트</li>
+<li>Prukalpa의 “CDOs가 2021년 주목해야 할 상위 5가지 데이터 트렌드”</li>
+<li>Alexey Makhotkin의 “240 개의 테이블과 문서가 없다고?”</li>
+<li>Molly Vorwerck의 “관측 가능 데이터의 궁극적인 체크리스트”</li>
+<li>Apache Flink Roadmap의 “통합 분석: 일괄 및 스트리밍이 만나다; SQL 이상”</li>
+<li>Martin Fowler의 “Utility Vs Strategic Dichotomy”</li>
+<li>Ben Lorica 등의 “데이터 레이크하우스란?”</li>
+<li>Thor Olavsrud의 “데이터 관리를 위한 프레임워크인 데이터 아키텍처란?”</li>
+<li>Casber Wang의 “오픈 데이터 생태계란 무엇이며 왜 계속해서 존재하는가?”</li>
+<li>Laszlo Sragner의 “MLOps가 잘못된 이유는 무엇인가?”</li>
+<li>Chris Riccomini의 “데이터 메시가 뭐길래”</li>
+<li>Martin Fowler의 “누가 아키텍트가 필요한가”</li>
+<li>Zachman 프레임워크 위키피디아 페이지</li>
+<li>Prukalpa의 “현대 데이터 플랫폼의 구성 요소”</li>
+<li>Zhamak Dehghani의 “단일 데이터 레이크를 분산 데이터 메시로 나아가는 방법”</li>
+<li>Zhamak Dehghani의 “데이터 메시 원칙 및 논리 아키텍처”</li>
+<li>Iman Samizadeh의 “큰 데이터용 람다와 카파 두 데이터 처리 아키텍처 간단 소개”</li>
+<li>Hussein Danish의 “원칙에 따른 데이터 엔지니어링, 제1부: 아키텍처 전망”</li>
+<li>Jay Kreps의 “로그: 소프트웨어 엔지니어가 실시간 데이터의 통일된 추상화에 대해 알아야 할 사항”</li>
+</ul>
+<p>이것들은 저가 블로그 글 작성 중 살펴본 일부 자료입니다. 이들은 데이터 아키텍처의 개념과 모범 사례에 대한 추가 통찰력을 제공하고 깊게 이해하는 데 도움이 될 수 있습니다.</p>
+<div class="content-ad"></div>
+<h1>요약</h1>
+<p>이 블로그 포스트에서는 학습 중에 만난 데이터 아키텍처의 기본 원칙 중 일부를 개요로 설명하고 간략히 주요 데이터 아키텍처 패턴을 논의했습니다.</p>
+<p>이 상세한 데이터 아키텍처 패턴을 이해함으로써, 조직의 요구에 가장 적합한 아키텍처를 결정하고 효과적으로 구현하는 방법에 대해 정보를 얻을 수 있습니다.</p>
+<p>만일 내가 어떤 원칙이나 아키텍처를 잘못 이해하고 있다면 말씀해 주십시오. 배우는 것에 기쁨을 느낄 테니까요.</p>
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"데이터 아키텍처 간단 개요","description":"","date":"2024-06-23 16:18","slug":"2024-06-23-DataArchitectureABriefOverview","content":"\n\n데이터 아키텍처는 성공적인 데이터 엔지니어링의 중요한 요소입니다. 조직 전반에서 데이터 수집, 저장, 처리 및 활용 방식의 기초를 제공합니다. 잘 설계된 데이터 아키텍처를 통해 기업은 원활한 데이터 통합, 높은 성능, 확장성 및 효과적인 데이터 거버넌스를 달성할 수 있습니다.\n\n이 블로그 포스트에서는 우수한 데이터 아키텍처의 핵심 원칙을 탐구하고 핵심 아키텍처 개념을 논의하며 견고하고 확장 가능한 데이터 시스템을 설계하는 데 도움이 되는 다양한 데이터 아키텍처 패턴을 살펴볼 것입니다.\n\n# 데이터 아키텍처란 무엇인가요?\n\n데이터 아키텍처는 조직 내에서 데이터가 수집, 저장, 관리되고 사용되는 방식을 개요로 설명하는 구조화된 프레임워크를 의미합니다. 데이터 흐름, 데이터 모델 및 데이터 처리에 사용되는 기술을 정의합니다. 견고한 데이터 아키텍처는 데이터가 다양한 비즈니스 요구에 대해 접근 가능하고 신뢰할 수 있으며 관련성이 있도록 보장하여 효율적인 의사 결정과 운영 효율성을 촉진합니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n데이터 아키텍처는 기업 아키텍처의 하위 집합으로, 조직의 전체 IT 인프라 및 프로세스를 포괄합니다. 기업 아키텍처에는 비즈니스, 애플리케이션, 기술, 데이터 아키텍처와 같은 다양한 구성 요소가 포함됩니다. 기업 아키텍처의 더 넓은 맥락을 이해하면 데이터 아키텍처가 조직의 전체 전략 내에서 어떤 역할과 중요성을 발휘하는지를 이해할 수 있습니다.\n\n\\[이미지는 여기에 들어가는데, 이미지의 경로가 이상해서 제대로 표시되지 않았어요!]\n\n# 데이터 아키텍처의 진화\n\n과거 몇 10년 동안 데이터 아키텍처는 효율적인 데이터 분석의 필요성 증가와 데이터를 비즈니스 이익으로 활용하기 위한 데이터 전략의 현대화로 인해 상당한 변화를 겪었습니다. 이러한 진화는 각각이 특정 아키텍처 관행과 기술로 특징 지어지는 여러 중요한 단계로 나타납니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n## 2000년 이전: 기업 데이터 웨어하우스 (EDW) 시대\n\n이 기간 동안 주목된 것은 기업 데이터 웨어하우스 (EDW)의 성공과 구현이었습니다. 조직은 다양한 소스로부터 데이터를 저장, 관리 및 분석할 수 있는 중앙 저장소를 생성하기 위해 노력했습니다. 주요 목표는 구조화되고 일관된 데이터 저장을 통해 비즈니스 인텔리전스 및 보고 요구를 지원하는 것이었습니다.\n\n특징:\n\n- 중앙 데이터 저장\n- 정의된 스키마를 가진 구조화된 데이터\n- 비즈니스 인텔리전스 및 보고에 초점을 맞춤\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n한계:\n\n- 시행 및 유지 관리 비용 증가\n- 증가하는 데이터 양으로 인한 확장성 문제\n- 다양한 데이터 원본 통합의 어려움\n\n## 2000년부터 2010년까지: EDW 후기\n\n이 기간에는 전통적인 데이터 웨어하우스의 한계에 대한 대처 방향으로의 변화가 있었습니다. 조직들은 분산된 데이터와 데이터 실로에 대한 도전에 직면하며, 일관성 없고 조각난 분석을 유발했습니다. 데이터 마트가 인기를 얻게 되었는데, 이는 부서가 자체 데이터를 관리할 수 있게 해 주었지만, 더 많은 분열을 유발했습니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n특징:\n\n- 데이터 웨어하우스 및 데이터 마트에 의존\n- 조각난 데이터 분석\n- 데이터 사일로의 등장\n\n한계:\n\n- 부서간 일관되지 않은 데이터 분석\n- 기업 전체 통찰력을 위한 데이터 통합의 어려움\n- 여러 데이터 시스템 유지비용 증가\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n## 2010년부터 2020년까지: 논리 데이터 웨어하우스 (LDW) 시대\n\n논리 데이터 웨어하우스(LDW)는 단편화된 데이터 환경에 대한 해결책으로 등장했습니다. LDW는 데이터 웨어하우스, 데이터 마트 및 데이터 레이크를 포함한 다양한 저장 시스템에서의 데이터 접근을 통합하는 공통 의미 계층을 도입했습니다. 이 접근 방식은 더 통합된 데이터 분석과 향상된 데이터 접근성을 가능케 했습니다.\n\n주요 특징:\n\n- 공통 의미 계층을 통한 통합된 데이터 접근\n- 데이터 웨어하우스, 데이터 마트 및 데이터 레이크의 통합\n- 향상된 데이터 분석 기능\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n혜택:\n\n- 데이터 일관성 및 통합이 향상됩니다.\n- 확장성과 유연성이 향상됩니다.\n- 대규모 데이터 및 고급 분석에 대한 지원이 좋아집니다.\n\n제한 사항:\n\n- 여러 데이터 저장 시스템에 대한 계속된 의존이 필요합니다.\n- Semantic 레이어 관리의 복잡성이 증가합니다.\n- LDW를 구현하고 유지하는 데 전문 기술이 필요합니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n## 2020년부터의 시대: 증강 데이터 분석과 활성 메타데이터의 시대\n\n현재와 미래의 데이터 아키텍처 단계는 인공 지능, 기계 학습 및 데이터 조정과 같은 첨단 기술에 의해 주도되는 증강 데이터 분석의 부상으로 특징 지어집니다. 이 시대는 데이터 접근의 민주화와 셀프 서비스 분석을 가능하게 하는 활성 메타데이터를 기반으로 합니다.\n\n특징:\n\n- AI와 기계 학습을 활용한 증강 데이터 분석\n- 메타데이터를 활용한 데이터 셀프 서비스\n- 고급 데이터 조정 및 추천 엔진\n- 적응적인 실천과 활성 메타데이터 분석\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n혜택:\n\n- 향상된 데이터 접근성 및 셀프 서비스 기능\n- 고급 분석을 통한 의사 결정 개선\n- 변화하는 비즈니스 요구에 대한 적응 능력 향상\n\n활성 메타데이터: 메타데이터는 오늘날 핵심 역할을 담당하며 데이터의 다양한 측면을 설명하고 지능적인 데이터 관리를 가능케 합니다. 네 가지 유형의 메타데이터가 있습니다:\n\n- 기술 메타데이터: 데이터 저장, 구조 및 처리에 관한 정보.\n- 운영 메타데이터: 데이터 워크플로우, 프로세스 및 사용에 대한 데이터.\n- 비즈니스 메타데이터: 데이터의 비즈니스 의미와 사용에 대한 맥락 정보.\n- 소셜 메타데이터: 데이터 상호작용 및 사용 패턴에서 유도된 인사이트.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n활성 메타데이터는 데이터를 설명하는 것뿐만 아니라 시스템 간 작업을 식별하여 더 동적이고 지능적인 데이터 작업을 용이하게 합니다.\n\n사용 사례:\n\n- 마스터 데이터 관리\n- 기업 간 데이터 교환\n- 애플리케이션 데이터 통합\n- 파트너 데이터 교환\n\n활성 메타데이터와 증강 분석으로 발전하는 것은 데이터 아키텍처의 능력을 전통적인 방식을 넘어서게 하여 다양한 사용 사례에 걸쳐 더 정교한 데이터 관리와 분석을 가능케 합니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n# 주요 아키텍처 원칙과 개념\n\n핵심 아키텍처 원칙과 개념을 이해하는 것은 효과적인 데이터 아키텍처를 설계하는 데 중요합니다. 이러한 원칙들은 견고하고 확장 가능하며 유연한 데이터 시스템을 구축하는 데 기반을 제공합니다.\n\n## 주요 기업의 원칙\n\n주요 기업들은 자체 아키텍처 원칙을 따라 자신들의 시스템의 효과성과 효율성을 보장합니다. 예를 들어:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\nAWS 웰 아키텍처 프레임워크에는 여섯 가지 핵심이 있습니다:\n\n- 운영 우수성\n- 보안\n- 신뢰성\n- 성능 효율성\n- 비용 최적화\n- 지속 가능성\n\n구글 클라우드의 클라우드 네이티브 아키텍처를 위한 다섯 가지 원칙은 다음과 같습니다:\n\n- 자동화를 위한 디자인\n- 상태 관리에 똑똑하게\n- 관리형 서비스 우선\n- 깊이 우선 방어 실천\n- 항상 아키텍처 구축중임.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n이 프레임워크와 \"데이터 엔지니어링 기본\"과 같은 다른 리소스에서 영감을 받아, 여기에는 좋은 데이터 아키텍처를 설계하는 데 필수적인 몇 가지 조직화된 원칙과 개념이 있습니다.\n\n## 도메인과 서비스\n\n도메인은 데이터 아키텍처가 지원하는 특정 영역의 비즈니스 또는 지식입니다. 서비스는 도메인 내에서 특정 작업을 수행하는 기능입니다.\n\n혜택:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 조직적 명확성: 명확히 정의된 도메인과 서비스는 데이터와 프로세스를 조직화하는 데 도움이 됩니다.\n- 집중된 개발: 팀은 특정 서비스에 집중하여 효율성과 전문성을 향상시킬 수 있습니다.\n\n## 분산 시스템\n\n분산 시스템은 서로 다른 네트워크 컴퓨터에 위치한 구성 요소가 통신하고 조정하여 공통 목표를 달성하는 시스템입니다. 확장 가능하고 강인한 데이터 아키텍처를 구축하는 데 필수적입니다.\n\n혜택:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 확장성: 더 많은 노드를 추가하여 부하 처리 용이.\n- 신뢰성: 중복된 노드는 일부 노드가 실패해도 시스템 가용성을 보장합니다.\n\n## 확장성과 탄력성\n\n확장성은 시스템이 자원을 추가함으로써 증가하는 작업 양을 처리하는 능력입니다. 탄력성은 수요에 따라 자원을 동적으로 확장 또는 축소하는 능력입니다.\n\n혜택:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 비용 효율성: 사용한 리소스에 대해서만 지불하세요.\n- 성능 최적화: 피크 시간에는 성능을 유지하고 낮은 사용량 기간에는 비용을 최적화하세요.\n\n## 가용성 및 신뢰성\n\n가용성은 시스템이 운영 및 접근 가능한 시간의 백분율입니다. 신뢰성은 시스템이 시간이 지남에 따라 올바르고 일관되게 작동하는 능력입니다.\n\n주요 지표:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 가동 시간: 시스템이 작동 중인 시간의 백분율.\n- 고장 사이의 평균 시간 (MTBF): 시스템 고장 사이의 평균 시간.\n- 복구에 소요되는 평균 시간 (MTTR): 고장 난 시스템을 수리하는 데 걸리는 평균 시간.\n\n전략:\n\n- 중복성: 고장 시 대체 시스템을 구현.\n- 장애 조치 기구: 고장 시 대기 시스템으로 자동 전환.\n\n## 이벤트 주도형 아키텍처\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n이벤트 주도 아키텍처는 시스템이 이벤트나 상태 변경에 대응하는 설계 패러다임입니다. 이 접근 방식은 높은 결합도를 갖추고, 유연성과 확장성을 촉진합니다.\n\n활용 사례:\n\n- 실시간 분석\n- 사물 인터넷 시스템\n- 통지 시스템\n\n## 사용자 액세스: 단일 vs. 멀티테넌트\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\nSingle-tenant 아키텍처는 각 고객에게 소프트웨어 및 데이터베이스의 전용 인스턴스를 할당하며, 멀티테넌트 아키텍처는 다중 고객 사이에서 리소스를 공유합니다.\n\n고려해야 할 사항:\n\n- 성능: Single-tenant는 더 나은 성능을 제공할 수 있지만, 멀티테넌트는 비용 효율적입니다.\n- 보안: 멀티테넌트 시스템은 다른 고객들을 위한 데이터 격리 및 보안을 보장해야 합니다.\n- 유지 보수: 멀티테넌트 시스템은 중앙에서 유지 및 업데이트하기 쉽습니다.\n\n이러한 원칙을 준수하고 이러한 개념을 이해하여 현대 비즈니스 환경의 요구 사항을 충족하면서 확장 가능하고 신뢰할 수 있으며 비용 효율적인 데이터 아키텍처를 설계할 수 있습니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n# 주요 데이터 아키텍처 패턴\n\n지난 수십 년간 데이터 아키텍처에서는 효과적으로 데이터를 관리하고 활용하기 위한 필수 요소로 여러 가지 핵심 패턴이 나타났습니다. 각 패턴에는 강점, 약점 및 이상적인 사용 사례가 있습니다. 여기에서 이러한 패턴을 간단히 살펴보고, 다양한 맥락에서 어떻게 적용할 수 있는지 설명하겠습니다.\n\n## 1. 데이터 웨어하우스\n\n데이터 웨어하우스는 구조화된 데이터를 저장하고 보고 및 분석하기 위해 설계된 중앙 저장소입니다. 쿼리 성능과 데이터 집계에 최적화되어 있어 비즈니스 인텔리전스 애플리케이션에 이상적입니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n아래는 해당 데이터 아키텍처에 대한 간략한 설명입니다:\n\n특징:\n\n- 중앙 집중 저장: 여러 출처에서 수집한 데이터를 한 곳에 저장합니다.\n- 구조화된 데이터: 데이터가 체계적으로 구성되어 일반적으로 스키마를 따릅니다.\n- 분석 최적화: 빠른 쿼리 및 데이터 검색을 위해 설계되었습니다.\n\n혜택:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 높은 성능: 복잡한 쿼리와 데이터 분석에 최적화되어 있습니다.\n- 데이터 통합: 다양한 소스에서 데이터를 통합하여 통일된 뷰를 제공합니다.\n- 일관성: 스키마 강제화를 통해 데이터 품질과 일관성을 준수합니다.\n\n사용 사례:\n\n- 비즈니스 인텔리전스 및 보고\n- 과거 데이터 분석\n- 다중 시스템에서 데이터 통합\n\n## 2. 데이터 레이크\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\nData lakes는 방대한 양의 원시, 비구조화 및 반구조화 데이터를 저장합니다. 데이터 웨어하우스와 달리 데이터 레이크는 데이터에 엄격한 스키마를 부과하지 않아 데이터 수집 및 저장에 더 많은 유연성을 제공합니다.\n\n![DataArchitectureABriefOverview_2.png](/assets/img/2024-06-23-DataArchitectureABriefOverview_2.png)\n\n특징:\n\n- 원시 데이터 저장: 데이터를 원시 형식으로 저장합니다.\n- 확장성: 대량의 데이터를 처리할 수 있습니다.\n- 스키마형 읽기: 데이터 저장 시가 아닌 데이터를 읽을 때 스키마가 적용됩니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n장점:\n\n- 유연성: 구조화된, 비구조화된 및 반구조화된 데이터를 포함한 다양한 데이터 유형을 저장할 수 있습니다.\n- 확장성: 대규모 데이터 작업을 처리하기에 적합합니다.\n- 비용 효율성: 데이터 웨어하우스와 비교하여 대량의 데이터를 저장하는 데 비용이 저렴할 수 있습니다.\n\n도전:\n\n- 데이터 관리: 적절한 관리 없이 데이터 레이크는 데이터 스왐프가 될 수 있습니다.\n- 성능: 데이터 웨어하우스와 비교하여 쿼리 성능이 느릴 수 있습니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n사용 사례:\n\n- 대규모 데이터 분석\n- 기계 학습 및 데이터 과학\n- 로그 및 이벤트 데이터 저장\n\n## 3. 현대 데이터 스택\n\n현대 데이터 스택은 데이터 통합, 변환, 저장 및 분석을 용이하게 하는 일련의 모듈식 클라우드 기반 도구의 집합을 가리킵니다. 이 방식은 기민성, 확장성 및 사용 편의성을 강조합니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n아래는 마크다운 형식으로 변경한 내용입니다.\n\n\n![Data Architecture Overview](/assets/img/2024-06-23-DataArchitectureABriefOverview_3.png)\n\nComponents:\n\n- Data Ingestion: Tools like Fivetran or Stitch for extracting and loading data.\n- Data Transformation: Tools like dbt (data build tool) for transforming data within the warehouse.\n- Data Storage: Cloud data warehouses like Snowflake or Google BigQuery.\n- Data Visualization: Tools like Looker, Tableau, or Mode for data exploration and visualization.\n\nBenefits:\n\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 모듈성: 쉽게 교체하거나 업그레이드할 수 있는 유연한 구성 요소입니다.\n- 확장성: 데이터 양과 사용량에 맞게 확장되는 클라우드 기반 솔루션입니다.\n- 사용 편의성: 사용자 친화적인 인터페이스와 자동화로 광범위한 기술 전문 지식이 필요하지 않습니다.\n\n사용 사례:\n\n- 데이터 분석 솔루션의 신속한 배포\n- 민첩한 데이터 관리 및 변환\n- 셀프 서비스 분석 및 보고\n\n## 4. 통합 배치 및 스트리밍 아키텍처\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n통합 배치 및 스트리밍 아키텍처는 실시간 및 일괄 데이터를 하나의 프레임워크에서 처리하는 것을 목표로 합니다. 이 접근 방식은 데이터 처리 파이프라인을 간소화하고 일괄 및 스트리밍 데이터를 관리하기 위한 별도 시스템의 복잡성을 줄입니다.\n\n![이미지](/assets/img/2024-06-23-DataArchitectureABriefOverview_4.png)\n\n주요 아키텍처:\n\n- 람다 아키텍처: 데이터 흐름을 별도 경로로 분리하여 일괄 및 스트리밍 처리를 결합합니다.\n- 카파 아키텍처: 모든 데이터를 스트림으로 처리함으로써 람다 아키텍처를 간소화합니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n## 람다 아키텍처:\n\n- Batch Layer: 대규모의 과거 데이터를 처리합니다.\n- Speed Layer: 즉각적인 인사이트를 위해 실시간 데이터를 처리합니다.\n- Serving Layer: 배치 및 스피드 레이어의 출력을 통합된 결과로 병합합니다.\n\n장점:\n\n- 포괄적인 데이터 처리: 과거 및 실시간 데이터를 처리합니다.\n- 장애 허용성: 배치 재처리를 통해 데이터 정확성을 보장합니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n도전:\n\n- 복잡성: 별도의 배치 및 스트리밍 시스템을 관리하는 것은 어려울 수 있습니다.\n\n## Kappa 아키텍처:\n\n- 통합형 스트림 처리: 모든 데이터를 스트림으로 처리하여 아키텍처를 간소화합니다.\n- 재처리: 데이터 스트림을 재처리하여 과거 분석을 수행할 수 있습니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n혜택:\n\n- 간단함: 단일 데이터 처리 모델을 사용하여 복잡성을 줄임.\n- 유연성: 관리 및 확장이 더 쉬움.\n\n## 5. 데이터 레이크하우스\n\n데이터 레이크하우스는 데이터 레이크와 데이터 웨어하우스의 기능을 결합하여, 데이터 레이크의 유연성과 데이터 웨어하우스의 성능 및 관리 기능을 제공합니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n\u003cimg src=\"/assets/img/2024-06-23-DataArchitectureABriefOverview_5.png\" /\u003e\n\n특징:\n\n- 통합 스토리지: 구조화된 및 구조화되지 않은 데이터를 모두 저장합니다.\n- ACID 트랜잭션: 데이터 작업에 대한 원자성, 일관성, 격리 및 내구성을 지원합니다.\n- 스키마 강제: 스키마를 읽거나 쓸 때 스키마에 대한 강제를 허용합니다.\n\n혜택:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 유연성: 다양한 데이터 유형과 워크로드를 처리할 수 있습니다.\n- 성능: 고성능 쿼리 및 데이터 관리를 위해 최적화되었습니다.\n- 데이터 관리: 견고한 데이터 관리 및 거버넌스 기능을 제공합니다.\n\n사용 사례:\n\n- 통합 데이터 분석 및 보고\n- 기계 학습 및 AI 워크로드\n- 실시간 및 일괄 데이터 처리\n\n## 6. 데이터 매쉬\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n데이터 메시는 도메인 주도 설계의 원칙을 데이터 관리에 적용한 분산형 데이터 아키텍처로, 중앙 집중식 데이터 레이크나 데이터 웨어하우스에서 데이터 소유 및 책임을 특정 비즈니스 도메인과 일치시키는 분산 모델로 전환합니다.\n\n![이미지](/assets/img/2024-06-23-DataArchitectureABriefOverview_6.png)\n\n특징:\n\n- 도메인 중심: 데이터는 해당 도메인이 가장 잘 아는 곳에서 관리됩니다.\n- 제품으로서의 데이터: 각 도메인은 데이터를 제품으로 취급하여 품질과 사용성을 보장합니다.\n- 셀프 서비스 데이터 인프라: 도메인이 자체적으로 데이터를 관리할 수 있도록 필요한 도구와 플랫폼을 제공합니다.\n- 연합된 지배 체계: 중앙 집중식 정책과 표준을 분산 방식으로 시행합니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n혜택:\n\n- 확장성: 비즈니스가 성장함에 따라 조직이 데이터 아키텍처를 확장하는 것을 가능하게 합니다.\n- 민첩성: 더 빠르고 유연한 데이터 관리와 분석을 가능하게 합니다.\n- 소유권: 도메인 내에서 데이터 소유권과 책임을 강조합니다.\n\n사용 사례:\n\n- 다양한 데이터 요구 사항을 가진 대규모 조직\n- 데이터 거버넌스 및 품질을 향상시키려는 기업\n- 데이터 인프라를 확장하려는 조직\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n## 7. 데이터 패브릭\n\n데이터 패브릭은 온프레미스 및 클라우드 환경을 횡단하며 이종 데이터 원본 및 응용 프로그램을 연결하여 통합 데이터 환경을 만드는 구조적 방법론입니다. 일관된 데이터 관리와 거버넌스를 보장하며 심층적인 데이터 접근과 통합을 제공하여 데이터 환경의 일관성을 유지하고자 합니다.\n\n![데이터 아키텍처 개요](/assets/img/2024-06-23-DataArchitectureABriefOverview_7.png)\n\n특징:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 통합 액세스: 모든 데이터 원본에 대한 단일 액세스 포인트를 제공합니다.\n- 통합: 다양한 데이터 환경을 연결하여 데이터 이동 및 통합을 가능하게 합니다.\n- 자동화: AI 및 기계 학습을 활용하여 데이터 관리 작업을 자동화합니다.\n- 거버넌스: 데이터 풍경 전반에 걸쳐 데이터 품질, 보안 및 규정 준수를 보장합니다.\n\n혜택:\n\n- 일관성: 조직 전반에서 일관된 데이터를 보장합니다.\n- 효율성: 데이터 실로를 줄이고 데이터 액세스를 간소화합니다.\n- 민첩성: 신속한 데이터 통합 및 이동을 용이하게 합니다.\n\n사용 사례:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 하이브리드 데이터 환경을 가진 조직\n- 데이터 통합 및 관리를 개선하고자 하는 기업\n- 데이터 지배와 준수를 보장해야 하는 비즈니스\n\n# 추가 자료\n\n- Ross Pettit의 “Utility from Value Add 구분하기”\n- Joshua Klahr의 “현대 데이터 아키텍처의 여섯 가지 원칙”\n- Snowflake의 “데이터 웨어하우스 아키텍처란?” 웹 페이지\n- Erik Bernhardsson의 “소프트웨어 인프라 2.0: 워크리스트”\n- Etai Mizrahi의 “데이터 빚을 앞서가는 방법”\n- Neal Ford의 “전략 대 전술: SOA와 무관한 수구의 함정”\n- Dustin Lange 등의 “Deequ로 규모에 맞게 테스트 데이터 품질 유지하기”\n- IBM Education의 “3계층 아키텍처”\n- TOGAF 프레임워크 웹사이트\n- Prukalpa의 “CDOs가 2021년 주목해야 할 상위 5가지 데이터 트렌드”\n- Alexey Makhotkin의 “240 개의 테이블과 문서가 없다고?”\n- Molly Vorwerck의 “관측 가능 데이터의 궁극적인 체크리스트”\n- Apache Flink Roadmap의 “통합 분석: 일괄 및 스트리밍이 만나다; SQL 이상”\n- Martin Fowler의 “Utility Vs Strategic Dichotomy”\n- Ben Lorica 등의 “데이터 레이크하우스란?”\n- Thor Olavsrud의 “데이터 관리를 위한 프레임워크인 데이터 아키텍처란?”\n- Casber Wang의 “오픈 데이터 생태계란 무엇이며 왜 계속해서 존재하는가?”\n- Laszlo Sragner의 “MLOps가 잘못된 이유는 무엇인가?”\n- Chris Riccomini의 “데이터 메시가 뭐길래”\n- Martin Fowler의 “누가 아키텍트가 필요한가”\n- Zachman 프레임워크 위키피디아 페이지\n- Prukalpa의 “현대 데이터 플랫폼의 구성 요소”\n- Zhamak Dehghani의 “단일 데이터 레이크를 분산 데이터 메시로 나아가는 방법”\n- Zhamak Dehghani의 “데이터 메시 원칙 및 논리 아키텍처”\n- Iman Samizadeh의 “큰 데이터용 람다와 카파 두 데이터 처리 아키텍처 간단 소개”\n- Hussein Danish의 “원칙에 따른 데이터 엔지니어링, 제1부: 아키텍처 전망”\n- Jay Kreps의 “로그: 소프트웨어 엔지니어가 실시간 데이터의 통일된 추상화에 대해 알아야 할 사항”\n\n이것들은 저가 블로그 글 작성 중 살펴본 일부 자료입니다. 이들은 데이터 아키텍처의 개념과 모범 사례에 대한 추가 통찰력을 제공하고 깊게 이해하는 데 도움이 될 수 있습니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n# 요약\n\n이 블로그 포스트에서는 학습 중에 만난 데이터 아키텍처의 기본 원칙 중 일부를 개요로 설명하고 간략히 주요 데이터 아키텍처 패턴을 논의했습니다.\n\n이 상세한 데이터 아키텍처 패턴을 이해함으로써, 조직의 요구에 가장 적합한 아키텍처를 결정하고 효과적으로 구현하는 방법에 대해 정보를 얻을 수 있습니다.\n\n만일 내가 어떤 원칙이나 아키텍처를 잘못 이해하고 있다면 말씀해 주십시오. 배우는 것에 기쁨을 느낄 테니까요.","ogImage":{"url":"/assets/img/2024-06-23-DataArchitectureABriefOverview_0.png"},"coverImage":"/assets/img/2024-06-23-DataArchitectureABriefOverview_0.png","tag":["Tech"],"readingTime":13},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003cp\u003e데이터 아키텍처는 성공적인 데이터 엔지니어링의 중요한 요소입니다. 조직 전반에서 데이터 수집, 저장, 처리 및 활용 방식의 기초를 제공합니다. 잘 설계된 데이터 아키텍처를 통해 기업은 원활한 데이터 통합, 높은 성능, 확장성 및 효과적인 데이터 거버넌스를 달성할 수 있습니다.\u003c/p\u003e\n\u003cp\u003e이 블로그 포스트에서는 우수한 데이터 아키텍처의 핵심 원칙을 탐구하고 핵심 아키텍처 개념을 논의하며 견고하고 확장 가능한 데이터 시스템을 설계하는 데 도움이 되는 다양한 데이터 아키텍처 패턴을 살펴볼 것입니다.\u003c/p\u003e\n\u003ch1\u003e데이터 아키텍처란 무엇인가요?\u003c/h1\u003e\n\u003cp\u003e데이터 아키텍처는 조직 내에서 데이터가 수집, 저장, 관리되고 사용되는 방식을 개요로 설명하는 구조화된 프레임워크를 의미합니다. 데이터 흐름, 데이터 모델 및 데이터 처리에 사용되는 기술을 정의합니다. 견고한 데이터 아키텍처는 데이터가 다양한 비즈니스 요구에 대해 접근 가능하고 신뢰할 수 있으며 관련성이 있도록 보장하여 효율적인 의사 결정과 운영 효율성을 촉진합니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e데이터 아키텍처는 기업 아키텍처의 하위 집합으로, 조직의 전체 IT 인프라 및 프로세스를 포괄합니다. 기업 아키텍처에는 비즈니스, 애플리케이션, 기술, 데이터 아키텍처와 같은 다양한 구성 요소가 포함됩니다. 기업 아키텍처의 더 넓은 맥락을 이해하면 데이터 아키텍처가 조직의 전체 전략 내에서 어떤 역할과 중요성을 발휘하는지를 이해할 수 있습니다.\u003c/p\u003e\n\u003cp\u003e[이미지는 여기에 들어가는데, 이미지의 경로가 이상해서 제대로 표시되지 않았어요!]\u003c/p\u003e\n\u003ch1\u003e데이터 아키텍처의 진화\u003c/h1\u003e\n\u003cp\u003e과거 몇 10년 동안 데이터 아키텍처는 효율적인 데이터 분석의 필요성 증가와 데이터를 비즈니스 이익으로 활용하기 위한 데이터 전략의 현대화로 인해 상당한 변화를 겪었습니다. 이러한 진화는 각각이 특정 아키텍처 관행과 기술로 특징 지어지는 여러 중요한 단계로 나타납니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003ch2\u003e2000년 이전: 기업 데이터 웨어하우스 (EDW) 시대\u003c/h2\u003e\n\u003cp\u003e이 기간 동안 주목된 것은 기업 데이터 웨어하우스 (EDW)의 성공과 구현이었습니다. 조직은 다양한 소스로부터 데이터를 저장, 관리 및 분석할 수 있는 중앙 저장소를 생성하기 위해 노력했습니다. 주요 목표는 구조화되고 일관된 데이터 저장을 통해 비즈니스 인텔리전스 및 보고 요구를 지원하는 것이었습니다.\u003c/p\u003e\n\u003cp\u003e특징:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e중앙 데이터 저장\u003c/li\u003e\n\u003cli\u003e정의된 스키마를 가진 구조화된 데이터\u003c/li\u003e\n\u003cli\u003e비즈니스 인텔리전스 및 보고에 초점을 맞춤\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e한계:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e시행 및 유지 관리 비용 증가\u003c/li\u003e\n\u003cli\u003e증가하는 데이터 양으로 인한 확장성 문제\u003c/li\u003e\n\u003cli\u003e다양한 데이터 원본 통합의 어려움\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e2000년부터 2010년까지: EDW 후기\u003c/h2\u003e\n\u003cp\u003e이 기간에는 전통적인 데이터 웨어하우스의 한계에 대한 대처 방향으로의 변화가 있었습니다. 조직들은 분산된 데이터와 데이터 실로에 대한 도전에 직면하며, 일관성 없고 조각난 분석을 유발했습니다. 데이터 마트가 인기를 얻게 되었는데, 이는 부서가 자체 데이터를 관리할 수 있게 해 주었지만, 더 많은 분열을 유발했습니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e특징:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e데이터 웨어하우스 및 데이터 마트에 의존\u003c/li\u003e\n\u003cli\u003e조각난 데이터 분석\u003c/li\u003e\n\u003cli\u003e데이터 사일로의 등장\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e한계:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e부서간 일관되지 않은 데이터 분석\u003c/li\u003e\n\u003cli\u003e기업 전체 통찰력을 위한 데이터 통합의 어려움\u003c/li\u003e\n\u003cli\u003e여러 데이터 시스템 유지비용 증가\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003ch2\u003e2010년부터 2020년까지: 논리 데이터 웨어하우스 (LDW) 시대\u003c/h2\u003e\n\u003cp\u003e논리 데이터 웨어하우스(LDW)는 단편화된 데이터 환경에 대한 해결책으로 등장했습니다. LDW는 데이터 웨어하우스, 데이터 마트 및 데이터 레이크를 포함한 다양한 저장 시스템에서의 데이터 접근을 통합하는 공통 의미 계층을 도입했습니다. 이 접근 방식은 더 통합된 데이터 분석과 향상된 데이터 접근성을 가능케 했습니다.\u003c/p\u003e\n\u003cp\u003e주요 특징:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e공통 의미 계층을 통한 통합된 데이터 접근\u003c/li\u003e\n\u003cli\u003e데이터 웨어하우스, 데이터 마트 및 데이터 레이크의 통합\u003c/li\u003e\n\u003cli\u003e향상된 데이터 분석 기능\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e혜택:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e데이터 일관성 및 통합이 향상됩니다.\u003c/li\u003e\n\u003cli\u003e확장성과 유연성이 향상됩니다.\u003c/li\u003e\n\u003cli\u003e대규모 데이터 및 고급 분석에 대한 지원이 좋아집니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e제한 사항:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e여러 데이터 저장 시스템에 대한 계속된 의존이 필요합니다.\u003c/li\u003e\n\u003cli\u003eSemantic 레이어 관리의 복잡성이 증가합니다.\u003c/li\u003e\n\u003cli\u003eLDW를 구현하고 유지하는 데 전문 기술이 필요합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003ch2\u003e2020년부터의 시대: 증강 데이터 분석과 활성 메타데이터의 시대\u003c/h2\u003e\n\u003cp\u003e현재와 미래의 데이터 아키텍처 단계는 인공 지능, 기계 학습 및 데이터 조정과 같은 첨단 기술에 의해 주도되는 증강 데이터 분석의 부상으로 특징 지어집니다. 이 시대는 데이터 접근의 민주화와 셀프 서비스 분석을 가능하게 하는 활성 메타데이터를 기반으로 합니다.\u003c/p\u003e\n\u003cp\u003e특징:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAI와 기계 학습을 활용한 증강 데이터 분석\u003c/li\u003e\n\u003cli\u003e메타데이터를 활용한 데이터 셀프 서비스\u003c/li\u003e\n\u003cli\u003e고급 데이터 조정 및 추천 엔진\u003c/li\u003e\n\u003cli\u003e적응적인 실천과 활성 메타데이터 분석\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e혜택:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e향상된 데이터 접근성 및 셀프 서비스 기능\u003c/li\u003e\n\u003cli\u003e고급 분석을 통한 의사 결정 개선\u003c/li\u003e\n\u003cli\u003e변화하는 비즈니스 요구에 대한 적응 능력 향상\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e활성 메타데이터: 메타데이터는 오늘날 핵심 역할을 담당하며 데이터의 다양한 측면을 설명하고 지능적인 데이터 관리를 가능케 합니다. 네 가지 유형의 메타데이터가 있습니다:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e기술 메타데이터: 데이터 저장, 구조 및 처리에 관한 정보.\u003c/li\u003e\n\u003cli\u003e운영 메타데이터: 데이터 워크플로우, 프로세스 및 사용에 대한 데이터.\u003c/li\u003e\n\u003cli\u003e비즈니스 메타데이터: 데이터의 비즈니스 의미와 사용에 대한 맥락 정보.\u003c/li\u003e\n\u003cli\u003e소셜 메타데이터: 데이터 상호작용 및 사용 패턴에서 유도된 인사이트.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e활성 메타데이터는 데이터를 설명하는 것뿐만 아니라 시스템 간 작업을 식별하여 더 동적이고 지능적인 데이터 작업을 용이하게 합니다.\u003c/p\u003e\n\u003cp\u003e사용 사례:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e마스터 데이터 관리\u003c/li\u003e\n\u003cli\u003e기업 간 데이터 교환\u003c/li\u003e\n\u003cli\u003e애플리케이션 데이터 통합\u003c/li\u003e\n\u003cli\u003e파트너 데이터 교환\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e활성 메타데이터와 증강 분석으로 발전하는 것은 데이터 아키텍처의 능력을 전통적인 방식을 넘어서게 하여 다양한 사용 사례에 걸쳐 더 정교한 데이터 관리와 분석을 가능케 합니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003ch1\u003e주요 아키텍처 원칙과 개념\u003c/h1\u003e\n\u003cp\u003e핵심 아키텍처 원칙과 개념을 이해하는 것은 효과적인 데이터 아키텍처를 설계하는 데 중요합니다. 이러한 원칙들은 견고하고 확장 가능하며 유연한 데이터 시스템을 구축하는 데 기반을 제공합니다.\u003c/p\u003e\n\u003ch2\u003e주요 기업의 원칙\u003c/h2\u003e\n\u003cp\u003e주요 기업들은 자체 아키텍처 원칙을 따라 자신들의 시스템의 효과성과 효율성을 보장합니다. 예를 들어:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003eAWS 웰 아키텍처 프레임워크에는 여섯 가지 핵심이 있습니다:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e운영 우수성\u003c/li\u003e\n\u003cli\u003e보안\u003c/li\u003e\n\u003cli\u003e신뢰성\u003c/li\u003e\n\u003cli\u003e성능 효율성\u003c/li\u003e\n\u003cli\u003e비용 최적화\u003c/li\u003e\n\u003cli\u003e지속 가능성\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e구글 클라우드의 클라우드 네이티브 아키텍처를 위한 다섯 가지 원칙은 다음과 같습니다:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e자동화를 위한 디자인\u003c/li\u003e\n\u003cli\u003e상태 관리에 똑똑하게\u003c/li\u003e\n\u003cli\u003e관리형 서비스 우선\u003c/li\u003e\n\u003cli\u003e깊이 우선 방어 실천\u003c/li\u003e\n\u003cli\u003e항상 아키텍처 구축중임.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e이 프레임워크와 \"데이터 엔지니어링 기본\"과 같은 다른 리소스에서 영감을 받아, 여기에는 좋은 데이터 아키텍처를 설계하는 데 필수적인 몇 가지 조직화된 원칙과 개념이 있습니다.\u003c/p\u003e\n\u003ch2\u003e도메인과 서비스\u003c/h2\u003e\n\u003cp\u003e도메인은 데이터 아키텍처가 지원하는 특정 영역의 비즈니스 또는 지식입니다. 서비스는 도메인 내에서 특정 작업을 수행하는 기능입니다.\u003c/p\u003e\n\u003cp\u003e혜택:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e조직적 명확성: 명확히 정의된 도메인과 서비스는 데이터와 프로세스를 조직화하는 데 도움이 됩니다.\u003c/li\u003e\n\u003cli\u003e집중된 개발: 팀은 특정 서비스에 집중하여 효율성과 전문성을 향상시킬 수 있습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e분산 시스템\u003c/h2\u003e\n\u003cp\u003e분산 시스템은 서로 다른 네트워크 컴퓨터에 위치한 구성 요소가 통신하고 조정하여 공통 목표를 달성하는 시스템입니다. 확장 가능하고 강인한 데이터 아키텍처를 구축하는 데 필수적입니다.\u003c/p\u003e\n\u003cp\u003e혜택:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e확장성: 더 많은 노드를 추가하여 부하 처리 용이.\u003c/li\u003e\n\u003cli\u003e신뢰성: 중복된 노드는 일부 노드가 실패해도 시스템 가용성을 보장합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e확장성과 탄력성\u003c/h2\u003e\n\u003cp\u003e확장성은 시스템이 자원을 추가함으로써 증가하는 작업 양을 처리하는 능력입니다. 탄력성은 수요에 따라 자원을 동적으로 확장 또는 축소하는 능력입니다.\u003c/p\u003e\n\u003cp\u003e혜택:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e비용 효율성: 사용한 리소스에 대해서만 지불하세요.\u003c/li\u003e\n\u003cli\u003e성능 최적화: 피크 시간에는 성능을 유지하고 낮은 사용량 기간에는 비용을 최적화하세요.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e가용성 및 신뢰성\u003c/h2\u003e\n\u003cp\u003e가용성은 시스템이 운영 및 접근 가능한 시간의 백분율입니다. 신뢰성은 시스템이 시간이 지남에 따라 올바르고 일관되게 작동하는 능력입니다.\u003c/p\u003e\n\u003cp\u003e주요 지표:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e가동 시간: 시스템이 작동 중인 시간의 백분율.\u003c/li\u003e\n\u003cli\u003e고장 사이의 평균 시간 (MTBF): 시스템 고장 사이의 평균 시간.\u003c/li\u003e\n\u003cli\u003e복구에 소요되는 평균 시간 (MTTR): 고장 난 시스템을 수리하는 데 걸리는 평균 시간.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e전략:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e중복성: 고장 시 대체 시스템을 구현.\u003c/li\u003e\n\u003cli\u003e장애 조치 기구: 고장 시 대기 시스템으로 자동 전환.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e이벤트 주도형 아키텍처\u003c/h2\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e이벤트 주도 아키텍처는 시스템이 이벤트나 상태 변경에 대응하는 설계 패러다임입니다. 이 접근 방식은 높은 결합도를 갖추고, 유연성과 확장성을 촉진합니다.\u003c/p\u003e\n\u003cp\u003e활용 사례:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e실시간 분석\u003c/li\u003e\n\u003cli\u003e사물 인터넷 시스템\u003c/li\u003e\n\u003cli\u003e통지 시스템\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e사용자 액세스: 단일 vs. 멀티테넌트\u003c/h2\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003eSingle-tenant 아키텍처는 각 고객에게 소프트웨어 및 데이터베이스의 전용 인스턴스를 할당하며, 멀티테넌트 아키텍처는 다중 고객 사이에서 리소스를 공유합니다.\u003c/p\u003e\n\u003cp\u003e고려해야 할 사항:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e성능: Single-tenant는 더 나은 성능을 제공할 수 있지만, 멀티테넌트는 비용 효율적입니다.\u003c/li\u003e\n\u003cli\u003e보안: 멀티테넌트 시스템은 다른 고객들을 위한 데이터 격리 및 보안을 보장해야 합니다.\u003c/li\u003e\n\u003cli\u003e유지 보수: 멀티테넌트 시스템은 중앙에서 유지 및 업데이트하기 쉽습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e이러한 원칙을 준수하고 이러한 개념을 이해하여 현대 비즈니스 환경의 요구 사항을 충족하면서 확장 가능하고 신뢰할 수 있으며 비용 효율적인 데이터 아키텍처를 설계할 수 있습니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003ch1\u003e주요 데이터 아키텍처 패턴\u003c/h1\u003e\n\u003cp\u003e지난 수십 년간 데이터 아키텍처에서는 효과적으로 데이터를 관리하고 활용하기 위한 필수 요소로 여러 가지 핵심 패턴이 나타났습니다. 각 패턴에는 강점, 약점 및 이상적인 사용 사례가 있습니다. 여기에서 이러한 패턴을 간단히 살펴보고, 다양한 맥락에서 어떻게 적용할 수 있는지 설명하겠습니다.\u003c/p\u003e\n\u003ch2\u003e1. 데이터 웨어하우스\u003c/h2\u003e\n\u003cp\u003e데이터 웨어하우스는 구조화된 데이터를 저장하고 보고 및 분석하기 위해 설계된 중앙 저장소입니다. 쿼리 성능과 데이터 집계에 최적화되어 있어 비즈니스 인텔리전스 애플리케이션에 이상적입니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e아래는 해당 데이터 아키텍처에 대한 간략한 설명입니다:\u003c/p\u003e\n\u003cp\u003e특징:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e중앙 집중 저장: 여러 출처에서 수집한 데이터를 한 곳에 저장합니다.\u003c/li\u003e\n\u003cli\u003e구조화된 데이터: 데이터가 체계적으로 구성되어 일반적으로 스키마를 따릅니다.\u003c/li\u003e\n\u003cli\u003e분석 최적화: 빠른 쿼리 및 데이터 검색을 위해 설계되었습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e혜택:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e높은 성능: 복잡한 쿼리와 데이터 분석에 최적화되어 있습니다.\u003c/li\u003e\n\u003cli\u003e데이터 통합: 다양한 소스에서 데이터를 통합하여 통일된 뷰를 제공합니다.\u003c/li\u003e\n\u003cli\u003e일관성: 스키마 강제화를 통해 데이터 품질과 일관성을 준수합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e사용 사례:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e비즈니스 인텔리전스 및 보고\u003c/li\u003e\n\u003cli\u003e과거 데이터 분석\u003c/li\u003e\n\u003cli\u003e다중 시스템에서 데이터 통합\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e2. 데이터 레이크\u003c/h2\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003eData lakes는 방대한 양의 원시, 비구조화 및 반구조화 데이터를 저장합니다. 데이터 웨어하우스와 달리 데이터 레이크는 데이터에 엄격한 스키마를 부과하지 않아 데이터 수집 및 저장에 더 많은 유연성을 제공합니다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-06-23-DataArchitectureABriefOverview_2.png\" alt=\"DataArchitectureABriefOverview_2.png\"\u003e\u003c/p\u003e\n\u003cp\u003e특징:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e원시 데이터 저장: 데이터를 원시 형식으로 저장합니다.\u003c/li\u003e\n\u003cli\u003e확장성: 대량의 데이터를 처리할 수 있습니다.\u003c/li\u003e\n\u003cli\u003e스키마형 읽기: 데이터 저장 시가 아닌 데이터를 읽을 때 스키마가 적용됩니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e장점:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e유연성: 구조화된, 비구조화된 및 반구조화된 데이터를 포함한 다양한 데이터 유형을 저장할 수 있습니다.\u003c/li\u003e\n\u003cli\u003e확장성: 대규모 데이터 작업을 처리하기에 적합합니다.\u003c/li\u003e\n\u003cli\u003e비용 효율성: 데이터 웨어하우스와 비교하여 대량의 데이터를 저장하는 데 비용이 저렴할 수 있습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e도전:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e데이터 관리: 적절한 관리 없이 데이터 레이크는 데이터 스왐프가 될 수 있습니다.\u003c/li\u003e\n\u003cli\u003e성능: 데이터 웨어하우스와 비교하여 쿼리 성능이 느릴 수 있습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e사용 사례:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e대규모 데이터 분석\u003c/li\u003e\n\u003cli\u003e기계 학습 및 데이터 과학\u003c/li\u003e\n\u003cli\u003e로그 및 이벤트 데이터 저장\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e3. 현대 데이터 스택\u003c/h2\u003e\n\u003cp\u003e현대 데이터 스택은 데이터 통합, 변환, 저장 및 분석을 용이하게 하는 일련의 모듈식 클라우드 기반 도구의 집합을 가리킵니다. 이 방식은 기민성, 확장성 및 사용 편의성을 강조합니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e아래는 마크다운 형식으로 변경한 내용입니다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-06-23-DataArchitectureABriefOverview_3.png\" alt=\"Data Architecture Overview\"\u003e\u003c/p\u003e\n\u003cp\u003eComponents:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eData Ingestion: Tools like Fivetran or Stitch for extracting and loading data.\u003c/li\u003e\n\u003cli\u003eData Transformation: Tools like dbt (data build tool) for transforming data within the warehouse.\u003c/li\u003e\n\u003cli\u003eData Storage: Cloud data warehouses like Snowflake or Google BigQuery.\u003c/li\u003e\n\u003cli\u003eData Visualization: Tools like Looker, Tableau, or Mode for data exploration and visualization.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eBenefits:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e모듈성: 쉽게 교체하거나 업그레이드할 수 있는 유연한 구성 요소입니다.\u003c/li\u003e\n\u003cli\u003e확장성: 데이터 양과 사용량에 맞게 확장되는 클라우드 기반 솔루션입니다.\u003c/li\u003e\n\u003cli\u003e사용 편의성: 사용자 친화적인 인터페이스와 자동화로 광범위한 기술 전문 지식이 필요하지 않습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e사용 사례:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e데이터 분석 솔루션의 신속한 배포\u003c/li\u003e\n\u003cli\u003e민첩한 데이터 관리 및 변환\u003c/li\u003e\n\u003cli\u003e셀프 서비스 분석 및 보고\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e4. 통합 배치 및 스트리밍 아키텍처\u003c/h2\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e통합 배치 및 스트리밍 아키텍처는 실시간 및 일괄 데이터를 하나의 프레임워크에서 처리하는 것을 목표로 합니다. 이 접근 방식은 데이터 처리 파이프라인을 간소화하고 일괄 및 스트리밍 데이터를 관리하기 위한 별도 시스템의 복잡성을 줄입니다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-06-23-DataArchitectureABriefOverview_4.png\" alt=\"이미지\"\u003e\u003c/p\u003e\n\u003cp\u003e주요 아키텍처:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e람다 아키텍처: 데이터 흐름을 별도 경로로 분리하여 일괄 및 스트리밍 처리를 결합합니다.\u003c/li\u003e\n\u003cli\u003e카파 아키텍처: 모든 데이터를 스트림으로 처리함으로써 람다 아키텍처를 간소화합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003ch2\u003e람다 아키텍처:\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eBatch Layer: 대규모의 과거 데이터를 처리합니다.\u003c/li\u003e\n\u003cli\u003eSpeed Layer: 즉각적인 인사이트를 위해 실시간 데이터를 처리합니다.\u003c/li\u003e\n\u003cli\u003eServing Layer: 배치 및 스피드 레이어의 출력을 통합된 결과로 병합합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e장점:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e포괄적인 데이터 처리: 과거 및 실시간 데이터를 처리합니다.\u003c/li\u003e\n\u003cli\u003e장애 허용성: 배치 재처리를 통해 데이터 정확성을 보장합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e도전:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e복잡성: 별도의 배치 및 스트리밍 시스템을 관리하는 것은 어려울 수 있습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eKappa 아키텍처:\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e통합형 스트림 처리: 모든 데이터를 스트림으로 처리하여 아키텍처를 간소화합니다.\u003c/li\u003e\n\u003cli\u003e재처리: 데이터 스트림을 재처리하여 과거 분석을 수행할 수 있습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e혜택:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e간단함: 단일 데이터 처리 모델을 사용하여 복잡성을 줄임.\u003c/li\u003e\n\u003cli\u003e유연성: 관리 및 확장이 더 쉬움.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e5. 데이터 레이크하우스\u003c/h2\u003e\n\u003cp\u003e데이터 레이크하우스는 데이터 레이크와 데이터 웨어하우스의 기능을 결합하여, 데이터 레이크의 유연성과 데이터 웨어하우스의 성능 및 관리 기능을 제공합니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cimg src=\"/assets/img/2024-06-23-DataArchitectureABriefOverview_5.png\"\u003e\n\u003cp\u003e특징:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e통합 스토리지: 구조화된 및 구조화되지 않은 데이터를 모두 저장합니다.\u003c/li\u003e\n\u003cli\u003eACID 트랜잭션: 데이터 작업에 대한 원자성, 일관성, 격리 및 내구성을 지원합니다.\u003c/li\u003e\n\u003cli\u003e스키마 강제: 스키마를 읽거나 쓸 때 스키마에 대한 강제를 허용합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e혜택:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e유연성: 다양한 데이터 유형과 워크로드를 처리할 수 있습니다.\u003c/li\u003e\n\u003cli\u003e성능: 고성능 쿼리 및 데이터 관리를 위해 최적화되었습니다.\u003c/li\u003e\n\u003cli\u003e데이터 관리: 견고한 데이터 관리 및 거버넌스 기능을 제공합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e사용 사례:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e통합 데이터 분석 및 보고\u003c/li\u003e\n\u003cli\u003e기계 학습 및 AI 워크로드\u003c/li\u003e\n\u003cli\u003e실시간 및 일괄 데이터 처리\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e6. 데이터 매쉬\u003c/h2\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e데이터 메시는 도메인 주도 설계의 원칙을 데이터 관리에 적용한 분산형 데이터 아키텍처로, 중앙 집중식 데이터 레이크나 데이터 웨어하우스에서 데이터 소유 및 책임을 특정 비즈니스 도메인과 일치시키는 분산 모델로 전환합니다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-06-23-DataArchitectureABriefOverview_6.png\" alt=\"이미지\"\u003e\u003c/p\u003e\n\u003cp\u003e특징:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e도메인 중심: 데이터는 해당 도메인이 가장 잘 아는 곳에서 관리됩니다.\u003c/li\u003e\n\u003cli\u003e제품으로서의 데이터: 각 도메인은 데이터를 제품으로 취급하여 품질과 사용성을 보장합니다.\u003c/li\u003e\n\u003cli\u003e셀프 서비스 데이터 인프라: 도메인이 자체적으로 데이터를 관리할 수 있도록 필요한 도구와 플랫폼을 제공합니다.\u003c/li\u003e\n\u003cli\u003e연합된 지배 체계: 중앙 집중식 정책과 표준을 분산 방식으로 시행합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e혜택:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e확장성: 비즈니스가 성장함에 따라 조직이 데이터 아키텍처를 확장하는 것을 가능하게 합니다.\u003c/li\u003e\n\u003cli\u003e민첩성: 더 빠르고 유연한 데이터 관리와 분석을 가능하게 합니다.\u003c/li\u003e\n\u003cli\u003e소유권: 도메인 내에서 데이터 소유권과 책임을 강조합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e사용 사례:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e다양한 데이터 요구 사항을 가진 대규모 조직\u003c/li\u003e\n\u003cli\u003e데이터 거버넌스 및 품질을 향상시키려는 기업\u003c/li\u003e\n\u003cli\u003e데이터 인프라를 확장하려는 조직\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003ch2\u003e7. 데이터 패브릭\u003c/h2\u003e\n\u003cp\u003e데이터 패브릭은 온프레미스 및 클라우드 환경을 횡단하며 이종 데이터 원본 및 응용 프로그램을 연결하여 통합 데이터 환경을 만드는 구조적 방법론입니다. 일관된 데이터 관리와 거버넌스를 보장하며 심층적인 데이터 접근과 통합을 제공하여 데이터 환경의 일관성을 유지하고자 합니다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-06-23-DataArchitectureABriefOverview_7.png\" alt=\"데이터 아키텍처 개요\"\u003e\u003c/p\u003e\n\u003cp\u003e특징:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e통합 액세스: 모든 데이터 원본에 대한 단일 액세스 포인트를 제공합니다.\u003c/li\u003e\n\u003cli\u003e통합: 다양한 데이터 환경을 연결하여 데이터 이동 및 통합을 가능하게 합니다.\u003c/li\u003e\n\u003cli\u003e자동화: AI 및 기계 학습을 활용하여 데이터 관리 작업을 자동화합니다.\u003c/li\u003e\n\u003cli\u003e거버넌스: 데이터 풍경 전반에 걸쳐 데이터 품질, 보안 및 규정 준수를 보장합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e혜택:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e일관성: 조직 전반에서 일관된 데이터를 보장합니다.\u003c/li\u003e\n\u003cli\u003e효율성: 데이터 실로를 줄이고 데이터 액세스를 간소화합니다.\u003c/li\u003e\n\u003cli\u003e민첩성: 신속한 데이터 통합 및 이동을 용이하게 합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e사용 사례:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e하이브리드 데이터 환경을 가진 조직\u003c/li\u003e\n\u003cli\u003e데이터 통합 및 관리를 개선하고자 하는 기업\u003c/li\u003e\n\u003cli\u003e데이터 지배와 준수를 보장해야 하는 비즈니스\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003e추가 자료\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003eRoss Pettit의 “Utility from Value Add 구분하기”\u003c/li\u003e\n\u003cli\u003eJoshua Klahr의 “현대 데이터 아키텍처의 여섯 가지 원칙”\u003c/li\u003e\n\u003cli\u003eSnowflake의 “데이터 웨어하우스 아키텍처란?” 웹 페이지\u003c/li\u003e\n\u003cli\u003eErik Bernhardsson의 “소프트웨어 인프라 2.0: 워크리스트”\u003c/li\u003e\n\u003cli\u003eEtai Mizrahi의 “데이터 빚을 앞서가는 방법”\u003c/li\u003e\n\u003cli\u003eNeal Ford의 “전략 대 전술: SOA와 무관한 수구의 함정”\u003c/li\u003e\n\u003cli\u003eDustin Lange 등의 “Deequ로 규모에 맞게 테스트 데이터 품질 유지하기”\u003c/li\u003e\n\u003cli\u003eIBM Education의 “3계층 아키텍처”\u003c/li\u003e\n\u003cli\u003eTOGAF 프레임워크 웹사이트\u003c/li\u003e\n\u003cli\u003ePrukalpa의 “CDOs가 2021년 주목해야 할 상위 5가지 데이터 트렌드”\u003c/li\u003e\n\u003cli\u003eAlexey Makhotkin의 “240 개의 테이블과 문서가 없다고?”\u003c/li\u003e\n\u003cli\u003eMolly Vorwerck의 “관측 가능 데이터의 궁극적인 체크리스트”\u003c/li\u003e\n\u003cli\u003eApache Flink Roadmap의 “통합 분석: 일괄 및 스트리밍이 만나다; SQL 이상”\u003c/li\u003e\n\u003cli\u003eMartin Fowler의 “Utility Vs Strategic Dichotomy”\u003c/li\u003e\n\u003cli\u003eBen Lorica 등의 “데이터 레이크하우스란?”\u003c/li\u003e\n\u003cli\u003eThor Olavsrud의 “데이터 관리를 위한 프레임워크인 데이터 아키텍처란?”\u003c/li\u003e\n\u003cli\u003eCasber Wang의 “오픈 데이터 생태계란 무엇이며 왜 계속해서 존재하는가?”\u003c/li\u003e\n\u003cli\u003eLaszlo Sragner의 “MLOps가 잘못된 이유는 무엇인가?”\u003c/li\u003e\n\u003cli\u003eChris Riccomini의 “데이터 메시가 뭐길래”\u003c/li\u003e\n\u003cli\u003eMartin Fowler의 “누가 아키텍트가 필요한가”\u003c/li\u003e\n\u003cli\u003eZachman 프레임워크 위키피디아 페이지\u003c/li\u003e\n\u003cli\u003ePrukalpa의 “현대 데이터 플랫폼의 구성 요소”\u003c/li\u003e\n\u003cli\u003eZhamak Dehghani의 “단일 데이터 레이크를 분산 데이터 메시로 나아가는 방법”\u003c/li\u003e\n\u003cli\u003eZhamak Dehghani의 “데이터 메시 원칙 및 논리 아키텍처”\u003c/li\u003e\n\u003cli\u003eIman Samizadeh의 “큰 데이터용 람다와 카파 두 데이터 처리 아키텍처 간단 소개”\u003c/li\u003e\n\u003cli\u003eHussein Danish의 “원칙에 따른 데이터 엔지니어링, 제1부: 아키텍처 전망”\u003c/li\u003e\n\u003cli\u003eJay Kreps의 “로그: 소프트웨어 엔지니어가 실시간 데이터의 통일된 추상화에 대해 알아야 할 사항”\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e이것들은 저가 블로그 글 작성 중 살펴본 일부 자료입니다. 이들은 데이터 아키텍처의 개념과 모범 사례에 대한 추가 통찰력을 제공하고 깊게 이해하는 데 도움이 될 수 있습니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003ch1\u003e요약\u003c/h1\u003e\n\u003cp\u003e이 블로그 포스트에서는 학습 중에 만난 데이터 아키텍처의 기본 원칙 중 일부를 개요로 설명하고 간략히 주요 데이터 아키텍처 패턴을 논의했습니다.\u003c/p\u003e\n\u003cp\u003e이 상세한 데이터 아키텍처 패턴을 이해함으로써, 조직의 요구에 가장 적합한 아키텍처를 결정하고 효과적으로 구현하는 방법에 대해 정보를 얻을 수 있습니다.\u003c/p\u003e\n\u003cp\u003e만일 내가 어떤 원칙이나 아키텍처를 잘못 이해하고 있다면 말씀해 주십시오. 배우는 것에 기쁨을 느낄 테니까요.\u003c/p\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-06-23-DataArchitectureABriefOverview"},"buildId":"QYe6gFAUryFKFgjKBoIfo","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
