@@ -3,13 +3,12 @@ title: "Windows 터미널을 더욱 향상시켜보세요 Oh My Posh와 함께�
 description: ""
 coverImage: "/assets/img/2024-06-20-ImproveYourWindowsTerminalwithOhMyPoshAStep-by-StepInstallationGuidevscodesetupincluded_0.png"
 date: 2024-06-20 14:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-20-ImproveYourWindowsTerminalwithOhMyPoshAStep-by-StepInstallationGuidevscodesetupincluded_0.png
 tag: Tech
 originalTitle: "Improve Your Windows Terminal with Oh My Posh: A Step-by-Step Installation Guide(vscode setup included)"
 link: "https://medium.com/@pooya-ghorbani-hafez/improve-your-windows-terminal-with-oh-my-posh-a-step-by-s-ep-installation-guide-vscode-setup-92252a279477"
 ---
-
 
 <img src="/assets/img/2024-06-20-ImproveYourWindowsTerminalwithOhMyPoshAStep-by-StepInstallationGuidevscodesetupincluded_0.png" />
 
@@ -75,13 +74,13 @@ notepad $PROFILE
 
 위 명령어에서 오류가 발생하면 먼저 프로필을 만들어야 합니다:
 
-```powershell
+```js
 New-Item -Path $PROFILE -Type File -Force
 ```
 
 그런 다음 다음 줄을 추가하십시오:
 
-```powershell
+```js
 oh-my-posh init pwsh | Invoke-Expression
 ```
 
@@ -93,7 +92,7 @@ oh-my-posh init pwsh | Invoke-Expression
 . $PROFILE
 ```
 
-위의 명령어를 입력한 후 이와 같은 오류가 발생하면: 
+위의 명령어를 입력한 후 이와 같은 오류가 발생하면:
 
 ![이미지](/assets/img/2024-06-20-ImproveYourWindowsTerminalwithOhMyPoshAStep-by-StepInstallationGuidevscodesetupincluded_2.png)
 
@@ -115,13 +114,11 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 만약 이와 같은 오류가 vscode에서 발생한다면:
 
-
 ![Error](/assets/img/2024-06-20-ImproveYourWindowsTerminalwithOhMyPoshAStep-by-StepInstallationGuidevscodesetupincluded_3.png)
-
 
 터미널을 관리자 모드로 실행하여 다음 명령어를 실행해주세요:
 
-```powershell
+```js
 Install-Module PsReadLine -Force
 ```
 
@@ -129,9 +126,7 @@ Install-Module PsReadLine -Force
 
 만약 vscode에서 이런 식으로 나쁜 인코딩이 발생한다면:
 
-
 <img src="/assets/img/2024-06-20-ImproveYourWindowsTerminalwithOhMyPoshAStep-by-StepInstallationGuidevscodesetupincluded_4.png" />
-
 
 다음 코드를 vscode 설정 파일인 setting.json에 추가해보세요:
 

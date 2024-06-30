@@ -3,13 +3,12 @@ title: "Raspberry Pi 4과 Debian 12 Bookworm에 Nodejs를 사용하여 개인 �
 description: ""
 coverImage: "/assets/img/2024-06-22-WhatIlearnedaboutbusinessbyhostingmyownpersonalwebsiteusingnodejsonaRaspberryPi4usingDebian12Bookworm_0.png"
 date: 2024-06-22 19:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-WhatIlearnedaboutbusinessbyhostingmyownpersonalwebsiteusingnodejsonaRaspberryPi4usingDebian12Bookworm_0.png
 tag: Tech
 originalTitle: "What I learned about business by hosting my own personal website using node.js on a Raspberry Pi 4 using Debian 12 Bookworm"
 link: "https://medium.com/@capjmk/what-i-learned-about-business-by-hosting-my-own-personal-website-using-node-js-4ffa34170920"
 ---
-
 
 TL;DR: 네, 확인해보세요 https://julianmkleber.com 시리즈 기사를 따라오면서 몇 일 동안 게임 속으로 빨려 들어갔군요. 멋지네요. 포식자들이 있더라도, 노력한다면 작은 (모델) 회사를 그들로부터 방어할 수 있다는 것을 배웠을 겁니다. 그래서 전 세계에 우리가 XMR을 채굴하여 돈을 버는 인프라를 구축할 수 있다는 것을 증명한 후, 웹사이트를 호스팅하는 것을 시작할 수 있습니다. 이 블로그 글에서는 node.js, podman, vue.js, certbot, fail2ban 및 nginx을 사용하여 정적 웹사이트를 호스팅하는 방법에 대해 설명하고 있습니다. 제 설정은 회사 설정에서 하나의 웹 프로젝트마다 연간 최소 $666을 절약합니다.
 
@@ -105,7 +104,6 @@ sudo systemctl daemon-reload && sudo systemctl restart sshd && sudo systemctl st
 
 # 컨테이너 만들기
 
-
 <div class="content-ad"></div>
 
 우리는 Vuepress 웹사이트를 호스팅하려고 합니다. 그를 위해서는 node.js가 필요합니다. 컨테이너를 사용하여 노드 배포에 대한 실습을 해보기 위해 컨테이너를 설정할 것입니다.
@@ -147,7 +145,6 @@ CMD serve ./dist
 가끔씩 우리는 응용 프로그램을 개발하기 위해 시스템에서 노드를 사용할 수 있습니다. 이는 보안 취약점을 유발할 수 있어 프로덕션 서버에서는 그렇게 하고 싶지 않습니다.
 
 하지만, 이제 어떻게 애플리케이션을 레지스트리에 배포할 수 있을까요? 워크플로우는 꽤 단순합니다. 우리는 개발 머신에서 개발합니다 (보안 상의 이유로 웹 서비스와 통신할 수 없을 수 있음). 그리고 코드를 리포지토리에 푸시합니다. 그런 다음 코드 리뷰를 하고 코드를 스테이징 브랜치에 커밋합니다 (메인일 수도 있고 아닐 수도 있음 — 당신의 취향에 따라 다름). 그런 다음 스테이징 서버의 웹 후크가 트리거되어 컨테이너를 빌드하고 레지스트리에 컨테이너를 푸시하게 됩니다.
-
 
 <div class="content-ad"></div>
 
@@ -278,7 +275,7 @@ sudo iptables -I INPUT -p tcp --dport 443 -j ACCEPT #https 포트
 sudo iptables -I INPUT -p tcp --dport 22 -j ACCEPT
 sudo iptables -I INPUT -p tcp --dport 5000 -j ACCEPT
 sudo iptables -A INPUT -p icmp --icmp-type 0 -m state --state ESTABLISHED,RELATED -j ACCEPT
-sudo iptables -A INPUT -i lo -j ACCEPT 
+sudo iptables -A INPUT -i lo -j ACCEPT
 sudo iptables -A INPUT -j DROP
 sudo iptables -A INPUT -s 192.168.178.0/24  -j ACCEPT #공개 접근 피하기
 sudo iptables -I OUTPUT -d 192.168.1.0/24  -p tcp --dport 22 -j REJECT #서브넷으로 SSH 발신 차단
@@ -346,7 +343,6 @@ sudo nano /etc/systemd/system/iptables-persistent.service
 
 <div class="content-ad"></div>
 
-
 [Unit]
 Description=부팅 시 iptables restore를 실행합니다.
 ConditionFileIsExecutable=/usr/share/iptables/restore.sh
@@ -362,15 +358,11 @@ GuessMainPID=no
 [Install]
 WantedBy=multi-user.target
 
-
 마지막으로, 세 가지 좋아하는 명령어를 실행해봅시다.
-
 
 sudo systemctl daemon-reload && sudo systemctl enable iptables-persistent.service && sudo systemctl start iptables-persistent.service && sudo systemctl status iptables-persistent.service
 
-
 이제 작동하는지 확인해보세요.
-
 
 <div class="content-ad"></div>
 
@@ -455,7 +447,7 @@ sudo nano /etc/nginx/nginx.conf
 
 <div class="content-ad"></div>
 
-```http
+```js
 limit_req_zone $binary_remote_addr zone=one:10m rate=1r/s;
 limit_req_zone $server_name zone=perserver:10m rate=100r/s;
 ```
@@ -515,7 +507,7 @@ server {
     }
 ```
 
-- *주의: 확인 후에 이 연결을 닫으세요**
+- \*주의: 확인 후에 이 연결을 닫으세요\*\*
 
 데몬이 실행 중인 경우에만 사용하고 서비스가 인증서를 갱신할 때 사용하지 않는 두 개의 백업된 nginx 설정 파일을 보유하는 방식으로 이 작업을 수행할 수 있습니다.
 

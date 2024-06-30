@@ -3,13 +3,12 @@ title: "Flutter에서 MQTT 사용하여 ESP8266 IoT 기기 연결하는 완벽 �
 description: ""
 coverImage: "/assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_0.png"
 date: 2024-06-23 16:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-MQTTinFlutterAComprehensiveGuidetoConnectApplicationswithESP8266IOTDevicesPARTII_0.png
 tag: Tech
 originalTitle: "MQTT in Flutter: A Comprehensive Guide to Connect Applications with ESP8266 IOT Devices — PART II"
 link: "https://medium.com/@punnyarthabanerjee/mqtt-in-flutter-a-comprehensive-guide-to-connect-applications-with-esp8266-iot-devices-part-ii-2a0c909e01e8"
 ---
-
 
 지난 글에서는 Esp8266을 MQTT 브로커에 연결하도록 구성하는 방법에 대해 논의했습니다. 아직 확인하지 않으셨다면, 먼저 그 글을 읽는 것을 적극 권장합니다.
 
@@ -27,7 +26,7 @@ link: "https://medium.com/@punnyarthabanerjee/mqtt-in-flutter-a-comprehensive-gu
 
 그런 다음 프로젝트에 위젯을 만드십시오.
 
-```dart
+```js
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -37,7 +36,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
- 
+
   @override
   Widget build(BuildContext context) {
     return Container(); // 이 부분은 나준에 업데이트할 예정입니다.
@@ -49,7 +48,7 @@ class _HomePageState extends State<HomePage> {
 
 MQTTServerClient 객체를 만들고 Future 객체를 초기화합니다.
 
-```dart
+```js
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
 
@@ -58,7 +57,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  
+
   late MqttServerClient client; // 참고: 브라우저용 MqttBrowserClient도 있습니다
 
   late Future _onConnect; // 브로커에 연결되었는지 확인하기 위해 사용합니다
@@ -72,10 +71,10 @@ class _HomePageState extends State<HomePage> {
 
 다음으로 연결을 위한 라이프사이클 함수를 만들어보겠습니다.
 
-```dart
+```js
 Future<void> onConnected() async {
   Logger().i("Connected"); // print를 사용하거나 Logger 라이브러리를 설치하여 사용할 수 있습니다
-  
+
   // "test" 토픽에 구독합니다
   client.subscribe("test", MqttQos.atLeastOnce);
 
@@ -110,7 +109,7 @@ Future<void> connect() async {
 
       Logger().i("클라이언트가 생성되었습니다");
 
-    
+
     Logger().i("프로토콜이 설정되었습니다");
 
     client.logging(on: true);
@@ -137,7 +136,7 @@ Future<void> connect() async {
       body: FutureBuilder(
         future: _onConnect,
         builder: (context, snapshot) {
-           
+
           // 연결이 진행 중인 경우 로딩 화면을 표시합니다
           if(snapshot.connectionState == ConnectionState.waiting){
             return const Center(
@@ -146,19 +145,19 @@ Future<void> connect() async {
           }
 
           return StreamBuilder<List<MqttReceivedMessage<MqttMessage?>>>(
-            
+
             stream: client.updates,
-            
+
             builder: (context, snapshot) {
-          
+
               if(snapshot.hasData){
                 // "test" 토픽에서 Esp8266에서 전송한 데이터를 읽습니다
                 final message = snapshot.data!.first.payload as MqttPublishMessage;
-                
+
                 final payload = MqttPublishPayload.bytesToStringAsString(message.payload.message);
-                
+
                 Logger().i(payload);
-                
+
                 return Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -169,7 +168,7 @@ Future<void> connect() async {
                   ),
                 );
               }
-          
+
               return const Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -190,7 +189,7 @@ Future<void> connect() async {
 
 전체 코드
 
-```dart
+```js
 import 'package:flutter/material.dart';
 import 'package:logger/web.dart';
 import 'package:mqtt_client/mqtt_client.dart';
@@ -254,7 +253,7 @@ class _HomePageState extends State<HomePage> {
 
     try {
       client = MqttServerClient.withPort("<MQTT HOST>","<ANY NAME>",<PORT like 8883>);
-      
+
       client.secure = true;
       Logger().i("Client created");
 
@@ -327,7 +326,6 @@ class _HomePageState extends State<HomePage> {
 
 <div class="content-ad"></div>
 
-
 ![이미지](https://miro.medium.com/v2/resize:fit:1200/1*SWHkvNtFqG3cDvk6oGLxew.gif)
 
 # 우하하 !! 우리가 MQTT를 사용하여 Esp8266에서 앱으로 데이터 성공적으로 전송했어요 !
@@ -335,7 +333,6 @@ class _HomePageState extends State<HomePage> {
 ## 마지막으로
 
 대부분의 경우에는 IOT 디바이스에서 모바일 앱으로 데이터를 직접 전송하는 것은 유용하지 않을 수 있습니다. 센서 데이터와 관련된 많은 처리가 필요하기 때문입니다. 이를 위해 센서에서 데이터를 가져오기 위해 브로커에 연결할 전용 백엔드가 필요하며, 그런 다음 처리된 데이터를 다른 주제에 발행하여 이를 모바일 애플리케이션이 구독하게 할 수 있습니다. 나는 미래에 IOT의 전체 인프라에 대한 자세한 기사를 쓸지도 모르겠어요.
-
 
 <div class="content-ad"></div>
 
