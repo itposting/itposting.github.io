@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>리눅스 파일 권한 설정 완벽 가이드 이해와 사용 방법 | itposting</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://itposting.github.io///post/2024-07-01-LinuxFilePermissions" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="리눅스 파일 권한 설정 완벽 가이드 이해와 사용 방법 | itposting" data-gatsby-head="true"/><meta property="og:title" content="리눅스 파일 권한 설정 완벽 가이드 이해와 사용 방법 | itposting" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-07-01-LinuxFilePermissions_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://itposting.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://itposting.github.io///post/2024-07-01-LinuxFilePermissions" data-gatsby-head="true"/><meta name="twitter:title" content="리눅스 파일 권한 설정 완벽 가이드 이해와 사용 방법 | itposting" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-07-01-LinuxFilePermissions_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | itposting" data-gatsby-head="true"/><meta name="article:published_time" content="2024-07-01 17:24" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-23YXDLKDCL"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-23YXDLKDCL');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-ac4aa08aae62f90e.js" defer=""></script><script src="/_next/static/chunks/463-0429087d4c0b0335.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-d849684d6d83f07a.js" defer=""></script><script src="/_next/static/CYQjEY3HhSkRTiL0gewc0/_buildManifest.js" defer=""></script><script src="/_next/static/CYQjEY3HhSkRTiL0gewc0/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">IT Posting</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">리눅스 파일 권한 설정 완벽 가이드 이해와 사용 방법</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="리눅스 파일 권한 설정 완벽 가이드 이해와 사용 방법" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">IT Posting</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jul 1, 2024</span><span class="posts_reading_time__f7YPP">4<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-07-01-LinuxFilePermissions&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<p><img src="/assets/img/2024-07-01-LinuxFilePermissions_0.png" alt="이미지"></p>
+<p>본 글은 AWS에서 EC2 인스턴스를 사용하여 파일 권한 관리에 대해 설명합니다. 명령어, 출력물 및 핵심적인 기술들을 강조하며 클라우드 관련 역할에서의 중요성을 강조할 것입니다.</p>
+<p>배운 주요 기술:</p>
+<ul>
+<li>이 랩을 통해 EC2 인스턴스에 SSH를 사용하여 연결하고, chown 및 chmod 명령어를 사용하여 파일 및 폴더 권한을 관리하는 등 중요한 기술을 연습할 수 있었습니다.</li>
+<li>파일 권한을 이해하는 것은 클라우드 시스템 보안에 매우 중요합니다. 사용자 및 그룹에 적절한 액세스 권한을 부여하여 데이터의 기밀성과 무결성을 보장하는 방법을 배웠습니다.</li>
+</ul>
+<div class="content-ad"></div>
+<p>현실적인 업무 시나리오:</p>
+<ul>
+<li>시스템 관리자: 기업의 클라우드 인프라 내에서 민감한 데이터에 대한 사용자 액세스를 제어하기 위해 파일 권한을 정기적으로 관리합니다.</li>
+<li>보안 전문가: 보안 모범 사례와 규정을 준수하기 위해 권한 구조를 구현하고 유지합니다.</li>
+<li>클라우드 아키텍트: 세밀한 권한 제어를 통합한 안전하고 확장 가능한 클라우드 환경을 설계합니다.</li>
+</ul>
+<p>시작해봅시다!</p>
+<p>아마존 리눅스 EC2 인스턴스에 연결하고 SSH 명령을 사용하여 파일 및 폴더 권한을 관리할 것입니다.</p>
+<div class="content-ad"></div>
+<p><img src="/assets/img/2024-07-01-LinuxFilePermissions_1.png" alt="Linux File Permissions"></p>
+<p>SSH 연결:</p>
+<p>EC2 인스턴스에 연결하려면 PuTTY(Windows)와 같은 SSH 클라이언트를 사용할 수 있습니다. 제공된 자격 증명(공용 IP 주소 및 키 파일)는 안전한 연결을 확립하는 데 필수적입니다.</p>
+<p>제 경우에는 SSH 클라이언트로, Chrome용으로 구성된 Secure Shell을 사용했습니다. Secure Shell은 xterm 호환 터미널 에뮬레이터 및 독립형 SSH 클라이언트입니다.</p>
+<div class="content-ad"></div>
+<p><img src="/assets/img/2024-07-01-LinuxFilePermissions_2.png" alt="LinuxFilePermissions_2"></p>
+<p>Changing Ownership:</p>
+<p>폴더의 소유권을 변경하는 방법을 살펴봅니다. chown 명령을 사용할 것입니다. 명령어는 다음과 같은 형식을 따릅니다:</p>
+<pre><code class="hljs language-bash">sudo <span class="hljs-built_in">chown</span> -R &#x3C;username>:&#x3C;groupname> &#x3C;folder_path>
+</code></pre>
+<div class="content-ad"></div>
+<ul>
+<li>sudo: 소유권 변경에 대한 관리자 권한을 부여합니다.</li>
+<li>-R: 지정된 폴더 내의 모든 파일 및 하위 폴더에 변경을 재귀적으로 적용합니다.</li>
+<li><code>username</code>: 폴더의 새 소유자입니다.</li>
+<li><code>groupname</code>: 폴더와 관련된 새 그룹입니다.</li>
+<li><code>folder_path</code>: 소유권을 변경하려는 폴더의 경로입니다.</li>
+</ul>
+<p>예를 들어, "companyA" 폴더의 소유권을 사용자 "mjackson" 및 그룹 "Personnel"로 변경하려면 다음을 사용하면 됩니다:</p>
+<pre><code class="hljs language-js">sudo chown -R <span class="hljs-attr">mjackson</span>:<span class="hljs-title class_">Personnel</span> /home/ec2-user/companyA
+</code></pre>
+<p><img src="/assets/img/2024-07-01-LinuxFilePermissions_3.png" alt="Linux 파일 권한 이미지"></p>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js">sudo chown -R <span class="hljs-attr">eowusu</span>:<span class="hljs-title class_">Shipping</span> <span class="hljs-title class_">Shipping</span>
+</code></pre>
+<p><img src="/assets/img/2024-07-01-LinuxFilePermissions_4.png" alt="Linux File Permissions"></p>
+<p>파일 권한 변경:</p>
+<p>이 랩은 파일 권한을 수정하는 chmod 명령어를 소개합니다. Symbolic 모드와 Absolute 모드 두 가지가 있습니다.</p>
+<div class="content-ad"></div>
+<p>Symbolic Mode:</p>
+<p>간단한 권한 변경을 기억하기 쉽습니다.</p>
+<p>특정 작업을 나타내는 문자와 기호를 사용합니다:</p>
+<ul>
+<li>r - 읽기 권한</li>
+<li>w - 쓰기 권한</li>
+<li>x - 실행 권한</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>권한 추가</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>권한 제거</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>= - 정확한 권한 설정 (기존 권한을 모두 제거하고 지정된 권한을 설정합니다)</li>
+</ul>
+<div class="content-ad"></div>
+<p>예시:</p>
+<ul>
+<li>g+w: 그룹에 쓰기 권한 부여</li>
+<li>u-x: 소유자의 실행 권한 제거</li>
+<li>o=rw: 다른 사용자에 대한 정확한 권한 설정 (읽기 및 쓰기만)</li>
+</ul>
+<pre><code class="hljs language-js">sudo chmod &#x3C;허가_모드> &#x3C;파일_경로>
+</code></pre>
+<p><img src="/assets/img/2024-07-01-LinuxFilePermissions_5.png" alt="이미지"></p>
+<div class="content-ad"></div>
+<p>Absolute Mode:</p>
+<ul>
+<li>복잡한 허가 할당에 대해 더 간결합니다.</li>
+<li>모든 권한을 표현하기 위해 세 자리의 8진수를 사용합니다.</li>
+<li>각 숫자는 특정 사용자 그룹에 해당합니다:
+<ul>
+<li>첫 번째 숫자 (백의 자리): 소유자의 권한</li>
+<li>두 번째 숫자 (십의 자리): 그룹의 권한</li>
+<li>세 번째 숫자 (일의 자리): 다른 사용자들의 권한</li>
+</ul>
+</li>
+</ul>
+<p>각 숫자 자체는 권한 값을 결합한 것입니다:</p>
+<ul>
+<li>4: 읽기 권한</li>
+<li>2: 쓰기 권한</li>
+<li>1: 실행 권한</li>
+</ul>
+<div class="content-ad"></div>
+<p>권한을 설정하려면 해당 값을 추가하십시오. 권한을 제거하려면 기존 숫자에서 해당 값을 뺍니다 (0이 됨).</p>
+<p>예시:</p>
+<ul>
+<li>764: 소유자에게 읽기, 쓰기, 실행 권한 (4+2+1)을 부여합니다 (7), 그룹에게 읽기 및 쓰기 권한 (4+2)을 설정하며, 다른 사용자에게는 읽기 전용 권한 (4)을 줍니다.</li>
+<li>600: 그룹과 다른 사용자에게 모든 권한을 제거하고, 소유자에게 읽기와 쓰기 권한만 설정합니다 (6).</li>
+</ul>
+<p>적절한 모드 선택:</p>
+<div class="content-ad"></div>
+<ul>
+<li>심볼릭 모드를 사용하여 특정 사용자 그룹에 대한 특정 권한 추가 또는 제거와 같은 간단한 조정을 하세요.</li>
+<li>절대 모드를 사용하여 복잡한 권한 설정이 필요하거나 여러 권한 변경을 더 간결하게 나타내는 방법이 필요할 때 사용하세요.</li>
+<li>궁극적으로, 선택은 개인 취향과 편안함에 달려 있습니다. 두 모드 모두 파일 권한을 수정하는 동일한 결과를 얻습니다.</li>
+</ul>
+<p>변경 내용 확인:</p>
+<p>폴더와 해당 내용에 대한 소유권 및 권한 세부 정보를 보려면 ls -laR 명령을 사용하시면 됩니다. 이는 권한 변경이 성공적으로 이루어졌는지 확인하는 데 도움이 됩니다.</p>
+<p><img src="/assets/img/2024-07-01-LinuxFilePermissions_6.png" alt="Linux 파일 권한"></p>
+<div class="content-ad"></div>
+<p>결론:</p>
+<p>위 단계를 따르면 AWS EC2 인스턴스에서 파일 권한을 관리하는 실용적인 경험을 얻을 수 있습니다. 이는 클라우드에서 일하는 누구에게나 가치 있는 기술입니다, 특히 시스템 관리자, 보안 전문가, 그리고 클라우드 아키텍트들에게 유용합니다.</p>
+<p>기억하세요: 언제나 조직의 보안 정책과 데이터 접근 요구와 일치하는 권한 구조를 구현해야 합니다.</p>
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"리눅스 파일 권한 설정 완벽 가이드 이해와 사용 방법","description":"","date":"2024-07-01 17:24","slug":"2024-07-01-LinuxFilePermissions","content":"\n\n\n![이미지](/assets/img/2024-07-01-LinuxFilePermissions_0.png)\n\n본 글은 AWS에서 EC2 인스턴스를 사용하여 파일 권한 관리에 대해 설명합니다. 명령어, 출력물 및 핵심적인 기술들을 강조하며 클라우드 관련 역할에서의 중요성을 강조할 것입니다.\n\n배운 주요 기술:\n\n- 이 랩을 통해 EC2 인스턴스에 SSH를 사용하여 연결하고, chown 및 chmod 명령어를 사용하여 파일 및 폴더 권한을 관리하는 등 중요한 기술을 연습할 수 있었습니다.\n- 파일 권한을 이해하는 것은 클라우드 시스템 보안에 매우 중요합니다. 사용자 및 그룹에 적절한 액세스 권한을 부여하여 데이터의 기밀성과 무결성을 보장하는 방법을 배웠습니다.\n\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n현실적인 업무 시나리오:\n\n- 시스템 관리자: 기업의 클라우드 인프라 내에서 민감한 데이터에 대한 사용자 액세스를 제어하기 위해 파일 권한을 정기적으로 관리합니다.\n- 보안 전문가: 보안 모범 사례와 규정을 준수하기 위해 권한 구조를 구현하고 유지합니다.\n- 클라우드 아키텍트: 세밀한 권한 제어를 통합한 안전하고 확장 가능한 클라우드 환경을 설계합니다.\n\n시작해봅시다!\n\n아마존 리눅스 EC2 인스턴스에 연결하고 SSH 명령을 사용하여 파일 및 폴더 권한을 관리할 것입니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n\n![Linux File Permissions](/assets/img/2024-07-01-LinuxFilePermissions_1.png)\n\nSSH 연결:\n\nEC2 인스턴스에 연결하려면 PuTTY(Windows)와 같은 SSH 클라이언트를 사용할 수 있습니다. 제공된 자격 증명(공용 IP 주소 및 키 파일)는 안전한 연결을 확립하는 데 필수적입니다.\n\n제 경우에는 SSH 클라이언트로, Chrome용으로 구성된 Secure Shell을 사용했습니다. Secure Shell은 xterm 호환 터미널 에뮬레이터 및 독립형 SSH 클라이언트입니다.\n\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n\n![LinuxFilePermissions_2](/assets/img/2024-07-01-LinuxFilePermissions_2.png)\n\nChanging Ownership:\n\n폴더의 소유권을 변경하는 방법을 살펴봅니다. chown 명령을 사용할 것입니다. 명령어는 다음과 같은 형식을 따릅니다:\n\n```bash\nsudo chown -R \u003cusername\u003e:\u003cgroupname\u003e \u003cfolder_path\u003e\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- sudo: 소유권 변경에 대한 관리자 권한을 부여합니다.\n- -R: 지정된 폴더 내의 모든 파일 및 하위 폴더에 변경을 재귀적으로 적용합니다.\n- `username`: 폴더의 새 소유자입니다.\n- `groupname`: 폴더와 관련된 새 그룹입니다.\n- `folder_path`: 소유권을 변경하려는 폴더의 경로입니다.\n\n예를 들어, \"companyA\" 폴더의 소유권을 사용자 \"mjackson\" 및 그룹 \"Personnel\"로 변경하려면 다음을 사용하면 됩니다:\n\n```js\nsudo chown -R mjackson:Personnel /home/ec2-user/companyA\n```\n\n![Linux 파일 권한 이미지](/assets/img/2024-07-01-LinuxFilePermissions_3.png)\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\nsudo chown -R eowusu:Shipping Shipping\n```\n\n![Linux File Permissions](/assets/img/2024-07-01-LinuxFilePermissions_4.png)\n\n파일 권한 변경:\n\n이 랩은 파일 권한을 수정하는 chmod 명령어를 소개합니다. Symbolic 모드와 Absolute 모드 두 가지가 있습니다.\n\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\nSymbolic Mode:\n\n간단한 권한 변경을 기억하기 쉽습니다.\n\n특정 작업을 나타내는 문자와 기호를 사용합니다:\n\n- r - 읽기 권한\n- w - 쓰기 권한\n- x - 실행 권한\n- + - 권한 추가\n- - - 권한 제거\n- = - 정확한 권한 설정 (기존 권한을 모두 제거하고 지정된 권한을 설정합니다)\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n예시:\n\n- g+w: 그룹에 쓰기 권한 부여\n- u-x: 소유자의 실행 권한 제거\n- o=rw: 다른 사용자에 대한 정확한 권한 설정 (읽기 및 쓰기만)\n\n```js\nsudo chmod \u003c허가_모드\u003e \u003c파일_경로\u003e\n```\n\n![이미지](/assets/img/2024-07-01-LinuxFilePermissions_5.png)\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\nAbsolute Mode:\n\n- 복잡한 허가 할당에 대해 더 간결합니다.\n- 모든 권한을 표현하기 위해 세 자리의 8진수를 사용합니다.\n- 각 숫자는 특정 사용자 그룹에 해당합니다:\n    - 첫 번째 숫자 (백의 자리): 소유자의 권한\n    - 두 번째 숫자 (십의 자리): 그룹의 권한\n    - 세 번째 숫자 (일의 자리): 다른 사용자들의 권한\n\n각 숫자 자체는 권한 값을 결합한 것입니다:\n- 4: 읽기 권한\n- 2: 쓰기 권한\n- 1: 실행 권한\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n권한을 설정하려면 해당 값을 추가하십시오. 권한을 제거하려면 기존 숫자에서 해당 값을 뺍니다 (0이 됨).\n\n예시:\n\n- 764: 소유자에게 읽기, 쓰기, 실행 권한 (4+2+1)을 부여합니다 (7), 그룹에게 읽기 및 쓰기 권한 (4+2)을 설정하며, 다른 사용자에게는 읽기 전용 권한 (4)을 줍니다.\n- 600: 그룹과 다른 사용자에게 모든 권한을 제거하고, 소유자에게 읽기와 쓰기 권한만 설정합니다 (6).\n\n적절한 모드 선택:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 심볼릭 모드를 사용하여 특정 사용자 그룹에 대한 특정 권한 추가 또는 제거와 같은 간단한 조정을 하세요.\n- 절대 모드를 사용하여 복잡한 권한 설정이 필요하거나 여러 권한 변경을 더 간결하게 나타내는 방법이 필요할 때 사용하세요.\n- 궁극적으로, 선택은 개인 취향과 편안함에 달려 있습니다. 두 모드 모두 파일 권한을 수정하는 동일한 결과를 얻습니다.\n\n변경 내용 확인:\n\n폴더와 해당 내용에 대한 소유권 및 권한 세부 정보를 보려면 ls -laR 명령을 사용하시면 됩니다. 이는 권한 변경이 성공적으로 이루어졌는지 확인하는 데 도움이 됩니다.\n\n![Linux 파일 권한](/assets/img/2024-07-01-LinuxFilePermissions_6.png)\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n결론:\n\n위 단계를 따르면 AWS EC2 인스턴스에서 파일 권한을 관리하는 실용적인 경험을 얻을 수 있습니다. 이는 클라우드에서 일하는 누구에게나 가치 있는 기술입니다, 특히 시스템 관리자, 보안 전문가, 그리고 클라우드 아키텍트들에게 유용합니다.\n\n기억하세요: 언제나 조직의 보안 정책과 데이터 접근 요구와 일치하는 권한 구조를 구현해야 합니다.","ogImage":{"url":"/assets/img/2024-07-01-LinuxFilePermissions_0.png"},"coverImage":"/assets/img/2024-07-01-LinuxFilePermissions_0.png","tag":["Tech"],"readingTime":4},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-07-01-LinuxFilePermissions_0.png\" alt=\"이미지\"\u003e\u003c/p\u003e\n\u003cp\u003e본 글은 AWS에서 EC2 인스턴스를 사용하여 파일 권한 관리에 대해 설명합니다. 명령어, 출력물 및 핵심적인 기술들을 강조하며 클라우드 관련 역할에서의 중요성을 강조할 것입니다.\u003c/p\u003e\n\u003cp\u003e배운 주요 기술:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e이 랩을 통해 EC2 인스턴스에 SSH를 사용하여 연결하고, chown 및 chmod 명령어를 사용하여 파일 및 폴더 권한을 관리하는 등 중요한 기술을 연습할 수 있었습니다.\u003c/li\u003e\n\u003cli\u003e파일 권한을 이해하는 것은 클라우드 시스템 보안에 매우 중요합니다. 사용자 및 그룹에 적절한 액세스 권한을 부여하여 데이터의 기밀성과 무결성을 보장하는 방법을 배웠습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e현실적인 업무 시나리오:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e시스템 관리자: 기업의 클라우드 인프라 내에서 민감한 데이터에 대한 사용자 액세스를 제어하기 위해 파일 권한을 정기적으로 관리합니다.\u003c/li\u003e\n\u003cli\u003e보안 전문가: 보안 모범 사례와 규정을 준수하기 위해 권한 구조를 구현하고 유지합니다.\u003c/li\u003e\n\u003cli\u003e클라우드 아키텍트: 세밀한 권한 제어를 통합한 안전하고 확장 가능한 클라우드 환경을 설계합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e시작해봅시다!\u003c/p\u003e\n\u003cp\u003e아마존 리눅스 EC2 인스턴스에 연결하고 SSH 명령을 사용하여 파일 및 폴더 권한을 관리할 것입니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-07-01-LinuxFilePermissions_1.png\" alt=\"Linux File Permissions\"\u003e\u003c/p\u003e\n\u003cp\u003eSSH 연결:\u003c/p\u003e\n\u003cp\u003eEC2 인스턴스에 연결하려면 PuTTY(Windows)와 같은 SSH 클라이언트를 사용할 수 있습니다. 제공된 자격 증명(공용 IP 주소 및 키 파일)는 안전한 연결을 확립하는 데 필수적입니다.\u003c/p\u003e\n\u003cp\u003e제 경우에는 SSH 클라이언트로, Chrome용으로 구성된 Secure Shell을 사용했습니다. Secure Shell은 xterm 호환 터미널 에뮬레이터 및 독립형 SSH 클라이언트입니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-07-01-LinuxFilePermissions_2.png\" alt=\"LinuxFilePermissions_2\"\u003e\u003c/p\u003e\n\u003cp\u003eChanging Ownership:\u003c/p\u003e\n\u003cp\u003e폴더의 소유권을 변경하는 방법을 살펴봅니다. chown 명령을 사용할 것입니다. 명령어는 다음과 같은 형식을 따릅니다:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-bash\"\u003esudo \u003cspan class=\"hljs-built_in\"\u003echown\u003c/span\u003e -R \u0026#x3C;username\u003e:\u0026#x3C;groupname\u003e \u0026#x3C;folder_path\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003esudo: 소유권 변경에 대한 관리자 권한을 부여합니다.\u003c/li\u003e\n\u003cli\u003e-R: 지정된 폴더 내의 모든 파일 및 하위 폴더에 변경을 재귀적으로 적용합니다.\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eusername\u003c/code\u003e: 폴더의 새 소유자입니다.\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003egroupname\u003c/code\u003e: 폴더와 관련된 새 그룹입니다.\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003efolder_path\u003c/code\u003e: 소유권을 변경하려는 폴더의 경로입니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e예를 들어, \"companyA\" 폴더의 소유권을 사용자 \"mjackson\" 및 그룹 \"Personnel\"로 변경하려면 다음을 사용하면 됩니다:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003esudo chown -R \u003cspan class=\"hljs-attr\"\u003emjackson\u003c/span\u003e:\u003cspan class=\"hljs-title class_\"\u003ePersonnel\u003c/span\u003e /home/ec2-user/companyA\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-07-01-LinuxFilePermissions_3.png\" alt=\"Linux 파일 권한 이미지\"\u003e\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003esudo chown -R \u003cspan class=\"hljs-attr\"\u003eeowusu\u003c/span\u003e:\u003cspan class=\"hljs-title class_\"\u003eShipping\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eShipping\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-07-01-LinuxFilePermissions_4.png\" alt=\"Linux File Permissions\"\u003e\u003c/p\u003e\n\u003cp\u003e파일 권한 변경:\u003c/p\u003e\n\u003cp\u003e이 랩은 파일 권한을 수정하는 chmod 명령어를 소개합니다. Symbolic 모드와 Absolute 모드 두 가지가 있습니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003eSymbolic Mode:\u003c/p\u003e\n\u003cp\u003e간단한 권한 변경을 기억하기 쉽습니다.\u003c/p\u003e\n\u003cp\u003e특정 작업을 나타내는 문자와 기호를 사용합니다:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003er - 읽기 권한\u003c/li\u003e\n\u003cli\u003ew - 쓰기 권한\u003c/li\u003e\n\u003cli\u003ex - 실행 권한\u003c/li\u003e\n\u003cli\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cul\u003e\n\u003cli\u003e권한 추가\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cul\u003e\n\u003cli\u003e권한 제거\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e= - 정확한 권한 설정 (기존 권한을 모두 제거하고 지정된 권한을 설정합니다)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e예시:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eg+w: 그룹에 쓰기 권한 부여\u003c/li\u003e\n\u003cli\u003eu-x: 소유자의 실행 권한 제거\u003c/li\u003e\n\u003cli\u003eo=rw: 다른 사용자에 대한 정확한 권한 설정 (읽기 및 쓰기만)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003esudo chmod \u0026#x3C;허가_모드\u003e \u0026#x3C;파일_경로\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-07-01-LinuxFilePermissions_5.png\" alt=\"이미지\"\u003e\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003eAbsolute Mode:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e복잡한 허가 할당에 대해 더 간결합니다.\u003c/li\u003e\n\u003cli\u003e모든 권한을 표현하기 위해 세 자리의 8진수를 사용합니다.\u003c/li\u003e\n\u003cli\u003e각 숫자는 특정 사용자 그룹에 해당합니다:\n\u003cul\u003e\n\u003cli\u003e첫 번째 숫자 (백의 자리): 소유자의 권한\u003c/li\u003e\n\u003cli\u003e두 번째 숫자 (십의 자리): 그룹의 권한\u003c/li\u003e\n\u003cli\u003e세 번째 숫자 (일의 자리): 다른 사용자들의 권한\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e각 숫자 자체는 권한 값을 결합한 것입니다:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e4: 읽기 권한\u003c/li\u003e\n\u003cli\u003e2: 쓰기 권한\u003c/li\u003e\n\u003cli\u003e1: 실행 권한\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e권한을 설정하려면 해당 값을 추가하십시오. 권한을 제거하려면 기존 숫자에서 해당 값을 뺍니다 (0이 됨).\u003c/p\u003e\n\u003cp\u003e예시:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e764: 소유자에게 읽기, 쓰기, 실행 권한 (4+2+1)을 부여합니다 (7), 그룹에게 읽기 및 쓰기 권한 (4+2)을 설정하며, 다른 사용자에게는 읽기 전용 권한 (4)을 줍니다.\u003c/li\u003e\n\u003cli\u003e600: 그룹과 다른 사용자에게 모든 권한을 제거하고, 소유자에게 읽기와 쓰기 권한만 설정합니다 (6).\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e적절한 모드 선택:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e심볼릭 모드를 사용하여 특정 사용자 그룹에 대한 특정 권한 추가 또는 제거와 같은 간단한 조정을 하세요.\u003c/li\u003e\n\u003cli\u003e절대 모드를 사용하여 복잡한 권한 설정이 필요하거나 여러 권한 변경을 더 간결하게 나타내는 방법이 필요할 때 사용하세요.\u003c/li\u003e\n\u003cli\u003e궁극적으로, 선택은 개인 취향과 편안함에 달려 있습니다. 두 모드 모두 파일 권한을 수정하는 동일한 결과를 얻습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e변경 내용 확인:\u003c/p\u003e\n\u003cp\u003e폴더와 해당 내용에 대한 소유권 및 권한 세부 정보를 보려면 ls -laR 명령을 사용하시면 됩니다. 이는 권한 변경이 성공적으로 이루어졌는지 확인하는 데 도움이 됩니다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-07-01-LinuxFilePermissions_6.png\" alt=\"Linux 파일 권한\"\u003e\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e결론:\u003c/p\u003e\n\u003cp\u003e위 단계를 따르면 AWS EC2 인스턴스에서 파일 권한을 관리하는 실용적인 경험을 얻을 수 있습니다. 이는 클라우드에서 일하는 누구에게나 가치 있는 기술입니다, 특히 시스템 관리자, 보안 전문가, 그리고 클라우드 아키텍트들에게 유용합니다.\u003c/p\u003e\n\u003cp\u003e기억하세요: 언제나 조직의 보안 정책과 데이터 접근 요구와 일치하는 권한 구조를 구현해야 합니다.\u003c/p\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-07-01-LinuxFilePermissions"},"buildId":"CYQjEY3HhSkRTiL0gewc0","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
